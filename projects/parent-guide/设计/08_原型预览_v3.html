@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>育儿预演所 - 原型预览 v3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Segoe UI', sans-serif;
+            background: #F5F0EB;
+            color: #1a1a1a;
+            line-height: 1.6;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
+        }
+
+        /* ===== 首页 ===== */
+        .page-home {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 20px;
+            padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+        }
+
+        .brand {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+        }
+
+        .brand .subtitle {
+            font-size: 13px;
+            color: #999;
+            margin-top: 6px;
+            font-weight: 400;
+        }
+
+        .social-proof {
+            background: white;
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-proof span {
+            color: #FF8C42;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .hero-visual {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .hero-circle {
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(135deg, #FFE8D6 0%, #FFD4B8 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+        }
+
+        .trust-tags {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .trust-tags span::before {
+            content: "✓ ";
+            color: #FF8C42;
+        }
+
+        .cta-button {
+            background: #FF8C42;
+            color: white;
+            border: none;
+            border-radius: 28px;
+            padding: 16px 0;
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(255,140,66,0.3);
+            transition: transform 0.1s, box-shadow 0.2s;
+            -webkit-appearance: none;
+        }
+
+        .cta-button:active {
+            transform: scale(0.97);
+            box-shadow: 0 2px 8px rgba(255,140,66,0.3);
+        }
+
+        .cta-hint {
+            text-align: center;
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        /* ===== 答题页 ===== */
+        .page-question {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #F5F0EB;
+        }
+
+        .q-header {
+            background: white;
+            padding: 16px 20px;
+            padding-top: calc(16px + env(safe-area-inset-top, 0px));
+            border-bottom: 1px solid #eee;
+        }
+
+        .q-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .q-meta .q-number {
+            color: #FF8C42;
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #eee;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #FF8C42;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .q-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .scenario-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .scenario-label {
+            font-size: 11px;
+            color: #FF8C42;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .scenario-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #1a1a1a;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-card {
+            background: white;
+            border: 2px solid #e8e8e8;
+            border-radius: 14px;
+            padding: 16px 18px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .option-card.selected {
+            border-color: #FF8C42;
+            background: #FFF5ED;
+        }
+
+        .option-letter {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            color: #666;
+            font-size: 14px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .option-card.selected .option-letter {
+            background: #FF8C42;
+            color: white;
+        }
+
+        .option-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .q-footer {
+            background: white;
+            padding: 16px 20px;
+            padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+            border-top: 1px solid #eee;
+        }
+
+        .q-hint {
+            text-align: center;
+            font-size: 12px;
+            color: #bbb;
+            margin-bottom: 12px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn-prev {
+            flex: 1;
+            padding: 14px 0;
+            border-radius: 24px;
+            border: 1.5px solid #ddd;
+            background: white;
+            color: #888;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+
+        .btn-next {
+            flex: 2;
+            padding: 14px 0;
+            border-radius: 24px;
+            border: none;
+            background: #ccc;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: not-allowed;
+            -webkit-appearance: none;
+            transition: all 0.2s;
+        }
+
+        .btn-next.active {
+            background: #FF8C42;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(255,140,66,0.3);
+        }
+
+        /* ===== 结果页 ===== */
+        .page-result {
+            min-height: 100vh;
+            background: #F5F0EB;
+        }
+
+        .result-hero {
+            background: white;
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+
+        .result-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+        }
+
+        .result-name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #FF8C42;
+            margin-bottom: 16px;
+        }
+
+        .result-quote {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            font-style: italic;
+            padding: 0 12px;
+        }
+
+        .result-quote::before { content: '"'; }
+        .result-quote::after { content: '"'; }
+
+        .chart-placeholder {
+            width: 200px;
+            height: 200px;
+            margin: 24px auto;
+            background: linear-gradient(135deg, #FFE8D6 0%, #FFD4B8 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FF8C42;
+            font-size: 14px;
+        }
+
+        .scroll-hint {
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 8px;
+        }
+
+        .result-details {
+            padding: 24px 20px;
+        }
+
+        .detail-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .detail-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .detail-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .action-card {
+            background: linear-gradient(135deg, #FFF5ED 0%, #FFE8D6 100%);
+            border: 2px solid #FF8C42;
+        }
+
+        .share-section {
+            background: white;
+            padding: 24px 20px;
+            padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+            text-align: center;
+        }
+
+        .share-btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 28px;
+            padding: 16px 0;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            margin-bottom: 16px;
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+
+        .share-tags {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .share-tag {
+            background: #f5f5f5;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .paywall {
+            background: #f8f8f8;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .paywall p {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .paywall .price {
+            font-size: 24px;
+            font-weight: 700;
+            color: #FF8C42;
+        }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<!-- ===== PAGE 1: 首页 ===== -->
+<div id="page-home" class="page-home">
+    <div class="brand">
+        <h1>育儿预演所</h1>
+        <p class="subtitle">parenting is a marathon, not a sprint.</p>
+    </div>
+
+    <div class="social-proof">
+        已有 <span>47,231</span> 位家长完成预演
+    </div>
+
+    <div class="hero-visual">
+        <div class="hero-circle">👨‍👩‍👧</div>
+    </div>
+
+    <div class="trust-tags">
+        <span>6道情境题</span>
+        <span>9种画像</span>
+        <span>心理学支撑</span>
+    </div>
+
+    <button class="cta-button" id="btn-start">开始预演</button>
+    <p class="cta-hint">90秒找到你的育儿风格</p>
+</div>
+
+<!-- ===== PAGE 2: 答题页 ===== -->
+<div id="page-question" class="page-question hidden">
+    <div class="q-header">
+        <div class="q-meta">
+            <span class="q-number">第1题 / 共4题</span>
+            <span>25%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 25%"></div>
+        </div>
+    </div>
+
+    <div class="q-content">
+        <div class="scenario-card">
+            <div class="scenario-label">场景</div>
+            <p class="scenario-text">
+                你推着购物车，3岁半的儿子在玩具区突然停下，指着货架上一辆118元的遥控车大喊"我要这个！"你说"家里已经有5辆车了，今天不买玩具。"他愣了两秒，随即把购物车里的牛奶盒摔到地上，一屁股坐下去开始嚎哭，腿还在地上蹬。周围已经有两位顾客转头看你。
+            </p>
+        </div>
+
+        <div class="options-list">
+            <div class="option-card" data-option="A">
+                <div class="option-letter">A</div>
+                <div class="option-text">蹲下来与他平视，按住他肩膀："你想要那辆车，特别想要。但今天的规矩是不买玩具，这个规矩不会因为大哭就改变。你可以在这儿哭一会儿，我陪着你。"</div>
+            </div>
+            <div class="option-card" data-option="B">
+                <div class="option-letter">B</div>
+                <div class="option-text">弯腰凑近他，声音压低："你起来不哭，这周每天自己收玩具，周末我带你来买这辆——我们拉钩。"</div>
+            </div>
+            <div class="option-card" data-option="C">
+                <div class="option-letter">C</div>
+                <div class="option-text">蹲下来："你告诉我，为什么非要这辆车？它跟家里那辆哪里不一样？"等他抽抽搭搭说出理由后，再回应。</div>
+            </div>
+            <div class="option-card" data-option="D">
+                <div class="option-letter">D</div>
+                <div class="option-text">不说话，弯腰把他抱起来，推车往收银台走，离开玩具区后等他安静下来再开口。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q-footer">
+        <p class="q-hint">这道题没有标准答案，凭直觉选</p>
+        <div class="nav-buttons">
+            <button class="btn-prev" id="btn-prev">上一题</button>
+            <button class="btn-next" id="btn-next">下一题</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== PAGE 3: 结果页 ===== -->
+<div id="page-result" class="page-result hidden">
+    <div class="result-hero">
+        <div class="result-icon">🌱</div>
+        <div class="result-name">温室园丁</div>
+        <div class="result-quote">你治愈的不是一个问题，是一个人。</div>
+        <div class="chart-placeholder">[菱形风筝图]</div>
+        <p class="scroll-hint">下滑查看完整解读 ↓</p>
+    </div>
+
+    <div class="result-details">
+        <div class="detail-card">
+            <h3>🌟 你的育儿超能力</h3>
+            <p>孩子在你这里学到的第一课是"我的感受是被接纳的"，这是安全感最牢固的地基。你天生能闻到情绪的气息，能在哭声里分辨出恐惧和委屈的微妙差别。</p>
+        </div>
+
+        <div class="detail-card">
+            <h3>💡 你的隐藏挑战</h3>
+            <p>规则会不会因为"太想呵护"而变得弹性过大？孩子需要知道，爱是无限的，但边界是清晰的。</p>
+        </div>
+
+        <div class="detail-card action-card">
+            <h3>🎯 我的第一个行动</h3>
+            <p>明天孩子崩溃时，试着先说"我看到了"，再默默数10秒。孩子感到情绪被接纳，你给自己缓冲时间，避免过度妥协。</p>
+        </div>
+    </div>
+
+    <div class="share-section">
+        <button class="share-btn" id="btn-share">生成我的育儿画像海报</button>
+        <div class="share-tags">
+            <span class="share-tag">"我测出来是温室园丁，你呢？"</span>
+            <span class="share-tag">"90秒揭晓"</span>
+        </div>
+        <div class="paywall">
+            <p>解锁9种画像完整对比 + 专属成长路径</p>
+            <div class="price">¥9.9</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        var home = document.getElementById('page-home');
+        var question = document.getElementById('page-question');
+        var result = document.getElementById('page-result');
+        var btnStart = document.getElementById('btn-start');
+        var btnNext = document.getElementById('btn-next');
+        var options = document.querySelectorAll('.option-card');
+        var selectedOption = null;
+
+        // 首页开始按钮
+        btnStart.addEventListener('click', function() {
+            home.classList.add('hidden');
+            question.classList.remove('hidden');
+        });
+
+        // 选项点击
+        options.forEach(function(opt) {
+            opt.addEventListener('click', function() {
+                options.forEach(function(o) { o.classList.remove('selected'); });
+                opt.classList.add('selected');
+                selectedOption = opt.getAttribute('data-option');
+                btnNext.classList.add('active');
+                btnNext.textContent = '下一题';
+            });
+        });
+
+        // 下一题按钮 - 修复：不用disabled，用CSS类控制样式+JS检查
+        btnNext.addEventListener('click', function() {
+            if (!selectedOption) {
+                alert('请先选择一个选项');
+                return;
+            }
+            question.classList.add('hidden');
+            result.classList.remove('hidden');
+        });
+    })();
+</script>
+
+</body>
+</html>
