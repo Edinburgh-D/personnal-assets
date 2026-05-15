@@ -1,0 +1,43 @@
+{
+  "source_url": "https://zjj.xa.gov.cn/zw/zfxxgkml/zwxx/gsgg/fcscjy/",
+  "crawl_time": "2026-05-15T12:24:07.021689",
+  "monthly_data": [
+    {
+      "month": "2026-01",
+      "residential_sets": 8643,
+      "area": 90.09,
+      "unit": "万㎡",
+      "url": "https://m.jiemian.com/article/14220278.html",
+      "publisher": "界面新闻",
+      "publish_date": "2026-04-07"
+    },
+    {
+      "month": "2026-02",
+      "residential_sets": 4859,
+      "area": 50.63,
+      "unit": "万㎡",
+      "url": "https://m.jiemian.com/article/14220278.html",
+      "publisher": "界面新闻",
+      "publish_date": "2026-04-07"
+    },
+    {
+      "month": "2026-03",
+      "residential_sets": 11288,
+      "area": 115.11,
+      "unit": "万㎡",
+      "url": "https://m.jiemian.com/article/14220278.html",
+      "publisher": "界面新闻",
+      "publish_date": "2026-04-07"
+    },
+    {
+      "month": "2026-04",
+      "residential_sets": 11903,
+      "area": 122.6,
+      "unit": "万㎡",
+      "url": "https://www.sohu.com/a/1005026339_220260",
+      "publisher": "搜狐/中国房地产报",
+      "publish_date": "2026-04-03/16"
+    }
+  ],
+  "note": "数据来自界面新闻、搜狐等媒体的报道，原始数据源自西安市住建局公告"
+}
