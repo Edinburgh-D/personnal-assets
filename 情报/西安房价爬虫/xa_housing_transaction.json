@@ -1,24 +1,26 @@
 {
   "source_url": "https://zjj.xa.gov.cn/zw/zfxxgkml/zwxx/gsgg/fcscjy/",
-  "crawl_time": "2026-05-15T12:24:07.021689",
+  "crawl_time": "2026-05-15T12:31:01.476595",
   "monthly_data": [
     {
       "month": "2026-01",
       "residential_sets": 8643,
       "area": 90.09,
       "unit": "万㎡",
-      "url": "https://m.jiemian.com/article/14220278.html",
-      "publisher": "界面新闻",
-      "publish_date": "2026-04-07"
+      "url": "https://www.sohu.com/a/983971253_804292",
+      "title": "开门红！2026年1月西安二手房成交8643套，同比大涨43%_市场情绪_价格_政策",
+      "publisher": "搜狐/乐居买房",
+      "expected_month": "2026-01"
     },
     {
       "month": "2026-02",
       "residential_sets": 4859,
       "area": 50.63,
       "unit": "万㎡",
-      "url": "https://m.jiemian.com/article/14220278.html",
-      "publisher": "界面新闻",
-      "publish_date": "2026-04-07"
+      "url": "https://www.sohu.com/a/993267775_804292",
+      "title": "2026年2月西安二手房网签数据出炉！住宅网签备案4859套 面积50.63万㎡_曲江_地铁_航天",
+      "publisher": "搜狐/乐居买房",
+      "expected_month": "2026-02"
     },
     {
       "month": "2026-03",
@@ -26,18 +28,20 @@
       "area": 115.11,
       "unit": "万㎡",
       "url": "https://m.jiemian.com/article/14220278.html",
+      "title": "创近3年新高   3月份西安二手住宅成交11288套 | 界面新闻",
       "publisher": "界面新闻",
-      "publish_date": "2026-04-07"
+      "expected_month": "2026-03"
     },
     {
       "month": "2026-04",
       "residential_sets": 11903,
       "area": 122.6,
       "unit": "万㎡",
-      "url": "https://www.sohu.com/a/1005026339_220260",
-      "publisher": "搜狐/中国房地产报",
-      "publish_date": "2026-04-03/16"
+      "url": "https://www.sohu.com/a/1019885202_220260",
+      "title": "卖爆了！4月西安二手住宅网签备案11903套 热度超过3月！_数据_项目_面积",
+      "publisher": "搜狐/乐居买房",
+      "expected_month": "2026-04"
     }
   ],
-  "note": "数据来自界面新闻、搜狐等媒体的报道，原始数据源自西安市住建局公告"
+  "note": "数据从媒体报道页面实时解析，原始数据源自西安市住建局公告"
 }

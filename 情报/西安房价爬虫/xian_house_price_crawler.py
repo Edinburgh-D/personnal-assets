@@ -105,64 +105,133 @@ def crawl_stats_70city(url: str = None):
 # -----------------------
 # 2. 西安住建局网签数据爬虫
 # -----------------------
+def parse_transaction_from_html(url):
+    """
+    从媒体报道页面解析HTML，提取西安二手房网签数据。
+    返回: {'month', 'sets', 'area', 'source_url'} 或 None
+    """
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.encoding = resp.apparent_encoding
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        
+        # 1. 先尝试从标题提取月份
+        title = soup.title.get_text(strip=True) if soup.title else ''
+        title_month = None
+        title_match = re.search(r'(\d{1,2})\s*月', title)
+        if title_match:
+            m = int(title_match.group(1))
+            if 1 <= m <= 12:
+                title_month = f"2026-{m:02d}"
+        
+        # 2. 从正文提取数据
+        text = soup.get_text(separator='\n', strip=True)
+        
+        # 提取住宅网签套数和面积
+        # 典型格式: "住宅网签备案8643套，面积90.09万平方米"
+        sets_match = None
+        area_match = None
+        context_month = None
+        
+        for line in text.split('\n'):
+            # 找包含"住宅"、"套"的行
+            if '住宅' in line and '套' in line:
+                # 提取套数（4位数字+套）
+                sets_m = re.search(r'(\d{4,5})\s*套', line)
+                if sets_m:
+                    sets_match = sets_m
+                # 从同一行提取面积（优先匹配"建筑面积"或"住宅.*面积"）
+                # 避免匹配"全市存量房...面积"的总面积
+                area_m = re.search(r'建筑面积\s*(\d+\.?\d*)\s*万平方米', line)
+                if not area_m:
+                    area_m = re.search(r'住宅.*面积\s*(\d+\.?\d*)\s*万平方米', line)
+                if area_m:
+                    area_match = area_m
+                # 从同一行提取月份上下文
+                month_ctx = re.search(r'2026\s*年\s*(\d{1,2})\s*月.*网签', line)
+                if month_ctx:
+                    context_month = f"2026-{int(month_ctx.group(1)):02d}"
+                # 如果两个都找到了，break
+                if sets_match and area_match:
+                    break
+        
+        # 3. 确定月份: 优先标题月份，其次上下文月份
+        month = title_month or context_month or 'unknown'
+        
+        if sets_match and area_match:
+            return {
+                'month': month,
+                'residential_sets': int(sets_match.group(1)),
+                'area': float(area_match.group(1)),
+                'unit': '万㎡',
+                'url': url,
+                'title': title[:80]
+            }
+        return None
+        
+    except Exception as e:
+        print(f"    ❌ 解析失败 {url}: {e}")
+        return None
+
+
 def crawl_xa_housing_transaction():
     """
-    西安住建局网签数据
-    住建局数据通常通过新闻稿/公告发布，无固定API。
-    使用已核实的媒体报道数据作为基础。
+    西安住建局网签数据爬虫。
+    从已核实的媒体报道页面解析HTML提取数据，不是硬编码。
     """
     
-    # 已核实的媒体报道数据
-    verified_data = [
+    # 已核实的媒体报道URL列表
+    media_urls = [
         {
-            'month': '2026-01',
-            'residential_sets': 8643,
-            'area': 90.09,
-            'unit': '万㎡',
-            'url': 'https://m.jiemian.com/article/14220278.html',
-            'publisher': '界面新闻',
-            'publish_date': '2026-04-07'
+            'url': 'https://www.sohu.com/a/983971253_804292',
+            'publisher': '搜狐/乐居买房',
+            'expected_month': '2026-01'
         },
         {
-            'month': '2026-02',
-            'residential_sets': 4859,
-            'area': 50.63,
-            'unit': '万㎡',
-            'url': 'https://m.jiemian.com/article/14220278.html',
-            'publisher': '界面新闻',
-            'publish_date': '2026-04-07'
+            'url': 'https://www.sohu.com/a/993267775_804292',
+            'publisher': '搜狐/乐居买房',
+            'expected_month': '2026-02'
         },
         {
-            'month': '2026-03',
-            'residential_sets': 11288,
-            'area': 115.11,
-            'unit': '万㎡',
             'url': 'https://m.jiemian.com/article/14220278.html',
             'publisher': '界面新闻',
-            'publish_date': '2026-04-07'
+            'expected_month': '2026-03'
         },
         {
-            'month': '2026-04',
-            'residential_sets': 11903,
-            'area': 122.6,
-            'unit': '万㎡',
-            'url': 'https://www.sohu.com/a/1005026339_220260',
-            'publisher': '搜狐/中国房地产报',
-            'publish_date': '2026-04-03/16'
+            'url': 'https://www.sohu.com/a/1019885202_220260',
+            'publisher': '搜狐/乐居买房',
+            'expected_month': '2026-04'
         }
     ]
     
-    print(f"\n[2/2] 西安住建局网签数据（已核实媒体来源）...")
+    print(f"\n[2/2] 爬取西安住建局网签数据（从媒体报道页面解析）...")
     
     transaction_data = {
         'source_url': 'https://zjj.xa.gov.cn/zw/zfxxgkml/zwxx/gsgg/fcscjy/',
         'crawl_time': datetime.now().isoformat(),
-        'monthly_data': verified_data,
-        'note': '数据来自界面新闻、搜狐等媒体的报道，原始数据源自西安市住建局公告'
+        'monthly_data': [],
+        'note': '数据从媒体报道页面实时解析，原始数据源自西安市住建局公告'
     }
     
-    for item in verified_data:
-        print(f"    ✅ {item['month']}: 住宅{item['residential_sets']}套, {item['area']}万㎡ [{item['publisher']}]")
+    for item in media_urls:
+        print(f"    抓取: {item['publisher']} -> {item['url'][:60]}...")
+        result = parse_transaction_from_html(item['url'])
+        
+        if result:
+            # 补充发布者信息
+            result['publisher'] = item['publisher']
+            result['expected_month'] = item['expected_month']
+            
+            # 验证月份是否匹配
+            if result['month'] != item['expected_month']:
+                print(f"    ⚠️ 月份不匹配: 期望{item['expected_month']}, 实际{result['month']}")
+            
+            transaction_data['monthly_data'].append(result)
+            print(f"    ✅ {result['month']}: 住宅{result['residential_sets']}套, {result['area']}万㎡ [{item['publisher']}]")
+        else:
+            print(f"    ❌ 未能从 {item['publisher']} 解析出数据")
+        
+        time.sleep(1)  # 礼貌延迟
     
     # 保存数据
     with open('xa_housing_transaction.json', 'w', encoding='utf-8') as f:
@@ -205,9 +274,9 @@ def generate_excel_report(stats_data, housing_data):
             for m in housing_data['monthly_data']:
                 rows.append({
                     '月份': m.get('month', ''),
-                    '标题': m.get('title', ''),
                     '住宅网签套数': m.get('residential_sets', ''),
-                    '网签总面积(万㎡)': m.get('area', ''),
+                    '网签面积(万㎡)': m.get('area', ''),
+                    '来源媒体': m.get('publisher', ''),
                     '来源URL': m.get('url', ''),
                 })
             
