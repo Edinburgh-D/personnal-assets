@@ -1,0 +1,524 @@
+# 任务模板库
+# 标准化任务流程，减少重复说明，快速派发
+
+templates:
+  
+  # 社交媒体发布模板
+  
+  xiaohongshu_post:
+    name: "小红书图文发布"
+    description: "生成并发布小红书图文内容"
+    risk_level: "low"
+    estimated_time: "30min"
+    
+    workflow:
+      - step: 1
+        name: "生成内容提示词"
+        agent: "online_claw"
+        action: "generate_content_prompt"
+        input:
+          topic: "${user_input.topic}"
+          style: "${preferences.xiaohongshu.style}"
+          structure: "${preferences.xiaohongshu.content_structure}"
+        output: "content_prompt"
+        auto: true
+      
+      - step: 2
+        name: "生成图片"
+        agent: "mobile_claw"
+        action: "generate_image_with_chatgpt"
+        input:
+          prompt: "${step_1.output.content_prompt}"
+          style: "${preferences.xiaohongshu.image_style}"
+        output: "image_url"
+        auto: true
+      
+      - step: 3
+        name: "发布内容"
+        agent: "mobile_claw"
+        action: "post_to_xiaohongshu"
+        input:
+          content: "${step_1.output.content_prompt}"
+          image: "${step_2.output.image_url}"
+          hashtags: "${preferences.xiaohongshu.hashtags}"
+          post_time: "${preferences.xiaohongshu.post_time.best_time}"
+        output: "post_url"
+        auto: true
+    
+    success_criteria:
+      - "内容发布成功"
+      - "获得post_url"
+      - "内容符合用户偏好"
+    
+    quick_command: "/xhs"
+    example: "/xhs 主题：AI工具推荐"
+  
+  instagram_post:
+    name: "Instagram图文发布"
+    description: "生成并发布Instagram图文内容"
+    risk_level: "low"
+    estimated_time: "30min"
+    
+    workflow:
+      - step: 1
+        name: "生成内容"
+        agent: "online_claw"
+        action: "generate_content"
+        input:
+          topic: "${user_input.topic}"
+          style: "${preferences.instagram.style}"
+          language: "${preferences.instagram.language}"
+        output: "content"
+        auto: true
+      
+      - step: 2
+        name: "生成图片"
+        agent: "mobile_claw"
+        action: "generate_image_with_chatgpt"
+        input:
+          prompt: "${step_1.output.content}"
+          style: "${preferences.instagram.image_style}"
+        output: "image_url"
+        auto: true
+      
+      - step: 3
+        name: "发布内容"
+        agent: "mobile_claw"
+        action: "post_to_instagram"
+        input:
+          content: "${step_1.output.content}"
+          image: "${step_2.output.image_url}"
+          hashtags: "${preferences.instagram.hashtags}"
+          post_time: "${preferences.instagram.post_time.best_time}"
+        output: "post_url"
+        auto: true
+    
+    success_criteria:
+      - "内容发布成功"
+      - "获得post_url"
+    
+    quick_command: "/ins"
+    example: "/ins topic: AI trends"
+  
+  facebook_post:
+    name: "Facebook图文发布"
+    description: "生成并发布Facebook图文内容"
+    risk_level: "low"
+    estimated_time: "20min"
+    
+    workflow:
+      - step: 1
+        name: "生成内容"
+        agent: "online_claw"
+        action: "generate_content"
+        input:
+          topic: "${user_input.topic}"
+          style: "${preferences.facebook.style}"
+        output: "content"
+        auto: true
+      
+      - step: 2
+        name: "生成图片"
+        agent: "mobile_claw"
+        action: "generate_image_with_chatgpt"
+        input:
+          prompt: "${step_1.output.content}"
+        output: "image_url"
+        auto: true
+      
+      - step: 3
+        name: "发布内容"
+        agent: "mobile_claw"
+        action: "post_to_facebook"
+        input:
+          content: "${step_1.output.content}"
+          image: "${step_2.output.image_url}"
+          post_time: "${preferences.facebook.post_time.best_time}"
+        output: "post_url"
+        auto: true
+    
+    quick_command: "/fb"
+    example: "/fb 主题：科技动态"
+  
+  threads_post:
+    name: "Threads图文发布"
+    description: "生成并发布Threads内容"
+    risk_level: "low"
+    estimated_time: "15min"
+    
+    workflow:
+      - step: 1
+        name: "生成内容"
+        agent: "online_claw"
+        action: "generate_content"
+        input:
+          topic: "${user_input.topic}"
+          style: "${preferences.threads.style}"
+        output: "content"
+        auto: true
+      
+      - step: 2
+        name: "发布内容"
+        agent: "mobile_claw"
+        action: "post_to_threads"
+        input:
+          content: "${step_1.output.content}"
+          post_time: "${preferences.threads.post_time.best_time}"
+        output: "post_url"
+        auto: true
+    
+    quick_command: "/threads"
+    example: "/threads 主题：今日思考"
+  
+  medium_article:
+    name: "Medium文章发布"
+    description: "生成并发布Medium深度文章"
+    risk_level: "low"
+    estimated_time: "2-3h"
+    
+    workflow:
+      - step: 1
+        name: "生成文章大纲"
+        agent: "online_claw"
+        action: "generate_article_outline"
+        input:
+          topic: "${user_input.topic}"
+          structure: "${preferences.medium.structure}"
+        output: "outline"
+        auto: true
+      
+      - step: 2
+        name: "生成文章内容"
+        agent: "online_claw"
+        action: "generate_article_content"
+        input:
+          outline: "${step_1.output.outline}"
+          style: "${preferences.medium.style}"
+          length: "${preferences.medium.content_length}"
+        output: "article_content"
+        auto: true
+      
+      - step: 3
+        name: "发布文章"
+        agent: "mobile_claw"
+        action: "post_to_medium"
+        input:
+          content: "${step_2.output.article_content}"
+          post_time: "${preferences.medium.post_time.best_time}"
+        output: "article_url"
+        auto: true
+    
+    quick_command: "/medium"
+    example: "/medium 主题：AI发展趋势"
+  
+  # 代码开发模板
+  
+  code_development:
+    name: "代码开发任务"
+    description: "完整的代码开发流程"
+    risk_level: "medium"
+    estimated_time: "2-4h"
+    
+    workflow:
+      - step: 1
+        name: "需求分析"
+        agent: "online_claw"
+        action: "analyze_requirements"
+        input:
+          requirements: "${user_input.requirements}"
+          context: "${user_input.context}"
+        output: "design_doc"
+        auto: false  # 需要用户确认设计
+      
+      - step: 2
+        name: "生成设计图"
+        agent: "mobile_claw"
+        action: "generate_design_with_chatgpt"
+        input:
+          design_doc: "${step_1.output.design_doc}"
+        output: "design_image"
+        auto: true
+      
+      - step: 3
+        name: "分析设计方案"
+        agent: "online_claw"
+        action: "analyze_design"
+        input:
+          design_image: "${step_2.output.design_image}"
+          design_doc: "${step_1.output.design_doc}"
+        output: "implementation_plan"
+        auto: true
+      
+      - step: 4
+        name: "编写代码"
+        agent: "pc_claw"
+        action: "write_code"
+        input:
+          implementation_plan: "${step_3.output.implementation_plan}"
+          code_style: "${preferences.code_development.code_style}"
+          framework: "${preferences.code_development.framework}"
+        output: "code_changes"
+        auto: true
+      
+      - step: 5
+        name: "编写测试"
+        agent: "pc_claw"
+        action: "write_tests"
+        input:
+          code_changes: "${step_4.output.code_changes}"
+          coverage_threshold: "${preferences.code_development.testing.coverage_threshold}"
+        output: "test_code"
+        auto: true
+      
+      - step: 6
+        name: "运行测试"
+        agent: "pc_claw"
+        action: "run_tests"
+        input:
+          code_changes: "${step_4.output.code_changes}"
+          test_code: "${step_5.output.test_code}"
+        output: "test_results"
+        auto: true
+      
+      - step: 7
+        name: "代码审查"
+        agent: "online_claw"
+        action: "code_review"
+        input:
+          code_changes: "${step_4.output.code_changes}"
+          checklist: "${preferences.code_development.code_review.checklist}"
+        output: "review_results"
+        auto: true
+      
+      - step: 8
+        name: "推送代码"
+        agent: "online_claw"
+        action: "push_to_github"
+        input:
+          code_changes: "${step_4.output.code_changes}"
+          test_results: "${step_6.output.test_results}"
+          review_results: "${step_7.output.review_results}"
+          target_branch: "${user_input.target_branch}"
+          commit_message: "${preferences.code_development.code_style.commit_message}"
+        output: "pr_url"
+        auto: false  # 需要用户确认推送
+    
+    success_criteria:
+      - "代码推送到GitHub"
+      - "测试通过"
+      - "代码审查通过"
+      - "获得PR链接"
+    
+    quick_command: "/dev"
+    example: "/dev 需求：用户认证模块，分支：feature/user-auth"
+  
+  code_bugfix:
+    name: "代码Bug修复"
+    description: "修复代码Bug的流程"
+    risk_level: "medium"
+    estimated_time: "1-2h"
+    
+    workflow:
+      - step: 1
+        name: "分析Bug"
+        agent: "online_claw"
+        action: "analyze_bug"
+        input:
+          bug_description: "${user_input.bug_description}"
+          error_logs: "${user_input.error_logs}"
+        output: "bug_analysis"
+        auto: true
+      
+      - step: 2
+        name: "定位问题"
+        agent: "online_claw"
+        action: "locate_issue"
+        input:
+          bug_analysis: "${step_1.output.bug_analysis}"
+          codebase: "${user_input.codebase}"
+        output: "issue_location"
+        auto: true
+      
+      - step: 3
+        name: "修复代码"
+        agent: "pc_claw"
+        action: "fix_code"
+        input:
+          issue_location: "${step_2.output.issue_location}"
+          bug_analysis: "${step_1.output.bug_analysis}"
+        output: "code_fix"
+        auto: true
+      
+      - step: 4
+        name: "运行测试"
+        agent: "pc_claw"
+        action: "run_tests"
+        input:
+          code_fix: "${step_3.output.code_fix}"
+        output: "test_results"
+        auto: true
+      
+      - step: 5
+        name: "推送修复"
+        agent: "online_claw"
+        action: "push_fix"
+        input:
+          code_fix: "${step_3.output.code_fix}"
+          test_results: "${step_4.output.test_results}"
+          target_branch: "${user_input.target_branch}"
+        output: "pr_url"
+        auto: false
+    
+    quick_command: "/bugfix"
+    example: "/bugfix Bug：登录超时，日志：timeout error"
+  
+  # 信息收集模板
+  
+  information_collection:
+    name: "信息收集整理"
+    description: "从多个来源收集信息并整理"
+    risk_level: "low"
+    estimated_time: "1-2h"
+    
+    workflow:
+      - step: 1
+        name: "浏览信息源"
+        agent: "mobile_claw"
+        action: "browse_sources"
+        input:
+          sources: "${user_input.sources}"
+          topic: "${user_input.topic}"
+          time_range: "${preferences.information_collection.time_range}"
+        output: "raw_info"
+        auto: true
+      
+      - step: 2
+        name: "整理信息"
+        agent: "online_claw"
+        action: "organize_information"
+        input:
+          raw_info: "${step_1.output.raw_info}"
+          format: "${preferences.information_collection.format}"
+          structure: "${preferences.information_collection.report_structure}"
+        output: "organized_report"
+        auto: true
+      
+      - step: 3
+        name: "生成报告"
+        agent: "online_claw"
+        action: "generate_report"
+        input:
+          organized_report: "${step_2.output.organized_report}"
+          template: "${preferences.information_collection.template}"
+        output: "final_report"
+        auto: true
+    
+    success_criteria:
+      - "生成结构化报告"
+      - "信息来源可追溯"
+      - "符合用户偏好格式"
+    
+    quick_command: "/collect"
+    example: "/collect 主题：AI行业动态，来源：彭博社、路透社"
+  
+  daily_news:
+    name: "每日新闻收集"
+    description: "收集每日重要新闻"
+    risk_level: "low"
+    estimated_time: "30min"
+    
+    workflow:
+      - step: 1
+        name: "浏览新闻源"
+        agent: "mobile_claw"
+        action: "browse_news"
+        input:
+          sources: "${preferences.information_collection.sources.trusted}"
+          categories: "${user_input.categories}"
+        output: "news_items"
+        auto: true
+      
+      - step: 2
+        name: "筛选重要新闻"
+        agent: "online_claw"
+        action: "filter_news"
+        input:
+          news_items: "${step_1.output.news_items}"
+          criteria: "重要性 > 7"
+        output: "important_news"
+        auto: true
+      
+      - step: 3
+        name: "生成每日简报"
+        agent: "online_claw"
+        action: "generate_daily_briefing"
+        input:
+          important_news: "${step_2.output.important_news}"
+        output: "daily_briefing"
+        auto: true
+    
+    quick_command: "/news"
+    example: "/news 类别：科技、AI"
+  
+  # 图片生成模板
+  
+  image_generation:
+    name: "图片生成"
+    description: "使用AI生成图片"
+    risk_level: "low"
+    estimated_time: "15min"
+    
+    workflow:
+      - step: 1
+        name: "生成图片提示词"
+        agent: "online_claw"
+        action: "generate_image_prompt"
+        input:
+          description: "${user_input.description}"
+          style: "${user_input.style}"
+        output: "image_prompt"
+        auto: true
+      
+      - step: 2
+        name: "生成图片"
+        agent: "mobile_claw"
+        action: "generate_image_with_chatgpt"
+        input:
+          prompt: "${step_1.output.image_prompt}"
+          tool: "${user_input.tool}"
+        output: "image_url"
+        auto: true
+    
+    success_criteria:
+      - "生成图片成功"
+      - "获得图片URL"
+    
+    quick_command: "/img"
+    example: "/img 描述：科技感未来城市，风格：简约"
+  
+  # 内容生成模板（不发布）
+  
+  content_generation:
+    name: "内容生成"
+    description: "生成内容但不发布，供用户审核"
+    risk_level: "low"
+    estimated_time: "15min"
+    
+    workflow:
+      - step: 1
+        name: "生成内容"
+        agent: "online_claw"
+        action: "generate_content"
+        input:
+          topic: "${user_input.topic}"
+          platform: "${user_input.platform}"
+          style: "${preferences.${platform}.style}"
+        output: "content"
+        auto: true
+    
+    success_criteria:
+      - "生成内容符合用户偏好"
+      - "内容质量合格"
+    
+    quick_command: "/content"
+    example: "/content 平台：小红书，主题：AI工具推荐"

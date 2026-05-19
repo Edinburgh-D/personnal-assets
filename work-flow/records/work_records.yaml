@@ -1,0 +1,499 @@
+# 工作记录系统配置
+# 用于自动记录任务执行过程和产出
+
+work_records:
+  
+  # 存储配置
+  storage:
+    location: "records/"
+    primary_storage: "github_repo"
+    
+    # 目录结构
+    structure:
+      - "daily/"           # 每日工作日志
+      - "tasks/"           # 任务详细记录
+      - "reports/"         # 汇总报告
+      - "knowledge/"       # 知识库
+    
+    # 存储限制
+    max_daily_logs: 90     # 保留90天
+    max_task_records: 500  # 保留500条任务记录
+    auto_cleanup: true
+    cleanup_after: "90天"
+  
+  # 记录类型
+  record_types:
+    
+    # 每日工作日志
+    daily_log:
+      name: "每日工作日志"
+      location: "records/daily/{date}.md"
+      format: "markdown"
+      auto_generate: true
+      generate_time: "18:00"
+      
+      content:
+        - "概览统计"
+        - "已完成任务列表"
+        - "进行中任务列表"
+        - "待确认任务列表"
+        - "失败任务列表"
+        - "智能体工作统计"
+        - "今日数据"
+        - "异常处理"
+        - "优化建议"
+    
+    # 任务详细记录
+    task_record:
+      name: "任务详细记录"
+      location: "records/tasks/{task_id}/"
+      
+      files:
+        - "task.yaml"        # 任务元数据
+        - "workflow.yaml"    # 执行流程
+        - "outputs/"         # 产出文件
+        - "logs/"            # 执行日志
+        - "feedback.yaml"    # 用户反馈
+      
+      content:
+        - "任务基本信息"
+        - "用户输入"
+        - "工作流进度"
+        - "智能体协作记录"
+        - "产出结果"
+        - "用户反馈"
+        - "决策日志"
+    
+    # 汇总报告
+    reports:
+      name: "汇总报告"
+      location: "reports/"
+      
+      types:
+        - "daily_summary.md"      # 每日汇总
+        - "weekly_report.md"      # 每周报告
+        - "monthly_report.md"     # 每月报告
+        - "task_analysis.md"      # 任务分析
+    
+    # 知识库
+    knowledge_base:
+      name: "知识库"
+      location: "records/knowledge/"
+      
+      categories:
+        - "content_templates/"     # 内容模板
+        - "code_snippets/"         # 代码片段
+        - "workflows/"             # 工作流模板
+        - "best_practices/"        # 最佳实践
+        - "lessons_learned/"       # 经验教训
+
+# 每日工作日志模板
+daily_log_template: |
+  # 📊 每日工作日志 - {date}
+  
+  ## 概览
+  
+  - 总任务数：{total_tasks}
+  - 完成数：{completed_tasks}
+  - 进行中：{in_progress_tasks}
+  - 待确认：{pending_confirmation_tasks}
+  - 失败数：{failed_tasks}
+  
+  ## ✅ 已完成任务
+  
+  ### 1. {task_title}
+  - **任务ID**：{task_id}
+  - **时间**：{start_time} - {end_time}
+  - **智能体**：{agents}
+  - **产出**：{output_link}
+  - **详情**：{details}
+  
+  ## 🔄 进行中任务
+  
+  ### 1. {task_title}
+  - **任务ID**：{task_id}
+  - **开始时间**：{start_time}
+  - **当前步骤**：{current_step}
+  - **进度**：{progress}%
+  - **预计完成**：{estimated_completion}
+  
+  ## ⏳ 待确认任务
+  
+  ### 1. {task_title}
+  - **任务ID**：{task_id}
+  - **待确认操作**：{pending_action}
+  - **确认截止**：{deadline}
+  - **操作**：回复 `/confirm {task_id}` 确认，或 `/reject {task_id}` 拒绝
+  
+  ## ❌ 失败任务
+  
+  ### 1. {task_title}
+  - **任务ID**：{task_id}
+  - **失败原因**：{failure_reason}
+  - **处理方式**：{handling}
+  
+  ## 🤖 智能体工作统计
+  
+  | 智能体 | 任务数 | 总时长 | 成功率 |
+  |--------|--------|--------|--------|
+  | online_claw | {count} | {duration} | {success_rate} |
+  | mobile_claw | {count} | {duration} | {success_rate} |
+  | pc_claw | {count} | {duration} | {success_rate} |
+  
+  ## 📈 今日数据
+  
+  | 指标 | 数值 |
+  |------|------|
+  | 社交媒体发布 | {social_posts} |
+  | 代码提交 | {code_commits} |
+  | 信息收集 | {info_collections} |
+  | 总工作时长 | {total_duration} |
+  
+  ## ⚠️ 异常处理
+  
+  {exceptions}
+  
+  ## 💡 优化建议
+  
+  {suggestions}
+
+# 任务详细记录模板
+task_record_template: |
+  # 任务记录 - {task_id}
+  
+  ## 基本信息
+  
+  - **任务ID**：{task_id}
+  - **任务类型**：{task_type}
+  - **任务模板**：{template_name}
+  - **状态**：{status}
+  - **优先级**：{priority}
+  - **风险等级**：{risk_level}
+  
+  ## 时间信息
+  
+  - **创建时间**：{created_at}
+  - **开始时间**：{started_at}
+  - **完成时间**：{completed_at}
+  - **执行时长**：{duration}
+  
+  ## 用户输入
+  
+  {user_input}
+  
+  ## 工作流进度
+  
+  {workflow_progress}
+  
+  ## 智能体协作
+  
+  - **主执行智能体**：{assigned_agent}
+  - **协作智能体**：{collaborating_agents}
+  
+  ## 产出结果
+  
+  {result}
+  
+  ## 用户反馈
+  
+  - **用户评分**：{user_rating}
+  - **用户评论**：{user_comment}
+  - **学习记录**：{learned}
+  
+  ## 决策日志
+  
+  {decision_log}
+
+# 知识库模板
+
+knowledge_templates:
+  
+  # 内容模板
+  content_template: |
+    # 内容模板 - {template_id}
+    
+    ## 基本信息
+    
+    - **模板ID**：{template_id}
+    - **名称**：{name}
+    - **平台**：{platform}
+    - **创建时间**：{created_at}
+    - **使用次数**：{usage_count}
+    - **成功率**：{success_rate}
+    
+    ## 内容结构
+    
+    {structure}
+    
+    ## 成功因素
+    
+    {success_factors}
+    
+    ## 性能数据
+    
+    {performance}
+    
+    ## 适用场景
+    
+    {applicable_scenarios}
+  
+  # 代码片段模板
+  code_snippet_template: |
+    # 代码片段 - {snippet_id}
+    
+    ## 基本信息
+    
+    - **片段ID**：{snippet_id}
+    - **名称**：{name}
+    - **语言**：{language}
+    - **框架**：{framework}
+    - **创建时间**：{created_at}
+    - **使用次数**：{usage_count}
+    
+    ## 代码内容
+    
+    ```{language}
+    {code_content}
+    ```
+    
+    ## 使用说明
+    
+    {usage_instructions}
+    
+    ## 注意事项
+    
+    {notes}
+  
+  # 最佳实践模板
+  best_practice_template: |
+    # 最佳实践 - {practice_id}
+    
+    ## 基本信息
+    
+    - **实践ID**：{practice_id}
+    - **名称**：{name}
+    - **类别**：{category}
+    - **创建时间**：{created_at}
+    - **更新时间**：{updated_at}
+    
+    ## 实践内容
+    
+    {content}
+    
+    ## 适用场景
+    
+    {applicable_scenarios}
+    
+    ## 学习来源
+    
+    {learned_from}
+    
+    ## 效果评估
+    
+    {effectiveness}
+  
+  # 经验教训模板
+  lesson_template: |
+    # 经验教训 - {lesson_id}
+    
+    ## 基本信息
+    
+    - **教训ID**：{lesson_id}
+    - **任务ID**：{task_id}
+    - **任务类型**：{task_type}
+    - **失败类型**：{failure_type}
+    - **时间**：{timestamp}
+    
+    ## 失败详情
+    
+    - **失败原因**：{failure_reason}
+    - **详细描述**：{details}
+    
+    ## 教训总结
+    
+    - **核心教训**：{lesson}
+    - **预防措施**：{prevention}
+    
+    ## 相关任务
+    
+    {related_tasks}
+    
+    ## 改进建议
+    
+    {improvement_suggestions}
+
+# 示例记录
+
+examples:
+  
+  # 示例每日日志
+  daily_log_example:
+    date: "2025-01-15"
+    total_tasks: 5
+    completed_tasks: 4
+    in_progress_tasks: 0
+    pending_confirmation_tasks: 1
+    failed_tasks: 0
+    
+    completed:
+      - task_id: "task_20250115_001"
+        title: "小红书图文发布 - AI工具推荐"
+        start_time: "09:00"
+        end_time: "09:35"
+        agents: ["online_claw", "mobile_claw"]
+        output_link: "https://xiaohongshu.com/..."
+        details: "推荐5个实用AI工具"
+      
+      - task_id: "task_20250115_002"
+        title: "Instagram图文发布 - Tech Trends"
+        start_time: "10:00"
+        end_time: "10:30"
+        agents: ["online_claw", "mobile_claw"]
+        output_link: "https://instagram.com/..."
+    
+    pending:
+      - task_id: "task_20250115_003"
+        title: "代码推送 - 用户认证模块"
+        pending_action: "push_to_github"
+        deadline: "18:00"
+    
+    agent_stats:
+      online_claw:
+        count: 3
+        duration: "4.5h"
+        success_rate: "100%"
+      mobile_claw:
+        count: 3
+        duration: "3.5h"
+        success_rate: "100%"
+      pc_claw:
+        count: 0
+        duration: "0h"
+        success_rate: "N/A"
+    
+    metrics:
+      social_posts: 2
+      code_commits: 0
+      info_collections: 1
+      total_duration: "8h"
+    
+    suggestions:
+      - "小红书发布时间符合用户偏好，互动率良好"
+      - "代码开发任务建议拆分为更小的子任务"
+  
+  # 示例任务记录
+  task_record_example:
+    task_id: "task_20250115_001"
+    task_type: "social_media_post"
+    template_name: "xiaohongshu_post"
+    status: "completed"
+    priority: "normal"
+    risk_level: "low"
+    
+    created_at: "2025-01-15 09:00:00"
+    started_at: "2025-01-15 09:05:00"
+    completed_at: "2025-01-15 09:35:00"
+    duration: "30分钟"
+    
+    user_input:
+      topic: "AI工具推荐"
+      additional_requirements: "推荐5个实用AI工具"
+    
+    workflow_progress:
+      - step: 1
+        name: "生成内容提示词"
+        status: "completed"
+        agent: "online_claw"
+        started_at: "09:05"
+        completed_at: "09:10"
+        output: "推荐5个实用AI工具..."
+      
+      - step: 2
+        name: "生成图片"
+        status: "completed"
+        agent: "mobile_claw"
+        started_at: "09:10"
+        completed_at: "09:25"
+        output: "https://..."
+      
+      - step: 3
+        name: "发布内容"
+        status: "completed"
+        agent: "mobile_claw"
+        started_at: "09:25"
+        completed_at: "09:35"
+        output: "https://xiaohongshu.com/..."
+    
+    assigned_agent: "mobile_claw"
+    collaborating_agents: ["online_claw", "mobile_claw"]
+    
+    result:
+      success: true
+      post_url: "https://xiaohongshu.com/..."
+      metrics:
+        views: 1234
+        likes: 56
+        comments: 12
+    
+    feedback:
+      user_rating: 5
+      user_comment: "很好，继续保持"
+      learned: "用户偏好轻松活泼风格"
+    
+    decision_log:
+      - step: "task_creation"
+        decision: "auto_approve"
+        reason: "低风险任务，符合自动批准规则"
+        timestamp: "2025-01-15 09:00:00"
+
+# 记录生成规则
+
+generation_rules:
+  
+  # 每日日志生成
+  daily_log_generation:
+    trigger: "每日18:00"
+    process:
+      - "收集当日所有任务"
+      - "分类统计"
+      - "生成日志文件"
+      - "发送到Kimi群聊"
+    
+    notification:
+      channel: "kimi_group"
+      format: "markdown"
+      include_summary: true
+  
+  # 任务记录生成
+  task_record_generation:
+    trigger: "任务完成时"
+    process:
+      - "收集任务执行数据"
+      - "生成任务记录文件"
+      - "保存到GitHub仓库"
+      - "更新知识库（如适用）"
+    
+    save_to: "records/tasks/{task_id}/"
+  
+  # 知识库更新
+  knowledge_base_update:
+    trigger: "任务成功且用户满意"
+    process:
+      - "分析成功因素"
+      - "生成知识库条目"
+      - "保存到知识库目录"
+    
+    categories:
+      - "成功产出 → successful_outputs"
+      - "用户偏好 → user_preferences_memory"
+      - "决策模式 → decision_patterns"
+  
+  # 失败教训记录
+  failure_lesson_record:
+    trigger: "任务失败或用户不满意"
+    process:
+      - "分析失败原因"
+      - "生成教训条目"
+      - "保存到失败教训目录"
+    
+    save_to: "records/knowledge/lessons_learned/"
