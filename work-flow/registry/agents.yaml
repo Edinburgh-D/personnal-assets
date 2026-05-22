@@ -1,0 +1,347 @@
+# 智能体能力注册表
+# 用于智能体能力发现和任务分配
+
+agents:
+  
+  online_claw:
+    id: "online_claw"
+    name: "在线版Claw"
+    description: "部署在云服务器，可联网，可操作GitHub"
+    location: "云服务器"
+    
+    capabilities:
+      - id: "github_operations"
+        name: "GitHub操作"
+        description: "代码推送、仓库管理、PR创建、分支管理"
+        reliability: 0.95
+        usage_count: 156
+        
+      - id: "code_analysis"
+        name: "代码分析"
+        description: "代码审查、静态分析、依赖检查、代码质量评估"
+        reliability: 0.90
+        usage_count: 89
+        
+      - id: "prompt_generation"
+        name: "提示词生成"
+        description: "生成图片提示词、内容提示词、设计提示词"
+        reliability: 0.92
+        usage_count: 67
+        
+      - id: "external_api_calls"
+        name: "外部API调用"
+        description: "调用外部API、获取数据、网络请求"
+        reliability: 0.88
+        usage_count: 45
+        
+      - id: "content_generation"
+        name: "内容生成"
+        description: "生成文案、文章、报告"
+        reliability: 0.91
+        usage_count: 78
+        
+      - id: "design_analysis"
+        name: "设计方案分析"
+        description: "分析设计图、生成实现方案"
+        reliability: 0.87
+        usage_count: 23
+        
+      - id: "information_organization"
+        name: "信息整理"
+        description: "整理信息、生成报告、结构化输出"
+        reliability: 0.90
+        usage_count: 34
+    
+    constraints:
+      - "不直接操作手机应用"
+      - "需要网络连接"
+      - "不操作本地文件系统"
+    
+    status: "online"
+    last_heartbeat: "2025-01-15 14:30:00"
+    current_task: null
+    completed_tasks: 156
+    success_rate: 0.94
+    average_task_duration: "45min"
+    
+    availability:
+      schedule: "24/7"
+      max_concurrent_tasks: 3
+      current_load: 0
+    
+  mobile_claw:
+    id: "mobile_claw"
+    name: "手机端Claw"
+    description: "部署在安卓手机，可访问外网，可操作社交媒体"
+    location: "安卓手机"
+    
+    capabilities:
+      - id: "social_media_posting"
+        name: "社交媒体发布"
+        description: "发布到小红书、Instagram、Facebook、Threads、Medium"
+        platforms:
+          - "xiaohongshu"
+          - "instagram"
+          - "facebook"
+          - "threads"
+          - "medium"
+        reliability: 0.90
+        usage_count: 89
+        
+      - id: "ai_app_integration"
+        name: "AI应用集成"
+        description: "调用ChatGPT、Gemini、Grok等AI应用"
+        apps:
+          - "chatgpt"
+          - "gemini"
+          - "grok"
+        reliability: 0.88
+        usage_count: 67
+        
+      - id: "web_browsing"
+        name: "网页浏览"
+        description: "浏览彭博社、路透社、CNN、小红书等网站"
+        sources:
+          - "bloomberg"
+          - "reuters"
+          - "cnn"
+          - "xiaohongshu"
+          - "medium"
+        reliability: 0.92
+        usage_count: 45
+        
+      - id: "image_generation"
+        name: "图片生成"
+        description: "使用AI应用生成图片"
+        tools:
+          - "chatgpt"
+          - "gemini"
+        reliability: 0.85
+        usage_count: 56
+        
+      - id: "design_generation"
+        name: "设计图生成"
+        description: "使用AI应用生成设计图"
+        reliability: 0.82
+        usage_count: 23
+        
+      - id: "news_browsing"
+        name: "新闻浏览"
+        description: "浏览新闻网站、收集新闻"
+        reliability: 0.90
+        usage_count: 34
+    
+    constraints:
+      - "不操作本地文件系统"
+      - "需要手机在线"
+      - "需要外网访问权限"
+    
+    status: "online"
+    last_heartbeat: "2025-01-15 14:29:00"
+    current_task: null
+    completed_tasks: 89
+    success_rate: 0.91
+    average_task_duration: "30min"
+    
+    availability:
+      schedule: "24/7"
+      max_concurrent_tasks: 2
+      current_load: 0
+    
+  pc_claw:
+    id: "pc_claw"
+    name: "电脑端Claw"
+    description: "部署在家里电脑，可编写代码、执行命令"
+    location: "家里电脑"
+    
+    capabilities:
+      - id: "local_code_writing"
+        name: "本地代码编写"
+        description: "编写、修改、重构本地代码"
+        reliability: 0.95
+        usage_count: 67
+        
+      - id: "command_line_execution"
+        name: "命令行执行"
+        description: "执行PowerShell、脚本、构建命令"
+        reliability: 0.90
+        usage_count: 45
+        
+      - id: "playwright_automation"
+        name: "Playwright自动化"
+        description: "网页自动化操作、测试"
+        reliability: 0.88
+        usage_count: 23
+        
+      - id: "test_execution"
+        name: "测试执行"
+        description: "运行单元测试、集成测试"
+        reliability: 0.92
+        usage_count: 34
+        
+      - id: "local_file_operations"
+        name: "本地文件操作"
+        description: "文件读写、目录管理"
+        reliability: 0.95
+        usage_count: 56
+        
+      - id: "build_execution"
+        name: "构建执行"
+        description: "执行构建命令、打包"
+        reliability: 0.90
+        usage_count: 23
+    
+    constraints:
+      - "不进行网络API调用（可联网但不调用外部API）"
+      - "仅下班时间可用"
+      - "工作时间不可用"
+    
+    status: "offline"  # 工作时间
+    last_heartbeat: "2025-01-15 08:00:00"
+    current_task: null
+    completed_tasks: 67
+    success_rate: 0.93
+    average_task_duration: "1.5h"
+    
+    availability:
+      schedule:
+        weekdays: "18:00-24:00"
+        weekends: "全天"
+      max_concurrent_tasks: 2
+      current_load: 0
+    
+  admin_ai:
+    id: "admin_ai"
+    name: "管理员AI"
+    description: "部署在Kimi群聊，负责任务协调和异常处理"
+    location: "Kimi群聊"
+    
+    capabilities:
+      - id: "task_orchestration"
+        name: "任务编排"
+        description: "分配任务、协调智能体、进度监控"
+        reliability: 0.95
+        usage_count: 200
+        
+      - id: "decision_proxy"
+        name: "决策代理"
+        description: "根据规则自动决策、风险分级"
+        reliability: 0.92
+        usage_count: 150
+        
+      - id: "conflict_resolution"
+        name: "冲突解决"
+        description: "解决智能体冲突、资源竞争"
+        reliability: 0.90
+        usage_count: 15
+        
+      - id: "exception_handling"
+        name: "异常处理"
+        description: "处理异常情况、错误恢复"
+        reliability: 0.88
+        usage_count: 23
+        
+      - id: "user_interaction"
+        name: "用户交互"
+        description: "接收用户指令、发送通知"
+        reliability: 0.95
+        usage_count: 300
+        
+      - id: "knowledge_management"
+        name: "知识管理"
+        description: "管理知识库、记录学习"
+        reliability: 0.90
+        usage_count: 45
+    
+    constraints:
+      - "不直接执行具体任务"
+      - "仅通过群聊交互"
+    
+    status: "online"
+    last_heartbeat: "2025-01-15 14:30:00"
+    current_task: "coordinating"
+    completed_tasks: 200
+    success_rate: 0.95
+    average_task_duration: "5min"
+    
+    availability:
+      schedule: "24/7"
+      max_concurrent_tasks: 10
+      current_load: 1
+
+# 智能体协作矩阵
+collaboration_matrix:
+  
+  # 任务类型 → 智能体分配
+  task_agent_mapping:
+    
+    social_media_post:
+      primary: "mobile_claw"
+      secondary: "online_claw"
+      workflow:
+        - step: "content_generation"
+          agent: "online_claw"
+        - step: "image_generation"
+          agent: "mobile_claw"
+        - step: "posting"
+          agent: "mobile_claw"
+    
+    code_development:
+      primary: "pc_claw"
+      secondary: "online_claw"
+      workflow:
+        - step: "requirements_analysis"
+          agent: "online_claw"
+        - step: "design_generation"
+          agent: "mobile_claw"
+        - step: "design_analysis"
+          agent: "online_claw"
+        - step: "code_writing"
+          agent: "pc_claw"
+        - step: "testing"
+          agent: "pc_claw"
+        - step: "code_push"
+          agent: "online_claw"
+    
+    information_collection:
+      primary: "mobile_claw"
+      secondary: "online_claw"
+      workflow:
+        - step: "browsing"
+          agent: "mobile_claw"
+        - step: "organization"
+          agent: "online_claw"
+        - step: "report_generation"
+          agent: "online_claw"
+    
+    image_generation:
+      primary: "mobile_claw"
+      secondary: "online_claw"
+      workflow:
+        - step: "prompt_generation"
+          agent: "online_claw"
+        - step: "image_generation"
+          agent: "mobile_claw"
+  
+  # 智能体能力互补
+  capability_complement:
+    
+    github_operations:
+      primary: "online_claw"
+      backup: null  # 无备份
+    
+    social_media_posting:
+      primary: "mobile_claw"
+      backup: null
+    
+    local_code_writing:
+      primary: "pc_claw"
+      backup: null
+    
+    content_generation:
+      primary: "online_claw"
+      backup: "mobile_claw"  # 可用ChatGPT
+    
+    image_generation:
+      primary: "mobile_claw"
+      backup: null

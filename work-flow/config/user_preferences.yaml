@@ -1,0 +1,267 @@
+# 用户偏好配置
+# 用于任务模板和智能体决策，让智能体"记住"你的风格
+
+preferences:
+  
+  # 内容创作偏好
+  content_creation:
+    
+    # 小红书
+    xiaohongshu:
+      style: "轻松活泼，适度使用emoji"
+      tone: "专业但友好"
+      language: "中文为主"
+      emoji_usage: "每段1-2个"
+      paragraph_length: "2-3行"
+      content_length: "300-500字"
+      
+      post_time:
+        preferred: "20:00-22:00"
+        best_time: "20:30"
+        avoid: ["08:00-12:00", "14:00-16:00"]
+      
+      hashtags:
+        required: ["#AI", "#科技"]
+        optional: ["#生活", "#干货分享", "#效率工具", "#学习笔记"]
+        max_count: 5
+      
+      image_style: "简约清新"
+      image_count: "1-3张"
+      
+      content_structure:
+        - "开篇引入（1-2句话）"
+        - "核心内容（3-5个要点）"
+        - "实用建议（2-3条）"
+        - "互动引导（提问/投票）"
+      
+      title_pattern: "【{topic}】{emoji} {summary}"
+      title_examples:
+        - "【AI前沿】🚀 ChatGPT最新功能解读"
+        - "【科技生活】💡 让效率翻倍的AI工具"
+    
+    # Instagram
+    instagram:
+      style: "国际化，专业"
+      tone: "友好但正式"
+      language: "英文为主"
+      emoji_usage: "适度使用"
+      content_length: "100-200字"
+      
+      post_time:
+        preferred: "21:00-23:00"
+        best_time: "21:30"
+        avoid: ["06:00-10:00", "12:00-14:00"]
+      
+      hashtags:
+        required: ["#AI", "#Tech"]
+        optional: ["#Life", "#Innovation", "#Future"]
+        max_count: 10
+      
+      image_style: "高质量、专业"
+      image_count: "1张主图"
+    
+    # Facebook
+    facebook:
+      style: "社交化，亲切"
+      tone: "友好"
+      language: "中文或英文"
+      content_length: "200-400字"
+      
+      post_time:
+        preferred: "19:00-21:00"
+        best_time: "20:00"
+      
+      hashtags:
+        optional: ["#AI", "#科技"]
+        max_count: 3
+    
+    # Threads
+    threads:
+      style: "简洁、对话式"
+      tone: "轻松"
+      language: "中文或英文"
+      content_length: "100-200字"
+      
+      post_time:
+        preferred: "20:00-22:00"
+        best_time: "21:00"
+    
+    # Medium
+    medium:
+      style: "深度、专业"
+      tone: "正式"
+      language: "英文"
+      content_length: "1000-2000字"
+      
+      post_time:
+        preferred: "周末"
+        best_time: "Saturday 10:00"
+      
+      structure:
+        - "引言"
+        - "背景"
+        - "核心观点（3-5个）"
+        - "案例/数据支撑"
+        - "结论"
+        - "行动建议"
+  
+  # 代码开发偏好
+  code_development:
+    
+    # 语言和框架
+    preferred_language: "TypeScript"
+    framework: "Vue3"
+    backend_framework: "Spring Boot"
+    
+    # 测试要求
+    testing:
+      required: true
+      coverage_threshold: "80%"
+      types:
+        - "unit_tests"
+        - "integration_tests"
+    
+    # 代码风格
+    code_style:
+      commit_message: "conventional commits"
+      examples:
+        - "feat: add user authentication"
+        - "fix: resolve login timeout issue"
+        - "docs: update API documentation"
+      
+      naming_convention: "camelCase"
+      file_naming: "PascalCase for components"
+    
+    # 代码审查
+    code_review:
+      required: true
+      checklist:
+        - "代码风格一致性"
+        - "单元测试覆盖率"
+        - "性能影响评估"
+        - "安全漏洞检查"
+        - "文档完整性"
+    
+    # 文档要求
+    documentation:
+      required: true
+      types:
+        - "API文档"
+        - "README"
+        - "代码注释"
+    
+    # 性能要求
+    performance:
+      response_time_threshold: "200ms"
+      memory_usage_threshold: "100MB"
+    
+    # 安全要求
+    security:
+      input_validation: true
+      sql_injection_prevention: true
+      xss_prevention: true
+  
+  # 信息收集偏好
+  information_collection:
+    
+    # 信息来源
+    sources:
+      trusted:
+        - "bloomberg"
+        - "reuters"
+        - "cnn"
+        - "medium"
+        - "xiaohongshu"
+      avoid:
+        - "未知来源"
+        - "付费内容"
+    
+    # 收集格式
+    format: "markdown"
+    template: "daily_briefing"
+    
+    # 时间范围
+    time_range: "24h"
+    
+    # 内容要求
+    include:
+      - "来源链接"
+      - "摘要"
+      - "关键观点"
+      - "数据支撑"
+    
+    exclude:
+      - "广告内容"
+      - "付费内容"
+      - "敏感信息"
+    
+    # 报告结构
+    report_structure:
+      - "标题"
+      - "摘要"
+      - "来源列表"
+      - "详细内容"
+      - "关键观点"
+      - "数据图表"
+      - "建议"
+  
+  # 通知偏好
+  notification:
+    
+    # 汇报时间
+    summary_time: "18:00"
+    weekly_report_time: "Sunday 20:00"
+    
+    # 通知渠道
+    channels:
+      - "kimi_group"
+    
+    # 通知类型
+    types:
+      urgent:
+        - "高风险任务确认"
+        - "任务失败"
+        - "智能体离线"
+        - "系统异常"
+      
+      batch:
+        - "已完成任务汇总"
+        - "中风险任务确认"
+        - "每日工作日志"
+        - "每周报告"
+    
+    # 通知格式
+    format: "markdown"
+    include_details: true
+    
+    # 通知频率控制
+    frequency:
+      urgent: "即时"
+      batch: "每日18:00"
+      weekly: "周日20:00"
+    
+    # 避免打扰时段
+    quiet_hours:
+      start: "22:00"
+      end: "08:00"
+      allow_urgent: true  # 紧急通知不受限制
+  
+  # 工作时间偏好
+  work_schedule:
+    
+    # 工作时间（PC Claw可用）
+    pc_claw_available:
+      start: "18:00"
+      end: "24:00"
+      weekends: "全天"
+    
+    # 任务优先级时段
+    priority_periods:
+      high: ["09:00-11:00", "14:00-16:00"]
+      normal: ["11:00-14:00", "16:00-18:00"]
+      low: ["18:00-24:00"]
+    
+    # 批量任务时段
+    batch_periods:
+      - "18:00-20:00"
+      - "周末上午"

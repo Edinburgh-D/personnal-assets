@@ -1,0 +1,393 @@
+# 过载处理配置
+# 解决Kimi API服务过载导致智能体停止工作的问题
+
+overload_handling:
+  
+  # 任务状态持久化（核心）
+  task_persistence:
+    enabled: true
+    
+    # 存储位置
+    storage:
+      location: "github_repo"
+      path: "queue/"
+      
+      files:
+        - "active_tasks.yaml"      # 当前执行中的任务
+        - "paused_tasks.yaml"      # 因过载暂停的任务
+        - "pending_tasks.yaml"     # 待执行的任务
+    
+    # 状态更新频率
+    update_frequency:
+      normal: "每步骤完成后"
+      overload: "立即保存"
+      interval: "30秒"  # 定时保存
+    
+    # 状态保存内容
+    save_content:
+      required:
+        - "task_id"
+        - "current_step"
+        - "step_status"
+        - "intermediate_outputs"  # 中间产物（关键）
+        - "assigned_agent"
+        - "timestamp"
+      
+      optional:
+        - "step_progress"
+        - "estimated_completion"
+        - "agent_status"
+    
+    # 状态文件格式
+    file_format: "yaml"
+    encoding: "utf-8"
+  
+  # 过载检测
+  overload_detection:
+    enabled: true
+    
+    # 检测方式
+    detection_methods:
+      
+      # 方式1：响应时间检测
+      response_time:
+        enabled: true
+        normal_threshold: "5秒"
+        warning_threshold: "20秒"
+        overload_threshold: "30秒"
+        detection_logic: "响应时间超过30秒 → 标记过载"
+      
+      # 方式2：错误响应检测
+      error_response:
+        enabled: true
+        overload_keywords:
+          - "服务过载"
+          - "系统繁忙"
+          - "请稍后再试"
+          - "请求超时"
+          - "网络错误"
+          - "API不可用"
+        detection_logic: "响应包含关键词 → 标记过载"
+      
+      # 方式3：心跳检测（管理员AI）
+      heartbeat:
+        enabled: true
+        interval: "30秒"
+        warning_timeout: "60秒"
+        overload_timeout: "120秒"
+        detection_logic: "智能体120秒无响应 → 标记过载"
+    
+    # 检测频率
+    check_interval: "每请求后"
+    
+    # 检测范围
+    agents:
+      - "online_claw"
+      - "mobile_claw"
+      - "pc_claw"
+      - "admin_ai"
+  
+  # 过载处理流程
+  overload_process:
+    
+    # 步骤1：检测过载
+    step_1_detect:
+      name: "检测过载"
+      trigger: "检测到过载信号"
+      action: "标记智能体状态为overload"
+      notify: "记录过载时间"
+    
+    # 步骤2：保存状态（关键）
+    step_2_save:
+      name: "保存任务状态"
+      trigger: "检测到过载后立即执行"
+      action: "保存当前任务状态到GitHub"
+      priority: "最高"
+      save_to: "queue/paused_tasks.yaml"
+      content:
+        - "task_id"
+        - "current_step"
+        - "step_status"
+        - "intermediate_outputs"
+        - "overload_detected_at"
+        - "overload_agent"
+      timeout: "10秒"  # 必须在10秒内完成保存
+    
+    # 步骤3：通知管理员
+    step_3_notify:
+      name: "通知管理员AI"
+      trigger: "状态保存成功后"
+      action: "发送过载通知到群聊"
+      message: "⚠️ {agent_id} 服务过载，任务 {task_id} 已暂停保存"
+      fallback: "如果通知失败，记录到GitHub"
+    
+    # 步骤4：等待恢复
+    step_4_wait:
+      name: "等待恢复"
+      trigger: "过载处理后"
+      action: "等待Kimi API恢复"
+      max_wait: "30分钟"
+      check_interval: "5分钟"
+      on_timeout: "任务保持暂停状态，等待用户 /recover"
+    
+    # 步骤5：自动恢复
+    step_5_recovery:
+      name: "自动恢复"
+      trigger: "智能体响应恢复"
+      action:
+        - "读取GitHub任务状态"
+        - "识别暂停的任务"
+        - "从断点继续执行"
+        - "通知用户恢复状态"
+      message: "✅ 任务 {task_id} 已自动恢复，从步骤 {step} 继续"
+  
+  # 备用智能体机制
+  backup_agents:
+    enabled: true
+    
+    # 备用规则
+    rules:
+      
+      # Mobile Claw过载
+      mobile_claw_overload:
+        capabilities:
+          social_media_posting:
+            backup: null  # 无备用，任务暂停
+            action: "保存任务，等待恢复"
+          
+          ai_app_integration:
+            backup: "online_claw"  # Online Claw可通过API调用
+            action: "切换到online_claw执行"
+            conditions:
+              - "online_claw可用"
+              - "任务支持API调用"
+          
+          web_browsing:
+            backup: "online_claw"  # Online Claw可获取网页内容
+            action: "切换到online_claw执行"
+            conditions:
+              - "online_claw可用"
+      
+      # Online Claw过载
+      online_claw_overload:
+        capabilities:
+          github_operations:
+            backup: null  # 无备用，任务暂停
+            action: "保存任务，等待恢复"
+          
+          prompt_generation:
+            backup: "mobile_claw"  # Mobile Claw可用ChatGPT生成
+            action: "切换到mobile_claw执行"
+            conditions:
+              - "mobile_claw可用"
+          
+          code_analysis:
+            backup: null  # 无备用，任务暂停
+            action: "保存任务，等待恢复"
+      
+      # PC Claw过载
+      pc_claw_overload:
+        capabilities:
+          local_code_writing:
+            backup: null  # 无备用，任务暂停
+            action: "保存任务，等待恢复"
+          
+          command_line_execution:
+            backup: null  # 无备用，任务暂停
+            action: "保存任务，等待恢复"
+      
+      # 管理员AI过载
+      admin_ai_overload:
+        capabilities:
+          task_orchestration:
+            backup: "online_claw"  # Online Claw临时接管
+            action: "切换到online_claw协调"
+          
+          decision_proxy:
+            backup: "default_rules"  # 使用默认规则
+            action: "应用默认决策规则"
+  
+  # 自动恢复机制
+  auto_recovery:
+    enabled: true
+    
+    # 恢复触发
+    triggers:
+      
+      # 触发1：智能体启动检查
+      agent_startup:
+        enabled: true
+        trigger: "智能体被艾特后响应"
+        action:
+          - "读取GitHub paused_tasks.yaml"
+          - "检查是否有分配给自己的暂停任务"
+          - "如果有，自动恢复执行"
+        priority: "最高"  # 启动后优先检查
+      
+      # 触发2：管理员AI定时检查
+      admin_timer:
+        enabled: true
+        trigger: "每30分钟"
+        action:
+          - "检查所有智能体状态"
+          - "检查paused_tasks.yaml"
+          - "如果智能体恢复，分配任务重启"
+        conditions:
+          - "管理员AI可用"
+      
+      # 触发3：用户发送恢复指令
+      user_command:
+        enabled: true
+        trigger: "用户发送 /recover"
+        action:
+          - "读取所有暂停任务"
+          - "分配给可用智能体"
+          - "从断点继续执行"
+    
+    # 恢复流程
+    recovery_process:
+      step_1: "读取GitHub任务状态"
+      step_2: "识别暂停任务"
+      step_3: "检查智能体状态"
+      step_4: "分配任务"
+      step_5: "从断点继续"
+      step_6: "通知用户"
+    
+    # 恢复指令
+    commands:
+      "/recover":
+        description: "恢复所有暂停任务"
+        action: "读取暂停任务，分配给可用智能体"
+      
+      "/recover {task_id}":
+        description: "恢复特定任务"
+        action: "恢复指定任务"
+      
+      "/recover_status":
+        description: "查看暂停任务状态"
+        action: "显示所有暂停任务及其状态"
+  
+  # 批量调度（预防过载）
+  task_scheduling:
+    enabled: true
+    
+    # 避开高峰时段
+    peak_avoidance:
+      enabled: true
+      
+      # 已知高峰时段
+      known_peak:
+        - "09:00-10:00"   # 早高峰
+        - "14:00-15:00"   # 下午高峰
+        - "20:00-21:00"   # 晚高峰
+      
+      # 推荐执行时段
+      recommended_hours:
+        - "10:00-12:00"
+        - "15:00-17:00"
+        - "22:00-24:00"
+      
+      # 自动检测高峰
+      auto_detect:
+        enabled: true
+        threshold: "响应时间 > 20秒"
+        action: "避开当前时段"
+    
+    # 任务优先级调度
+    priority_scheduling:
+      urgent:
+        execute: "立即执行"
+        avoid_peak: false
+      
+      high:
+        execute: "优先时段执行"
+        avoid_peak: true
+      
+      normal:
+        execute: "低峰时段执行"
+        avoid_peak: true
+      
+      low:
+        execute: "空闲时执行"
+        avoid_peak: true
+    
+    # 批量执行
+    batch_execution:
+      enabled: true
+      batch_size: 3
+      batch_interval: "10分钟"
+      batch_hours:
+        - "10:00-12:00"
+        - "15:00-17:00"
+        - "22:00-24:00"
+
+# 示例：暂停任务状态文件
+paused_tasks_example:
+  
+  - task_id: "task_20250115_001"
+    type: "xiaohongshu_post"
+    status: "paused"
+    reason: "overload"
+    
+    # 进度保存（关键）
+    current_step: 2
+    step_name: "生成图片"
+    step_status: "in_progress"
+    
+    # 中间产物（关键）
+    intermediate_outputs:
+      step_1:
+        name: "生成内容提示词"
+        output: "推荐5个实用AI工具..."
+        saved_at: "2025-01-15 09:10:00"
+    
+    # 执行智能体
+    assigned_agent: "mobile_claw"
+    
+    # 过载信息
+    overload_agent: "mobile_claw"
+    overload_detected_at: "2025-01-15 09:15:00"
+    overload_reason: "Kimi API服务过载"
+    
+    # 时间记录
+    created_at: "2025-01-15 09:00:00"
+    paused_at: "2025-01-15 09:15:00"
+    
+    # 恢复信息
+    recovery_status: "waiting"  # waiting / recovering / recovered
+    recovery_assigned_agent: null
+    recovery_started_at: null
+
+# 过载通知模板
+notification_templates:
+  
+  # 过载发生通知
+  overload_detected: |
+    ⚠️ {agent_id} 服务过载
+    📋 任务 {task_id} 已暂停保存
+    💾 状态已保存到GitHub
+    ⏳ 等待恢复后自动继续
+    📝 无需手动操作
+    
+  # 自动恢复通知
+  auto_recovery: |
+    ✅ 任务 {task_id} 已自动恢复
+    🔄 从步骤 {step} 继续：{step_name}
+    🤖 执行智能体：{agent_id}
+    📝 无需手动操作
+    
+  # 手动恢复通知
+  manual_recovery: |
+    ✅ 任务 {task_id} 已恢复
+    🔄 从步骤 {step} 继续：{step_name}
+    🤖 执行智能体：{agent_id}
+    📝 用户指令：/recover
+    
+  # 暂停任务状态通知
+  paused_status: |
+    📊 暂停任务状态
+    
+    {paused_tasks_list}
+    
+    💡 发送 /recover 恢复所有任务
+    💡 发送 /recover {task_id} 恢复特定任务

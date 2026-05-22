@@ -1,0 +1,375 @@
+# 新增任务模板：深度预研与知识搜集
+# 用于目的性较弱、探索性的知识预研任务
+
+templates:
+  
+  # 深度预研模板
+  deep_research:
+    name: "深度预研"
+    description: "针对某个方向进行深度知识预研，无明确产出目标"
+    risk_level: "low"
+    estimated_time: "2-4h"
+    
+    workflow:
+      - step: 1
+        name: "确定预研方向"
+        agent: "admin_ai"
+        action: "clarify_research_direction"
+        input:
+          topic: "${user_input.topic}"
+          scope: "${user_input.scope}"
+          depth: "${user_input.depth}"
+        output: "research_plan"
+        auto: false  # 需要用户确认预研方向
+      
+      - step: 2
+        name: "收集基础信息"
+        agent: "mobile_claw"
+        action: "collect_basic_info"
+        input:
+          research_plan: "${step_1.output.research_plan}"
+          sources: ["AP News", "Hacker News", "Ground News", "Medium", "Chrome"]
+        output: "basic_info"
+        auto: true
+      
+      - step: 3
+        name: "深度探索"
+        agent: "mobile_claw"
+        action: "deep_exploration"
+        input:
+          basic_info: "${step_2.output.basic_info}"
+          tools: ["ChatGPT", "Claude", "Perplexity", "Grok"]
+        output: "deep_knowledge"
+        auto: true
+      
+      - step: 4
+        name: "整理知识"
+        agent: "online_claw"
+        action: "organize_knowledge"
+        input:
+          deep_knowledge: "${step_3.output.deep_knowledge}"
+          format: "markdown"
+          structure: "知识框架"
+        output: "organized_knowledge"
+        auto: true
+      
+      - step: 5
+        name: "生成预研报告"
+        agent: "online_claw"
+        action: "generate_research_report"
+        input:
+          organized_knowledge: "${step_4.output.organized_knowledge}"
+          include:
+            - "核心概念"
+            - "关键观点"
+            - "相关资源"
+            - "延伸方向"
+            - "应用建议"
+        output: "research_report"
+        auto: true
+      
+      - step: 6
+        name: "沉淀知识库"
+        agent: "online_claw"
+        action: "save_to_knowledge_base"
+        input:
+          research_report: "${step_5.output.research_report}"
+          category: "${user_input.category}"
+        output: "knowledge_entry"
+        auto: true
+    
+    success_criteria:
+      - "生成结构化预研报告"
+      - "沉淀到知识库"
+      - "提供延伸方向建议"
+    
+    quick_command: "/research"
+    example: "/research 主题：AI Agent发展趋势，深度：深度预研"
+  
+  # 知识搜集模板（轻量版）
+  knowledge_collection:
+    name: "知识搜集"
+    description: "快速搜集某个主题的知识，生成摘要"
+    risk_level: "low"
+    estimated_time: "30min-1h"
+    
+    workflow:
+      - step: 1
+        name: "搜集信息"
+        agent: "mobile_claw"
+        action: "collect_info"
+        input:
+          topic: "${user_input.topic}"
+          sources: "${user_input.sources}"
+        output: "raw_info"
+        auto: true
+      
+      - step: 2
+        name: "生成摘要"
+        agent: "online_claw"
+        action: "generate_summary"
+        input:
+          raw_info: "${step_1.output.raw_info}"
+          format: "markdown"
+        output: "knowledge_summary"
+        auto: true
+    
+    success_criteria:
+      - "生成知识摘要"
+      - "信息来源可追溯"
+    
+    quick_command: "/knowledge"
+    example: "/knowledge 主题：量子计算，来源：Hacker News, Medium"
+  
+  # 技术预研模板
+  tech_research:
+    name: "技术预研"
+    description: "针对某项技术进行预研，评估可行性"
+    risk_level: "low"
+    estimated_time: "1-2h"
+    
+    workflow:
+      - step: 1
+        name: "技术调研"
+        agent: "mobile_claw"
+        action: "tech_survey"
+        input:
+          tech_name: "${user_input.tech_name}"
+          sources: ["Hacker News", "Medium", "V2er", "Chrome"]
+        output: "tech_info"
+        auto: true
+      
+      - step: 2
+        name: "可行性分析"
+        agent: "online_claw"
+        action: "feasibility_analysis"
+        input:
+          tech_info: "${step_1.output.tech_info}"
+          context: "${user_input.context}"
+        output: "feasibility_report"
+        auto: true
+      
+      - step: 3
+        name: "生成预研报告"
+        agent: "online_claw"
+        action: "generate_tech_report"
+        input:
+          feasibility_report: "${step_2.output.feasibility_report}"
+          include:
+            - "技术概述"
+            - "优缺点分析"
+            - "应用场景"
+            - "实施建议"
+            - "风险评估"
+        output: "tech_research_report"
+        auto: true
+    
+    success_criteria:
+      - "生成技术预研报告"
+      - "提供可行性评估"
+    
+    quick_command: "/tech"
+    example: "/tech 技术：Rust语言，场景：后端开发"
+  
+  # 行业趋势预研模板
+  trend_research:
+    name: "行业趋势预研"
+    description: "搜集行业趋势信息，生成趋势报告"
+    risk_level: "low"
+    estimated_time: "1-2h"
+    
+    workflow:
+      - step: 1
+        name: "搜集趋势信息"
+        agent: "mobile_claw"
+        action: "collect_trends"
+        input:
+          industry: "${user_input.industry}"
+          sources: ["AP News", "Ground News", "Medium", "LinkedIn"]
+        output: "trend_info"
+        auto: true
+      
+      - step: 2
+        name: "分析趋势"
+        agent: "online_claw"
+        action: "analyze_trends"
+        input:
+          trend_info: "${step_1.output.trend_info}"
+        output: "trend_analysis"
+        auto: true
+      
+      - step: 3
+        name: "生成趋势报告"
+        agent: "online_claw"
+        action: "generate_trend_report"
+        input:
+          trend_analysis: "${step_2.output.trend_analysis}"
+        output: "trend_report"
+        auto: true
+    
+    success_criteria:
+      - "生成趋势报告"
+      - "提供未来预测"
+    
+    quick_command: "/trend"
+    example: "/trend 行业：AI，时间范围：2025年"
+  
+  # 竞品分析模板
+  competitor_research:
+    name: "竞品分析"
+    description: "搜集竞品信息，生成竞品分析报告"
+    risk_level: "low"
+    estimated_time: "1-2h"
+    
+    workflow:
+      - step: 1
+        name: "搜集竞品信息"
+        agent: "mobile_claw"
+        action: "collect_competitor_info"
+        input:
+          product_type: "${user_input.product_type}"
+          sources: ["LinkedIn", "Medium", "Chrome"]
+        output: "competitor_info"
+        auto: true
+      
+      - step: 2
+        name: "分析竞品"
+        agent: "online_claw"
+        action: "analyze_competitors"
+        input:
+          competitor_info: "${step_1.output.competitor_info}"
+        output: "competitor_analysis"
+        auto: true
+      
+      - step: 3
+        name: "生成竞品报告"
+        agent: "online_claw"
+        action: "generate_competitor_report"
+        input:
+          competitor_analysis: "${step_2.output.competitor_analysis}"
+        output: "competitor_report"
+        auto: true
+    
+    success_criteria:
+      - "生成竞品分析报告"
+      - "提供差异化建议"
+    
+    quick_command: "/competitor"
+    example: "/competitor 产品：AI写作工具"
+  
+  # 学习路径规划模板
+  learning_path:
+    name: "学习路径规划"
+    description: "针对某个领域规划学习路径"
+    risk_level: "low"
+    estimated_time: "30min"
+    
+    workflow:
+      - step: 1
+        name: "搜集学习资源"
+        agent: "mobile_claw"
+        action: "collect_learning_resources"
+        input:
+          field: "${user_input.field}"
+          sources: ["Medium", "Hacker News", "Chrome"]
+        output: "learning_resources"
+        auto: true
+      
+      - step: 2
+        name: "规划学习路径"
+        agent: "online_claw"
+        action: "plan_learning_path"
+        input:
+          learning_resources: "${step_1.output.learning_resources}"
+          current_level: "${user_input.current_level}"
+          target_level: "${user_input.target_level}"
+        output: "learning_path"
+        auto: true
+    
+    success_criteria:
+      - "生成学习路径"
+      - "提供资源推荐"
+    
+    quick_command: "/learning"
+    example: "/learning 领域：AI Agent开发，当前：初级，目标：高级"
+
+# 新增快捷指令
+new_commands:
+  
+  "/research":
+    template: "deep_research"
+    description: "深度预研某个方向"
+    usage: "/research 主题：{topic}，深度：{depth}"
+    example: "/research 主题：AI Agent发展趋势，深度：深度预研"
+    priority: "normal"
+    auto_approve: true
+  
+  "/knowledge":
+    template: "knowledge_collection"
+    description: "快速搜集知识"
+    usage: "/knowledge 主题：{topic}，来源：{sources}"
+    example: "/knowledge 主题：量子计算，来源：Hacker News, Medium"
+    priority: "normal"
+    auto_approve: true
+  
+  "/tech":
+    template: "tech_research"
+    description: "技术预研"
+    usage: "/tech 技术：{tech_name}，场景：{context}"
+    example: "/tech 技术：Rust语言，场景：后端开发"
+    priority: "normal"
+    auto_approve: true
+  
+  "/trend":
+    template: "trend_research"
+    description: "行业趋势预研"
+    usage: "/trend 行业：{industry}，时间：{time_range}"
+    example: "/trend 行业：AI，时间：2025年"
+    priority: "normal"
+    auto_approve: true
+  
+  "/competitor":
+    template: "competitor_research"
+    description: "竞品分析"
+    usage: "/competitor 产品：{product_type}"
+    example: "/competitor 产品：AI写作工具"
+    priority: "normal"
+    auto_approve: true
+  
+  "/learning":
+    template: "learning_path"
+    description: "学习路径规划"
+    usage: "/learning 领域：{field}，当前：{current}，目标：{target}"
+    example: "/learning 领域：AI Agent开发，当前：初级，目标：高级"
+    priority: "normal"
+    auto_approve: true
+
+# 预研任务的特点
+research_characteristics:
+  
+  # 目的性较弱
+  weak_purpose:
+    description: "没有明确的产出目标，更多是探索性学习"
+    approach:
+      - "广泛搜集信息"
+      - "深度探索"
+      - "整理知识"
+      - "沉淀知识库"
+  
+  # 长期价值
+  long_term_value:
+    description: "预研成果可能在未来某个任务中用到"
+    storage: "knowledge_base"
+    retrieval: "通过 /search 或 /kb 检索"
+  
+  # 持续更新
+  continuous_update:
+    description: "预研知识可以持续补充和更新"
+    command: "/update_research {research_id}"
+  
+  # 灵活深度
+  flexible_depth:
+    levels:
+      - "quick": "快速搜集，30分钟"
+      - "normal": "标准预研，1-2小时"
+      - "deep": "深度预研，2-4小时"
