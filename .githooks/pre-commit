@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+
+repo_root=$(git rev-parse --show-toplevel)
+script_path="$repo_root/scripts/update-knowledge-index.ps1"
+
+if command -v pwsh >/dev/null 2>&1; then
+  pwsh -NoProfile -File "$script_path" -RequireGitTrackedEntries
+elif command -v powershell.exe >/dev/null 2>&1; then
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$script_path" -RequireGitTrackedEntries
+else
+  echo "ERROR: PowerShell is required to update the knowledge-base indexes." >&2
+  exit 1
+fi
+
+git -C "$repo_root" add -- index.html knowledge-bases/index.html
+

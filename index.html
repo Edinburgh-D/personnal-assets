@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
@@ -225,12 +225,11 @@
         <h1>个人知识库</h1>
         <p class="lede">把本地生成的知识库整理成一个可在线访问的目录。每个主题保持独立页面结构，首页只负责导航、状态和后续扩展。</p>
         <div class="quick-actions">
-          <a class="button primary" href="knowledge-bases/chinese-history-5000-years/">阅读中国史</a>
-          <a class="button" href="knowledge-bases/">查看目录</a>
+          <a class="button primary" href="knowledge-bases/">查看知识库目录</a>
         </div>
       </div>
       <aside class="status-panel" aria-label="知识库总数">
-        <div class="status-row status-total"><strong>1</strong><span>个知识库</span></div>
+        <div class="status-row status-total"><strong data-kb-count>2</strong><span>个知识库</span></div>
       </aside>
     </header>
 
@@ -240,13 +239,24 @@
         <p class="section-note">选择一个主题进入阅读。后续新增完成的知识库会继续出现在这里。</p>
       </header>
       <div class="kb-list">
-        <a class="kb-item" href="knowledge-bases/chinese-history-5000-years/">
+        <!-- AUTO:KNOWLEDGE_BASE_LIST:START -->
+        <a class="kb-item" href="knowledge-bases/chinese-history-5000-years/main.html">
           <div class="kb-copy">
             <h3>中国上下五千年历史</h3>
-            <p>面向普通读者的中国史脉络知识库，包含朝代演进、关键制度、人物事件和学习路径。</p>
-            <div class="tags"><span class="tag">历史</span><span class="tag">多页面</span><span class="tag">内容清单</span></div>
+            <p>中国上下五千年历史知识库：从远古文明到近现代，纵览夏商周、春秋战国、秦汉、魏晋南北朝、隋唐、宋元、明清的历史脉络、关键事件与文明演进。</p>
+            <div class="tags"><span class="tag">多分支</span><span class="tag">L2</span><span class="tag">10 页</span></div>
           </div>
+          <span class="availability ready">可读</span>
         </a>
+        <a class="kb-item" href="knowledge-bases/test-engineer-moat/main.html">
+          <div class="kb-copy">
+            <h3>AI时代测试工程师核心能力护城河构建</h3>
+            <p>AI与Agent时代下，测试工程师如何构建不可替代的核心竞争力。系统化学习路径，从AI冲击分析到护城河策略。</p>
+            <div class="tags"><span class="tag">多分支</span><span class="tag">L3</span><span class="tag">9 页</span></div>
+          </div>
+          <span class="availability ready">可读</span>
+        </a>
+        <!-- AUTO:KNOWLEDGE_BASE_LIST:END -->
       </div>
     </section>
   </main>
