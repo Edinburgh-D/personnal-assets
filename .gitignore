@@ -9,4 +9,4 @@ server.err.log
 test-results/
 .agents/
 .codex/
-knowledge-bases/
+

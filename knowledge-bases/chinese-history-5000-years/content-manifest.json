@@ -1,0 +1,127 @@
+{
+  "topic": "中国上下五千年历史",
+  "skillVersion": "2.1.0",
+  "createdAt": "2026-08-02",
+  "type": "multi-branch",
+  "targetReader": "普通大众",
+  "depthLevel": "L2",
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "中国上下五千年历史 · 知识库总览",
+      "coreConcepts": ["五千年说法的由来", "朝代更迭", "三种历史分期方式", "学习路径"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3500,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["考古学", "世界史"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "prehistoric-xia-shang-zhou.html",
+      "title": "远古至三代",
+      "coreConcepts": ["三皇五帝", "大禹治水", "家天下", "甲骨文", "青铜文明", "西周分封", "礼乐制度"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3200,
+      "citationCount": 3,
+      "sourceTypes": ["一手资料", "学术", "综合整理"],
+      "crossDomainLinks": ["考古学", "文明比较"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "spring-autumn-warring-states.html",
+      "title": "春秋战国",
+      "coreConcepts": ["春秋五霸", "战国七雄", "商鞅变法", "百家争鸣", "儒道墨法兵"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3800,
+      "citationCount": 3,
+      "sourceTypes": ["一手资料", "学术", "综合整理"],
+      "crossDomainLinks": ["轴心时代", "制度经济学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "qin-han.html",
+      "title": "秦汉帝国",
+      "coreConcepts": ["秦始皇统一", "郡县制", "书同文车同轨", "焚书坑儒", "楚汉之争", "汉武帝", "独尊儒术", "丝绸之路"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3600,
+      "citationCount": 2,
+      "sourceTypes": ["一手资料", "综合整理"],
+      "crossDomainLinks": ["政治学", "经济史"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "wei-jin-southern-northern.html",
+      "title": "魏晋南北朝",
+      "coreConcepts": ["三国", "八王之乱", "永嘉南渡", "门阀士族", "五胡十六国", "北魏孝文帝改革", "民族大融合"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3200,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["人类学", "艺术史"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "sui-tang.html",
+      "title": "隋唐盛世",
+      "coreConcepts": ["科举制", "大运河", "贞观之治", "武则天", "开元盛世", "安史之乱", "三省六部制", "唐诗"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3500,
+      "citationCount": 3,
+      "sourceTypes": ["一手资料", "综合整理"],
+      "crossDomainLinks": ["文学史", "比较政治学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "song-yuan.html",
+      "title": "宋元时期",
+      "coreConcepts": ["北宋商业革命", "交子", "王安石变法", "南宋偏安", "蒙古帝国", "元朝四等人制", "马可波罗"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3300,
+      "citationCount": 2,
+      "sourceTypes": ["一手资料", "综合整理"],
+      "crossDomainLinks": ["全球史", "蒙古帝国与全球化"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "ming-qing.html",
+      "title": "明清帝国",
+      "coreConcepts": ["废除丞相", "郑和下西洋", "张居正改革", "康乾盛世", "闭关锁国", "鸦片战争", "辛亥革命"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3500,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["全球史·大分流", "制度经济学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "modern.html",
+      "title": "近现代",
+      "coreConcepts": ["辛亥革命", "五四运动", "抗日战争", "新中国成立", "改革开放"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 3200,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["发展经济学", "国际关系学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "sources.html",
+      "title": "参考来源",
+      "coreConcepts": ["正史推荐", "通史著作", "纪录片", "博物馆", "来源标注"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 1800,
+      "citationCount": 6,
+      "sourceTypes": ["一手资料", "学术", "综合整理"],
+      "crossDomainLinks": [],
+      "qualityStatus": "pass"
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 10,
+    "totalEstimatedTextCount": 32800,
+    "totalCitationCount": 27,
+    "emptyPhraseRatio": "under 5%",
+    "validationStatus": "pass"
+  }
+}
