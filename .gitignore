@@ -1,0 +1,12 @@
+﻿node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+debug.log
+server.out.log
+server.err.log
+test-results/
+.agents/
+.codex/
+knowledge-bases/
