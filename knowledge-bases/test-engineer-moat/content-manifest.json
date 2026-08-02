@@ -1,0 +1,116 @@
+{
+  "topic": "AI时代测试工程师核心能力护城河构建",
+  "skillVersion": "3.3.0",
+  "createdAt": "2026-08-02",
+  "type": "multi-branch",
+  "targetReader": "测试工程师（专业人士）",
+  "depthLevel": "L3",
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "Test Engineer Moat in the AI Era",
+      "coreConcepts": ["护城河概念", "AI测试演进", "六大能力框架", "学习路径"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 2800,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": [],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "ai-agent-impact.html",
+      "title": "AI & Agent Impact Analysis",
+      "coreConcepts": ["AI测试四波演进", "自动化替代边界", "Agent测试特点", "不可替代能力"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3500,
+      "citationCount": 3,
+      "sourceTypes": ["综合整理", "行业资料"],
+      "crossDomainLinks": ["组织心理学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "testing-fundamentals.html",
+      "title": "Core Testing Fundamentals",
+      "coreConcepts": ["测试设计思维", "缺陷分析", "质量建模", "探索性测试"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3800,
+      "citationCount": 3,
+      "sourceTypes": ["综合整理", "学术"],
+      "crossDomainLinks": ["认知科学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "ai-assisted-testing.html",
+      "title": "AI-Assisted Testing Toolkit",
+      "coreConcepts": ["AI用例生成", "缺陷预测", "自愈自动化", "工具链选型"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3400,
+      "citationCount": 4,
+      "sourceTypes": ["综合整理", "行业资料"],
+      "crossDomainLinks": ["人机交互"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "agent-testing-challenges.html",
+      "title": "Agent Testing Challenges",
+      "coreConcepts": ["非确定性测试", "多模态测试", "Agent行为评估", "安全对齐测试"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3600,
+      "citationCount": 4,
+      "sourceTypes": ["综合整理", "学术"],
+      "crossDomainLinks": ["AI安全伦理"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "business-domain-expertise.html",
+      "title": "Business Domain Expertise",
+      "coreConcepts": ["质量架构师", "行业壁垒", "产品思维", "质量量化"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 2800,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["商业管理"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "soft-skills-evolution.html",
+      "title": "Soft Skills Evolution",
+      "coreConcepts": ["跨角色协作", "技术领导力", "质量文化", "冲突处理"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3000,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理", "学术"],
+      "crossDomainLinks": ["组织行为学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "career-development.html",
+      "title": "Career Development Strategy",
+      "coreConcepts": ["T型人才路径", "学习路线图", "护城河评估", "30天行动"],
+      "depthLevel": "L3",
+      "estimatedTextCount": 3200,
+      "citationCount": 2,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": ["经济学"],
+      "qualityStatus": "pass"
+    },
+    {
+      "file": "sources.html",
+      "title": "Sources & References",
+      "coreConcepts": ["推荐书籍", "在线课程", "论文资源", "社区会议"],
+      "depthLevel": "L2",
+      "estimatedTextCount": 1500,
+      "citationCount": 15,
+      "sourceTypes": ["综合整理"],
+      "crossDomainLinks": [],
+      "qualityStatus": "pass"
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 9,
+    "totalEstimatedTextCount": 27600,
+    "totalCitationCount": 37,
+    "emptyPhraseRatio": "under 5%",
+    "validationStatus": "pass"
+  }
+}
