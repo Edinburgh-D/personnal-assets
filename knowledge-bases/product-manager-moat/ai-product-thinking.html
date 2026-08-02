@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Thinking &amp; Agent Design - Product Manager Skills in AI Era</title>
+    <meta name="description" content="AI原生产品设计范式：LLM应用模式、Agent交互设计、AI产品评估迭代、负责任AI伦理——产品经理在AI时代的核心增量技能。">
+    <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+    <div id="readingProgress" class="progress-bar" style="width:0%"></div>
+
+    <nav class="nav-bar">
+        <div class="nav-bar-group">
+            <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
+            <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
+        </div>
+        <div class="nav-bar-group">
+            <button class="nav-btn nav-btn--dark" id="darkModeBtn">Dark</button>
+        </div>
+    </nav>
+
+    <div class="nav-panel" id="navPanel">
+        <h3>PM Skills in AI Era</h3>
+        <a href="main.html" class="nav-link"><div class="nav-link-title">Home</div><div class="nav-link-desc">Knowledge base overview</div></a>
+        <a href="user-insight.html" class="nav-link"><div class="nav-link-title">User Insight</div><div class="nav-link-desc">Research, empathy, need discovery</div></a>
+        <a href="product-strategy.html" class="nav-link"><div class="nav-link-title">Product Strategy</div><div class="nav-link-desc">Vision, roadmap, prioritization</div></a>
+        <a href="data-driven.html" class="nav-link"><div class="nav-link-title">Data-Driven Decisions</div><div class="nav-link-desc">Metrics, experiments, analytics</div></a>
+        <a href="tech-business-bridge.html" class="nav-link"><div class="nav-link-title">Tech x Business</div><div class="nav-link-desc">Engineering literacy, business translation</div></a>
+        <a href="ai-product-thinking.html" class="nav-link"><div class="nav-link-title">AI Product Thinking</div><div class="nav-link-desc">AI-native design, Agent UX, LLM patterns</div></a>
+        <a href="stakeholder-leadership.html" class="nav-link"><div class="nav-link-title">Leadership &amp; Stakeholders</div><div class="nav-link-desc">Influence, alignment, executive comms</div></a>
+        <a href="career-moat.html" class="nav-link"><div class="nav-link-title">Career Moat</div><div class="nav-link-desc">AI-era defensibility, skill stacking</div></a>
+        <a href="sources.html" class="nav-link"><div class="nav-link-title">Sources</div><div class="nav-link-desc">Books, courses, references</div></a>
+    </div>
+
+    <aside class="sidebar-nav">
+        <h4>On This Page</h4>
+        <a href="#ai影响">AI对产品管理的影响</a>
+        <a href="#llm模式">LLM应用设计模式</a>
+        <a href="#agent设计">Agent交互设计</a>
+        <a href="#评估迭代">AI产品评估与迭代</a>
+        <a href="#ai伦理">AI伦理与负责任设计</a>
+        <a href="#跨域认知">跨域链接：认知科学</a>
+        <a href="#读者影响">阅读者影响</a>
+    </aside>
+
+    <div class="container" style="padding-top:3.5rem">
+        <div class="breadcrumb"><a href="main.html">Home</a> &gt; <span>AI Product Thinking</span></div>
+    </div>
+
+    <div class="container" style="padding-top:0.5rem">
+        <header>
+            <h1>AI Product Thinking &amp; Agent Design</h1>
+            <p class="subtitle">AI原生产品的设计范式、LLM应用模式、Agent交互设计——产品经理在AI时代的核心增量技能。</p>
+        </header>
+
+        <section id="ai影响">
+            <h2>AI对产品管理的影响</h2>
+            <p>AI正在重塑产品经理的日常工作流，但更重要的是——它正在重新定义"产品"本身是什么。在<strong>产品发现（Product Discovery）</strong>阶段，AI可以加速用户研究：LLM能自动归纳数百次用户访谈中的主题和情绪模式、从客服工单中提取高频痛点、甚至根据产品描述生成初始的用户故事和验收标准。在<strong>产品交付（Product Delivery）</strong>阶段，AI工具已能辅助PRD撰写——从一句话的需求描述展开为结构化的需求文档，包括功能描述、边缘情况和验收条件。但这不意味着PM可以甩手不管——AI生成的内容需要严格审阅，AI不理解复杂的组织背景、历史决策的积淀、以及利益相关者之间微妙的权力动态。</p>
+            <p>更根本的变化发生在<strong>产品定义层面</strong>：当AI成为产品的核心组件而非辅助功能时，"产品管理"的含义发生了变化。传统PM管理的是确定性系统——你设计一个按钮，点击后会发生一个可预测的动作。AI产品经理管理的是<strong>概率性系统</strong>——同一个输入可能产生不同的输出，质量不是二元的（对/错），而是连续的（这个回答的有用程度是7/10）。这要求全新的产品思维：你不能用传统测试用例验证产品行为、你需要在不确定性中设定用户期望、你的"Bug"不再是"功能不符合规格"而是"输出在某个场景下对用户造成了伤害"。这种范式转变是AI时代PM最本质的能力跃迁。</p>
+
+            <div class="steps-flow">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <h5>发现</h5>
+                    <p>AI加速用户研究与需求洞察</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <h5>定义</h5>
+                    <p>概率性产品而非确定性产品</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <h5>设计</h5>
+                    <p>Agent UX与对话交互模式</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <h5>评估</h5>
+                    <p>Evals而非传统QA测试</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">5</div>
+                    <h5>迭代</h5>
+                    <p>基于人类反馈的持续改进</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="llm模式">
+            <h2>LLM应用设计模式</h2>
+            <p>产品经理设计AI功能时不需要训练模型，但需要理解不同LLM应用模式的能力边界和适用场景，这样才能与技术团队有效沟通并做出正确的产品决策。<strong>提示工程（Prompt Engineering）</strong>是最基础的模式——通过精心设计输入指令来控制模型输出。对于简单的文本生成、摘要、分类任务，好的提示设计就能取得不错的效果。但提示工程的局限在于：模型的知识截止于训练数据，无法访问实时信息或企业内部知识。</p>
+            <p><strong>RAG（Retrieval-Augmented Generation，检索增强生成）</strong>是目前企业AI应用中最主流的模式。它的核心思路是：在用户提问后，先从知识库中检索相关文档，再将检索到的文档作为上下文提供给LLM生成回答。这使得AI能够基于企业内部的最新知识回答问题——例如，让用户用自然语言查询公司政策文档、产品手册、或历史工单。PM需要理解RAG的链条：文档切分策略（chunking）影响检索精度、嵌入模型（embedding model）决定了语义匹配的质量、检索和重排序（reranking）策略决定了最终传递给LLM的上下文质量。如果检索到的文档与用户问题不相关，LLM再强大也无法给出正确答案。</p>
+            <p><strong>Agent（智能代理）模式</strong>代表了更高级的应用形态：模型不仅生成文本，还能主动规划任务、调用外部工具（搜索、计算、API调用）、根据反馈自我修正。例如，一个旅行规划Agent能先搜索目的地信息、再查询航班价格、最后比较酒店选项，整个过程不需要用户逐步指导。设计Agent的关键挑战在于：如何确保Agent在多步骤任务中不偏离目标、如何在Agent出错时优雅降级、如何设定Agent的权限边界防止它做出危险操作（如未经确认就发起支付）。Agent模式是AI产品设计的下一个前沿。</p>
+
+            <table class="comparison-table">
+                <tr><th>设计模式</th><th>核心原理</th><th>适用场景</th><th>PM需关注的风险</th></tr>
+                <tr><td>Prompt Engineering</td><td>精心设计输入指令控制输出</td><td>文本生成、摘要、分类</td><td>知识截止、prompt注入攻击</td></tr>
+                <tr><td>RAG</td><td>检索+LLM生成</td><td>知识库问答、文档助手</td><td>检索质量、chunking策略</td></tr>
+                <tr><td>Fine-tuning</td><td>领域数据微调模型</td><td>特定风格、专业术语适配</td><td>成本高、更新模型需重训</td></tr>
+                <tr><td>Agent + Tools</td><td>模型自主调用工具</td><td>多步任务、自动化流程</td><td>安全性、任务偏离、权限控制</td></tr>
+                <tr><td>Multi-Agent</td><td>多个Agent协作分工</td><td>复杂工作流、角色分工</td><td>协调成本、错误传播</td></tr>
+            </table>
+        </section>
+
+        <section id="agent设计">
+            <h2>Agent交互设计</h2>
+            <p>设计基于AI Agent的用户体验与传统UI设计有着根本性的不同。最核心的挑战在于<strong>处理非确定性</strong>：传统产品中的按钮点击行为是可预测的，但Agent的每次输出可能不同——有时候给出完美的答案，有时候产生幻觉（hallucination），有时候拒绝回答。Agent UX的关键不是消除不确定性（这在当前技术下不可能），而是帮助用户<strong>管理不确定性</strong>。具体做法包括：展示AI的不确定性程度（例如通过概率或置信度指示）、提供引用来源让用户验证信息、在关键决策点（如"是否发送这封AI生成的邮件"）设置人工确认步骤。</p>
+            <p><strong>信任与透明的设计</strong>是Agent产品成功的前提。用户初次接触AI产品时的信任度通常处于两个极端：要么过度信任（将AI输出当作绝对事实），要么完全不信任（因为一次错误就放弃使用）。优秀的设计需要引导用户走向中间地带——"谨慎但开放"。具体机制包括：渐进式揭示（先展示Agent能做什么，让用户逐步建立信心）、可解释性（用人类可理解的语言解释Agent为什么做出了某个决定）、以及错误处理UX——当Agent出错时，不仅要告诉用户"出了错"，还要提供具体的补救路径（"你想让我重试、换个方式、还是转人工？"）。</p>
+
+            <div class="concept-cards">
+                <div class="concept-card">
+                    <h4>不确定性沟通</h4>
+                    <p>通过置信度指示、引用来源、措辞选择（"我认为"而非"事实是"）来传达AI判断的可靠程度。不要让AI看起来比它实际上更确定。</p>
+                </div>
+                <div class="concept-card">
+                    <h4>渐进式信任建立</h4>
+                    <p>新用户先接触低风险功能（如生成草稿），在使用中建立信任后再开放高风险功能（如自动发送邮件）。不要一次性暴露所有能力。</p>
+                </div>
+                <div class="concept-card">
+                    <h4>优雅错误处理</h4>
+                    <p>错误发生时：先道歉但不过度、提供具体补救选项、保留上下文避免用户从头开始。错误体验决定了用户是否会给你的产品第二次机会。</p>
+                </div>
+                <div class="concept-card">
+                    <h4>对话状态管理</h4>
+                    <p>多轮对话中保持上下文连贯性、允许用户纠错回退、在多步骤任务中清晰显示进度。用户需要始终知道"我们到哪了"。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="评估迭代">
+            <h2>AI产品评估与迭代</h2>
+            <p>传统产品的质量评估基于明确的功能规格说明——登录按钮是否跳转到正确页面？支付流程是否扣了正确的金额？这些问题的答案是非黑即白的。AI产品的质量评估完全是另一种范式：你需要评估"生成内容的质量"——这是一个模糊的、多维度的、依赖上下文的问题。因此，<strong>Evals（评估体系）</strong>成为AI产品团队最重要的基础设施。一套好的Evals通常包含两个层面：<strong>自动化评估</strong>——通过规则检查（如回答长度、关键词覆盖率）、模型裁判（用另一个LLM对输出打分）、或精确匹配（对于有确定答案的任务）；<strong>人类评估</strong>——由领域专家或标注团队对输出质量进行多维打分（准确性、完整性、语气、安全性），这是最昂贵但也是最可靠的评估手段。</p>
+            <p>AI产品的A/B测试也有独特性。由于相同输入可能产生不同输出，即使A组和B组使用完全相同的模型，也存在自然的输出方差。这意味着观察到的微小差异可能只是随机波动而非真实的版本改进。另外，AI产品的指标设计需要超越传统的参与度指标：一个AI客服Agent的"解决率"远比"对话轮次"重要——如果Agent与用户来回20轮才解决问题，解决率100%也不代表好体验。你需要定义<strong>质量感知指标</strong>：用户满意度评分、人工转接率、用户修正Agent输出的频率——这些指标能捕捉传统产品指标遗漏的信息。</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">2层</div>
+                    <div class="stat-label">评估体系</div>
+                    <div class="stat-desc">自动化评估 + 人类评估</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">解决率</div>
+                    <div class="stat-label">核心质量指标</div>
+                    <div class="stat-desc">比对话轮次更重要</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">转人工率</div>
+                    <div class="stat-label">反向指标</div>
+                    <div class="stat-desc">衡量Agent能力边界</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">修正频率</div>
+                    <div class="stat-label">信任指标</div>
+                    <div class="stat-desc">用户修改AI输出的频率</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai伦理">
+            <h2>AI伦理与负责任设计</h2>
+            <p>产品经理在AI伦理中扮演着关键角色——工程师可能关注技术实现的可行性，而PM必须关注技术的社会影响。AI伦理不是挂在墙上的价值观宣言，而是体现在每个产品决策中的具体选择。<strong>偏见与公平（Bias & Fairness）</strong>是最常见的伦理挑战：如果用于训练的历史招聘数据中男性候选人被录用率更高，那么基于此数据训练的AI招聘系统会系统性地压低女性候选人的评分——这不是模型"变坏了"，而是模型忠实学习了一个有偏见的世界。PM需要推动团队在模型上线前进行偏见审计：从不同人口统计维度（性别、年龄、地域、教育背景）检查模型输出是否存在系统性差异。</p>
+            <p><strong>透明度与可解释性</strong>是另一个关键维度。用户有权知道他们正在与AI交互——隐藏AI身份可能短期内提升体验，但长期侵蚀信任。另外，当AI做出对用户有重大影响的决定（如贷款审批、简历筛选、医疗建议）时，产品应能给出可理解的理由——"你的贷款申请未通过，因为......" 而不是一个用户无法理解的黑箱回答。PM应推动团队采用可解释性技术（如输出关键特征归因），并将这些解释以一种对普通用户有意义的方式呈现。<strong>隐私与数据治理</strong>也不可忽视：用户输入给AI的数据是否会被用于模型训练？用户是否有权删除自己的数据？在欧盟GDPR和越来越多数据保护法规的背景下，这些问题的答案影响产品是否能在特定市场合法运营。</p>
+
+            <div class="warning-box">
+                <h4 style="color:#b91c1c;font-weight:600;margin-bottom:0.5rem">AI产品上线前的伦理检查清单</h4>
+                <ul>
+                    <li><strong>偏见审计</strong>：是否按人口统计维度检查了模型输出的公平性？</li>
+                    <li><strong>透明度</strong>：用户是否清楚自己在与AI交互？AI决策是否可解释？</li>
+                    <li><strong>隐私合规</strong>：用户数据如何处理和存储？是否符合GDPR等法规？</li>
+                    <li><strong>安全防护</strong>：是否对Prompt注入、越狱等攻击进行了安全测试？</li>
+                    <li><strong>人类兜底</strong>：高风险场景是否有明确的人工介入路径？</li>
+                    <li><strong>持续监控</strong>：上线后是否有机制监控输出质量和用户投诉？</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="跨域认知">
+            <h2>Cross-Domain：认知科学与AI交互设计</h2>
+            <p>AI产品设计可以从<strong>认知科学</strong>中汲取深刻洞见。人类与AI的交互方式很大程度上受到人类-人类交互心智模型的投射——我们下意识地将人类属性（意图、情感、可靠性）赋予AI系统，这被称为<strong>拟人化偏差（Anthropomorphism Bias）</strong>。理解这一点对产品设计至关重要：如果AI的语气过于"人性化"（使用第一人称、表达主观感受），用户会对AI的可靠性产生不切实际的预期，一旦AI出错，用户的失望程度会远超看到冰冷机器出错的反应。Conversely，如果AI的语气过于机械（完全客观、无任何人格化特征），用户可能会觉得产品"不自然""难用"。找到这个平衡点是Agent产品设计的艺术。</p>
+            <p>认知科学中的<strong>信任校准（Trust Calibration）</strong>概念同样适用。在人类-人类协作中，信任是通过反复互动逐步建立的——观察对方在不确定情境下的行为、测试对方在压力下的可靠性。AI产品的信任建立也应遵循同样的逻辑：从小范围、低风险的任务开始，让用户逐步建立对AI能力的准确认知（既不过高也不过低）。此外，<strong>认知负荷理论</strong>提醒我们：AI输出信息的呈现方式必须适应人类的信息处理能力。长段落的AI生成文本比要点列表更难让用户审阅和验证——即使信息是正确的，用户在面对"信息洪流"时的自然反应是放弃审阅而直接接受，这可能带来风险。一个好的AI产品设计师会考虑——如何将AI的输出结构化，让用户的审阅和验证行为变得容易而非困难。</p>
+        </section>
+
+        <section id="读者影响">
+            <h2>对阅读者的影响</h2>
+            <p>AI产品管理不是未来的事情——它正在发生。如果你当前所在的团队还没有AI功能规划，你作为PM应该主动成为这个领域的先行者。这不需要你成为机器学习专家，但需要你建立起理解AI产品设计独特性的思维框架：非确定性、概率性评估、信任建立、伦理权衡——这些概念会成为你未来5年代替"功能优先级排序"的核心工作语言。</p>
+            <p>本月可以立即动手做的三个AI产品实验：<strong>第一</strong>，选取你产品中最常见的3个用户问题，用ChatGPT或Claude构建一个简单的RAG原型（将你的帮助文档作为知识库，让AI基于文档回答问题），然后找5个同事测试——观察什么情况下AI的回答准确，什么情况下产生幻觉，这比读任何论文都更能帮你建立对AI能力的直觉。<strong>第二</strong>，用AI工具辅助写一份完整的PRD——先用自然语言描述功能需求，让AI生成结构化文档，然后你自己审阅修改。记录AI在哪些部分做得好（结构、边界条件列举），哪些部分做得差（组织特定的上下文、约束条件），这会帮你理解AI在PM工作中的真实能力边界。<strong>第三</strong>，选择一个你日常使用的AI产品（如Notion AI或GitHub Copilot），花两周时间刻意使用并记录每次使用后的感受——什么时候你觉得"好用"？什么时候你觉得"不敢信任"？这些感受就是AI产品设计最珍贵的用户研究数据。</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Product Manager Skills in AI Era Knowledge Base &middot; AI Product Thinking &amp; Agent Design &middot; Generated 2025-08-02</p>
+    </footer>
+
+    <script src="interactive-features.js"></script>
+</body>
+</html>

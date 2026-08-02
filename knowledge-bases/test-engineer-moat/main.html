@@ -25,8 +25,8 @@
     <!-- Nav Bar -->
     <nav class="nav-bar">
         <div class="nav-bar-group">
-            <button class="nav-btn nav-btn--primary" id="navToggleBtn" onclick="toggleNavPanel()">Menu</button>
-            <a href="main.html" class="nav-btn">Home</a>
+            <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
+            <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
         </div>
         <div class="nav-bar-group">
         </div>
@@ -36,14 +36,14 @@
     <div class="nav-panel" id="navPanel">
         <h3>Test Engineer Moat</h3>
         <div class="nav-section">
-            <div class="nav-section-label">Overview</div>
+            <div class="nav-section-label" data-lang-key="nav.section.overview">Overview</div>
             <a href="#核心概念" class="nav-link"><div class="nav-link-title">Core Concepts</div><div class="nav-link-desc">AI时代的测试护城河是什么</div></a>
             <a href="#时代背景" class="nav-link"><div class="nav-link-title">Background</div><div class="nav-link-desc">AI与Agent如何改变测试行业</div></a>
             <a href="#护城河框架" class="nav-link"><div class="nav-link-title">Moat Framework</div><div class="nav-link-desc">六大核心能力域</div></a>
             <a href="#如何学习" class="nav-link"><div class="nav-link-title">Study Guide</div><div class="nav-link-desc">如何深度学习本知识库</div></a>
         </div>
         <div class="nav-section">
-            <div class="nav-section-label">In Depth</div>
+            <div class="nav-section-label" data-lang-key="nav.section.depth">In Depth</div>
             <a href="ai-agent-impact.html" class="nav-link"><div class="nav-link-title">AI & Agent Impact</div><div class="nav-link-desc">冲击分析与自动化替代边界</div></a>
             <a href="testing-fundamentals.html" class="nav-link"><div class="nav-link-title">Core Testing Skills</div><div class="nav-link-desc">不可替代的测试核心能力</div></a>
             <a href="ai-assisted-testing.html" class="nav-link"><div class="nav-link-title">AI-Assisted Testing</div><div class="nav-link-desc">AI辅助测试工具链与实践</div></a>
@@ -126,10 +126,10 @@
 
         <!-- Section: Further Reading -->
         <div class="content-card" id="延伸阅读">
-            <h2>Further Reading</h2>
+            <h2 data-lang-key="section.further">Further Reading</h2>
             <div class="table-container">
                 <table>
-                    <tr><th>Page</th><th>Content</th></tr>
+                    <tr><th data-lang-key="table.page">Page</th><th data-lang-key="table.content">Content</th></tr>
                     <tr><td><a href="ai-agent-impact.html">AI & Agent Impact Analysis</a></td><td>AI测试工具演进、Agent测试特点、自动化替代边界</td></tr>
                     <tr><td><a href="testing-fundamentals.html">Core Testing Competencies</a></td><td>测试设计思维、缺陷分析、质量建模、探索性测试</td></tr>
                     <tr><td><a href="ai-assisted-testing.html">AI-Assisted Testing Toolkit</a></td><td>AI生成测试用例、智能缺陷预测、自愈自动化</td></tr>
@@ -145,7 +145,7 @@
     </div>
 
     <footer>
-        <p>Test Engineer Moat Knowledge Base &middot; Generated 2026-08-02 &middot; v3.3 Hallmark Edition</p>
+        <p>Test Engineer Moat Knowledge Base &middot; <span data-lang-key="footer.generated">Generated</span> 2026-08-02 &middot; v3.3 Hallmark Edition</p>
     </footer>
 
     <script src="interactive-features.js"></script>

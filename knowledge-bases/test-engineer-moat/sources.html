@@ -25,8 +25,8 @@
     <!-- Nav Bar -->
     <nav class="nav-bar">
         <div class="nav-bar-group">
-            <button class="nav-btn nav-btn--primary" id="navToggleBtn" onclick="toggleNavPanel()">Menu</button>
-            <a href="main.html" class="nav-btn">Home</a>
+            <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
+            <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
         </div>
         <div class="nav-bar-group">
         </div>
@@ -36,11 +36,11 @@
     <div class="nav-panel" id="navPanel">
         <h3>Test Engineer Moat</h3>
         <div class="nav-section">
-            <div class="nav-section-label">Navigate</div>
+            <div class="nav-section-label" data-lang-key="nav.section.navigate">Navigate</div>
             <a href="main.html" class="nav-link"><div class="nav-link-title">Home</div></a>
         </div>
         <div class="nav-section">
-            <div class="nav-section-label">In Depth</div>
+            <div class="nav-section-label" data-lang-key="nav.section.depth">In Depth</div>
             <a href="ai-agent-impact.html" class="nav-link"><div class="nav-link-title">AI & Agent Impact</div><div class="nav-link-desc">冲击分析与自动化替代边界</div></a>
             <a href="testing-fundamentals.html" class="nav-link"><div class="nav-link-title">Core Testing Skills</div><div class="nav-link-desc">不可替代的测试核心能力</div></a>
             <a href="ai-assisted-testing.html" class="nav-link"><div class="nav-link-title">AI-Assisted Testing</div><div class="nav-link-desc">AI辅助测试工具链与实践</div></a>
@@ -51,7 +51,7 @@
             <a href="sources.html" class="nav-link"><div class="nav-link-title">Sources</div><div class="nav-link-desc">资料来源与延伸学习</div></a>
         </div>
         <div class="nav-section">
-            <div class="nav-section-label">On This Page</div>
+            <div class="nav-section-label" data-lang-key="nav.section.onpage">On This Page</div>
             <a href="#书籍" class="nav-link"><div class="nav-link-title">推荐书籍</div></a>
             <a href="#课程" class="nav-link"><div class="nav-link-title">在线课程</div></a>
             <a href="#论文博客" class="nav-link"><div class="nav-link-title">关键论文与博客</div></a>
@@ -62,7 +62,7 @@
 
     <!-- Sidebar -->
     <aside class="sidebar-nav">
-        <h4>On This Page</h4>
+        <h4 data-lang-key="sidebar.title">On This Page</h4>
         <a href="#书籍">推荐书籍</a>
         <a href="#课程">在线课程</a>
         <a href="#论文博客">关键论文与博客</a>
@@ -277,7 +277,7 @@
     </div>
 
     <footer>
-        <p>Test Engineer Moat Knowledge Base &middot; Sources & References &middot; Generated 2026-08-02 &middot; v3.3 Hallmark Edition</p>
+        <p>Test Engineer Moat Knowledge Base &middot; Sources & References &middot; <span data-lang-key="footer.generated">Generated</span> 2026-08-02 &middot; v3.3 Hallmark Edition</p>
     </footer>
 
     <script src="interactive-features.js"></script>

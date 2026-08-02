@@ -16,14 +16,14 @@
 <body class="bg-technology">
 <nav class="nav-bar">
 <div class="nav-bar-group">
-<button class="nav-btn nav-btn--primary" id="navToggleBtn" onclick="toggleNavPanel()">Menu</button>
-<a href="main.html" class="nav-btn">Home</a>
+<button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
+<a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
 </div>
 <div class="nav-bar-group"></div>
 </nav>
 <div class="nav-panel" id="navPanel">
 <h3>Test Engineer Moat</h3>
-<div class="nav-section"><div class="nav-section-label">Navigate</div>
+<div class="nav-section"><div class="nav-section-label" data-lang-key="nav.section.navigate">Navigate</div>
 <a href="main.html" class="nav-link"><div class="nav-link-title">Home</div></a>
 <a href="ai-agent-impact.html" class="nav-link"><div class="nav-link-title">AI & Agent Impact</div></a>
 <a href="ai-assisted-testing.html" class="nav-link"><div class="nav-link-title">AI-Assisted Testing</div></a>
@@ -33,14 +33,14 @@
 <a href="career-development.html" class="nav-link"><div class="nav-link-title">Career Strategy</div></a>
 <a href="sources.html" class="nav-link"><div class="nav-link-title">Sources</div></a>
 </div>
-<div class="nav-section"><div class="nav-section-label">On This Page</div>
+<div class="nav-section"><div class="nav-section-label" data-lang-key="nav.section.onpage">On This Page</div>
 <a href="#测试设计思维" class="nav-link"><div class="nav-link-title">Test Design Thinking</div></a>
 <a href="#缺陷分析" class="nav-link"><div class="nav-link-title">Defect Analysis</div></a>
 <a href="#质量建模" class="nav-link"><div class="nav-link-title">Quality Modeling</div></a>
 <a href="#探索性测试" class="nav-link"><div class="nav-link-title">Exploratory Testing</div></a>
 </div></div>
 <aside class="sidebar-nav">
-<h4>On This Page</h4>
+<h4 data-lang-key="sidebar.title">On This Page</h4>
 <a href="#测试设计思维">Test Design Thinking</a>
 <a href="#缺陷分析">Defect Analysis</a>
 <a href="#质量建模">Quality Modeling</a>
@@ -95,7 +95,7 @@
 </div>
 
 </div>
-<footer><p>Test Engineer Moat &middot; Core Testing Fundamentals &middot; 2026-08-02</p></footer>
+<footer><p>Test Engineer Moat &middot; Core Testing Fundamentals &middot; <span data-lang-key="footer.generated">Generated</span> 2026-08-02</p></footer>
 <script src="interactive-features.js"></script>
 </body>
 </html>

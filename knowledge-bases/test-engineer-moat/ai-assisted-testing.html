@@ -16,8 +16,8 @@
 <body class="bg-technology">
     <nav class="nav-bar">
         <div class="nav-bar-group">
-            <button class="nav-btn nav-btn--primary" id="navToggleBtn" onclick="toggleNavPanel()">Menu</button>
-            <a href="main.html" class="nav-btn">Home</a>
+            <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
+            <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
         </div>
         <div class="nav-bar-group"></div>
     </nav>
@@ -25,14 +25,14 @@
     <div class="nav-panel" id="navPanel">
         <h3>Test Engineer Moat</h3>
         <div class="nav-section">
-            <div class="nav-section-label">Overview</div>
+            <div class="nav-section-label" data-lang-key="nav.section.overview">Overview</div>
             <a href="main.html#核心概念" class="nav-link"><div class="nav-link-title">Core Concepts</div><div class="nav-link-desc">AI时代的测试护城河是什么</div></a>
             <a href="main.html#时代背景" class="nav-link"><div class="nav-link-title">Background</div><div class="nav-link-desc">AI与Agent如何改变测试行业</div></a>
             <a href="main.html#护城河框架" class="nav-link"><div class="nav-link-title">Moat Framework</div><div class="nav-link-desc">六大核心能力域</div></a>
             <a href="main.html#如何学习" class="nav-link"><div class="nav-link-title">Study Guide</div><div class="nav-link-desc">如何深度学习本知识库</div></a>
         </div>
         <div class="nav-section">
-            <div class="nav-section-label">In Depth</div>
+            <div class="nav-section-label" data-lang-key="nav.section.depth">In Depth</div>
             <a href="ai-agent-impact.html" class="nav-link"><div class="nav-link-title">AI & Agent Impact</div><div class="nav-link-desc">冲击分析与自动化替代边界</div></a>
             <a href="testing-fundamentals.html" class="nav-link"><div class="nav-link-title">Core Testing Skills</div><div class="nav-link-desc">不可替代的测试核心能力</div></a>
             <a href="ai-assisted-testing.html" class="nav-link"><div class="nav-link-title">AI-Assisted Testing</div><div class="nav-link-desc">AI辅助测试工具链与实践</div></a>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="sidebar-nav">
-        <h4>On This Page</h4>
+        <h4 data-lang-key="sidebar.title">On This Page</h4>
         <a href="#用例生成">AI测试用例生成</a>
         <a href="#缺陷预测">智能缺陷预测与分类</a>
         <a href="#自愈测试">自愈自动化测试</a>
@@ -157,7 +157,7 @@
     </div>
 
     <footer>
-        <p>Test Engineer Moat &middot; AI-Assisted Testing &middot; 2026-08-02</p>
+        <p>Test Engineer Moat &middot; AI-Assisted Testing &middot; <span data-lang-key="footer.generated">Generated</span> 2026-08-02</p>
     </footer>
 
     <script src="interactive-features.js"></script>

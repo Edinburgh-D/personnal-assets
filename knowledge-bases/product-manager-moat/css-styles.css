@@ -1,17 +1,17 @@
 /* Hallmark · knowledge-base-generator v3.3 · macrostructure: Long Document */
 /* ===== CSS Custom Properties ===== */
 :root {
-    --kb-primary: #667eea;
-    --kb-primary-rgb: 102, 126, 234;
-    --kb-secondary: #764ba2;
-    --kb-accent: #8e44ad;
+    --kb-primary: #d97706;
+    --kb-primary-rgb: 217, 119, 6;
+    --kb-secondary: #e67e22;
+    --kb-accent: #e67e22;
     --kb-text: #2d2d3a;
     --kb-text-muted: #5a5a6e;
     --kb-surface: #ffffff;
-    --kb-surface-hover: #f5f3ff;
-    --kb-surface-accent: rgba(102, 126, 234, 0.06);
+    --kb-surface-hover: #fff7ed;
+    --kb-surface-accent: rgba(217, 119, 6, 0.06);
     --kb-border: #e2e0ea;
-    --kb-border-accent: #667eea;
+    --kb-border-accent: #d97706;
     --kb-shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
     --kb-shadow-md: 0 2px 8px rgba(0,0,0,0.08);
     --kb-radius-sm: 4px;
@@ -27,12 +27,12 @@ body.dark-mode {
     --kb-text-muted: #a09cb0;
     --kb-surface: #1b1b28;
     --kb-surface-hover: #262438;
-    --kb-surface-accent: rgba(102, 126, 234, 0.12);
+    --kb-surface-accent: rgba(217, 119, 6, 0.12);
     --kb-border: #2e2d40;
     --kb-shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
     --kb-shadow-md: 0 2px 8px rgba(0,0,0,0.3);
-    --kb-primary: #8b9cf7;
-    --kb-accent: #b794f4;
+    --kb-primary: #fbbf24;
+    --kb-accent: #f59e0b;
 }
 
 /* ===== Theme Overrides ===== */
@@ -49,8 +49,8 @@ body.dark-mode .bg-history { --kb-primary: #94a3b8; }
 body.dark-mode .bg-health { --kb-primary: #2dd4bf; }
 .bg-philosophy { --kb-primary: #dc2626; --kb-primary-rgb: 220, 38, 38; }
 body.dark-mode .bg-philosophy { --kb-primary: #f87171; }
-.bg-business { --kb-primary: #d97706; --kb-primary-rgb: 217, 119, 6; }
-body.dark-mode .bg-business { --kb-primary: #fbbf24; }
+.bg-business { --kb-primary: #d97706; --kb-primary-rgb: 217, 119, 6; --kb-accent: #e67e22; }
+body.dark-mode .bg-business { --kb-primary: #fbbf24; --kb-accent: #f59e0b; }
 .bg-law { --kb-primary: #4f46e5; --kb-primary-rgb: 79, 70, 229; }
 body.dark-mode .bg-law { --kb-primary: #818cf8; }
 .bg-art { --kb-primary: #7c3aed; --kb-primary-rgb: 124, 58, 237; }

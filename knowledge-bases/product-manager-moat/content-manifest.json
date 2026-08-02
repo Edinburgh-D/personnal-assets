@@ -1,0 +1,26 @@
+{
+  "topic": "AI时代产品经理必备技能与护城河构建",
+  "skillVersion": "3.3.0",
+  "createdAt": "2026-08-02",
+  "type": "multi-branch",
+  "targetReader": "产品经理（专业人士）",
+  "depthLevel": "L3",
+  "pages": [
+    {"file":"main.html","title":"Product Manager Moat Overview","coreConcepts":["PM护城河","AI对PM的冲击","七大能力堆叠","学习路径"],"depthLevel":"L3","estimatedTextCount":2600,"citationCount":2,"sourceTypes":["综合整理"],"crossDomainLinks":[],"qualityStatus":"pass"},
+    {"file":"user-insight.html","title":"User Insight & Need Discovery","coreConcepts":["用户研究","需求挖掘","用户旅程","数据洞察"],"depthLevel":"L3","estimatedTextCount":3200,"citationCount":3,"sourceTypes":["综合整理","学术"],"crossDomainLinks":["行为心理学"],"qualityStatus":"pass"},
+    {"file":"product-strategy.html","title":"Product Strategy & Roadmapping","coreConcepts":["产品愿景","路线图","优先级框架","竞争分析"],"depthLevel":"L3","estimatedTextCount":3400,"citationCount":3,"sourceTypes":["综合整理","学术"],"crossDomainLinks":["军事策略"],"qualityStatus":"pass"},
+    {"file":"data-driven.html","title":"Data-Driven Decision Making","coreConcepts":["指标体系","A/B测试","数据分析","数据叙事"],"depthLevel":"L3","estimatedTextCount":3500,"citationCount":3,"sourceTypes":["综合整理"],"crossDomainLinks":["统计学"],"qualityStatus":"pass"},
+    {"file":"tech-business-bridge.html","title":"Technology & Business Bridge","coreConcepts":["技术基础","工程协作","商业翻译","UX设计"],"depthLevel":"L3","estimatedTextCount":3000,"citationCount":2,"sourceTypes":["综合整理"],"crossDomainLinks":["系统思维"],"qualityStatus":"pass"},
+    {"file":"ai-product-thinking.html","title":"AI Product Thinking & Agent Design","coreConcepts":["AI产品设计","LLM模式","Agent交互","AI伦理"],"depthLevel":"L3","estimatedTextCount":3800,"citationCount":4,"sourceTypes":["综合整理","行业资料"],"crossDomainLinks":["认知科学"],"qualityStatus":"pass"},
+    {"file":"stakeholder-leadership.html","title":"Stakeholder Management & Leadership","coreConcepts":["影响力构建","向上管理","跨职能协调","质量文化"],"depthLevel":"L3","estimatedTextCount":3400,"citationCount":2,"sourceTypes":["综合整理","学术"],"crossDomainLinks":["组织心理学"],"qualityStatus":"pass"},
+    {"file":"career-moat.html","title":"Career Moat Strategy","coreConcepts":["T型能力","能力叠加","12月路径","护城河自评","30天计划"],"depthLevel":"L3","estimatedTextCount":4200,"citationCount":3,"sourceTypes":["综合整理"],"crossDomainLinks":["职业经济学"],"qualityStatus":"pass"},
+    {"file":"sources.html","title":"Sources & References","coreConcepts":["书籍","课程","论文","社区","AI资源"],"depthLevel":"L2","estimatedTextCount":1800,"citationCount":18,"sourceTypes":["综合整理"],"crossDomainLinks":[],"qualityStatus":"pass"}
+  ],
+  "qualitySummary": {
+    "totalPages": 9,
+    "totalEstimatedTextCount": 28900,
+    "totalCitationCount": 40,
+    "emptyPhraseRatio": "under 5%",
+    "validationStatus": "pass"
+  }
+}
