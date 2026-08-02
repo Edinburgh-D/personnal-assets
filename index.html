@@ -78,6 +78,10 @@
       border-bottom: var(--rule-thin) solid var(--color-rule);
     }
     .status-row:last-child { border-bottom: 0; padding-bottom: 0; }
+    .status-total { display: block; padding-bottom: var(--space-sm); }
+    .status-total strong { font-size: clamp(4rem, 8vw, 7rem); }
+    .status-total span { display: block; margin-top: var(--space-xs); text-align: left; color: var(--color-ink-2); font-size: var(--text-md); }
+    .status-note { margin: 0; color: var(--color-muted); line-height: 1.7; }
     .status-row strong {
       font-family: var(--font-display);
       font-size: var(--text-xl);
@@ -225,10 +229,9 @@
           <a class="button" href="knowledge-bases/">查看目录</a>
         </div>
       </div>
-      <aside class="status-panel" aria-label="发布状态">
-        <div class="status-row"><strong>1</strong><span>已发布知识库</span></div>
-        <div class="status-row"><strong>1</strong><span>待补全目录</span></div>
-        <div class="status-row"><strong>Pages</strong><span>Cloudflare 静态托管</span></div>
+      <aside class="status-panel" aria-label="知识库总数">
+        <div class="status-row status-total"><strong>1</strong><span>个知识库已上线</span></div>
+        <p class="status-note">后续新增主题后，这里只更新可访问知识库数量。</p>
       </aside>
     </header>
 
@@ -264,4 +267,6 @@
   </main>
 </body>
 </html>
+
+
 
