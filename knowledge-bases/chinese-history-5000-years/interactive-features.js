@@ -11,11 +11,11 @@ function addSearchFeature() {
     input.setAttribute('aria-label', '搜索');
     var searchBtn = document.createElement('button');
     searchBtn.setAttribute('aria-label', '搜索');
-    searchBtn.textContent = '🔍';
+    searchBtn.textContent = '查找';
     searchBtn.onclick = searchContent;
     var clearBtn = document.createElement('button');
     clearBtn.setAttribute('aria-label', '清除搜索');
-    clearBtn.textContent = '✖';
+    clearBtn.textContent = '清除';
     clearBtn.onclick = clearSearch;
     searchBox.appendChild(input);
     searchBox.appendChild(searchBtn);
@@ -100,7 +100,7 @@ function addProgressTracker() {
     fill.setAttribute('aria-valuemax', '100');
     progressBar.appendChild(fill);
     document.body.appendChild(progressBar);
-    window.addEventListener('scroll', updateProgress);
+    window.addEventListener('scroll', updateProgress, { passive: true });
 }
 
 function updateProgress() {
@@ -123,10 +123,9 @@ function addBookmarkFeature() {
         if (h2) {
             var bookmarkBtn = document.createElement('button');
             bookmarkBtn.className = 'bookmark-btn';
-            bookmarkBtn.textContent = '📌 收藏';
+            bookmarkBtn.textContent = '收藏';
             bookmarkBtn.setAttribute('aria-label', '收藏此章节');
-            bookmarkBtn.onclick = function() { toggleBookmark(section.id, h2.textContent.replace('📌 收藏', '').replace('📌 已收藏', '').trim()); };
-            h2.style.position = 'relative';
+            bookmarkBtn.onclick = function() { toggleBookmark(section.id, h2.textContent.replace('收藏', '').replace('已收藏', '').trim()); };
             h2.appendChild(bookmarkBtn);
         }
     });
@@ -155,7 +154,7 @@ function updateBookmarkButtons() {
         var sectionId = card.id;
         var isBookmarked = bookmarks.some(function(b) { return b.id === sectionId; });
         btn.classList.toggle('active', isBookmarked);
-        btn.textContent = isBookmarked ? '📌 已收藏' : '📌 收藏';
+        btn.textContent = isBookmarked ? '已收藏' : '收藏';
     });
 }
 
@@ -167,7 +166,7 @@ function showBookmarkList() {
     if (bookmarks.length === 0) { if (bookmarkList) bookmarkList.remove(); return; }
     if (!bookmarkList) { bookmarkList = document.createElement('div'); bookmarkList.className = 'bookmark-list'; document.body.appendChild(bookmarkList); }
     var h4 = document.createElement('h4');
-    h4.textContent = '📌 我的收藏';
+    h4.textContent = '我的收藏';
     bookmarkList.innerHTML = '';
     bookmarkList.appendChild(h4);
     bookmarks.forEach(function(b) {
@@ -178,7 +177,7 @@ function showBookmarkList() {
     });
     var clearBtn = document.createElement('button');
     clearBtn.textContent = '清除全部';
-    clearBtn.style.cssText = 'margin-top:10px;padding:5px 10px;background:#f39c12;color:white;border:none;border-radius:5px;cursor:pointer;font-size:12px;';
+    clearBtn.className = 'bookmark-clear-btn';
     clearBtn.onclick = clearAllBookmarks;
     bookmarkList.appendChild(clearBtn);
 }
@@ -196,7 +195,7 @@ function addPrintFeature() {
     if (navBtn) {
         var printBtn = document.createElement('button');
         printBtn.className = 'print-btn';
-        printBtn.textContent = '🖨️ 打印';
+        printBtn.textContent = '打印';
         printBtn.setAttribute('aria-label', '打印页面');
         printBtn.onclick = function() { window.print(); };
         navBtn.appendChild(printBtn);
@@ -217,6 +216,7 @@ function addDarkModeToggle() {
     if (localStorage.getItem('kb_darkMode') === 'true') {
         document.body.classList.add('dark-mode');
     }
+    document.documentElement.classList.remove('dark-mode-preload');
     updateDarkModeButtonText();
 }
 
@@ -230,7 +230,7 @@ function toggleDarkMode() {
 function updateDarkModeButtonText() {
     var btn = document.getElementById('darkModeBtn');
     if (btn) {
-        btn.textContent = document.body.classList.contains('dark-mode') ? '☀️ 浅色模式' : '🌙 深色模式';
+        btn.textContent = document.body.classList.contains('dark-mode') ? '浅色' : '深色';
     }
 }
 
@@ -244,7 +244,7 @@ function addBackToTop() {
     document.body.appendChild(backToTop);
     window.addEventListener('scroll', function() {
         backToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
-    });
+    }, { passive: true });
 }
 
 /* ===== Feature 7: Font Size ===== */
@@ -333,7 +333,7 @@ function addSidebarTracking() {
                 s.link.classList.add('active');
             }
         });
-    });
+    }, { passive: true });
 }
 
 /* ===== Initialize All ===== */
@@ -358,11 +358,22 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         var tooltip = document.getElementById('navMenuTooltip');
         if (tooltip) tooltip.classList.remove('show');
+        syncNavMenuState();
     }
     if (e.ctrlKey && e.key === 'd') {
         e.preventDefault();
         toggleDarkMode();
     }
+});
+
+function syncNavMenuState() {
+    var tooltip = document.getElementById('navMenuTooltip');
+    var trigger = document.querySelector('[aria-controls="navMenuTooltip"]');
+    if (tooltip && trigger) trigger.setAttribute('aria-expanded', tooltip.classList.contains('show') ? 'true' : 'false');
+}
+
+document.addEventListener('click', function() {
+    window.setTimeout(syncNavMenuState, 0);
 });
 
 /* ===== Auto Init ===== */

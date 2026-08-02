@@ -7,6 +7,7 @@
 <div class="progress-bar" id="readingProgress"></div>
 <nav class="nav-bar">
 <div class="nav-bar-group">
+            <a href="../../index.html" class="nav-btn site-home-link" data-site-home>Personal Assets</a>
 <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
 <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a></div>
 <div class="nav-bar-group">
@@ -14,7 +15,7 @@
 </div></nav>
 <div class="nav-panel" id="navPanel">
 <div class="search-box"><input type="text" id="kbSearchInput" placeholder="Search..." oninput="performSearch()"></div>
-<h3>Product Manager Moat</h3>
+<h3 data-lang-zh="产品经理护城河" data-lang-en="Product Manager Moat">产品经理护城河</h3>
 <a href="user-insight.html" class="nav-link"><div class="nav-link-title">User Insight</div><div class="nav-link-desc">Research, empathy, need discovery</div></a>
 <a href="product-strategy.html" class="nav-link"><div class="nav-link-title">Product Strategy</div><div class="nav-link-desc">Vision, roadmap, prioritization</div></a>
 <a href="data-driven.html" class="nav-link"><div class="nav-link-title">Data-Driven Decisions</div><div class="nav-link-desc">Metrics, experiments, analytics</div></a>
@@ -28,7 +29,7 @@
 <header><h1>Product Manager Moat in the AI Era</h1><p class="subtitle">当AI能写PRD、能分析数据、能生成原型，产品经理的不可替代性在哪？系统化能力构建地图。</p></header>
 
 <section id="核心概念">
-<h2>What is a PM's Moat</h2>
+<h2 data-lang-zh="什么是PM的护城河" data-lang-en="What is a PM's Moat">什么是PM的护城河</h2>
 <p>护城河概念源自巴菲特的价值投资理论，指企业在竞争中长期保持优势的结构性壁垒。在产品经理的职业语境中，护城河不是单一技能，而是一组相互增强、难以复制的复合能力。当单一技能（如写PRD、做竞品分析、画原型）逐渐被AI工具替代时，真正有竞争力的PM是那些在多个维度上积累深度认知，且能将这些认知交叉融合解决复杂问题的人。</p>
 <p>我们将PM的能力体系拆解为七个层级。第一层是用户洞察，即深刻理解用户真实需求而非表面诉求的能力。第二层是产品战略，包括愿景制定、路线图规划与优先级决策。第三层是数据驱动决策，涵盖指标体系搭建、实验设计和分析推理。第四层是技术与商业的桥梁角色，同时在工程可行性和商业逻辑两端建立深度理解。第五层是AI产品思维，即理解LLM的能力边界、设计AI原生产品体验、掌握Agent架构与评估体系。第六层是领导力与利益相关者管理，包括向上管理、跨部门协作和团队激励。第七层是护城河策略本身，即主动规划自己的技能组合使其形成不可替代的复合竞争力。</p>
 <p>AI时代的特殊之处在于，这七个维度中任何单独一项都可能被工具部分替代。例如，AI可以基于用户反馈自动生成需求列表，可以辅助做竞品对比，可以用SQL查询数据并生成可视化。但当PM能够将用户洞察中的隐性知识（那些用户无法明确表达的深层动机）与产品战略中对市场格局的判断相结合，再以数据驱动的方式验证假设，并用技术业务翻译能力推动工程团队落地——这种端到端的信息整合与决策能力正是AI无法替代的。护城河的核心逻辑不是「你比AI更擅长哪一项技能」，而是「你拥有AI无法组合的多维度认知结构」。</p>
@@ -36,14 +37,14 @@
 </section>
 
 <section id="时代背景">
-<h2>The AI Shockwave</h2>
+<h2 data-lang-zh="AI浪潮的冲击" data-lang-en="The AI Shockwave">AI浪潮的冲击</h2>
 <p>2020年GPT-3的发布标志着大语言模型从实验室进入应用视野，随后的2022年末ChatGPT横空出世，掀起了席卷全球的AI浪潮。2023至2024年，GPT-4、Claude、Gemini等模型持续迭代，Agent框架如LangChain、AutoGPT、CrewAI相继涌现。2025年，AI编程助手（如Cursor、Copilot、Claude Code）已深度融入开发流程，AI驱动的原型工具可在数分钟内生成可交互界面，产品分析平台集成了自然语言查询功能。到2026年，AI不再是一个独立工具类别，而是嵌入到每一个产品经理日常工作流中的基础设施。</p>
 <p>在这场变革中，产品经理的工作被重塑的方式可以分为两类。第一类是AI替代型任务：格式化PRD撰写、竞品信息搜集整理、基础数据分析查询、会议纪要生成、用户反馈分类与主题提取。这些任务有明确的输入输出规范，AI在执行效率上远超人类。第二类是AI增强型任务：战略推演（AI可以提供多种情景模拟，但最终判断需要PM的商业直觉）、用户洞察（AI可以归纳已收集到的反馈，但无法走向田野做深度访谈）、跨团队沟通（AI可以生成沟通话术模板，但在面对面的信任建立和冲突化解中几乎无用）、优先级决策（AI可以给出数据驱动的建议，但价值取舍涉及对人性的理解和组织政治的判断）。</p>
 <p>值得关注的一个趋势是，随着AI工具门槛不断降低，初级PM岗位的产出能力差距正在缩小。一个善于使用AI工具的两年经验PM，在文档产出效率上可能不逊于一个不使用AI的五年经验PM。这意味着，PM的职业竞争将从「谁能更快更好地执行任务」转向「谁能提出更好的问题、做出更精准的判断、推动更复杂的跨部门协作」。换句话说，执行层的价值在被压缩，而策略层和连接层的价值在放大。这对每个PM的职业发展规划都具有深远影响。</p>
 </section>
 
 <section id="能力框架">
-<h2>Competency Stack</h2>
+<h2 data-lang-zh="能力堆叠体系" data-lang-en="Competency Stack">能力堆叠体系</h2>
 <div class="concept-cards">
 <div class="concept-card"><h4>用户洞察</h4><p>定性研究与定量分析结合，掌握JTBD框架与Kano模型，构建用户旅程地图与同理心地图。在AI擅长处理结构化反馈的时代，深度理解隐性需求的能力更加稀缺。</p></div>
 <div class="concept-card"><h4>产品战略</h4><p>产品愿景的提炼与传达，基于产出而非功能的路线图规划，优先级决策框架（RICE、ICE、MoSCoW）的灵活运用，竞争格局的系统分析。</p></div>
@@ -57,7 +58,7 @@
 </section>
 
 <section id="如何学习">
-<h2>Study Guide</h2>
+<h2 data-lang-zh="学习指南" data-lang-en="Study Guide">学习指南</h2>
 <div class="tip-box">
 <strong>学习原则：</strong>不要试图同时推进所有七个维度。建议先在一个维度上建立深度优势，再以此为锚点向外扩展，形成T型能力结构。培养每周投入固定时间进行刻意练习的习惯，结合书单阅读、实际项目应用和同行交流。
 </div>
@@ -73,7 +74,7 @@
 </section>
 
 <section id="延伸阅读">
-<h2>Further Reading</h2>
+<h2 data-lang-zh="延伸阅读" data-lang-en="Further Reading">延伸阅读</h2>
 <table class="reading-table">
 <thead><tr><th>页面</th><th>主题</th><th>核心内容</th></tr></thead>
 <tbody>

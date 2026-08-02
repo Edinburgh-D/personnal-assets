@@ -7,6 +7,7 @@
 <div class="progress-bar" id="readingProgress"></div>
 <nav class="nav-bar">
 <div class="nav-bar-group">
+            <a href="../../index.html" class="nav-btn site-home-link" data-site-home>Personal Assets</a>
 <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
 <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a></div>
 <div class="nav-bar-group">
@@ -14,7 +15,7 @@
 </div></nav>
 <div class="nav-panel" id="navPanel">
 <div class="search-box"><input type="text" id="kbSearchInput" placeholder="Search..." oninput="performSearch()"></div>
-<h3>Product Manager Moat</h3>
+<h3 data-lang-zh="产品经理护城河" data-lang-en="Product Manager Moat">产品经理护城河</h3>
 <a href="user-insight.html" class="nav-link"><div class="nav-link-title">User Insight</div><div class="nav-link-desc">Research, empathy, need discovery</div></a>
 <a href="product-strategy.html" class="nav-link"><div class="nav-link-title">Product Strategy</div><div class="nav-link-desc">Vision, roadmap, prioritization</div></a>
 <a href="data-driven.html" class="nav-link"><div class="nav-link-title">Data-Driven Decisions</div><div class="nav-link-desc">Metrics, experiments, analytics</div></a>
@@ -36,7 +37,7 @@
 <header><h1>Product Strategy & Roadmapping</h1><p class="subtitle">战略不是选择做什么，而是选择不做什么。在AI时代，PM的决策质量比决策速度更重要，方向判断比执行效率更稀缺。</p></header>
 
 <section id="产品愿景">
-<h2>产品愿景与定位</h2>
+<h2 data-lang-zh="产品愿景与定位" data-lang-en="Product Vision & Positioning">产品愿景与定位</h2>
 <p>产品愿景是一句话回答「我们为什么存在」。它不需要描述功能，不需要承诺KPI，而是清晰表达一个关于世界应该是什么样的观点。强愿景之所以有力量，是因为它为整个组织提供了在模糊地带做决策的北极星——当数据不够充分、各方意见冲突时，愿景是那个让人可以回归的锚点。亚马逊的「地球上最以客户为中心的公司」、特斯拉的「加速世界向可持续能源的转变」、Slack的「让人们的工作生活更简单、更愉快、更高效」，这些都是产品愿景的典范。</p>
 <p>波特五力模型为产品定位提供了结构化的分析框架。供应商的议价能力、购买者的议价能力、新进入者的威胁、替代品的威胁、以及现有竞争者之间的竞争强度，这五股力量共同决定了行业的利润空间和竞争格局。在AI时代，这个框架需要重新审视：开源大模型的普及降低了技术供应商的议价能力，同时也降低了新进入者的技术门槛。AI驱动的搜索和推荐系统可能改变替代品的威胁格局——以前维基百科和百科全书可能被视为搜索引擎的替代品，现在AI知识助手可以同时替代两者。产品经理在制定定位策略时，不能只看当前的市场地图，还必须预判技术变革对五力格局的中期影响。</p>
 
@@ -50,7 +51,7 @@
 </section>
 
 <section id="路线图">
-<h2>路线图规划</h2>
+<h2 data-lang-zh="路线图规划" data-lang-en="Roadmap Planning">路线图规划</h2>
 <p>传统的路线图以功能为中心（Feature-based），列出时间轴上每个季度要交付哪些功能。这种路线图有两个根本问题：第一，它假设你已经知道正确的解决方案是什么，而实际上早期假设经常被证伪；第二，它把团队的成功标准定义为「是否按时交付了承诺的功能」，而非「是否达成了预期的业务成果」。Outcome-based路线图是解决这两个问题的范式转变——它不承诺具体的功能，而是承诺要达成的业务产出，然后给团队足够的空间去探索达成该产出的最佳路径。</p>
 <p>Now-Next-Later框架是Outcome-based路线图的一种实用表达方式。Now代表当前正在进行的工作，通常有一个很确定的周期（如4-6周），Next代表排在下一步的需求池，在Now的工作完成后从中选取优先级最高的进入Now，Later则代表更远期考虑的方向，不需要在此刻投入精力进行详细设计。这个框架的优雅之处在于它同时解决了过度承诺和规划过载两个问题：Now因为时间窗口小，承诺是可信的；Next提供了透明度和可预测性；Later则保持了灵活和低成本的方向调整空间。</p>
 
@@ -66,7 +67,7 @@
 </section>
 
 <section id="优先级">
-<h2>优先级决策框架</h2>
+<h2 data-lang-zh="优先级决策框架" data-lang-en="Prioritization Decision Framework">优先级决策框架</h2>
 <p>优先级决策是产品经理日常工作中最重要也最痛苦的环节。理论上，应该选对目标贡献最大、对用户价值最高、投入产出比最优的选项。但现实中，优先级决策往往被多个利益相关者的诉求、紧急但没有战略价值的请求、和对未来不确定性的焦虑所干扰。结构化框架的价值在于帮助PM在压力下保持思考的清晰度。</p>
 <p>RICE框架（Reach-Impact-Confidence-Effort）是其中最广泛使用的一种。Reach衡量该功能在给定时间内覆盖的用户数，Impact衡量对目标指标的影响程度（通常用1-3-10或类似的指数刻度），Confidence衡量你对Reach和Impact估计的置信度，Effort衡量工程和设计投入。最终得分为 (Reach x Impact x Confidence) / Effort。RICE的优点是直观、量化、便于向他人解释优先级决策逻辑，缺点是在被滥用时容易沦为数字游戏——Confidence本质上是对自己假设的无知程度的一种度量，不应被伪装成精确性。</p>
 
@@ -84,20 +85,20 @@
 </section>
 
 <section id="竞争分析">
-<h2>竞争分析</h2>
+<h2 data-lang-zh="竞争分析" data-lang-en="Competitive Analysis">竞争分析</h2>
 <p>有效的竞争分析不是收集竞品的功能列表然后逐项追赶，而是理解每家竞品在产品策略上的基本选择和取舍。每一个产品都是在一组矛盾（简单vs强大、通用vs垂直、免费vs付费、开放vs封闭）上做出的选择的结果。真正的竞争洞察来自于理解：为什么竞品A选择了封闭生态而竞品B选择了开放平台？这个选择背后是对什么市场假设的押注？如果那个假设被证伪了，竞品A会如何调整？</p>
 <p>竞争格局地图（Competitive Landscape Map）是一个有用的可视化工具。你可以在横轴和纵轴上选择两个对你的产品类别最关键的差异化维度（比如：个人使用vs团队协作、标准化vs可定制），然后将每个竞品放置在地图上。这张地图的价值不在于竞品的精确位置，而在于帮助你看到：哪个区域已经过度拥挤、哪个区域还存在空白、以及你的产品自然延伸的方向是什么。做这张图的过程往往比图本身更具启发性——因为它迫使你思考什么才是真正定义你产品类别的核心维度。</p>
 <p>一个高阶策略思考方式是将竞争分析从静态快照转变为动态博弈推演。假设你的产品决定降价30%，竞品A、B、C分别最可能的反应是什么？假设一个新的技术范式（如AI Agent）使得某个原本属于不同品类的产品突然变成了你的间接竞争对手，你应如何调整定位？这种动态推演不追求精确预测，而是训练你理解竞争互动的底层模式。正如博弈论所揭示的，最优策略往往不是最大化当前收益，而是改变博弈结构使自己处于优势位置。</p>
 </section>
 
 <section id="跨界连接">
-<h2>跨界连接：军事策略对产品战略的启示</h2>
+<h2 data-lang-zh="跨界连接：军事策略对产品战略的启示" data-lang-en="Cross-Domain: Military Strategy for Product Strategy">跨界连接：军事策略对产品战略的启示</h2>
 <p>孙子的《孙子兵法》虽然写于两千多年前，其中关于战略的洞见至今仍为产品经理提供了深刻的思维框架。孙子强调的「知彼知己，百战不殆」在产品语境中就是深度理解竞争对手的产品策略和组织能力，同时诚实地评估自己的优势和短板。「上兵伐谋，其次伐交，其次伐兵，其下攻城」揭示了战略竞争的层级：最优策略是通过产品愿景和定位在认知层面建立壁垒（伐谋），其次是建立生态联盟和合作伙伴关系（伐交），再次是通过功能和质量正面对抗（伐兵），最次是陷入价格战（攻城）。</p>
 <p>另一组关键概念是「正」与「奇」的辩证关系。正，是正面战场、主力产品线、持续迭代优化的能力。奇，是非对称创新、突破性特性、让竞品难以跟随的差异化路径。孙子说「凡战者，以正合，以奇胜」——没有正面的实力支撑，奇招只是花拳绣腿；没有奇兵破局，正面战只会陷入消耗。在产品战略中，这意味着你既需要有稳定交付和持续改进的基本面，也需要在某个维度上做出竞品难以复制的差异化。对很多B端产品而言，「正」可能是产品功能的完整性和稳定性，「奇」可能是对某个细分行业的深度洞察和定制化服务。对C端产品而言，「正」可能是内容生态和用户规模，「奇」可能是AI驱动的个性化体验和社区文化。在现代产品管理实践中，这种正奇配合的思想，可能比任何具体的优先级框架都更能帮助PM理解战略的本质和取舍逻辑。同时，克劳塞维茨提出的「重心」概念也值得借鉴——每个竞争者在系统内部都有一个重心，攻击这个点能以最小的力量产生最大的效果。</p>
 </section>
 
 <section id="行动指南">
-<h2>行动指南：从功能工厂到战略PM</h2>
+<h2 data-lang-zh="行动指南：从功能工厂到战略PM" data-lang-en="Action Guide: From Feature Factory to Strategic PM">行动指南：从功能工厂到战略PM</h2>
 <div class="highlight-box">
 <strong>本月行动清单：</strong><br>
 1. 重新审视你当前的路线图：有多少项是以「功能名称」定义的，有多少项是以「业务产出」定义的？尝试将至少三行功能项改写为产出项；<br>

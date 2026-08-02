@@ -3,15 +3,17 @@ set -eu
 
 repo_root=$(git rev-parse --show-toplevel)
 script_path="$repo_root/scripts/update-knowledge-index.ps1"
+home_link_script="$repo_root/scripts/update-knowledge-home-links.ps1"
 
 if command -v pwsh >/dev/null 2>&1; then
   pwsh -NoProfile -File "$script_path" -RequireGitTrackedEntries
+  pwsh -NoProfile -File "$home_link_script" -Check
 elif command -v powershell.exe >/dev/null 2>&1; then
   powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$script_path" -RequireGitTrackedEntries
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$home_link_script" -Check
 else
-  echo "ERROR: PowerShell is required to update the knowledge-base indexes." >&2
+  echo "ERROR: PowerShell is required to validate knowledge-base publishing files." >&2
   exit 1
 fi
 
 git -C "$repo_root" add -- index.html knowledge-bases/index.html
-

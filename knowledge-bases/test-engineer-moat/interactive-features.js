@@ -343,8 +343,11 @@ var LANG_MAP = {
     'footer.generated':     { zh: '生成于',  en: 'Generated' }
 };
 
-var currentLang = getStored('kb_lang') || getBrowserLang();
-function getBrowserLang() {
+var currentLang = getStored('kb_lang') || getPageLang();
+function getPageLang() {
+    var pageLang = document.documentElement.lang || '';
+    if (pageLang.indexOf('zh') === 0) return 'zh';
+    if (pageLang.indexOf('en') === 0) return 'en';
     var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
     return nav.indexOf('zh') === 0 ? 'zh' : 'en';
 }
@@ -368,9 +371,13 @@ function applyLanguage() {
     document.querySelectorAll('[data-lang-key]').forEach(function(el) {
         var key = el.getAttribute('data-lang-key');
         var text = getLangText(key);
-        if (text && text !== el.textContent.replace(/\s+/g, ' ').trim()) {
-            el.textContent = text;
-        }
+        if (text) el.textContent = text;
+    });
+    /* also handle elements with dual-lang attributes (content H2s, etc.) */
+    var targetAttr = (currentLang === 'zh') ? 'data-lang-zh' : 'data-lang-en';
+    document.querySelectorAll('[' + targetAttr + ']').forEach(function(el) {
+        var t = el.getAttribute(targetAttr);
+        if (t) el.textContent = t;
     });
     updateLangBtnLabel();
     updateDarkModeLabel();

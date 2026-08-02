@@ -11,21 +11,25 @@
 每次新建或重命名 `knowledge-bases/<slug>/` 下的知识库时，以下事项必须在同一次改动中完成，否则知识库不视为发布完成：
 
 1. 新知识库必须放在 `knowledge-bases/<slug>/`，并提供 `main.html`；为兼容旧知识库，脚本会在没有 `main.html` 时回退到 `index.html`。
-2. 运行 `scripts/update-knowledge-index.ps1`。脚本会扫描知识库目录、读取 `content-manifest.json` 和入口 HTML，并自动更新根目录 `index.html` 与 `knowledge-bases/index.html` 的列表、链接、标签和总数。
-3. 没有 `main.html` 或 `index.html` 的空目录不会发布，脚本会输出警告。
-4. 提交前检查目录条目没有遗漏或重复，并逐一确认链接目标文件存在。
-5. Cloudflare Pages 部署完成后，必须从线上目录点击新条目，确认最终 URL 可以正常打开且页面内的 CSS、JavaScript 和子页面链接可用。
+2. 每个知识库的每一个 HTML 页面都必须提供“返回 Personal Assets 主页”的可见导航入口，统一使用 `<a href="../../index.html" data-site-home>…</a>`。入口应放在顶部导航内，不能只依赖 JavaScript 动态生成。
+3. 运行 `scripts/update-knowledge-home-links.ps1`。脚本会为当前支持的知识库导航结构补齐主页入口；`-Check` 模式发现任何遗漏时会阻止提交。
+4. 运行 `scripts/update-knowledge-index.ps1`。脚本会扫描知识库目录、读取 `content-manifest.json` 和入口 HTML，并自动更新根目录 `index.html` 与 `knowledge-bases/index.html` 的列表、链接、标签和总数。
+5. 没有 `main.html` 或 `index.html` 的空目录不会发布，脚本会输出警告。
+6. 提交前检查目录条目没有遗漏或重复，并逐一确认链接目标文件存在。
+7. Cloudflare Pages 部署完成后，必须从线上目录点击新条目，并在知识库内点击“Personal Assets”，确认入口页、CSS、JavaScript、子页面链接和返回主页链接均可用。
 
 ### 自动更新索引
 
 手动同步并检查：
 
 ```powershell
+.\scripts\update-knowledge-home-links.ps1
+.\scripts\update-knowledge-home-links.ps1 -Check
 .\scripts\update-knowledge-index.ps1
 .\scripts\update-knowledge-index.ps1 -Check
 ```
 
-仓库提供 `.githooks/pre-commit`。启用后，每次提交前会自动同步两个索引，并把更新后的索引加入本次提交：
+仓库提供 `.githooks/pre-commit`。启用后，每次提交前会自动同步两个索引、检查所有知识库页面的主页入口，并把更新后的索引加入本次提交：
 
 ```powershell
 git config core.hooksPath .githooks
@@ -39,4 +43,5 @@ git config core.hooksPath .githooks
 - 根目录 `index.html` 与 `knowledge-bases/index.html` 已由脚本加入对应目录条目；
 - 页面显示的知识库总数与实际发布数量一致；
 - 目录链接指向有效入口文件；
+- 每个知识库 HTML 页面都包含指向 `../../index.html` 的 `data-site-home` 导航入口；
 - 线上目录可以点击进入新知识库。

@@ -12,6 +12,7 @@
 
     <nav class="nav-bar">
         <div class="nav-bar-group">
+            <a href="../../index.html" class="nav-btn site-home-link" data-site-home>Personal Assets</a>
             <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
             <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
         </div>
@@ -21,7 +22,7 @@
     </nav>
 
     <div class="nav-panel" id="navPanel">
-        <h3>PM Skills in AI Era</h3>
+        <h3 data-lang-zh="AI时代PM技能" data-lang-en="PM Skills in AI Era">AI时代PM技能</h3>
         <a href="main.html" class="nav-link"><div class="nav-link-title">Home</div><div class="nav-link-desc">Knowledge base overview</div></a>
         <a href="user-insight.html" class="nav-link"><div class="nav-link-title">User Insight</div><div class="nav-link-desc">Research, empathy, need discovery</div></a>
         <a href="product-strategy.html" class="nav-link"><div class="nav-link-title">Product Strategy</div><div class="nav-link-desc">Vision, roadmap, prioritization</div></a>
@@ -55,7 +56,7 @@
         </header>
 
         <section id="指标体系">
-            <h2>指标体系构建</h2>
+            <h2 data-lang-zh="指标体系构建" data-lang-en="Building a Metrics System">指标体系构建</h2>
             <p>构建一套科学的产品指标体系，是数据驱动决策的基石。最经典的框架之一是由Sean Ellis提出的<strong>北极星指标（North Star Metric）</strong>——它捕捉产品为用户交付的核心价值，是团队所有人朝同一方向努力的单一聚焦指标。例如，Spotify的北极星指标不是DAU或收入，而是"用户听歌时长"，因为这与用户获得的价值直接相关。Airbnb的北极星指标是"预订的夜间数"，而非单纯的GMV。</p>
             <p>仅有北极星指标不够，还需要一套<strong>辅助指标体系</strong>来确保增长的健康性。Dave McClure的<strong>AARRR海盗指标</strong>模型（Acquisition获取、Activation激活、Retention留存、Revenue收入、Referral推荐）提供了完整的用户生命周期视角。但许多团队在此犯了一个常见错误：只盯着增长指标而忽视了<strong>反向指标（Counter Metrics）</strong>和<strong>护栏指标（Guardrail Metrics）</strong>。反向指标衡量增长可能带来的负面效应——例如，当你推动DAU增长时，用户平均会话时长是否在下降？这意味着你可能在吸引低质量用户。护栏指标则是你不能突破的底线——例如，页面加载时间不应超过3秒，客服响应率不应低于90%，无论增长多么诱人。</p>
             <p>选择正确的指标需要遵循几个原则：第一，指标必须<strong>可操作</strong>——团队在看到数据变化后能采取具体行动，而非面对一个抽象数字束手无策；第二，指标必须是<strong>可归因</strong>的——你应该能追踪到是哪个功能变更或运营活动导致了指标变化；第三，指标不能<strong>被操纵</strong>——"注册用户数"就比"月活用户数"更容易被刷量手段干扰。一个经典的教训是：许多内容平台将"页面浏览量（PV）"作为核心指标，结果催生了大量标题党内容，损害了用户体验和长期留存。</p>
@@ -85,7 +86,7 @@
         </section>
 
         <section id="实验设计">
-            <h2>实验设计与A/B测试</h2>
+            <h2 data-lang-zh="实验设计与A/B测试" data-lang-en="Experiment Design & A/B Testing">实验设计与A/B测试</h2>
             <p>A/B测试是产品经理验证因果假设最有力的工具，但它的有效性完全取决于实验设计的严谨性。首先要理解<strong>统计显著性（Statistical Significance）</strong>的概念：当p值小于0.05时，我们有95%的置信度认为实验组和对照组之间的差异不是随机波动造成的。但p值过低也可能意味着你忽略了实际效应——一个在统计上显著但业务意义微小的改进不值得投入工程资源。</p>
             <p>实验设计中另一个关键概念是<strong>MDE（Minimum Detectable Effect，最小可检测效应）</strong>。如果你希望检测到2%的转化率提升，就需要计算达到这个精度所需的最小样本量。样本量不足会导致实验无法区分"没有效果"和"有效果但检测不到"——这在统计学上称为第二类错误（Type II Error）。一个常见的PM陷阱是：运行了两天看到实验组略有优势就急于宣布胜利，但实际上样本量远未达到MDE要求，此时的显著性可能是假阳性。正确的做法是使用功效分析（Power Analysis）预先计算所需样本量，然后让实验运行足够长的时间。</p>
             <p>向利益相关者沟通实验结果同样是一门艺术。一次标准的结构化沟通应包含：实验背景和目标（为什么做这个实验）、实验设计（对照组和变体组的具体差异）、实验结果（主要指标的变化，附带置信区间）、解读和建议（不光报数字，要说明这对产品和用户意味着什么）、以及后续行动。特别需要注意的是，不要只报正向结果——失败的实验同样有价值，它能排除错误的方向、帮助你理解用户。Netflix和Booking.com等组织建立了"实验文化"，鼓励团队分享失败的实验，从中学到的经验常常比成功的实验更多。另外，考虑<strong>网络效应和溢出效应</strong>：在Uber这样的双边市场中，对乘客的实验会影响司机端，标准的用户独立假设不再成立，需要更复杂的实验设计。</p>
@@ -103,7 +104,7 @@
         </section>
 
         <section id="分析方法">
-            <h2>数据分析方法与工具</h2>
+            <h2 data-lang-zh="数据分析方法与工具" data-lang-en="Data Analysis Methods & Tools">数据分析方法与工具</h2>
             <p>在AI时代，学习基础SQL仍然是产品经理最有价值的技术投入之一。能够独立写SQL的PM不需要排队等待数据分析师的支持，可以在30分钟内验证一个想法，而不是等3天。核心SQL技能包括：SELECT查询、JOIN多表关联、GROUP BY聚合计算、WHERE条件过滤、以及窗口函数（用于计算滚动留存等）。举例来说，想知道新用户在第7天的留存率，你只需写一段包含自连接的SQL查询，然后能够在几分钟内得到答案。这种独立获取数据的能力，在决策速度上产生了显著的竞争优势。</p>
             <p><strong>队列分析（Cohort Analysis）</strong>是理解用户行为的另一个基本方法。它不是简单地看"今天有多少活跃用户"，而是将用户按注册时间或首次行为时间分组，追踪每组人在不同时间点的行为变化。例如，你可以比较1月份注册的用户和6月份注册的用户第30天的留存率，以此来评估产品迭代或市场投放质量是否真的在改善——整体DAU上升可能只是因为投放买量增加，而非产品本身变得更好。队列分析能揭示被聚合指标掩盖的真相。</p>
             <p><strong>漏斗分析（Funnel Analysis）</strong>聚焦于用户在关键流程中每一步的转化率和流失点。典型的电商漏斗可能是：浏览商品页→加入购物车→进入结算页→完成支付。每一步的转化率都可以计算，而最大的流失点就是优化的优先级所在。进阶的做法是配合<strong>细分分析（Segmentation）</strong>——将用户按设备类型、渠道来源、会员等级等维度切分后分别查看漏斗，往往能发现：iOS用户的支付转化率是Android的两倍，或者从搜索引擎来的用户在第三步大量流失。这种洞察无法从整体数字中获得。</p>
@@ -119,19 +120,19 @@
         </section>
 
         <section id="数据叙事">
-            <h2>数据叙事</h2>
+            <h2 data-lang-zh="数据叙事" data-lang-en="Data Storytelling">数据叙事</h2>
             <p>数据本身不说话，它需要一个故事。麦肯锡<strong>金字塔原理（Pyramid Principle）</strong>是数据叙事最经典的框架：先给出结论，再用数据支撑结论，最后补充细节和数据来源。这与学术写作的逻辑相反——在商业环境中，高管没有时间听你从头推演，他们需要首先知道"所以呢？我应该做什么？"。举例来说，不要这样汇报："我们分析了最近三周的用户行为数据，发现点击率从12%下降到8.5%，排查后发现可能是因为上周发布了新的导航设计，A/B实验结果也证实了这一点......" 而是应该："建议立即回滚新的导航设计，因为它导致核心流程点击率下降了29%。以下是数据支撑......"</p>
             <p>优秀的数据叙事需要把握三个要素：<strong>语境（Context）</strong>——当前的业务背景是什么，为什么现在关注这个指标；<strong>冲突（Tension）</strong>——数据揭示出了什么问题或机会，它与预期有什么差距；<strong>解决方案（Resolution）</strong>——基于数据洞察的清晰行动建议。这不仅仅是汇报技巧，更是迫使PM自己把思路理清楚的过程。很多时候，数据叙事的困难不是出在表达环节，而是因为PM自己对"这个数据到底意味着什么"并没有想透。另一个关键原则是<strong>选择正确的可视化</strong>：趋势用折线图、对比用柱状图、构成用饼图、关系用散点图。错误的图表类型比没有图表更危险——使用截断Y轴的柱状图夸大微小的变化，是在误导决策者。</p>
         </section>
 
         <section id="ai数据">
-            <h2>AI与数据决策</h2>
+            <h2 data-lang-zh="AI与数据决策" data-lang-en="AI & Data-Driven Decisions">AI与数据决策</h2>
             <p>大语言模型正在改变PM与数据交互的方式。过去，"写SQL查询"是获取数据的主要门槛，而现在PM可以用自然语言描述需求——"显示过去30天按渠道分组的新用户注册数，并按周聚合"——ChatGPT、GitHub Copilot或内部AI工具可以生成对应的SQL语句。这使得数据获取的门槛大幅降低，产品经理不再受限于个人SQL水平。但这并不意味着SQL不再重要：理解生成的SQL是否正确、判断查询结果是否合理，仍然需要基本的数据库知识。AI生成的结果需要人工验证，你不能把自己不理解的数据用于决策。</p>
             <p>更进一步，AI还能实现<strong>自动化洞察</strong>。现代分析工具开始内置AI功能，能自动扫描指标变化并标注异常——"上周三用户留存突然下降了15%，经分析可能与苹果隐私政策更新导致的归因中断相关"。PM的角色从"发现异常的人"转变为"解读异常并决定行动的人"。然而，有一件事始终需要人类判断：<strong>数据策略和指标选取</strong>。AI可以帮你分析数据，但它不能替你的产品决定什么才是真正的"用户价值"。北极星指标的定义、护栏指标的设定、实验文化在组织中的推动——这些需要产品判断、组织智慧和用户共情的任务，是AI无法替代的核心能力。</p>
         </section>
 
         <section id="跨域统计">
-            <h2>Cross-Domain：统计学与科学方法</h2>
+            <h2 data-lang-zh="跨界连接：统计学与科学方法" data-lang-en="Cross-Domain: Statistics & Scientific Method">跨界连接：统计学与科学方法</h2>
             <p>数据驱动决策的底层思维方法根植于统计学和科学哲学。Karl Popper的<strong>证伪主义（Falsificationism）</strong>为产品经理提供了一个强大的思维框架：一个好的产品假设必须是可被证伪的。如果说"新功能会改善用户体验"，这不可证伪（什么是"改善"？如何测量？到什么程度算改善？）。但如果表述为"新用户引导流程改版后，注册完成率将从当前的38%提升到45%以上，p值小于0.05"，这就成了一个可证伪的假设，可以用实验检验。这种思维方式的转变——从"证明自己是对的"到"设计一个实验来检验自己是否错了"——是数据驱动决策文化的核心。</p>
             <p>此外，<strong>贝叶斯思维（Bayesian Thinking）</strong>也值得产品经理内化。在传统的频率主义统计中，你等所有数据收集完毕后进行一次性的假设检验。而贝叶斯方法允许你随着新数据的到来持续更新信念——你有一个先验信念（这个功能大概会提升3%的转化率），看到部分实验数据后更新为后验信念，再看到更多数据继续更新。这种方法更适合现实中的产品迭代节奏：你不需要等完美的实验条件，每一次小实验、每一轮用户访谈，都是在更新你对用户和产品的理解。Spotify的产品团队就广泛采用贝叶斯方法指导迭代决策。</p>
 
@@ -142,7 +143,7 @@
         </section>
 
         <section id="读者影响">
-            <h2>对阅读者的影响</h2>
+            <h2 data-lang-zh="对阅读者的影响" data-lang-en="Impact on the Reader">对阅读者的影响</h2>
             <p>读完这一部分后，你应该能够区分"看数据"和"数据驱动决策"的本质区别。前者只是在消费报表，后者是建立假设、设计实验、解读结果的完整闭环。如果你的团队目前只在做前者，你需要问自己的第一个问题是：我们产品的北极星指标是什么？它是否准确捕捉了用户获得的核心价值？我们有反向指标和护栏指标来确保增长的健康性吗？</p>
             <p>本季度可以立即着手学习的工具和学习路径：首先，<strong>SQL</strong>——花两周时间学习SELECT、JOIN、GROUP BY和窗口函数（推荐Mode Analytics的免费SQL教程），然后直接在你公司的数据库上写真实查询。其次，<strong>选择一个产品分析工具（Mixpanel或Amplitude）</strong>深入学习其漏斗分析和留存分析功能，尝试创建至少三个有洞察的仪表盘。第三，<strong>读一本统计基础书</strong>——《Naked Statistics》或《统计学的世界》都可以帮你建立实验设计的直觉。最后，如果你还没有A/B测试平台，推动团队采用一个——即使是最简单的Google Optimize也能让你开始培养实验文化。记住：数据驱动不是一个状态，而是一种持续的训练。</p>
         </section>

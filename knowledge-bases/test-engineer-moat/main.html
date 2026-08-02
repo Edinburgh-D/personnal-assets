@@ -25,6 +25,7 @@
     <!-- Nav Bar -->
     <nav class="nav-bar">
         <div class="nav-bar-group">
+            <a href="../../index.html" class="nav-btn site-home-link" data-site-home>Personal Assets</a>
             <button class="nav-btn nav-btn--primary" id="navToggleBtn" data-lang-key="nav.menu" onclick="toggleNavPanel()">Menu</button>
             <a href="main.html" class="nav-btn" data-lang-key="nav.home">Home</a>
         </div>
@@ -34,7 +35,7 @@
 
     <!-- Nav Panel -->
     <div class="nav-panel" id="navPanel">
-        <h3>Test Engineer Moat</h3>
+        <h3 data-lang-zh="测试工程师护城河" data-lang-en="Test Engineer Moat">测试工程师护城河</h3>
         <div class="nav-section">
             <div class="nav-section-label" data-lang-key="nav.section.overview">Overview</div>
             <a href="#核心概念" class="nav-link"><div class="nav-link-title">Core Concepts</div><div class="nav-link-desc">AI时代的测试护城河是什么</div></a>
@@ -63,7 +64,7 @@
 
         <!-- Section: Core Concepts -->
         <div class="content-card" id="核心概念">
-            <h2>What is a Test Engineer's Moat?</h2>
+            <h2 data-lang-zh="什么是测试工程师的护城河？" data-lang-en="What is a Test Engineer's Moat?">什么是测试工程师的护城河？</h2>
             <p>"护城河"概念源自巴菲特投资哲学，指企业持续抵御竞争的结构性优势。引用到个人职业发展中，护城河是你拥有而他人——尤其是AI系统——难以在短期内复制的能力组合。对测试工程师而言，2026年的现实是：AI已经可以生成覆盖率达80%的测试用例、用自然语言编写Selenium脚本、自动分析CI/CD流水线中的失败根因。在这样的环境下，测试工程师的护城河不再是"我会写自动化脚本"或"我熟悉某个测试框架"，因为这些技能正在被AI以指数级速度追赶。</p>
             <p>真正的护城河是三个层次的能力叠加：第一层，测试基础功——测试设计思维、缺陷模式识别、质量风险建模，这些隐性知识源自大量项目实战经验，AI可以辅助但不能替代判断；第二层，AI时代的工具驾驭力——能精准指挥AI做它擅长的事（批量生成、模式匹配、回归执行），同时守住它不擅长的事（上下文判断、用户体验评估、模糊需求澄清）；第三层，不可编码的软实力——跨角色推动质量改进、在信息不完全时做出合理测试决策、建立团队质量文化。这三层能力的组合形成了"测试工程智慧"，这是当前AI最远无法覆盖的领域。</p>
             <p>本知识库将测试工程师护城河拆解为六大能力域：测试核心能力、AI辅助测试、Agent测试专项、业务领域深耕、软技能进化、职业发展策略。每个域既独立又可组合，最终形成一条AI难以逾越的能力鸿沟。无论你是3年经验的测试开发工程师，还是10年经验的测试架构师，都能在以下内容中找到适配你当前阶段的护城河构建路径。</p>
@@ -71,7 +72,7 @@
 
         <!-- Section: Background -->
         <div class="content-card" id="时代背景">
-            <h2>The AI Tsunami in Testing</h2>
+            <h2 data-lang-zh="AI对测试行业的冲击浪潮" data-lang-en="The AI Tsunami in Testing">AI对测试行业的冲击浪潮</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-year">2020-2021</div>
@@ -95,7 +96,7 @@
 
         <!-- Section: Moat Framework -->
         <div class="content-card" id="护城河框架">
-            <h2>The Six-Pillar Competency Framework</h2>
+            <h2 data-lang-zh="六大支柱能力框架" data-lang-en="The Six-Pillar Competency Framework">六大支柱能力框架</h2>
             <p>A test engineer's moat is built on six interconnected competency domains. Each domain compounds the value of the others — mastering one alone is insufficient; the synergy creates true defensibility.</p>
             <div class="key-concepts">
                 <div class="concept-card"><h4>1. Testing Fundamentals</h4><p>测试设计思维、缺陷分析、质量建模、探索性测试——这些是AI最难模拟的隐性知识。</p></div>
@@ -110,7 +111,7 @@
 
         <!-- Section: Study Guide -->
         <div class="content-card" id="如何学习">
-            <h2>How to Study This Knowledge Base</h2>
+            <h2 data-lang-zh="如何学习本知识库" data-lang-en="How to Study This Knowledge Base">如何学习本知识库</h2>
             <p>本知识库采用"由面到点、由浅入深"的渐进式结构设计。首页(main.html)提供全景视图，帮助你快速建立对AI时代测试工程师能力格局的整体认知。每个子页面围绕一个核心域展开深度讨论，包含概念解析、实操案例、工具推荐和自检清单。根据不同需求目标，推荐以下三种学习路径：</p>
             <p><strong>路径一：快速扫描（30分钟）</strong>——如果你时间紧张，可以先阅读本页完整的六大框架部分，然后跳转到ai-agent-impact.html了解AI对测试行业的具体冲击边界，最后浏览career-development.html的路径图部分。这三页能给你一个高层次的认知框架，帮助你判断自己当前的能力短板在哪里。</p>
             <p><strong>路径二：系统学习（3-5天）</strong>——按照导航栏从上到下的顺序逐页阅读，每读完一个子页面完成该页末尾的自检清单。建议顺序：ai-agent-impact.html → testing-fundamentals.html → ai-assisted-testing.html → agent-testing-challenges.html → business-domain-expertise.html → soft-skills-evolution.html → career-development.html。每天阅读2-3页，边读边在自己的项目中实践对应内容。</p>
@@ -126,7 +127,7 @@
 
         <!-- Section: Further Reading -->
         <div class="content-card" id="延伸阅读">
-            <h2 data-lang-key="section.further">Further Reading</h2>
+            <h2 data-lang-zh="延伸阅读" data-lang-en="Further Reading" data-lang-key="section.further">延伸阅读</h2>
             <div class="table-container">
                 <table>
                     <tr><th data-lang-key="table.page">Page</th><th data-lang-key="table.content">Content</th></tr>

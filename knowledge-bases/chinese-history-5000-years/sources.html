@@ -12,15 +12,15 @@
     <meta property="og:description" content="中国历史的权威参考资料与推荐阅读。">
     <meta property="og:type" content="website">
     <script>if(localStorage.getItem('kb_darkMode')==='true'){document.documentElement.classList.add('dark-mode-preload');}</script>
-    <style>html.dark-mode-preload body{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%)!important;}</style>
-    <style>body{background:linear-gradient(135deg,#f5ede0 0%,#e8d8c8 100%);}:root{--kb-primary:#b8462b;--kb-secondary:#7a2e1c;--kb-accent:#c99840;}</style>
     <link rel="stylesheet" href="css-styles.css">
 </head>
 <body>
     <div class="nav-menu-btn">
-        <button onclick="toggleNavMenu()">📚 目录导航</button>
+        <a href="../../index.html" class="site-home-link" data-site-home>Personal Assets</a>
+        <a href="main.html" class="archive-home-link">History Archive</a>
+        <button type="button" aria-controls="navMenuTooltip" aria-expanded="false" onclick="toggleNavMenu()">&#30446;&#24405;</button>
         <div class="nav-menu-tooltip" id="navMenuTooltip">
-            <h3>📚 中国上下五千年历史导航</h3>
+            <h3>中国上下五千年历史导航</h3>
             <div class="nav-section"><div class="nav-section-title">导航</div><a href="main.html" class="nav-item"><div class="nav-item-title">← 返回总览</div></a></div>
             <div class="nav-section"><div class="nav-section-title">本页章节</div>
                 <a href="#书籍" class="nav-item"><div class="nav-item-title">推荐书籍</div></a>
@@ -31,7 +31,7 @@
     </div>
     <div class="sidebar-nav"><h4>本页目录</h4><a href="#书籍">推荐书籍</a><a href="#其他">其他资源</a><a href="#来源说明">来源说明</a></div>
     <div class="container">
-        <header><a href="main.html" class="back-link">← 返回总览</a><h1>📖 参考来源</h1><p class="subtitle">学习中国历史需要可靠的导航图。以下资源从不同角度切入，为深入探索提供抓手。</p></header>
+        <header><a href="main.html" class="back-link">← 返回总览</a><h1>参考来源</h1><p class="subtitle">学习中国历史需要可靠的导航图。以下资源从不同角度切入，为深入探索提供抓手。</p></header>
 
         <div class="content-card" id="书籍">
             <h2>一、推荐书籍</h2>
@@ -69,7 +69,7 @@
                 </ul>
             </div>
             <p>本知识库内容主要基于中国历史学通用知识体系和多部学术通史的交叉核对（<strong>综合整理</strong>），代表性经典引文（如孔子、老子等著作中的名句）取自流传至今的古代文献（<strong>一手资料</strong>）。全站尽量呈现具有学术共识的判断。存在争议的地方（如夏朝的确切年代、秦始皇焚书坑儒的真实规模、太平天国人口损失的估算等）已在文中说明不确定性和不同学者观点的存在。</p>
-            <div class="warning-box"><h5>⚠️ 读者须知</h5><p>中国历史学的一些核心议题仍处于活跃的学术讨论中（如"封建社会"的起止界定、资本主义萌芽的性质、明清"闭关"政策的历史评价等）。本知识库在叙述中已兼顾主流观点和中国学者内部的代表性分歧，但读者在进行深入历史学习时应参照多部通史和专著来形成自己的判断。此外，对近现代史（特别是20世纪以来的事件）的理解高度依赖于史料的可知性和研究视角——这正是所有当代史的共性。</p></div>
+            <div class="warning-box"><h5>读者须知</h5><p>中国历史学的一些核心议题仍处于活跃的学术讨论中（如"封建社会"的起止界定、资本主义萌芽的性质、明清"闭关"政策的历史评价等）。本知识库在叙述中已兼顾主流观点和中国学者内部的代表性分歧，但读者在进行深入历史学习时应参照多部通史和专著来形成自己的判断。此外，对近现代史（特别是20世纪以来的事件）的理解高度依赖于史料的可知性和研究视角——这正是所有当代史的共性。</p></div>
         </div>
     </div>
     <footer><p>中国上下五千年历史知识库 | 参考来源 | 生成时间：2026-08-02</p></footer>
@@ -77,4 +77,3 @@
     <script>function toggleNavMenu(){var t=document.getElementById('navMenuTooltip');t.classList.toggle('show');}document.addEventListener('click',function(e){var t=document.getElementById('navMenuTooltip');var b=document.querySelectorAll('.nav-menu-btn button');var c=false;b.forEach(function(x){if(x.contains(e.target))c=true;});if(!t.contains(e.target)&&!c){t.classList.remove('show');}});</script>
 </body>
 </html>
-```
