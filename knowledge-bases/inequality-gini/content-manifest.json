@@ -11,7 +11,7 @@
   "pages": [
     {
       "file": "main.html",
-      "title": "先问清楚：我们在比较什么",
+      "title": "贫富差距的统计对象",
       "role": "overview",
       "stage": "orientation",
       "minContentChars": 3500,
@@ -35,7 +35,7 @@
     },
     {
       "file": "measurement.html",
-      "title": "从洛伦兹曲线到 0.40",
+      "title": "洛伦兹曲线与基尼系数",
       "role": "chapter",
       "stage": "mechanism",
       "minContentChars": 3500,
@@ -58,7 +58,7 @@
     },
     {
       "file": "judgment.html",
-      "title": "从一个数走向完整判断",
+      "title": "单一数字之外的分配图景",
       "role": "chapter",
       "stage": "judgment",
       "minContentChars": 3500,
@@ -82,7 +82,7 @@
     },
     {
       "file": "sources.html",
-      "title": "方法、来源与延伸阅读",
+      "title": "概念来源与数据口径",
       "role": "reference",
       "stage": "reference",
       "minContentChars": 800,
