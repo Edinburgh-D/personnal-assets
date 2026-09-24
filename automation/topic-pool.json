@@ -1,0 +1,3654 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-24",
+  "source": {
+    "name": "Google 话题记录",
+    "captureMethod": "manual-copy",
+    "repairNotes": [
+      "“历史/军事”末条“海权论与马汉理论”的 type 与 relatedTo 在粘贴时被截断，已按 single / [] 补全。",
+      "原始文本中有 4 条军事话题脱离分类外壳，已按内容归入“历史/军事”。"
+    ]
+  },
+  "strategy": "mixed",
+  "relatedWeight": 0.7,
+  "randomWeight": 0.3,
+  "readerType": "普通大众",
+  "existingLibraries": [
+    "东北历史知识库",
+    "东亚儒家法家文化圈知识库",
+    "法家思想知识库",
+    "金融投资基础知识库",
+    "康波周期知识库",
+    "量化交易知识库",
+    "男生精力恢复知识库",
+    "清朝影响知识库",
+    "荣格心理测试知识库",
+    "荣格心理学知识库",
+    "荣格知识库",
+    "四渡赤水知识库",
+    "五脏六腑五行知识库",
+    "西方哲学史知识库",
+    "心理学知识库",
+    "新闻分析方法论",
+    "行为心理学知识库",
+    "养肾知识库",
+    "政治意识形态知识库",
+    "中医基础知识库",
+    "中医体质虚弱知识库",
+    "中医穴位知识库",
+    "中医诊断学知识库",
+    "ai-prompt-knowledge-base",
+    "Harness知识库",
+    "Hermes知识库",
+    "logic-knowledge-base",
+    "RAG知识库"
+  ],
+  "domains": [
+    {
+      "name": "传媒/新闻",
+      "colorScheme": "law",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "议程设置理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "自媒体变现模式",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "播客经济与音频赛道",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "新闻摄影史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "媒介即讯息:麦克卢汉",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "深度报道与非虚构新闻",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "算法推荐与信息分发",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "调查记者的生存现状",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "传统媒体 vs 新媒体",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "舆论监督与新闻自由",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "广告与公关的边界",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "国际通讯社格局",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "短视频新闻化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "媒介素养教育",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "新闻伦理与虚假信息",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "情感/两性",
+      "colorScheme": "psychology",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "亲密关系五要素",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "离婚经济学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "PUA解构与反操控",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "性别光谱与流动性",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "单身社会与独居文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "异地恋维持策略",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "爱情三角理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "婚姻制度演变史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "恋爱脑与理性择偶",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "社交恐惧与约会焦虑",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "嫉妒心理与信任重建",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "冷暴力识别与应对",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "开放式关系争议",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "分手心理学与走出来",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "网络恋爱与虚拟亲密",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "家庭/育儿",
+      "colorScheme": "psychology",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "正面管教法",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "多胎家庭关系处理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "隔代教育利弊",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "青春期沟通技巧",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "家庭系统理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "虎妈 vs 猫爸:教育风格",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "儿童敏感期与发育里程碑",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "性教育怎么教",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "单亲家庭与重组家庭",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "家庭财务规划",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "婆媳关系心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "亲子阅读指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "儿童屏幕时间管理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "家庭仪式感建立",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "空巢父母心理调适",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "农业/农村",
+      "colorScheme": "economy",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "智慧农业与精准种植",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "转基因争议",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "农药与有机农业",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "粮食安全与战略储备",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "乡村振兴与空心村",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "都市农业与垂直农场",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "畜牧业与动物福利",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "种子战争与种业安全",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "农业合作社模式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "农产品品牌化之路",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "土壤退化与修复",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "渔业与海洋资源",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "农耕文明与节气文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "全球粮食贸易格局",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "农业补贴政策比较",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "数学/逻辑",
+      "colorScheme": "philosophy",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "费马大定理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "概率论陷阱与赌徒谬误",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "哥德尔不完备定理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "博弈论进阶",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "数学悖论集锦",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "微积分思想史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "欧几里得与非欧几何",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "统计学陷阱",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "密码学数学基础",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "图论与网络科学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数学建模入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "逻辑学:形式逻辑 vs 非形式逻辑",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "无穷大与集合论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数学竞赛与奥数争议",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "黄金比例与数学之美",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "环境/生态",
+      "colorScheme": "health",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "珊瑚礁白化危机",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "外来入侵物种",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "塑料污染与降解",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "碳交易市场",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "再生农业与土壤健康",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "亚马逊雨林与地球之肺",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "核废料处理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "海洋酸化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "野生动物保护与盗猎",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "城市生态与绿地系统",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "可再生能源对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "环境运动史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "生态足迹与碳中和生活",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极端气候与防灾",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "生物圈二号实验",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "时尚/穿搭",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "男士穿搭基础",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "奢侈品经济学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "街头文化史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "可持续时尚",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "色彩搭配理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "女士职场穿搭",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "球鞋文化与炒作经济",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "快时尚 vs 慢时尚",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "面料知识入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "古着与vintage文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汉服复兴运动",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "时装周与秀场文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "个人风格建立指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "配饰与细节美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极简衣橱构建法",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "游戏/互动娱乐",
+      "colorScheme": "technology",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "宫崎英高与魂系设计",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "塞尔达开放世界设计",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "桌游机制设计",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "独立游戏开发指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏叙事设计",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "MMORPG经济系统",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏引擎对比(Unity/Unreal/Godot)",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "电子竞技赛事运营",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏成瘾与心理健康",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "复古游戏与像素艺术",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏数值平衡设计",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "VR/AR游戏前沿",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏本地化与翻译",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "沙盒游戏与涌现玩法",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏音乐与氛围营造",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "汽车/交通",
+      "colorScheme": "economy",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "电动车革命",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "F1技术下放民用",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "自动驾驶分级与路线",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "高铁技术对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "摩托车文化与改装",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汽车设计语言演变",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "二手车市场与估值",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "混合动力技术路线",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汽车安全碰撞测试",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "城市交通拥堵治理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "充电桩基础设施",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "共享出行与网约车",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "飞行汽车与eVTOL",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汽车百年品牌史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "轮胎科技与材料学",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "天文/航天",
+      "colorScheme": "technology",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "阿波罗登月计划",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "火星殖民计划",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "韦伯望远镜与深空观测",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "中国空间站建设",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "系外行星搜寻",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "SpaceX与可回收火箭",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "卫星互联网与星链计划",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "太空垃圾与轨道安全",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "国际空间站日常",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "航天员训练与选拔",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "月球基地建设设想",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "费米悖论与外星文明",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "天文摄影入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "商业航天时代",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "宇宙膨胀与暗能量",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "医学/健康(西医)",
+      "colorScheme": "health",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "免疫系统工作原理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "癌症治疗前沿",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "抗生素耐药危机",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "手术机器人与达芬奇系统",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "基因检测与精准医疗",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "心血管疾病预防",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "糖尿病与代谢综合征",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "疫苗原理与争议",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "阿兹海默症与脑健康",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "现代医学 vs 替代医学",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "药理学入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "急诊医学与黄金一小时",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "器官移植与排异反应",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "临床试验与循证医学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "心理健康与精神科药物",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "宗教/神话",
+      "colorScheme": "philosophy",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "佛教入门",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "北欧神话体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "圣经故事与文化影响",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "印度教诸神与轮回",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "道教神仙谱系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "希腊神话与西方文明",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "伊斯兰教简史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "日本神道教与万物有灵",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "儒释道三教合一",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "宗教改革与基督教分裂",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "邪教与精神控制",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "神话学入门(坎贝尔英雄之旅)",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "藏传佛教活佛转世制度",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "宗教与科学冲突史",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "冥想与修行传统",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "影视/娱乐",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "豆瓣Top250电影解析",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "韩剧工业化体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "漫威宇宙叙事设计",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "纪录片美学与真实电影",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "港片黄金时代",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "动画电影制作流程",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "日本动画产业与宫崎骏",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "流媒体战争:Netflix vs Disney+",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "电影配乐大师",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "综艺模式与创新",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "好莱坞类型片公式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "短剧与微短剧爆发",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "电影剪辑节奏学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "独立电影与电影节",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "IP改编:从小说到银幕",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "文学/写作",
+      "colorScheme": "philosophy",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "拉美魔幻现实主义",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "推理小说流派演变",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "非虚构写作技巧",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "诗歌鉴赏入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "博尔赫斯与迷宫叙事",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "俄罗斯文学黄金时代",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "中国古典小说四大名著",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "科幻文学简史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "日本纯文学与私小说",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "创意写作工作坊",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "武侠文学与金庸宇宙",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "诺贝尔文学奖争议史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "网络文学产业生态",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "散文与随笔的艺术",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "儿童文学经典导读",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "美食/饮食文化",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "中国八大菜系",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "法餐礼仪与经典菜式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "咖啡品鉴与冲煮科学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "威士忌入门指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "发酵科学与微生物美食",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "日本料理美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "意大利面食文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "中餐 vs 西餐:烹饪哲学对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "街头小吃与城市文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "茶道与茶文化",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "葡萄酒品鉴体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "素食主义运动",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "香料贸易与饮食变迁",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "分子料理与食物科学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "食品添加剂真相",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "艺术/设计",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "包豪斯运动",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极简主义设计史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "字体设计与排版美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "建筑风格演变",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "摄影构图法则",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "电影色彩理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "工业设计十大原则",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "浮世绘与日本美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "现代艺术争议",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "UI/UX设计心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "时装史与潮流周期",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏美术风格演变",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "法律/伦理",
+      "colorScheme": "law",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "法系比较:大陆法 vs 英美法",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "无罪推定与程序正义",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "知识产权法入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "劳动法与打工人权益",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数据隐私法(GDPR)",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "人工智能伦理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "安乐死与生命权",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "死刑存废之争",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "国际法与战争罪",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "消费者权益保护",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "算法歧视与法律规制",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "基因编辑伦理",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "教育/学习",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "芬兰教育模式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "蒙台梭利教育法",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "翻转课堂",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "间隔重复与记忆曲线",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "儿童编程教育",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "博雅教育 vs 职业教育",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "在线教育平台演变",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "学前教育焦虑",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "高考制度比较研究",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "终身学习理念",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "学习障碍与特殊教育",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "教育公平与阶层流动",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "留学决策与海归困境",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "项目制学习(PBL)",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "AI时代的教师角色",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "体育/竞技",
+      "colorScheme": "history",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "世界杯百年史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "NBA战术演变",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "电子竞技产业生态",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "马拉松科学与训练",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "奥运会政治博弈史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "拳击与综合格斗对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "足球阵型演变",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "体育数据分析(Moneyball)",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极限运动与风险心理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "体育博彩与赔率体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "F1赛车与空气动力学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "网球大满贯文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "体育伤病与康复科学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "青训体系比较",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "体育解说与叙事艺术",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "流行文化/生活",
+      "colorScheme": "art",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "电影叙事结构解析",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "咖啡文化全指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极简主义生活方式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "城市漫步与建筑美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "播客复兴与声音媒体",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游戏设计心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "孤独的哲学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "仪式感与生活美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "流行音乐流派演变",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "短视频算法与注意力经济",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "盲盒经济与收藏心理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "精酿啤酒文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "城市农夫与阳台种植",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数字游民生活方式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "极简衣橱与胶囊衣橱",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "旅行文学与公路文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "桌游设计与社交",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "街头摄影美学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "手账文化与时间管理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "宠物经济与陪伴心理",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "商业/管理",
+      "colorScheme": "business",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "硅谷创业史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "马斯克的第一性原理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "奈飞文化手册",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "平台经济学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "反垄断与科技巨头",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "OKR与KPI对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "个人品牌打造",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "副业经济与斜杠青年",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "费曼学习法",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "深度工作与注意力管理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "亚马逊飞轮效应",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "苹果供应链管理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "特斯拉垂直整合战略",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "宜家低成本设计哲学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "星巴克第三空间理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "麦肯锡方法论与MECE",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "精益创业与MVP",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "黑客增长方法论",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "定价策略心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "供应链牛鞭效应",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "蓝海战略",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "护城河理论(巴菲特)",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "平台垄断与反垄断",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "企业文化崩塌案例",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "创始人困境与控制权",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "科学/自然",
+      "colorScheme": "technology",
+      "relatedTo": [],
+      "topics": [
+        {
+          "name": "宇宙大爆炸与暗物质",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "进化论与自然选择",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "量子力学入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "基因编辑与CRISPR",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "气候变化与碳中和",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "相对论通俗解读",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "混沌理论与蝴蝶效应",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "病毒与人类共进化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "深海探索与未知生物",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数学之美:从黄金比例到分形",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "费曼物理学讲义精要",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "量子纠缠与贝尔不等式",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "质能方程与核物理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "表观遗传学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "脑科学与意识之谜",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "生物多样性危机",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "板块构造与地震预测",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "恒星演化与黑洞",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "时间箭头与热力学第二定律",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "生命的起源假说",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "人类基因图谱",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "光合作用与人工光合",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "纳米材料前沿",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "超导与室温超导之争",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "空间站与太空殖民",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "政治/社会",
+      "colorScheme": "law",
+      "relatedTo": [
+        "政治意识形态知识库",
+        "新闻分析方法论"
+      ],
+      "topics": [
+        {
+          "name": "乌合之众解析",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "意识形态光谱",
+          "type": "multi-branch",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "制度经济学",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "公共选择理论",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "信息战与舆论操控",
+          "type": "single",
+          "relatedTo": [
+            "新闻分析方法论"
+          ]
+        },
+        {
+          "name": "民主 vs 效率",
+          "type": "comparison",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "精英主义与平民主义",
+          "type": "comparison",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "软实力与文化霸权",
+          "type": "single",
+          "relatedTo": [
+            "新闻分析方法论"
+          ]
+        },
+        {
+          "name": "选举制度比较",
+          "type": "comparison",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "技术官僚主义",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库",
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "内卷与躺平社会学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "信息茧房与回音室效应",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "逆全球化浪潮",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "人口危机与少子化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "全民基本收入UBI",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "监控社会与隐私权",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "福利国家模式比较",
+          "type": "comparison",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "公地悲剧与集体行动逻辑",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "种族隔离与和解之路",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "女性主义浪潮",
+          "type": "multi-branch",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "选举人团与美国选举制度",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "欧盟一体化与 Brexit",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "中东冲突根源",
+          "type": "multi-branch",
+          "relatedTo": [
+            "新闻分析方法论"
+          ]
+        },
+        {
+          "name": "东南亚地缘格局",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "非洲后殖民困境",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "拉美中等收入陷阱",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "威权韧性理论",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "社会信用体系争议",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "假新闻与后真相时代",
+          "type": "single",
+          "relatedTo": [
+            "新闻分析方法论"
+          ]
+        },
+        {
+          "name": "城市化与逆城市化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "全球治理与联合国改革",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "科技/AI",
+      "colorScheme": "technology",
+      "relatedTo": [
+        "ai-prompt-knowledge-base",
+        "RAG知识库",
+        "Hermes知识库",
+        "Harness知识库"
+      ],
+      "topics": [
+        {
+          "name": "大模型原理入门",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "RAG技术详解",
+          "type": "multi-branch",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "Agent架构设计",
+          "type": "multi-branch",
+          "relatedTo": [
+            "Hermes知识库"
+          ]
+        },
+        {
+          "name": "知识图谱入门",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "Transformer架构解析",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "RLHF与对齐技术",
+          "type": "single",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "向量数据库对比",
+          "type": "comparison",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "MLOps实践指南",
+          "type": "single",
+          "relatedTo": [
+            "Harness知识库"
+          ]
+        },
+        {
+          "name": "Prompt Engineering进阶",
+          "type": "multi-branch",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "AI安全与对齐",
+          "type": "single",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "ChatGPT现象级爆发始末",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "AI会取代你的工作吗",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "开源大模型生态",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "深度学习简史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "量子计算入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "脑机接口与神经科技",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "Web3与去中心化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "芯片战争与半导体博弈",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "深度学习框架对比(PyTorch/TensorFlow/JAX)",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "多模态大模型",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "AI绘画与生成艺术",
+          "type": "single",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "联邦学习与隐私计算",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "图神经网络入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "强化学习从零到一",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "模型压缩与边缘部署",
+          "type": "single",
+          "relatedTo": [
+            "Harness知识库"
+          ]
+        },
+        {
+          "name": "AI芯片架构对比(GPU/TPU/NPU)",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "自动驾驶技术路线",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "数字孪生与工业互联网",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "大模型幻觉问题与缓解",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "AI编程助手进化史",
+          "type": "single",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "合成数据与数据增强",
+          "type": "single",
+          "relatedTo": [
+            "RAG知识库"
+          ]
+        },
+        {
+          "name": "对抗样本与AI安全攻防",
+          "type": "single",
+          "relatedTo": [
+            "ai-prompt-knowledge-base"
+          ]
+        },
+        {
+          "name": "具身智能与机器人",
+          "type": "single",
+          "relatedTo": [
+            "Hermes知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "语言/文化",
+      "colorScheme": "art",
+      "relatedTo": [
+        "东亚儒家法家文化圈知识库"
+      ],
+      "topics": [
+        {
+          "name": "汉字演变史",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "日本武士道",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "斯拉夫文化",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "语言学入门",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "日语敬语体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "俄语文学选读",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "符号学入门",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "中日韩文化对比",
+          "type": "comparison",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "翻译理论与实践",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汉字文化圈书写系统",
+          "type": "multi-branch",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "网络流行语的诞生与传播",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "方言保护与文化多样性",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "手语的语言学特征",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "世界语运动与人工语言",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "象形文字与拼音文字认知差异",
+          "type": "comparison",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "语言的萨丕尔-沃尔夫假说",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "克里奥尔语与皮钦语",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "汉字简化运动史",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "拉丁文与欧洲学术传统",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "语言的消亡与复兴",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "俚语与社会身份",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "双语者的认知优势",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "修辞学入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "古文字破译史(罗塞塔石碑/甲骨文)",
+          "type": "multi-branch",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "语言的性别差异",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "心理学",
+      "colorScheme": "psychology",
+      "relatedTo": [
+        "荣格心理学知识库",
+        "行为心理学知识库",
+        "心理学知识库",
+        "荣格心理测试知识库"
+      ],
+      "topics": [
+        {
+          "name": "认知偏差大全",
+          "type": "multi-branch",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "MBTI深度解析",
+          "type": "multi-branch",
+          "relatedTo": [
+            "荣格心理测试知识库"
+          ]
+        },
+        {
+          "name": "阿德勒个体心理学",
+          "type": "single",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "弗洛伊德精神分析",
+          "type": "single",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "催眠术与暗示",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "荣格 vs 弗洛伊德",
+          "type": "comparison",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "九型人格",
+          "type": "multi-branch",
+          "relatedTo": [
+            "荣格心理测试知识库"
+          ]
+        },
+        {
+          "name": "创伤与心理复原",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "社会心理学入门",
+          "type": "multi-branch",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "梦的解析",
+          "type": "single",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "原生家庭与依恋理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "内向者优势",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "拖延症心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "煤气灯效应与精神操控",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "心流理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "情商比智商更重要吗",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "斯德哥尔摩综合征",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "消费心理学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "格式塔心理学",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "人本主义心理学(罗杰斯与马斯洛)",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "皮亚杰认知发展理论",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "斯金纳与行为主义",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "积极心理学(塞利格曼)",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "多巴胺与奖赏机制",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "创伤后成长",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "依恋类型与亲密关系",
+          "type": "single",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "群体动力学与从众实验",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "心理防御机制详解",
+          "type": "multi-branch",
+          "relatedTo": [
+            "荣格心理学知识库"
+          ]
+        },
+        {
+          "name": "催眠治疗与临床应用",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "人格障碍谱系",
+          "type": "multi-branch",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "被动攻击型人格",
+          "type": "single",
+          "relatedTo": [
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "冒名顶替综合征",
+          "type": "single",
+          "relatedTo": [
+            "心理学知识库"
+          ]
+        },
+        {
+          "name": "高敏感人格(HSP)",
+          "type": "single",
+          "relatedTo": [
+            "荣格心理测试知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "哲学/权谋",
+      "colorScheme": "philosophy",
+      "relatedTo": [
+        "法家思想知识库",
+        "西方哲学史知识库",
+        "政治意识形态知识库"
+      ],
+      "topics": [
+        {
+          "name": "韩非子与法家",
+          "type": "multi-branch",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "博弈论入门",
+          "type": "multi-branch",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "斯多葛哲学",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "存在主义",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "韩非子 vs 马基雅维利",
+          "type": "comparison",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "尼采超人哲学",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "功利主义与义务论",
+          "type": "comparison",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "王阳明心学",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "老子与道家智慧",
+          "type": "single",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "维特根斯坦语言哲学",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "电车难题与道德困境",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "萨特与自由意志",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "禅宗公案与顿悟",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "黑暗三人格",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "沉默的螺旋",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "柏拉图洞穴寓言",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "三十六计详解",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "柏拉图《理想国》",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "亚里士多德的中庸之道",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "康德的三大批判",
+          "type": "multi-branch",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "黑格尔辩证法",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "叔本华的悲观主义",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "海德格尔与存在论",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "加缪与荒诞哲学",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "密尔与功利主义",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "罗尔斯正义论",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "哈贝马斯交往理性",
+          "type": "single",
+          "relatedTo": [
+            "西方哲学史知识库"
+          ]
+        },
+        {
+          "name": "马基雅维利《君主论》",
+          "type": "single",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "厚黑学与中国式权谋",
+          "type": "single",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "张仪苏秦合纵连横",
+          "type": "single",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "帝王术与驭臣之术",
+          "type": "multi-branch",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "阳明心学与知行合一实践",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "金融/量化",
+      "colorScheme": "economy",
+      "relatedTo": [
+        "康波周期知识库",
+        "量化交易知识库",
+        "金融投资基础知识库"
+      ],
+      "topics": [
+        {
+          "name": "行为金融学",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库",
+            "行为心理学知识库"
+          ]
+        },
+        {
+          "name": "索罗斯反身性理论",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库",
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "期权定价模型",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "对冲基金策略",
+          "type": "multi-branch",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "技术分析流派",
+          "type": "multi-branch",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "达利欧债务危机模型",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "价值投资 vs 成长投资",
+          "type": "comparison",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "加密货币与区块链经济学",
+          "type": "multi-branch",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "蒙代尔-弗莱明模型",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "量化回测陷阱与过拟合",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "巴菲特投资哲学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "华尔街之狼:金融欺诈史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "黑天鹅与反脆弱",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "贫富差距与基尼系数",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "碳中和与绿色金融",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "房地产周期与泡沫",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "数字人民币与货币未来",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "杠杆原理与爆仓机制",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "指数基金革命",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "通胀与通缩:谁更可怕",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "大类资产配置模型",
+          "type": "single",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "可转债投资策略",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "私募股权与风险投资入门",
+          "type": "multi-branch",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "期货市场与套期保值",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "外汇市场与汇率博弈",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "固定收益与债券定价",
+          "type": "single",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "供应链金融",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "保险精算原理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "次贷危机复盘",
+          "type": "multi-branch",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "日元套息交易",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "ESG投资与可持续金融",
+          "type": "single",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "高频交易与市场微观结构",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "量化因子模型(Fama-French)",
+          "type": "single",
+          "relatedTo": [
+            "量化交易知识库"
+          ]
+        },
+        {
+          "name": "REITs与不动产投资信托",
+          "type": "single",
+          "relatedTo": [
+            "金融投资基础知识库"
+          ]
+        },
+        {
+          "name": "黄金与大宗商品周期",
+          "type": "single",
+          "relatedTo": [
+            "康波周期知识库"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "中医/养生",
+      "colorScheme": "health",
+      "relatedTo": [
+        "中医基础知识库",
+        "中医体质虚弱知识库",
+        "中医穴位知识库",
+        "养肾知识库",
+        "五脏六腑五行知识库"
+      ],
+      "topics": [
+        {
+          "name": "子午流注时辰养生",
+          "type": "single",
+          "relatedTo": [
+            "中医基础知识库",
+            "养肾知识库"
+          ]
+        },
+        {
+          "name": "中药方剂学入门",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "黄帝内经选读",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医基础知识库",
+            "五脏六腑五行知识库"
+          ]
+        },
+        {
+          "name": "食疗药膳",
+          "type": "single",
+          "relatedTo": [
+            "中医体质虚弱知识库",
+            "养肾知识库"
+          ]
+        },
+        {
+          "name": "经络系统详解",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医穴位知识库"
+          ]
+        },
+        {
+          "name": "伤寒论六经辨证",
+          "type": "single",
+          "relatedTo": [
+            "中医诊断学知识库"
+          ]
+        },
+        {
+          "name": "中医体质九分法",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医体质虚弱知识库"
+          ]
+        },
+        {
+          "name": "艾灸与拔罐疗法",
+          "type": "comparison",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "气血津液学说",
+          "type": "single",
+          "relatedTo": [
+            "五脏六腑五行知识库"
+          ]
+        },
+        {
+          "name": "八段锦与太极养生",
+          "type": "comparison",
+          "relatedTo": [
+            "男生精力恢复知识库"
+          ]
+        },
+        {
+          "name": "睡眠科学与失眠调理",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "肠道菌群与人体健康",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "间歇性断食指南",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "筋膜理论与身体放松",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "正念冥想入门",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "中医 vs 西医:方法论对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "抗衰老前沿科学",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "咖啡因与茶多酚:提神机制对比",
+          "type": "comparison",
+          "relatedTo": []
+        },
+        {
+          "name": "温病学派与瘟疫论",
+          "type": "single",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "中医外科与正骨手法",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "药食同源理论",
+          "type": "single",
+          "relatedTo": [
+            "中医体质虚弱知识库"
+          ]
+        },
+        {
+          "name": "五运六气与气候医学",
+          "type": "single",
+          "relatedTo": [
+            "中医基础知识库",
+            "五脏六腑五行知识库"
+          ]
+        },
+        {
+          "name": "中医美容与面部诊断",
+          "type": "single",
+          "relatedTo": [
+            "中医诊断学知识库"
+          ]
+        },
+        {
+          "name": "小儿推拿入门",
+          "type": "single",
+          "relatedTo": [
+            "中医穴位知识库"
+          ]
+        },
+        {
+          "name": "道家内丹与气功养生",
+          "type": "multi-branch",
+          "relatedTo": [
+            "养肾知识库"
+          ]
+        },
+        {
+          "name": "中药材炮制学",
+          "type": "single",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "针刺手法与补泻原理",
+          "type": "single",
+          "relatedTo": [
+            "中医穴位知识库"
+          ]
+        },
+        {
+          "name": "中医情志病调理",
+          "type": "single",
+          "relatedTo": [
+            "中医诊断学知识库"
+          ]
+        },
+        {
+          "name": "耳穴疗法",
+          "type": "single",
+          "relatedTo": [
+            "中医穴位知识库"
+          ]
+        },
+        {
+          "name": "膏方与冬令进补",
+          "type": "single",
+          "relatedTo": [
+            "中医体质虚弱知识库"
+          ]
+        },
+        {
+          "name": "中医急救术",
+          "type": "single",
+          "relatedTo": [
+            "中医基础知识库"
+          ]
+        },
+        {
+          "name": "体质辨识与个性化养生",
+          "type": "multi-branch",
+          "relatedTo": [
+            "中医体质虚弱知识库"
+          ]
+        },
+        {
+          "name": "中外传统医学对比(阿育吠陀/尤那尼)",
+          "type": "comparison",
+          "relatedTo": []
+        }
+      ]
+    },
+    {
+      "name": "历史/军事",
+      "colorScheme": "history",
+      "relatedTo": [
+        "东北历史知识库",
+        "清朝影响知识库",
+        "四渡赤水知识库"
+      ],
+      "topics": [
+        {
+          "name": "孙子兵法",
+          "type": "multi-branch",
+          "relatedTo": [
+            "四渡赤水知识库"
+          ]
+        },
+        {
+          "name": "战国纵横术",
+          "type": "single",
+          "relatedTo": [
+            "法家思想知识库"
+          ]
+        },
+        {
+          "name": "冷战史",
+          "type": "multi-branch",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "地缘政治学",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库",
+            "清朝影响知识库"
+          ]
+        },
+        {
+          "name": "大国的兴衰",
+          "type": "single",
+          "relatedTo": [
+            "清朝影响知识库",
+            "康波周期知识库"
+          ]
+        },
+        {
+          "name": "蒙古帝国与世界史",
+          "type": "single",
+          "relatedTo": [
+            "东北历史知识库"
+          ]
+        },
+        {
+          "name": "长征战略",
+          "type": "single",
+          "relatedTo": [
+            "四渡赤水知识库"
+          ]
+        },
+        {
+          "name": "甲午战争深度解析",
+          "type": "single",
+          "relatedTo": [
+            "清朝影响知识库",
+            "东北历史知识库"
+          ]
+        },
+        {
+          "name": "情报战与间谍史",
+          "type": "multi-branch",
+          "relatedTo": [
+            "四渡赤水知识库"
+          ]
+        },
+        {
+          "name": "丝绸之路与文明交流",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "罗马帝国的兴亡",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "二战十大转折点",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "大航海时代",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "古埃及文明揭秘",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "维京人与北欧传奇",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "太平天国运动",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "拿破仑与欧洲重塑",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "文艺复兴全史",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "伯罗奔尼撒战争史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "三国军事战略比较",
+          "type": "comparison",
+          "relatedTo": [
+            "东北历史知识库"
+          ]
+        },
+        {
+          "name": "普法战争与德意志统一",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "朝鲜战争全过程",
+          "type": "multi-branch",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "越战与美国战略失误",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "明清易代史",
+          "type": "single",
+          "relatedTo": [
+            "清朝影响知识库",
+            "东北历史知识库"
+          ]
+        },
+        {
+          "name": "拜占庭帝国千年史",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "十字军东征",
+          "type": "multi-branch",
+          "relatedTo": []
+        },
+        {
+          "name": "日本战国史",
+          "type": "single",
+          "relatedTo": [
+            "东亚儒家法家文化圈知识库"
+          ]
+        },
+        {
+          "name": "罗马军团战术体系",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "海权论与马汉理论",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "游击战理论与实践",
+          "type": "multi-branch",
+          "relatedTo": [
+            "四渡赤水知识库"
+          ]
+        },
+        {
+          "name": "核威慑与冷战平衡",
+          "type": "single",
+          "relatedTo": [
+            "政治意识形态知识库"
+          ]
+        },
+        {
+          "name": "军事物流与补给线",
+          "type": "single",
+          "relatedTo": []
+        },
+        {
+          "name": "古代攻城器械与防御体系",
+          "type": "single",
+          "relatedTo": []
+        }
+      ]
+    }
+  ],
+  "used": [
+    {
+      "name": "欧几里得与非欧几何",
+      "domain": "数学/逻辑",
+      "generatedAt": "2026-09-24",
+      "slug": "euclid-non-euclidean-geometry",
+      "entry": "knowledge-bases/euclid-non-euclidean-geometry/main.html"
+    }
+  ],
+  "skipped": []
+}

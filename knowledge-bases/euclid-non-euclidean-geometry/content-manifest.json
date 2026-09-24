@@ -1,0 +1,76 @@
+{
+  "topic": "欧几里得与非欧几何",
+  "slug": "euclid-non-euclidean-geometry",
+  "skillVersion": "4.0.0",
+  "structureVersion": "s1.0",
+  "contentVersion": "c1.0",
+  "createdAt": "2026-09-24",
+  "type": "single-subject",
+  "targetReader": "普通大众",
+  "depthLevel": "L2",
+  "language": "zh-CN",
+  "entry": "main.html",
+  "pageCount": 8,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "空间观念地图",
+      "order": 0
+    },
+    {
+      "file": "euclid-foundations.html",
+      "title": "欧几里得的起点",
+      "order": 1
+    },
+    {
+      "file": "fifth-postulate.html",
+      "title": "第五公设之谜",
+      "order": 2
+    },
+    {
+      "file": "hyperbolic-geometry.html",
+      "title": "双曲几何",
+      "order": 3
+    },
+    {
+      "file": "elliptic-geometry.html",
+      "title": "椭圆几何",
+      "order": 4
+    },
+    {
+      "file": "models-consistency.html",
+      "title": "模型与一致性",
+      "order": 5
+    },
+    {
+      "file": "modern-applications.html",
+      "title": "现代回声",
+      "order": 6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与边界",
+      "order": 7
+    }
+  ],
+  "qualitySummary": {
+    "citations": 9,
+    "customSvgFigures": 5,
+    "externalDependencies": 0,
+    "responsiveBreakpoints": [
+      420,
+      720,
+      960
+    ],
+    "darkMode": true,
+    "offlineReady": true
+  },
+  "design": {
+    "genre": "editorial",
+    "macrostructure": "Map / Diagram",
+    "theme": "Almanac",
+    "navigation": "N3 Side rail",
+    "footer": "Ft1 Mast-headed",
+    "enrichment": "E5 Tier-B hand-built SVG"
+  }
+}

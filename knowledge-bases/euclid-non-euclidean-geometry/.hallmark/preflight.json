@@ -1,0 +1,20 @@
+{
+  "version": "1.1.0",
+  "scannedAt": "2026-09-24",
+  "project": "euclid-non-euclidean-geometry",
+  "framework": "static vanilla HTML/CSS/JS",
+  "existingVisualLanguage": "Personal Assets warm editorial archive",
+  "chosenGenre": "editorial",
+  "macrostructure": "Map / Diagram",
+  "theme": "Almanac",
+  "audience": "ordinary readers",
+  "primaryUse": "read/explore",
+  "enrichment": "E5 Tier-B hand-built SVG",
+  "externalAssets": false,
+  "constraints": [
+    "offline-ready",
+    "320px minimum width",
+    "no external CDN",
+    "visible site-home link on every page"
+  ]
+}
