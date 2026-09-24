@@ -1,0 +1,13 @@
+{
+  "genre": "Editorial",
+  "macrostructure": "Stat-Led",
+  "theme": "Studio",
+  "audience": "具备一般经济常识、希望正确阅读不平等指标的深度读者",
+  "useContext": "连续阅读、方法复核与现实数据审查",
+  "tone": "专业、清晰、克制；先直觉与机制，后公式与判断",
+  "navigation": "N6 newspaper masthead",
+  "footer": "Ft2 inline rule single line",
+  "enrichment": "Tier-B hand-built accessible Lorenz SVG",
+  "previousPatternChecked": "上一知识库使用 N3 侧栏；本项目改用 N6 报刊式刊头",
+  "approvedBy": "用户授权 Codex 自主决定"
+}

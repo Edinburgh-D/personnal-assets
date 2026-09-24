@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="用五户虚拟家庭完整演算洛伦兹曲线与基尼系数，并理解统计性质、数据口径和测量限制。">
+  <title>从洛伦兹曲线到 0.40｜贫富差距与基尼系数</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="masthead"><div class="masthead__inner">
+    <div class="masthead__top"><span class="edition">分配研究 · 02</span><a class="brand" href="main.html">贫富差距与基尼系数</a><span class="read-time">本章约 9 分钟</span></div>
+    <nav class="masthead__nav" aria-label="知识库章节">
+      <button class="control menu-toggle nav-menu-btn" id="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="site-nav">目录</button>
+      <div class="nav-links" id="site-nav" data-nav-links data-open="false"><a href="main.html">01 界定对象</a><a href="measurement.html" aria-current="page">02 测量机制</a><a href="judgment.html">03 形成判断</a><a href="sources.html">方法与来源</a></div>
+      <div class="controls"><button class="control" data-theme-toggle aria-pressed="false" aria-label="切换明暗主题">深色</button></div>
+    </nav>
+  </div></header>
+
+  <main class="page" id="content" data-kb-content data-page-role="chapter">
+    <header class="hero">
+      <div><p class="kicker">Mechanism · 看见计算</p><h1>从曲线到 0.40</h1><p class="chapter-index">第 2 章 / 共 3 章</p></div>
+      <p class="dek">一个看似抽象的系数，不过是排序、累计和面积三步。真正困难的部分，往往发生在公式之外。</p>
+    </header>
+
+    <section class="stat-led" aria-label="本章关键数字">
+      <div><div class="stat-number">0.40</div><div class="stat-label">五户虚拟家庭收入为 2、4、6、8、20 时，由洛伦兹曲线面积得到的结果</div></div>
+      <p class="stat-copy">这个数是可复算的摘要，不是“公平”与“不公平”之间的天然分界线。</p>
+    </section>
+
+    <div class="article-grid">
+      <aside class="rail" aria-label="本页目录"><strong>本页路线</strong><ol><li><a href="#bridge">承接口径</a></li><li><a href="#sort">排序与累计</a></li><li><a href="#area">曲线与面积</a></li><li><a href="#properties">统计性质</a></li><li><a href="#limits">现实测量限制</a></li></ol></aside>
+      <article class="prose">
+        <section id="bridge">
+          <p class="recap" data-narrative="recap">贫富差距不是一个天然唯一的数；只有先固定收入概念、观察单位和时间范围，基尼系数才有可解释的对象。</p>
+          <p class="question" data-narrative="question">在对象已经固定后，基尼系数如何把整条收入分布压缩成一个数？</p>
+          <p class="lead">现在保持口径不动：观察五户规模相同、在样本中权重相同的家庭；资源是同一年度的家庭可支配收入；所有数字均为正。这个人为简化让横轴每次前进 20%，也让我们能够把注意力放在计算机制上。真实调查会处理不同家庭规模、不同样本权重以及更复杂的收入记录。</p>
+          <p class="worked-example" data-narrative="example">把五户虚拟家庭按收入 2、4、6、8、20 排序，累计收入份额为 5%、15%、30%、50%、100%，由梯形面积得到基尼系数 0.40。</p>
+          <p>先验证基本量：收入合计为 40，均值为 8。最底部家庭收入 2，占总收入 5%；加上第二户的 4，底部两户累计为 6，占 15%。继续累加即可得到曲线上的五个非零节点。每个节点都同时回答“有多少人口”和“他们合计拿到多少收入”。</p>
+          <p>这一步看似只是算百分比，却完成了重要转换：原始收入的绝对单位被换成总体份额。无论原表用元、万元还是其他货币，只要每个观察值使用同一单位，份额都不变。也正因为如此，后面的结果描述的是相对分配，而不是收入购买力。</p>
+          <p>另一种常见公式从任意两人的收入差出发，汇总所有成对差额后再按平均收入与人口数标准化。它与洛伦兹面积法在通常条件下得到同一结果。面积法更适合建立直觉，成对差额法则提醒我们：系数本质上把人群之间的相对差异汇总起来。</p>
+        </section>
+
+        <section id="sort">
+          <h2>第一步：从家庭记录变成累计份额</h2>
+          <table class="data-table">
+            <caption>表 1 · 五户虚拟家庭的排序与累计（收入单位为任意同一单位）</caption>
+            <thead><tr><th>家庭</th><th>收入</th><th>人口累计</th><th>收入累计</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td>2</td><td>20%</td><td>5%</td></tr>
+              <tr><td>B</td><td>4</td><td>40%</td><td>15%</td></tr>
+              <tr><td>C</td><td>6</td><td>60%</td><td>30%</td></tr>
+              <tr><td>D</td><td>8</td><td>80%</td><td>50%</td></tr>
+              <tr><td>E</td><td>20</td><td>100%</td><td>100%</td></tr>
+            </tbody>
+          </table>
+          <p>排序是关键。洛伦兹曲线不关心 A 或 E 的姓名、职业与地区，只要求把收入从低到高排好。累计收入份额必须单调上升，起点是 (0, 0)，终点是 (1, 1)。若底部 80% 家庭累计只取得 50% 收入，就意味着最后 20% 取得另外 50%。</p>
+          <p>家庭规模不同时，研究生活水平通常会先计算<dfn data-term="等值化收入">等值化收入</dfn>：用等值规模调整家庭可支配收入，再按调整后的收入排序家庭成员。OECD 常用家庭人数平方根作为等值规模，即家庭收入除以家庭人数的平方根。它不是唯一方法，但能明确体现共同生活带来的规模经济。</p>
+          <p>真实样本中的每条记录也未必代表同样多的人。<dfn data-term="调查权重">调查权重</dfn>表示某个样本家庭在总体中代表多少人或多少户。权重较大的记录会让累计人口横轴前进更多。忽略权重，相当于把抽样设计改成“每条记录同等代表总体”，所得曲线可能与官方统计不同。</p>
+          <p>排序相同并不表示每一段横轴等宽。若 A 户代表总体的 8%，B 户代表 17%，那么前两个节点就在 8% 和 25%，而不是 20% 和 40%。收入累计也要乘以对应权重。大型调查通常由统计软件处理，但分析者仍应知道权重究竟代表家庭、个人还是经过非应答校正的人口。</p>
+          <p>若出现相同收入，彼此先后次序不会改变最终曲线；若出现负收入，处理则更棘手。经营亏损可能让累计收入份额短暂下降，使传统几何直觉失效。不同机构可能保留、截断或调整负值，所以包含大量自雇与经营收入时，元数据尤其重要。</p>
+        </section>
+
+        <section id="area">
+          <h2>第二步：把累计点连成曲线</h2>
+          <figure class="chart">
+            <svg viewBox="0 0 720 500" role="img" aria-labelledby="lorenz-title lorenz-desc">
+              <title id="lorenz-title">五户虚拟家庭的洛伦兹曲线</title>
+              <desc id="lorenz-desc">横轴为累计人口占比，纵轴为累计收入占比。完全平等线从左下到右上。案例曲线依次经过百分之二十人口对应百分之五收入、百分之四十对应百分之十五、百分之六十对应百分之三十、百分之八十对应百分之五十，最终到达百分之百。</desc>
+              <g fill="none" stroke="var(--rule)" stroke-width="1"><path d="M90 400H650"/><path d="M90 400V40"/><path d="M202 400V40"/><path d="M314 400V40"/><path d="M426 400V40"/><path d="M538 400V40"/><path d="M650 400V40"/><path d="M90 328H650"/><path d="M90 256H650"/><path d="M90 184H650"/><path d="M90 112H650"/><path d="M90 40H650"/></g>
+              <path d="M90 400L650 40" fill="none" stroke="var(--ink-soft)" stroke-width="3" stroke-dasharray="8 8"/>
+              <path d="M90 400L202 382L314 346L426 292L538 220L650 40" fill="none" stroke="var(--accent)" stroke-width="7"/>
+              <path d="M90 400L202 382L314 346L426 292L538 220L650 40L90 400Z" fill="var(--accent-soft)" opacity=".55"/>
+              <g fill="var(--accent)"><circle cx="202" cy="382" r="6"/><circle cx="314" cy="346" r="6"/><circle cx="426" cy="292" r="6"/><circle cx="538" cy="220" r="6"/></g>
+              <g fill="var(--ink-soft)" font-family="var(--font-mono)" font-size="15"><text x="370" y="475" text-anchor="middle">累计人口占比</text><text x="20" y="220" transform="rotate(-90 20 220)" text-anchor="middle">累计收入占比</text><text x="500" y="105">完全平等线</text><text x="385" y="330" fill="var(--accent)">案例曲线</text></g>
+            </svg>
+            <figcaption>图 1 · 阴影用于提示曲线与完全平等线之间的差距。精确计算使用各段梯形面积；表 1 提供同一信息的文本替代。</figcaption>
+          </figure>
+          <p>完全平等线下方的大三角形面积为 1/2。案例曲线下方的面积，可以把相邻两个累计收入份额的平均值乘以横轴宽度，再逐段相加。因为五户权重相同，每段宽度都是 0.2。五个梯形面积依次是 0.005、0.020、0.045、0.080 和 0.150，总和为 0.300。</p>
+          <div class="formula" aria-label="基尼系数计算公式">G = 1 − Σ (Yᵢ + Yᵢ₋₁)(Xᵢ − Xᵢ₋₁) = 1 − 2 × 0.300 = 0.400</div>
+          <p>公式中的 X 是累计人口份额，Y 是累计收入份额。求和部分等于曲线下方面积的两倍，所以用 1 减去它就得到系数。也可以说，平等线与曲线之间的面积为 0.5 − 0.3 = 0.2，再除以总三角形的 0.5，结果仍是 0.4。</p>
+          <p>如果数据发布为 0 到 100 的尺度，就把 0.40 写成 40。二者没有信息差异。看到数据库时应先检查单位，不能把世界银行页面上的 40 与 OECD 页面上的 0.40误判为两个完全不同的水平。</p>
+          <p>用表格复核时可以做三项快速检查。第一，累计人口和累计收入都必须从 0 走到 1；第二，排序后每一步累计收入不能无故减少；第三，曲线下方面积应位于 0 与 0.5 之间。若检查失败，通常是排序、权重归一化或百分数尺度出了问题。</p>
+          <p>小样本曲线实际上是折线，不是光滑曲线。把节点连线等于假定每个相邻累计点之间线性变化，梯形法由此精确计算该经验折线的面积。展示图可以平滑以便阅读，但计算不应因视觉平滑而改变。</p>
+        </section>
+
+        <section id="properties">
+          <h2>第三步：理解不变的东西</h2>
+          <p><dfn data-term="尺度不变性">尺度不变性</dfn>指所有收入按同一正比例变化时，系数保持不变。五户收入全部翻倍为 4、8、12、16、40，累计份额仍是 5%、15%、30%、50%、100%，所以结果仍为 0.40。这是相对不平等指标的长处，也是它不能描述绝对生活水平的原因。</p>
+          <p><dfn data-term="匿名性">匿名性</dfn>指只要收入列表不变，收入由哪个具体身份的人持有并不改变系数。若 A 与 E 互换姓名，排序后的分布完全相同。这个性质让指标聚焦分配结构，却也主动舍弃了性别、地区、族群、年龄和阶层来源等信息。若研究群体不平等，必须另行分组分析。</p>
+          <p>人口复制通常也不改变结果：把这五户各复制一次，形成十户但保持比例，洛伦兹曲线仍相同。与此相对，任何一笔从较富家庭转给较穷家庭、又不颠倒两者排序的小额转移，通常会把曲线推近平等线并降低系数。这种对“从富到穷转移”的反应，是它作为不平等度量的重要基础。</p>
+          <p>如果每户都增加同样的绝对金额，结果却通常会下降。五户各加 2 后变成 4、6、8、10、22，低收入户的增幅比例更大，累计份额向平等线靠近。这与“每户都乘以 2”形成鲜明对比：相同绝对增量会改变相对结构，相同比例增量不会。</p>
+          <p>但系数不具备简单可加性。全国结果不能只用各地区系数取平均得到，因为总体不平等同时包含地区内部差异和地区之间的收入水平差异。世界银行的元数据也明确提醒：基尼系数不能自然地分解为组内和组间成分。需要可分解分析时，应选择适合该任务的熵类指标或专门分解方法。</p>
+          <p>这些性质解释了指标的设计取舍。匿名性帮助比较纯粹的分布，却看不见身份；尺度不变性帮助跨货币单位比较，却看不见共同变富；转移敏感性能够响应再分配，却不解释转移是否自愿、可持续或影响效率。任何统计指标都在保留某些信息的同时舍弃另一些信息。</p>
+        </section>
+
+        <section id="limits">
+          <h2>公式之外：四类现实测量误差</h2>
+          <h3>一、同值不等形</h3>
+          <p>一个系数对应的曲线并不唯一。某个社会可能主要是底部与中部拉开，另一个社会可能主要是顶部远离其余人群，两者面积恰好相同。数字相同并不意味着贫困程度、顶端集中或中产规模相同。只有查看分位份额或完整曲线，才能定位差距发生在哪里。</p>
+          <p>甚至两条曲线可能交叉：一个分布让最底部人群份额更高，却让中间人群份额更低。此时不能说其中一条曲线在所有位置都更平等，单个面积仍会给出排序，但排序掩盖了不同社会对底部和中部的不同取舍。把曲线与系数并列，是避免过度压缩的简单办法。</p>
+          <h3>二、调查对顶部和底部的捕捉不同</h3>
+          <p>高收入家庭可能更难抽中、拒访率更高，资本收入也更易漏报；低收入端可能出现零收入、负经营收入或不稳定记录。调查截尾、缺失值填补和行政税务资料校准都会影响尾部形状。两个机构即使都写“可支配收入基尼”，处理规则不同仍会产生差异。</p>
+          <p>样本误差也意味着小幅变化未必具有统计意义。若发布机构提供标准误或置信区间，应一起报告；若没有，就至少避免把末位小数的变化写成确定趋势。年度波动可能来自抽样，也可能来自一次性奖金、灾害或政策支付，需要结合连续年份观察。</p>
+          <h3>三、消费与收入讲述不同时间尺度</h3>
+          <p>一些国家的家庭调查更可靠地记录消费，另一些则以收入为主。消费往往比当期收入平滑，因为家庭会储蓄或借贷；以消费计算的不平等常与收入不平等不同。世界银行跨国数据混合使用收入和消费型调查时，会标明基础概念，并提醒用户谨慎比较。</p>
+          <h3>四、价格、家庭规模与人口覆盖范围</h3>
+          <p>城市与农村价格差异、家庭等值尺度、集体居住人口是否纳入、调查覆盖的地理区域，都会改变分布。真正可比的序列通常来自同一调查体系和相近方法。看到长时间序列突然跳变时，先读脚注，检查是否换了问卷、抽样框或定义，再讨论经济原因。</p>
+          <p>没有一套调整能在所有研究问题中天然正确。全国统一价格适合描述名义资源，地区购买力调整更接近当地生活水平；家庭平方根尺度便于国际比较，针对儿童成本的尺度可能更适合家庭政策。方法选择应由研究问题驱动，并在结果旁明确呈现。</p>
+          <aside class="method-note"><p>复算顺序：确认收入概念与单位 → 应用家庭规模调整 → 按调整后收入排序 → 使用调查权重累计人口与收入 → 计算曲线面积 → 检查 0–1 或 0–100 的表达尺度。任何一步的定义变化都应写进结论。</p></aside>
+          <p class="conclusion" data-narrative="conclusion">基尼系数精确概括了洛伦兹曲线与平等线之间的面积，却不会告诉我们差距发生在分布的哪一段，也不会自动保证跨数据源可比。</p>
+          <p class="next-question" data-narrative="next-question">既然一个基尼系数会隐藏位置和口径，专业分析应如何组合指标并形成判断？</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页"><a href="main.html"><span>上一章</span>← 界定对象</a><a href="judgment.html"><span>下一章</span>形成判断 →</a><a href="../../index.html" data-site-home><span>返回</span>知识库总览</a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner"><p>贫富差距与基尼系数 · 专业知识库</p><p>方法定义依据世界银行与 OECD · <a href="sources.html">查看来源</a></p></div></footer>
+  <!-- kb_darkMode -->
+  <script src="interactive-features.js"></script>
+</body>
+</html>

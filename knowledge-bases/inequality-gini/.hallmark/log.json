@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-09-24",
+  "decisions": {
+    "macrostructure": "Stat-Led",
+    "theme": "Studio",
+    "navigation": "N6",
+    "footer": "Ft2",
+    "components": ["H4 stat-led", "S4 inline no-break", "F3 tabular spec sheet", "F4 step sequence", "C3 typographic link"],
+    "visualAsset": "Accessible inline SVG Lorenz curve with tabular fallback"
+  },
+  "antiSlop": {
+    "noGradients": true,
+    "noDecorativeHeroImage": true,
+    "noExcessiveCards": true,
+    "semanticTokens": true,
+    "responsive": true,
+    "reducedMotion": true,
+    "printStyles": true
+  }
+}

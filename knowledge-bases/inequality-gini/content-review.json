@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "Codex content review",
+  "reviewedAt": "2026-09-24T16:40:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当人们说贫富差距扩大时，究竟是哪一种分配发生了变化？",
+      "twoSentenceSummary": "本页先区分收入流量与财富存量，再固定税前税后、个人家庭和时间范围。读者由模糊的贫富直觉转向可检验的统计问题，并理解基尼系数只是既定分配对象的摘要。",
+      "continuityEvidence": "结尾把已界定的收入对象直接交给下一页，下一问明确要求从洛伦兹曲线推导单一系数。",
+      "readerStateChange": "读者从把贫富差距视为一个天然数字，转变为能先写出资源、观察单位、调整方法和时间边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "measurement.html",
+      "centralQuestion": "在对象已经固定后，基尼系数如何把整条收入分布压缩成一个数？",
+      "twoSentenceSummary": "本页用五户收入逐项计算累计份额、梯形面积和 0.40，并解释尺度不变、匿名和转移等性质。随后说明同值异形、抽样权重、尾部漏报与口径断点为何限制跨来源比较。",
+      "continuityEvidence": "开头原样承接上一页结论，结尾由“面积隐藏位置”自然提出多指标判断问题。",
+      "readerStateChange": "读者从只能接受发布数字，转变为能复算简单样本并说明公式保留了什么、舍弃了什么。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然一个基尼系数会隐藏位置和口径，专业分析应如何组合指标并形成判断？",
+      "twoSentenceSummary": "本页建立口径、水平、位置、贫困和制度五层证据链，并用国家统计局数据示范均值与中位数不能替代基尼。结尾给出可复用的分析模板，明确区分描述、因果与价值判断。",
+      "continuityEvidence": "开头承接“同值异形与不可比”的限制，指标组合逐一填补上一页指出的信息缺口。",
+      "readerStateChange": "读者从寻找单一阈值，转变为能够审查可比性、定位分布变化并为政策结论标注证据边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "twoSentenceSummary": "本页集中列出世界银行、OECD 和国家统计局的一手定义与数据来源。它同时说明五户案例的虚构性质、适用边界和现实研究所需的引用字段。",
+      "continuityEvidence": "作为参考页，它为三个叙事章节中的定义、算法和现实示例提供逐项核验入口。",
+      "readerStateChange": "读者能够区分教学演算与现实数据，并知道引用收入分配数字时必须保留哪些元数据。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="贫富差距与基尼系数知识库的方法说明、官方来源、事实边界与延伸阅读。">
+  <title>方法、来源与延伸阅读｜贫富差距与基尼系数</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="masthead"><div class="masthead__inner">
+    <div class="masthead__top"><span class="edition">分配研究 · 附录</span><a class="brand" href="main.html">贫富差距与基尼系数</a><span class="read-time">方法与来源</span></div>
+    <nav class="masthead__nav" aria-label="知识库章节">
+      <button class="control menu-toggle nav-menu-btn" id="nav-menu-btn" data-menu-toggle aria-expanded="false" aria-controls="site-nav">目录</button>
+      <div class="nav-links" id="site-nav" data-nav-links data-open="false"><a href="main.html">01 界定对象</a><a href="measurement.html">02 测量机制</a><a href="judgment.html">03 形成判断</a><a href="sources.html" aria-current="page">方法与来源</a></div>
+      <div class="controls"><button class="control" data-theme-toggle aria-pressed="false" aria-label="切换明暗主题">深色</button></div>
+    </nav>
+  </div></header>
+
+  <main class="page" id="content" data-kb-content data-page-role="reference">
+    <header class="hero"><div><p class="kicker">Reference · 可核验说明</p><h1>方法、来源与事实边界</h1></div><p class="dek">本页区分定义依据、现实数据与教学演算。阅读正文不必先看附录；复核结论时应从这里开始。</p></header>
+
+    <div class="article-grid">
+      <aside class="rail" aria-label="本页目录"><strong>附录路线</strong><ol><li><a href="#method">编写方法</a></li><li><a href="#official">官方来源</a></li><li><a href="#example">案例边界</a></li><li><a href="#usage">引用建议</a></li></ol></aside>
+      <article class="prose">
+        <section id="method">
+          <h2>编写与核验方法</h2>
+          <p>本知识库按照“界定对象—理解测量—形成判断”的顺序组织。前三页是一条连续论证链，不是可任意打乱的词条集合。每一页只承担一个认知任务，并以前页结论作为下一页起点。预计正文非空白字符约一万字，按每分钟四百个中文字符估算，阅读时间约二十五分钟。</p>
+          <p>核心定义优先采用世界银行和 OECD 的官方方法资料。现实数据示例仅使用中华人民共和国国家统计局公开发布的 2024 年居民收入数据。所有链接核验日期为 2026 年 9 月 24 日。网页可能更新，正式研究应记录访问日期并下载对应版本。</p>
+        </section>
+
+        <section id="official">
+          <h2>一手来源</h2>
+          <div class="source-grid">
+            <section class="source-card"><h2>世界银行 · WDI 元数据</h2><p>提供基尼系数、洛伦兹曲线、0–100 表达方式及跨国可比性限制。元数据说明，相同系数可能来自不同曲线，且该指标不能简单分解为组内与组间成分。</p><p><a href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SI.POV.GINI" rel="noreferrer">查看指标元数据 ↗</a></p></section>
+            <section class="source-card"><h2>世界银行 · 开放数据</h2><p>提供各经济体的基尼指标入口、年份与下载选项。比较时应检查每个观测值基于收入还是消费调查，并注意调查年份并非完全同步。</p><p><a href="https://data.worldbank.org/indicator/SI.POV.GINI" rel="noreferrer">查看指标页面 ↗</a></p></section>
+            <section class="source-card"><h2>OECD · 收入不平等指标</h2><p>解释家庭可支配收入口径：雇员和自雇收入、资本收入、现金转移之和，扣除所得税和社会缴款；其页面通常用 0 到 1 表达系数。</p><p><a href="https://www.oecd.org/en/data/indicators/income-inequality.html?source=knowledge-base" rel="noreferrer">查看指标定义 ↗</a></p></section>
+            <section class="source-card"><h2>OECD · 收入分配数据库指南</h2><p>详细说明市场收入、可支配收入、家庭等值尺度、人口单位和质量控制。正文中的家庭人数平方根示例依据该指南的常用等值方法。</p><p><a href="https://www.oecd.org/content/dam/oecd/en/about/programmes/oecd-data-collection-programme/society/income-distribution-database/income-distribution-guidelines.pdf" rel="noreferrer">打开方法指南 PDF ↗</a></p></section>
+            <section class="source-card"><h2>OECD · Data Explorer</h2><p>用于查询收入分配数据库中的可用序列。引用具体数字时，应保存指标名称、收入定义、单位、年份与下载日期，而不只复制图表中的单个值。</p><p><a href="https://data-explorer.oecd.org/?pg=0&amp;snb=75&amp;tm=inequality" rel="noreferrer">进入数据浏览器 ↗</a></p></section>
+            <section class="source-card"><h2>国家统计局 · 2024 年居民收入</h2><p>正文引用全国居民人均可支配收入 41,314 元、中位数 34,707 元及 84.0% 比例。发布同时说明住户调查的分层、多阶段、与人口规模成比例抽样，以及约 16 万调查户。</p><p><a href="https://www.stats.gov.cn/sj/zxfb/202501/t20250117_1958325.html?source=knowledge-base" rel="noreferrer">查看官方发布 ↗</a></p></section>
+          </div>
+        </section>
+
+        <section id="example">
+          <h2>教学案例的边界</h2>
+          <p>五户家庭收入 2、4、6、8、20 是人为构造的演算数据，单位可以理解为同一种任意收入单位。五户被假定具有相同家庭规模和相同调查权重，收入均为正，并处于同一参考期。它的唯一目的，是把累计份额、梯形面积和 0.40 的结果连接起来。</p>
+          <p>该案例不代表中国或任何国家的收入分布，也不主张 0.40 是政策警戒线。现实分布包含成千上万条加权记录、家庭规模调整、零值或负值处理、缺失数据和尾部校准。正文将复杂性分层引入，是为了让读者先掌握机制，再知道机制在真实数据中会遇到什么限制。</p>
+          <p>图中的洛伦兹曲线由表格数据手工绘制，并附有标题、文字描述和同值表格。阴影只帮助识别面积关系，精确结果来自表中节点的梯形求和。颜色不是信息的唯一载体，完全平等线还使用虚线区分。</p>
+        </section>
+
+        <section id="usage">
+          <h2>怎样引用与继续研究</h2>
+          <p>引用某个现实基尼值时，建议同时写出：数据机构、指标全名、收入或消费口径、税前或税后、家庭规模调整、人口覆盖、参考年份、0–1 或 0–100 单位，以及访问日期。进行趋势分析时，再补充方法断点和不确定性信息。</p>
+          <p>若研究顶部收入，优先寻找调查数据与税务行政资料的校准研究；若需要分解群体贡献，选择可加分解的指标并报告分组规则；若研究机会，加入代际收入、教育或职业流动资料；若评价政策因果效果，不要把描述性指标变化直接当作政策效果。</p>
+          <p class="source-note">编辑说明：正文对官方资料进行了中文转述，没有大段复制原文。外部链接仅用于事实核验，不影响离线阅读核心内容。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页"><a href="judgment.html"><span>返回正文</span>← 形成判断</a><a href="main.html"><span>重新阅读</span>从第一章开始 →</a><a href="../../index.html" data-site-home><span>返回</span>知识库总览</a></nav>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="site-footer__inner"><p>贫富差距与基尼系数 · 方法附录</p><p>核验日期：2026-09-24</p></div></footer>
+  <!-- kb_darkMode -->
+  <script src="interactive-features.js"></script>
+</body>
+</html>

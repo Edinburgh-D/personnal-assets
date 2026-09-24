@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light;
+  --paper: oklch(0.975 0.009 91);
+  --paper-raised: oklch(0.995 0.004 91);
+  --paper-muted: oklch(0.94 0.012 91);
+  --ink: oklch(0.22 0.018 116);
+  --ink-soft: oklch(0.43 0.018 116);
+  --rule: oklch(0.77 0.018 91);
+  --accent: oklch(0.40 0.085 153);
+  --accent-soft: oklch(0.91 0.035 153);
+  --danger: oklch(0.48 0.13 28);
+  --success: oklch(0.46 0.10 145);
+  --font-display: "Noto Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Cascadia Mono", monospace;
+  --step--1: clamp(0.78rem, 0.75rem + 0.12vw, 0.86rem);
+  --step-0: clamp(1rem, 0.96rem + 0.18vw, 1.12rem);
+  --step-1: clamp(1.24rem, 1.12rem + 0.52vw, 1.58rem);
+  --step-2: clamp(1.55rem, 1.33rem + 0.95vw, 2.2rem);
+  --step-3: clamp(2.25rem, 1.72rem + 2.3vw, 3.85rem);
+  --step-4: clamp(3.4rem, 2.5rem + 4vw, 6.25rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --content: 72rem;
+  --measure: 68ch;
+  --radius: 0.18rem;
+  --shadow: 0 1rem 3rem oklch(0.22 0.018 116 / 0.08);
+  --print-paper: oklch(0.995 0.005 91);
+  --print-ink: oklch(0.16 0.008 116);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: oklch(0.19 0.012 116);
+  --paper-raised: oklch(0.235 0.014 116);
+  --paper-muted: oklch(0.28 0.015 116);
+  --ink: oklch(0.92 0.012 91);
+  --ink-soft: oklch(0.74 0.015 91);
+  --rule: oklch(0.41 0.018 116);
+  --accent: oklch(0.72 0.105 153);
+  --accent-soft: oklch(0.29 0.045 153);
+  --danger: oklch(0.70 0.13 28);
+  --success: oklch(0.72 0.10 145);
+  --shadow: 0 1rem 3rem oklch(0.05 0.01 116 / 0.3);
+}

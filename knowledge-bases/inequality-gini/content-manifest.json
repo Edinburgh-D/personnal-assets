@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "贫富差距与基尼系数",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L3",
+  "createdAt": "2026-09-24",
+  "audience": "professional",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先问清楚：我们在比较什么",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3500,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "当人们说贫富差距扩大时，究竟是哪一种分配发生了变化？",
+      "readerStateBefore": "读者把贫富差距理解为富人和穷人收入相差多少，尚未区分收入概念、统计单位与分配形状。",
+      "readerStateAfter": "读者能够先界定分配对象、收入概念和统计单位，并把基尼系数理解为分配形状的摘要。",
+      "priorConclusion": "",
+      "coreExample": "五户虚拟家庭的年可支配收入依次为 2、4、6、8、20 个单位；同一组数字在改变口径后会回答不同的问题。",
+      "conclusion": "贫富差距不是一个天然唯一的数；只有先固定收入概念、观察单位和时间范围，基尼系数才有可解释的对象。",
+      "nextQuestion": "在对象已经固定后，基尼系数如何把整条收入分布压缩成一个数？",
+      "nextPage": "measurement.html",
+      "newTerms": [
+        { "term": "市场收入", "definition": "家庭成员通过劳动、经营和资本在税收及现金转移之前取得的收入。" },
+        { "term": "可支配收入", "definition": "市场收入加现金转移，再扣除所得税和社会缴款后可用于消费或储蓄的收入。" },
+        { "term": "财富", "definition": "一个时点上资产减负债后的净存量，与一段时期内的收入流量不同。" },
+        { "term": "洛伦兹曲线", "definition": "按收入从低到高排列人口后，累计人口占比与累计收入占比之间的曲线。" },
+        { "term": "基尼系数", "definition": "洛伦兹曲线与完全平等线之间面积相对总三角形面积的比例。" }
+      ]
+    },
+    {
+      "file": "measurement.html",
+      "title": "从洛伦兹曲线到 0.40",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3500,
+      "minProseRatio": 0.45,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "在对象已经固定后，基尼系数如何把整条收入分布压缩成一个数？",
+      "readerStateBefore": "读者能够先界定分配对象、收入概念和统计单位，并把基尼系数理解为分配形状的摘要。",
+      "readerStateAfter": "读者能够从洛伦兹曲线和样本收入计算基尼系数，也能识别同值异形、样本口径与极端值带来的限制。",
+      "priorConclusion": "贫富差距不是一个天然唯一的数；只有先固定收入概念、观察单位和时间范围，基尼系数才有可解释的对象。",
+      "coreExample": "把五户虚拟家庭按收入 2、4、6、8、20 排序，累计收入份额为 5%、15%、30%、50%、100%，由梯形面积得到基尼系数 0.40。",
+      "conclusion": "基尼系数精确概括了洛伦兹曲线与平等线之间的面积，却不会告诉我们差距发生在分布的哪一段，也不会自动保证跨数据源可比。",
+      "nextQuestion": "既然一个基尼系数会隐藏位置和口径，专业分析应如何组合指标并形成判断？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "等值化收入", "definition": "用等值规模调整家庭可支配收入，以近似反映成员共享资源和规模经济后的个人生活水平。" },
+        { "term": "调查权重", "definition": "每个样本家庭在总体中代表的人数或户数，用于从抽样记录还原总体分布。" },
+        { "term": "尺度不变性", "definition": "所有收入按同一正比例变化时，基尼系数不变的性质。" },
+        { "term": "匿名性", "definition": "只要收入分布不变，收入由哪个具体身份的人持有不影响指标的性质。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "从一个数走向完整判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3500,
+      "minProseRatio": 0.45,
+      "dependsOn": ["measurement.html"],
+      "readerQuestion": "既然一个基尼系数会隐藏位置和口径，专业分析应如何组合指标并形成判断？",
+      "readerStateBefore": "读者能够从洛伦兹曲线和样本收入计算基尼系数，也能识别同值异形、样本口径与极端值带来的限制。",
+      "readerStateAfter": "读者能够审查基尼数据的口径与可比性，并用收入水平、分位份额、贫困和再分配指标组成完整判断。",
+      "priorConclusion": "基尼系数精确概括了洛伦兹曲线与平等线之间的面积，却不会告诉我们差距发生在分布的哪一段，也不会自动保证跨数据源可比。",
+      "coreExample": "同样面对基尼系数变化，分析者把五户案例与中位数、最高五分位份额、贫困线和税收转移前后差异放在一起，判断变化的位置、生活水平和政策来源。",
+      "conclusion": "专业判断不是给基尼系数贴上好坏阈值，而是先验证可比性，再用多项指标定位差距、生活水平与政策作用。",
+      "nextQuestion": "当新的收入分配数据发布时，你能否先写出口径，再判断变化来自分布哪一段？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "S80/S20", "definition": "最高收入五分位的总收入与最低收入五分位总收入之比。" },
+        { "term": "帕尔马比率", "definition": "最高收入十分位的收入份额与最低四个十分位合计份额之比。" },
+        { "term": "相对贫困率", "definition": "等值收入低于当期中位数某一比例的人口占比，常见门槛为 50% 或 60%。" },
+        { "term": "再分配效应", "definition": "税收和转移支付使不平等或贫困指标发生的变化。" },
+        { "term": "代际流动", "definition": "子女成年后的收入或社会经济位置相对于父母位置发生变化的程度。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "方法、来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}
