@@ -3,6 +3,7 @@
 请作为新的读者上下文，审查工作区中新创建的知识库：`{{KNOWLEDGE_PATH}}`，主题为 `{{TOPIC_NAME}}`。
 
 必须调用并遵守 `knowledge-base-generator` Skill v6.0.0 与 `hallmark` Skill。请从磁盘按顺序完整阅读最终 HTML，而不是相信前一位作者的总结。
+在 Windows PowerShell 中读取任何 UTF-8 文件时，`Get-Content` 必须显式使用 `-Encoding utf8`，不得依赖系统默认代码页。
 
 重点检查：
 

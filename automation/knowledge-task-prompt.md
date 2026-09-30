@@ -14,6 +14,7 @@
 ## 必须执行
 
 1. 明确调用并完整遵守 `knowledge-base-generator` Skill v6.0.0；同时调用 `hallmark` Skill完成视觉设计与最终 slop-test。
+   在 Windows PowerShell 中读取任何 UTF-8 文件（尤其是 Skill、模板和中文 JSON）时，`Get-Content` 必须显式使用 `-Encoding utf8`，不得依赖系统默认代码页。
 2. 先检查当前仓库的知识库总览、既有页面和发布脚本，再为本主题选择一个尚未使用的、语义清楚的英文 kebab-case 目录名。
 3. 只新增一个 `knowledge-bases/<slug>/` 知识库，并仅按发布需要更新根 `index.html` 与 `knowledge-bases/index.html`。不得改动其他既有知识库。
 4. 面向普通大众建立 20–30 分钟的连续学习路径。正文是自然展开的专题教材或研究性长文，不是问答、任务清单、写作教程或审核报告。
