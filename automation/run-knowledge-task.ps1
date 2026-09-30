@@ -1,6 +1,7 @@
 [CmdletBinding()]
 param(
     [switch]$Preflight,
+    [switch]$IndependentReview,
     [string]$TaskName = 'Codex Knowledge Base Publisher'
 )
 
@@ -76,7 +77,9 @@ try {
     }
 
     Write-Step 'Checking prerequisites.'
-    foreach ($file in @($poolTool, $authorTemplate, $reviewTemplate, $taskRunner, $validator)) {
+    $requiredFiles = @($poolTool, $authorTemplate, $taskRunner, $validator)
+    if ($IndependentReview) { $requiredFiles += $reviewTemplate }
+    foreach ($file in $requiredFiles) {
         if (-not (Test-Path -LiteralPath $file -PathType Leaf)) { throw "Required file missing: $file" }
     }
     foreach ($command in @('git', 'node', 'codex.cmd')) {
@@ -114,7 +117,7 @@ try {
 
     Write-Step 'Starting the author Codex run.'
     & node $taskRunner --prompt-file $authorPromptPath --out-dir (Join-Path $runRoot 'codex-runs') --slug 'author' --sandbox 'workspace-write' --timeout-ms '10800000' --cd $worktree
-    if ($LASTEXITCODE -ne 0) { throw "Author Codex run failed with exit code $LASTEXITCODE." }
+    $authorExitCode = $LASTEXITCODE
 
     $afterDirectories = @(Get-ChildItem -LiteralPath (Join-Path $worktree 'knowledge-bases') -Directory | ForEach-Object Name)
     $newDirectories = @($afterDirectories | Where-Object { $_ -notin $beforeDirectories })
@@ -125,16 +128,41 @@ try {
     $knowledgePath = Join-Path $worktree "knowledge-bases\$knowledgeSlug"
     Assert-AllowedChanges -Path $worktree -KnowledgeSlug $knowledgeSlug
 
-    $reviewPrompt = Get-Content -LiteralPath $reviewTemplate -Raw -Encoding UTF8
-    $reviewPrompt = $reviewPrompt.Replace('{{KNOWLEDGE_PATH}}', "knowledge-bases/$knowledgeSlug")
-    $reviewPrompt = $reviewPrompt.Replace('{{TOPIC_NAME}}', [string]$topic.name)
-    $reviewPromptPath = Join-Path $runRoot 'review-prompt.md'
-    [System.IO.File]::WriteAllText($reviewPromptPath, $reviewPrompt, (New-Object System.Text.UTF8Encoding($false)))
+    if ($authorExitCode -ne 0) {
+        $authorRun = Get-ChildItem -LiteralPath (Join-Path $runRoot 'codex-runs') -Directory |
+            Where-Object { $_.Name -like '*-author' } |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+        $failureText = ''
+        if ($authorRun) {
+            foreach ($failureFile in @('04-stderr.log', '05-final.md')) {
+                $failurePath = Join-Path $authorRun.FullName $failureFile
+                if (Test-Path -LiteralPath $failurePath) {
+                    $failureText += "`n" + (Get-Content -LiteralPath $failurePath -Raw -Encoding UTF8)
+                }
+            }
+        }
+        if ($failureText -notmatch '(?i)usage limit|rate limit') {
+            throw "Author Codex run failed with exit code $authorExitCode."
+        }
+        Write-Step 'The author reached a usage limit after creating output; continuing only through the same hard publication gates.'
+    }
 
-    Write-Step 'Starting the independent reviewer Codex run.'
-    & node $taskRunner --prompt-file $reviewPromptPath --out-dir (Join-Path $runRoot 'codex-runs') --slug 'reviewer' --sandbox 'workspace-write' --timeout-ms '7200000' --cd $worktree
-    if ($LASTEXITCODE -ne 0) { throw "Reviewer Codex run failed with exit code $LASTEXITCODE." }
-    Assert-AllowedChanges -Path $worktree -KnowledgeSlug $knowledgeSlug
+    if ($IndependentReview) {
+        $reviewPrompt = Get-Content -LiteralPath $reviewTemplate -Raw -Encoding UTF8
+        $reviewPrompt = $reviewPrompt.Replace('{{KNOWLEDGE_PATH}}', "knowledge-bases/$knowledgeSlug")
+        $reviewPrompt = $reviewPrompt.Replace('{{TOPIC_NAME}}', [string]$topic.name)
+        $reviewPromptPath = Join-Path $runRoot 'review-prompt.md'
+        [System.IO.File]::WriteAllText($reviewPromptPath, $reviewPrompt, (New-Object System.Text.UTF8Encoding($false)))
+
+        Write-Step 'Starting the optional independent reviewer Codex run.'
+        & node $taskRunner --prompt-file $reviewPromptPath --out-dir (Join-Path $runRoot 'codex-runs') --slug 'reviewer' --sandbox 'workspace-write' --timeout-ms '7200000' --cd $worktree
+        if ($LASTEXITCODE -ne 0) { throw "Reviewer Codex run failed with exit code $LASTEXITCODE." }
+        Assert-AllowedChanges -Path $worktree -KnowledgeSlug $knowledgeSlug
+    }
+    else {
+        Write-Step 'Using the author review required by the skill plus deterministic outer validation; independent second Codex pass is disabled for scheduled runs.'
+    }
 
     Write-Step 'Running hard publication gates.'
     & $validator -Path $knowledgePath

@@ -15,4 +15,4 @@
 
 发现问题就直接修改新知识库及必要的两个总览文件，并重新生成真实的 `content-review.json`。运行完整 `validate-output.ps1` 和总览检查，直到全部 PASS。不得修改其他既有知识库、`automation/topic-pool.json`，也不要提交或推送。
 
-完成后简短报告修订内容和验证结果；不要只给建议。
+完成后简短报告修订内容和验证结果；不要只给建议。不得运行无范围限制的 `git diff` 或把整页 HTML 打印到终端；使用 `git diff --stat`、`git diff --check`、定向搜索和验证器完成复核。
