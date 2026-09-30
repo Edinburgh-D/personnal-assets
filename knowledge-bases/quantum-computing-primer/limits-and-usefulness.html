@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="用问题结构、逻辑资源、误差纠正与经典基线判断量子计算何时可能真正有用。">
+  <title>从可能加速到真正有用｜量子计算入门</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;family=IBM+Plex+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="site-header">
+    <div class="nav-edge">
+      <a class="wordmark" href="main.html">量子计算入门</a>
+      <div class="nav-actions">
+        <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="chapter-drawer" data-nav-toggle>目录</button>
+        <button class="control" type="button" aria-pressed="false" data-theme-toggle data-theme-storage="kb_darkMode"><span class="theme-label-long">切换</span><span data-theme-label>深色</span></button>
+      </div>
+    </div>
+    <nav class="nav-drawer" id="chapter-drawer" aria-label="知识库章节" data-nav-drawer hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>Personal Assets</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>从一次测量开始</span><small>直觉</small></a></li>
+        <li><a href="circuits-and-interference.html"><span>让答案彼此干涉</span><small>机制</small></a></li>
+        <li><a href="limits-and-usefulness.html" aria-current="page"><span>从可能加速到真正有用</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源与延伸阅读</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">量子计算入门</a><span aria-hidden="true">/</span><span>从可能加速到真正有用</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">量子加速来自把问题结构编译成可逆线路，再用相位标记和干涉集中有用振幅；纠缠扩展了可操纵的整体状态，但测量仍需重复抽样验证。</template>
+    <template data-narrative="question">既然机制成立，哪些问题真正适合量子计算，而噪声、纠错和资源成本又把今天的能力限制在哪里？</template>
+    <template data-narrative="example">重新审视四门搜索实验，把理想查询次数、建造预言机、线路深度、噪声、重复采样和经典替代方案全部计入成本。</template>
+    <template data-narrative="conclusion">量子计算更像面向少数结构化任务的协处理器；判断现实价值必须同时查看逻辑资源、端到端误差、经典最佳基线和可验证输出，而不能只看物理量子比特数或单项基准。</template>
+    <template data-narrative="next-question">当更大规模的逻辑量子机出现时，我们会用什么公开基准证明它在真实任务上既更快又更有用？</template>
+
+    <header class="hero-split">
+      <div class="hero-copy">
+        <p class="chapter-mark">把整张账单放回桌上</p>
+        <h1>从可能加速到真正有用</h1>
+        <p class="lede">漂亮的线路证明“可以更少查询”，却不等于现实任务已经更快。输入、门深、误差、采样与经典对手都要进入比较。</p>
+        <p class="hero-note">判断量子主张，不必预测某一年会发生革命；只要逐项追问问题结构、资源口径和验证方法。</p>
+      </div>
+      <figure class="evidence-board" aria-labelledby="evidence-caption">
+        <p class="board-label"><span>价值证据链</span><span>缺一不可</span></p>
+        <div class="circuit-lines" aria-hidden="true">
+          <div class="gate">问题有结构</div>
+          <div class="gate">线路可实现</div>
+          <div class="gate gate--signal">输出可验证</div>
+          <div class="gate">胜过经典基线</div>
+        </div>
+        <figcaption id="evidence-caption">任何“量子更快”的主张都需要说明比较任务、端到端资源、结果正确性与所用经典基线。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article-flow">
+      <section class="studio-row" aria-labelledby="fit-title">
+        <div class="studio-copy">
+          <h2 id="fit-title">先找问题结构，不先找量子标签</h2>
+          <p>量子算法不会把“困难”自动翻译成“容易”。它需要可利用的代数结构、周期、对称性或可控的振幅变换。若问题只是数据很多、组合很多，经典算法也可能通过索引、近似、随机化或专用硬件取得更便宜的结果。最重要的第一问不是“能否量子化”，而是“哪一步具有已知的量子算法优势”。</p>
+          <p>Shor 算法是最清楚的例子之一。它把整数分解和离散对数中的周期结构转成可由量子傅里叶变换提取的信息，并给出多项式时间算法。原始工作发表于1994年的计算机科学会议。<a class="source-ref" href="sources.html#s5" aria-label="来源5">[5]</a> 这不是说今天的设备已经能分解实际密码使用的大整数；它说明一旦拥有足够大且可靠的机器，某类经典公钥密码的安全假设会发生根本变化。</p>
+          <p>Grover 搜索提供另一种尺度。对一个只有“是否命中”接口的无结构搜索，经典算法最坏要逐项检查，量子查询次数可降到平方根量级。平方根改进可能很重要，却不是所有搜索都能无成本套用。数据库装载、可逆判断函数、重复运行和错误控制都可能吃掉优势，经典并行也会改变实际比较。</p>
+          <p>模拟量子系统被广泛认为是更自然的方向，因为分子、材料与量子场本身就遵循量子规则。这里仍不能把“自然匹配”直接写成产业收益。需要指定哈密顿量怎样编码、期望值要多精确、状态怎样准备，以及经典近似是否已经足够。问题结构给出机会，工程账单决定机会能否兑现。</p>
+        </div>
+        <aside class="studio-proof" aria-label="三类常见量子算法主张">
+          <ul class="fact-list">
+            <li class="fact-row"><strong>周期与代数</strong><span>代表例是分解与离散对数，理论加速强，但需要大规模可靠线路。</span></li>
+            <li class="fact-row"><strong>无结构搜索</strong><span>查询次数平方根改进，实际收益取决于输入与判断函数成本。</span></li>
+            <li class="fact-row"><strong>量子模拟</strong><span>让量子系统模拟量子系统，仍需精度目标和经典基线。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="studio-row studio-row--reverse" aria-labelledby="noise-title">
+        <div class="studio-copy">
+          <h2 id="noise-title">为什么好器件仍不够</h2>
+          <p><dfn data-term="物理量子比特">物理量子比特</dfn>是芯片或实验装置中真实存在的硬件单元。它会退相干，控制脉冲会偏离目标，双比特操作和读出也会犯错。增加物理数量若同时增加噪声通道，不会自动得到更强计算机。因此只比较“有多少个量子比特”，就像只按晶体管数量判断整台经典计算机一样粗糙。</p>
+          <p>不同硬件路线也不能只用一个数字横向排名。超导电路、受控离子、中性原子和光子系统在门速度、连接方式、相干、测量与制造扩展上各有权衡。某项指标领先，不等于完整系统已经领先；真正相关的指标要由准备运行的算法决定。</p>
+          <p><dfn data-term="逻辑量子比特">逻辑量子比特</dfn>把一份量子信息编码到许多物理单元中，并通过额外测量追踪错误征兆。关键点是不能直接复制未知状态留作备份，也不能随意测量受保护的信息。系统改为测量某些联合约束，让错误留下“脚印”，再由经典解码器推断应如何修正。</p>
+          <p>这套方法称为<dfn data-term="量子纠错">量子纠错</dfn>。当物理操作的错误率低于特定编码的阈值时，增加编码距离可以压低逻辑错误率。代价是大量额外比特、持续测量、快速解码与更复杂的控制。若逻辑操作仍太容易失败，再多物理单元也无法支撑长算法。</p>
+          <p><dfn data-term="容错量子计算">容错量子计算</dfn>进一步要求所有关键步骤都在错误可控的方式下进行，包括逻辑门、状态准备、测量和纠错循环。它追求的不是零误差，而是把每步逻辑错误率压到足够低，使完整算法的失败概率可接受。这也是“能维持一个逻辑记忆”与“能运行长而有用的逻辑程序”之间的距离。</p>
+        </div>
+        <aside class="studio-proof" aria-label="从物理器件到可靠程序">
+          <ul class="claim-list">
+            <li class="claim-test"><strong>器件层</strong><span>门保真度、连接方式、相干时间与读出质量。</span></li>
+            <li class="claim-test"><strong>编码层</strong><span>每个逻辑单位需要多少物理单元与纠错循环。</span></li>
+            <li class="claim-test"><strong>程序层</strong><span>逻辑门数、深度、状态准备和最终成功概率。</span></li>
+            <li class="claim-test"><strong>系统层</strong><span>低温、控制、解码、调度与经典计算的总成本。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="dark-band" aria-labelledby="milestone-title">
+        <div class="studio-row">
+          <div class="studio-copy">
+            <h2 id="milestone-title">里程碑应按它证明的事情来读</h2>
+            <p>Google Quantum AI 与合作者在 Nature 报告了低于表面码阈值的量子存储实验。其距离7编码使用101个物理量子比特，随着编码距离增加，逻辑错误率下降；逻辑存储寿命也超过了其中最佳物理量子比特。论文于2024年在线发表、编入2025年卷期，并在2026年发布更正。<a class="source-ref" href="sources.html#s6" aria-label="来源6">[6]</a></p>
+            <p>这是重要证据，因为它显示“用更多物理资源换取更低逻辑错误”的关键趋势，而不是简单堆比特。论文也明确指出，现有逻辑错误率与许多实用计算需求之间仍有数量级差距，扩展实际系统会非常耗费资源。更复杂的逻辑运算、泄漏与相关错误、长时间稳定性、编译和实时解码仍需继续解决。</p>
+            <p>因此，这个结果既不该被贬低成“毫无用处”，也不该被扩写成“通用量子计算已经完成”。它证明的是特定编码上的存储与实时纠错性能，不是所有逻辑门已经齐备，也不是某个商业任务已经胜过最佳经典方法。读里程碑时，把实验对象、评价指标和未覆盖的步骤分开，结论会更稳健。</p>
+          </div>
+          <aside class="studio-proof" aria-label="里程碑的正确外推范围">
+            <ul class="claim-list">
+              <li class="claim-test"><strong>已经支持</strong><span>在该实验设置中，增大编码距离确实降低了逻辑错误。</span></li>
+              <li class="claim-test"><strong>尚未支持</strong><span>不能据此断言大规模有用算法已经可以运行。</span></li>
+              <li class="claim-test"><strong>仍需观察</strong><span>逻辑门、系统规模、相关错误与端到端工作负载。</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="studio-row" aria-labelledby="crypto-title">
+        <div class="studio-copy">
+          <h2 id="crypto-title">密码迁移不必等待机器成熟</h2>
+          <p>量子计算对密码学的影响具有特殊时间差。攻击能力尚未普遍出现，并不代表迁移可以延后。某些需要长期保密的数据可能今天被收集，未来再被解密；大型组织替换协议、证书、硬件和供应链也需要多年。风险管理关注的是数据寿命、迁移周期与攻击时间线的组合，而不是猜中一台机器的发布日期。</p>
+          <p>美国国家标准与技术研究院在2024年批准了首批三个后量子密码联邦标准：FIPS 203 用于密钥封装，FIPS 204 与 FIPS 205 用于数字签名。<a class="source-ref" href="sources.html#s7" aria-label="来源7">[7]</a> “后量子”指这些经典算法被设计为抵抗已知量子攻击，它们运行在普通计算机上，并不需要量子网络或量子处理器。</p>
+          <p>这也是理论结果怎样转化为现实行动的好例子。Shor 算法给出威胁机制，密码分析与标准化评估候选方案，组织再做密码资产盘点和分阶段迁移。谨慎并不等于恐慌：不应声称现有大型量子机已经能任意解密，也不应因为尚未发生攻击就忽略迁移窗口。</p>
+          <p>普通读者遇到“量子将破解所有加密”的标题时，可以先区分公钥密码、对称密码和哈希，再看攻击需要的逻辑资源。不同原语受影响方式并不相同，替代方案也不是同一套。面向个人，最实际的做法仍是使用持续更新的软件和服务；基础设施迁移则是组织层面的长期工程。</p>
+        </div>
+        <aside class="studio-proof" aria-label="密码学判断边界">
+          <ul class="fact-list">
+            <li class="fact-row"><strong>已发生</strong><span>标准已经发布，迁移工作可以基于正式规范推进。</span></li>
+            <li class="fact-row"><strong>未发生</strong><span>没有证据表明现有通用量子机已能破解实际规模的主流公钥系统。</span></li>
+            <li class="fact-row"><strong>应持续</strong><span>清点长期秘密、更新协议，并跟踪标准与实现安全。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="studio-row studio-row--reverse" aria-labelledby="claim-title">
+        <div class="studio-copy">
+          <h2 id="claim-title">把四门实验的隐藏成本加回来</h2>
+          <p>理想四门搜索只需一次目标查询，就能把正确门的振幅放大到1。经典逐门检查最坏需要四次。这个差距真实体现了查询模型中的算法结构，却还不是产品速度。现实中必须先实现“这扇门是否亮灯”的可逆判断，把两位编号准备进设备，执行所有门操作，再重复运行以确认输出。</p>
+          <p>候选规模增大时，查询次数的平方根优势会扩大，但目标判断函数也可能变复杂。若数据只存在普通服务器里，把它变成可被量子线路访问的形式可能很昂贵。若一次经典检查非常便宜，强大的经典并行系统也能缩短墙上时间。若答案难以验证，采样与后处理又会增加成本。</p>
+          <p>可靠比较至少需要同一任务、同一精度和同一成功概率。经典基线应当是经过优化的最佳已知方法，而不是故意选择的朴素程序。量子一侧则应报告完整电路、设备参数、运行次数和后处理，不只给出核心子程序的门数。若只比较两个不相同的问题，速度比再大也没有解释力。</p>
+          <p>对当前实验，一个更稳妥的词是“优势证据”而不是“一劳永逸的优越性”。研究者可以在特定采样、模拟或纠错任务上证明经典模拟困难，随后还要说明任务是否有独立价值、输出是否能验证，以及改进的经典算法会不会缩小差距。量子与经典方法共同进步，基线不是静止靶子。</p>
+        </div>
+        <aside class="studio-proof" aria-label="量子加速主张核对表">
+          <ul class="claim-list">
+            <li class="claim-test"><strong>任务相同吗</strong><span>输入、精度、成功概率与输出格式必须一致。</span></li>
+            <li class="claim-test"><strong>成本完整吗</strong><span>装载、编译、纠错、采样和经典后处理都应计入。</span></li>
+            <li class="claim-test"><strong>基线够强吗</strong><span>比较对象应是最佳已知经典算法与合适硬件。</span></li>
+            <li class="claim-test"><strong>结果可查吗</strong><span>开放线路、数据、误差条与复现实验比宣传口号更重要。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="studio-row" aria-labelledby="close-title">
+        <div class="studio-copy">
+          <h2 id="close-title">一种专用协处理器，也是一种判断训练</h2>
+          <p>量子计算最可信的未来图景，不是一台替代所有经典机器的超级电脑，而是一种与经典系统协作的专用处理器。经典部分负责数据、控制、优化和验证，量子部分只在具有合适结构的步骤上工作。能否形成价值，要看这一步的优势是否大到足以覆盖整个系统的额外成本。</p>
+          <p>从物理到应用，中间有一条很长的翻译链：物理量子比特要变成可靠逻辑单位，逻辑单位要支持足够深的门序列，算法要对应真实任务，结果还要胜过不断改进的经典方法。任一环节有进展都值得重视，但不能替其他环节作证。</p>
+          <p>这也给普通读者一个稳定的判断框架。看到新的芯片数量，先问逻辑错误率；看到新的算法复杂度，先问输入与预言机；看到新的速度纪录，先问经典基线和任务价值；看到新的商业预测，先找可复现的端到端结果。问题越具体，宣传与证据之间的距离越容易看清。</p>
+          <p>量子计算确实改变了“什么是可计算资源”的想象。它把相位、干涉和不可拆分的联合状态变成算法材料。但真正有用的计算从来不只靠新奇材料，还靠工程控制、严谨比较和可验证结果。下一次更大规模逻辑机器出现时，最重要的问题不是它看起来多么未来，而是公开证据能否证明它在真实任务上既更快又更有用。</p>
+        </div>
+        <aside class="studio-proof" aria-label="最终判断框架">
+          <ul class="claim-list">
+            <li class="claim-test"><strong>不是通用加速器</strong><span>优势依赖问题结构，不会平均分配给所有软件。</span></li>
+            <li class="claim-test"><strong>不是只看硬件数</strong><span>逻辑质量、线路深度和系统成本共同决定能力。</span></li>
+            <li class="claim-test"><strong>不是等待式未来</strong><span>标准迁移、验证方法和公开基线现在就能推进。</span></li>
+          </ul>
+        </aside>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="circuits-and-interference.html"><small>回到机制</small>← 让答案彼此干涉</a>
+      <a href="sources.html"><small>核对论文与标准</small>来源与延伸阅读 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="wordmark">量子计算入门</p><p>看结构、看逻辑资源、看完整基线，再谈有用。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

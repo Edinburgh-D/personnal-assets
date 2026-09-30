@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="沿四门搜索线路理解量子门、相位标记、干涉、纠缠与重复测量怎样组成量子算法。">
+  <title>让答案彼此干涉｜量子计算入门</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;family=IBM+Plex+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="site-header">
+    <div class="nav-edge">
+      <a class="wordmark" href="main.html">量子计算入门</a>
+      <div class="nav-actions">
+        <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="chapter-drawer" data-nav-toggle>目录</button>
+        <button class="control" type="button" aria-pressed="false" data-theme-toggle data-theme-storage="kb_darkMode"><span class="theme-label-long">切换</span><span data-theme-label>深色</span></button>
+      </div>
+    </div>
+    <nav class="nav-drawer" id="chapter-drawer" aria-label="知识库章节" data-nav-drawer hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>Personal Assets</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>从一次测量开始</span><small>直觉</small></a></li>
+        <li><a href="circuits-and-interference.html" aria-current="page"><span>让答案彼此干涉</span><small>机制</small></a></li>
+        <li><a href="limits-and-usefulness.html"><span>从可能加速到真正有用</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源与延伸阅读</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">量子计算入门</a><span aria-hidden="true">/</span><span>让答案彼此干涉</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">量子计算的差异不在于把0和1同时当作可读答案，而在于可控地改变振幅与相位，让干涉重塑最终测量结果的概率分布。</template>
+    <template data-narrative="question">算法怎样用量子门、干涉和纠缠把目标答案的概率推高，同时把其他答案压低？</template>
+    <template data-narrative="example">把四扇门编码为两个量子比特，先平均分配振幅，再给亮灯门加上相位标记，最后通过振幅放大提高目标门被测得的概率。</template>
+    <template data-narrative="conclusion">量子加速来自把问题结构编译成可逆线路，再用相位标记和干涉集中有用振幅；纠缠扩展了可操纵的整体状态，但测量仍需重复抽样验证。</template>
+    <template data-narrative="next-question">既然机制成立，哪些问题真正适合量子计算，而噪声、纠错和资源成本又把今天的能力限制在哪里？</template>
+
+    <header class="hero-split">
+      <div class="hero-copy">
+        <p class="chapter-mark">机制藏在线路顺序里</p>
+        <h1>让答案彼此干涉</h1>
+        <p class="lede">均匀铺开候选项不产生优势。目标必须先被标记，再通过可逆操作把相位差转成概率差。</p>
+        <p class="hero-note">四门实验仍是同一个问题，但现在每一步都必须说明输入、变换和可读输出。</p>
+      </div>
+      <figure class="circuit-board" aria-labelledby="circuit-caption">
+        <p class="board-label"><span>两条信息线</span><span>从左向右</span></p>
+        <div class="circuit-lines" aria-hidden="true">
+          <div class="wire"><span class="wire-label">q₀</span><span class="gate">H</span><span class="gate gate--signal">标</span><span class="gate">扩</span><span class="wire-end">M</span></div>
+          <div class="wire"><span class="wire-label">q₁</span><span class="gate">H</span><span class="gate gate--signal">记</span><span class="gate">散</span><span class="wire-end">M</span></div>
+        </div>
+        <figcaption id="circuit-caption">抽象线路图：H 建立均匀组合，目标标记改变相位，扩散步骤放大目标，M 把最终状态测成两位经典结果。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article-flow">
+      <section class="studio-row" aria-labelledby="circuit-title">
+        <div class="studio-copy">
+          <h2 id="circuit-title">把计算画成从左到右的变换</h2>
+          <p><dfn data-term="量子线路">量子线路</dfn>把准备状态、实施操作和最后测量按时间顺序画在一组横线上。横线不是电流经过的金属线，而是信息单位的时间轴。线路左边通常从已知基态开始，方框表示中间操作，测量符号把结果写进普通经典比特。IBM 的教学资料把线路深度定义为不能并行合并的操作层数，它大致关联真实设备需要保持状态的时间。<a class="source-ref" href="sources.html#s2" aria-label="来源2">[2]</a></p>
+          <p>线路里的基本可逆变换叫<dfn data-term="量子门">量子门</dfn>。常见的 X 门会交换 |0⟩ 与 |1⟩，H 门会在基态与同相或反相组合之间转换。多次门操作可以撤销前面的变化，这种可逆性不是装饰条件。若中途随意把状态抹成一个确定值，相位关系就会丢失，后面的干涉也无从发生。</p>
+          <p>少数种门可以组合出任意精度的通用变换，但“通用”不等于“便宜”。某个理想旋转可能要分解成许多硬件原生门，精度要求越高，分解通常越长。算法论文中的抽象门数、编译后的原生门数和真实运行时间，是三个相关却不相同的口径。</p>
+          <p>四门实验需要两个量子比特。初态 |00⟩ 对应第一扇门；分别在两条线上施加 H 后，00、01、10、11 四个候选项的振幅都变成1/2。它们的概率都是1/4。这里的“同时出现”只说明同一个状态向量有四个分量，尚未说明哪一扇门亮灯，更没有把四个结果交给读者。</p>
+          <p>线路图还有一个常被忽略的好处：它强迫我们看见成本。若两个门作用在同一个量子比特上，它们不能同时执行。若硬件上两个量子比特不相邻，编译器还可能插入交换操作。纸上只有几格的算法，在具体设备上会变得更深。保持量子状态的时间越长，噪声积累的机会通常也越多。</p>
+        </div>
+        <aside class="studio-proof" aria-label="线路的四个阅读位置">
+          <ul class="fact-list">
+            <li class="fact-row"><strong>准备</strong><span>从可复现的基态开始，不假设答案已经在输入中。</span></li>
+            <li class="fact-row"><strong>变换</strong><span>门操作改变整体状态，同时保存后续可利用的相位关系。</span></li>
+            <li class="fact-row"><strong>测量</strong><span>把量子信息压成经典样本，无法逆向还原全部状态。</span></li>
+            <li class="fact-row"><strong>统计</strong><span>重复运行形成分布，再由经典程序解释与核验。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="dark-band" aria-labelledby="mark-title">
+        <div class="studio-row studio-row--reverse">
+          <div class="studio-copy">
+            <h2 id="mark-title">目标先留下记号，再被放大</h2>
+            <p>算法需要一个能识别亮灯门的可逆子程序。理论分析常把它称为<dfn data-term="预言机">预言机</dfn>：输入一扇门的编号，它不给出一张可直接阅读的答案纸，而是让目标候选项的相位翻转。若10号门亮灯，四个振幅便从 (1/2, 1/2, 1/2, 1/2) 变成 (1/2, 1/2, −1/2, 1/2)。直接测量时，四个绝对值仍然一样，所以概率还没有改变。</p>
+            <p>接着执行 Grover 扩散操作。对四个振幅而言，翻转后的平均值是1/4。扩散操作把每个振幅关于平均值做镜像：三个非目标项从1/2变成0，目标项从−1/2变成1。理想情况下，此时测量会确定得到10。Grover 在1996年的论文中证明了更一般的无结构搜索可以用与候选规模平方根同阶的查询次数完成。<a class="source-ref" href="sources.html#s4" aria-label="来源4">[4]</a></p>
+            <p>这段推导揭示了速度来源。目标不是被“看见”后复制出来，而是用一次相位标记改变后续演化。其他路线也不是被逐个删除，而是在统一变换中相消。候选项很多时，标记和扩散通常要重复若干轮，轮数必须恰到好处；重复过头，目标振幅还会再次下降。</p>
+            <p>振幅放大并不要求目标只有一个。若有多个合格候选，旋转角度会随目标比例改变，合适轮数也随之变化。目标数量未知时，还要使用估计或随机停止策略。四门例子把数字选得极整齐，是为了显露机制，而不是说实际搜索总能一步结束。</p>
+            <p>预言机也不是免费魔法盒。现实任务需要把“这个候选是否满足条件”写成可逆计算，并把输入装载到线路中。若建造预言机或装载数据本身已经花费线性甚至更高成本，查询次数上的平方根优势可能不足以形成端到端优势。下一章会把这部分账重新加回来。</p>
+          </div>
+          <figure class="studio-proof evidence-board" aria-labelledby="amplitude-caption">
+            <p class="board-label"><span>四门振幅</span><span>理想一步</span></p>
+            <div class="door-grid" aria-hidden="true"><div class="door">½ → 0</div><div class="door">½ → 0</div><div class="door door--marked">−½ → 1</div><div class="door">½ → 0</div></div>
+            <figcaption id="amplitude-caption">扩散并不是把目标概率“加一点”，而是利用全体振幅的平均关系，让目标与非目标走向不同结果。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="studio-row" aria-labelledby="entangle-title">
+        <div class="studio-copy">
+          <h2 id="entangle-title">多个比特何时不能拆开看</h2>
+          <p><dfn data-term="纠缠">纠缠</dfn>描述一种整体状态：系统不能写成每个量子比特各自状态的简单乘积。例如 (|00⟩ + |11⟩)/√2 只会测得00或11。单看其中一个量子比特，0和1各占一半；把两者一起看，结果却完全相关。IBM 的量子信息课程用复合系统与部分测量来严格描述这种关系。<a class="source-ref" href="sources.html#s3" aria-label="来源3">[3]</a></p>
+          <p>纠缠让算法能操纵“两个比特共同怎样变化”，而不只是分别旋转两个独立开关。受控非门就是常见入口：第一个量子比特为1时才翻转第二个。若控制位先处于叠加，操作后通常会得到无法拆分的整体状态。许多量子算法和纠错方案都依赖这种联合结构。</p>
+          <p>量子隐形传态进一步展示了这个边界：纠缠可以配合测量与两位经典信息，把未知状态转移到远端，但接收者必须等经典消息到达，才能完成恢复。被转移的是状态关系，不是一个可超光速复制的物体；发送端原状态也不会保留一份完美副本。</p>
+          <p>但纠缠不是远距离发送消息的暗号，也不是一出现就自动加速。只测量一半时，本地结果仍然随机。要确认双方相关，需要后来比较经典记录。算法是否更快，还取决于这种相关结构能否配合相位与问题特性，让错误路径抵消。把纠缠单独称作“计算能力来源”，会遗漏线路设计中最关键的选择。</p>
+          <p>四门搜索的两位编号在均匀初态时可以写成两个独立叠加的乘积，算法并不因为候选项有四个就必须处处纠缠。这个反例很重要：叠加、纠缠和干涉是不同资源。具体算法可能使用其中几种，但它们的名字不能代替对实际线路的解释。</p>
+        </div>
+        <aside class="studio-proof" aria-label="纠缠的边界">
+          <p class="formula" aria-label="贝尔态公式">(|00⟩ + |11⟩) / √2</p>
+          <ul class="claim-list">
+            <li class="claim-test"><strong>整体确定</strong><span>允许的联合结果只有00与11。</span></li>
+            <li class="claim-test"><strong>局部随机</strong><span>单独看任一边，仍会各半得到0或1。</span></li>
+            <li class="claim-test"><strong>不能传信</strong><span>相关性要靠经典通信比较记录才能显现。</span></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="studio-row studio-row--reverse" aria-labelledby="sampling-title">
+        <div class="studio-copy">
+          <h2 id="sampling-title">一次读数不是算法的全部输出</h2>
+          <p>真实运行通常会把同一线路执行许多次，每次称为一次 shot。若理想答案应以较高概率出现，结果直方图会逐渐显示峰值。重复次数取决于我们要估计的量、可接受的不确定度和硬件噪声。某些任务关注单个候选答案，另一些任务要估计平均能量或某个观测量，采样策略也随之变化。</p>
+          <p>样本数量增加时，普通统计误差通常只按平方根速度缩小。想把误差大致减半，往往要取得约四倍样本。这意味着高精度期望值可能需要大量重复运行。量子线路很短并不保证整个实验很快，排队、重置、校准和通信也会进入墙上时间。</p>
+          <p>测量并非总在末尾。现代线路也能在中间测量、根据结果选择后续操作，纠错更会不断提取错误征兆。不过一旦测量获得经典信息，相关状态就按测量规则更新。设计者必须决定哪些相位关系还要保留，哪些信息已经可以安全地转为经典控制。</p>
+          <p>量子处理器因此很少独自完成整个工作流。经典程序要选择参数、把抽象门编译成设备支持的原生操作、提交任务、汇总样本，并判断是否继续运行。变分算法更是让经典优化器与短量子线路反复交替。把这种混合结构画出来，能避免把每一步都误归功于量子芯片。</p>
+          <p>噪声会让直方图变形。门操作有误差，量子比特会与环境交换信息，读出也可能把0记成1。简单实验可以用误差缓解估计并校正部分偏差，但误差缓解不等同于可无限扩展的纠错。线路越深、比特越多，维持可解释信号往往越难。</p>
+        </div>
+        <div class="studio-proof">
+          <table class="comparison-table">
+            <tbody>
+              <tr><th scope="row">初始化</th><td data-label="作用">把状态放到可重复的起点</td><td data-label="风险">准备误差</td></tr>
+              <tr><th scope="row">标记</th><td data-label="作用">把目标性质写入相位</td><td data-label="风险">子程序成本</td></tr>
+              <tr><th scope="row">放大</th><td data-label="作用">让目标与其他结果相消或增强</td><td data-label="风险">门误差与深度</td></tr>
+              <tr><th scope="row">采样</th><td data-label="作用">把概率结构变成经典数据</td><td data-label="风险">统计波动与读出误差</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="studio-row" aria-labelledby="mechanism-close-title">
+        <div class="studio-copy">
+          <h2 id="mechanism-close-title">优势是一条完整因果链</h2>
+          <p>现在可以把机制压缩成一条链：从可控初态出发，用可逆门把候选结构编码进振幅和相位；用目标相关的子程序留下标记；让线路产生干涉，使有用结果在测量分布中更突出；最后通过重复采样与经典处理确认结果。少了任何一环，巨大状态空间都不会自动变成答案。</p>
+          <p>纠缠则让这条链能够处理不可拆分的联合关系。它扩展了可操纵的状态结构，却不取消测量限制，也不保证问题存在快捷方式。量子算法之所以稀少，正是因为设计者必须同时满足可逆编码、可利用干涉、低成本读出和可验证结果。</p>
+          <p>四门实验在理想数学中漂亮地结束：一次标记、一次扩散，目标概率从四分之一升到一。但真实设备还要为原生门、连接限制、噪声和重复运行付费。更大的问题也未必拥有如此整齐的结构。接下来不再问“量子能不能算”，而要问“在哪种条件下，它值得这样算”。</p>
+          <p>这种追问不会削弱理论优势，反而能确定优势究竟落在哪一层。查询复杂度告诉我们核心信息需求，门复杂度告诉我们理想线路长度，容错资源估算再把它翻译成逻辑和物理成本。只有这些口径被明确区分，实验进展才能与算法承诺准确对接。</p>
+        </div>
+        <aside class="studio-proof" aria-label="量子算法机制摘要">
+          <ul class="claim-list">
+            <li class="claim-test"><strong>结构先于规模</strong><span>候选项多并不够，必须有便宜而可逆的标记方式。</span></li>
+            <li class="claim-test"><strong>分布先于答案</strong><span>线路塑造的是测量概率，答案要从样本中判断。</span></li>
+            <li class="claim-test"><strong>总成本先于口号</strong><span>编译、深度、采样和经典处理都应进入比较。</span></li>
+          </ul>
+        </aside>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="main.html"><small>回到直觉</small>← 从一次测量开始</a>
+      <a href="limits-and-usefulness.html"><small>继续形成判断</small>从可能加速到真正有用 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="wordmark">量子计算入门</p><p>算法不是“同时尝试”，而是把相位差变成可读概率。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="从测量、叠加、振幅与相位出发，建立不靠神秘比喻的量子计算直觉。">
+  <title>从一次测量开始｜量子计算入门</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;family=IBM+Plex+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="site-header">
+    <div class="nav-edge">
+      <a class="wordmark" href="main.html">量子计算入门</a>
+      <div class="nav-actions">
+        <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="chapter-drawer" data-nav-toggle>目录</button>
+        <button class="control" type="button" aria-pressed="false" data-theme-toggle data-theme-storage="kb_darkMode"><span class="theme-label-long">切换</span><span data-theme-label>深色</span></button>
+      </div>
+    </div>
+    <nav class="nav-drawer" id="chapter-drawer" aria-label="知识库章节" data-nav-drawer hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>Personal Assets</span><small>总览</small></a></li>
+        <li><a href="main.html" aria-current="page"><span>从一次测量开始</span><small>直觉</small></a></li>
+        <li><a href="circuits-and-interference.html"><span>让答案彼此干涉</span><small>机制</small></a></li>
+        <li><a href="limits-and-usefulness.html"><span>从可能加速到真正有用</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源与延伸阅读</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><span>量子计算入门</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="overview">
+    <template data-narrative="question">如果测量最终只能得到0或1，量子计算机凭什么不同于更快的普通计算机？</template>
+    <template data-narrative="example">用一个四门搜索实验贯穿全站：四扇外观相同的门中只有一扇亮灯，计算过程必须让目标门在最终测量中更容易被选中。</template>
+    <template data-narrative="conclusion">量子计算的差异不在于把0和1同时当作可读答案，而在于可控地改变振幅与相位，让干涉重塑最终测量结果的概率分布。</template>
+    <template data-narrative="next-question">算法怎样用量子门、干涉和纠缠把目标答案的概率推高，同时把其他答案压低？</template>
+
+    <header class="hero-split">
+      <div class="hero-copy">
+        <p class="chapter-mark">直觉从读数开始</p>
+        <h1>从一次测量开始</h1>
+        <p class="lede">量子计算机不是一台把所有答案一次吐出来的机器。它更像一套精密的波路：先安排许多可能路线，再让不需要的路线互相抵消。</p>
+        <p class="hero-note">这条学习路径只假定你理解普通的0和1。数学会出现，但每个符号都先对应一个可观察的实验动作。</p>
+      </div>
+      <figure class="state-board" aria-labelledby="state-board-caption">
+        <p class="state-board__title"><span>一次状态记录</span><span>测量前</span></p>
+        <div class="state-line"><strong>|0⟩</strong><span class="state-track"><span class="state-fill state-fill--half"></span></span><span>50%</span></div>
+        <div class="state-line"><strong>|1⟩</strong><span class="state-track"><span class="state-fill state-fill--half"></span></span><span>50%</span></div>
+        <div class="state-phase" aria-hidden="true"><span>路线 A</span><span class="phase-sign">±</span><span>路线 B</span></div>
+        <figcaption id="state-board-caption">两条记录都可能给出各半概率，但中间的正负关系会决定它们再次相遇时是增强还是抵消。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article-flow">
+      <section class="studio-row" aria-labelledby="bit-title">
+        <div class="studio-copy">
+          <h2 id="bit-title">0与1不是袋子里的两枚答案</h2>
+          <p><dfn data-term="量子比特">量子比特</dfn>是量子计算中最小的信息单位。普通比特在读取时是0或1，量子比特被测量后也只会给出0或1。差别发生在测量之前：我们用两个基态 |0⟩ 和 |1⟩ 描述它，并允许状态在这两个基态之间连续变化。超导电路、离子或光子都可能承载这种状态；符号说的是信息结构，不限定硬件材料。</p>
+          <p><dfn data-term="叠加">叠加</dfn>指一个状态由多个基态组合而成。它不是一枚高速旋转、其实早已决定正反面的硬币，也不是把经典的0和1各复制一份藏起来。若测量前状态写成 α|0⟩ + β|1⟩，α 与 β 就共同描述这一份状态。对它进行一次标准测量，只能得到一个经典结果，原来的组合信息不会完整地跟着结果出来。</p>
+          <p>系数 α 和 β 叫作<dfn data-term="振幅">振幅</dfn>。它们通常是复数，绝对值平方才是相应结果的概率，因此 |α|² + |β|² 必须等于1。若两者绝对值相同，连续准备并测量许多次，会看到0和1大约各占一半。一次结果仍可能偏向任何一边，只有重复实验的频率才逐渐显出分布。</p>
+          <p>这种概率不是设备坏了之后才出现的模糊。即使状态准备完全一致、操作完全理想，单次测量仍按概率产生结果。我们能预测的是许多次实验的分布，而不是每一次会落在哪边。量子算法必须接受这个出口条件，不能把随机性当作稍后会被工程消除的临时缺陷。</p>
+          <p>归一化条件也限制了所谓“并行”。把某个结果的概率抬高，必然要从其他结果拿走概率总量。算法不能把所有候选项都变成百分之百，而是重新分配有限的权重。真正的设计问题因此不是怎样拥有更多分支，而是怎样让分支之间发生有方向的再分配。</p>
+          <p>这已经说明“同时尝试全部答案”为什么会误导。即使许多候选项都参与了状态演化，测量也不会打印一份候选清单。若计算没有先把信息重新组织好，最后只会抽到一个样本。量子算法真正困难的部分，是在测量前把值得保留的结构变成更高的出现概率。</p>
+          <p>未知量子状态也不能被完美复制后逐份测量。这个限制不是工程师还没找到合适的复印机，而是量子状态变换规则的结果。实验者可以反复准备同一种状态并用不同方式测量，再估计其描述；却不能拿到单独一份未知状态，同时保留原件并制造无数完全相同的副本。</p>
+          <p>因此，量子程序的输入若无法重复准备，输出解释会受到直接限制。可靠实验通常明确写出准备步骤、测量次数与统计不确定度。只展示一次看似正确的比特串，没有办法区分算法信号、正常随机波动和设备错误。</p>
+          <p>这也是为什么量子计算的成果常以分布、期望值或置信区间呈现。读图时，误差条与重复条件不是附属细节，而是答案的一部分。</p>
+        </div>
+        <aside class="studio-proof" aria-label="经典概率与量子状态的区别">
+          <ul class="fact-list">
+            <li class="fact-row"><strong>经典随机</strong><span>每次可以先选定0或1，我们只是暂时不知道。</span></li>
+            <li class="fact-row"><strong>量子状态</strong><span>不同测量方式能揭示仅靠0与1频率看不见的关系。</span></li>
+            <li class="fact-row"><strong>共同限制</strong><span>单次读出都只留下一个经典结果，不能回收完整内部描述。</span></li>
+          </ul>
+          <p class="split-note"><strong>一个可靠的直觉</strong>把测量看成提问方式，而不是掀开盒盖。换一种提问方式，同一状态会显出不同统计。</p>
+        </aside>
+      </section>
+
+      <section class="studio-row studio-row--reverse" aria-labelledby="phase-title">
+        <div class="studio-copy">
+          <h2 id="phase-title">相同概率之下，还藏着方向</h2>
+          <p><dfn data-term="相位">相位</dfn>是不同振幅之间的相对关系。两个状态 (|0⟩ + |1⟩)/√2 与 (|0⟩ − |1⟩)/√2，在直接测量时都会产生各半的0和1。它们却不是同一状态，因为第二项的符号不同。让两条演化路线重新相遇后，正负关系会影响相加结果。</p>
+          <p>振幅相遇时的增强或抵消叫作<dfn data-term="干涉">干涉</dfn>。它与水波或声波的类比有帮助：波峰对波峰会增强，波峰对波谷会削弱。类比的边界也很重要。量子振幅不是水面上能直接拍到的起伏，它是用来计算不同测量结果概率的数学对象。我们只能通过改变线路并比较大量测量统计，反推出相位是否发挥了作用。</p>
+          <p>所有振幅一起乘上同一个相位，测量统计不会改变；真正可利用的是分量之间的相对相位。这像整支乐队同时把起拍后移，与只改变两个声部的相对拍点之间的区别。前者不改变内部关系，后者会决定它们相遇时互相加强还是削弱。</p>
+          <p>所谓“换一种测量方式”，实际常通过先做一次已知变换，再按标准方式测量来完成。设备不需要一双能直接看见相位的眼睛。它只需把原本隐藏在相对关系里的信息旋转到0与1的概率上。这种“先变换、后读取”的节奏会反复出现在量子算法中。</p>
+          <p>最简单的检验使用 Hadamard 操作，通常写作 H。H 会把 |0⟩ 变成同相组合，把 |1⟩ 变成反相组合；再做一次 H，前者回到 |0⟩，后者回到 |1⟩。于是两种直接看来完全相同的各半分布，经过同一操作后变成完全不同的确定结果。相位由此被转换成可读差别。IBM 的课程用同样的关系解释叠加与不同测量基底。<a class="source-ref" href="sources.html#s1" aria-label="来源1">[1]</a></p>
+          <p>下面的模拟器没有连接真实量子硬件，只复现这一理想概率模型。先选同相或反相状态，再比较直接测量与“先过 H 再测量”。直接测量会随机波动，另一种方式则把隐藏的正负关系转成稳定结果。它展示的是算法可利用的信息通道，不是证明浏览器正在进行量子计算。</p>
+        </div>
+        <div class="studio-proof simulator" data-phase-simulator>
+          <h3>把相位变成读数</h3>
+          <p>每次运行模拟20次测量。随机结果会波动，这是正常现象。</p>
+          <div class="sim-controls" aria-label="选择状态">
+            <button class="control" type="button" aria-pressed="true" data-phase="plus">同相 |+⟩</button>
+            <button class="control" type="button" aria-pressed="false" data-phase="minus">反相 |−⟩</button>
+          </div>
+          <div class="sim-controls" aria-label="选择测量方式">
+            <button class="control" type="button" data-measure="direct">直接测量</button>
+            <button class="control" type="button" data-measure="interfere">先过 H 再测</button>
+            <button class="control" type="button" data-measure="reset">重置</button>
+          </div>
+          <div class="sim-results" aria-live="polite">
+            <div class="result-line"><strong>0</strong><span class="result-track"><span class="result-fill" data-result-fill="0"></span></span><span data-result-text="0">0 次</span></div>
+            <div class="result-line"><strong>1</strong><span class="result-track"><span class="result-fill" data-result-fill="1"></span></span><span data-result-text="1">0 次</span></div>
+          </div>
+          <p class="sim-status" data-sim-status>选择状态，再比较两种测量方式。</p>
+        </div>
+      </section>
+
+      <section class="dark-band" aria-labelledby="doors-title">
+        <div class="studio-row">
+          <div class="studio-copy">
+            <h2 id="doors-title">四扇门，把误解缩到桌面大小</h2>
+            <p>设想四扇外观相同的门，编号00、01、10、11，其中只有一扇门后亮着灯。两位二进制数正好可以标记四个候选项。我们把它们都纳入状态，并让四个候选项起初拥有相同大小的振幅。此时若立刻测量，每扇门出现的概率仍然相同，成功率只有四分之一。</p>
+            <p>这一步没有凭空带来答案。候选空间虽然已被写进一个整体状态，但读出限制依旧存在。要获得优势，计算必须让亮灯门与其他门形成可利用的相位差，再安排一次干涉，使目标方向增强、其他方向减弱。下一章会把这个过程画成一条完整线路。</p>
+            <p>这个例子也给出一个判断准则：只展示“候选数量随量子比特指数增长”，不足以证明算法更快。还要解释怎样标记有用结构、怎样让它在测量中显现，以及准备输入和核验输出需要多少经典工作。缺少其中任何一步，“量子并行”都可能只是一句没有兑现的口号。</p>
+            <p>若有 n 个量子比特，状态需要 2ⁿ 个复数分量来完整描述。这个指数增长让经典精确模拟迅速变贵，也让量子系统拥有宽广的演化空间。但测量不会交出这 2ⁿ 个复数。想估计其中许多分量，仍要改变实验并反复取样，成本可能同样迅速增长。</p>
+            <p>所以“经典计算机无法存下完整状态”与“量子计算机能快速解出某题”是两件事。前者说明模拟物理状态可能困难，后者还需要具体算法把我们关心的答案压进少量可测量结果。复杂状态本身是资源，也可能只是难以读取的负担。</p>
+          </div>
+          <figure class="studio-proof" aria-labelledby="door-caption">
+            <div class="door-grid" aria-hidden="true"><div class="door">00</div><div class="door">01</div><div class="door door--marked">10</div><div class="door">11</div></div>
+            <figcaption id="door-caption">四门实验：目标门10被标记，但标记必须继续参与演化，才能在最终测量中更常出现。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="studio-row" aria-labelledby="difference-title">
+        <div class="studio-copy">
+          <h2 id="difference-title">不同，不等于处处更快</h2>
+          <p>经典计算也能处理概率、复数和波动方程，甚至能在小规模上精确模拟量子线路。真正的区别是物理系统本身按量子规则演化，某些状态空间因此不必逐项存进经典内存。但状态空间很大并不自动等于可用信息很多；测量出口仍然狭窄，算法必须围绕这个出口设计。</p>
+          <p>因此，量子计算机不太可能像新一代笔记本那样把所有程序统一加速。网页渲染、文字处理和普通数据库查询通常没有理由改写成量子线路。更合理的角色是协处理器：经典计算机准备问题、选择线路、处理测量数据，量子处理器只承担那些确有合适结构的核心步骤。</p>
+          <p>这也解释了为什么“低温”“真空”或“精密激光”不是量子优势的定义。它们是某些硬件维持可控状态的工程条件。若算法没有形成可利用的干涉，再昂贵的实验装置也只是按照量子规律产生样本。物理奇特性必须经过线路和复杂度分析，才能成为计算优势。</p>
+          <p>现在可以回答开头的疑问了。最终读数虽然仍是0或1，测量前的演化却能控制不同结果的概率。量子计算的独特性不在“同时保存两份可读答案”，而在于可控地改变振幅与相位，让干涉把结构压进输出分布。真正的算法，要把这种物理差异变成少做一些关键工作的计算差异。</p>
+          <blockquote><p>叠加把路线放进同一状态，测量只留下一个出口；算法的工作，是让正确路线更愿意走向那个出口。</p></blockquote>
+          <p>下一步要把直觉变成机制。四门实验会被编码为两个量子比特，亮灯门会得到相位标记，随后通过一次振幅放大显现出来。沿着线路逐步看，就能区分哪些部分产生优势，哪些部分只是准备、读出和重复采样。</p>
+        </div>
+        <aside class="studio-proof" aria-label="本章留下的三个判断">
+          <ul class="claim-list">
+            <li class="claim-test"><strong>先问如何读出</strong><span>候选项进入状态不等于候选答案都能被读取。</span></li>
+            <li class="claim-test"><strong>再问如何相消</strong><span>没有可设计的相位关系，叠加只会给出另一种随机抽样。</span></li>
+            <li class="claim-test"><strong>最后比较总成本</strong><span>准备、运行、重复测量和经典处理都属于算法。</span></li>
+          </ul>
+        </aside>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="sources.html"><small>查证概念与公式</small>来源与延伸阅读</a>
+      <a href="circuits-and-interference.html"><small>继续理解机制</small>让答案彼此干涉 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="wordmark">量子计算入门</p><p>从一次测量，走到对真实加速的判断。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

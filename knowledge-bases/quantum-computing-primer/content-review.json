@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-01T02:19:46+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "如果测量最终只能得到0或1，量子计算机凭什么不同于更快的普通计算机？",
+      "readerStateChange": "读前容易把叠加理解为可同时读出全部答案；读后能用振幅、相对相位和测量分布解释量子状态的差异，并知道算法必须先重塑概率。",
+      "twoSentenceSummary": "正文从单次测量只产生0或1出发，逐步区分经典随机与带相位的量子状态，并用交互模拟展示同样的直接测量统计如何隐藏不同相位。四门实验进一步说明，扩大候选状态空间并不会自动给出答案，算法还要让目标路线增强、其他路线抵消。",
+      "continuityEvidence": "结尾把量子计算的差异落实为测量前对振幅和相位的控制，并明确把下一步推进到四门实验中的目标标记、干涉和概率放大。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "circuits-and-interference.html",
+      "centralQuestion": "算法怎样用量子门、干涉和纠缠把目标答案的概率推高，同时把其他答案压低？",
+      "readerStateChange": "读前只知道振幅与相位可以改变测量分布；读后能沿线路说明准备、相位标记、扩散、纠缠和重复采样各自承担的作用与成本。",
+      "twoSentenceSummary": "正文把四扇门编码为两个量子比特，推导一次 Grover 标记与扩散怎样把目标振幅从负二分之一变成一。随后通过 Bell 状态和采样流程划清纠缠、读出、经典后处理与量子加速之间的边界。",
+      "continuityEvidence": "开头直接使用前页建立的相位与测量模型，结尾则把理想线路扩展到原生门、连接、噪声和采样成本，自然引出下一页对现实适用性的判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "limits-and-usefulness.html",
+      "centralQuestion": "既然机制成立，哪些问题真正适合量子计算，而噪声、纠错和资源成本又把今天的能力限制在哪里？",
+      "readerStateChange": "读前能够解释理想量子线路；读后能根据问题结构、逻辑资源、端到端误差、经典最佳基线和结果可验证性审查现实量子计算主张。",
+      "twoSentenceSummary": "正文用 Shor、Grover 与量子模拟区分不同算法优势，再从物理单元、逻辑编码和容错系统解释可靠计算为何需要巨大工程链条。Google 的纠错论文、NIST 后量子标准和四门搜索的完整成本共同示范了如何区分实验里程碑、风险行动与通用商业价值。",
+      "continuityEvidence": "本章把上一页的理想标记、扩散与采样逐项计入系统成本，最后形成可迁移的核对框架，并留下如何用公开基准证明真实用途的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分教学文档、原始算法论文、同行评议实验与正式密码标准，并根据每项材料的证据边界回查正文主张。",
+      "twoSentenceSummary": "参考页汇集 IBM 的状态与线路课程、Grover 和 Shor 原始论文、Google 纠错实验以及 NIST 后量子标准。每项说明同时指出它能支持的结论和不能外推的范围，并提醒实施者检查当前勘误。",
+      "continuityEvidence": "九项来源分别对应前三章的状态直觉、线路机制、算法复杂度、纠错现状和密码迁移，正文脚注可直接跳到相应说明。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

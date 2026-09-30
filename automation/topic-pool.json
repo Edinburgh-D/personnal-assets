@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30",
+  "updatedAt": "2026-10-01",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3669,6 +3669,13 @@
       "generatedAt": "2026-09-30",
       "slug": "fashion-week-runway-culture",
       "entry": "knowledge-bases/fashion-week-runway-culture/main.html"
+    },
+    {
+      "name": "量子计算入门",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-01",
+      "slug": "quantum-computing-primer",
+      "entry": "knowledge-bases/quantum-computing-primer/main.html"
     }
   ],
   "skipped": []

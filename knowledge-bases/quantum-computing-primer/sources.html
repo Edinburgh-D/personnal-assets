@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="量子计算入门所用的一手论文、标准与官方技术文档，并说明每项来源能够支持的结论边界。">
+  <title>来源与延伸阅读｜量子计算入门</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&amp;family=IBM+Plex+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="site-header">
+    <div class="nav-edge">
+      <a class="wordmark" href="main.html">量子计算入门</a>
+      <div class="nav-actions">
+        <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="chapter-drawer" data-nav-toggle>目录</button>
+        <button class="control" type="button" aria-pressed="false" data-theme-toggle data-theme-storage="kb_darkMode"><span class="theme-label-long">切换</span><span data-theme-label>深色</span></button>
+      </div>
+    </div>
+    <nav class="nav-drawer" id="chapter-drawer" aria-label="知识库章节" data-nav-drawer hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>Personal Assets</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>从一次测量开始</span><small>直觉</small></a></li>
+        <li><a href="circuits-and-interference.html"><span>让答案彼此干涉</span><small>机制</small></a></li>
+        <li><a href="limits-and-usefulness.html"><span>从可能加速到真正有用</span><small>判断</small></a></li>
+        <li><a href="sources.html" aria-current="page"><span>来源与延伸阅读</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">量子计算入门</a><span aria-hidden="true">/</span><span>来源与延伸阅读</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="reference">
+    <header class="hero-split">
+      <div class="hero-copy">
+        <p class="chapter-mark">论文、标准与官方文档</p>
+        <h1>来源与延伸阅读</h1>
+        <p class="lede">基础机制优先采用可复核的技术课程与原始论文，变化中的硬件与密码标准则以当前论文和官方标准为准。</p>
+        <p class="hero-note">每项说明都标明证据边界。厂商实验能证明特定设备与任务的结果，不能自动外推为所有应用的通用优势。</p>
+      </div>
+      <aside class="studio-proof" aria-label="来源使用原则">
+        <ul class="claim-list">
+          <li class="claim-test"><strong>概念</strong><span>核对状态、门、测量和复合系统的正式定义。</span></li>
+          <li class="claim-test"><strong>算法</strong><span>回到原始论文确认复杂度模型与适用条件。</span></li>
+          <li class="claim-test"><strong>现状</strong><span>把实验指标、未覆盖步骤和后续更正一起阅读。</span></li>
+          <li class="claim-test"><strong>标准</strong><span>优先引用正式发布页，而非新闻转述或预测。</span></li>
+        </ul>
+      </aside>
+    </header>
+
+    <article class="prose-wide">
+      <ol class="source-list">
+        <li class="source-entry" id="s1">
+          <h2>1. IBM Quantum Learning：Bits, gates, and circuits</h2>
+          <p>系统介绍量子状态、H 门、叠加、标准测量和线路深度。正文用它核对 α|0⟩ + β|1⟩、概率由振幅绝对值平方给出，以及两次 H 操作怎样把相位关系转回基态。课程示例适合建立线路直觉，但它是教学材料，不是对当前硬件商业能力的证明。</p>
+          <a href="https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/bits-gates-and-circuits">阅读 IBM Quantum Learning 原文</a>
+        </li>
+        <li class="source-entry" id="s2">
+          <h2>2. IBM Quantum Learning：Running quantum circuits</h2>
+          <p>解释量子线路从抽象门到真实设备运行的基本过程，并说明线路深度与不能并行的门层数有关。正文据此强调，同一条纸面线路在不同连接结构和原生门集合上会产生不同的实际深度。页面中的软件版本和服务接口可能继续变化，稳定结论是深度、连接与噪声需要共同评估。</p>
+          <a href="https://quantum.cloud.ibm.com/learning/en/courses/quantum-computing-in-practice/running-quantum-circuits">阅读运行线路课程</a>
+        </li>
+        <li class="source-entry" id="s3">
+          <h2>3. IBM Quantum Learning：Multiple systems / Quantum information</h2>
+          <p>给出多个量子系统的状态表示、部分测量和纠缠的正式框架。正文用 Bell 状态说明“局部结果随机、整体结果相关”，并据此划清纠缠与超光速通信之间的边界。该课程也提醒读者，复合系统可以整体描述，但单个子系统通常需要更一般的密度矩阵语言。</p>
+          <a href="https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information">阅读复合量子系统课程</a>
+        </li>
+        <li class="source-entry" id="s4">
+          <h2>4. Lov K. Grover：A fast quantum mechanical algorithm for database search</h2>
+          <p>1996年 STOC 原始论文提出无结构搜索的量子算法，并证明查询复杂度相对于经典逐项搜索可获得平方根改进。正文的四门实验是 N=4、单一目标的理想化演示。论文中的“数据库搜索”属于查询模型；现实数据库装载、预言机构造、纠错和墙上时间必须另行计算。</p>
+          <a href="https://doi.org/10.1145/237814.237866">通过 DOI 查看 Grover 原始论文</a>
+        </li>
+        <li class="source-entry" id="s5">
+          <h2>5. Peter W. Shor：Algorithms for quantum computation</h2>
+          <p>1994年 FOCS 原始论文给出量子计算上的整数分解与离散对数算法，奠定了量子计算对公钥密码影响的理论基础。它证明的是算法复杂度与结构，不代表今天已有足够规模和可靠性的机器可以攻击实际部署。评估现实威胁还需加入逻辑比特、门数、错误率和系统运行时间。</p>
+          <a href="https://doi.org/10.1109/SFCS.1994.365700">通过 DOI 查看 Shor 原始论文</a>
+        </li>
+        <li class="source-entry" id="s6">
+          <h2>6. Google Quantum AI and Collaborators：Quantum error correction below the surface code threshold</h2>
+          <p>Nature 论文报告 Willow 处理器上的距离5与距离7表面码存储实验。距离7结果显示随编码距离增加，逻辑错误率下降，并实现超过最佳组成物理比特寿命的逻辑存储。论文同时写明，实用容错算法仍面临资源、相关错误、逻辑运算和系统扩展挑战。页面已包含2026年4月发布更正的提示，引用时以当前版本为准。</p>
+          <a href="https://www.nature.com/articles/s41586-024-08449-y">阅读 Nature 当前版本论文</a>
+        </li>
+        <li class="source-entry" id="s7">
+          <h2>7. NIST：首批后量子密码 FIPS 标准</h2>
+          <p>NIST 于2024年8月批准 FIPS 203、FIPS 204 与 FIPS 205，分别覆盖模块格密钥封装、模块格数字签名和无状态哈希签名。正文据此说明后量子密码是运行在经典计算机上的抗量子攻击方案。标准发布并不证明密码迁移已经完成，也不为每一种具体实现提供自动安全保证。</p>
+          <a href="https://www.nist.gov/news-events/news/2024/08/announcing-approval-three-federal-information-processing-standards-fips">查看 NIST 正式公告与标准入口</a>
+        </li>
+        <li class="source-entry" id="s8">
+          <h2>8. NIST FIPS 203 / 204 / 205 正式文本</h2>
+          <p>需要实施细节时，应回到正式标准而不是依赖算法旧名或二手摘要。FIPS 203 的标准名为 ML-KEM，FIPS 204 为 ML-DSA，FIPS 205 为 SLH-DSA。FIPS 203 与 204 的发布页分别列有2025年和2026年的潜在更新说明；实施者应连同勘误、协议、密钥管理和合规要求一起检查。</p>
+          <a href="https://csrc.nist.gov/pubs/fips/203/final">FIPS 203</a> · <a href="https://csrc.nist.gov/pubs/fips/204/final">FIPS 204</a> · <a href="https://csrc.nist.gov/pubs/fips/205/final">FIPS 205</a>
+        </li>
+        <li class="source-entry" id="s9">
+          <h2>9. IBM Quantum Learning：Error suppression</h2>
+          <p>该课程说明退相干、相位误差与环境耦合怎样使量子信息退化，并区分实验中的理想状态与噪声状态。它适合继续学习误差抑制和误差缓解，但两者不能替代可扩展的量子纠错。正文据此避免把短线路上的统计校正误写成已经实现容错计算。</p>
+          <a href="https://quantum.cloud.ibm.com/learning/en/courses/tools-for-quantum-advantage/error-suppression">阅读误差抑制课程</a>
+        </li>
+      </ol>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="limits-and-usefulness.html"><small>回到判断</small>← 从可能加速到真正有用</a>
+      <a href="main.html"><small>重新开始</small>从一次测量开始 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="wordmark">量子计算入门</p><p>来源能支撑哪一步，结论就停在哪一步。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">本页顶部</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "量子计算入门",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-01",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "从一次测量开始",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者听过量子叠加、纠缠和指数加速，却容易把量子计算理解为同时尝试并直接读出全部答案的更快计算机。",
+      "readerStateAfter": "读者能够把量子比特理解为带有振幅与相位的可控状态，知道测量只给出经典结果，并开始追问算法如何让有用结果更容易出现。",
+      "readerQuestion": "如果测量最终只能得到0或1，量子计算机凭什么不同于更快的普通计算机？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "用一个四门搜索实验贯穿全站：四扇外观相同的门中只有一扇亮灯，计算过程必须让目标门在最终测量中更容易被选中。",
+      "newTerms": [
+        {
+          "term": "量子比特",
+          "definition": "能够以复数振幅描述0与1两种基态组合，并可被量子操作控制的最小信息单位。"
+        },
+        {
+          "term": "叠加",
+          "definition": "量子状态由多个基态按振幅组合而成，而不是在测量前已经偷偷选定一个经典结果。"
+        },
+        {
+          "term": "振幅",
+          "definition": "带有大小和相位的复数系数，其绝对值平方决定相应测量结果的概率。"
+        },
+        {
+          "term": "相位",
+          "definition": "振幅之间可相加或相消的相对关系，本身不能由一次标准测量直接读出。"
+        },
+        {
+          "term": "干涉",
+          "definition": "振幅因相位关系发生增强或抵消，从而改变不同结果被测得的概率。"
+        }
+      ],
+      "conclusion": "量子计算的差异不在于把0和1同时当作可读答案，而在于可控地改变振幅与相位，让干涉重塑最终测量结果的概率分布。",
+      "nextQuestion": "算法怎样用量子门、干涉和纠缠把目标答案的概率推高，同时把其他答案压低？",
+      "nextPage": "circuits-and-interference.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48
+    },
+    {
+      "file": "circuits-and-interference.html",
+      "title": "让答案彼此干涉",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把量子比特理解为带有振幅与相位的可控状态，知道测量只给出经典结果，并开始追问算法如何让有用结果更容易出现。",
+      "readerStateAfter": "读者能够沿量子线路解释初始化、量子门、目标标记、干涉、纠缠与重复测量如何协同，并识别算法并非免费读取全部分支。",
+      "readerQuestion": "算法怎样用量子门、干涉和纠缠把目标答案的概率推高，同时把其他答案压低？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "量子计算的差异不在于把0和1同时当作可读答案，而在于可控地改变振幅与相位，让干涉重塑最终测量结果的概率分布。",
+      "coreExample": "把四扇门编码为两个量子比特，先平均分配振幅，再给亮灯门加上相位标记，最后通过振幅放大提高目标门被测得的概率。",
+      "newTerms": [
+        {
+          "term": "量子门",
+          "definition": "在测量之前对量子状态实施的可逆变换，是量子线路中的基本操作。"
+        },
+        {
+          "term": "量子线路",
+          "definition": "把初始化、量子门和测量按时间顺序画成线路的计算模型。"
+        },
+        {
+          "term": "纠缠",
+          "definition": "复合系统只能用整体状态完整描述，不能拆成各量子比特彼此独立的状态。"
+        },
+        {
+          "term": "预言机",
+          "definition": "算法中负责识别目标输入并留下可利用标记的黑箱式可逆子程序。"
+        }
+      ],
+      "conclusion": "量子加速来自把问题结构编译成可逆线路，再用相位标记和干涉集中有用振幅；纠缠扩展了可操纵的整体状态，但测量仍需重复抽样验证。",
+      "nextQuestion": "既然机制成立，哪些问题真正适合量子计算，而噪声、纠错和资源成本又把今天的能力限制在哪里？",
+      "nextPage": "limits-and-usefulness.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48
+    },
+    {
+      "file": "limits-and-usefulness.html",
+      "title": "从可能加速到真正有用",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿量子线路解释初始化、量子门、目标标记、干涉、纠缠与重复测量如何协同，并识别算法并非免费读取全部分支。",
+      "readerStateAfter": "读者能够根据问题结构、端到端资源、误差纠正和经典基线判断量子计算主张，并区分实验里程碑、密码迁移与可用应用。",
+      "readerQuestion": "既然机制成立，哪些问题真正适合量子计算，而噪声、纠错和资源成本又把今天的能力限制在哪里？",
+      "dependsOn": [
+        "circuits-and-interference.html"
+      ],
+      "priorConclusion": "量子加速来自把问题结构编译成可逆线路，再用相位标记和干涉集中有用振幅；纠缠扩展了可操纵的整体状态，但测量仍需重复抽样验证。",
+      "coreExample": "重新审视四门搜索实验，把理想查询次数、建造预言机、线路深度、噪声、重复采样和经典替代方案全部计入成本。",
+      "newTerms": [
+        {
+          "term": "物理量子比特",
+          "definition": "由真实器件承载、会受噪声和控制误差影响的单个量子硬件单元。"
+        },
+        {
+          "term": "逻辑量子比特",
+          "definition": "由许多物理量子比特共同编码并通过纠错保护的更可靠信息单位。"
+        },
+        {
+          "term": "量子纠错",
+          "definition": "在不直接读出受保护量子信息的前提下，检测并抑制错误的一组编码与测量方法。"
+        },
+        {
+          "term": "容错量子计算",
+          "definition": "把门操作、测量和纠错组织到足够低的逻辑错误率，使长算法能够可靠运行的计算方式。"
+        }
+      ],
+      "conclusion": "量子计算更像面向少数结构化任务的协处理器；判断现实价值必须同时查看逻辑资源、端到端误差、经典最佳基线和可验证输出，而不能只看物理量子比特数或单项基准。",
+      "nextQuestion": "当更大规模的逻辑量子机出现时，我们会用什么公开基准证明它在真实任务上既更快又更有用？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.48
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
