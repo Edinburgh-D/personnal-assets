@@ -83,11 +83,11 @@ try {
         if (-not (Get-Command $command -ErrorAction SilentlyContinue)) { throw "Required command missing: $command" }
     }
 
-    $selectionLines = & node $poolTool select --pool (Join-Path $automationRoot 'topic-pool.json')
+    $selectionPath = Join-Path $runRoot 'selected-topic.json'
+    & node $poolTool select --pool (Join-Path $automationRoot 'topic-pool.json') --output $selectionPath
     if ($LASTEXITCODE -ne 0) { throw 'Topic selection failed.' }
-    $selectionJson = $selectionLines -join "`n"
+    $selectionJson = Get-Content -LiteralPath $selectionPath -Raw -Encoding UTF8
     $topic = $selectionJson | ConvertFrom-Json
-    $selectionJson | Set-Content -LiteralPath (Join-Path $runRoot 'selected-topic.json') -Encoding UTF8
     Write-Step "Selected topic: $($topic.name) [$($topic.domain), $($topic.selectionMode)]"
 
     if ($Preflight) {

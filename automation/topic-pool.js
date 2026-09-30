@@ -104,7 +104,12 @@ if (!options.pool) fail('Missing --pool');
 const { resolved, data } = readPool(options.pool);
 
 if (command === 'select') {
-  process.stdout.write(`${JSON.stringify(selectTopic(data), null, 2)}\n`);
+  const output = `${JSON.stringify(selectTopic(data), null, 2)}\n`;
+  if (options.output) {
+    fs.writeFileSync(path.resolve(options.output), output, 'utf8');
+  } else {
+    process.stdout.write(output);
+  }
 } else if (command === 'complete') {
   completeTopic(resolved, data, options);
 } else {
