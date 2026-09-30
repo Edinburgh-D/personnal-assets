@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-01T07:17:27+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "GPU、TPU和NPU究竟在比较什么，为什么不能只按名称或峰值算力排出统一名次？",
+      "readerStateChange": "读前把三类芯片当成速度档位；读后能用可编程性、矩阵密度、数据移动、部署位置和功耗解释它们为何形成不同候选。",
+      "twoSentenceSummary": "正文先把GPU、TPU与NPU从产品标签还原为设计重心，再区分吞吐与延迟两种速度。图像模型在训练、在线服务与手机端的三次搬家说明，批量、内存、隐私和软件栈会移动最佳答案。",
+      "continuityEvidence": "结尾把共同挑战收束为让数据在正确时间靠近计算单元，并明确引出线程调度、矩阵阵列、编译融合与回退机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "dataflow.html",
+      "centralQuestion": "这些取舍怎样落实到执行单元、存储层级、编译器和芯片间连接上，并影响同一个模型的真实运行？",
+      "readerStateChange": "读前只知道三类芯片重心不同；读后能沿取数、复用、写回和通信路径解释线程组、脉动阵列、端侧异构执行与编译器的作用。",
+      "twoSentenceSummary": "正文把一层图像模型拆成矩阵乘法、归一化、激活与写回，再分别追踪GPU、TPU和NPU的数据路线。最后说明算子融合、内存安排与互连如何共同决定峰值算力能否被利用。",
+      "continuityEvidence": "开头直接展开前页的数据流取舍，结尾列出阵列填充、带宽、融合、互连与算子回退五类闲置原因，自然推进到端到端指标判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "decision.html",
+      "centralQuestion": "面对训练、云端服务和端侧应用，应该用哪些可验证指标判断架构是否合适，而不是被TOPS或厂商名称带着走？",
+      "readerStateChange": "读前能够解释硬件机制；读后能固定模型、质量与场景，再用延迟、吞吐、能耗、内存、算子覆盖和维护成本审查具体主张。",
+      "twoSentenceSummary": "正文先拆解精度、量化、带宽与TOPS的条件，再说明离线、在线与端侧基准为何必须分开。三份部署简报和证据链把架构知识转化为可重复、可更新的实测方法。",
+      "continuityEvidence": "本章把上一页的每类闲置原因映射到可观察指标，最终形成可迁移判断，并留下如何长期维护可重复基准的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分厂商架构说明、编译器文档、历史原始论文和公开基准规则，并根据证据边界回查正文主张。",
+      "twoSentenceSummary": "参考页汇集NVIDIA、Google、OpenXLA、Apple、Microsoft与MLCommons的一手材料。每项说明同时交代可支持的架构或测量结论，以及不能跨代际、跨厂商或跨场景外推的边界。",
+      "continuityEvidence": "九项来源分别对应GPU执行与内存限制、TPU阵列与系统、编译融合、端侧异构调度和推理基准场景，正文脚注可直接到达。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -3676,6 +3676,13 @@
       "generatedAt": "2026-10-01",
       "slug": "quantum-computing-primer",
       "entry": "knowledge-bases/quantum-computing-primer/main.html"
+    },
+    {
+      "name": "AI芯片架构对比(GPU/TPU/NPU)",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-01",
+      "slug": "ai-chip-architecture-guide",
+      "entry": "knowledge-bases/ai-chip-architecture-guide/main.html"
     }
   ],
   "skipped": []

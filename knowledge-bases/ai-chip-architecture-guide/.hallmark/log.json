@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-10-01",
+    "artifact": "AI 芯片架构对比：GPU、TPU 与 NPU",
+    "genre": "editorial",
+    "macrostructure": "Map / Diagram",
+    "theme": "Studio",
+    "navigation": "N6",
+    "footer": "Ft1",
+    "enrichment": "E5 tier-B hand-built SVG",
+    "variation": "semiconductor floorplan, workload routing, data-flow strips"
+  }
+]

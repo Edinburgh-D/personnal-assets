@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="用模型兼容性、延迟、吞吐、能耗、内存与端到端基准，判断GPU、TPU和NPU是否适合具体场景。">
+  <title>把宣传数字还原为场景｜AI芯片架构对比</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="nav-mast">
+    <p class="mast-line">TECHNOLOGY FIELD NOTES · 2026</p>
+    <p class="mast-name">AI芯片架构对比</p>
+    <div class="mast-actions">
+      <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>目录</button>
+      <button class="control" type="button" aria-pressed="false" data-theme-storage="kb_darkMode" data-theme-toggle><span data-theme-label>深色</span></button>
+    </div>
+    <nav class="mast-nav" id="site-nav" aria-label="知识库章节" data-nav hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>知识库总览</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>名字不是规格</span><small>直觉</small></a></li>
+        <li><a href="dataflow.html"><span>数据怎么走</span><small>机制</small></a></li>
+        <li><a href="decision.html" aria-current="page"><span>还原真实场景</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">AI芯片架构对比</a><span aria-hidden="true">/</span><span>还原真实场景</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">真实速度来自计算阵列、存储层级、编译器调度和互连共同维持高利用率；任何一环不能匹配模型形状，峰值算力都会闲置。</template>
+    <template data-narrative="question">面对训练、云端服务和端侧应用，应该用哪些可验证指标判断架构是否合适，而不是被TOPS或厂商名称带着走？</template>
+    <template data-narrative="example">把同一图像模型放进三份采购与部署简报：数据中心训练、在线推理和手机离线分类，逐项核对精度、批量、尾延迟、能耗、内存占用与算子回退。</template>
+    <template data-narrative="conclusion">芯片选择应从可运行的模型与目标场景出发，用端到端延迟、吞吐、能耗、内存和软件维护成本验证；类别名称只能缩小候选范围，不能替代实测。</template>
+    <template data-narrative="next-question">当模型结构、编译器和芯片代际继续变化时，怎样维护一套可重复的基准，让今天的选择仍能被明天重新验证？</template>
+
+    <header class="chapter-head">
+      <div class="chapter-copy">
+        <p class="orientation-line">先固定问题，再读取数字</p>
+        <h1>把宣传数字还原为场景</h1>
+        <p class="lede">峰值算力像发动机红线：它说明机器的一个上限，却没有告诉你道路、载重、油耗和抵达时间。</p>
+      </div>
+      <ul class="signal-list" aria-label="判断维度">
+        <li><strong>能否运行</strong><span>模型算子、形状与数据格式是否受支持</span></li>
+        <li><strong>多久完成</strong><span>单次、尾部与批量性能是否达标</span></li>
+        <li><strong>付出什么</strong><span>能耗、内存、费用与工程维护成本</span></li>
+        <li><strong>是否可比</strong><span>测试条件、软件版本与准确率是否一致</span></li>
+      </ul>
+    </header>
+
+    <article class="article-flow">
+      <section class="prose-section" aria-labelledby="numbers-title">
+        <header class="prose-section__head">
+          <h2 id="numbers-title">同一个算力数字，可能在数不同的东西</h2>
+          <p>比较之前，先把数值格式、稀疏条件和准确率写在单位旁边。</p>
+        </header>
+        <div class="prose">
+          <p>AI计算可以使用多种<dfn data-term="精度">精度</dfn>。这里的精度首先指数字格式，例如32位浮点、16位浮点、8位整数或更窄格式；它与“分类准确率”是两个不同概念。较窄格式占用更少存储，也能减少搬运，在专用单元上常得到更高峰值，但能表达的数值范围与细节也会变化。</p>
+          <p><dfn data-term="量化">量化</dfn>把模型权重或激活转换到较低位宽。一个图像模型可能在8位整数上保持可接受的分类质量，另一个生成模型却可能在某些层明显失真。量化方案还可能保留少数敏感层的高精度，因此“INT8模型”未必代表所有操作都使用相同格式。</p>
+          <p><dfn data-term="内存带宽">内存带宽</dfn>说明单位时间能搬运多少数据。一次矩阵乘法若能反复使用已经读入的数据，计算单元更可能成为瓶颈；单样本向量乘法若每次都要读取大量权重，带宽更容易成为瓶颈。NVIDIA 的矩阵性能说明直接用运算次数与访问字节之比判断工作更偏向计算限制还是内存限制。<a class="source-ref" href="sources.html#s2" aria-label="来源2">[2]</a></p>
+          <p><dfn data-term="TOPS">TOPS</dfn>是每秒万亿次运算。这个单位没有自动规定一次“运算”是什么，也没有说明使用哪种格式、是否利用结构化稀疏、是否包含累加，更没有保证软件能持续填满所有单元。两张宣传页都写四十TOPS，底层条件可能完全不同。</p>
+          <p>峰值还常按理想时钟与全单元并行计算。真实模型包含大小不同的矩阵、逐元素操作、归约、索引和数据布局转换。只要其中一段不适合专用单元，整体速度就会被较慢路径拉住。Amdahl 定律背后的直觉在这里很直接：把占总时间一小部分的步骤加速很多，不能让整个程序等比例变快。</p>
+          <p>因此，数字要与数字并排。至少需要写明模型版本、输入尺寸、批量、格式、是否稀疏、软件版本、设备功耗状态和准确率门槛。若供应商只给出理论峰值，可以把它用于判断设备上限与数量级，但不能用它预测用户等待时间。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="benchmark-title">
+        <header class="prose-section__head">
+          <h2 id="benchmark-title">基准必须保留真实约束</h2>
+          <p>批量离线处理与实时服务可以使用同一模型，但它们应该接受不同的测试方法。</p>
+        </header>
+        <div class="prose">
+          <p><dfn data-term="端到端基准">端到端基准</dfn>从真实输入进入系统开始，直到应用可以使用结果为止。它包含解码、预处理、张量复制、设备执行、回退、后处理与排队。若只计设备内核时间，测试仍有诊断价值，却不能回答用户实际等待多久。</p>
+          <p>离线批处理假定所有输入已经就绪，调度器可以用大批量追求最高吞吐。在线服务则面对随机到达的请求，并受到延迟上限约束。MLPerf Inference 把数据中心测试区分为 Offline、Server 等场景，把边缘测试区分为 SingleStream、MultiStream 与 Offline。分类本身就在强调：没有脱离场景的单一推理分数。<a class="source-ref" href="sources.html#s7" aria-label="来源7">[7]</a></p>
+          <p>比较训练系统时，要固定达到的模型质量。只报告每秒样本数，可能通过更激进的低精度设置换得速度，却让最终结果变差。公平测试需要说明收敛标准、训练步数、数据处理和数值格式。若比较的是大模型，还要记录序列长度、并行策略、检查点保存和故障恢复，因为它们会改变集群有效产出。</p>
+          <p>比较在线生成时，平均每秒令牌也不够。首个令牌时间影响用户感知，持续输出速度影响阅读节奏，高并发时的尾部延迟影响服务可靠性。模型上下文越长，键值缓存占用越大；批量和并发还会争夺设备内存。一个数无法同时概括这些阶段。</p>
+          <p>端侧测试要加入电量与热状态。刚启动的手机可能在短测试里保持高频率，持续运行后却因温度下降频率。后台应用、屏幕亮度和相机管线也会争夺功耗预算。真实测试应在目标设备、目标系统版本和代表性持续时间上重复，并报告温度或功耗条件。</p>
+          <p>准确率同样属于性能边界。若量化后的模型速度更快，却使关键类别明显退化，产品可能无法接受。对于生成模型，质量评估比分类准确率更复杂，更需要固定提示集、采样参数和评价协议。只有在质量门槛相同时，速度与能耗才有可比意义。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="three-briefs-title">
+        <header class="prose-section__head">
+          <h2 id="three-briefs-title">三份简报，三种证据顺序</h2>
+          <p>同一图像模型再次出现，这次不看类别偏好，而看每份部署简报必须证明什么。</p>
+        </header>
+        <div class="prose">
+          <p>数据中心训练简报首先证明模型与分布式策略能稳定运行。团队要确认设备内存能容纳参数、激活与优化器状态，互连能处理梯度与参数通信，混合精度不会破坏收敛。接着才比较达到同一质量所需的墙上时间、总能量与使用成本。</p>
+          <p>在这份简报里，GPU常因框架、库、调试器与自定义操作生态成为低风险起点。Cloud TPU 则可能在适配的 JAX、PyTorch 或 TensorFlow 工作流和大规模切片上提供有竞争力的系统路线。Google 当前文档说明不同TPU版本与切片拓扑存在差异，也提醒更换核心数量可能需要显著调优。<a class="source-ref" href="sources.html#s3" aria-label="来源3">[3]</a></p>
+          <p>在线推理简报先写服务等级目标，例如在目标并发下的高百分位延迟，再写吞吐与成本。模型若频繁更新，编译时间和部署回滚也要进入评估。服务是否能动态合批、多个模型是否共享设备、缓存是否命中，都会改变单张芯片的经济性。</p>
+          <p>这里没有固定赢家。GPU可以通过成熟推理库覆盖多种模型；专用云端加速器可以在规则负载上利用编译与互连；其他推理ASIC也可能提供合适的成本。选择要在真实请求轨迹上验证，尤其不能用离线大批量结果替代低延迟服务结果。</p>
+          <p>手机离线分类简报先验证模型能否完整映射到目标运行时。Xcode 的 Core ML 性能报告会显示每个操作可以使用哪些计算单元，以及实际被放到哪里。Apple 还明确指出，调度会考虑数据搬运和单元启动时间，而不是只比较原始计算速度。<a class="source-ref" href="sources.html#s6" aria-label="来源6">[6]</a></p>
+          <p>Windows 设备也采用执行提供程序把模型映射到CPU、GPU或NPU。当前 Windows ML 文档说明，系统可以根据硬件下载相应提供程序。这个抽象提升了可移植性，但应用仍应在具体机器上核对实际后端、算子支持与性能。<a class="source-ref" href="sources.html#s8" aria-label="来源8">[8]</a></p>
+          <p>端侧简报最后才比较速度，还要并列电量、温升、峰值内存、安装包与隐私路径。若少数不支持操作导致频繁回退，团队可以改写模型、选择不同量化方案，或者接受在GPU上完成那一段。异构执行不是失败，未经测量的异构切换才是风险。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="claims-title">
+        <header class="prose-section__head">
+          <h2 id="claims-title">把一句宣传主张拆成证据链</h2>
+          <p>“更快”“更省电”“更适合AI”都可以被还原成可重复的观察。</p>
+        </header>
+        <div>
+          <div class="table-wrap">
+            <table class="compare-sheet">
+              <caption>从主张到可验证证据的转换。</caption>
+              <thead><tr><th>宣传主张</th><th>先固定</th><th>再测量</th><th>常见遗漏</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">训练更快</th><td data-label="先固定">模型、数据、目标质量、并行策略</td><td data-label="再测量">达标时间、失败重试、总能量</td><td data-label="常见遗漏">只报峰值或单步时间</td></tr>
+                <tr><th scope="row">推理更快</th><td data-label="先固定">批量、并发、输入长度、质量</td><td data-label="再测量">首结果、尾延迟、持续吞吐</td><td data-label="常见遗漏">用离线吞吐代替在线延迟</td></tr>
+                <tr><th scope="row">更省电</th><td data-label="先固定">设备状态、持续时间、完整管线</td><td data-label="再测量">每次任务能量、温升、降频</td><td data-label="常见遗漏">只报芯片功率，不报任务时长</td></tr>
+                <tr><th scope="row">更易部署</th><td data-label="先固定">框架、算子、系统与更新节奏</td><td data-label="再测量">转换工作、回退比例、维护工时</td><td data-label="常见遗漏">只证明样例模型可以启动</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="prose">
+            <p>证据链的第一步不是选设备，而是冻结问题。团队若在测试期间改变模型、输入、质量门槛或软件版本，结果就失去可比性。第二步是记录环境，包括驱动、编译器、库、系统功耗模式和设备数量。第三步才是重复测量，并保留分布而不只给平均值。</p>
+            <p>结果还要能解释。若某设备较慢，应查看是算子回退、内存不足、矩阵形状不合适、编译失败，还是主机输入跟不上。可解释的失败能指导模型或部署改进；一个孤立总分只能推动再次购买或再次猜测。</p>
+            <p>软件更新会改变结论。新的编译器可能支持更多融合，新的运行时可能把操作重新放置，模型结构也会变化。基准因此不是一次采购仪式，而是一套可以在版本变化后重新运行的实验。保存配置、输入样本和测量脚本，往往比保存一张排行榜更有长期价值。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="answer-title">
+        <header class="prose-section__head">
+          <h2 id="answer-title">类别帮助缩小范围，实测负责作答</h2>
+          <p>GPU、TPU与NPU仍然有用，但它们应该出现在调查的开头，而不是结论的位置。</p>
+        </header>
+        <div class="prose">
+          <p>面对快速变化的研究训练，先调查可编程范围、库生态、调试与分布式能力，GPU通常是自然候选。面对能够被编译器充分掌握的大规模矩阵负载，可以把TPU系统纳入比较，并评估云环境、切片拓扑和框架适配。面对持续的端侧推理，NPU值得优先验证，但要把算子覆盖、量化质量和异构回退一起测量。</p>
+          <p>这些都是有条件的起点，不是品牌忠诚。一个团队已有的软件与经验会显著改变迁移成本；一个模型的形状和自定义操作会改变硬件利用率；一个产品的隐私、网络和电量要求会改变部署位置。架构选择从来不是只在晶体管层完成的。</p>
+          <p>普通读者看到新品发布时，也可以用同样框架阅读。先问数字对应哪种精度与稀疏条件，再问模型和场景，接着找端到端结果与准确率，最后检查软件版本和功耗。若发布材料没有给出这些条件，就把峰值当作上限线索，而不是购买结论。</p>
+          <p>到这里，三类芯片可以被放回同一张地图：它们都在组织计算与数据移动，只是把面积、功耗和软件复杂度放在不同位置。峰值数字描述某条理想路径的宽度；真实应用还要经过入口、转弯、收费站和出口。只有整条路被测量，速度才属于产品，而不只属于芯片。</p>
+          <p>最终可迁移的判断是：先证明模型能以目标质量运行，再用真实流量测量延迟与吞吐，同时记录能耗、内存与维护成本。类别名称可以帮助列出候选，不能替代这些证据。当下一代硬件和编译器出现时，保留同一套问题与实验，答案才能被更新，而不是被广告重写。</p>
+        </div>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="dataflow.html"><small>回到机制</small>← 算力之外，数据怎么走</a>
+      <a href="sources.html"><small>继续查证</small>来源与延伸阅读 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="foot-wordmark">AI芯片架构对比</p><p>任何没有场景的“更快”，都还没有完成一句话。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

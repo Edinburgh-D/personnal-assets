@@ -1,0 +1,24 @@
+{
+  "version": "58-gate",
+  "date": "2026-10-01",
+  "preEmitCritique": {
+    "philosophy": 5,
+    "hierarchy": 4,
+    "execution": 4,
+    "specificity": 5,
+    "restraint": 5,
+    "variety": 5
+  },
+  "result": "pass",
+  "failedGates": [],
+  "checks": {
+    "contrast": "pass; minimum audited key-pair ratio 6.29:1 in light mode and 7.97:1 in dark mode",
+    "responsive": "pass; responsive rules audited for 320, 375, 414, and 768 CSS-pixel widths",
+    "horizontalOverflow": "pass; html and body both use overflow-x: clip",
+    "focusAndStates": "pass",
+    "tokens": "pass; colors and font families are tokenized",
+    "honestCopy": "pass; quantitative and changing claims are source-bounded",
+    "structuralFingerprint": "pass; semiconductor map and data-flow editorial layout",
+    "accessibility": "pass; labelled SVG, focus-visible states, reduced-motion fallback, semantic navigation"
+  }
+}

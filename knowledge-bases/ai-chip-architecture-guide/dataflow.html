@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="沿着取数、计算、写回与通信，解释GPU、TPU和NPU的执行机制与软件协同。">
+  <title>算力之外，数据怎么走｜AI芯片架构对比</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="nav-mast">
+    <p class="mast-line">TECHNOLOGY FIELD NOTES · 2026</p>
+    <p class="mast-name">AI芯片架构对比</p>
+    <div class="mast-actions">
+      <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>目录</button>
+      <button class="control" type="button" aria-pressed="false" data-theme-storage="kb_darkMode" data-theme-toggle><span data-theme-label>深色</span></button>
+    </div>
+    <nav class="mast-nav" id="site-nav" aria-label="知识库章节" data-nav hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>知识库总览</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>名字不是规格</span><small>直觉</small></a></li>
+        <li><a href="dataflow.html" aria-current="page"><span>数据怎么走</span><small>机制</small></a></li>
+        <li><a href="decision.html"><span>还原真实场景</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">AI芯片架构对比</a><span aria-hidden="true">/</span><span>数据怎么走</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">GPU、TPU和NPU不是线性高低档，而是对可编程性、矩阵密度、数据移动、能耗与部署位置作出的不同系统取舍。</template>
+    <template data-narrative="question">这些取舍怎样落实到执行单元、存储层级、编译器和芯片间连接上，并影响同一个模型的真实运行？</template>
+    <template data-narrative="example">把图像模型的一层矩阵乘法、归一化、激活与结果写回拆成一条数据路径，分别观察GPU线程组、TPU矩阵阵列和端侧NPU算子图如何处理。</template>
+    <template data-narrative="conclusion">真实速度来自计算阵列、存储层级、编译器调度和互连共同维持高利用率；任何一环不能匹配模型形状，峰值算力都会闲置。</template>
+    <template data-narrative="next-question">面对训练、云端服务和端侧应用，应该用哪些可验证指标判断架构是否合适，而不是被TOPS或厂商名称带着走？</template>
+
+    <header class="chapter-head">
+      <div class="chapter-copy">
+        <p class="orientation-line">执行单元只是路径中的一站</p>
+        <h1>算力之外，数据怎么走</h1>
+        <p class="lede">一层神经网络并不是“拿数字去乘”这么简单。权重要抵达，输入要分块，中间结果要保存，下一层还要接着读取。</p>
+      </div>
+      <ul class="signal-list" aria-label="阅读线索">
+        <li><strong>取数</strong><span>数据从哪一级存储来到计算单元</span></li>
+        <li><strong>复用</strong><span>同一份权重或激活被使用多少次</span></li>
+        <li><strong>写回</strong><span>中间结果是否必须落到外部内存</span></li>
+        <li><strong>通信</strong><span>多块芯片如何交换参数与结果</span></li>
+      </ul>
+    </header>
+
+    <article class="article-flow">
+      <section class="prose-section" aria-labelledby="work-title">
+        <header class="prose-section__head">
+          <h2 id="work-title">先把一层模型拆成工序</h2>
+          <p>矩阵乘法最显眼，但它前后的小操作与搬运，常常决定整段程序能否跑满。</p>
+        </header>
+        <div class="prose">
+          <p>设想图像模型收到一批已经缩放好的照片。某一层先把输入整理成矩阵，与权重相乘，再加偏置。随后可能进行归一化与激活，最后把输出交给下一层。若只数乘法和加法，矩阵乘法占比很大；若观察时间，还要加入读取权重、读取输入、保存中间结果和启动设备程序的成本。</p>
+          <p>较大的矩阵能让许多计算单元同时工作，也能让读入的一块数据重复参与多次乘加。较小的矩阵或单样本请求则可能快速耗尽可并行的工作。设备拥有再多执行单元，也不能计算尚未到达的数据。于是性能分析必须同时问两个问题：每秒能做多少运算，以及每秒能把多少字节送到正确位置。</p>
+          <p>模型图中还存在许多不同形状的操作。矩阵乘法通常计算密集，激活函数接近逐元素处理，归一化要做归约，索引与稀疏访问又可能很不规则。NVIDIA 的性能文档说明，相同设备上的大矩阵乘法可能受计算限制，单向量或逐元素操作却更容易受内存限制。<a class="source-ref" href="sources.html#s2" aria-label="来源2">[2]</a></p>
+          <p>因此，芯片不能只靠一种执行单元。高性能系统常把密集矩阵、向量处理、标量控制和数据搬运分给不同路径。软件要识别每个操作的形状，决定在哪里运行，还要尽量减少路径之间的往返。所谓架构优势，往往就是某种常见工序在硬件里拥有更短、更规则的路线。</p>
+          <p>下面分别看三类路线。为了避免把产品代际混成一种固定结构，这里只讲稳定的设计重心。具体核心数量、支持精度和互连拓扑会随版本变化，采购与部署时仍需查当前型号文档。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="gpu-title">
+        <header class="prose-section__head">
+          <h2 id="gpu-title">GPU：用大量线程隐藏等待</h2>
+          <p>当一组线程在等数据，调度器切到另一组可运行线程，让执行单元尽量别停。</p>
+        </header>
+        <div class="prose">
+          <p>GPU 的通用并行路径通常采用<dfn data-term="SIMT">SIMT</dfn>执行模型，也就是单指令多线程。一组线程从同一条指令开始推进，各自保留寄存器状态，并可在条件分支处走不同路径。硬件以线程组为调度单位，把大量线程分配到多个流式多处理器。这个组织适合把图像像素、矩阵分块和大量独立样本铺开。<a class="source-ref" href="sources.html#s1" aria-label="来源1">[1]</a></p>
+          <p>同组线程若执行相同路径，指令发射最整齐。若一半线程进入一个分支、另一半进入另一个分支，两条路径往往需要分时执行。分支并非不能运行，只是会降低同一时刻的有效并行度。这解释了GPU为什么既灵活又偏爱规则工作：它能接受复杂程序，但规则程序更容易让宽机器保持整齐。</p>
+          <p>现代产品又加入<dfn data-term="张量核心">张量核心</dfn>，专门执行矩阵乘加等密集操作。通用线程准备数据、处理边界和执行其他操作，矩阵单元则在合适的数据格式下提供更高密度。两类执行资源并存，使GPU既能覆盖研究中不断变化的模型，也能对主流深度学习计算进行专门加速。</p>
+          <p>线程并不是越多越好。每个线程需要寄存器，线程组可能需要共享内存，矩阵分块还要适合缓存和设备内存布局。若一个内核占用过多寄存器，可同时驻留的线程组会减少；若访问地址零散，内存系统要完成更多事务。程序员通常通过成熟库、编译器和性能分析器处理这些细节，而不是手工安排每一条指令。</p>
+          <p>图像模型的矩阵层可以被切成许多输出小块，每个线程块负责一块结果，并反复载入权重与输入片段。归一化和激活则可能交给不同内核。如果每个内核都把中间张量写到高带宽内存，再由下一个内核读回，运算单元会等待搬运。后面的操作合并正是为缩短这条往返路线。</p>
+          <p>多块设备训练还需要同步梯度或分片参数。单芯片再快，若芯片间连接和集合通信跟不上，扩展到更多设备的收益就会递减。GPU 系统因此不仅比较核心与显存，还比较互连、拓扑、通信库和训练框架是否能把计算与通信重叠。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="tpu-title">
+        <header class="prose-section__head">
+          <h2 id="tpu-title">TPU：让矩阵沿阵列流动</h2>
+          <p>把乘加单元直接排成物理矩阵，数据在相邻单元之间传递，减少每一步都回到大内存。</p>
+        </header>
+        <div class="prose">
+          <p>TPU 的代表性结构是<dfn data-term="脉动阵列">脉动阵列</dfn>。权重与激活从阵列边缘进入，在相邻乘加单元间按节拍移动，部分和也随计算向前传递。数据被读入之后，可以在阵列内部参与许多次运算，而不必为每一次乘法重新访问外部内存。Google 的当前架构说明把矩阵单元称为 MXU，并明确列出配套的向量单元和标量单元。<a class="source-ref" href="sources.html#s3" aria-label="来源3">[3]</a></p>
+          <p>这种布局把大量硅面积集中在机器学习常见的矩阵乘加上。若矩阵维度能被编译器切成合适的块，阵列可以持续接收数据并输出结果。若形状很小、边长不规则，阵列边缘可能出现空位，实际利用率就低于峰值。专用密度带来效率，也把“形状是否合适”变成重要条件。</p>
+          <p>矩阵层之外，激活、归一化、地址生成和控制仍然存在。向量单元负责许多通用计算，标量单元处理控制与维护任务。Google 文档还描述了主机、设备高带宽内存和输入输出队列的协作，说明专用矩阵阵列并没有消除系统其余部分。它只是让最重的那段工序走得更直接。</p>
+          <p>早期 TPU 以推理为主要目标，后续家族扩展到训练与大规模系统。不同代际的矩阵尺寸、设备内存、稀疏单元和互连拓扑并不相同。把2017年第一代论文里的结论直接套到今天，会忽略软硬件的巨大变化。稳定不变的观察是：专用矩阵数据流、编译器和系统互连共同构成产品，而不是一块孤立阵列。</p>
+          <p>TPU 集群用专用芯片间连接组织切片与 Pod。大模型可能把数据、参数或张量维度分到不同设备，通信模式会影响拓扑选择。系统可以在大量芯片上扩展，但扩展不是免费复制。跨设备传输占用带宽，分片不均也会让部分芯片等待。</p>
+          <p>于是，TPU 的效率来自规则性被软硬件共同利用。框架把模型图交给编译器，编译器根据目标设备做分块、内存安排和操作合并，再生成适合矩阵单元与互连的程序。若模型落在支持范围内，专用路径可以非常高效；若频繁出现不规则操作或动态形状，编译和执行都可能需要更多折中。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="npu-title">
+        <header class="prose-section__head">
+          <h2 id="npu-title">NPU：把持续推理留在功耗预算内</h2>
+          <p>端侧设计常把模型当成一张可预先编译的操作图，并优先让数据留在片上或共享内存附近。</p>
+        </header>
+        <div class="prose">
+          <p>端侧NPU通常面对相对稳定的推理模型，而不是任意程序。它可以减少通用控制开销，为卷积、矩阵乘法、激活、池化和数据布局转换提供专门路径，并偏爱较低位宽的权重与激活。这样能在有限面积和电量里维持持续运行，例如相机增强、语音唤醒和相册分类。</p>
+          <p>这里尤其看重<dfn data-term="数据局部性">数据局部性</dfn>。如果一块权重刚被读取，就能在片上缓冲区中服务多个输出；如果相邻操作可直接消费上一操作的结果，中间张量就不必写回较远的内存。减少搬运不仅节省时间，也能显著降低能耗，因为访问外部存储通常比一次低位宽乘加更昂贵。</p>
+          <p>但NPU没有统一的公开结构。厂商会选择不同的矩阵单元、片上存储、数据格式和支持算子。应用通常通过 Core ML、Windows ML、OpenVINO 或厂商运行时提交模型，再由编译器与驱动把可支持部分映射到设备。Apple 的性能工具甚至会逐操作显示CPU、GPU与神经引擎的可用性和实际放置。<a class="source-ref" href="sources.html#s6" aria-label="来源6">[6]</a></p>
+          <p>若一个操作不被支持，运行时可能把它放到其他计算单元。一次回退本身未必昂贵，真正风险是大张量在单元之间反复搬动，或者不同单元的数据格式需要转换。于是“模型有百分之九十操作能上NPU”仍不够，还要看剩余操作位于图的哪里，以及切换边界搬运多少数据。</p>
+          <p>端侧还受到内存容量与散热限制。大模型的权重可能放不下，持续生成会让设备升温并降低频率，应用还要与屏幕渲染、摄像头和其他任务共享资源。NPU 的价值因此常表现为“在可接受质量下更省电、更安静地持续运行”，而不是追求数据中心式的最高总吞吐。</p>
+          <p>这种架构也改变隐私和可靠性。输入留在本地，可以减少向云端发送个人数据的需要，也能在断网时响应。但本地执行不自动等于隐私安全；应用仍需控制存储、日志和权限。芯片提供的是一种部署可能性，完整保护仍由系统与产品设计完成。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="compiler-title">
+        <header class="prose-section__head">
+          <h2 id="compiler-title">编译器不是翻译员，而是交通调度</h2>
+          <p>模型写的是数学关系，设备需要的是分块、内存地址、并行顺序和通信计划。</p>
+        </header>
+        <div class="prose">
+          <p>训练框架通常把模型表示成一张操作图。编译器先分析张量形状与依赖关系，再选择设备库、生成内核、安排缓冲区，并决定哪些操作可以一起执行。OpenXLA 的架构说明把通用图优化、目标相关优化和代码生成分开，显示同一模型会因目标设备不同而获得不同执行计划。<a class="source-ref" href="sources.html#s5" aria-label="来源5">[5]</a></p>
+          <p><dfn data-term="算子融合">算子融合</dfn>是其中一个关键动作。假设矩阵乘法之后要加偏置、执行激活并做简单归一化。若四个步骤各自启动一次内核，中间结果可能多次写回设备内存。若编译器能把其中几步合成一次执行，中间值可以停在寄存器或片上存储中，少走几次长距离。</p>
+          <p>融合并非越多越好。一个过大的融合内核可能占用太多寄存器，降低并行驻留；不同操作也可能偏爱不同分块方式。编译器需要在减少中间存储和维持执行效率之间平衡。OpenXLA 的 GPU 文档把融合称为关键优化，同时说明库调用有时性能很好，却可能限制跨操作融合。<a class="source-ref" href="sources.html#s5" aria-label="来源5">[5]</a></p>
+          <p>编译器还承担数值格式选择。训练可能用较低精度完成大部分矩阵乘法，同时在累加、损失缩放或关键参数上保留更高精度。推理可能进一步把权重压到整数格式。格式越窄，内存占用和搬运量通常越小，专用单元也可能每周期完成更多运算；代价是数值范围与模型质量需要重新验证。</p>
+          <p>这就是软件生态为何会改变硬件结果。设备拥有合适单元，但框架尚未生成高效程序，用户仍得不到峰值。相反，一套成熟库可以让看似更通用的设备通过高度优化的矩阵、注意力和通信实现获得强劲表现。硬件架构与软件栈不是两个独立评分项，它们共同决定可用性能。</p>
+          <p>把图像模型放回三条路径，可以看到同一层被不同方式组织：GPU 用线程块和矩阵单元覆盖多种操作；TPU 让编译后的张量块流过矩阵阵列与专用互连；NPU 把支持的推理操作留在低功耗路径，并与其他计算单元协作。三者都在解决同一个核心问题：如何让数据少等、少走、被多用几次。</p>
+          <p>由此也能理解峰值为何会闲置。矩阵太小，阵列填不满；访问太散，带宽供不上；融合失败，中间结果反复写回；互连太慢，设备彼此等待；算子不支持，执行发生回退。下一章将把这些机制变成一套可核对的判断框架，用真实场景与端到端数据约束宣传数字。</p>
+        </div>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="main.html"><small>回到直觉</small>← 名字不是规格</a>
+      <a href="decision.html"><small>继续阅读</small>把宣传数字还原为场景 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="foot-wordmark">AI芯片架构对比</p><p>算力只有沿着数据路径被使用，才会变成速度。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

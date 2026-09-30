@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="AI芯片架构对比所用的官方架构文档、编程指南、原始论文与公开基准规则。">
+  <title>来源与延伸阅读｜AI芯片架构对比</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="nav-mast">
+    <p class="mast-line">TECHNOLOGY FIELD NOTES · 2026</p>
+    <p class="mast-name">AI芯片架构对比</p>
+    <div class="mast-actions">
+      <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>目录</button>
+      <button class="control" type="button" aria-pressed="false" data-theme-storage="kb_darkMode" data-theme-toggle><span data-theme-label>深色</span></button>
+    </div>
+    <nav class="mast-nav" id="site-nav" aria-label="知识库章节" data-nav hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>知识库总览</span><small>总览</small></a></li>
+        <li><a href="main.html"><span>名字不是规格</span><small>直觉</small></a></li>
+        <li><a href="dataflow.html"><span>数据怎么走</span><small>机制</small></a></li>
+        <li><a href="decision.html"><span>还原真实场景</span><small>判断</small></a></li>
+        <li><a href="sources.html" aria-current="page"><span>来源</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">AI芯片架构对比</a><span aria-hidden="true">/</span><span>来源</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="reference">
+    <header class="chapter-head">
+      <div class="chapter-copy">
+        <p class="orientation-line">官方文档 · 原始论文 · 公开规则</p>
+        <h1>来源与延伸阅读</h1>
+        <p class="lede">架构机制优先引用芯片厂商与开放编译项目的技术文档；跨系统性能判断则使用公开基准规则，并明确每项证据不能外推到哪里。</p>
+      </div>
+      <ul class="signal-list" aria-label="来源使用边界">
+        <li><strong>架构文档</strong><span>解释设计与编程模型，不等于独立性能评测</span></li>
+        <li><strong>原始论文</strong><span>支持特定代际结论，不替代当前产品测试</span></li>
+        <li><strong>运行时文档</strong><span>说明调度与兼容性，仍需真机复测</span></li>
+        <li><strong>基准规则</strong><span>提供可比方法，不预先指定哪类芯片获胜</span></li>
+      </ul>
+    </header>
+
+    <article class="article-flow">
+      <ol class="source-list">
+        <li class="source-entry" id="s1">
+          <h2>1. NVIDIA CUDA Programming Guide</h2>
+          <p>官方编程指南解释GPU硬件模型、流式多处理器、线程块与SIMT执行。正文据此描述大量线程如何被分组调度，以及分支与资源占用为何会影响有效并行度。指南覆盖多代产品，具体核心组成应回到目标设备的计算能力章节核对，不能把某一代参数当成全部GPU的共同规格。</p>
+          <a href="https://docs.nvidia.com/cuda/cuda-programming-guide/">阅读 CUDA Programming Guide →</a>
+        </li>
+        <li class="source-entry" id="s2">
+          <h2>2. NVIDIA GPU Performance Background</h2>
+          <p>该文档用算术强度比较运算需求与内存访问，并给出矩阵、归一化、激活等操作常见的性能限制。正文用它说明同一设备上，大矩阵可能受计算能力限制，而单样本向量或逐元素操作更容易受内存带宽限制。示例数字基于特定GPU，只用于说明分析方法。</p>
+          <a href="https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/">阅读 GPU 性能背景指南 →</a>
+        </li>
+        <li class="source-entry" id="s3">
+          <h2>3. Google Cloud TPU Architecture</h2>
+          <p>当前官方文档说明TPU芯片中的TensorCore、矩阵乘法单元、向量单元与标量单元，也描述高带宽内存、主机、切片、Pod和芯片间互连。正文据此把TPU解释为矩阵阵列、编译器与集群互连组成的系统。页面会随新代际更新，因此具体矩阵尺寸和拓扑必须按实际版本复核。</p>
+          <a href="https://docs.cloud.google.com/tpu/docs/system-architecture-tpu-vm">阅读 Cloud TPU 架构文档 →</a>
+        </li>
+        <li class="source-entry" id="s4">
+          <h2>4. Jouppi 等：In-Datacenter Performance Analysis of a Tensor Processing Unit</h2>
+          <p>2017年 ISCA 论文分析第一代数据中心TPU，讨论矩阵乘法单元、软件管理内存与高百分位响应时间。正文只借它说明早期设计目标与在线推理约束，不把论文中的倍数结果外推到现代GPU、现代TPU或其他NPU。它是一代产品与当时工作负载的原始证据。</p>
+          <a href="https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/">阅读 Google Research 论文页 →</a>
+        </li>
+        <li class="source-entry" id="s5">
+          <h2>5. OpenXLA：XLA Architecture 与 XLA:GPU</h2>
+          <p>开放编译项目文档说明StableHLO如何经过通用优化、目标相关优化与代码生成，也解释融合如何减少中间张量写回高带宽内存。正文据此把编译器视为架构的一部分。文档描述的是编译管线与目标，不保证任意模型都能获得同等融合效果。</p>
+          <a href="https://openxla.org/xla/architecture">阅读 XLA 架构 →</a>
+          <a href="https://openxla.org/xla/gpu_architecture">阅读 XLA:GPU 架构 →</a>
+        </li>
+        <li class="source-entry" id="s6">
+          <h2>6. Apple：Analyzing a Core ML model’s performance in Xcode</h2>
+          <p>Apple 开发者文档说明性能报告会显示模型操作在CPU、GPU和Neural Engine上的可用性与实际放置。文档还指出，Core ML 的选择会考虑数据搬运与计算单元启动成本，而不只看原始速度。正文据此说明端侧推理通常是异构执行；报告不测量内存或功耗，仍需额外工具。</p>
+          <a href="https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode">阅读 Core ML 性能分析文档 →</a>
+        </li>
+        <li class="source-entry" id="s7">
+          <h2>7. MLCommons：MLPerf Inference Submission Guide</h2>
+          <p>官方提交指南把数据中心与边缘系统分开，并为离线、服务器、交互、单流和多流等场景定义不同要求。正文据此说明吞吐与延迟必须放回使用情境。MLPerf结果适合在相同规则、模型、场景与准确率要求下比较，不应把开放组与封闭组或不同场景混成一张总榜。</p>
+          <a href="https://docs.mlcommons.org/inference/submission/">阅读 MLPerf Inference 提交指南 →</a>
+        </li>
+        <li class="source-entry" id="s8">
+          <h2>8. Microsoft：Windows ML Execution Providers</h2>
+          <p>当前 Microsoft Learn 文档说明 Windows ML 可通过执行提供程序在CPU、GPU和NPU上加速推理，并按设备与驱动条件提供不同后端。正文据此说明跨厂商NPU需要运行时和供应商后端协作。支持列表与系统要求会变化，部署时应检查目标Windows版本、驱动与提供程序版本。</p>
+          <a href="https://learn.microsoft.com/en-us/windows/ai/new-windows-ml/supported-execution-providers">阅读 Windows ML 执行提供程序文档 →</a>
+        </li>
+        <li class="source-entry" id="s9">
+          <h2>9. Apple Core ML 概览与计算单元配置</h2>
+          <p>Core ML 概览说明框架会利用CPU、GPU与Neural Engine，并强调设备端执行对响应、网络依赖与数据路径的影响。MLComputeUnits 文档列出允许全部单元、仅CPU、CPU加GPU或CPU加神经引擎等配置。它们支持“运行时会组合多种单元”的论述，但不能代表其他厂商NPU的内部结构。</p>
+          <a href="https://developer.apple.com/documentation/coreml/">阅读 Core ML 概览 →</a>
+          <a href="https://developer.apple.com/documentation/coreml/mlcomputeunits">阅读 MLComputeUnits →</a>
+        </li>
+      </ol>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="decision.html"><small>回到判断</small>← 把宣传数字还原为场景</a>
+      <a href="main.html"><small>重新开始</small>名字不是规格 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="foot-wordmark">AI芯片架构对比</p><p>来源能支持到哪里，结论就停在哪里。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">本页顶部</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

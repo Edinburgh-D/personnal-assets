@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="从数据流与部署场景出发，理解GPU、TPU与NPU为何不是一张简单的速度排行榜。">
+  <title>名字不是规格｜AI芯片架构对比</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="reading-progress__fill" data-reading-progress></div></div>
+
+  <header class="nav-mast">
+    <p class="mast-line">TECHNOLOGY FIELD NOTES · 2026</p>
+    <p class="mast-name">AI芯片架构对比</p>
+    <div class="mast-actions">
+      <button class="control nav-menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>目录</button>
+      <button class="control" type="button" aria-pressed="false" data-theme-storage="kb_darkMode" data-theme-toggle><span data-theme-label>深色</span></button>
+    </div>
+    <nav class="mast-nav" id="site-nav" aria-label="知识库章节" data-nav hidden>
+      <ul>
+        <li><a href="../../index.html" data-site-home><span>知识库总览</span><small>总览</small></a></li>
+        <li><a href="main.html" aria-current="page"><span>名字不是规格</span><small>直觉</small></a></li>
+        <li><a href="dataflow.html"><span>数据怎么走</span><small>机制</small></a></li>
+        <li><a href="decision.html"><span>还原真实场景</span><small>判断</small></a></li>
+        <li><a href="sources.html"><span>来源</span><small>查证</small></a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><span>AI芯片架构对比</span></nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="overview">
+    <template data-narrative="question">GPU、TPU和NPU究竟在比较什么，为什么不能只按名称或峰值算力排出统一名次？</template>
+    <template data-narrative="example">让同一个图像模型分别完成云端批量训练、在线单张识别和手机相册分类，观察计算形状、数据移动、功耗与软件支持如何改变合适的芯片。</template>
+    <template data-narrative="conclusion">GPU、TPU和NPU不是线性高低档，而是对可编程性、矩阵密度、数据移动、能耗与部署位置作出的不同系统取舍。</template>
+    <template data-narrative="next-question">这些取舍怎样落实到执行单元、存储层级、编译器和芯片间连接上，并影响同一个模型的真实运行？</template>
+
+    <header class="hero-map">
+      <div class="hero-copy">
+        <p class="orientation-line">从模型到机器，一条数据路径</p>
+        <h1>名字不是规格</h1>
+        <p class="lede">所谓“更适合AI”，通常不是一颗芯片做了更多种事情，而是它让某一种重复工作少等内存、少搬数据，或者少消耗电量。</p>
+        <p class="hero-note">把芯片放回完整系统，分类才有意义。训练、在线服务和手机离线识别，可能运行同一个模型，却不会得到同一个最佳答案。</p>
+      </div>
+
+      <figure class="chip-map" aria-labelledby="chip-map-caption">
+        <svg viewBox="0 0 720 430" role="img" aria-labelledby="chip-map-title chip-map-desc">
+          <title id="chip-map-title">三类AI加速器的数据流取舍图</title>
+          <desc id="chip-map-desc">模型与编译器位于上方，数据经过内存与互连进入GPU、TPU或NPU。三条路径分别强调灵活并行、规则矩阵流和端侧低功耗。</desc>
+          <rect class="die" x="20" y="20" width="680" height="390" rx="4"></rect>
+          <text class="map-title" x="44" y="58">MODEL → COMPILER → MEMORY → COMPUTE</text>
+          <rect class="memory" x="238" y="85" width="244" height="60" rx="3"></rect>
+          <text class="map-label" x="360" y="112" text-anchor="middle">模型图与张量</text>
+          <text class="map-small" x="360" y="132" text-anchor="middle">形状 · 精度 · 批量 · 算子</text>
+          <path class="path path-accent" d="M360 145 C360 180 128 175 128 220"></path>
+          <path class="path path-accent" d="M360 145 L360 220"></path>
+          <path class="path path-accent" d="M360 145 C360 180 592 175 592 220"></path>
+          <g class="gpu-node">
+            <rect class="node" x="48" y="220" width="160" height="110" rx="3"></rect>
+            <text class="map-label" x="128" y="255" text-anchor="middle">GPU</text>
+            <text class="map-small" x="128" y="278" text-anchor="middle">大量线程 · 多种内核</text>
+            <text class="map-small" x="128" y="298" text-anchor="middle">矩阵单元 + 通用并行</text>
+          </g>
+          <g class="tpu-node">
+            <rect class="node" x="280" y="220" width="160" height="110" rx="3"></rect>
+            <text class="map-label" x="360" y="255" text-anchor="middle">TPU</text>
+            <text class="map-small" x="360" y="278" text-anchor="middle">大矩阵阵列 · 编译调度</text>
+            <text class="map-small" x="360" y="298" text-anchor="middle">专用互连 + 云端规模</text>
+          </g>
+          <g class="npu-node">
+            <rect class="node" x="512" y="220" width="160" height="110" rx="3"></rect>
+            <text class="map-label" x="592" y="255" text-anchor="middle">NPU</text>
+            <text class="map-small" x="592" y="278" text-anchor="middle">低位宽推理 · 片上数据</text>
+            <text class="map-small" x="592" y="298" text-anchor="middle">端侧功耗 + 异构协作</text>
+          </g>
+          <text class="map-small" x="128" y="365" text-anchor="middle">灵活性优先</text>
+          <text class="map-small" x="360" y="365" text-anchor="middle">矩阵效率优先</text>
+          <text class="map-small" x="592" y="365" text-anchor="middle">能效与本地性优先</text>
+        </svg>
+        <figcaption id="chip-map-caption">这不是硬件内部结构的等比例图，而是一张阅读地图：模型必须先被软件变成设备能执行的数据流，三类芯片的差异才会显现。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article-flow">
+      <section class="prose-section" aria-labelledby="names-title">
+        <header class="prose-section__head">
+          <h2 id="names-title">三个名字，三组不断变化的边界</h2>
+          <p>先把商标、产品代际和峰值数字暂时拿开，只看每类机器愿意为哪种工作付出硅面积与功耗。</p>
+        </header>
+        <div class="prose">
+          <p><dfn data-term="GPU">GPU</dfn>原本服务图形渲染，擅长让大量相似工作同时推进。现代产品又加入面向矩阵乘加的专用单元，因此既能运行神经网络中的密集矩阵计算，也能处理采样、索引、归一化和自定义程序。它的长处不是“只会并行”，而是在较宽的可编程范围里提供很高的并行能力。NVIDIA 的官方编程指南把这种执行组织描述为大量线程在流式多处理器上运行。<a class="source-ref" href="sources.html#s1" aria-label="来源1">[1]</a></p>
+          <p><dfn data-term="TPU">TPU</dfn>是 Google 为机器学习工作负载开发的专用集成电路家族。其核心强调矩阵乘加阵列，并让编译器提前安排模型图、张量形状和内存。Google 当前文档同时列出矩阵单元、向量单元与标量单元，说明它并非只有一块“乘法板”。它仍要处理激活、地址计算、控制流与主机协作。<a class="source-ref" href="sources.html#s3" aria-label="来源3">[3]</a></p>
+          <p><dfn data-term="NPU">NPU</dfn>更像一类市场与系统术语，而不是一种统一微架构。手机、个人电脑和嵌入式设备里的这类单元，通常针对神经网络推理、低位宽数值和持续低功耗运行。不同厂商支持的算子、内存结构和编译工具差异很大，所以“都有NPU”不等于可以运行同一模型，更不等于性能可直接比较。</p>
+          <p>这些边界还在互相渗透。现代图形处理器有专用张量单元，专用矩阵处理器也包含向量与标量路径，端侧神经处理器则常与CPU和图形处理器共同完成一张模型图。名称描述的是设计重心，不是绝对纯度。把它们想成三座工厂，比想成三种跑车更准确：车间布局不同，但都要收料、排产、加工和出货。</p>
+          <p>因此，“哪一种更强”缺少宾语。强在训练大模型、强在单次请求、强在单位电量，还是强在能直接运行研究者刚写的自定义操作？这些目标会互相牵制。更宽的通用性需要控制逻辑、缓存与软件兼容；更高的专用密度则要求模型形状、算子集合和编译器更配合。</p>
+          <p>芯片产品也不是孤立的方块。数据中心加速器依赖主机、设备内存、芯片间互连和机架网络；端侧单元依赖共享内存、操作系统调度和应用框架。购买一块芯片，实际是在选择一个由硬件、编译器、库、驱动和运维方式组成的系统。比较若只停在芯片名字，就把最容易造成等待的环节删除了。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="clock-title">
+        <header class="prose-section__head">
+          <h2 id="clock-title">更快有两种常见含义</h2>
+          <p>批量工厂追求一小时加工多少件，交互窗口关心这一件多久交付；两者并不总能同时最大化。</p>
+        </header>
+        <div class="prose">
+          <p><dfn data-term="吞吐量">吞吐量</dfn>描述单位时间完成多少样本或请求。训练时，较大的批量可以让矩阵形状更饱满，也能把固定启动成本摊到更多样本上。只要内存容得下并且通信能够跟上，增加并行设备往往可以继续提升总产出。但批量越大，单个输入可能越早进入队列、越晚拿到结果。</p>
+          <p><dfn data-term="延迟">延迟</dfn>描述一次请求从进入到结果返回的时间。语音字幕、相机增强和交互式生成，更在意首个结果与尾部请求是否及时。为了把一次请求快速算完，系统可能不能等到凑齐大批量，也无法让所有矩阵单元保持满载。此时较低的峰值利用率可能是低延迟的合理代价。</p>
+          <p>两种指标还会被排队方式改变。云端服务可以把来自许多用户的请求临时合批，以换取更好的矩阵效率；本地相册分类只有一个用户，也许一次只处理一张照片。芯片宣传页给出的峰值通常假定运算类型、精度和并行度都很理想，而现实应用包含预处理、数据复制、模型加载和后处理。</p>
+          <p>尾部延迟尤其容易被平均数遮住。若一百次请求里九十九次很快、一次很慢，平均值仍可能漂亮，但那一次卡顿会直接被用户感知。早期 TPU 研究论文特别讨论了数据中心推理的高百分位响应时间，说明确定性执行对在线服务的重要性。那是特定代际与工作负载的结果，不能直接当成今天所有设备的倍数承诺。<a class="source-ref" href="sources.html#s4" aria-label="来源4">[4]</a></p>
+          <p>功耗又加入第三条轴。数据中心可能更关注每个训练任务的总能量、机架功率和散热限制；手机更关注一次识别是否让设备发热、是否抢占图形渲染、是否耗尽电池。相同的每秒运算数，在十几瓦、几十瓦和数百瓦的系统里代表完全不同的设计意义。</p>
+          <p>所以，读到“提升数倍”时，先补全句子：在什么模型、什么批量、什么精度、什么软件版本、什么延迟约束和什么功率边界下提升？若这些条件没有写出来，数字最多证明某个测试点很快，不能证明一类架构普遍更快。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="same-model-title">
+        <header class="prose-section__head">
+          <h2 id="same-model-title">同一图像模型的三次搬家</h2>
+          <p>让模型从研究机房走到在线接口，再进入手机，观察决定发生在哪里。</p>
+        </header>
+        <div class="prose">
+          <p>第一站是云端批量训练。模型要反复读取大量图像，完成前向计算、误差反传和参数更新。运算图会出现矩阵乘法、卷积、归一化、随机操作和优化器更新，还要在多块设备之间同步梯度。这里需要较高吞吐、足够大的设备内存、稳定的混合精度训练和成熟的分布式通信。</p>
+          <p>在这类工作里，通用并行设备的优势是生态广、调试工具成熟、自定义算子容易落地。若团队已经把代码和库围绕相关平台建立起来，迁移成本会影响总训练时间。专用矩阵系统也可以在适配的框架与集群规模上表现出色，但张量形状、编译过程和数据输入管线需要一起优化。选择不是抽象架构之间的决斗，而是两套完整工程路径的比较。</p>
+          <p>第二站是云端在线识别。模型参数可能已经固定，服务要接收一张图并尽快返回类别。反向传播消失了，批量可能变小，排队与网络开销开始变得突出。一个计算单元很多的设备，若每次只来一张图，也可能因为权重搬运和启动开销而闲置。服务框架能否合批、模型能否常驻内存，往往比增加理论乘法次数更有价值。</p>
+          <p>此时三类加速器都可能成为候选。通用并行设备适合混合模型与频繁变化的程序；云端专用矩阵系统适合已经编译并能形成规则批量的数据流；专用推理芯片也可能以较低功耗提供稳定服务。关键不是标签，而是它们能否在目标延迟内保持足够利用率，并且不把成本转移给主机或网络。</p>
+          <p>第三站是手机相册分类。照片来自本机，结果只服务当前用户。把数据发到云端会增加网络等待，也会改变隐私边界。端侧单元若能让模型的大部分操作留在片上或共享内存附近，就可能用更低能耗持续运行。Apple 的 Core ML 文档明确说明，系统会在CPU、图形处理器与神经引擎之间选择执行位置，并考虑数据搬运与单元启动成本。<a class="source-ref" href="sources.html#s6" aria-label="来源6">[6]</a></p>
+          <p>这也揭示一个常被忽略的事实：应用不一定“只用一种芯片”。图像解码可能在CPU完成，卷积落到专用单元，某个不支持的操作转到图形处理器，结果再由CPU整理。若每次切换都复制大块张量，异构协作反而可能变慢。真正的优化目标是让整条路径更短，而不是让某一个方块在监控图上最亮。</p>
+            <p>三次搬家没有改变模型要表达的功能，却改变了批量、可用功率、内存、隐私、软件栈和响应时间。于是合理答案也跟着改变。模型与芯片不是一对固定搭档；它们通过具体部署条件才形成组合。离开这些条件谈“最快”，就像不看路线只比较车速表。</p>
+        </div>
+      </section>
+
+      <section class="route-lab" aria-labelledby="route-title" data-route-lab>
+        <div>
+          <h2 id="route-title">切换负载，答案就移动</h2>
+          <p>下面不是采购结论，而是把同一模型放进不同约束后的起始调查方向。真正决定仍需用目标设备和真实输入测量。</p>
+          <div class="route-controls" aria-label="选择负载场景">
+            <button class="route-button" type="button" data-profile="training" aria-pressed="true">批量训练</button>
+            <button class="route-button" type="button" data-profile="serving" aria-pressed="false">在线推理</button>
+            <button class="route-button" type="button" data-profile="device" aria-pressed="false">端侧推理</button>
+          </div>
+        </div>
+        <div class="route-output" aria-live="polite">
+          <p class="route-result" data-route-result>先看成熟GPU或云TPU系统</p>
+          <p class="route-reason" data-route-reason>大批量训练需要高吞吐、较大设备内存和高速芯片互连。GPU通常提供更宽的软件兼容面；TPU在适配的框架、张量形状和云环境中可把矩阵阵列与集群互连结合起来。</p>
+        </div>
+      </section>
+
+      <section class="prose-section" aria-labelledby="map-title">
+        <header class="prose-section__head">
+          <h2 id="map-title">把排行榜改写成坐标系</h2>
+          <p>一个可靠比较至少要同时放下运算形状、数据移动、软件和部署位置。</p>
+        </header>
+        <div>
+          <div class="table-wrap">
+            <table class="compare-sheet">
+              <caption>三类设计重心的概念比较；实际产品会跨越边界。</caption>
+              <thead><tr><th>维度</th><th>GPU</th><th>TPU</th><th>NPU</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">主要取舍</th><td data-label="GPU">宽可编程并行与专用矩阵单元并存</td><td data-label="TPU">编译器配合的大规模矩阵数据流</td><td data-label="NPU">端侧推理、低功耗与片上协作</td></tr>
+                <tr><th scope="row">常见位置</th><td data-label="GPU">工作站、服务器与集群</td><td data-label="TPU">Google云端与相关系统</td><td data-label="NPU">手机、个人电脑和边缘设备</td></tr>
+                <tr><th scope="row">更需核对</th><td data-label="GPU">显存、内核效率、软件生态</td><td data-label="TPU">编译、张量形状、切片与互连</td><td data-label="NPU">算子覆盖、量化、回退与功耗</td></tr>
+                <tr><th scope="row">典型误读</th><td data-label="GPU">核心多就一定适合所有模型</td><td data-label="TPU">专用就自动比通用设备快</td><td data-label="NPU">标称TOPS可跨厂商直接比较</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="prose">
+            <p>这张表没有写“最佳”，因为最佳只能出现在约束之后。若应用需要频繁修改模型和自定义操作，软件灵活性可能排在能效之前。若工作负载稳定、矩阵形状规则且规模巨大，专用数据流与集群互连可能更重要。若任务必须离线运行一整天，单位能量和本地隐私又会接管决策。</p>
+            <p>三类芯片真正共有的挑战，是让数据在正确时间出现在正确计算单元旁边。下一步需要进入芯片剖面：线程如何排队，矩阵如何流过阵列，编译器如何合并操作，以及一次看似简单的回退为何会让整条路径失去优势。</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <nav class="chapter-nav" aria-label="章节翻页">
+      <a href="sources.html"><small>查证材料</small>来源与延伸阅读</a>
+      <a href="dataflow.html"><small>继续阅读</small>算力之外，数据怎么走 →</a>
+    </nav>
+  </main>
+
+  <footer class="foot-mast">
+    <div><p class="foot-wordmark">AI芯片架构对比</p><p>不替芯片排队，替问题找到坐标。</p></div>
+    <p class="foot-links"><a href="main.html">回到开头</a><a href="sources.html">核对来源</a><a href="../../index.html">知识库总览</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

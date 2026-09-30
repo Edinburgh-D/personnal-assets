@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "AI芯片架构对比：GPU、TPU与NPU",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-01",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "名字不是规格",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把GPU、TPU和NPU当成三档速度标签，容易用单一峰值数字判断哪一种芯片更强。",
+      "readerStateAfter": "读者能够把三类名称还原为不同的数据流取舍，知道同一模型的训练、云端推理与端侧推理会提出不同问题。",
+      "readerQuestion": "GPU、TPU和NPU究竟在比较什么，为什么不能只按名称或峰值算力排出统一名次？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "让同一个图像模型分别完成云端批量训练、在线单张识别和手机相册分类，观察计算形状、数据移动、功耗与软件支持如何改变合适的芯片。",
+      "newTerms": [
+        {
+          "term": "GPU",
+          "definition": "由大量并行执行单元组成、可编程范围较广，并通过专用矩阵单元强化AI计算的处理器。"
+        },
+        {
+          "term": "TPU",
+          "definition": "Google为机器学习张量运算设计的专用集成电路家族，通常依靠大规模矩阵单元与编译器协同工作。"
+        },
+        {
+          "term": "NPU",
+          "definition": "面向神经网络推理或相关张量运算的专用处理单元统称，不同厂商的内部结构和支持范围并不相同。"
+        },
+        {
+          "term": "吞吐量",
+          "definition": "单位时间内完成的样本、请求或运算总量，常用于衡量批处理能力。"
+        },
+        {
+          "term": "延迟",
+          "definition": "从单个请求进入系统到结果返回所经历的时间，交互式应用通常更在意尾部延迟。"
+        }
+      ],
+      "conclusion": "GPU、TPU和NPU不是线性高低档，而是对可编程性、矩阵密度、数据移动、能耗与部署位置作出的不同系统取舍。",
+      "nextQuestion": "这些取舍怎样落实到执行单元、存储层级、编译器和芯片间连接上，并影响同一个模型的真实运行？",
+      "nextPage": "dataflow.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "dataflow.html",
+      "title": "算力之外，数据怎么走",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把三类名称还原为不同的数据流取舍，知道同一模型的训练、云端推理与端侧推理会提出不同问题。",
+      "readerStateAfter": "读者能够沿着取数、计算、写回和跨芯片通信解释GPU、TPU与NPU的机制差异，并理解编译器为何是架构的一部分。",
+      "readerQuestion": "这些取舍怎样落实到执行单元、存储层级、编译器和芯片间连接上，并影响同一个模型的真实运行？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "GPU、TPU和NPU不是线性高低档，而是对可编程性、矩阵密度、数据移动、能耗与部署位置作出的不同系统取舍。",
+      "coreExample": "把图像模型的一层矩阵乘法、归一化、激活与结果写回拆成一条数据路径，分别观察GPU线程组、TPU矩阵阵列和端侧NPU算子图如何处理。",
+      "newTerms": [
+        {
+          "term": "SIMT",
+          "definition": "单指令多线程执行模型，让一组线程按相同指令推进，同时保留各自的寄存器状态。"
+        },
+        {
+          "term": "张量核心",
+          "definition": "GPU中专门加速矩阵乘加等密集张量运算的执行单元，与通用并行核心协同工作。"
+        },
+        {
+          "term": "脉动阵列",
+          "definition": "让数据和部分和在相邻乘加单元之间有节奏地传递，以减少矩阵计算期间反复访问外部存储的结构。"
+        },
+        {
+          "term": "数据局部性",
+          "definition": "让即将重复使用的数据尽量停留在离计算单元更近的存储中，从而减少搬运成本。"
+        },
+        {
+          "term": "算子融合",
+          "definition": "把原本分开的多个模型操作合并进一次设备执行，减少中间结果落到外部内存再读回的过程。"
+        }
+      ],
+      "conclusion": "真实速度来自计算阵列、存储层级、编译器调度和互连共同维持高利用率；任何一环不能匹配模型形状，峰值算力都会闲置。",
+      "nextQuestion": "面对训练、云端服务和端侧应用，应该用哪些可验证指标判断架构是否合适，而不是被TOPS或厂商名称带着走？",
+      "nextPage": "decision.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "decision.html",
+      "title": "把宣传数字还原为场景",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿着取数、计算、写回和跨芯片通信解释GPU、TPU与NPU的机制差异，并理解编译器为何是架构的一部分。",
+      "readerStateAfter": "读者能够根据模型兼容性、批量、延迟、能耗、内存、软件栈与端到端基准审查芯片主张，并为具体部署提出有条件的选择。",
+      "readerQuestion": "面对训练、云端服务和端侧应用，应该用哪些可验证指标判断架构是否合适，而不是被TOPS或厂商名称带着走？",
+      "dependsOn": [
+        "dataflow.html"
+      ],
+      "priorConclusion": "真实速度来自计算阵列、存储层级、编译器调度和互连共同维持高利用率；任何一环不能匹配模型形状，峰值算力都会闲置。",
+      "coreExample": "把同一图像模型放进三份采购与部署简报：数据中心训练、在线推理和手机离线分类，逐项核对精度、批量、尾延迟、能耗、内存占用与算子回退。",
+      "newTerms": [
+        {
+          "term": "精度",
+          "definition": "数值所用的数据格式及其可表达范围，也可在另一语境中指模型预测正确程度，比较时必须说明所指。"
+        },
+        {
+          "term": "量化",
+          "definition": "把权重或激活从较高精度数值格式转换为较低位宽表示，以降低存储和计算成本。"
+        },
+        {
+          "term": "内存带宽",
+          "definition": "单位时间内存储系统能够向计算单元输送或写回的数据量。"
+        },
+        {
+          "term": "TOPS",
+          "definition": "每秒万亿次运算的峰值计量，只有在运算定义、数值格式、稀疏条件和实际利用率相同后才可直接比较。"
+        },
+        {
+          "term": "端到端基准",
+          "definition": "从真实输入进入到可用结果产生，连同预处理、数据搬运、回退与后处理一起测量的测试。"
+        }
+      ],
+      "conclusion": "芯片选择应从可运行的模型与目标场景出发，用端到端延迟、吞吐、能耗、内存和软件维护成本验证；类别名称只能缩小候选范围，不能替代实测。",
+      "nextQuestion": "当模型结构、编译器和芯片代际继续变化时，怎样维护一套可重复的基准，让今天的选择仍能被明天重新验证？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

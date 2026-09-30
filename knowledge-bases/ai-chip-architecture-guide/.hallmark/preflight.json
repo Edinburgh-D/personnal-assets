@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-10-01",
+  "surface": "standalone multi-page HTML knowledge base",
+  "framework": "vanilla HTML, CSS, and JavaScript",
+  "existingDesignSystem": "repository knowledge-base chrome with per-topic local styling",
+  "chosenGenre": "editorial",
+  "chosenMacrostructure": "Map / Diagram",
+  "chosenTheme": "Studio",
+  "navigation": "N6 compact masthead with collapsible mobile directory",
+  "footer": "Ft1 statement footer",
+  "enrichment": "E5 tier-B hand-built SVG architecture map",
+  "constraints": [
+    "Chinese general-audience reading path",
+    "four pages and 20–30 minutes",
+    "no external design library",
+    "responsive light and dark themes",
+    "semantic chip and data-flow visual metaphor"
+  ]
+}
