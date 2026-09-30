@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "时装周与秀场文化",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-09-30",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一场秀如何成为时装周",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者主要把时装周理解为明星、品牌和新衣服密集出现的娱乐新闻，不清楚秀场为何按季节、城市和邀请制度组织。",
+      "readerStateAfter": "读者能够把时装周理解为行业日历、受邀观看空间和媒介生产现场的叠合，并开始追问这些条件如何改变服装的意义。",
+      "readerQuestion": "时装周为什么既是观看衣服的活动，也是制造时尚意义和行业秩序的制度？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "把同一件结构感黑色外套分别放进白盒发布会、废弃车站式戏剧秀和静态陈列室，观察观看条件如何改变它的意义。",
+      "newTerms": [
+        { "term": "官方日历", "definition": "由行业组织编排并审核参与者、时间和发布形式的正式活动表。" },
+        { "term": "高级定制", "definition": "在法国制度语境中受特定资格与规则约束、以高度手工和量身服务为核心的时装类别。" },
+        { "term": "成衣", "definition": "按标准尺码和系列进行生产与销售、而非只为单一客户量身制作的服装。" }
+      ],
+      "conclusion": "时装周不是许多秀的简单相加，而是一套把季节、城市、准入、现场座次和媒介传播压缩到同一时间表中的注意力制度。",
+      "nextQuestion": "一场通常只有十几分钟的秀，怎样通过选角、顺序、空间、声音与镜头，把服装组织成可传播的叙事？",
+      "nextPage": "making-a-show.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "making-a-show.html",
+      "title": "十几分钟如何被制造",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把时装周理解为行业日历、受邀观看空间和媒介生产现场的叠合，并开始追问这些条件如何改变服装的意义。",
+      "readerStateAfter": "读者能够从身体、顺序、空间、声音、座席和镜头六个方面解释秀场叙事，也能把现场经验与短视频切片区分开。",
+      "readerQuestion": "一场通常只有十几分钟的秀，怎样通过选角、顺序、空间、声音与镜头，把服装组织成可传播的叙事？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "时装周不是许多秀的简单相加，而是一套把季节、城市、准入、现场座次和媒介传播压缩到同一时间表中的注意力制度。",
+      "coreExample": "继续追踪同一件结构感黑色外套，看它如何因模特身体、出场位置、灯光距离、音乐节拍和直播机位而呈现不同性格。",
+      "newTerms": [
+        { "term": "选角", "definition": "为系列挑选模特，并决定哪些身体、气质与身份进入品牌叙事的过程。" },
+        { "term": "造型", "definition": "把服装、鞋履、配饰、妆发和穿着方式组合成完整形象的工作。" },
+        { "term": "走位", "definition": "模特在场地中的路线、速度、停顿、转身与彼此关系。" },
+        { "term": "前排", "definition": "秀场最靠近发布区域的座位层级，也是行业地位与传播价值被公开展示的位置。" },
+        { "term": "定装", "definition": "秀前把服装穿到具体模特身上并调整尺寸、搭配和出场方案的工作环节。" }
+      ],
+      "conclusion": "秀场效果不来自单件衣服自然发声，而来自身体、顺序、空间、声音、座席与镜头的协同编排；观众看到的是经过制作的观看条件。",
+      "nextQuestion": "当观看条件本身充满权力与成本时，普通观众怎样欣赏秀场而不被排场、热搜或道德姿态牵着走？",
+      "nextPage": "reading-the-runway.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "reading-the-runway.html",
+      "title": "在掌声之外学会判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够从身体、顺序、空间、声音、座席和镜头六个方面解释秀场叙事，也能把现场经验与短视频切片区分开。",
+      "readerStateAfter": "读者能够同时评价秀场形式、服装证据、准入权力、劳动条件与环境代价，并对新出现的发布形式提出可核验的问题。",
+      "readerQuestion": "当观看条件本身充满权力与成本时，普通观众怎样欣赏秀场而不被排场、热搜或道德姿态牵着走？",
+      "dependsOn": ["making-a-show.html"],
+      "priorConclusion": "秀场效果不来自单件衣服自然发声，而来自身体、顺序、空间、声音、座席与镜头的协同编排；观众看到的是经过制作的观看条件。",
+      "coreExample": "把黑色外套的三种发布版本重新并置，分别检查服装本身、表演解释、传播剪辑、劳动安排和场景材料是否相互支撑。",
+      "newTerms": [
+        { "term": "生态布景", "definition": "从材料来源、运输、搭建、拆除到再用去向整体降低环境与社会影响的活动布景方法。" },
+        { "term": "数字发布", "definition": "通过直播、短片、交互页面或其他线上媒介发布系列，而不把到场观看作为唯一入口。" },
+        { "term": "准入机制", "definition": "决定谁能进入官方日历、秀场、后台或传播网络的一组资格、审核与邀请安排。" }
+      ],
+      "conclusion": "成熟观看既承认秀场的艺术性，也把日历准入、劳动条件、传播剪辑与环境代价纳入评价；判断重点不是简单的好看或不好看，而是形式为何成立、代价由谁承担、承诺能否被验证。",
+      "nextQuestion": "当下一场秀出现在屏幕上时，我们能否先还原它制造观看的方式，再决定自己愿意相信什么？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

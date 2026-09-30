@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-09-30T16:37:21+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "时装周为什么既是观看衣服的活动，也是制造时尚意义和行业秩序的制度？",
+      "readerStateChange": "读前把时装周看成品牌、明星和新衣服的密集新闻；读后能用日历准入、城市节奏、邀请座次与媒介传播解释其制度结构。",
+      "twoSentenceSummary": "正文从正式日历的排期与筛选作用进入，区分高级定制、成衣、走秀、展示与数字发布等不同制度位置。黑色外套的三种发布方式进一步说明，同一件衣服会被现场空间与传播媒介改写意义。",
+      "continuityEvidence": "结尾把时装周概括为注意力制度，并明确把下一步推进到后台制作，直接引出身体、顺序、空间、声音和镜头如何协同。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "making-a-show.html",
+      "centralQuestion": "一场通常只有十几分钟的秀，怎样通过选角、顺序、空间、声音与镜头，把服装组织成可传播的叙事？",
+      "readerStateChange": "读前知道日历和媒介会组织注意力；读后能拆解模特身体、造型、出场次序、走位、场地、声场、座席和导播机位的协同作用。",
+      "twoSentenceSummary": "正文沿一件黑色外套逐步改变模特、出场位置、灯光、音乐与镜头，说明系列叙事来自具体制作选择。它也区分现场、直播和静态摄影的证据差异，让氛围不再只是模糊感受。",
+      "continuityEvidence": "开头使用入口页建立的注意力制度，结尾则指出观看条件还包含劳动、权力与成本，为第三章的责任判断提供必要前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reading-the-runway.html",
+      "centralQuestion": "当观看条件本身充满权力与成本时，普通观众怎样欣赏秀场而不被排场、热搜或道德姿态牵着走？",
+      "readerStateChange": "读前能够解释秀场如何制造观看；读后能把服装与形式证据同准入权力、劳动条件、传播剪辑和环境去向一起纳入评价。",
+      "twoSentenceSummary": "正文先把喜欢拆成服装、系列、现场与传播四层证据，再检验准入、资源差异、后台照护和布景材料去向。最后把三种黑色外套发布版本重新并置，示范如何先描述、再解释、最后判断。",
+      "continuityEvidence": "本章直接检验上一章六种制作机制的权力与成本，并把最终判断迁移到任何新秀场：先还原观看条件，再决定相信什么。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分时装周组织者的现行规则、博物馆历史说明、原始日历档案与责任框架，并理解机构承诺不等于执行审计。",
+      "twoSentenceSummary": "参考页汇集巴黎、伦敦、纽约和米兰的日历与资格入口，以及 V&A、FIT 和大都会艺术博物馆的历史材料。劳动与环境部分列出 CFDA、FHCM、哥本哈根和 BFC 的制度文件，并逐项说明其证据边界。",
+      "continuityEvidence": "各来源分别对应前三章的日历制度、秀场历史、制作机制与责任判断，读者可从正文的具体主张回到机构原文核对。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

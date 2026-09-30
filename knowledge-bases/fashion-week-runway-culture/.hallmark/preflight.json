@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-09-30",
+  "framework": "vanilla-html",
+  "fontStack": "new knowledge-base-local tokens",
+  "palette": "new knowledge-base-local OKLCH tokens",
+  "motion": "motion-cut; only navigation state and reading progress",
+  "spacing": "4pt semantic scale",
+  "preserve": ["repository publishing contract", "data-site-home navigation", "manifest-driven index metadata"]
+}
