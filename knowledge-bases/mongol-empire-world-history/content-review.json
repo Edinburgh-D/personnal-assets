@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-09-30T12:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "蒙古帝国为何不只是一张不断扩大的征服地图，而是理解十三世纪欧亚变化的关键入口？",
+      "readerStateChange": "读前只把蒙古帝国看成骑兵扩张与辽阔版图；读后能用家族权力、地方差异和跨区域道路解释其欧亚政治空间。",
+      "twoSentenceSummary": "正文先拆解统一颜色地图造成的误解，再以兀鲁思、继承政治和地方制度说明帝国内部并不均质。鲁布鲁克从黑海到哈拉和林的旅程，把抽象疆域还原成许可、供给、翻译与多宗教宫廷组成的道路。",
+      "continuityEvidence": "结尾把疆域规模问题推进为道路背后的制度与供给问题，直接引出下一章对军事、通信、财政和人员调动的拆解。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "imperial-machine.html",
+      "centralQuestion": "这样一个跨越草原、农耕区与城市网络的政治空间，靠什么从连续征服转化为可以运转的帝国？",
+      "readerStateChange": "读前知道蒙古世界由家族权力和道路连接；读后能解释军事编组、接力通信、人口财政、商人伙伴与人口迁移如何共同运转。",
+      "twoSentenceSummary": "正文沿鲁布鲁克的行程，把远距离统治拆成军队开路、站点接力、地方监督、宫廷贸易与人员调动五个机制。每个机制同时说明统治收益与沿线居民承担的马匹、税役、征发或失去自由的成本。",
+      "continuityEvidence": "本章从入口页的可通行空间进入制度层，结尾进一步指出同一网络也会运送军队、俘虏和疾病，为下一章的价值判断建立前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "connected-world.html",
+      "centralQuestion": "当同一套网络既运送使者、商人与技术，也运送军队、贡赋、俘虏和病原体时，应怎样评价它对世界史的影响？",
+      "readerStateChange": "读前能说明网络如何运转但尚难综合评价；读后能用范围、方向、权力与代价四个坐标检验任何宏大交流叙事。",
+      "twoSentenceSummary": "正文限定了蒙古和平与第一次全球化的适用范围，并把文化重组、战争破坏、强制迁徙和黑死病证据放入同一分析框架。最后通过继承汗国和成吉思汗系合法性说明统一帝国分裂后仍留下长期政治联系。",
+      "continuityEvidence": "开头直接使用上一章的网络机制，随后逐项检验它在贸易、暴力、疾病和后继政治中的不同结果，并把判断方法迁移到其他全球化叙事。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分同时代见闻、宫廷叙事、现代综合研究、博物馆器物证据与古DNA研究各自能证明什么。",
+      "twoSentenceSummary": "参考页汇集鲁布鲁克、《蒙古秘史》、柏朗嘉宾等早期材料，并列出剑桥综合史、专业百科、UNESCO 与博物馆藏品说明。黑死病部分单列2022年古DNA论文，明确菌株起源证据不等于完整传播路线。",
+      "continuityEvidence": "各来源分别对应前三章的旅行案例、制度机制、艺术交流与瘟疫争议，读者可以从正文结论直接回到证据入口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

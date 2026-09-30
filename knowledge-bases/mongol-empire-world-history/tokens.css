@@ -1,0 +1,85 @@
+/* Hallmark · macrostructure: Long Document · tone: editorial history · theme: Almanac · anchor hue: cinnabar */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@500;700;900&display=swap');
+
+:root {
+  color-scheme: light dark;
+  --color-paper: oklch(96% 0.018 82);
+  --color-paper-raised: oklch(98% 0.012 82);
+  --color-paper-sunken: oklch(92% 0.025 82);
+  --color-ink: oklch(21% 0.025 52);
+  --color-ink-soft: oklch(35% 0.025 52);
+  --color-muted: oklch(45% 0.025 63);
+  --color-rule: oklch(72% 0.035 75);
+  --color-rule-strong: oklch(51% 0.05 65);
+  --color-accent: oklch(48% 0.16 32);
+  --color-accent-soft: oklch(88% 0.055 38);
+  --color-accent-ink: oklch(97% 0.015 82);
+  --color-focus: oklch(42% 0.19 260);
+  --color-success: oklch(43% 0.11 145);
+  --color-error: oklch(46% 0.18 24);
+  --color-shadow: oklch(20% 0.025 52 / 0.09);
+
+  --font-display: "Noto Serif SC", "Source Han Serif SC", serif;
+  --font-body: "Noto Sans SC", "Source Han Sans SC", sans-serif;
+  --font-outlier: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.75rem;
+  --text-display: clamp(2.65rem, 7vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-double: 3px;
+  --radius-small: 0.2rem;
+  --radius-round: 999px;
+  --shadow-paper: 0 1px 2px var(--color-shadow);
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+body[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 62);
+  --color-paper-raised: oklch(19% 0.02 62);
+  --color-paper-sunken: oklch(12% 0.018 62);
+  --color-ink: oklch(93% 0.018 82);
+  --color-ink-soft: oklch(81% 0.02 78);
+  --color-muted: oklch(70% 0.025 72);
+  --color-rule: oklch(35% 0.035 68);
+  --color-rule-strong: oklch(58% 0.055 60);
+  --color-accent: oklch(68% 0.14 38);
+  --color-accent-soft: oklch(25% 0.055 35);
+  --color-accent-ink: oklch(15% 0.02 45);
+  --color-focus: oklch(74% 0.15 255);
+  --color-success: oklch(72% 0.11 145);
+  --color-error: oklch(70% 0.16 24);
+  --color-shadow: oklch(5% 0.018 62 / 0.28);
+}

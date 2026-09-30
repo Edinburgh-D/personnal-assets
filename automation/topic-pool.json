@@ -3655,6 +3655,13 @@
       "generatedAt": "2026-09-24",
       "slug": "inequality-gini",
       "entry": "knowledge-bases/inequality-gini/main.html"
+    },
+    {
+      "name": "蒙古帝国与世界史",
+      "domain": "历史/军事",
+      "generatedAt": "2026-09-30",
+      "slug": "mongol-empire-world-history",
+      "entry": "knowledge-bases/mongol-empire-world-history/main.html"
     }
   ],
   "skipped": []

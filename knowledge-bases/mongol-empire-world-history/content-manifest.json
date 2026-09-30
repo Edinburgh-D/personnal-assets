@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "蒙古帝国与世界史",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-09-30",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "从草原帝国到欧亚时刻",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "蒙古帝国为何不只是一张不断扩大的征服地图，而是理解十三世纪欧亚变化的关键入口？",
+      "readerStateBefore": "读者主要把蒙古帝国理解为成吉思汗、骑兵和辽阔版图，对其内部差异及世界史意义只有零散印象。",
+      "readerStateAfter": "读者能够把蒙古帝国看成由征服、家族分封与跨区域流动共同构成的欧亚政治空间，并知道需要追问它如何运转。",
+      "priorConclusion": "",
+      "coreExample": "方济各会士鲁布鲁克在1253年至1255年间从黑海北岸经拔都营地抵达哈拉和林，再返回地中海世界的旅程。",
+      "conclusion": "蒙古帝国的世界史意义不只来自疆域规模，而来自它以成吉思汗家族权力为骨架，把差异巨大的地区纳入一个可通行但不均质的欧亚政治空间。",
+      "nextQuestion": "这样一个跨越草原、农耕区与城市网络的政治空间，靠什么从连续征服转化为可以运转的帝国？",
+      "nextPage": "imperial-machine.html",
+      "newTerms": [
+        { "term": "草原帝国", "definition": "以欧亚草原机动资源和政治联盟为基础，并统治广大定居社会的帝国形态。" },
+        { "term": "兀鲁思", "definition": "蒙古政治语境中兼有人群、领地和统治份额含义的共同体。" },
+        { "term": "大汗", "definition": "在成吉思汗家族秩序中主张高于各支宗王的最高统治者。" }
+      ]
+    },
+    {
+      "file": "imperial-machine.html",
+      "title": "征服机器如何变成统治网络",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "这样一个跨越草原、农耕区与城市网络的政治空间，靠什么从连续征服转化为可以运转的帝国？",
+      "readerStateBefore": "读者能够把蒙古帝国看成由征服、家族分封与跨区域流动共同构成的欧亚政治空间，并知道需要追问它如何运转。",
+      "readerStateAfter": "读者能够从军事组织、驿站通信、人口财政和跨区域用人四个机制解释帝国运转，也能看出这些机制的成本由谁承担。",
+      "priorConclusion": "蒙古帝国的世界史意义不只来自疆域规模，而来自它以成吉思汗家族权力为骨架，把差异巨大的地区纳入一个可通行但不均质的欧亚政治空间。",
+      "coreExample": "沿鲁布鲁克的行程观察使者凭证、换马补给、宗王营地、翻译人员和地方供给如何组成一条可被帝国权力使用的通道。",
+      "conclusion": "蒙古统治的核心不是用一套制度抹平欧亚，而是以军事威慑和家族权威连接多种地方制度，再用驿站、凭证、人口登记与人员调动提高资源流动速度。",
+      "nextQuestion": "当同一套网络既运送使者、商人与技术，也运送军队、贡赋、俘虏和病原体时，应怎样评价它对世界史的影响？",
+      "nextPage": "connected-world.html",
+      "newTerms": [
+        { "term": "驿站制", "definition": "沿主要道路设置站点、马匹和给养，以接力方式传递命令和接待获准旅行者的制度。" },
+        { "term": "牌符", "definition": "证明持有人获得官方通行和征调资格的权力凭证。" },
+        { "term": "达鲁花赤", "definition": "蒙古政权派往地方监督税收、户籍、治安和驿站等事务的官员。" },
+        { "term": "斡脱", "definition": "与蒙古宫廷和宗王合作经营远距离贸易及金融事务的商人伙伴。" },
+        { "term": "强制迁徙", "definition": "征服者把工匠、军户、俘虏或其他人口迁往异地，以满足军事、生产和宫廷需求。" }
+      ]
+    },
+    {
+      "file": "connected-world.html",
+      "title": "连接、毁灭与蒙古之后的世界",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": ["imperial-machine.html"],
+      "readerQuestion": "当同一套网络既运送使者、商人与技术，也运送军队、贡赋、俘虏和病原体时，应怎样评价它对世界史的影响？",
+      "readerStateBefore": "读者能够从军事组织、驿站通信、人口财政和跨区域用人四个机制解释帝国运转，也能看出这些机制的成本由谁承担。",
+      "readerStateAfter": "读者能够同时检验连接的范围、流动的方向、权力分配与社会代价，不再用单一的全球化赞歌或毁灭叙事概括蒙古时代。",
+      "priorConclusion": "蒙古统治的核心不是用一套制度抹平欧亚，而是以军事威慑和家族权威连接多种地方制度，再用驿站、凭证、人口登记与人员调动提高资源流动速度。",
+      "coreExample": "把鲁布鲁克在哈拉和林看到的多宗教与多语言人群，同西征造成的城市破坏、工匠迁徙以及十四世纪瘟疫证据放在同一条道路上比较。",
+      "conclusion": "蒙古时代把欧亚交流的密度和政治尺度推到新水平，但连接从来不是中性的；评价其遗产必须同时追问谁能移动、谁被迫移动、谁获利，以及哪些地区承担了战争与疾病的代价。",
+      "nextQuestion": "面对任何被称作全球化或大交流的历史阶段，我们能否同时画出流动路线、权力关系与代价分布？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "蒙古和平", "definition": "后世用来概括蒙古诸政权控制下部分欧亚通道较易通行的说法，但不等于整个时代普遍和平。" },
+        { "term": "继承汗国", "definition": "统一帝国分裂后，由成吉思汗家族不同支系统治的元朝、察合台汗国、伊儿汗国与术赤系政权等。" },
+        { "term": "成吉思汗系合法性", "definition": "后继政权借助与成吉思汗家族的血统或授权关系证明统治正当性的政治原则。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "史料、研究与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}
