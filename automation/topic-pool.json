@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-09-30",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3648,6 +3648,13 @@
       "generatedAt": "2026-09-24",
       "slug": "euclid-non-euclidean-geometry",
       "entry": "knowledge-bases/euclid-non-euclidean-geometry/main.html"
+    },
+    {
+      "name": "贫富差距与基尼系数",
+      "domain": "金融/量化",
+      "generatedAt": "2026-09-24",
+      "slug": "inequality-gini",
+      "entry": "knowledge-bases/inequality-gini/main.html"
     }
   ],
   "skipped": []
