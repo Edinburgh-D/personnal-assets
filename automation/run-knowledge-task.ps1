@@ -198,7 +198,11 @@ try {
     Invoke-Checked git -C $worktree push $remoteUrl 'HEAD:main'
     $published = $true
 
-    $liveUrl = "$siteRoot/$entryRelative"
+    # Cloudflare Pages canonicalizes explicit .html paths with a 308 redirect.
+    # Windows PowerShell 5 does not reliably follow 308 responses, so verify the
+    # extensionless canonical URL directly.
+    $liveEntry = $entryRelative -replace '\.html$', ''
+    $liveUrl = "$siteRoot/$liveEntry"
     Write-Step "Waiting for Cloudflare Pages: $liveUrl"
     $deadline = (Get-Date).AddMinutes(15)
     $verified = $false

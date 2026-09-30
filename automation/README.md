@@ -2,6 +2,8 @@
 
 `run-knowledge-task.ps1` selects one unused topic, creates an isolated Git worktree, runs a Codex author pass (including the skill-mandated reader review), enforces deterministic publication gates, commits to `main`, pushes to GitHub, and verifies the Cloudflare Pages URL. If Codex reaches a usage limit only after producing the files, the result is recoverable solely when every hard gate still passes.
 
+Cloudflare verification uses the extensionless canonical page URL because Pages redirects explicit `.html` requests with HTTP 308, which Windows PowerShell 5 does not consistently follow.
+
 The Windows task is installed by `install-knowledge-task.ps1` and runs daily at 02:00, 07:00, 11:00, 16:00, and 22:00. It uses `Interactive` logon so the current user's Codex and Git credentials are available. `StartWhenAvailable` and `WakeToRun` are enabled; overlapping runs are ignored.
 
 Run a non-mutating preflight:
