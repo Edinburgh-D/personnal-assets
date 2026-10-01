@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>来源与延伸阅读｜知识图谱入门</title>
+  <meta name="description" content="知识图谱入门所依据的 W3C 标准、Google 一手说明与同行评议综述，并说明每份资料适合解决什么问题。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Noto+Sans+SC:wght@400;700;800&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('kb_darkMode');
+        var dark = saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="wordmark" href="main.html">KNOWLEDGE / GRAPH</a>
+    <div class="nav-actions">
+      <button class="control" id="themeButton" type="button" aria-pressed="false" aria-label="切换深色模式"><span class="theme-label">深色</span></button>
+      <button class="control nav-menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">目录</button>
+    </div>
+  </nav>
+  <button class="menu-scrim" id="menuScrim" type="button" aria-label="关闭目录" hidden></button>
+  <aside class="menu-panel" id="menuPanel" aria-label="阅读目录" hidden>
+    <h2>知识图谱入门</h2>
+    <ul class="menu-list">
+      <li><a href="main.html">从对象到网络</a></li>
+      <li><a href="how-it-works.html">从资料到答案</a></li>
+      <li><a href="limits-and-choices.html">边界与选择</a></li>
+      <li><a href="sources.html" aria-current="page">来源与延伸阅读</a></li>
+      <li><a href="../index.html">知识库总览</a></li>
+    </ul>
+    <p class="menu-meta">标准文本优先，产品材料作为历史语境。</p>
+  </aside>
+
+  <div class="shell">
+    <div class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span aria-hidden="true">/</span>
+      <a href="../index.html">知识库总览</a><span aria-hidden="true">/</span>
+      <a href="main.html">知识图谱入门</a><span aria-hidden="true">/</span>
+      <span>来源与延伸阅读</span>
+    </div>
+
+    <main id="content" data-kb-content data-page-role="reference">
+      <header class="page-header page-header--reference">
+        <h1>来源与阅读路径</h1>
+        <p class="lede">先读定义和标准，再读综述；产品文章用于理解术语如何进入大众视野，不承担技术规范的角色。</p>
+      </header>
+
+      <article class="prose">
+        <p>本知识库把“知识图谱”作为一类组织事实的方法来介绍，没有把它限定为某个厂商产品，也没有把 RDF 当成唯一实现。关于主语、谓语、宾语、IRI、命名图和开放世界语义的技术表述，以 W3C 文档为主要依据。关于更广泛的数据模型、查询、验证、演绎与归纳方法，则用同行评议综述补足视野。</p>
+        <ol class="source-list">
+          <li>
+            <h2>RDF 1.1 Concepts and Abstract Syntax</h2>
+            <p>W3C 的核心概念文档定义 RDF 图、三元组、IRI、字面量、空白节点与数据集。它明确说明 RDF 图是主语—谓语—宾语三元组的集合，也讨论多图、时间变化和蕴含。适合核对本文关于图数据模型的基础表述。</p>
+            <a href="https://www.w3.org/TR/rdf11-concepts/">阅读 W3C RDF 1.1 Concepts</a>
+          </li>
+          <li>
+            <h2>RDF Schema 1.1 与 OWL 2 Overview</h2>
+            <p>RDF Schema 提供类、属性、子类与定义域等基本词汇；OWL 2 进一步提供更丰富的本体表达能力。两者说明“共同语义”并非界面标签，而是可以被机器处理的词汇与约束。OWL 总览也提醒读者，完整语言由多份规范组成。</p>
+            <a href="https://www.w3.org/TR/rdf-schema/">阅读 RDF Schema 1.1</a> ·
+            <a href="https://www.w3.org/TR/owl-overview/">阅读 OWL 2 Overview</a>
+          </li>
+          <li>
+            <h2>SPARQL 1.1 Query Language</h2>
+            <p>W3C 推荐标准定义如何用图模式查询 RDF。规范说明基本图模式由类似三元组的模式组成，其中若干位置可以是变量。本文“把小图覆盖到事实网络上”的说法是面向普通读者的类比，正式语法与求值规则应以该文档为准。</p>
+            <a href="https://www.w3.org/TR/sparql11-query/">阅读 SPARQL 1.1 Query</a>
+          </li>
+          <li>
+            <h2>Shapes Constraint Language</h2>
+            <p>SHACL 是 W3C 用来描述并约束 RDF 图内容的标准。形状可以规定焦点节点、属性路径、值类型、数量等条件，并生成验证结果。本文用它说明结构验证的能力，同时强调结构合规不能替代对事实真伪的领域核查。</p>
+            <a href="https://www.w3.org/TR/shacl/">阅读 W3C SHACL Recommendation</a>
+          </li>
+          <li>
+            <h2>Knowledge Graphs：ACM Computing Surveys</h2>
+            <p>Aidan Hogan 等人的综述系统讨论图数据模型、查询语言、形状、本体、演绎与归纳方法，也梳理知识图谱的创建、丰富与质量问题。论文发表于 ACM Computing Surveys 54 卷 4 期，文章号 71，DOI 为 10.1145/3447772。</p>
+            <a href="https://doi.org/10.1145/3447772">查看论文 DOI 页面</a> ·
+            <a href="https://arxiv.org/abs/2003.02320">查看作者公开稿</a>
+          </li>
+          <li>
+            <h2>Google：things, not strings</h2>
+            <p>Google 在 2012 年发布 Knowledge Graph 时，用“事物，而非字符串”向大众解释实体消歧、摘要和探索。它是一份产品历史的一手材料，不是通用技术定义。文中当年的规模数字只属于发布时点，因此本知识库不把它当成当前规模。</p>
+            <a href="https://blog.google/products-and-platforms/products/search/introducing-knowledge-graph-things-not/">阅读 Google 2012 年发布文章</a>
+          </li>
+        </ol>
+        <p>建议的深入顺序是：先读 RDF Concepts 的引言与图数据模型，再看 SPARQL 的简单查询示例；需要建模时进入 RDF Schema 与 OWL；需要数据质量时阅读 SHACL；最后用 ACM 综述把不同技术路线放回同一张地图。标准会有勘误与后续工作，实施前应从 W3C 技术报告入口确认最新状态。</p>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="limits-and-choices.html">← 返回：边界与选择</a>
+          <a href="main.html">回到开篇 →</a>
+        </nav>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-stmt">
+    <p class="foot-stmt__line">从标准开始，才知道哪些是事实，哪些只是方便理解的类比。</p>
+    <div class="foot-stmt__meta">
+      <span>来源核对：2026-10-02</span>
+      <a href="../index.html">返回知识库总览</a>
+    </div>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

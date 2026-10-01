@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-02",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3697,6 +3697,13 @@
       "generatedAt": "2026-10-01",
       "slug": "authoritarian-resilience",
       "entry": "knowledge-bases/authoritarian-resilience/main.html"
+    },
+    {
+      "name": "知识图谱入门",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-02",
+      "slug": "knowledge-graph-primer",
+      "entry": "knowledge-bases/knowledge-graph-primer/main.html"
     }
   ],
   "skipped": []

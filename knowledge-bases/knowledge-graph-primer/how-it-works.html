@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>从资料到答案｜知识图谱入门</title>
+  <meta name="description" content="沿着博物馆案例理解对象识别、三元组建模、查询、验证与有限推理怎样组成一条可追踪的知识图谱流水线。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Noto+Sans+SC:wght@400;700;800&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('kb_darkMode');
+        var dark = saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="wordmark" href="main.html">KNOWLEDGE / GRAPH</a>
+    <div class="nav-actions">
+      <button class="control" id="themeButton" type="button" aria-pressed="false" aria-label="切换深色模式"><span class="theme-label">深色</span></button>
+      <button class="control nav-menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">目录</button>
+    </div>
+  </nav>
+  <button class="menu-scrim" id="menuScrim" type="button" aria-label="关闭目录" hidden></button>
+  <aside class="menu-panel" id="menuPanel" aria-label="阅读目录" hidden>
+    <h2>知识图谱入门</h2>
+    <ul class="menu-list">
+      <li><a href="main.html">从对象到网络</a></li>
+      <li><a href="how-it-works.html" aria-current="page">从资料到答案</a></li>
+      <li><a href="limits-and-choices.html">边界与选择</a></li>
+      <li><a href="sources.html">来源与延伸阅读</a></li>
+      <li><a href="../index.html">知识库总览</a></li>
+    </ul>
+    <p class="menu-meta">当前：机制如何真正运转。</p>
+  </aside>
+
+  <div class="shell">
+    <div class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span aria-hidden="true">/</span>
+      <a href="../index.html">知识库总览</a><span aria-hidden="true">/</span>
+      <a href="main.html">知识图谱入门</a><span aria-hidden="true">/</span>
+      <span>从资料到答案</span>
+    </div>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">知识图谱的核心不是图形，而是用稳定身份、明确关系和共享语义，把分散事实接成可追踪、可组合的网络。</template>
+      <template data-narrative="question">这些分散事实怎样经过识别、对齐、建模和查询，变成可信而可用的知识网络？</template>
+      <template data-narrative="example">把博物馆目录、考古记录与人物资料中的同一件青铜器对齐，再用结构化事实回答跨资料问题。</template>
+      <template data-narrative="conclusion">可用的知识图谱来自一条受治理的流水线：先统一对象身份，再按模型表达事实，保留来源与时间，最后通过查询、验证和有限推理交付答案。</template>
+      <template data-narrative="next-question">既然结构和推理都依赖选择，怎样判断知识图谱是否适合一个问题，并识别它最容易出错的地方？</template>
+
+      <header class="page-header page-header--chapter">
+        <h1>从材料，走到答案</h1>
+        <p class="lede">图不会凭空知道任何事。它先要认出同一个对象，再把主张写成结构，并为每一步留下证据。</p>
+      </header>
+
+      <article class="prose">
+        <section aria-labelledby="identity">
+          <h2 id="identity">第一道关不是画图，而是认人认物</h2>
+          <p>当馆藏目录、发掘简报和论文进入系统，首先要做的是<dfn data-term="实体对齐">实体对齐</dfn>：判断不同记录究竟指向同一个现实对象，还是只碰巧名字相似。这个动作听上去像查重，实质上却是在建立整个网络的身份基础。</p>
+          <p>“北郊鼎”可能同时出现在旧图录和新数据库中。系统会比较馆藏编号、尺寸、照片、出土位置、入藏时间等线索。名称完全相同并不能直接合并，因为历史器物可能沿用同一类名。名称不同也不能直接拆开，因为编号、别名和译名会随机构与年代变化。</p>
+          <p>自动规则可以先缩小候选范围。例如，尺寸差异过大时降低合并可能，馆藏编号完全一致时提高可能。机器学习也能综合文字和图像给出候选，但最后仍需把判断依据保存下来。博物馆若只保留“已合并”的结果，日后发现错误时就难以知道是谁依据什么做了决定。</p>
+          <p>稳定身份通常通过内部标识符或可共享的 IRI 表达。标识符不是给人看的漂亮名字，而是让系统在名称变化后仍能认出对象的锚点。中文名、英文名、旧编号都可以作为这个锚点的描述，而不必互相争夺“唯一真名”的位置。</p>
+          <p>进入对齐之前，资料还要经过解析和规范化。日期要区分公历年份、年代区间与不确定表述，地点要保留原文和现代坐标，编号要去掉无意义的空格却不能丢失前导字符。规范化是为了比较，不是为了删掉原始样貌。</p>
+          <p>候选合并最好采用“机器缩小范围，人处理关键歧义”的节奏。明显相同的编号可以自动处理，高风险或证据冲突的对象则进入审阅队列。人工决定也应反过来改进规则，让系统逐渐少问重复问题，而不是把同一种歧义永远留给馆员。</p>
+          <p>身份问题一旦处理不好，后续每一步都会放大错误。若两个同名考古学者被合并，他们参与的发掘、发表的论文和所属机构都会被串成一段不存在的履历。图式系统擅长传播连接，因此也格外擅长传播身份错误。</p>
+        </section>
+
+        <section aria-labelledby="statements">
+          <h2 id="statements">把一句话拆成可连接的陈述</h2>
+          <p>对象有了身份，下一步是把资料里的说法写成结构。一种常见形式是<dfn data-term="三元组">三元组</dfn>，也就是用主语、谓语、宾语表达一条有方向的事实。“北郊鼎—出土于—城北遗址”就是一条；“城北遗址—位于—临川市”又是一条。</p>
+          <div class="triple" aria-label="三条示例陈述">
+            <strong>藏品：北郊鼎　出土于　地点：城北遗址</strong>
+            <strong>地点：城北遗址　位于　城市：临川市</strong>
+            <strong>藏品：北郊鼎　记载于　文献：1986 年发掘简报</strong>
+            <span>每一行都能独立检查，也能与其他行首尾相接。</span>
+          </div>
+          <p>三段式表达的力量来自组合。第一条和第二条接起来，可以回答器物在哪座城市出土。第三条又为第一条提供材料入口。查询者不必事先把所有可能问题做成固定字段，只要所需路径已经存在，就能用不同方式重新组合。</p>
+          <p>现实中的陈述往往比一句话复杂。一次测年结果需要记录测量方法、误差范围、样本与实验室；一次任职需要开始和结束时间。此时不能把所有信息硬塞进一条线。常见做法是把“测量”或“任职”本身建成一个对象，再连接参与者、时间与依据。</p>
+          <p>数据格式也不等于数据模型。RDF 可以把陈述表示成图，并用 Turtle、JSON-LD 等不同语法交换。同一组事实换一种写法，含义可以保持不变。也有许多知识图谱采用属性图等其他模型。入门时不必把某种存储产品或文件格式误当成唯一道路。</p>
+        </section>
+
+        <section aria-labelledby="model">
+          <h2 id="model">模型先规定哪些话说得通</h2>
+          <p>在添加大量事实之前，团队要决定领域中有哪些概念、联系与约束。<dfn data-term="本体">本体</dfn>是对这些内容的形式化说明。它可以表达“青铜器是一类藏品”“馆藏机构是一类组织”，也可以声明某种联系的适用范围。</p>
+          <p>本体不是越庞大越好。博物馆若当前只需要回答藏品来历与研究出处，就不必先建完整的人类文明分类体系。一个小而清楚的模型更容易让馆员、研究者和开发者达成一致，也更容易随着新问题逐步扩展。</p>
+          <p>团队可以用真实问题测试模型，而不是只审查术语表。若模型无法自然表达“某论文修订了旧年代判断”，说明事件、时间或证据位置仍不够清楚。把查询样例当成设计测试，能更早暴露抽象分类与实际工作之间的距离。</p>
+          <p>模型设计会影响答案。若把“制作年代”规定为单个年份，面对跨越数十年的年代区间就会丢失信息。若把“作者”只允许连接个人，工作室共同创作便无处安放。建模不是把现实照搬进电脑，而是为任务选择一种可操作的观察方式。</p>
+          <p>不同机构的模型还需要映射。甲馆使用“出土地”，乙馆区分“发现地”和“发掘地”，两者不能机械等同。映射可以注明更宽、更窄或仅在某些条件下相同。把条件写出来，比为了追求统一而强行改名更诚实。</p>
+          <p>这一步也决定将来能否解释答案。如果查询结果来自一条含义模糊的“相关”连接，用户无法知道相关在何处。若连接被拆成“出土于”“引用”“同一时期”等具体类型，路径本身就能成为解释的一部分。</p>
+        </section>
+
+        <section aria-labelledby="query">
+          <h2 id="query">查询是在图中匹配路径</h2>
+          <p>数据进入网络后，查询不再只是搜索某个词。<dfn data-term="SPARQL">SPARQL</dfn>是 W3C 为 RDF 图定义的标准查询语言。它允许用户写出一个由若干模式组成的小图，再寻找数据中能够匹配这个小图的部分。</p>
+          <p>例如，研究者想找“在临川市出土、由其他机构收藏、且有公开发掘记录的同类器物”。查询会同时匹配器物类型、出土地到城市的路径、收藏机构以及文献连接。每个位置都可以设成变量，最终返回满足整组条件的对象，而不是包含若干关键词的页面。</p>
+          <p>这种查询很像在透明纸上画出想找的形状，再把它覆盖到事实网络上。形状能对齐的地方就是候选答案。过滤、可选条件、聚合和跨服务查询可以进一步收窄结果，但核心直觉仍是匹配结构，而非猜测句子。</p>
+          <p>查询设计也需要边界。路径过长会返回大量组合，含义过宽的连接会让结果失去解释力，跨远程服务还会受网络和权限影响。实际系统常把高频路径预先优化，并限制公开查询的资源消耗。表达能力强，不代表每个问题都应无限展开。</p>
+          <p>对普通使用者，查询语言通常藏在界面背后。用户选择地点、年代与藏品类型，界面把条件翻译成图模式。保留可查看的查询或路径摘要仍然有价值，因为研究者需要复现结果，维护者也需要判断遗漏来自数据还是查询写法。</p>
+          <p>查询结果还可以带回证据路径。公众看到“北郊鼎与某器物同属一个时期”时，界面可以展开两件器物各自的年代依据。研究者看到冲突时，也能继续回到原始报告。结构化查询因此不仅追求找到结果，还能帮助说明结果从哪里来。</p>
+        </section>
+
+        <section aria-labelledby="reasoning">
+          <h2 id="reasoning">规则能补出没有直接写下的内容</h2>
+          <p>在明确语义和规则的条件下，系统可以进行<dfn data-term="推理">推理</dfn>，也就是从已有事实推出未直接写出的结论。若模型声明“青铜鼎属于青铜器，青铜器属于藏品”，那么记录某物是青铜鼎后，系统可以得出它也是藏品。</p>
+          <p>推理的价值在于减少重复表达，并让分类保持一致。它不等于语言模型自由生成答案，也不是凭空发现真理。所有结论都受规则和前提限制。前提错误，推得越完整，错误传播得越远。</p>
+          <p>还要区分规则推出的结论与统计模型预测的候选。规则可以在给定语义下提供可复查的演绎路径；预测通常给出可能性。两者都能帮助补全网络，但信任方式不同。系统应标明一条陈述是原始材料、规则推导还是模型建议。</p>
+          <p>完整流程因此不是“一次导入，永久正确”。新资料进入后要重新对齐，模型变化后要检查受影响的陈述，查询与规则也要有测试。对于博物馆，年代判断可能随新研究更新，馆藏位置会变化，旧名称会继续作为检索入口。维护是系统的一部分，不是上线后的附加工作。</p>
+          <p>测试可以从少量已知答案开始。团队准备若干典型问题、边界问题和故意矛盾的样本，每次更新后检查返回路径是否仍符合预期。这样既能发现查询退化，也能发现模型修改意外改变了旧数据的解释。</p>
+          <p>把整条链放在一起看，答案的可信度来自多个环节共同工作：对象身份没有混淆，陈述表达保留细节，模型含义清楚，查询路径可见，推导范围受控，来源和时间能够追溯。下一步需要反过来审视这些环节：什么问题值得付出这套成本，哪些失败会让一张漂亮的图变得不可信。</p>
+        </section>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="main.html">← 上一篇：从对象到网络</a>
+          <a href="limits-and-choices.html">下一篇：边界与选择 →</a>
+        </nav>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-stmt">
+    <p class="foot-stmt__line">答案不是终点。可复查的路径才让答案站得住。</p>
+    <div class="foot-stmt__meta">
+      <span>知识图谱入门 · 机制</span>
+      <a href="sources.html">标准与资料</a>
+    </div>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

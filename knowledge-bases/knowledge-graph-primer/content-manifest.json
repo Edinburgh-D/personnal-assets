@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "知识图谱入门",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "audience": "general",
+  "entry": "main.html",
+  "createdAt": "2026-10-02",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "只把知识图谱理解成一张复杂的关系图，不清楚它比表格或全文搜索多做了什么。",
+      "readerStateAfter": "能把知识图谱理解为围绕实体、关系和共同语义组织的事实网络，并知道接下来需要追问它如何从原始资料变成可查询结构。",
+      "readerQuestion": "知识图谱究竟把什么组织起来，它为何不只是换一种画图方式？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "城市博物馆要让读者从一件青铜器出发，找到年代、出土地、收藏机构、相关人物与可靠来源。",
+      "newTerms": [
+        {
+          "term": "知识图谱",
+          "definition": "用可识别的对象、明确的联系和共享语义来组织事实的网络。"
+        },
+        {
+          "term": "实体",
+          "definition": "在具体领域中需要被区分和持续识别的人、地点、事物或概念。"
+        },
+        {
+          "term": "关系",
+          "definition": "对两个对象之间具体联系的命名，例如创作、收藏或位于。"
+        },
+        {
+          "term": "模式层",
+          "definition": "说明有哪些对象类型、联系类型及其约束的共同语义说明。"
+        }
+      ],
+      "conclusion": "知识图谱的核心不是图形，而是用稳定身份、明确关系和共享语义，把分散事实接成可追踪、可组合的网络。",
+      "nextQuestion": "这些分散事实怎样经过识别、对齐、建模和查询，变成可信而可用的知识网络？",
+      "nextPage": "how-it-works.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "how-it-works.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能把知识图谱理解为围绕实体、关系和共同语义组织的事实网络，并知道接下来需要追问它如何从原始资料变成可查询结构。",
+      "readerStateAfter": "能解释从资料到实体对齐、三元组、查询与有限推理的链路，也知道每一步都会引入可追踪的质量风险。",
+      "readerQuestion": "这些分散事实怎样经过识别、对齐、建模和查询，变成可信而可用的知识网络？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "知识图谱的核心不是图形，而是用稳定身份、明确关系和共享语义，把分散事实接成可追踪、可组合的网络。",
+      "coreExample": "把博物馆目录、考古记录与人物资料中的同一件青铜器对齐，再用结构化事实回答跨资料问题。",
+      "newTerms": [
+        {
+          "term": "实体对齐",
+          "definition": "判断不同资料中的名称或记录是否指向同一个现实对象。"
+        },
+        {
+          "term": "三元组",
+          "definition": "用主语、谓语、宾语三个位置表达一条有方向的事实。"
+        },
+        {
+          "term": "本体",
+          "definition": "对领域概念、联系及其约束所作的形式化说明。"
+        },
+        {
+          "term": "SPARQL",
+          "definition": "用于匹配和查询 RDF 图中结构模式的标准查询语言。"
+        },
+        {
+          "term": "推理",
+          "definition": "依据已声明的规则或语义，从已有事实推出没有直接写出的新结论。"
+        }
+      ],
+      "conclusion": "可用的知识图谱来自一条受治理的流水线：先统一对象身份，再按模型表达事实，保留来源与时间，最后通过查询、验证和有限推理交付答案。",
+      "nextQuestion": "既然结构和推理都依赖选择，怎样判断知识图谱是否适合一个问题，并识别它最容易出错的地方？",
+      "nextPage": "limits-and-choices.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "limits-and-choices.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能解释从资料到实体对齐、三元组、查询与有限推理的链路，也知道每一步都会引入可追踪的质量风险。",
+      "readerStateAfter": "能从问题形态、数据质量、更新责任和可解释性要求出发，判断是否采用知识图谱，并对图中的答案保持有根据的信任。",
+      "readerQuestion": "既然结构和推理都依赖选择，怎样判断知识图谱是否适合一个问题，并识别它最容易出错的地方？",
+      "dependsOn": [
+        "how-it-works.html"
+      ],
+      "priorConclusion": "可用的知识图谱来自一条受治理的流水线：先统一对象身份，再按模型表达事实，保留来源与时间，最后通过查询、验证和有限推理交付答案。",
+      "coreExample": "当博物馆资料给出互相冲突的年代、同名人物和过期资料时，用来源、时间与约束检查答案是否值得信任。",
+      "newTerms": [
+        {
+          "term": "数据血缘",
+          "definition": "记录一条数据来自哪里、经过哪些处理以及由谁负责的可追踪链条。"
+        },
+        {
+          "term": "开放世界假设",
+          "definition": "没有记录某个事实，并不自动等于该事实为假。"
+        },
+        {
+          "term": "SHACL",
+          "definition": "用形状和约束描述并验证 RDF 图内容的 W3C 标准语言。"
+        }
+      ],
+      "conclusion": "知识图谱适合需要跨来源连接、语义复用和证据追踪的问题，但它的价值取决于身份、模型、来源、更新与验证责任是否被持续维护。",
+      "nextQuestion": "当图谱被接入检索增强生成或智能体时，怎样让模型利用结构化证据，又不把推断包装成事实？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

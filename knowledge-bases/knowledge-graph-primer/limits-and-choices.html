@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>边界与选择｜知识图谱入门</title>
+  <meta name="description" content="理解知识图谱的常见失误、来源与时间治理、开放世界假设和验证方法，并判断一个问题是否值得采用知识图谱。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Noto+Sans+SC:wght@400;700;800&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('kb_darkMode');
+        var dark = saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="wordmark" href="main.html">KNOWLEDGE / GRAPH</a>
+    <div class="nav-actions">
+      <button class="control" id="themeButton" type="button" aria-pressed="false" aria-label="切换深色模式"><span class="theme-label">深色</span></button>
+      <button class="control nav-menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">目录</button>
+    </div>
+  </nav>
+  <button class="menu-scrim" id="menuScrim" type="button" aria-label="关闭目录" hidden></button>
+  <aside class="menu-panel" id="menuPanel" aria-label="阅读目录" hidden>
+    <h2>知识图谱入门</h2>
+    <ul class="menu-list">
+      <li><a href="main.html">从对象到网络</a></li>
+      <li><a href="how-it-works.html">从资料到答案</a></li>
+      <li><a href="limits-and-choices.html" aria-current="page">边界与选择</a></li>
+      <li><a href="sources.html">来源与延伸阅读</a></li>
+      <li><a href="../index.html">知识库总览</a></li>
+    </ul>
+    <p class="menu-meta">当前：判断价值与风险。</p>
+  </aside>
+
+  <div class="shell">
+    <div class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span aria-hidden="true">/</span>
+      <a href="../index.html">知识库总览</a><span aria-hidden="true">/</span>
+      <a href="main.html">知识图谱入门</a><span aria-hidden="true">/</span>
+      <span>边界与选择</span>
+    </div>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">可用的知识图谱来自一条受治理的流水线：先统一对象身份，再按模型表达事实，保留来源与时间，最后通过查询、验证和有限推理交付答案。</template>
+      <template data-narrative="question">既然结构和推理都依赖选择，怎样判断知识图谱是否适合一个问题，并识别它最容易出错的地方？</template>
+      <template data-narrative="example">当博物馆资料给出互相冲突的年代、同名人物和过期资料时，用来源、时间与约束检查答案是否值得信任。</template>
+      <template data-narrative="conclusion">知识图谱适合需要跨来源连接、语义复用和证据追踪的问题，但它的价值取决于身份、模型、来源、更新与验证责任是否被持续维护。</template>
+      <template data-narrative="next-question">当图谱被接入检索增强生成或智能体时，怎样让模型利用结构化证据，又不把推断包装成事实？</template>
+
+      <header class="page-header page-header--chapter">
+        <h1>会连接，也要会怀疑</h1>
+        <p class="lede">一条线能把材料接起来，也能把错误传得更远。成熟的图不隐藏分歧，而是让分歧可见、可追、可修。</p>
+      </header>
+
+      <article class="prose">
+        <section aria-labelledby="trust">
+          <h2 id="trust">先问答案从哪里来</h2>
+          <p>博物馆的两份资料可能给同一件器物标出不同年代。一份沿用早期类型学判断，另一份依据新的测年结果。系统若只保留一个“公元前九世纪”，界面虽然整洁，却把争议和判断依据都藏了起来。</p>
+          <p><dfn data-term="数据血缘">数据血缘</dfn>记录一条数据来自哪里、经过哪些处理、何时进入系统以及由谁负责。它让使用者能从答案回到材料，也让维护者知道某个来源被更正后，哪些陈述和下游应用需要重新检查。</p>
+          <p>血缘不只是保存一个网址。网页会更新，文件会移动，数据库记录也可能被覆盖。重要材料需要稳定标识、版本或抓取时间。人工判断还应记录采用了哪些证据。这样，后来者才能区分“来源本身这样说”和“系统根据若干来源作了归并”。</p>
+          <p>在青铜器案例中，可以同时保留“论文甲判断为西周早期”和“报告乙判断为西周中期”，再把当前馆方采用的展示年代单独标明。公众看到的是经过策展选择的表述，研究者则能展开分歧。多种说法共存，不等于系统拒绝判断；它只是把判断与原始主张分开。</p>
+          <p>来源还存在质量层次。原始发掘报告、同行评议研究、馆藏目录、新闻转述和匿名网页的用途不同。图中不应仅按“是否有链接”一视同仁。可信度评价需要领域规则，也需要人承担责任，不能交给连接数量自动投票。</p>
+        </section>
+
+        <section aria-labelledby="absence">
+          <h2 id="absence">没有记录，不等于事实为假</h2>
+          <p>许多图式系统采用<dfn data-term="开放世界假设">开放世界假设</dfn>：系统里没有一条陈述，只能说明当前不知道，不能自动推出它为假。某位研究者没有“参与发掘”的连接，可能是没有参与，也可能是资料尚未录入。</p>
+          <p>这个假设适合整合不断扩展的公共知识，却与日常表格直觉不同。在一份完整考勤表里，没有签到可以按业务规则视为缺勤；在跨机构历史资料中，没有记录通常不够支持否定结论。使用者必须知道系统处于哪种语境。</p>
+          <p>开放并不意味着无法做完整性检查。博物馆可以规定：每件正式入藏的器物必须有馆藏编号、保管机构和至少一条来源。这些是业务质量要求，不是关于世界真假的逻辑结论。把二者分开，才能既允许未知存在，又阻止明显缺项进入发布流程。</p>
+          <p>还要警惕把“唯一”写得过早。历史人物可能姓名相同，一件器物可能有多个旧编号，一处遗址可能跨越现代行政区变化。若模型轻易宣布某个名称只能对应一个对象，数据会被迫迎合假设。严格约束应该来自可靠的领域规则，而不是设计者追求整洁的偏好。</p>
+        </section>
+
+        <section aria-labelledby="validation">
+          <h2 id="validation">规则检查结构，人检查含义</h2>
+          <p><dfn data-term="SHACL">SHACL</dfn>是 W3C 用来描述并验证 RDF 图内容的标准语言。它可以规定某类对象需要哪些属性、值应是什么类型、某项最多出现几次，或一条路径必须满足什么条件。验证报告会指出哪些节点没有符合形状。</p>
+          <p>例如，系统可以检查“馆藏编号恰好一个”“入藏日期必须是日期类型”“保管机构必须连接到机构对象”。这些检查能尽早发现格式和结构问题，也能把质量要求变成可重复执行的规则，而不是依靠上线前人工扫一眼。</p>
+          <p>但结构正确不保证内容真实。一条“北郊鼎—出土于—城南遗址”在语法上完全合格，地点类型也正确，却可能抄错了原报告。自动验证擅长发现违反已知规则的内容，无法替代领域专家核对事实。</p>
+          <p>同样，推理器发现矛盾，也不一定知道现实中谁对谁错。它能提示某对象同时被声明为两个互斥类别，却不能阅读考古现场记录后裁决。系统最有价值的表现，是把冲突定位到具体陈述和来源，让人能够处理，而不是悄悄选择一个看起来更常见的答案。</p>
+          <p>涉及个人、医疗、法律或金融信息时，能连接不代表应当连接。跨来源组合可能推断出单个来源没有公开的敏感信息。访问控制、用途限制、删除机制和审计记录需要跟随数据与连接，而不是只保护某个登录页面。</p>
+          <p>质量工作因此至少有三层：输入时检查格式与必填项，合并时审查身份和语义映射，发布时抽查答案与证据路径。运行后还要监测过期来源、孤立对象、异常增长和无人负责的词汇。图越能连接，治理越不能只在入口处进行一次。</p>
+        </section>
+
+        <section aria-labelledby="failure">
+          <h2 id="failure">四种常见失败会互相放大</h2>
+          <ul class="check-list">
+            <li><strong>身份合并错误。</strong>同名者被当成一人，或同一对象被拆成多个记录。前者制造虚假路径，后者让真实路径断裂。</li>
+            <li><strong>含义映射过度。</strong>两个词表中的近似概念被宣布完全相同，局部差异因此消失。跨来源查询会返回表面统一、实际不可比的结果。</li>
+            <li><strong>时间被压平。</strong>曾经成立的任职、位置或状态被当成永久事实。用户问“现在在哪里”，系统却沿着旧连接回答。</li>
+            <li><strong>预测混入事实。</strong>模型建议的候选连接没有标注置信与生成方式，随后被其他应用当作已经核实的陈述继续使用。</li>
+          </ul>
+          <p>这四种失败会沿连接扩散。一个错误的人物合并会影响作品归属、机构关系和推荐结果；一个过期馆藏位置会被客服、展览地图和语言模型同时引用。图式系统的优势正是复用，因此修正也必须通知所有复用者。</p>
+          <p>降低风险的办法不是禁止连接，而是给不同状态以不同待遇。已核实事实、存在争议的主张、规则推导结论和模型候选应有明确标记。应用可以据此选择只展示核实内容，或在研究模式下同时展示候选和冲突。</p>
+        </section>
+
+        <section aria-labelledby="choice">
+          <h2 id="choice">何时值得建立这张网</h2>
+          <p>知识图谱最适合的问题，通常同时具有几种特征：数据来自多个系统，同一对象名称不统一；查询经常跨越多跳连接；概念含义需要复用；答案必须解释来源；结构会逐步扩展，而不是一次定死。</p>
+          <p>博物馆案例具备这些特征。藏品、遗址、人物、机构、事件和文献来自不同材料，研究问题会沿多种路径展开，年代说法需要附着证据。建立共同身份和语义模型的成本，有机会被跨目录检索、公众解释和研究复用共同摊薄。</p>
+          <p>反过来，如果数据只服务一个稳定流程，结构简单，查询主要是按字段筛选和统计，那么关系型数据库往往更直接。如果任务只是从大量文档中找相关段落，全文索引或向量检索可能先解决大部分问题。为了画出网络而引入复杂平台，通常不会自动产生回报。</p>
+          <p>选择时可以先做一条窄而完整的路径。挑一个真实问题，例如“找出与北郊鼎同时期、同地区且有公开来源的藏品”。只接入回答它所需的几类资料，记录对齐决策和来源，再观察用户是否真的沿路径获得新能力。小范围成功比先购买庞大平台更能验证价值。</p>
+          <p>还要提前写清维护责任。谁批准新的对象类型，谁处理重复对象，谁更新失效来源，谁解释冲突，谁为公开答案负责。如果这些问题没有主人，图会在上线后迅速变成一层更难清理的数据副本。</p>
+          <p>成本评估也应包括组织沟通。共同模型会暴露部门之间对同一词的不同理解，这既是价值，也是协商成本。若团队没有时间处理这些分歧，先做轻量目录和标识映射可能更现实。技术可以保存共识，却不能替组织产生共识。</p>
+          <div class="note">
+            <p><strong>一个实用的判断句：</strong>当核心价值来自“把原本分开的东西按可解释的含义连接起来”，并且连接会被多个问题重复利用时，知识图谱值得认真考虑。若价值主要来自单表事务、简单筛选或文档相似度，它可能不是第一选择。</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="ai">
+          <h2 id="ai">接入生成式 AI 之后，边界更重要</h2>
+          <p>在检索增强生成中，图可以帮助模型先找到相关对象和证据路径，再组织自然语言答案。它还能提供稳定标识，减少同名对象混淆。对于需要跨几步连接的问题，结构化路径通常比只取若干相似段落更容易解释。</p>
+          <p>但语言模型会把流畅当成默认输出形式。若检索到的图中存在冲突、缺失或预测连接，模型可能把它们压成一句肯定陈述。因此，应用应把来源、时间、陈述状态和推导方式一起交给模型，并要求答案区分已核实事实、推断与未知。</p>
+          <p>智能体能够根据任务调用查询、更新或外部工具，风险又多一层。读取图和改写图应使用不同权限；自动写入应先进入候选区；重要变更需要验证和审阅。把“能生成一条连接”误当成“有权宣布一条事实”，会破坏整套证据体系。</p>
+          <p>最终，知识图谱不是一台把数据变成真理的机器。它是一套让对象、含义、证据和责任更清楚的基础设施。真正的成熟，不是图里没有未知和争议，而是使用者能看见哪些内容已知、为什么相信、何时更新，以及下一步该由谁核实。</p>
+        </section>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="how-it-works.html">← 上一篇：从资料到答案</a>
+          <a href="sources.html">继续：来源与延伸阅读 →</a>
+        </nav>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-stmt">
+    <p class="foot-stmt__line">可信，不是因为图很大；而是因为每条路都能回到证据。</p>
+    <div class="foot-stmt__meta">
+      <span>知识图谱入门 · 判断</span>
+      <a href="main.html">回到起点</a>
+    </div>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

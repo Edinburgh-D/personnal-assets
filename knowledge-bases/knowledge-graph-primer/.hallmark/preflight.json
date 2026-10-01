@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-02",
+  "framework": "vanilla-static-html",
+  "fontStack": "local knowledge-base font tokens with web-font enhancement",
+  "palette": "OKLCH custom properties scoped to the knowledge base",
+  "motion": "motion-cut; functional menu and reading progress only",
+  "spacing": "4pt semantic scale",
+  "preserved": [
+    "repository index publishing markers",
+    "static HTML deployment model"
+  ]
+}

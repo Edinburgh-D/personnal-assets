@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-02T18:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "知识图谱究竟把什么组织起来，它为何不只是换一种画图方式？",
+      "readerStateChange": "读前只把主题想成可视化网络；读后能用稳定身份、明确联系与共同语义解释其核心，并能区分表格、搜索、图数据库和图式知识组织。",
+      "twoSentenceSummary": "页面从一件青铜器的多份异名记录出发，说明真正的困难是认出同一对象并为联系赋予清楚含义。随后比较全文搜索、业务数据库和图数据库，建立以可追踪路径组织事实的直觉模型。",
+      "continuityEvidence": "结尾把视觉网络收束为身份、含义和出处三项承诺，并明确转向下一页要解释的加工链与查询机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-it-works.html",
+      "centralQuestion": "这些分散事实怎样经过识别、对齐、建模和查询，变成可信而可用的知识网络？",
+      "readerStateChange": "读前只有事实网络的整体直觉；读后能按对象对齐、结构表达、模型设计、模式查询、有限推导与维护测试解释整条工作链。",
+      "twoSentenceSummary": "页面沿博物馆资料处理过程，展示对象识别、三元组表达和本体设计怎样把异构材料变成可组合陈述。随后用图模式查询与受规则约束的推导说明答案如何产生，也指出每一步的错误会被后续环节放大。",
+      "continuityEvidence": "开头直接承接上一页提出的组织承诺，结尾把链路中的身份、模型、来源和时间风险推向下一页的适用性与失效判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "limits-and-choices.html",
+      "centralQuestion": "既然结构和推理都依赖选择，怎样判断知识图谱是否适合一个问题，并识别它最容易出错的地方？",
+      "readerStateChange": "读前能解释系统如何运转；读后能检查来源、缺失语义、结构约束、身份与时间风险，并根据问题形态和治理能力做技术选型。",
+      "twoSentenceSummary": "页面用冲突年代与同名对象说明来源、时间和陈述状态必须可追踪，并区分结构验证与事实核查。最后给出采用条件、替代方案和维护责任，也把判断迁移到检索增强生成与智能体场景。",
+      "continuityEvidence": "全文逐项检验上一页流水线的薄弱点，末段把开放问题自然留给图谱与生成式模型结合时的证据边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只知道正文引用了标准；读后能按基础模型、查询、语义、验证和综合综述的顺序选择权威材料继续阅读。",
+      "twoSentenceSummary": "页面列出 RDF、RDF Schema、OWL、SPARQL 与 SHACL 的 W3C 文档，并说明每份规范支撑正文中的哪类表述。同行评议综述补充领域全景，Google 发布文章只用于解释产品历史语境。",
+      "continuityEvidence": "该页从判断页的来源与验证要求进入权威材料，并通过返回开篇和上一章的链接闭合整站阅读路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

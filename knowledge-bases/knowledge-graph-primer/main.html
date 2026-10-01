@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>知识图谱入门｜把分散事实接成可理解的网络</title>
+  <meta name="description" content="从博物馆藏品案例出发，理解知识图谱如何组织对象、联系与语义，以及它与表格、搜索和普通图数据库的差别。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Noto+Sans+SC:wght@400;700;800&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('kb_darkMode');
+        var dark = saved === 'true' || (saved === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (error) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" id="readingProgress" role="progressbar" aria-label="阅读进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <nav class="site-nav" aria-label="主导航">
+    <a class="wordmark" href="main.html">KNOWLEDGE / GRAPH</a>
+    <div class="nav-actions">
+      <button class="control" id="themeButton" type="button" aria-pressed="false" aria-label="切换深色模式"><span class="theme-label">深色</span></button>
+      <button class="control nav-menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">目录</button>
+    </div>
+  </nav>
+  <button class="menu-scrim" id="menuScrim" type="button" aria-label="关闭目录" hidden></button>
+  <aside class="menu-panel" id="menuPanel" aria-label="阅读目录" hidden>
+    <h2>知识图谱入门</h2>
+    <ul class="menu-list">
+      <li><a href="main.html" aria-current="page">从对象到网络</a></li>
+      <li><a href="how-it-works.html">从资料到答案</a></li>
+      <li><a href="limits-and-choices.html">边界与选择</a></li>
+      <li><a href="sources.html">来源与延伸阅读</a></li>
+      <li><a href="../index.html">知识库总览</a></li>
+    </ul>
+    <p class="menu-meta">三篇连续正文，从直觉走到判断。</p>
+  </aside>
+
+  <div class="shell">
+    <div class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span aria-hidden="true">/</span>
+      <a href="../index.html">知识库总览</a><span aria-hidden="true">/</span>
+      <span>知识图谱入门</span>
+    </div>
+
+    <main id="content" data-kb-content data-page-role="overview">
+      <template data-narrative="question">知识图谱究竟把什么组织起来，它为何不只是换一种画图方式？</template>
+      <template data-narrative="example">城市博物馆要让读者从一件青铜器出发，找到年代、出土地、收藏机构、相关人物与可靠来源。</template>
+      <template data-narrative="conclusion">知识图谱的核心不是图形，而是用稳定身份、明确关系和共享语义，把分散事实接成可追踪、可组合的网络。</template>
+      <template data-narrative="next-question">这些分散事实怎样经过识别、对齐、建模和查询，变成可信而可用的知识网络？</template>
+
+      <header class="page-header">
+        <h1>事实之间，有路可走</h1>
+        <p class="lede">一件青铜器不只是一行藏品记录。它通向年代、地点、人物、事件，也通向每条说法的出处。</p>
+      </header>
+
+      <figure class="graph-figure">
+        <svg class="graph-stage" viewBox="0 0 820 430" role="img" aria-labelledby="graph-title graph-desc">
+          <title id="graph-title">博物馆藏品关联示意</title>
+          <desc id="graph-desc">中央是一件青铜器，四周连接年代、出土地、收藏机构与考古记录，重点连线指向考古记录。</desc>
+          <line class="graph-edge" x1="408" y1="212" x2="164" y2="100"></line>
+          <line class="graph-edge" x1="408" y1="212" x2="650" y2="92"></line>
+          <line class="graph-edge" x1="408" y1="212" x2="650" y2="326"></line>
+          <line class="graph-edge graph-edge--accent" x1="408" y1="212" x2="172" y2="330"></line>
+          <line class="graph-edge" x1="172" y1="330" x2="650" y2="326"></line>
+          <circle class="graph-node graph-node--a" cx="408" cy="212" r="58"></circle>
+          <circle class="graph-node graph-node--b" cx="164" cy="100" r="45"></circle>
+          <circle class="graph-node graph-node--plain" cx="650" cy="92" r="45"></circle>
+          <circle class="graph-node graph-node--c" cx="650" cy="326" r="45"></circle>
+          <circle class="graph-node graph-node--plain" cx="172" cy="330" r="45"></circle>
+          <text class="graph-label" x="408" y="218" text-anchor="middle">青铜器</text>
+          <text class="graph-label" x="164" y="106" text-anchor="middle">年代</text>
+          <text class="graph-label" x="650" y="98" text-anchor="middle">出土地</text>
+          <text class="graph-label" x="650" y="332" text-anchor="middle">博物馆</text>
+          <text class="graph-label" x="172" y="336" text-anchor="middle">记录</text>
+          <text class="graph-rel" x="273" y="136" text-anchor="middle">制作于</text>
+          <text class="graph-rel" x="543" y="137" text-anchor="middle">出土于</text>
+          <text class="graph-rel" x="545" y="278" text-anchor="middle">收藏于</text>
+          <text class="graph-rel" x="276" y="286" text-anchor="middle">记载于</text>
+        </svg>
+        <figcaption>示意：把同一件藏品、地点、时代、馆藏记录与材料出处接在一起，读者就能沿着线索继续追问。</figcaption>
+      </figure>
+
+      <article class="prose">
+        <section aria-labelledby="start">
+          <h2 id="start">从一件藏品开始</h2>
+          <p>先给这个名字一个朴素定义。<dfn data-term="知识图谱">知识图谱</dfn>是用可识别的对象、明确的联系和共同含义来组织事实的网络。网络中的对象叫<dfn data-term="实体">实体</dfn>，它可以是一件器物、一座城市、一个人，也可以是一个抽象概念。两个对象之间被命名的联系叫<dfn data-term="关系">关系</dfn>，例如“出土于”“收藏于”或“师从”。</p>
+          <p>设想城市博物馆正在整理一件青铜器。馆藏系统里有编号、名称、尺寸和入藏日期。考古报告写着出土地点与地层。地方志提到铸造作坊，研究论文又给出年代判断。普通搜索能分别找到这些材料，却不会自动说明几份材料里的简称、旧称和编号是不是指向同一件器物。</p>
+          <p>真正困难的不是把线画出来，而是确定线的两端是谁。馆藏卡写“兽面纹鼎”，考古记录写“ M3:12 鼎”，展览图录又称“北郊鼎”。如果系统把它们当成三个对象，读者会得到割裂的答案。如果它们其实是不同器物，强行合并又会制造一条看似完整、实则错误的历史。</p>
+          <p>因此，圆点和连线只是最后的可视外观。更重要的是给对象一个稳定身份，让不同资料能够指向它；再给每种联系一个明确名称，让人和机器知道“出土于”不同于“现藏于”。这两步让资料从相邻摆放变成可以组合的事实。</p>
+          <p>表格当然也能记录这些内容。一个“藏品表”可以连接“地点表”和“人物表”，关系型数据库对此非常擅长。两者并非新旧替代。差别在于关注点：表格常从固定业务结构出发，而图式表达把连接本身放在中心，适合对象类型多、连接路径长、资料来源不断变化的场景。</p>
+          <p>这种差别可以从一次修改看出来。若研究者确认“北郊鼎”还有一个旧馆藏号，图中只需为同一对象补充一个标识。所有沿着该对象展开的地点、年代和文献路径都会继续成立。若旧系统把不同名称复制成多行，维护者还要逐表确认哪些行需要同步。</p>
+          <p>连接也让局部资料获得新的入口。考古简报原本按发掘项目归档，馆藏目录按器物编号排列，人物资料按姓名检索。网络不要求它们放弃原有组织方式，而是在各自边界之外建立可解释的接点。读者从任何一个入口进入，都能抵达其他资料。</p>
+        </section>
+
+        <section aria-labelledby="meaning">
+          <h2 id="meaning">连接必须拥有共同含义</h2>
+          <p>同一条线在不同机构里可能有不同含义。甲馆把“作者”用于亲手制作器物的人，乙馆则把设计者、工作室与传统归在同一栏。两份数据即使列名相同，也未必能直接合并。把字段拼到一起，只解决了格式问题，没有解决意思问题。</p>
+          <p>为此，图中通常还需要<dfn data-term="模式层">模式层</dfn>。它说明哪些对象属于“藏品”“地点”“人物”或“机构”，也说明哪些联系可以连接哪些类型。它更像一本共同使用的词典与交通规则，而不是另一批藏品事实。有了这层说明，“某人出生于某地”和“某器物出土于某地”就不会因为都出现地点而被混为一谈。</p>
+          <p>共同含义并不要求所有人采用同一套世界观。博物馆可以保留自己的专业分类，同时声明它与公共词表中某个概念相近、较窄或较宽。关键在于把差异说清，而不是把差异抹掉。只有这样，跨机构连接才是可解释的协作，不是无声的数据吞并。</p>
+          <p>共同含义还需要共同维护。分类会随研究改变，行政区划会调整，机构会更名。系统应允许旧称继续被找到，同时把当前名称与适用时间说清。否则，今天看似统一的词汇，会在几年后变成无人理解的历史残留。</p>
+          <div class="note">
+            <p><strong>图中的“知识”不是绝对真理。</strong>它更接近一组被明确表达、能够检查来源的主张。年代可能有争议，人物归属可能后来被修订。同一对象可以同时保留不同说法，只要系统说明谁在何时依据什么材料提出了它们。</p>
+          </div>
+          <p>这也解释了为什么一张社交网络图不一定构成这里讨论的对象。社交图可以只记录账号 A 关注账号 B，却不说明账号对应什么人、关注意味着什么、数据来自何时。只要任务是计算传播路径，这已经够用。若任务要回答“哪位考古学者参与了某次发掘并研究过同类器物”，则必须更认真地处理身份、类型与语义。</p>
+        </section>
+
+        <section aria-labelledby="difference">
+          <h2 id="difference">它与搜索、数据库和图算法的距离</h2>
+          <p>全文搜索的基本动作是从文字中找匹配。输入“北郊鼎”，搜索引擎会返回包含这些字的网页或文档。它很适合发现材料，却难以仅凭字面回答“与这件器物同一时期、同一地区出土且由另一家机构收藏的器物有哪些”。这个问题要求沿多种已命名的联系连续行走。</p>
+          <p>普通业务数据库的基本动作是按照预先设计的字段保存和联结记录。对于订单、账户、库存等结构稳定的任务，它往往更简单、更成熟。若博物馆只需管理库房位置和借展流程，不必为了追求时髦而换成图式系统。技术选择应由问题形态决定，而不是由名词的新鲜程度决定。</p>
+          <p>图数据库强调怎样高效保存和遍历节点、边。它是一类存储与计算技术，可以装社交网络、路线网络、欺诈网络，也可以装本文讨论的事实网络。后者还要求对象身份和连接含义能够被共享、解释和治理。换句话说，图数据库可以是容器，但容器本身不会自动带来知识。</p>
+          <p>机器学习中的图表示又是另一层。算法可以把节点和连接编码成向量，用于相似度、分类或链接预测。这些方法能发现未写出的模式，却不会因为输出一个高分候选就把它变成事实。预测结果需要与来源明确的陈述分开保存，否则概率会被误读成确定性。</p>
+          <p>还有一种常见误解，是把可视化工具当成底层能力。交互式网络图适合探索邻近对象，却不适合展示成千上万条线。真正的系统即使完全不画网络，也可以通过搜索框、列表、地图或时间轴提供服务。视觉形式应服从读者要完成的工作。</p>
+          <p>把这些区别放回博物馆案例，分工就清楚了。搜索帮助策展人发现一篇新论文；业务数据库管理器物出入库；图式系统连接器物、地点、人物和出处；统计或学习模型提出“可能相关”的候选。它们可以协作，不必互相冒充。</p>
+        </section>
+
+        <section aria-labelledby="usefulness">
+          <h2 id="usefulness">当问题沿路径展开</h2>
+          <p>事实一旦被连接，问题就不必停在一个对象上。读者可以从器物到出土地，再到同一地层中的其他发现；也可以从研究者到论文，再到论文引用的原始报告。每一步都沿着命名明确的线路前进，因此答案不仅能返回结果，还能返回抵达结果的路径。</p>
+          <p>这种路径感是它最直观的价值。推荐系统可以解释“因为你看过甲，而甲与乙共享主题并由同一策展人编目，所以推荐乙”。客服系统可以从产品、零部件、故障现象走到维修手册。企业内部检索也可以把项目、团队、文档和决策记录接起来，减少同名词在不同部门中的误解。</p>
+          <p>同一网络还能支持不同深度的界面。公众页面可以只展示几条清楚的来历线索，研究界面则展开争议、版本和引用。两者使用相同的对象身份与材料出处，却不必把所有复杂性同时推给每位读者。这种分层比为每个应用复制一套数据更容易保持一致。</p>
+          <p>不过，连接越多并不自动越聪明。无关的边会制造噪声，错误的合并会把两个人的人生拼在一起，过时的联系会让旧馆藏位置继续出现在答案中。好的设计从具体问题出发，只表达有用且能维护的部分。它不是把世界完整复制到数据库里，而是为一组任务建立可检查的局部模型。</p>
+          <p>城市博物馆真正需要的也不是“万物互联”。它需要让公众追溯一件器物的来历，让研究者跨目录比较同类发现，让馆员发现记录之间的冲突。这三个目标决定哪些对象值得赋予稳定身份，哪些连接需要来源，哪些变化必须及时更新。</p>
+          <p>范围清楚之后，衡量成效也会更具体。公众是否更容易找到材料出处，研究者是否减少了重复核对，馆员是否更早发现冲突，这些都比“图中有多少节点”更接近真实价值。规模只能描述系统大小，不能证明理解已经发生。能否回答原本答不了的问题，才是更好的检验。</p>
+          <p>到这里，图形已经退到次要位置。核心是一种组织承诺：同一对象尽量只有一个可持续识别的身份，每条连接都说明自己的含义，每个重要说法都能回到材料。接下来要看的，是这份承诺如何变成一条可运行的加工链，以及查询为什么能够沿着它得到答案。</p>
+        </section>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="sources.html">查看关键来源</a>
+          <a href="how-it-works.html">下一篇：从资料到答案 →</a>
+        </nav>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-stmt">
+    <p class="foot-stmt__line">线不是装饰。它必须说明事实怎样彼此支撑。</p>
+    <div class="foot-stmt__meta">
+      <span>知识图谱入门 · 2026</span>
+      <a href="../index.html">返回知识库总览</a>
+    </div>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>
