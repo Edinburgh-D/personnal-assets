@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "筋膜理论与身体放松",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-02",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "筋膜不是一层保鲜膜",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者听过筋膜黏连、筋膜链和筋膜放松等说法，却难以区分解剖事实、身体感受与营销解释。",
+      "readerStateAfter": "读者能够把筋膜理解为遍布身体、分层连续的结缔组织网络，并知道紧绷感不能自动等同于筋膜发生黏连。",
+      "readerQuestion": "日常所说的筋膜究竟是什么，为什么一种真实的紧绷感不能直接证明筋膜黏住了？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一位久坐后觉得右肩和大腿后侧像被一条线拉住的人，在按压、活动和短暂滚压后都感觉松了一些。",
+      "newTerms": [
+        {
+          "term": "筋膜",
+          "definition": "由胶原纤维、细胞和基质等构成，并以不同厚度和方向包裹、分隔或连接身体结构的结缔组织系统。"
+        },
+        {
+          "term": "结缔组织",
+          "definition": "以细胞外基质为重要组成、承担连接、支撑、分隔与传力等作用的一大类组织。"
+        },
+        {
+          "term": "深筋膜",
+          "definition": "位于皮下组织更深处、与肌肉群和肢体分隔关系密切的纤维性筋膜层。"
+        },
+        {
+          "term": "滑动界面",
+          "definition": "相邻组织层在动作中能够彼此移动、又不必完全分离的接触区域。"
+        }
+      ],
+      "conclusion": "筋膜是真实而复杂的结缔组织网络，但紧绷、压痛和动作受限是多系统共同产生的体验，不能只凭手感诊断所谓黏连。",
+      "nextQuestion": "既然放松后的变化不能简单解释为把筋膜揉开，按压、滚压与拉伸为什么仍可能让人立刻觉得更松、更好动？",
+      "nextPage": "what-touch-changes.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "what-touch-changes.html",
+      "title": "松开的不只是一层组织",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把筋膜理解为遍布身体、分层连续的结缔组织网络，并知道紧绷感不能自动等同于筋膜发生黏连。",
+      "readerStateAfter": "读者能够用组织受力、感觉输入、疼痛调节与动作学习共同解释短时放松效果，不再把单一手法当成永久改造。",
+      "readerQuestion": "既然放松后的变化不能简单解释为把筋膜揉开，按压、滚压与拉伸为什么仍可能让人立刻觉得更松、更好动？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "筋膜是真实而复杂的结缔组织网络，但紧绷、压痛和动作受限是多系统共同产生的体验，不能只凭手感诊断所谓黏连。",
+      "coreExample": "继续观察同一位久坐者：先比较左右转肩和前屈，再进行温和滚压与主动活动，最后重新测试，而不是只评价按下去痛不痛。",
+      "newTerms": [
+        {
+          "term": "关节活动度",
+          "definition": "某个关节或动作能够达到的可用运动范围，受组织、感觉、力量和控制等多方面影响。"
+        },
+        {
+          "term": "拉伸耐受",
+          "definition": "人在牵拉感觉逐渐增强时，愿意并能够继续进入动作范围的程度。"
+        },
+        {
+          "term": "机械感受",
+          "definition": "神经系统对压力、牵拉、振动和关节位置等机械刺激的感知。"
+        },
+        {
+          "term": "疼痛敏化",
+          "definition": "疼痛系统变得更容易报警，使原本不强或已恢复的刺激也可能被体验为明显不适。"
+        }
+      ],
+      "conclusion": "放松手法的短时效果更适合被理解为组织受力与神经调节共同改变了感觉和可用动作范围，而不是证明某层筋膜被永久拉长或复位。",
+      "nextQuestion": "在无法仅凭酸痛找到唯一病因的前提下，普通人怎样选择强度、组合动作并识别不适合自行处理的情况？",
+      "nextPage": "practice-and-boundaries.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "practice-and-boundaries.html",
+      "title": "让身体变松，也让判断变清楚",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用组织受力、感觉输入、疼痛调节与动作学习共同解释短时放松效果，不再把单一手法当成永久改造。",
+      "readerStateAfter": "读者能够用低风险的前后对照组织一次放松练习，知道何时减少刺激、何时停止，并把持续问题交给合格专业人员评估。",
+      "readerQuestion": "在无法仅凭酸痛找到唯一病因的前提下，普通人怎样选择强度、组合动作并识别不适合自行处理的情况？",
+      "dependsOn": [
+        "what-touch-changes.html"
+      ],
+      "priorConclusion": "放松手法的短时效果更适合被理解为组织受力与神经调节共同改变了感觉和可用动作范围，而不是证明某层筋膜被永久拉长或复位。",
+      "coreExample": "把同一位久坐者的右肩和大腿后侧不适，整理成测试、温和刺激、主动活动、再次测试和次日观察的一次小实验。",
+      "newTerms": [
+        {
+          "term": "自我筋膜放松",
+          "definition": "借助自身动作、手或滚轴等工具对软组织施加可控制压力，以获得短时舒适或活动变化的自我练习。"
+        },
+        {
+          "term": "症状反应",
+          "definition": "练习当下、结束后以及次日出现的疼痛、麻木、肿胀、活动和功能变化。"
+        },
+        {
+          "term": "红旗征象",
+          "definition": "提示可能存在骨折、感染、神经受压、血栓或其他严重问题，需要及时医学评估的异常表现。"
+        }
+      ],
+      "conclusion": "安全的身体放松以可控、可复测和可恢复为原则，手法只是帮助恢复活动的一种工具，持续或异常症状需要专业评估而不是不断加压。",
+      "nextQuestion": "当新的放松方法声称能排毒、复位或打通某条线路时，应当要求它提供哪些可检验的定义、比较和安全边界？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、术语与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

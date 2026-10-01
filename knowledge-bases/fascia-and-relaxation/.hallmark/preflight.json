@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-02",
+  "framework": "vanilla-html",
+  "fontStack": "knowledge-base-local tokens with Chinese serif/sans pairing",
+  "palette": "OKLCH custom properties",
+  "motion": "motion-cut",
+  "spacing": "4pt scale",
+  "preserved": ["static multipage repository", "root overview publication flow"]
+}

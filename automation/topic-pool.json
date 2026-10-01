@@ -3704,6 +3704,13 @@
       "generatedAt": "2026-10-02",
       "slug": "knowledge-graph-primer",
       "entry": "knowledge-bases/knowledge-graph-primer/main.html"
+    },
+    {
+      "name": "筋膜理论与身体放松",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-02",
+      "slug": "fascia-and-relaxation",
+      "entry": "knowledge-bases/fascia-and-relaxation/main.html"
     }
   ],
   "skipped": []

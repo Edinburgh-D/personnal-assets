@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-02T18:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "日常所说的筋膜究竟是什么，为什么一种真实的紧绷感不能直接证明筋膜黏住了？",
+      "readerStateChange": "读前容易把紧绷感直接解释成筋膜黏连；读后能把筋膜放回分层结缔组织网络，并区分感受、模型与诊断。",
+      "twoSentenceSummary": "页面从组织层次、滑动与传力建立筋膜直觉，再解释紧绷感为何可能由组织、神经和情境共同形成。久坐者案例把一次变松分为可观察事实、合理推测与尚不能确认的结构主张。",
+      "continuityEvidence": "结尾明确留下按压、滚压与拉伸为何能产生真实短时变化的问题，直接承接下一页的机制分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "what-touch-changes.html",
+      "centralQuestion": "既然放松后的变化不能简单解释为把筋膜揉开，按压、滚压与拉伸为什么仍可能让人立刻觉得更松、更好动？",
+      "readerStateChange": "读前只知道手法后会松，却容易归因于组织被揉开；读后能用受力、感觉输入、耐受和动作学习共同解释变化。",
+      "twoSentenceSummary": "页面用活动范围研究说明滚压和拉伸可能提供短时帮助，但并未证明永久重塑筋膜。随后把疼痛调节、主动活动与组合照护接入同一机制，说明手法更像活动窗口。",
+      "continuityEvidence": "页面末尾把机制理解推进为剂量和风险选择，并提出普通人如何组合练习及识别停止条件，正是下一页的中心。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "practice-and-boundaries.html",
+      "centralQuestion": "在无法仅凭酸痛找到唯一病因的前提下，普通人怎样选择强度、组合动作并识别不适合自行处理的情况？",
+      "readerStateChange": "读前缺少可操作的强度与停止标准；读后能用前后对照组织温和练习，并识别红旗和专业服务中的不可信信号。",
+      "twoSentenceSummary": "页面把放松整理成测试、温和刺激、主动活动、复测与稍后观察，并用症状反应调节剂量。它同时列出神经、循环、感染和创伤红旗，再给出审查健康主张的四个问题。",
+      "continuityEvidence": "作为叙事末页，它把前两页的结构与机制转化为安全判断，并留下审查排毒、复位和打通线路等新主张的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的简短引证；读后能够按解剖、机制、干预与指南层次回查主张，并理解外推限制。",
+      "twoSentenceSummary": "来源页列出筋膜形态与神经支配、疼痛科学、滚压拉伸、按摩安全和腰痛指南等十二项材料。页面另行说明系统综述、解剖发现与个体诊断不能相互替代。",
+      "continuityEvidence": "来源编号与三页正文逐一对应，并在末段说明未来与中医基础、穴位推拿和体质养生连接时应保留概念边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
