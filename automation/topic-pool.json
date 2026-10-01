@@ -3683,6 +3683,13 @@
       "generatedAt": "2026-10-01",
       "slug": "ai-chip-architecture-guide",
       "entry": "knowledge-bases/ai-chip-architecture-guide/main.html"
+    },
+    {
+      "name": "斯德哥尔摩综合征",
+      "domain": "心理学",
+      "generatedAt": "2026-10-01",
+      "slug": "stockholm-syndrome",
+      "entry": "knowledge-bases/stockholm-syndrome/main.html"
     }
   ],
   "skipped": []

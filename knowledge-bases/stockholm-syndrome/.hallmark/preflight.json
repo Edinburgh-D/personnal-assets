@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-01",
+  "framework": "vanilla-html",
+  "fontStack": "new self-contained CJK editorial pairing",
+  "palette": "new OKLCH token set scoped to knowledge-bases/stockholm-syndrome",
+  "motion": "motion-cut with disclosure and link feedback only",
+  "spacing": "4pt semantic scale",
+  "preserved": ["repository static publishing contract", "root directory index conventions"]
+}

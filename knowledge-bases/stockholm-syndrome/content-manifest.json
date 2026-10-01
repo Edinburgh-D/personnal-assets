@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "斯德哥尔摩综合征",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-01",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一个著名标签，还是一种诊断？",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "当我们说某人有斯德哥尔摩综合征时，这个标签究竟说明了什么，又遗漏了什么？",
+      "readerStateBefore": "读者熟悉人质爱上劫持者的流行说法，却不清楚它的历史来源、证据强度与诊断地位。",
+      "readerStateAfter": "读者能够把流行标签、可观察行为和正式诊断分开，并知道理解当事人需要回到具体处境。",
+      "priorConclusion": "",
+      "coreExample": "1973年斯德哥尔摩诺马尔姆广场银行劫持事件中，四名银行职员在六天受困期间对劫持者表现出同情并对警方行动感到担忧，这组复杂反应后来被压缩成一个著名标签。",
+      "conclusion": "斯德哥尔摩综合征是一个描述性且有争议的流行标签，不是经过验证的独立诊断；要理解看似矛盾的反应，必须先重建威胁、依赖和选择受限的处境。",
+      "nextQuestion": "在威胁、依赖和选择受限同时存在时，哪些心理过程会让顺从、关注施害者或维护关系成为可理解的反应？",
+      "nextPage": "mechanisms.html",
+      "newTerms": [
+        { "term": "斯德哥尔摩综合征", "definition": "用来描述部分受困者对控制者产生同情、依恋或维护行为的流行标签，但没有统一且经验证的诊断标准。" },
+        { "term": "诊断效度", "definition": "一个诊断名称能否稳定区分出同一类现象，并能被可靠测量和用于解释或预测。" },
+        { "term": "操作性定义", "definition": "把抽象概念转成可以一致观察、记录和检验的具体标准。" },
+        { "term": "后见之明偏差", "definition": "知道结果后，误以为当时的人也应当看清同样结果与风险的倾向。" }
+      ]
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "受困时，选择如何被重新塑形",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "在威胁、依赖和选择受限同时存在时，哪些心理过程会让顺从、关注施害者或维护关系成为可理解的反应？",
+      "readerStateBefore": "读者能够把流行标签、可观察行为和正式诊断分开，并知道理解当事人需要回到具体处境。",
+      "readerStateAfter": "读者能够用受困、安抚、注意收窄与间歇性善待等机制解释行为，同时保留证据有限和个体差异的边界。",
+      "priorConclusion": "斯德哥尔摩综合征是一个描述性且有争议的流行标签，不是经过验证的独立诊断；要理解看似矛盾的反应，必须先重建威胁、依赖和选择受限的处境。",
+      "coreExample": "重新观察诺马尔姆广场事件：人质的安全、食物、信息与离开机会同时受劫持者和警方行动影响，因此对某一方的靠近不能只按自由环境中的喜爱来解释。",
+      "conclusion": "看似亲近或维护控制者的行为可能来自多条心理路径，核心是人在受困条件下对危险、资源和关系作出的适应；这些路径能帮助解释，却不能反向证明存在一个统一综合征。",
+      "nextQuestion": "既然外在行为不能自动证明动机或诊断，我们在新闻、亲密关系和求助情境中应当如何判断与回应？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "创伤性受困", "definition": "人在真实威胁中难以离开，并且生存资源或信息受控制者支配的处境。" },
+        { "term": "安抚反应", "definition": "为了降低眼前攻击风险而顺从、配合、读懂对方情绪或维持关系的防御方式。" },
+        { "term": "强制控制", "definition": "通过孤立、监视、威胁、资源限制和规则变化等手段逐步压缩他人自主性的控制模式。" },
+        { "term": "创伤联结", "definition": "在权力不对等与伤害、缓和交替的关系中形成并维持的强烈情感依附。" },
+        { "term": "间歇性强化", "definition": "奖励并非每次出现而是不可预测地出现，从而使行为更难消退的学习过程。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "从贴标签转向看处境",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["mechanisms.html"],
+      "readerQuestion": "既然外在行为不能自动证明动机或诊断，我们在新闻、亲密关系和求助情境中应当如何判断与回应？",
+      "readerStateBefore": "读者能够用受困、安抚、注意收窄与间歇性善待等机制解释行为，同时保留证据有限和个体差异的边界。",
+      "readerStateAfter": "读者能够描述事实、检查控制条件、避免责怪当事人，并在现实风险中优先选择安全与专业支持。",
+      "priorConclusion": "看似亲近或维护控制者的行为可能来自多条心理路径，核心是人在受困条件下对危险、资源和关系作出的适应；这些路径能帮助解释，却不能反向证明存在一个统一综合征。",
+      "coreExample": "面对同一诺马尔姆广场事件，判断者不再问人质为何站错队，而是分别检查当时可见的危险、信息来源、离开成本、事后反应和证据缺口。",
+      "conclusion": "负责任的判断以可观察事实和控制条件为起点，不用一个争议标签替代当事人的叙述；现实支持则以安全、选择权和合格专业帮助为优先。",
+      "nextQuestion": "当下次遇到看似自相矛盾的受困者反应时，我们能否先问他当时拥有哪些真实选择，而不是先替他命名？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "创伤知情", "definition": "在理解和提供支持时，把创伤可能造成的影响、安全需要与当事人的选择权纳入考虑。" },
+        { "term": "二次伤害", "definition": "当事人在事件之后因不被相信、被责怪、被迫反复讲述或失去控制而再次受到的伤害。" },
+        { "term": "安全计划", "definition": "围绕具体风险、可信联系人、紧急去处、证件与通讯方式预先设计的可执行安排。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

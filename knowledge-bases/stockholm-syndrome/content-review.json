@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "Codex fresh-context reader pass after disk reread",
+  "reviewedAt": "2026-10-01T18:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当我们说某人有斯德哥尔摩综合征时，这个标签究竟说明了什么，又遗漏了什么？",
+      "readerStateChange": "读前把著名说法当成现成诊断；读后能区分历史事件、可观察行为、解释机制与正式诊断，并主动追问受困处境。",
+      "twoSentenceSummary": "正文从1973年诺马尔姆广场事件出发，说明复杂的人质反应怎样被压缩为“爱上劫匪”的流行故事。随后以系统综述和现行诊断框架说明该名称缺少统一标准，并把理解重心移回威胁、依赖和有限选择。",
+      "continuityEvidence": "结尾同时保留“反应真实”与“诊断未确立”两个事实，并明确把下一步推进到威胁、依赖与有限选择下的心理机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "在威胁、依赖和选择受限同时存在时，哪些心理过程会让顺从、关注施害者或维护关系成为可理解的反应？",
+      "readerStateChange": "读前只知道应当回到处境；读后能用受困、安抚、强制控制、创伤联结和间歇性强化提出有条件的解释，并避免把模型当诊断。",
+      "twoSentenceSummary": "正文沿用诺马尔姆广场事件，先画出威胁、依赖与不确定组成的受困结构，再解释安抚和危险监测为何可能具有生存功能。后半部分区分长期控制与创伤联结，逐项标明理论、经验研究和执法材料的证据边界。",
+      "continuityEvidence": "开头承接上一页的处境转向，结尾把多种机制收束为“外在亲近不等于自由赞同”，从而自然引出如何在现实中判断与回应。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然外在行为不能自动证明动机或诊断，我们在新闻、亲密关系和求助情境中应当如何判断与回应？",
+      "readerStateChange": "读前能够解释可能机制但仍缺少行动边界；读后能分开事实、处境、本人意义与临床评估，并以安全、选择权和专业支持回应风险。",
+      "twoSentenceSummary": "正文把含混标签改写为可核查描述，分析新闻叙事、责怪和二次伤害如何扭曲判断。随后以创伤知情沟通、安全计划和专业求助边界说明现实支持，并回到诺马尔姆广场检验整条方法。",
+      "continuityEvidence": "开头直接使用上一页“行为不等于动机”的结论；结尾将机制理解迁移为新的提问顺序，完成从直觉到解释再到判断的学习弧。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分历史档案、系统综述、理论论文、经验研究、执法资料和临床指南，并知道各类来源能够支持到哪里。",
+      "twoSentenceSummary": "参考页列出瑞典警察博物馆、WHO、APA、同行评审论文与FBI历史资料，并说明每项来源在正文中的用途。页面另行列出发生率、统一标准和机制推广方面仍然存在的证据缺口。",
+      "continuityEvidence": "十项来源逐一对应前三页的历史、诊断、机制与支持主张，并提供从判断页返回阅读起点的完整路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

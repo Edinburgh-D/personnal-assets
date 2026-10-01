@@ -1,0 +1,78 @@
+/* Hallmark design tokens · Atelier psychology archive */
+:root {
+  --color-paper: oklch(96% 0.018 78);
+  --color-paper-raised: oklch(98% 0.012 78);
+  --color-paper-soft: oklch(92% 0.024 74);
+  --color-ink: oklch(20% 0.025 42);
+  --color-ink-2: oklch(34% 0.025 42);
+  --color-muted: oklch(43% 0.022 48);
+  --color-rule: oklch(72% 0.028 62);
+  --color-accent: oklch(45% 0.145 28);
+  --color-accent-soft: oklch(90% 0.045 32);
+  --color-accent-ink: oklch(98% 0.012 78);
+  --color-focus: oklch(48% 0.16 255);
+  --color-success: oklch(42% 0.11 150);
+  --color-error: oklch(48% 0.17 28);
+  --color-shadow: oklch(20% 0.025 42 / 0.08);
+
+  --color-dark-paper: oklch(15% 0.018 42);
+  --color-dark-paper-raised: oklch(19% 0.02 42);
+  --color-dark-paper-soft: oklch(23% 0.024 42);
+  --color-dark-ink: oklch(94% 0.016 78);
+  --color-dark-ink-2: oklch(82% 0.02 72);
+  --color-dark-muted: oklch(70% 0.02 66);
+  --color-dark-rule: oklch(38% 0.028 48);
+  --color-dark-accent: oklch(66% 0.12 28);
+  --color-dark-accent-soft: oklch(27% 0.05 28);
+  --color-dark-accent-ink: oklch(15% 0.018 42);
+  --color-dark-focus: oklch(72% 0.12 255);
+  --color-dark-shadow: oklch(8% 0.015 42 / 0.28);
+
+  --font-display: "Noto Serif SC", "Source Han Serif SC", serif;
+  --font-body: "Noto Sans SC", "Source Han Sans SC", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.5rem, 7vw, 4.2rem);
+  --text-display: clamp(3rem, 9vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-strong: 3px;
+  --rule-focus: 3px;
+  --radius-small: 0.25rem;
+  --radius-panel: 0.75rem;
+  --shadow-menu: 0 1.5rem 4rem var(--color-shadow);
+
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+  --content-wide: 72rem;
+  --content-prose: 68ch;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+}
