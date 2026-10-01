@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-01T22:12:48+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当一个威权政体没有在危机中倒下时，我们究竟在解释什么？",
+      "readerStateChange": "读前容易把领导人长期在位、国家运转和政体存续混成一个稳定印象；读后能分清四个对象，并限定冲击、结果与观察期限。",
+      "twoSentenceSummary": "正文从虚构的海岬国危机切入，说明“没有倒下”只是待解释结果，并追溯威权韧性概念从中国研究走向比较政治的路径。随后用对象与时间边界拆开政体、政府、领导人和国家能力，说明韧性不是正当性或社会福祉的综合评分。",
+      "continuityEvidence": "结尾把海岬国的存续明确留作待解释现象，并把下一步推进到精英协调、强制、吸纳、信息和政策调整如何将压力转化为可控成本。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "既然韧性是需要解释的结果，哪些机制会把压力转化为可控成本而不是政权危机？",
+      "readerStateChange": "读前只能把韧性视为笼统结果；读后能从精英权力分享、收编、压制、正当化、信息反馈与政策调整的连接关系解释稳定。",
+      "twoSentenceSummary": "正文先区分社会控制与精英权力分享，再解释收编、压制和正当化如何改变合作、行动成本与服从理由。海岬国案例把委员会权限、地方申诉、政策修正和选择性惩罚连接成因果链，同时展示每种机制的资源条件与反噬风险。",
+      "continuityEvidence": "开头直接承接前页“存续是结果”的界定，结尾则指出同一表面平静可由多种机制组合造成，自然引出下一页对竞争解释和反证的审查。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "这些机制既能相互补强也会制造脆弱性，我们怎样判断一项“韧性”解释是否真的有证据？",
+      "readerStateChange": "读前能够列出多种稳定机制；读后能识别内生性、幸存者偏差与个人化代价，并用反证条件、比较和时间线检验解释。",
+      "twoSentenceSummary": "正文把政体存续与机制证据分开，逐一处理反向因果、幸存者偏差、政策意图与实际效果的落差，以及个人化统治的短期效率和长期接班风险。随后为精英分享、压制与政策回应提出不同的可观察预期，并把框架迁移到新闻阅读。",
+      "continuityEvidence": "本章逐项检验上一页的机制组合，最终形成“冲击与期限—竞争机制—可推翻证据”的判断顺序，并留下随新证据主动修正解释的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分概念原文、机制著作、研究综述与全球趋势报告，并按每种材料的证据边界回查正文主张。",
+      "twoSentenceSummary": "参考页汇集 Nathan、Gandhi、Svolik、Meng、Gerschewski 等人的理论原文或出版社页面，并注明它们分别支持概念起点、制度交易、权力分享和三支柱框架。V-Dem 2026 报告只用于交代当前全球背景，页面明确提醒趋势数据不能替代个案机制证据。",
+      "continuityEvidence": "各项来源按前三卷的概念、机制和判断顺序排列，读者可以从正文页直接进入相应原文，并根据用途说明识别可支持与不可外推的结论。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "威权韧性理论",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-01",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先把“没有倒下”拆开",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "当一个威权政体没有在危机中倒下时，我们究竟在解释什么？",
+      "readerStateBefore": "读者容易把长期存在、领导人强势、国家能力和社会支持统称为政权稳定，并把没有垮台当作机制有效的证明。",
+      "readerStateAfter": "读者能够区分政体、政府、领导人与国家，并把威权韧性限定为特定冲击下需要解释的结果。",
+      "priorConclusion": "",
+      "coreExample": "一个虚构的“海岬国”同时遭遇经济放缓、地方抗议与接班传闻，但执政集团仍维持基本统治结构；后续页面持续追问这究竟由什么造成。",
+      "conclusion": "威权韧性不是对政体强弱的总评，而是对特定政体在特定冲击下维持统治结构、吸收压力并调整策略这一结果的解释。",
+      "nextQuestion": "既然韧性是需要解释的结果，哪些机制会把压力转化为可控成本而不是政权危机？",
+      "nextPage": "mechanisms.html",
+      "newTerms": [
+        { "term": "威权政体", "definition": "政治权力缺少自由、公平且可实现执政更替的竞争性授权，并受到有限公共问责约束的统治安排。" },
+        { "term": "威权韧性", "definition": "威权统治结构在冲击下维持、吸收压力并调整策略的能力或结果。" },
+        { "term": "政体", "definition": "决定权力如何取得、行使、约束与交接的一组基本规则和关系。" },
+        { "term": "国家能力", "definition": "公共机构取得信息、动员资源并执行决定的能力，它不等同于某一届统治者的政治安全。" }
+      ]
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "稳定不是一根柱子",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然韧性是需要解释的结果，哪些机制会把压力转化为可控成本而不是政权危机？",
+      "readerStateBefore": "读者能够区分政体、政府、领导人与国家，并把威权韧性限定为特定冲击下需要解释的结果。",
+      "readerStateAfter": "读者能够从精英协调、社会控制、正当化、信息获取与政策适应的组合解释威权统治如何消化压力。",
+      "priorConclusion": "威权韧性不是对政体强弱的总评，而是对特定政体在特定冲击下维持统治结构、吸收压力并调整策略这一结果的解释。",
+      "coreExample": "海岬国没有只依靠镇压，而是同时安抚关键精英、开放受控申诉渠道、调整地方政策并选择性惩罚组织者；这些动作如何彼此配合或冲突。",
+      "conclusion": "威权韧性通常不是单一工具的产物，而是精英协调、强制、吸纳、正当化、信息与政策调整在特定条件下形成的机制组合。",
+      "nextQuestion": "这些机制既能相互补强也会制造脆弱性，我们怎样判断一项“韧性”解释是否真的有证据？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "权力分享", "definition": "统治者通过职位、议程权或可执行规则，让关键精英获得实际影响力并降低其反叛动机。" },
+        { "term": "收编", "definition": "把潜在反对者纳入职位、资源或政策协商，以换取合作并削弱其独立组织能力。" },
+        { "term": "压制", "definition": "国家或其代理人通过监控、限制、惩罚或暴力提高公开反对与集体行动的成本。" },
+        { "term": "正当化", "definition": "统治者通过绩效、身份、程序或价值叙事，使服从看起来合理、必要或可接受。" },
+        { "term": "信息渠道", "definition": "统治者用来了解社会不满、官僚执行和精英立场的正式或非正式反馈安排。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "把韧性说法变成可检验判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["mechanisms.html"],
+      "readerQuestion": "这些机制既能相互补强也会制造脆弱性，我们怎样判断一项“韧性”解释是否真的有证据？",
+      "readerStateBefore": "读者能够从精英协调、社会控制、正当化、信息获取与政策适应的组合解释威权统治如何消化压力。",
+      "readerStateAfter": "读者能够区分结果、机制与证据，识别幸存者偏差和反向因果，并用压力测试比较竞争性解释。",
+      "priorConclusion": "威权韧性通常不是单一工具的产物，而是精英协调、强制、吸纳、正当化、信息与政策调整在特定条件下形成的机制组合。",
+      "coreExample": "面对海岬国危机后的表面平静，分别检验精英妥协、恐惧压制、政策修正、反对派分裂与短期等待五种解释，并寻找能够区分它们的证据。",
+      "conclusion": "可靠的韧性判断必须先说明冲击与观察期限，再提出可区分的竞争机制，并持续寻找会推翻原判断的证据。",
+      "nextQuestion": "当新事件出现时，哪些证据会让你修正而不是重复原有判断？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "内生性", "definition": "被当作原因的制度或政策本身也可能是既有权力关系与稳定程度的结果。" },
+        { "term": "幸存者偏差", "definition": "只观察仍然存在的政体，因而高估其可见制度对生存的贡献。" },
+        { "term": "个人化统治", "definition": "决策、任命和资源越来越围绕单一领导人，而非可预期组织规则运作的状态。" },
+        { "term": "压力测试", "definition": "预先说明一种解释在不同冲击下应出现哪些可观察结果，再用新证据检查它是否成立。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、争论与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
