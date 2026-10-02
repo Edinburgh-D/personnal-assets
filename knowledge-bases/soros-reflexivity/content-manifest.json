@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "索罗斯反身性理论",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-02",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "市场不只是镜子",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "市场价格只是反映现实，还是也会反过来改变企业、借款人与经济现实？",
+      "readerStateBefore": "读者通常把价格看成基本面的被动结果，或把价格偏离简单归因于情绪与非理性。",
+      "readerStateAfter": "读者能够区分参与者理解现实与改变现实的两种作用，并用双向因果解释价格为何可能参与塑造基本面。",
+      "priorConclusion": "",
+      "coreExample": "一家虚构的清洁能源企业远帆能源因股价上涨而更容易融资、扩产和赢得订单，随后改善的经营数据又为原先的乐观叙事提供支持。",
+      "conclusion": "反身性不是价格脱离现实的同义词，而是参与者的有限认知经由行动改变现实，使价格与基本面在一段时间内互相塑造。",
+      "nextQuestion": "当价格与基本面开始互相塑造时，一轮自我强化的繁荣为何会加速，又会在什么地方转向？",
+      "nextPage": "feedback-loop.html",
+      "newTerms": [
+        { "term": "易错性", "definition": "参与者只能从有限信息和特定立场理解现实，因此判断不可避免地带有遗漏与偏差。" },
+        { "term": "反身性", "definition": "参与者对情势的看法会引导行动，而行动又会改变原本试图理解的情势。" },
+        { "term": "认知功能", "definition": "参与者试图形成对现实的认识、解释或预期的过程。" },
+        { "term": "操纵功能", "definition": "参与者通过交易、融资、投票或经营决策改变现实的过程；这里的操纵不等同于违法操纵市场。" }
+      ]
+    },
+    {
+      "file": "feedback-loop.html",
+      "title": "一条反馈链怎样长出泡沫",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.56,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "当价格与基本面开始互相塑造时，一轮自我强化的繁荣为何会加速，又会在什么地方转向？",
+      "readerStateBefore": "读者能够区分参与者理解现实与改变现实的两种作用，并用双向因果解释价格为何可能参与塑造基本面。",
+      "readerStateAfter": "读者能够沿着价格、融资、经营与叙事重建正负反馈链，并说明杠杆、抵押品和现金流为何让转折具有不对称性。",
+      "priorConclusion": "反身性不是价格脱离现实的同义词，而是参与者的有限认知经由行动改变现实，使价格与基本面在一段时间内互相塑造。",
+      "coreExample": "继续追踪远帆能源：估值上升降低股权融资稀释，扩产带来订单与收入；当交付不及预期、融资条件收紧时，同一链条反向运转。",
+      "conclusion": "繁荣与崩落的关键不在单一错误观点，而在观点能否借融资和经营渠道暂时把自己变得更像真的；转折发生在现实约束开始压过自我强化时。",
+      "nextQuestion": "如果反馈链事后总能讲得通，怎样判断反身性解释是真有证据，还是给价格涨跌补写一个漂亮故事？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "基本面", "definition": "影响资产长期现金流与偿付能力的经营、收入、成本、资产负债表和制度条件。" },
+        { "term": "正反馈", "definition": "一个变化会推动更多同方向变化，使原有趋势被放大的反馈过程。" },
+        { "term": "负反馈", "definition": "一个变化会触发反方向力量，使系统偏离受到抑制或被拉回的反馈过程。" },
+        { "term": "杠杆", "definition": "以借款或衍生品让风险敞口大于自有资本的安排。" },
+        { "term": "顺周期性", "definition": "繁荣时风险承担扩张、收缩时风险承担同步下降，从而放大经济或市场波动的特征。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "把理论变成可检验的判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["feedback-loop.html"],
+      "readerQuestion": "如果反馈链事后总能讲得通，怎样判断反身性解释是真有证据，还是给价格涨跌补写一个漂亮故事？",
+      "readerStateBefore": "读者能够沿着价格、融资、经营与叙事重建正负反馈链，并说明杠杆、抵押品和现金流为何让转折具有不对称性。",
+      "readerStateAfter": "读者能够用可观察渠道、时间顺序、替代解释与失效条件审查反身性叙事，并把它定位为风险诊断框架而非价格预测公式。",
+      "priorConclusion": "繁荣与崩落的关键不在单一错误观点，而在观点能否借融资和经营渠道暂时把自己变得更像真的；转折发生在现实约束开始压过自我强化时。",
+      "coreExample": "把远帆能源的上涨拆成可观察事件：股价变化、融资条款、资本开支、产能与订单，再与政策补贴、技术进步和行业需求等替代解释比较。",
+      "conclusion": "反身性最有价值的用法是迫使分析者寻找价格改变现实的具体渠道、监测约束并保留反例；它不能单独给出目标价、仓位或转折日期。",
+      "nextQuestion": "面对一个新的热门资产，哪些数据能证明价格正在改变现实，哪些现象只说明人们在追随价格？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "证伪性", "definition": "一个解释需要说明哪些可观察结果会使它被削弱或推翻。" },
+        { "term": "有效市场假说", "definition": "资产价格会在不同强度的假设下迅速反映可得信息的一组理论命题。" },
+        { "term": "金融加速器", "definition": "资产负债表、抵押品价值和融资成本把初始冲击放大的机制。" },
+        { "term": "反事实", "definition": "用来比较如果某个关键因素没有发生，结果可能怎样变化的分析情境。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、术语与阅读边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

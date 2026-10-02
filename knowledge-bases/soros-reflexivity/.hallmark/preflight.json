@@ -1,0 +1,10 @@
+{
+  "scannedAt": "2026-10-02T22:00:00+08:00",
+  "scope": "knowledge-bases/soros-reflexivity",
+  "framework": "vanilla-static-html",
+  "fontStack": ["Noto Serif SC", "Noto Sans SC", "IBM Plex Mono"],
+  "palette": "OKLCH warm newsprint tokens in local tokens.css",
+  "motionStance": "motion-cut; Newsprint theme keeps content static",
+  "spacing": "4pt semantic scale",
+  "preserved": ["repository static publishing contract", "root index automation", "data-site-home navigation contract"]
+}

@@ -3725,6 +3725,13 @@
       "generatedAt": "2026-10-02",
       "slug": "information-warfare-public-opinion",
       "entry": "knowledge-bases/information-warfare-public-opinion/main.html"
+    },
+    {
+      "name": "索罗斯反身性理论",
+      "domain": "金融/量化",
+      "generatedAt": "2026-10-02",
+      "slug": "soros-reflexivity",
+      "entry": "knowledge-bases/soros-reflexivity/main.html"
     }
   ],
   "skipped": []

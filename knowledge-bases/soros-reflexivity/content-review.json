@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "Codex fresh-disk reader pass",
+  "reviewedAt": "2026-10-02T22:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "市场价格只是反映现实，还是也会反过来改变企业、借款人与经济现实？",
+      "readerStateChange": "读前把价格视为基本面的被动显示；读后能区分认识与行动两种作用，并用远帆能源的融资、扩产和订单解释价格如何进入现实。",
+      "twoSentenceSummary": "正文从温度计与恒温器的差别切入，解释易错性、认知功能和改变现实的行动如何组成双向关系。虚构企业远帆能源贯穿全篇，展示高估值怎样改善融资，也展示技术、现金流与竞争仍构成硬约束。",
+      "continuityEvidence": "末段把看法、价格、行动与现实闭合成回路，并明确把下一步推进到自我强化、负反馈与突然转向的机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "feedback-loop.html",
+      "centralQuestion": "当价格与基本面开始互相塑造时，一轮自我强化的繁荣为何会加速，又会在什么地方转向？",
+      "readerStateChange": "读前只能描述双向影响；读后能沿基本面、解释、价格和行动重建反馈链，并说明杠杆、抵押品、现金流与债务期限如何造成下行不对称。",
+      "twoSentenceSummary": "正文把真实趋势与夸张解释放入四环反馈链，说明信用扩张和顺周期行为为何让暂时成功看起来像永久验证。随后区分触发事件与脆弱结构，解释转折如何从融资条款、现金流和被迫行动中出现。",
+      "continuityEvidence": "开头直接沿用入口页的价格—现实双向关系，结尾指出机制描述仍可能沦为事后故事，因此自然引出证据与可检验性问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "如果反馈链事后总能讲得通，怎样判断反身性解释是真有证据，还是给价格涨跌补写一个漂亮故事？",
+      "readerStateChange": "读前能讲述反馈机制但缺少检验标准；读后能核查渠道、时间顺序、反事实和失效条件，并把反身性定位为风险诊断而非择时公式。",
+      "twoSentenceSummary": "正文先处理反身性过度灵活的风险，再说明它与有效市场假说和金融加速器既有交集也有差别。证据表把闭环拆成四段，并通过弱反馈场景和记录纪律限制事后归因。",
+      "continuityEvidence": "本篇承接上一页对叙事弹性的警告，把融资与经营环节转成可观察证据；末段留下检查热门资产中价格是否真正改变现实的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分索罗斯本人的理论讲稿、宏观金融中的相近机制和美国住房案例证据，并理解虚构案例及金融教育边界。",
+      "twoSentenceSummary": "来源页列出 Open Society Foundations 的两份索罗斯讲稿，并用美联储和国际清算银行材料核对信用、杠杆与顺周期机制。每个条目说明支持范围，避免把相近理论当成同一理论。",
+      "continuityEvidence": "来源锚点由机制页和判断页直接链接，参考页又提供回到三篇叙事与日元套息交易延伸案例的路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
