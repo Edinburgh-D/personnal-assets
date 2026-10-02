@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "抗生素耐药危机",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-03",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "药还在，为什么感染变难治",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把耐药理解为个人吃药太多后身体对药物失去反应，知道它危险，却不清楚危险如何落到一次具体治疗上。",
+      "readerStateAfter": "读者能够区分细菌耐药与人体耐受，理解耐药会降低经验治疗的可靠性，并能解释它为何同时涉及用药过度与治疗可及性不足。",
+      "readerQuestion": "抗生素明明仍在生产和使用，为什么细菌耐药却会让一次常见感染变得更难、更慢也更危险？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一位老年人因发热、寒战和尿频就医，医生怀疑细菌性尿路感染并先行经验治疗，随后尿培养显示大肠埃希菌对首选药不敏感。",
+      "newTerms": [
+        {
+          "term": "抗生素",
+          "definition": "用于杀死细菌或抑制细菌生长的一类药物，对病毒感染本身无效。"
+        },
+        {
+          "term": "抗生素耐药性",
+          "definition": "细菌具有或获得在某种抗生素作用下仍能存活、繁殖的能力，而不是人体对药物产生耐受。"
+        },
+        {
+          "term": "经验治疗",
+          "definition": "在病原与药敏结果尚未明确、又不能安全等待时，根据感染部位、严重程度和当地资料先选择治疗。"
+        },
+        {
+          "term": "归因死亡",
+          "definition": "通过模型比较耐药感染与相应敏感感染，估计可归因于耐药本身的死亡。"
+        },
+        {
+          "term": "关联死亡",
+          "definition": "死亡者存在耐药感染，但耐药未必是死亡的唯一或直接原因。"
+        }
+      ],
+      "conclusion": "抗生素耐药危机的核心不是人体习惯了药物，而是细菌的变化与传播不断削弱治疗的可预测性，使及时诊断、有效用药和公平获得治疗同时变得重要。",
+      "nextQuestion": "既然耐药发生在细菌身上，一次必要或不必要的抗生素使用，究竟怎样把少数耐药细菌变成个人与社区都要面对的问题？",
+      "nextPage": "how-resistance-emerges.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "how-resistance-emerges.html",
+      "title": "从一次用药到一条传播链",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够区分细菌耐药与人体耐受，理解耐药会降低经验治疗的可靠性，并能解释它为何同时涉及用药过度与治疗可及性不足。",
+      "readerStateAfter": "读者能够用细菌差异、药物筛选、基因交换和传播共同解释耐药形成，并理解药敏结果为何只能回答特定细菌与特定药物的关系。",
+      "readerQuestion": "既然耐药发生在细菌身上，一次必要或不必要的抗生素使用，究竟怎样把少数耐药细菌变成个人与社区都要面对的问题？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "抗生素耐药危机的核心不是人体习惯了药物，而是细菌的变化与传播不断削弱治疗的可预测性，使及时诊断、有效用药和公平获得治疗同时变得重要。",
+      "coreExample": "继续追踪这位尿路感染患者：首剂用药前留取尿样，实验室培养出大肠埃希菌，比较其在不同抗生素下的生长，再据结果调整方案。",
+      "newTerms": [
+        {
+          "term": "选择压力",
+          "definition": "抗生素改变细菌生存环境，使敏感细菌更易被清除，而原本具有耐药特征的细菌更可能留下并扩增。"
+        },
+        {
+          "term": "耐药基因",
+          "definition": "能够让细菌改变药物靶点、破坏药物、降低药物进入或把药物排出的遗传信息。"
+        },
+        {
+          "term": "水平基因转移",
+          "definition": "细菌不依赖亲代繁殖，也能通过可移动遗传元件等途径彼此获得基因。"
+        },
+        {
+          "term": "广谱抗生素",
+          "definition": "能够作用于较多种类细菌的抗生素，在病原未明或重症时可能必要，但也会影响更多非目标细菌。"
+        },
+        {
+          "term": "药敏试验",
+          "definition": "在实验室评估分离出的细菌对若干抗生素表现为敏感、中介或耐药，为临床选药提供依据。"
+        }
+      ],
+      "conclusion": "耐药不是一粒药把细菌主动训练出来，而是细菌差异在药物筛选下被放大，并借助基因交换与传播进入新的宿主；诊断与药敏能减少盲目用药，但不能脱离患者病情机械解读。",
+      "nextQuestion": "当个人无法凭症状判断病原、也不能独自阻断传播时，怎样把谨慎用药转化为既保护患者又保护药效的系统行动？",
+      "nextPage": "from-patient-to-system.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "from-patient-to-system.html",
+      "title": "把每一剂药放回完整系统",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用细菌差异、药物筛选、基因交换和传播共同解释耐药形成，并理解药敏结果为何只能回答特定细菌与特定药物的关系。",
+      "readerStateAfter": "读者能够在常见就医情境中提出有用问题、遵循处方并识别警讯，同时说明医疗、公共卫生、动物与环境部门各自承担的责任。",
+      "readerQuestion": "当个人无法凭症状判断病原、也不能独自阻断传播时，怎样把谨慎用药转化为既保护患者又保护药效的系统行动？",
+      "dependsOn": [
+        "how-resistance-emerges.html"
+      ],
+      "priorConclusion": "耐药不是一粒药把细菌主动训练出来，而是细菌差异在药物筛选下被放大，并借助基因交换与传播进入新的宿主；诊断与药敏能减少盲目用药，但不能脱离患者病情机械解读。",
+      "coreExample": "把同一位患者的就医过程拆成可执行节点：及时就诊与留样、必要时先经验治疗、根据培养和病情复核方案、完成随访并防止耐药菌继续传播。",
+      "newTerms": [
+        {
+          "term": "抗菌药物管理",
+          "definition": "通过正确诊断、选药、剂量、给药途径、疗程和复核，让患者在需要时得到有效治疗并减少不必要的药物暴露。"
+        },
+        {
+          "term": "窄谱抗生素",
+          "definition": "主要针对较小范围细菌的抗生素，在病原较明确且能够覆盖感染时，可减少对其他细菌的额外影响。"
+        },
+        {
+          "term": "感染预防与控制",
+          "definition": "通过手卫生、清洁消毒、隔离、无菌操作和监测等措施，降低感染与病原传播。"
+        },
+        {
+          "term": "同一健康",
+          "definition": "把人类、动物和生态系统健康视为相互连接，并由多部门共同处理风险的工作方式。"
+        },
+        {
+          "term": "Access 组抗生素",
+          "definition": "WHO AWaRe 分类中优先用于许多常见感染、通常耐药风险较低且应保障可及的一组抗生素。"
+        }
+      ],
+      "conclusion": "保护抗生素效力不是简单地少吃药，而是需要时尽快获得正确治疗、不需要时避免暴露，并用诊断、感染预防、疫苗、监测和跨部门治理减少感染与传播。",
+      "nextQuestion": "未来评估一项耐药政策或一种新药时，我们应如何同时检查它是否减少感染、改善可及性、延缓耐药并覆盖最需要的人群？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

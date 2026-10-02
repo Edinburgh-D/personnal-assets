@@ -3739,6 +3739,13 @@
       "generatedAt": "2026-10-03",
       "slug": "blue-ocean-strategy",
       "entry": "knowledge-bases/blue-ocean-strategy/main.html"
+    },
+    {
+      "name": "抗生素耐药危机",
+      "domain": "医学/健康(西医)",
+      "generatedAt": "2026-10-03",
+      "slug": "antimicrobial-resistance",
+      "entry": "knowledge-bases/antimicrobial-resistance/main.html"
     }
   ],
   "skipped": []

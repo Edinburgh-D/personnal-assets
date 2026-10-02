@@ -1,0 +1,13 @@
+{
+  "scannedAt": "2026-10-03",
+  "framework": "vanilla-html",
+  "fontStack": "knowledge-base-local tokens",
+  "palette": "knowledge-base-local OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": [
+    "static HTML publishing",
+    "self-contained knowledge-base assets",
+    "repository-managed overview pages"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-03T21:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "抗生素明明仍在生产和使用，为什么细菌耐药却会让一次常见感染变得更难、更慢也更危险？",
+      "readerStateChange": "读前把耐药理解为人体吃药后失去反应；读后能区分细菌耐药、携带与感染，并解释耐药如何降低经验治疗可靠性。",
+      "twoSentenceSummary": "页面以尿路感染首选药无效的治疗延迟说明耐药的临床后果，再区分菌—药关系、人体携带和死亡统计口径。结尾把过度使用与药物、诊断可及性不足并置，说明危机不能缩成个人少吃药。",
+      "continuityEvidence": "本页末段把治疗可靠性下降明确归因于细菌变化、药物压力和传播，并提出下一页需要拆解的形成链条。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-resistance-emerges.html",
+      "centralQuestion": "既然耐药发生在细菌身上，一次必要或不必要的抗生素使用，究竟怎样把少数耐药细菌变成个人与社区都要面对的问题？",
+      "readerStateChange": "读前只知道用药多会耐药；读后能用群体差异、选择压力、基因交换与传播解释放大过程，并正确限定药敏结果。",
+      "twoSentenceSummary": "页面先说明耐药差异可能在用药前存在，再展示药物如何筛选、耐药基因如何横向移动以及细菌如何跨宿主传播。患者案例继续进入留样、培养和药敏环节，说明实验室结果必须放回感染部位与病情解释。",
+      "continuityEvidence": "结尾指出个人既看不到病原也无法独自控制传播，自然推出下一页关于患者、医疗机构和多部门共同治理的问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "from-patient-to-system.html",
+      "centralQuestion": "当个人无法凭症状判断病原、也不能独自阻断传播时，怎样把谨慎用药转化为既保护患者又保护药效的系统行动？",
+      "readerStateChange": "读前容易把行动等同于患者少吃药；读后能组织就医沟通与处方执行，并说明诊断、感染预防、同一健康和政策各自作用。",
+      "twoSentenceSummary": "页面把同一患者的治疗拆成留样、经验治疗、结果复核、感染源控制与随访，并给出普通人能执行的沟通和用药边界。随后连接医院管理、疫苗、动物与环境治理、联合国目标和研发管线，建立完整行动系统。",
+      "continuityEvidence": "作为叙事末页，它把前页的选择与传播机制转化为多层行动，并留下同时评估感染、可及性、耐药与公平的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的资料名称；读后能按负担、机制、用药、系统行动和政策原文回查主张，并识别监测与模型边界。",
+      "twoSentenceSummary": "来源页列出 WHO 2026 事实资料、2025 监测与研发报告、联合国决议、CDC、ECDC 和 Lancet 研究。每项说明资料被用于支持什么，以及实验室送检、模型预测和政策目标不能怎样外推。",
+      "continuityEvidence": "来源分组与三篇叙事页的危机规模、形成机制和系统行动顺序一致，并给出资料核对日期与临床使用边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
