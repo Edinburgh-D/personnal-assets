@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-storage="kb_darkMode">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>收益拆解：日元套息交易的四本账</title>
+  <meta name="description" content="用同一教学头寸拆解资产收益、融资成本、汇率变化与交易摩擦，并理解杠杆和保证金怎样改变风险。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@500;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="章节侧栏">
+    <a class="rail-wordmark" href="main.html">YEN CARRY / 日元资金链</a>
+    <ul class="rail-dots">
+      <li><a href="main.html" aria-label="直觉入口">直觉入口</a></li>
+      <li><a href="mechanics.html" aria-label="收益拆解" aria-current="page">收益拆解</a></li>
+      <li><a href="unwind.html" aria-label="平仓回流">平仓回流</a></li>
+      <li><a href="sources.html" aria-label="来源与口径">来源与口径</a></li>
+    </ul>
+    <button class="icon-button rail-theme" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+  </nav>
+
+  <header>
+    <div class="mobile-bar">
+      <a class="mobile-brand" href="main.html">日元资金链</a>
+      <div class="mobile-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+        <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-controls="chapter-menu" aria-expanded="false">目录</button>
+      </div>
+    </div>
+    <nav class="chapter-strip" id="chapter-menu" data-chapter-menu data-open="false" aria-label="知识库章节">
+      <ul>
+        <li><a href="../../index.html" data-site-home>总览</a></li>
+        <li><a href="main.html">直觉入口</a></li>
+        <li><a href="mechanics.html" aria-current="page">收益拆解</a></li>
+        <li><a href="unwind.html">平仓回流</a></li>
+        <li><a href="sources.html">来源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">日元套息交易赚取的不是孤立的利差，而是在承担汇率、资产价格和融资条件共同变化的风险后留下的剩余收益。</template>
+    <template data-narrative="question">既然利差只是收益的一部分，一笔日元套息交易的盈亏应如何逐项计算？</template>
+    <template data-narrative="example">沿用一亿日元、1%融资成本和4%美元资产收益的教学算例，分别代入日元贬值、持平和升值5%的情景，并比较无杠杆与五倍杠杆。</template>
+    <template data-narrative="conclusion">套息收益必须在同一计价货币下分解；汇率与资产价格是主要波动源，杠杆和保证金则决定亏损会不会被迫提前兑现。</template>
+    <template data-narrative="next-question">当许多参与者同时使用杠杆并遇到日元升值时，局部亏损为何会演变成跨市场的快速平仓？</template>
+
+    <div class="breadcrumb"><a href="main.html">日元套息交易</a><span aria-hidden="true">/</span><span>收益拆解</span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="edition">Foreign exchange notebook · 02</p>
+        <h1>同一笔交易，四本账</h1>
+      </div>
+      <div>
+        <p class="dek">把所有结果换回同一种货币，慢慢累积的收益与突然跳动的价格才会出现在同一张纸上。</p>
+        <div class="market-tape" aria-label="四项盈亏来源示意">
+          <div class="tape-row"><span class="tape-line" style="--tape: 32%"></span><span class="tape-label">资产</span></div>
+          <div class="tape-row"><span class="tape-line" style="--tape: 52%"></span><span class="tape-label">融资</span></div>
+          <div class="tape-row"><span class="tape-line" style="--tape: 91%"></span><span class="tape-label">汇率</span></div>
+          <p class="tape-note">价格项通常比日息更快地改变总账。</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-grid">
+      <aside class="local-index" aria-label="页内目录">
+        <strong>计算顺序</strong>
+        <ol>
+          <li><a href="#unit">统一计价</a></li>
+          <li><a href="#four-books">拆开四项</a></li>
+          <li><a href="#hedge">锁价的代价</a></li>
+          <li><a href="#path">路径与强平</a></li>
+          <li><a href="#signals">观察信号</a></li>
+        </ol>
+      </aside>
+
+      <article class="prose">
+        <section id="unit">
+          <p class="lead">上一章的一亿日元算例已经说明，收益不能只看两端利率。计算时应先选择统一的计价货币，再把资产、负债与换汇结果都折回这个单位。对日元融资者来说，最直观的做法是用最终能够偿还多少日元来结账。</p>
+          <p>起始时可以成交的兑换价格叫<dfn data-term="即期汇率">即期汇率</dfn>。这里继续假设每美元兑换 150 日元。一亿日元换成约 66.67 万美元，获得 4% 后变成约 69.33 万美元。最终日元价值取决于一年后的价格，而不是起始价格。</p>
+          <p>若把汇率记为“一美元等于多少日元”，更完整的总回报可以写成：美元资产增长倍数，乘以汇率变化倍数，再除以日元负债增长倍数，最后减一。这个写法会自然提醒我们，收益不是简单相加，尤其当波动较大时更是如此。</p>
+          <dl class="ledger" aria-label="教学算例的精确关系">
+            <div class="ledger-row"><dt>美元资产增长倍数</dt><dd>1.04</dd></div>
+            <div class="ledger-row"><dt>日元负债增长倍数</dt><dd>1.01</dd></div>
+            <div class="ledger-row"><dt>日元持平时的净倍数</dt><dd class="gain">1.04 ÷ 1.01</dd></div>
+            <div class="ledger-row"><dt>结果</dt><dd class="gain">约 +2.97%</dd></div>
+          </dl>
+          <p>这个 2.97% 与“4% 减 1%”略有差别，因为融资成本与资产收益作用在不同的本金路径上。对于小幅变化，简单差额便于建立直觉；对于真实仓位、长持有期或高波动情景，应使用现金流和复利计算。</p>
+          <p>再把一年后的兑换价格设为未知数，就能求出盈亏平衡点。69.33 万美元必须换回 1.01 亿日元，因此每美元至少要兑换约 145.7 日元。起点是 150，这意味着日元升值约 2.9% 就会耗尽静态空间，尚未计入任何费用。</p>
+          <p>若报价方式换成“一日元等于多少美元”，升贬方向看起来会反过来。很多新闻误解来自报价单位没有写清。计算前先写单位，计算后再用一句话核对：“日元升值时，偿还同样日元需要更多目标货币。”这能挡住常见的方向错误。</p>
+          <p>对多期交易，还要记录每次利息支付和展期日期。资产收益可能按季度到账，融资费用可能每日计算，衍生品也可能每月展期。把全年压成一个终点，会隐藏途中现金缺口。完整账本应沿时间轴排列，而不是只比较开始与结束。</p>
+        </section>
+
+        <section id="four-books">
+          <h2>资产、负债、汇率与摩擦</h2>
+          <p>第一本账是目标资产。4% 只是到期收益能够按约实现时的假设。若持有可交易债券，市场利率上升会压低债券价格。若持有股票，盈利预期会改变估值。若持有低流动性资产，急售价格还可能显著偏离平时估值。</p>
+          <p>第二本账是日元负债。名义利率只是起点，真实成本还可能包含信用加点、抵押品费用和续借条件。短期借款支持长期资产时，还会出现期限错配。资产尚未到期，融资却可能先要求偿还或重新定价。</p>
+          <p>第三本账是兑换价格。若一年后每美元可换 155 日元，69.33 万美元约值 1.0747 亿日元，偿还 1.01 亿后余约 647 万。若价格变为 142.5，最终只有约 9880 万日元，偿债后亏约 220 万。两种结果使用的是同一资产回报。</p>
+          <p>第四本账是交易摩擦。即便市场方向判断正确，买卖价差、衍生品展期成本、托管费、税费与滑点都会侵蚀收益。压力时刻的成交价也未必等于最近报价。一个看似很薄的成本，在频繁展期和大额仓位上会逐渐变厚。</p>
+          <p>四本账之间也会相互影响。目标资产下跌会减少可抵押价值，融资方因此可能提高现金要求。汇率不利会增加日元偿债压力，参与者只好卖出更多资产。成本不再是独立小数，而会在压力中改变可继续持有的数量。</p>
+          <p>这就是为什么专业账本常把“预期收益”和“可承受损失”分开。前者回答平均情景可能留下多少，后者回答不利情景需要多少现金。只有预期收益为正而没有承压能力的交易，仍可能在到期前失败。</p>
+        </section>
+
+        <section id="hedge">
+          <h2>锁住未来价格，会发生什么</h2>
+          <p>投资者可以用<dfn data-term="远期合约">远期合约</dfn>约定未来换回日元的价格。这样可以大幅降低未来汇率的不确定性，却不会凭空保留全部收益空间。远期价格通常会反映两种货币的利率差，因此“锁汇后还稳定赚取完整差额”的想象往往不成立。</p>
+          <p>这正是“对冲”和“无风险套利”不能混用的原因。完全对冲后，交易更接近比较两个货币市场的无套利价格，还要考虑跨币种基差、信用与资产差异。部分对冲则保留一部分价格敞口，风险大小取决于对冲比例和展期安排。</p>
+          <p>专业机构也不一定真的向银行提取一亿日元现金。它们可以用远期、外汇掉期或期权建立相似方向。BIS 说明，衍生品会形成未来交付日元的义务，却不一定在资产负债表上留下直接借款，因此公开统计难以完整识别策略用途。</p>
+          <p>这也解释了为什么宏观数字常被误读。外汇掉期的名义本金很大，但其中大量交易服务于流动性管理和正常对冲。把所有日元相关衍生品都视为投机性仓位，会严重夸大风险；只看银行贷款，又会漏掉表外敞口。</p>
+          <p>对冲比例也会随价格变化。假设投资者只覆盖一半未来换汇需求，另一半仍会受市场价格影响。若资产市值上涨，原来的覆盖金额可能变得不足；若资产缩水，固定覆盖又可能过量。管理者必须定期调整，而每次调整都会产生新成本。</p>
+          <p>期权提供另一种形状。购买保护可以限制极端汇率损失，同时保留部分有利变化，但需要先支付费用。保护越全面、期限越长，费用通常越高。保险成本会直接减少平时收益，却可能在跳跃行情中保留继续持有的能力。</p>
+        </section>
+
+        <section id="path">
+          <h2>本金没有到期，资金已经不够</h2>
+          <p><dfn data-term="杠杆">杠杆</dfn>让投资者用较少自有资金控制更大敞口。若用 2000 万日元自有资金承受一亿日元的市场风险，可以粗略说风险敞口为自有资本的五倍。前述 220 万日元亏损，相当于自有资本损失约 11%，而不是总头寸的 2.2%。</p>
+          <p>交易对手通常要求缴存<dfn data-term="保证金">保证金</dfn>。价格不利时，投资者可能收到追加要求。此时即使相信价格终会恢复，也必须在限定时间内补钱或减仓。能否坚持到到期，取决于沿途现金需求，而不只取决于最终预测是否正确。</p>
+          <p>再加入目标资产下跌 5% 的情景，压力会更直观。日元升值降低换回日元的金额，资产下跌减少可出售的美元价值，保证金上调又迫使投资者找现金。三个变化往往在风险厌恶上升时一起发生，而不是彼此独立。</p>
+          <p>沿用 2000 万日元自有资本，如果目标资产不再上涨 4%，而是下跌 5%，同时日元升至每美元 142.5，资产换回约 9025 万日元。与 1.01 亿日元负债相比，缺口约 1075 万，已经超过自有资本的一半。这个情景仍未加入交易冲击。</p>
+          <p>高倍数还会缩短决策时间。无借款投资者可以先核对消息，再决定是否出售；高倍数头寸可能必须在当天补足现金。价格越快，留给判断的时间越短。于是原本针对长期收益的观点，被迫接受短期资金规则的检验。</p>
+          <div class="callout">
+            <h3>最终盈利，不等于途中安全</h3>
+            <p>没有融资约束的投资者可以等待价格恢复。高杠杆投资者却可能在最差的时点被迫卖出。路径依赖使“长期会回来”的判断无法自动转化为可执行策略。</p>
+          </div>
+        </section>
+
+        <section id="signals">
+          <h2>把收益放回风险尺度</h2>
+          <p><dfn data-term="套息风险比">套息风险比</dfn>用预期利率差相对于汇率波动来衡量吸引力。差额扩大而波动较低时，策略看起来更有吸引力；差额收窄或波动上升时，比值会下降。它适合作为温度计，却不能替代完整压力测试。</p>
+          <p>原因在于，历史波动无法完整描述跳跃风险，相关性也会在压力时改变。平时分散的资产可能同时下跌，融资货币反而升值。用过去一段平静时期估计出来的安全倍数，会在制度变化或政策转向时失真。</p>
+          <p>更稳妥的做法是同时设计多个情景。温和情景只改变汇率，组合情景让汇率与资产价格一起不利，资金情景再加入成本上升和提前减仓。若结论只有在“其他一切不变”时成立，它就不适合被称为稳健。</p>
+          <p>观察实际市场时，还可以比较短期与长期差额。短期差额影响展期成本，长期差额反映政策与通胀预期。两者给出的信号可能不同。用一个政策利率替代整条期限结构，会把真实融资条件压成过度简单的故事。</p>
+          <dl class="signal-list">
+            <div class="signal"><dt>收益端</dt><dd>看实际可获得的资产收益，而不是只看政策利率。</dd></div>
+            <div class="signal"><dt>价格端</dt><dd>把汇率和目标资产同时放入情景，避免只冲击一条腿。</dd></div>
+            <div class="signal"><dt>融资端</dt><dd>检查期限、抵押品、展期成本和交易对手要求。</dd></div>
+            <div class="signal"><dt>资本端</dt><dd>比较最大可能追加资金与可立即动用的现金。</dd></div>
+          </dl>
+          <p>到这里，单笔交易已经可以被完整拆解。最值得继续追问的是，当许多人使用相似模型、相似止损线和相似融资工具时，个人层面的减仓会怎样相互推动。那正是平静市场突然出现回流的起点。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="main.html"><span>上一章</span>← 直觉入口</a>
+          <a href="sources.html"><span>查证</span>来源与口径</a>
+          <a href="unwind.html"><span>下一章</span>平仓回流 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="foot-dense"><p>日元套息交易知识库 · 教学算例不代表市场报价 · 外汇、衍生品与杠杆可能导致超过初始资金的损失 · <a href="sources.html">查看方法与来源</a></p></div></footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

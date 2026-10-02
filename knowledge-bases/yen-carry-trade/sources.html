@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-storage="kb_darkMode">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>来源与口径：日元套息交易</title>
+  <meta name="description" content="汇集日本银行、国际清算银行与国际货币基金组织的一手材料，并说明教学算例、规模估计和当前政策的口径。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@500;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="章节侧栏">
+    <a class="rail-wordmark" href="main.html">YEN CARRY / 日元资金链</a>
+    <ul class="rail-dots">
+      <li><a href="main.html" aria-label="直觉入口">直觉入口</a></li>
+      <li><a href="mechanics.html" aria-label="收益拆解">收益拆解</a></li>
+      <li><a href="unwind.html" aria-label="平仓回流">平仓回流</a></li>
+      <li><a href="sources.html" aria-label="来源与口径" aria-current="page">来源与口径</a></li>
+    </ul>
+    <button class="icon-button rail-theme" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+  </nav>
+
+  <header>
+    <div class="mobile-bar">
+      <a class="mobile-brand" href="main.html">日元资金链</a>
+      <div class="mobile-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+        <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-controls="chapter-menu" aria-expanded="false">目录</button>
+      </div>
+    </div>
+    <nav class="chapter-strip" id="chapter-menu" data-chapter-menu data-open="false" aria-label="知识库章节">
+      <ul>
+        <li><a href="../../index.html" data-site-home>总览</a></li>
+        <li><a href="main.html">直觉入口</a></li>
+        <li><a href="mechanics.html">收益拆解</a></li>
+        <li><a href="unwind.html">平仓回流</a></li>
+        <li><a href="sources.html" aria-current="page">来源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="reference">
+    <div class="breadcrumb"><a href="main.html">日元套息交易</a><span aria-hidden="true">/</span><span>来源与口径</span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="edition">Source ledger · checked 2026-10-02</p>
+        <h1>证据放在数字前面</h1>
+      </div>
+      <p class="dek">政策会改变，市场估计有缺口。这里记录每条关键判断来自哪里，以及它不能证明什么。</p>
+    </header>
+
+    <div class="content-grid">
+      <aside class="local-index" aria-label="页内目录">
+        <strong>来源分组</strong>
+        <ol>
+          <li><a href="#policy">政策路径</a></li>
+          <li><a href="#mechanism">机制研究</a></li>
+          <li><a href="#event">事件复盘</a></li>
+          <li><a href="#scope">数字口径</a></li>
+        </ol>
+      </aside>
+
+      <article class="prose">
+        <section id="policy">
+          <p class="lead">本文优先采用中央银行和国际金融组织的一手材料。政策数字按文件发布日期核对，市场事件采用原报告的限定语，不把研究者估计写成确定事实。</p>
+          <div class="source-list">
+            <article class="source-item">
+              <h2><a href="https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240319a.htm">日本银行：2024 年 3 月政策框架变化</a></h2>
+              <p>日本银行宣布负利率政策和收益率曲线控制已完成其作用，并把短期利率重新确立为主要政策工具。本文据此说明长期超低利率环境进入调整期。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240731a.htm">日本银行：2024 年 7 月货币市场操作指引</a></h2>
+              <p>文件把无担保隔夜拆借利率的引导目标提高到约 0.25%，并说明政策调整背景。它用于还原 2024 年 8 月波动前的政策节点。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf">日本银行：2026 年 9 月政策决定</a></h2>
+              <p>文件把无担保隔夜拆借利率的引导目标提高到约 1.25%，自 2026 年 9 月 24 日生效。本文的当前政策描述核对至 2026 年 10 月 2 日，之后阅读时应重新查阅最新决定。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="mechanism">
+          <h2>机制与统计</h2>
+          <div class="source-list">
+            <article class="source-item">
+              <h2><a href="https://www.bis.org/publications/sizing-carry-trades-bis-statistics">BIS：如何在统计中辨认相关交易</a></h2>
+              <p>材料解释直接借款、远期、掉期和期权如何留下不同痕迹，并反复提示用途无法从名义金额直接确定。本文用它区分贷款余额、衍生品名义本金和净方向敞口。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.bis.org/publications/qr-202512/international-finance-through-lens-bis-statistics-derivatives-markets">BIS：从衍生品统计观察国际金融</a></h2>
+              <p>2025 年 12 月的回顾说明，表内贷款只覆盖部分活动，投机者更常通过衍生品建立未来支付义务。报告也指出，2022 至 2024 年日元跨境贷款增长与相关激励同步，但不能据此确认每笔资金用途。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.bis.org/publications/bulletin-124-monetary-policy-transmission-exchange-rates-role-currency-carry-trades">BIS Bulletin 124：头寸如何放大政策传导</a></h2>
+              <p>2026 年研究指出，当融资货币里已经存在明显空头时，政策收紧可通过杠杆头寸关闭放大汇率反应。这个结论是有条件的机制，不是对每次会议的确定预测。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="event">
+          <h2>2024 年 8 月的事件复盘</h2>
+          <div class="source-list">
+            <article class="source-item">
+              <h2><a href="https://www.bis.org/publications/bulletin-90-market-turbulence-and-carry-trade-unwind-august-2024">BIS Bulletin 90：市场波动与仓位收缩</a></h2>
+              <p>报告把美国宏观消息、日元升值、股票波动、保证金上调和杠杆收缩放进同一过程。它估算相关外汇头寸约为 40 万亿日元的粗略中间量级，同时明确提示数据缺口与向下偏差。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.bis.org/publications/qr-202409/carry-off-carry-on">BIS Quarterly Review：Carry off, carry on</a></h2>
+              <p>季度回顾把 2024 年 8 月描述为短暂但显著的风险收缩，并指出融资货币升值、目标货币贬值和跨资产波动相互关联。材料也强调，市场在数日内明显恢复。</p>
+            </article>
+            <article class="source-item">
+              <h2><a href="https://www.imf.org/en/blogs/articles/2024/10/22/global-financial-fragilities-mount-despite-rate-cuts-and-buoyant-markets">IMF：全球金融脆弱性评估</a></h2>
+              <p>IMF 将美日政策预期变化与杠杆头寸关闭联系起来，并把事件视为波动可能迅速放大的例子。它同时指出压力短暂，没有演变为系统性金融稳定问题。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="scope">
+          <h2>教学数字与边界</h2>
+          <p>一亿日元、每美元 150 日元、1% 融资成本和 4% 资产收益均为教学设定，用于展示计价关系。它们不是市场报价，也不代表可获得的产品。页面中的结果按这些假设进行算术计算，并对金额取近似值。</p>
+          <p>40 万亿日元来自 BIS 对 2024 年事件前相关活动的粗略估计。它不等于所有日元贷款，也不等于全部衍生品名义本金。引用这个数字时必须保留“估计”“量级”和“数据缺口”三个限定。</p>
+          <p>外汇、衍生品和杠杆均可能造成重大损失。本文不评价任何具体产品，不提供交易指令，也不替代持牌专业意见。用于个人决策时，应核对最新政策、合约条款、费用、税务和最大损失情景。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="unwind.html"><span>回到正文</span>← 市场回流</a>
+          <a href="main.html"><span>重新开始</span>直觉入口</a>
+          <a href="../../index.html"><span>返回</span>知识库总览</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="foot-dense"><p>来源账本 · 页面只使用可公开访问的一手机构材料 · 政策核对日期 2026-10-02 · 教学算例与现实市场报价分离 · <a href="main.html">返回日元套息交易</a></p></div></footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

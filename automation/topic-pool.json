@@ -3711,6 +3711,13 @@
       "generatedAt": "2026-10-02",
       "slug": "fascia-and-relaxation",
       "entry": "knowledge-bases/fascia-and-relaxation/main.html"
+    },
+    {
+      "name": "日元套息交易",
+      "domain": "金融/量化",
+      "generatedAt": "2026-10-02",
+      "slug": "yen-carry-trade",
+      "entry": "knowledge-bases/yen-carry-trade/main.html"
     }
   ],
   "skipped": []

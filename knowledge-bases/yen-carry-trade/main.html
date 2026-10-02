@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-theme-storage="kb_darkMode">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>日元套息交易：利差不是免费的午餐</title>
+  <meta name="description" content="从一亿日元教学算例出发，理解日元融资、跨币种换汇、利差收益与汇率风险为何必须放在一起看。">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@500;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="章节侧栏">
+    <a class="rail-wordmark" href="main.html">YEN CARRY / 日元资金链</a>
+    <ul class="rail-dots">
+      <li><a href="main.html" aria-label="直觉入口" aria-current="page">直觉入口</a></li>
+      <li><a href="mechanics.html" aria-label="收益拆解">收益拆解</a></li>
+      <li><a href="unwind.html" aria-label="平仓回流">平仓回流</a></li>
+      <li><a href="sources.html" aria-label="来源与口径">来源与口径</a></li>
+    </ul>
+    <button class="icon-button rail-theme" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+  </nav>
+
+  <header>
+    <div class="mobile-bar">
+      <a class="mobile-brand" href="main.html">日元资金链</a>
+      <div class="mobile-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+        <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-controls="chapter-menu" aria-expanded="false">目录</button>
+      </div>
+    </div>
+    <nav class="chapter-strip" id="chapter-menu" data-chapter-menu data-open="false" aria-label="知识库章节">
+      <ul>
+        <li><a href="../../index.html" data-site-home>总览</a></li>
+        <li><a href="main.html" aria-current="page">直觉入口</a></li>
+        <li><a href="mechanics.html">收益拆解</a></li>
+        <li><a href="unwind.html">平仓回流</a></li>
+        <li><a href="sources.html">来源</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="overview">
+    <template data-narrative="question">日元利率较低时，为什么借日元买高收益资产仍然不是一笔稳稳赚利的交易？</template>
+    <template data-narrative="example">一名投资者借入一亿日元，把资金换成美元后持有一年期美元资产；教学算例假设日元融资成本为1%、美元资产收益为4%。</template>
+    <template data-narrative="conclusion">日元套息交易赚取的不是孤立的利差，而是在承担汇率、资产价格和融资条件共同变化的风险后留下的剩余收益。</template>
+    <template data-narrative="next-question">既然利差只是收益的一部分，一笔日元套息交易的盈亏应如何逐项计算？</template>
+
+    <div class="breadcrumb"><a href="../../index.html">知识库总览</a><span aria-hidden="true">/</span><span>日元资金链</span></div>
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="edition">Foreign exchange notebook · 01</p>
+        <h1>便宜的日元，昂贵的风险</h1>
+      </div>
+      <div>
+        <p class="dek">借得便宜只是起点。换回日元的那一刻，才知道这段旅程留下了收益还是亏损。</p>
+        <div class="market-tape" aria-label="交易三段示意：借入、换汇、持有资产">
+          <div class="tape-row"><span class="tape-line" style="--tape: 38%"></span><span class="tape-label">借入端</span></div>
+          <div class="tape-row"><span class="tape-line" style="--tape: 66%"></span><span class="tape-label">换汇端</span></div>
+          <div class="tape-row"><span class="tape-line" style="--tape: 88%"></span><span class="tape-label">资产端</span></div>
+          <p class="tape-note">三段都顺利，账面收益才可能成立。</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-grid">
+      <aside class="local-index" aria-label="页内目录">
+        <strong>阅读线索</strong>
+        <ol>
+          <li><a href="#three-legs">三段结构</a></li>
+          <li><a href="#example">把账算一遍</a></li>
+          <li><a href="#japan">日本为何特殊</a></li>
+          <li><a href="#risk-map">风险地图</a></li>
+        </ol>
+      </aside>
+
+      <article class="prose">
+        <section id="three-legs">
+          <p class="lead"><dfn data-term="套息交易">套息交易</dfn>不是“把钱从低息存款搬到高息存款”那么简单。它先在一种货币里形成负债，再换成另一种货币，最后持有债券、存款、股票或其他资产。三段中的任何一段变化，都可能改变最后换回原货币时的结果。</p>
+          <p>在这类结构里，借入的一端叫<dfn data-term="融资货币">融资货币</dfn>。日元长期常被市场选中，并不是因为它天然安全，而是因为日本的短期利率曾长期低于不少经济体。投资者卖出借来的日元，再买入收益较高一端的<dfn data-term="目标货币">目标货币</dfn>。美元、澳元或部分新兴市场货币都可能在不同时期扮演这个角色。</p>
+          <p>两端收益率之差叫<dfn data-term="利差">利差</dfn>。如果日元融资一年成本为 1%，美元资产一年收益为 4%，静态计算会出现 3 个百分点的空间。这里的两个数字只是教学假设，不代表任何当前产品，也不包含手续费、买卖价差、税费和资产价格变化。</p>
+          <p>关键在于，未来换回日元的价格没有被预先锁定。这样的敞口称为<dfn data-term="未对冲汇率风险">未对冲汇率风险</dfn>。如果一年后日元升值，投资者需要用更多美元才能买回足够的日元偿债。几个月的汇率变动，就可能超过一整年的静态收益空间。</p>
+          <p>所以它更像一条有坡度的传送带。利率差提供缓慢向前的推力，汇率却可能突然把传送带反向。资产本身也会涨跌，融资机构还可能提高抵押要求。把所有变化都归结为“赚利息”，会漏掉决定成败的部分。</p>
+          <p>这条传送带还有时间差。融资费用通常按天缓慢累积，汇率却会在消息公布后迅速跳动。投资者可能连续数月收到正向利息，随后在很短时间内失去此前积累。收益轨迹常呈现“平时小幅增加、压力时集中回吐”的形状。</p>
+          <p>个人换汇后购买海外存款，与机构使用衍生品建立大额方向，并不是完全相同的交易。前者通常没有追加资金要求，后者可能每天按市场价格结算。不过，两者共享一个核心事实：最终购买力取决于两种货币之间的相对价格。</p>
+          <p>因此，判断结构时要把“货币”和“资产”分开。美元走强可以改善日元计价结果，却不能保证美元股票上涨。日元走弱也可能伴随目标资产下跌。两条价格路径有时同向帮助，有时相互抵消，不能只看汇率一条线。</p>
+        </section>
+
+        <section id="example">
+          <h2>一亿日元走完一年</h2>
+          <p>设想一名投资者借入一亿日元，年成本为 1%。起始时每美元兑换 150 日元，因此可以换得约 66.67 万美元。投资者把这笔钱放入年收益为 4% 的美元资产。一年后，若资产按约获得收益，美元余额约为 69.33 万。</p>
+          <p>此时日元负债连同利息变成 1.01 亿日元。若汇率仍是每美元 150 日元，换回日元约得 1.04 亿。扣除负债后剩约 300 万日元，恰好反映 3 个百分点的静态空间。现实中还需扣除交易成本，因此净额会更低。</p>
+          <dl class="ledger" aria-label="汇率变化下的教学结果">
+            <div class="ledger-row"><dt>日元贬至 155 / 美元</dt><dd class="gain">约 +647 万日元</dd></div>
+            <div class="ledger-row"><dt>维持 150 / 美元</dt><dd class="gain">约 +300 万日元</dd></div>
+            <div class="ledger-row"><dt>日元升至 142.5 / 美元</dt><dd class="loss">约 −220 万日元</dd></div>
+          </dl>
+          <p>第三种情景只是假设日元相对美元升值约 5%，却足以把静态空间变成亏损。这里还假定美元资产本金不跌、融资可以持有到期，也没有追加抵押要求。只要放松其中一个假设，结果就可能更差。</p>
+          <p>这个算例也解释了为什么“高息货币”不是“高回报货币”的同义词。高利率可能补偿通胀、政策不确定性或信用风险。汇率会不断吸收新信息，资产价格也会提前调整。利率标签本身不能保证投资者拿到预期差额。</p>
+          <p>还可以反推一个盈亏平衡点。在其余假设不变时，美元余额需要换回至少 1.01 亿日元。用 1.01 亿除以 69.33 万，得到每美元约 145.7 日元。也就是说，日元相对起点升值不到 3%，已经足以吃掉静态空间。</p>
+          <p>这个阈值不是预测，只是把风险翻译成可见的价格距离。手续费会把阈值推得更近，资产亏损也会让安全距离缩短。若目标资产收益高于假设，距离会扩大；若融资成本上升，距离又会收窄。交易从来不是只由一个数字决定。</p>
+        </section>
+
+        <section id="japan">
+          <h2>为什么故事总围着日元转</h2>
+          <p>日本在二十世纪九十年代以后经历低通胀与长期宽松政策。极低的短期利率、庞大而流动的金融市场，以及日元在全球外汇市场中的可交易性，共同降低了融资摩擦。相比难以自由兑换的小币种，日元更适合作为大规模交易的一端。</p>
+          <p>但“日元长期低息”不等于“日本利率永远不变”。日本银行在 2024 年 3 月宣布负利率政策与收益率曲线控制已完成其作用，转而以短期利率作为主要政策工具。这个变化意味着，旧有环境已经进入调整期，而不是一条可以无限外推的规律。相关决定可见<a href="https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240319a.htm">日本银行政策框架说明</a>。</p>
+          <p>市场真正交易的也不是今天的政策利率，而是未来路径相对预期的变化。一次加息如果早已被充分预期，价格反应可能有限。相反，看似不大的政策语气变化，也可能让参与者重估未来数年的融资成本和汇率路径。</p>
+          <p>因此，新闻标题里的“日元套息”其实覆盖多个群体。有人直接借日元，有人通过外汇远期或掉期建立类似敞口，还有日本机构持有海外资产并进行部分对冲。相同的市场价格背后，负债结构和退出条件并不相同。</p>
+          <p>日本居民和机构持有海外资产，也不自动意味着他们在进行同一策略。养老金可能为了长期配置而买海外债券，企业可能为了经营现金流而换汇，银行可能为客户提供对冲。只有当融资、资产和方向性价格风险组合在一起时，才接近这里讨论的结构。</p>
+          <p>日元的另一个特点是，在全球风险上升时有时会走强。这既可能来自既有头寸关闭，也可能来自日本投资者的资金安排或其他宏观因素。不能把每次升值都反推成同一种交易正在消失，但这种共振会让持仓者更关注尾部风险。</p>
+        </section>
+
+        <section id="risk-map">
+          <h2>四个方向同时进入账本</h2>
+          <p>第一是融资成本。日本政策利率、短期货币市场、信用利差和抵押品条件都会改变真实借款代价。第二是两种货币的相对价格。汇率每天波动，而且通常比逐日累积的利息更快。</p>
+          <p>第三是目标资产本身。美元债券会因利率变化而涨跌，股票会因盈利预期改变而波动，新兴市场资产还可能包含信用和流动性风险。第四是退出能力。市场平静时容易成交，不代表剧烈波动时仍能以屏幕上的价格迅速卖出。</p>
+          <p>还要区分“账面上有能力承担”和“现金上能及时补足”。长期资产可能最终偿付良好，却无法立刻变成现金。融资方的追加要求通常不会等资产到期。只看净资产而忽略现金时间表，容易低估途中被迫出售的可能性。</p>
+          <p>风险也会通过相关性连接。日元升值若与全球风险偏好下降同时出现，目标股票、信用债或新兴市场货币可能一起承压。投资者原以为拥有多个资产，压力时却发现它们共同依赖“低波动和融资宽松”这一条件。</p>
+          <p>同一个方向对不同主体的含义也不同。借日元的海外基金担心日元升值，日本出口企业却可能担心日元升值压低海外收入的折算值。日本家庭购买海外基金时，还会受到产品是否进行货币覆盖的影响。不能只凭币种名称推断谁赚谁亏。</p>
+          <p>宏观层面上，资金流动可能支持目标市场的资产价格，也可能压低当地融资成本。但这种影响很难与增长预期、财政政策和全球风险偏好完全分离。把价格上涨全部归功于外来低成本资金，与把下跌全部归咎于其撤离一样，都过度简化。真正可验证的分析必须说明时间、渠道与证据。</p>
+          <div class="callout">
+            <h3>一句更准确的话</h3>
+            <p>这不是“借 1% 去赚 4%”，而是“以日元形成偿付义务，持有另一种货币计价的风险资产，并期待所有价格变化之后仍留下正收益”。这句话更长，却把真正的交易说完整了。</p>
+          </div>
+          <p>国际清算银行把货币套息概括为利用利率差和低波动的杠杆跨币种头寸，并特别提醒汇率、利率和波动变化都很重要。它还指出，衍生品可以在资产负债表外形成类似敞口，使总规模难以被直接观察。来源见<a href="https://www.bis.org/publications/sizing-carry-trades-bis-statistics">BIS 对统计口径的说明</a>。</p>
+          <p>这也给普通读者一个稳妥起点。看到“低息日元推动全球资产”时，不必先猜市场有多少万亿资金。先问交易的三段是什么，盈亏用哪种货币计算，谁承担换汇风险。把结构看清，后面的数字才有意义。</p>
+          <aside class="boundary"><strong>阅读边界：</strong>本文用于解释市场机制，不构成投资建议。外汇与杠杆交易可能产生超过初始资金的损失；个人不应把教学算例当作可复制的收益方案。</aside>
+          <p>现在，利差已不再显得孤立。下一步要把四个部件放进同一账本，观察同样的资产收益如何在不同汇率和杠杆下变成完全不同的结果。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="../../index.html"><span>返回</span>知识库总览</a>
+          <a href="sources.html"><span>查证</span>来源与口径</a>
+          <a href="mechanics.html"><span>下一章</span>收益拆解 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="foot-dense"><p>日元套息交易知识库 · 面向普通读者的机制说明 · 更新于 2026-10-02 · 关键事实核对：日本银行、国际清算银行、国际货币基金组织 · <a href="sources.html">完整来源</a></p></div></footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

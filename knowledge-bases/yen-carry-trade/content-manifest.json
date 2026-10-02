@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "日元套息交易",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-02",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "利差不是免费的午餐",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [],
+      "readerQuestion": "日元利率较低时，为什么借日元买高收益资产仍然不是一笔稳稳赚利的交易？",
+      "readerStateBefore": "读者把套息交易理解为简单地借低息、存高息，容易把利差误认为几乎确定的收益。",
+      "readerStateAfter": "读者能够把日元套息交易拆成融资、换汇和持有资产三段，并知道汇率变化可能一次抹去长期利差。",
+      "priorConclusion": "",
+      "coreExample": "一名投资者借入一亿日元，把资金换成美元后持有一年期美元资产；教学算例假设日元融资成本为1%、美元资产收益为4%。",
+      "conclusion": "日元套息交易赚取的不是孤立的利差，而是在承担汇率、资产价格和融资条件共同变化的风险后留下的剩余收益。",
+      "nextQuestion": "既然利差只是收益的一部分，一笔日元套息交易的盈亏应如何逐项计算？",
+      "nextPage": "mechanics.html",
+      "newTerms": [
+        { "term": "套息交易", "definition": "用低收益货币融资并持有较高收益货币资产，且承担相应市场风险的跨币种策略。" },
+        { "term": "融资货币", "definition": "交易中用于借入或建立偿付义务的低收益货币。" },
+        { "term": "目标货币", "definition": "交易中被买入并用于持有较高收益资产的货币。" },
+        { "term": "利差", "definition": "目标资产收益率与融资成本之间的差额。" },
+        { "term": "未对冲汇率风险", "definition": "没有预先锁定未来换回融资货币的汇率，因此盈亏会受汇率变化影响。" }
+      ]
+    },
+    {
+      "file": "mechanics.html",
+      "title": "把收益拆成四个部件",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然利差只是收益的一部分，一笔日元套息交易的盈亏应如何逐项计算？",
+      "readerStateBefore": "读者能够把日元套息交易拆成融资、换汇和持有资产三段，并知道汇率变化可能一次抹去长期利差。",
+      "readerStateAfter": "读者能够用利差、汇率、资产价格和交易成本拆解盈亏，并解释杠杆与保证金为何放大尾部风险。",
+      "priorConclusion": "日元套息交易赚取的不是孤立的利差，而是在承担汇率、资产价格和融资条件共同变化的风险后留下的剩余收益。",
+      "coreExample": "沿用一亿日元、1%融资成本和4%美元资产收益的教学算例，分别代入日元贬值、持平和升值5%的情景，并比较无杠杆与五倍杠杆。",
+      "conclusion": "套息收益必须在同一计价货币下分解；汇率与资产价格是主要波动源，杠杆和保证金则决定亏损会不会被迫提前兑现。",
+      "nextQuestion": "当许多参与者同时使用杠杆并遇到日元升值时，局部亏损为何会演变成跨市场的快速平仓？",
+      "nextPage": "unwind.html",
+      "newTerms": [
+        { "term": "即期汇率", "definition": "当前可以成交的两种货币兑换价格。" },
+        { "term": "远期合约", "definition": "约定在未来日期按预先约定价格交换货币的合约。" },
+        { "term": "杠杆", "definition": "用较少自有资金控制更大风险敞口的安排。" },
+        { "term": "保证金", "definition": "为覆盖衍生品或融资头寸潜在损失而缴存的资金。" },
+        { "term": "套息风险比", "definition": "用预期利差相对于汇率波动来衡量策略吸引力的简化指标。" }
+      ]
+    },
+    {
+      "file": "unwind.html",
+      "title": "平仓为何像一股回流",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["mechanics.html"],
+      "readerQuestion": "当许多参与者同时使用杠杆并遇到日元升值时，局部亏损为何会演变成跨市场的快速平仓？",
+      "readerStateBefore": "读者能够用利差、汇率、资产价格和交易成本拆解盈亏，并解释杠杆与保证金为何放大尾部风险。",
+      "readerStateAfter": "读者能够重建政策预期、汇率、保证金与资产抛售之间的反馈链，并用五项检查审慎解读套息交易新闻。",
+      "priorConclusion": "套息收益必须在同一计价货币下分解；汇率与资产价格是主要波动源，杠杆和保证金则决定亏损会不会被迫提前兑现。",
+      "coreExample": "用2024年8月市场波动作为经权威来源核对的案例，再把同一教学头寸放进利差收窄、日元升值和保证金上调同时发生的压力情景。",
+      "conclusion": "套息平仓的破坏力来自相似头寸、杠杆约束和市场流动性的相互作用；判断风险应看路径与承压能力，而不是猜一个神秘的全球总规模。",
+      "nextQuestion": "面对下一次所谓的日元套息交易平仓，哪些证据足以支持判断，哪些只是把所有波动归因于一个故事？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "平仓", "definition": "通过反向交易关闭原有头寸并终止其价格风险。" },
+        { "term": "去杠杆", "definition": "减少借款或衍生品敞口，使总风险相对于自有资本下降。" },
+        { "term": "拥挤交易", "definition": "许多参与者持有方向相近、触发条件相似的头寸。" },
+        { "term": "顺周期性", "definition": "市场上涨时风险承担扩大、下跌时被迫收缩，从而放大原有波动的特征。" },
+        { "term": "市场流动性", "definition": "在不显著冲击价格的情况下较快完成交易的能力。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与口径",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

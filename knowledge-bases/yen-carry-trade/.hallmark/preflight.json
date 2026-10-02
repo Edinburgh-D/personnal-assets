@@ -1,0 +1,10 @@
+{
+  "scannedAt": "2026-10-02T11:15:02+08:00",
+  "scope": "knowledge-bases/yen-carry-trade",
+  "framework": "vanilla-static-html",
+  "fontStack": ["Newsreader", "IBM Plex Sans", "IBM Plex Mono"],
+  "palette": "OKLCH custom properties in local tokens.css",
+  "motionStance": "motion-cut; only direct menu and theme state feedback",
+  "spacing": "4pt semantic scale",
+  "preserved": ["repository static publishing contract", "root index automation", "data-site-home navigation contract"]
+}

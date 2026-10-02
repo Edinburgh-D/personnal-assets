@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "Codex fresh-disk reader pass",
+  "reviewedAt": "2026-10-02T11:15:02+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "日元利率较低时，为什么借日元买高收益资产仍然不是一笔稳稳赚利的交易？",
+      "readerStateChange": "读前容易把两端利率之差视为确定收益；读后能够把交易拆成日元负债、换汇和目标资产，并指出汇率、价格与融资约束会共同改变结果。",
+      "twoSentenceSummary": "正文用一亿日元教学算例说明，3 个百分点的静态空间可能被不到 3% 的日元升值消耗。随后区分不同参与者与持仓目的，把日本长期低息背景放回已经变化的政策路径中。",
+      "continuityEvidence": "结尾把风险归入融资、汇率、资产和退出四项，直接引出下一章在同一计价货币下逐项计算盈亏。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanics.html",
+      "centralQuestion": "既然利差只是收益的一部分，一笔日元套息交易的盈亏应如何逐项计算？",
+      "readerStateChange": "读前只知道汇率会影响结果；读后能够计算盈亏平衡汇率，区分资产、负债、汇率和摩擦，并说明杠杆、保证金与路径为何决定能否持有到期。",
+      "twoSentenceSummary": "正文把一亿日元头寸折回日元计价，算出日元持平、贬值与升值时的不同结果，并解释远期锁汇为何不会保留免费的完整利差。杠杆压力情景进一步展示，最终观点正确也可能因途中现金不足而失败。",
+      "continuityEvidence": "本章承接入口页的四项风险地图，结尾把单笔账本推进到多个参与者共用模型、止损线和融资工具时的同步减仓问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "unwind.html",
+      "centralQuestion": "当许多参与者同时使用杠杆并遇到日元升值时，局部亏损为何会演变成跨市场的快速平仓？",
+      "readerStateChange": "读前能理解单笔头寸的亏损；读后能够重建预期变化、日元升值、保证金和资产抛售的反馈链，并用差额、方向、仓位、约束和市场五项证据审查新闻。",
+      "twoSentenceSummary": "正文以 2024 年 8 月事件展示杠杆收缩如何放大而非独自制造市场冲击，并说明相关规模只能通过不完整的表内外痕迹估计。随后用 2026 年最新日本银行决定更新政策背景，给出有条件、可证伪的判断框架。",
+      "continuityEvidence": "开头使用上一章的保证金与路径约束解释被迫减仓，末段把机制转化为审查下一次市场叙事所需的五类证据。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分官方政策决定、机构研究、事件复盘和教学假设，并知道当前政策数字、规模估计与衍生品名义本金各自的适用边界。",
+      "twoSentenceSummary": "页面汇集日本银行、国际清算银行与国际货币基金组织的一手材料，标明每份材料支持的主张。最后单独说明教学数字、40 万亿日元粗略估计和风险边界，避免不同口径混用。",
+      "continuityEvidence": "来源页逐项对应前三章的政策路径、交易机制、2024 年事件与 2026 年当前环境，并从各叙事页和全站导航可达。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
