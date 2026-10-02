@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "信息战与舆论操控",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-02",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先辨认战场",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "当一条公共事件消息迅速引发恐慌与对立时，怎样区分普通错误、宣传表达与有组织的舆论操控？",
+      "readerStateBefore": "读者容易把假消息、宣传、立场偏见、平台热搜和信息战混成同一种现象，并以内容是否刺耳来判断是否遭到操控。",
+      "readerStateAfter": "读者能够从意图、协调、手段与公共后果区分普通错误、虚假信息、宣传和信息威胁，并理解真实内容也可能被操控性使用。",
+      "priorConclusion": "",
+      "coreExample": "虚构城市临江市突发一段“自来水已被污染”的语音和短视频；消息夹杂真实检修画面、错误推断与假冒通知，随后引发抢水、互相指责和对官方说明的不信任。",
+      "conclusion": "判断是否存在舆论操控，不能只盯着一句话真假，而要同时检查意图、协调行为、传播手段以及它试图改变的信任与行动。",
+      "nextQuestion": "如果单条内容的真假不足以说明操控，一场行动怎样把零散素材组织成能够扩散并影响选择的传播链？",
+      "nextPage": "mechanism.html",
+      "newTerms": [
+        { "term": "信息战", "definition": "行动者把信息的生产、传播、获取和信任当作竞争手段，以影响对手决策、社会认知或行动能力的对抗性活动。" },
+        { "term": "信息威胁", "definition": "具有故意、伤害性、操控性与协调性特征，并试图削弱社会判断或共同制度的活动。" },
+        { "term": "错误信息", "definition": "传播者未必有欺骗意图，却转发了不准确或会误导人的内容。" },
+        { "term": "虚假信息", "definition": "明知内容虚假或具有欺骗性，仍有意制作或传播，以影响他人判断与行动。" },
+        { "term": "宣传", "definition": "为推动特定信念或行为而选择、组织和重复信息的传播活动，内容可能真、假或真假混合。" }
+      ]
+    },
+    {
+      "file": "mechanism.html",
+      "title": "一条消息如何变成行动",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果单条内容的真假不足以说明操控，一场行动怎样把零散素材组织成能够扩散并影响选择的传播链？",
+      "readerStateBefore": "读者能够从意图、协调、手段与公共后果区分普通错误、虚假信息、宣传和信息威胁，并理解真实内容也可能被操控性使用。",
+      "readerStateAfter": "读者能够沿来源伪装、协同投放、算法与社交放大、情绪转译和行动后果重建传播链，并识别链条中的可观察证据。",
+      "priorConclusion": "判断是否存在舆论操控，不能只盯着一句话真假，而要同时检查意图、协调行为、传播手段以及它试图改变的信任与行动。",
+      "coreExample": "临江市供水传言被假冒社区账号首发，多组账号在相近时间使用同一画面和不同文案，地方自媒体再把“污染”改写成“隐瞒”，平台推荐与群聊转发共同扩大可见度。",
+      "conclusion": "操控的力量来自一条可重复的传播链：来源被伪装，内容被适配，协同行为制造声势，平台与社交关系完成放大，情绪最终被转译为现实选择。",
+      "nextQuestion": "既然相似扩散也可能由真实焦虑和自发转发造成，我们怎样在不压制正常表达的前提下判断证据强弱并采取行动？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "影响行动", "definition": "为改变特定人群的认识、偏好或行为而有计划地组织内容、渠道和传播节奏的活动。" },
+        { "term": "来源漂白", "definition": "让信息经过仿冒媒体、代理账号或多次转述，逐步遮蔽最初出资者、制作者或利益关系。" },
+        { "term": "协同非真实行为", "definition": "多个账号以隐瞒真实身份或关系的方式配合行动，使活动看起来像自然形成的公共讨论。" },
+        { "term": "放大", "definition": "通过推荐、广告、账号网络、群聊或媒体跟进，显著提高某条叙事的可见度与重复频率。" },
+        { "term": "微定向", "definition": "依据受众特征把不同版本的信息投向不同小群体，以提高说服或动员效果。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "把怀疑变成证据",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["mechanism.html"],
+      "readerQuestion": "既然相似扩散也可能由真实焦虑和自发转发造成，我们怎样在不压制正常表达的前提下判断证据强弱并采取行动？",
+      "readerStateBefore": "读者能够沿来源伪装、协同投放、算法与社交放大、情绪转译和行动后果重建传播链，并识别链条中的可观察证据。",
+      "readerStateAfter": "读者能够按主张、来源、行为、时间与后果分层核验，比较自发扩散与协调操控等替代解释，并选择兼顾信息完整性和表达权利的回应。",
+      "priorConclusion": "操控的力量来自一条可重复的传播链：来源被伪装，内容被适配，协同行为制造声势，平台与社交关系完成放大，情绪最终被转译为现实选择。",
+      "coreExample": "把临江市供水传言整理成一份证据卷宗：保存原始链接和时间，核对通知出处与画面地点，比较账号创建时间和同步模式，再以停水检修、自发恐慌和协调操控三种解释进行排除。",
+      "conclusion": "负责任的判断不是迅速给阵营贴标签，而是保存可复核材料、比较替代解释、按证据强度表达结论，并把回应限制在必要且尊重权利的范围内。",
+      "nextQuestion": "下一次面对更熟悉、更符合自身立场的消息时，你是否仍会用同样的证据标准审查它？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "归因", "definition": "根据可核查证据判断某项活动由谁组织、控制或资助，并说明结论仍存在哪些不确定性。" },
+        { "term": "交叉印证", "definition": "使用相互独立、来源清楚的材料检验同一主张，避免多个转载被误当成多份证据。" },
+        { "term": "内容溯源", "definition": "记录数字内容从何处产生、经过何种编辑与传播，以帮助判断其真实性和上下文。" },
+        { "term": "预先澄清", "definition": "在常见操控手法或可预见谣言出现前，先公开事实、证据路径与可能误导点。" },
+        { "term": "信息完整性", "definition": "让人们能够接触可靠、准确的信息并自主作出判断，同时维护选择、隐私、安全和表达权利的环境。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
