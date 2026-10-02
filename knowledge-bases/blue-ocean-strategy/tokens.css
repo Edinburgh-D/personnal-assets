@@ -1,0 +1,86 @@
+/* Hallmark · genre: editorial · macrostructure: Long Document · theme: Editorial · enrichment: Tier-B hand SVG · nav: N9 · footer: Ft2 */
+:root {
+  --color-paper: oklch(97% 0.012 238);
+  --color-paper-2: oklch(93% 0.018 238);
+  --color-paper-3: oklch(88% 0.024 238);
+  --color-ink: oklch(19% 0.026 245);
+  --color-ink-soft: oklch(35% 0.028 245);
+  --color-muted: oklch(47% 0.025 245);
+  --color-rule: oklch(76% 0.028 238);
+  --color-rule-strong: oklch(44% 0.055 238);
+  --color-accent: oklch(47% 0.16 238);
+  --color-accent-soft: oklch(90% 0.046 238);
+  --color-accent-ink: oklch(98% 0.008 238);
+  --color-rival: oklch(53% 0.15 26);
+  --color-rival-soft: oklch(91% 0.045 26);
+  --color-positive: oklch(43% 0.10 163);
+  --color-focus: oklch(61% 0.17 71);
+  --color-shadow: oklch(19% 0.026 245 / 0.08);
+  --color-clear: transparent;
+
+  --font-display: "Noto Serif SC", "Songti SC", STSong, serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.4rem, 5vw, 4.15rem);
+  --text-display: clamp(2.75rem, 6vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 100ms;
+  --dur-short: 180ms;
+  --dur-long: 360ms;
+
+  --rule-thin: 1px;
+  --rule-heavy: 2px;
+  --radius-control: 0.25rem;
+  --radius-panel: 0.5rem;
+  --measure: 65ch;
+  --content-wide: 76rem;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+html[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 238);
+  --color-paper-2: oklch(19% 0.022 238);
+  --color-paper-3: oklch(24% 0.027 238);
+  --color-ink: oklch(94% 0.014 238);
+  --color-ink-soft: oklch(80% 0.018 238);
+  --color-muted: oklch(70% 0.020 238);
+  --color-rule: oklch(37% 0.032 238);
+  --color-rule-strong: oklch(67% 0.052 238);
+  --color-accent: oklch(72% 0.12 238);
+  --color-accent-soft: oklch(27% 0.055 238);
+  --color-accent-ink: oklch(15% 0.018 238);
+  --color-rival: oklch(70% 0.11 26);
+  --color-rival-soft: oklch(27% 0.05 26);
+  --color-positive: oklch(72% 0.085 163);
+  --color-focus: oklch(80% 0.14 71);
+  --color-shadow: oklch(7% 0.012 238 / 0.32);
+}

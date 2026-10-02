@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-03",
+  "framework": "vanilla-html",
+  "fontSignals": "repository uses per-library Chinese serif and sans pairings",
+  "paletteSignals": "repository root uses cool-blue OKLCH archive tokens",
+  "motionStance": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["vanilla delivery", "OKLCH tokens", "4pt spacing", "static editorial reading"]
+}

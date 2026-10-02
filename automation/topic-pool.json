@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-03",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3732,6 +3732,13 @@
       "generatedAt": "2026-10-02",
       "slug": "soros-reflexivity",
       "entry": "knowledge-bases/soros-reflexivity/main.html"
+    },
+    {
+      "name": "蓝海战略",
+      "domain": "商业/管理",
+      "generatedAt": "2026-10-03",
+      "slug": "blue-ocean-strategy",
+      "entry": "knowledge-bases/blue-ocean-strategy/main.html"
     }
   ],
   "skipped": []

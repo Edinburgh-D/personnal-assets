@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "蓝海战略",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-03",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "不是寻找空白，而是重画价值边界",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "蓝海战略究竟是在回避竞争，还是在改变企业与顾客共同认可的价值规则？",
+      "readerStateBefore": "读者把蓝海理解成没有竞争者的新行业，或把它当作鼓励创新与差异化的宽泛口号。",
+      "readerStateAfter": "读者能够区分市场空间隐喻与真实战略选择，并解释价值创新为何要求同时改变买方价值与成本结构。",
+      "priorConclusion": "",
+      "coreExample": "一家虚构的社区健身企业“云帆健身”身处年卡、器械数量与私教销售高度同质化的市场，尝试把服务改造成无需年卡、固定时段、教练带领的三十分钟小组训练。",
+      "conclusion": "蓝海战略的核心不是逃离竞争，而是通过同时改变买方价值与成本结构，重写行业默认的竞争因素，形成一项有清晰取舍的战略行动。",
+      "nextQuestion": "如果机会不在凭空想象一个新行业，团队怎样从现有竞争现实出发，系统地画出一条不同的价值曲线？",
+      "nextPage": "mechanism.html",
+      "newTerms": [
+        { "term": "红海", "definition": "边界和竞争规则相对明确、企业围绕既有需求争夺份额的市场空间。" },
+        { "term": "蓝海", "definition": "通过重组买方价值与经营方式而创造、尚未被充分开发的市场空间。" },
+        { "term": "战略行动", "definition": "围绕一项市场创造方案所作的一组彼此配合的管理决策与执行动作。" },
+        { "term": "价值创新", "definition": "同时追求差异化与较低成本，使买方价值和企业价值一起跃升的战略逻辑。" }
+      ]
+    },
+    {
+      "file": "mechanism.html",
+      "title": "把一条新价值曲线画出来",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果机会不在凭空想象一个新行业，团队怎样从现有竞争现实出发，系统地画出一条不同的价值曲线？",
+      "readerStateBefore": "读者能够区分市场空间隐喻与真实战略选择，并解释价值创新为何要求同时改变买方价值与成本结构。",
+      "readerStateAfter": "读者能够用战略画布识别行业趋同，用非顾客与跨边界观察寻找需求障碍，并用四步动作形成可讨论的新价值曲线。",
+      "priorConclusion": "蓝海战略的核心不是逃离竞争，而是通过同时改变买方价值与成本结构，重写行业默认的竞争因素，形成一项有清晰取舍的战略行动。",
+      "coreExample": "云帆健身先画出现有健身房围绕器械、面积、年卡折扣和私教推销的相似投入，再从不愿签年卡、害怕被推销且时间零碎的人群出发，消除、减少、提升并创造新的服务因素。",
+      "conclusion": "战略画布与四步动作把行业惯例转成可讨论的选择，但真正有意义的蓝海方案必须以非顾客的共同障碍为依据，并让新的价值曲线同时具备聚焦、差异和清楚主张。",
+      "nextQuestion": "一条看起来与众不同的价值曲线，怎样经过效用、价格、成本、采用和竞争反应的检验，才不至于沦为一张漂亮海图？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "战略画布", "definition": "把行业竞争因素、各方投入重点与买方获得水平画在同一张图上的诊断工具。" },
+        { "term": "价值曲线", "definition": "组织在一组竞争因素上的相对提供水平所形成的战略轮廓。" },
+        { "term": "非顾客", "definition": "目前不购买、很少购买或已经离开某类产品与服务的人。" },
+        { "term": "六条路径框架", "definition": "从替代行业、战略群组、买方链、互补方案、功能情感取向与时间趋势跨边界观察机会的方法。" },
+        { "term": "四步动作框架", "definition": "用消除、减少、提升、创造四类选择同时重组成本与买方价值的方法。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "从漂亮曲线到可行战略",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["mechanism.html"],
+      "readerQuestion": "一条看起来与众不同的价值曲线，怎样经过效用、价格、成本、采用和竞争反应的检验，才不至于沦为一张漂亮海图？",
+      "readerStateBefore": "读者能够用战略画布识别行业趋同，用非顾客与跨边界观察寻找需求障碍，并用四步动作形成可讨论的新价值曲线。",
+      "readerStateAfter": "读者能够把蓝海方案视为待验证的市场创造假设，并用效用、价格、成本、采用、执行与模仿反应判断其边界。",
+      "priorConclusion": "战略画布与四步动作把行业惯例转成可讨论的选择，但真正有意义的蓝海方案必须以非顾客的共同障碍为依据，并让新的价值曲线同时具备聚焦、差异和清楚主张。",
+      "coreExample": "云帆健身的新曲线继续接受检验：三十分钟课程是否真正降低时间与心理门槛，月费能否覆盖教练与场地成本，员工是否愿意放弃私教提成，竞争者又能否迅速复制。",
+      "conclusion": "蓝海战略最适合作为发现与检验市场创造假设的框架：先重画价值，再用效用、价格、成本、采用和可复制性逐关验证，并接受蓝海会被模仿、必须持续更新。",
+      "nextQuestion": "当行业边界因技术、监管或行为变化而移动时，原先被消除与创造的因素是否仍然成立？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "买方效用", "definition": "产品或服务在购买、使用、维护与退出等环节为买方解决问题的实际程度。" },
+        { "term": "战略价格", "definition": "能够吸引目标大众购买，同时让竞争者不易仅靠价格阻断需求扩张的定价位置。" },
+        { "term": "目标成本", "definition": "在既定战略价格下仍能实现可持续经营所允许的成本上限。" },
+        { "term": "采用障碍", "definition": "员工、伙伴、渠道或公众因为利益、能力、认知与制度约束而不愿支持新方案的阻力。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与概念边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
