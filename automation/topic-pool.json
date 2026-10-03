@@ -3746,6 +3746,13 @@
       "generatedAt": "2026-10-03",
       "slug": "antimicrobial-resistance",
       "entry": "knowledge-bases/antimicrobial-resistance/main.html"
+    },
+    {
+      "name": "催眠治疗与临床应用",
+      "domain": "心理学",
+      "generatedAt": "2026-10-03",
+      "slug": "clinical-hypnosis",
+      "entry": "knowledge-bases/clinical-hypnosis/main.html"
     }
   ],
   "skipped": []

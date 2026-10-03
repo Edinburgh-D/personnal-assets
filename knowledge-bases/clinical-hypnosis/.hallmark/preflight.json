@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-03",
+  "framework": "vanilla-html",
+  "fontSignals": "repository-level tokens plus per-knowledge-base font pairs",
+  "paletteSignals": "OKLCH custom properties",
+  "motionStance": "motion-cut",
+  "spacing": "4pt-derived semantic scale",
+  "preserve": ["static publishing structure", "root overview design", "internal navigation conventions"]
+}

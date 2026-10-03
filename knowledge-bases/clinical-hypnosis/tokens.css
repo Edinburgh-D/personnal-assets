@@ -1,0 +1,97 @@
+/* Hallmark · genre: editorial · macrostructure: Long Document · theme: Almanac · enrichment: E5 tier-A CSS focus field · nav: N6 · footer: Ft2 */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+SC:wght@400;600;700&family=Noto+Serif+SC:wght@500;700;900&display=swap");
+
+:root {
+  color-scheme: light dark;
+  --color-paper: oklch(96% 0.013 78);
+  --color-paper-raised: oklch(98.2% 0.009 78);
+  --color-paper-soft: oklch(92.5% 0.018 78);
+  --color-ink: oklch(20% 0.018 54);
+  --color-ink-2: oklch(34% 0.022 54);
+  --color-muted: oklch(42% 0.019 54);
+  --color-rule: oklch(76% 0.025 70);
+  --color-rule-strong: oklch(57% 0.04 65);
+  --color-accent: oklch(47% 0.16 33);
+  --color-accent-soft: oklch(91% 0.045 43);
+  --color-focus: oklch(43% 0.18 250);
+  --color-warning: oklch(39% 0.12 34);
+  --color-link: oklch(39% 0.14 33);
+  --color-selection: oklch(86% 0.07 43);
+  --color-shadow: oklch(26% 0.03 54 / 0.12);
+
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "IBM Plex Sans SC", "Microsoft YaHei", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.8rem, 8vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 100ms;
+  --dur-short: 180ms;
+
+  --rule-hair: 1px;
+  --rule-double: 4px;
+  --radius-small: 0.25rem;
+  --radius-card: 0.75rem;
+  --radius-pill: 999px;
+  --shadow-paper: 0 1rem 3rem var(--color-shadow);
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(16% 0.014 60);
+  --color-paper-raised: oklch(20% 0.016 60);
+  --color-paper-soft: oklch(24% 0.02 60);
+  --color-ink: oklch(93% 0.013 78);
+  --color-ink-2: oklch(82% 0.015 78);
+  --color-muted: oklch(76% 0.018 72);
+  --color-rule: oklch(38% 0.028 62);
+  --color-rule-strong: oklch(55% 0.045 58);
+  --color-accent: oklch(69% 0.14 35);
+  --color-accent-soft: oklch(27% 0.055 35);
+  --color-focus: oklch(75% 0.15 250);
+  --color-warning: oklch(74% 0.12 43);
+  --color-link: oklch(76% 0.12 40);
+  --color-selection: oklch(36% 0.07 40);
+  --color-shadow: oklch(8% 0.018 54 / 0.32);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(16% 0.014 60);
+    --color-paper-raised: oklch(20% 0.016 60);
+    --color-paper-soft: oklch(24% 0.02 60);
+    --color-ink: oklch(93% 0.013 78);
+    --color-ink-2: oklch(82% 0.015 78);
+    --color-muted: oklch(76% 0.018 72);
+    --color-rule: oklch(38% 0.028 62);
+    --color-rule-strong: oklch(55% 0.045 58);
+    --color-accent: oklch(69% 0.14 35);
+    --color-accent-soft: oklch(27% 0.055 35);
+    --color-focus: oklch(75% 0.15 250);
+    --color-warning: oklch(74% 0.12 43);
+    --color-link: oklch(76% 0.12 40);
+    --color-selection: oklch(36% 0.07 40);
+    --color-shadow: oklch(8% 0.018 54 / 0.32);
+  }
+}

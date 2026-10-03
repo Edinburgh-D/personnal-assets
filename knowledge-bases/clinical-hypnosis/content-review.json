@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-03T16:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "临床催眠究竟发生了什么，为什么它既不是睡着、被控制，也不是一句暗示就能治病？",
+      "readerStateChange": "读前容易把催眠理解为睡眠、失控或舞台表演；读后能将其描述为有目标、有同意边界的注意、想象与暗示协作程序。",
+      "twoSentenceSummary": "文章用林岚考虑肠道定向催眠的经历，拆开舞台催眠、睡眠、读心和临床程序之间的差异。它进一步说明诱导、治疗性暗示和反应各自承担什么作用，并把判断重心移向具体目标与整体照护。",
+      "continuityEvidence": "结尾把控制权神话转化为机制问题，直接提出清醒状态下注意、期待、想象和关系怎样共同改变体验，承接下一章。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-it-works.html",
+      "centralQuestion": "既然来访者仍然清醒并保有选择，注意、期待、想象和治疗关系怎样共同产生真实的主观与行为变化？",
+      "readerStateChange": "读前只知道催眠依赖协作；读后能够以注意优先级、反应期待、吸收、反馈和关系安全解释反应，同时保留机制争论与个体差异。",
+      "twoSentenceSummary": "文章沿林岚的首次练习，说明注意、期待、想象投入和社会情境怎样共同塑造感觉与行动准备。它也解释为什么强烈体验不等于长期疗效，并把机制故事送回可验证结果和安全过程。",
+      "continuityEvidence": "本章从上一章的协作定义出发，最终指出机制可行不等于任何用途有效，由此自然要求下一章检验用途证据、风险与服务者。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evidence-and-choice.html",
+      "centralQuestion": "既然催眠反应依赖目标、情境与个体差异，普通人怎样判断某项临床用途的证据、风险和服务者是否可信？",
+      "readerStateChange": "读前能够解释反应机制但难以评估服务；读后能按具体问题、推荐强度、基础资质、可撤回同意、不良反应和功能结果作出判断。",
+      "twoSentenceSummary": "文章把不同临床用途按证据强弱分开，并以肠易激综合征为例解释条件性推荐为何既不是保证也不是否定。它给出核对资质、同意、协作和结果追踪的顺序，同时明确记忆恢复、替代必要照护和保证疗效等红旗。",
+      "continuityEvidence": "本章回答了前一章留下的临床判断问题，并以未来新应用需要何种证据收束，使读者能够把相同尺度迁移到数字产品和新宣传。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的编号；读后能够区分定义来源、患者资料、临床指南、专业培训信息和司法记忆边界各自支持的主张。",
+      "twoSentenceSummary": "来源页逐条说明 APA、NCCIH、ACG、VA 与美国司法部材料在正文中承担的证据角色。它提醒读者不要把定义当疗效、把研究数量当效果，也不要把美国资质规则直接外推到其他地区。",
+      "continuityEvidence": "该页由每章的来源编号和末章翻页链接可达，并回链开篇与总览，为整条叙事提供可核验的证据底座。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "催眠治疗与临床应用",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-03",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "聚焦，但没有失去自己",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者主要从舞台表演、影视情节或助眠音频认识催眠，难以判断临床催眠究竟是一种状态、技术还是治疗。",
+      "readerStateAfter": "读者能够把临床催眠理解为在治疗关系中组织注意、想象与暗示的协作程序，并能把它与睡眠、失控和读心等流行想象分开。",
+      "readerQuestion": "临床催眠究竟发生了什么，为什么它既不是睡着、被控制，也不是一句暗示就能治病？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "林岚在医生确认肠易激综合征后，仍常因腹痛和对下一次发作的担心减少外出；治疗师提出把肠道定向催眠作为整体治疗中的一个选项。",
+      "newTerms": [
+        {
+          "term": "临床催眠",
+          "definition": "受过训练的医疗或心理专业人员在明确目标与知情同意下，运用聚焦注意、想象和治疗性暗示的临床程序。"
+        },
+        {
+          "term": "催眠诱导",
+          "definition": "帮助来访者把注意从日常分散状态转向较集中状态的一组引导，不等于强迫入睡。"
+        },
+        {
+          "term": "治疗性暗示",
+          "definition": "围绕既定治疗目标提出的语言或意象邀请，来访者可以体验、调整或拒绝。"
+        },
+        {
+          "term": "催眠反应",
+          "definition": "人在催眠情境中对感觉、知觉、想象、情绪或行为暗示产生的主观与可观察变化。"
+        }
+      ],
+      "conclusion": "临床催眠不是把控制权交给治疗师，而是在清醒协作和明确目标下，利用聚焦注意、想象与暗示改变体验的一种临床工具。",
+      "nextQuestion": "既然来访者仍然清醒并保有选择，注意、期待、想象和治疗关系怎样共同产生真实的主观与行为变化？",
+      "nextPage": "how-it-works.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "how-it-works.html",
+      "title": "暗示如何变成体验",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把临床催眠理解为在治疗关系中组织注意、想象与暗示的协作程序，并能把它与睡眠、失控和读心等流行想象分开。",
+      "readerStateAfter": "读者能够用注意收窄、期待、吸收与情境协作解释一次催眠反应，同时知道这些机制模型仍有争论，个体反应也存在差异。",
+      "readerQuestion": "既然来访者仍然清醒并保有选择，注意、期待、想象和治疗关系怎样共同产生真实的主观与行为变化？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "临床催眠不是把控制权交给治疗师，而是在清醒协作和明确目标下，利用聚焦注意、想象与暗示改变体验的一种临床工具。",
+      "coreExample": "林岚在第一次肠道定向催眠中先约定目标和停止信号，再通过呼吸、身体感觉与温和意象练习观察腹部感受如何随注意和解释改变。",
+      "newTerms": [
+        {
+          "term": "外围觉察",
+          "definition": "当注意集中在一个对象时，对周围其他刺激保持的较低优先级觉知。"
+        },
+        {
+          "term": "反应期待",
+          "definition": "一个人预期某种体验将发生，而这种预期又参与塑造实际体验的过程。"
+        },
+        {
+          "term": "吸收",
+          "definition": "注意深度投入于想象、故事、感觉或任务，以至其他刺激暂时退到背景的倾向。"
+        },
+        {
+          "term": "催眠感受性",
+          "definition": "个体在标准条件下体验并表现不同催眠暗示反应的相对稳定差异。"
+        }
+      ],
+      "conclusion": "催眠反应更像注意、期待、想象、学习经验与关系安全共同形成的可变结果，而不是由单一神秘状态或治疗师意志直接造成。",
+      "nextQuestion": "既然催眠反应依赖目标、情境与个体差异，普通人怎样判断某项临床用途的证据、风险和服务者是否可信？",
+      "nextPage": "evidence-and-choice.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "evidence-and-choice.html",
+      "title": "把可能有效变成可判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用注意收窄、期待、吸收与情境协作解释一次催眠反应，同时知道这些机制模型仍有争论，个体反应也存在差异。",
+      "readerStateAfter": "读者能够按具体问题、证据强度、专业资质、知情同意和结果追踪评估催眠服务，并识别替代正规治疗、保证疗效和诱导记忆等危险信号。",
+      "readerQuestion": "既然催眠反应依赖目标、情境与个体差异，普通人怎样判断某项临床用途的证据、风险和服务者是否可信？",
+      "dependsOn": [
+        "how-it-works.html"
+      ],
+      "priorConclusion": "催眠反应更像注意、期待、想象、学习经验与关系安全共同形成的可变结果，而不是由单一神秘状态或治疗师意志直接造成。",
+      "coreExample": "林岚把肠道定向催眠与继续医学随访、症状记录和其他治疗方案放在同一决策表中，并用事先约定的目标判断是否继续。",
+      "newTerms": [
+        {
+          "term": "辅助治疗",
+          "definition": "与标准诊断和治疗协同使用、用于补充特定目标，而不是取代必要医疗照护的干预。"
+        },
+        {
+          "term": "条件性推荐",
+          "definition": "指南认为某方法可能适合一部分人，但证据把握有限，需要结合偏好、成本、风险和其他方案共同决定。"
+        },
+        {
+          "term": "知情同意",
+          "definition": "在了解目的、过程、替代方案、可能收益与风险后，自主决定是否接受并可随时撤回的过程。"
+        },
+        {
+          "term": "结果追踪",
+          "definition": "在治疗前后用事先约定的症状、功能或生活目标持续记录变化，以判断是否值得继续。"
+        }
+      ],
+      "conclusion": "选择临床催眠的关键不是相信或否定一个标签，而是把它放回具体诊断、有限证据、合格服务者、可撤回同意与可追踪结果之中。",
+      "nextQuestion": "当未来出现新的催眠应用、数字产品或疗效宣传时，哪些证据足以改变当前判断，哪些红旗仍应保持不变？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

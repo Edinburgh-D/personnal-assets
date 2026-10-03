@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-10-03",
+    "macrostructure": "Long Document",
+    "theme": "Almanac",
+    "enrichment": "E5 tier-A CSS focus field",
+    "brief": "催眠治疗与临床应用大众知识库",
+    "nav": "N6",
+    "footer": "Ft2",
+    "slopTest": "PASS 57/57",
+    "contrast": "WCAG 2.1 AA",
+    "responsiveWidths": [320, 375, 768, 1280, 1920]
+  }
+]
