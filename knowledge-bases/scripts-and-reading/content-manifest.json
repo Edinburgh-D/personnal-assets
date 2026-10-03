@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "象形文字与拼音文字认知差异",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-03",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "字形不是思想的肖像",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把汉字概括为看图会意，把字母文字概括为照音拼读，并容易把两类文字直接对应为两种思维方式。",
+      "readerStateAfter": "读者能区分语言、文字系统与具体正字法，并用形、音、义三种线索重新描述汉字和字母文字。",
+      "readerQuestion": "所谓象形文字与拼音文字，真正比较的是什么，又有哪些流行说法把差异说得过头？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "以“妈 / mā / mother”为贯穿例子，比较汉字、汉语拼音与英语拼写怎样把视觉形式连接到声音和意义。",
+      "newTerms": [
+        { "term": "文字系统", "definition": "一套把语言单位稳定记录为可见符号的约定，不等同于语言本身。" },
+        { "term": "正字法", "definition": "某种语言实际采用的拼写、分词、标点与书写规范。" },
+        { "term": "语素音节文字", "definition": "基本符号主要对应语素，并通常也对应一个音节的文字系统。" },
+        { "term": "字母文字", "definition": "用有限字母组合来表示辅音和元音等语音单位的文字系统。" }
+      ],
+      "conclusion": "现代汉字与字母文字都在记录语言，只是把稳定线索分配在不同层级；汉字不是图画，字母拼写也不是声音的透明录音。",
+      "nextQuestion": "既然两类文字都连接形、音、义，读者在识字、朗读和理解时究竟怎样沿不同路径完成同一任务？",
+      "nextPage": "mapping-routes.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "mapping-routes.html",
+      "title": "从字面抵达声音与意义",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能区分语言、文字系统与具体正字法，并用形、音、义三种线索重新描述汉字和字母文字。",
+      "readerStateAfter": "读者能解释汉字部件、字母—音位对应、词汇知识与上下文如何共同参与阅读，并理解差异主要是线索权重与加工粒度不同。",
+      "readerQuestion": "既然两类文字都连接形、音、义，读者在识字、朗读和理解时究竟怎样沿不同路径完成同一任务？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "现代汉字与字母文字都在记录语言，只是把稳定线索分配在不同层级；汉字不是图画，字母拼写也不是声音的透明录音。",
+      "coreExample": "继续拆解“妈 / mā / mother”：观察女与马、m-a、mother 的字形线索如何在不同熟练度和语境中激活读音与词义。",
+      "newTerms": [
+        { "term": "形声字", "definition": "由提示意义类别的部件与提示读音的部件组合而成的汉字。" },
+        { "term": "音位", "definition": "一种语言中能够区别词义的最小语音单位。" },
+        { "term": "正字法深度", "definition": "书写形式与读音之间对应关系的一致或不一致程度。" },
+        { "term": "语音意识", "definition": "察觉并操作音节、韵或音位等口语声音单位的能力。" },
+        { "term": "正字法意识", "definition": "察觉合法字形、部件位置和拼写组合规律的能力。" }
+      ],
+      "conclusion": "阅读没有一条从形直达义或从字母直达音的单线通道；熟练读者会并行利用视觉结构、语音、词汇和语境，而文字系统改变的是这些线索的可靠度、粒度与学习顺序。",
+      "nextQuestion": "如果加工路径确有差异，我们可以把脑成像、学习表现或文化联想推到多远，又该怎样识别决定论式的夸张？",
+      "nextPage": "evidence-and-limits.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "evidence-and-limits.html",
+      "title": "差异存在，但不是命运",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能解释汉字部件、字母—音位对应、词汇知识与上下文如何共同参与阅读，并理解差异主要是线索权重与加工粒度不同。",
+      "readerStateAfter": "读者能区分任务差异、学习经验与文化决定论，能用语言、文字、教学、熟练度和任务五层框架判断新的比较主张。",
+      "readerQuestion": "如果加工路径确有差异，我们可以把脑成像、学习表现或文化联想推到多远，又该怎样识别决定论式的夸张？",
+      "dependsOn": ["mapping-routes.html"],
+      "priorConclusion": "阅读没有一条从形直达义或从字母直达音的单线通道；熟练读者会并行利用视觉结构、语音、词汇和语境，而文字系统改变的是这些线索的可靠度、粒度与学习顺序。",
+      "coreExample": "把“妈 / mā / mother”放入朗读、默读、手写、键入、二语学习和脑成像任务，检查结论是否仍然成立。",
+      "newTerms": [
+        { "term": "神经可塑性", "definition": "大脑网络会随训练和经验改变连接与分工的性质。" },
+        { "term": "任务效应", "definition": "实验要求不同而引起的加工差异，不能自动归结为群体的固定认知特征。" },
+        { "term": "文化决定论", "definition": "把复杂文化或认知差异主要归因于单一文字系统，并忽略语言、教育与社会环境。" }
+      ],
+      "conclusion": "文字系统会塑造阅读者练习什么、在何种粒度上取线索，并留下可测的加工差异；但这些差异是任务、语言、教学和经验共同形成的适应，不能证明某种文字决定民族思维。",
+      "nextQuestion": "面对下一条“汉字让人更整体、字母让人更分析”的说法，我们是否能先拆开比较层级，再寻找与任务相称的证据？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.45
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

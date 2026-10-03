@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-03",
+  "framework": "static-html",
+  "fontStack": "repository-local tokenized serif and UI fallbacks",
+  "palette": "OKLCH custom properties",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["static publishing conventions", "UTF-8 HTML", "relative knowledge-base navigation"]
+}

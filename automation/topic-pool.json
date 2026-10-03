@@ -3753,6 +3753,13 @@
       "generatedAt": "2026-10-03",
       "slug": "clinical-hypnosis",
       "entry": "knowledge-bases/clinical-hypnosis/main.html"
+    },
+    {
+      "name": "象形文字与拼音文字认知差异",
+      "domain": "语言/文化",
+      "generatedAt": "2026-10-03",
+      "slug": "scripts-and-reading",
+      "entry": "knowledge-bases/scripts-and-reading/main.html"
     }
   ],
   "skipped": []

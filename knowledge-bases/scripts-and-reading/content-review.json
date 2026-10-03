@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-03T16:16:39+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "所谓象形文字与拼音文字，真正比较的是什么，又有哪些流行说法把差异说得过头？",
+      "readerStateChange": "读前把汉字视为看图会意、字母视为照音拼读；读后能把语言、文字系统与正字法分开，并用形、音、义线索描述两类系统。",
+      "twoSentenceSummary": "本页先拆开语言、文字系统与正字法，再用语素音节和字母两类组织原则校准日常名称。对“妈 / mā / mother”、同形异义和混合书写的比较说明，汉字不是图画，字母也不是透明录音。",
+      "continuityEvidence": "结尾把宏观分类推进到认字、朗读、理解和手写中的具体线索，直接提出下一页要解释的阅读加工路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mapping-routes.html",
+      "centralQuestion": "既然两类文字都连接形、音、义，读者在识字、朗读和理解时究竟怎样沿不同路径完成同一任务？",
+      "readerStateChange": "读前只能从分类上区分两类文字；读后能解释部件、音位、拼写规律、词汇与上下文如何并行协作，并理解线索可靠度会随任务变化。",
+      "twoSentenceSummary": "本页沿“妈 / mā / mother”拆解汉字部件、字母—音位对应、拼音标音和上下文约束。儿童学习、频率与脑成像材料进一步说明，两类阅读共享形音义协作，但在线索粒度和学习顺序上有不同加权。",
+      "continuityEvidence": "开头沿用上一页的形音义框架，结尾把加工差异转化为证据解释问题，为下一页检验脑科学和文化推论建立机制前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evidence-and-limits.html",
+      "centralQuestion": "如果加工路径确有差异，我们可以把脑成像、学习表现或文化联想推到多远，又该怎样识别决定论式的夸张？",
+      "readerStateChange": "读前知道阅读路径会因文字而加权不同；读后能用语言、文字、教学、读者和任务五层框架判断脑成像、教育比较与文化主张是否越界。",
+      "twoSentenceSummary": "本页把脑成像差异解释为训练与任务中的适应，并比较朗读、默读、手写、键入和二语学习怎样改变策略。五层检查框架进一步区分可测的局部差异、群体平均趋势与无法由文字单独推出的民族思维结论。",
+      "continuityEvidence": "本页直接检验上一页建立的线索加权模型，并把最终能力迁移到新的媒体标题和研究主张，完成从机制到判断的学习弧。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分字符标准、排版资料、理论综述、单项实验与脑成像元分析各自能回答的问题，并能回到原始入口核对正文主张。",
+      "twoSentenceSummary": "参考页按文字分类、阅读机制和脑成像证据分组列出 Unicode、W3C、开放综述、实验与元分析。每项说明材料用途和边界，并提供站内中国史入口补充制度与传播语境。",
+      "continuityEvidence": "来源编号与前三页正文逐项对应，读者可以从分类、部件加工和脑成像论述回到标准原文或论文摘要核对。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
