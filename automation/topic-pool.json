@@ -3774,6 +3774,13 @@
       "generatedAt": "2026-10-04",
       "slug": "meditation-and-contemplative-traditions",
       "entry": "knowledge-bases/meditation-and-contemplative-traditions/main.html"
+    },
+    {
+      "name": "间隔重复与记忆曲线",
+      "domain": "教育/学习",
+      "generatedAt": "2026-10-04",
+      "slug": "spaced-repetition-memory",
+      "entry": "knowledge-bases/spaced-repetition-memory/main.html"
     }
   ],
   "skipped": []

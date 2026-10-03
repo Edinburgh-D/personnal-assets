@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-04T15:40:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "遗忘曲线究竟告诉了我们什么，又有哪些流行说法超出了证据？",
+      "readerStateChange": "读前把遗忘看成人人共享的固定倒计时；读后能区分节省量、识别、自由回忆与应用表现，并知道曲线随材料、线索和目标时距改变。",
+      "twoSentenceSummary": "正文从林晓读懂却无法解释海马体的经历出发，回到 Ebbinghaus 的无意义音节与节省法，说明想不起来不等于学习痕迹归零。随后比较熟悉感、闭卷提取和不同目标日期，否定固定遗忘百分比与万能复习日历。",
+      "continuityEvidence": "结尾把关注点从估算还剩多少转向怎样安排下一次主动回忆，直接引出机制页对间隔、提取和核对协同作用的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "为什么等待一段时间再主动提取，比连续重读更可能形成耐久而可调用的记忆？",
+      "readerStateChange": "读前只知道复习时间会影响遗忘；读后能说明短间隔、过长间隔与可恢复困难的差别，并能用提取结果和反馈质量调整下一次练习。",
+      "twoSentenceSummary": "正文把等待解释为撤去临时线索的条件，把提取解释为重建答案与暴露未知的动作，再用反馈阻止错误被反复练熟。林晓的错误回答和后续纠正展示了连续再学习为何需要跨时间再次成功，而不是同场刷熟。",
+      "continuityEvidence": "开头承接前页的条件性遗忘轨迹，结尾把机制落到每天新增量、卡片提问与复杂理解的管理难题，自然推进到实践与边界页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "practice-and-limits.html",
+      "centralQuestion": "怎样把这套机制变成可持续的个人计划，同时避免卡片堆积、提示依赖和只会背答案？",
+      "readerStateChange": "读前能够解释间隔、提取与反馈；读后能从真实用途设计小而不碎的问题，以四档行为表现调整间隔，并为负荷、迁移和高风险任务设边界。",
+      "twoSentenceSummary": "正文以林晓的四周目标为中心，依次处理问题粒度、不同线索、四档评分、每日负荷和条目退休，并用交互练习展示排程只表达相对方向。后半部分区分事实记忆与数学、语言、动作等真实任务，也说明安全流程和持续记忆变化不能交给复习软件。",
+      "continuityEvidence": "本章把上一页的机制转化为问题设计与负荷判断，末段进一步指出创造、协作和复杂实践需要同伴、项目与环境，留下超越卡片系统的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分历史原著、元分析、对照实验、教育综述与公共卫生页面，并根据每项材料的设计限制判断正文主张可外推到哪里。",
+      "twoSentenceSummary": "参考页收录 Ebbinghaus 原著、Cepeda 的元分析与长期实验、Karpicke 与 Roediger 的提取实验、两篇学习技术综述和 NIA 健康页面。每项说明同时写出所支持的结论与不能推出的范围，避免把总体研究改造成个人保证。",
+      "continuityEvidence": "七项来源按历史、间隔、提取、综合应用与健康边界对应前三页的关键主张，正文编号链接可以直接到达相应说明。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

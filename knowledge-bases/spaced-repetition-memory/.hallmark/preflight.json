@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-04",
+  "framework": "vanilla-html",
+  "fontStack": "Noto Serif SC + Noto Sans SC + IBM Plex Mono",
+  "palette": "standalone OKLCH tokens",
+  "motion": "motion-cut; reading progress and state feedback only",
+  "spacing": "4pt-derived semantic scale",
+  "preserved": [
+    "repository publishing conventions",
+    "main.html entry",
+    "data-site-home navigation"
+  ]
+}

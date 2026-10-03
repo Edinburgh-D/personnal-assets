@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "testedAt": "2026-10-04T16:05:00+08:00",
+  "genre": "editorial",
+  "macrostructure": "Long Document",
+  "theme": "Almanac",
+  "preEmitCritique": {
+    "philosophy": 5,
+    "hierarchy": 5,
+    "execution": 4,
+    "specificity": 5,
+    "restraint": 5,
+    "variety": 5
+  },
+  "result": "pass",
+  "score": "58/58",
+  "passedGates": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    31, 32, 33, 34, 35, 36, 37, 38, "38a", 39,
+    40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+    50, 51, 52, 53, 54, 55, 56, 57
+  ],
+  "evidence": {
+    "visual": "Theme-specific ink fading and hand-built SVG diagrams directly explain memory decay, retrieval, and rescheduling; no gradients, card wall, fake metrics, fake chrome, emoji icons, or stock imagery.",
+    "tokens": "All OKLCH colors are confined to tokens.css and all rendered colors and font families are consumed through semantic variables.",
+    "contrast": "Calculated WCAG ratios: light body 14.62, light muted 6.32, light focus 6.20, dark body 14.56, dark muted 8.59, dark focus 6.78.",
+    "responsive": "Static audit confirms overflow-x: clip on html and body, minmax(0, 1fr) image-bearing grids, long-word wrapping, nowrap clickable labels, narrow-screen nav reduction, block-form tables, and reduced-motion handling.",
+    "accessibility": "All custom SVG figures have title and description; every page has a skip link, landmarks, unique data-site-home navigation, visible focus styling, and dark-mode controls.",
+    "browserInspection": "Not performed because local browser access to 127.0.0.1 was denied by the browser permission policy; no bypass was attempted."
+  }
+}

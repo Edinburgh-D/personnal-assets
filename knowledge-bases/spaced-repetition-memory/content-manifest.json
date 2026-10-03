@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "间隔重复与记忆曲线",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-04",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "记忆不是一只漏水的桶",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把遗忘理解成一条固定倒计时，并相信只要按某个万能日程反复重读，记忆就会自动变得牢固。",
+      "readerStateAfter": "读者能把遗忘曲线理解为受材料、线索、目标时距和练习方式影响的表现轨迹，并开始追问复习为何需要等待与主动提取。",
+      "readerQuestion": "遗忘曲线究竟告诉了我们什么，又有哪些流行说法超出了证据？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "贯穿全站追踪林晓记住“海马体帮助形成新的情景记忆”这条知识：从刚读完的流畅感，到隔天闭卷解释，再到数周后在新问题中调用。",
+      "newTerms": [
+        {
+          "term": "遗忘曲线",
+          "definition": "在特定材料、学习方式和测验条件下，记忆表现随延迟变化的轨迹，而不是每个人都遵守的统一百分比表。"
+        },
+        {
+          "term": "节省法",
+          "definition": "用重新学会材料所节省的时间或尝试次数，估计仍保留多少学习痕迹的方法。"
+        },
+        {
+          "term": "存留间隔",
+          "definition": "最后一次学习或练习到目标测验之间的时间。"
+        },
+        {
+          "term": "熟悉感",
+          "definition": "再次看见材料时产生的顺畅与似曾相识感，它不等于能够在没有提示时准确想起。"
+        }
+      ],
+      "conclusion": "遗忘曲线不是每个人共享的倒计时，而是学习条件、线索与目标共同塑造的表现轨迹；真正要设计的是下一次需要记起时，怎样安排有效练习。",
+      "nextQuestion": "为什么等待一段时间再主动提取，比连续重读更可能形成耐久而可调用的记忆？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "mechanism.html",
+      "title": "让记忆在有点费力时回来",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能把遗忘曲线理解为受材料、线索、目标时距和练习方式影响的表现轨迹，并开始追问复习为何需要等待与主动提取。",
+      "readerStateAfter": "读者能解释间隔、提取、反馈与目标时距如何共同作用，并能区分成功的费力回忆、过早重读和完全失败的猜测。",
+      "readerQuestion": "为什么等待一段时间再主动提取，比连续重读更可能形成耐久而可调用的记忆？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "遗忘曲线不是每个人共享的倒计时，而是学习条件、线索与目标共同塑造的表现轨迹；真正要设计的是下一次需要记起时，怎样安排有效练习。",
+      "coreExample": "林晓合上笔记，用“海马体受损会怎样？”作为线索解释答案；答对后拉长间隔，答错则立即核对并缩短下一次间隔。",
+      "newTerms": [
+        {
+          "term": "间隔效应",
+          "definition": "把练习分散到不同时间，常比把同等练习挤在一次会话中更有利于延迟后的表现。"
+        },
+        {
+          "term": "提取练习",
+          "definition": "在答案不可见时尝试从记忆中生成答案，并用结果调整后续学习。"
+        },
+        {
+          "term": "反馈",
+          "definition": "提取之后获得正确答案与解释，用来确认正确反应并修正遗漏或错误。"
+        },
+        {
+          "term": "连续再学习",
+          "definition": "在初次答对后，仍在后续间隔会话中再次提取到正确，以维持长期知识。"
+        }
+      ],
+      "conclusion": "耐久记忆来自按目标时距分散练习，并在答案不可见时尝试提取，再用反馈纠错；间隔应随表现调整，而不是机械服从固定倍增表。",
+      "nextQuestion": "怎样把这套机制变成可持续的个人计划，同时避免卡片堆积、提示依赖和只会背答案？",
+      "nextPage": "practice-and-limits.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "practice-and-limits.html",
+      "title": "把日程变成判断，而不是信仰",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能解释间隔、提取、反馈与目标时距如何共同作用，并能区分成功的费力回忆、过早重读和完全失败的猜测。",
+      "readerStateAfter": "读者能为不同目标设计轻量复习循环，依据回忆质量调整间隔，并识别事实卡、复杂技能、理解迁移与健康状况之间的边界。",
+      "readerQuestion": "怎样把这套机制变成可持续的个人计划，同时避免卡片堆积、提示依赖和只会背答案？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "耐久记忆来自按目标时距分散练习，并在答案不可见时尝试提取，再用反馈纠错；间隔应随表现调整，而不是机械服从固定倍增表。",
+      "coreExample": "林晓把同一知识改写成定义、因果解释和病例判断三种提示，以四档回忆记录决定下一次复习，并设置每周新增量上限。",
+      "newTerms": [
+        {
+          "term": "线索依赖",
+          "definition": "记忆只能在熟悉提示或原题措辞出现时被唤起，换一种问法就难以调用。"
+        },
+        {
+          "term": "迁移",
+          "definition": "把已学知识用于不同题型、情境或问题，而不只是复现原答案。"
+        },
+        {
+          "term": "校准",
+          "definition": "让自己对掌握程度的判断逐步接近实际闭卷表现。"
+        }
+      ],
+      "conclusion": "有效的间隔重复系统应围绕真实目标、小而可答的问题、变换线索、及时反馈和负荷上限制定；算法只是记录与提醒工具，理解质量仍由学习者检查。",
+      "nextQuestion": "当学习目标从可提取的知识扩展到创造、协作和复杂实践时，我们还需要哪些超越卡片与日程的学习环境？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
