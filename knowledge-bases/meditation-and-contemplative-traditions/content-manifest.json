@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "冥想与修行传统",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-04",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "静坐之外",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把冥想理解为闭眼、放松或排空思绪的一种通用技巧，难以解释相似姿势为何在不同传统中具有不同意义。",
+      "readerStateAfter": "读者能够把冥想理解为多个传统中具有家族相似性的训练集合，并会同时追问练什么、为何练、由谁解释以及怎样嵌入生活。",
+      "readerQuestion": "当静坐、观息、诵念和祈祷都可能被译作冥想时，怎样理解它们的相似而不抹平各自传统？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "同一个普通学习者林澈，先后接触十分钟观息音频、佛教禅修课程、瑜伽静观、道教静坐、基督宗教默观祈祷与苏菲记主，并发现相似动作被赋予不同目标。",
+      "newTerms": [
+        {
+          "term": "家族相似",
+          "definition": "一组事物彼此共享部分特征，却没有一条由所有成员共同满足的单一定义。"
+        },
+        {
+          "term": "修行传统",
+          "definition": "把练习、伦理、世界观、共同体与理想人格长期组织在一起的传承体系。"
+        },
+        {
+          "term": "禅那",
+          "definition": "源自印度语境的专注与静虑概念，在佛教和瑜伽等传统中形成了不同解释与实践谱系。"
+        },
+        {
+          "term": "坐忘",
+          "definition": "《庄子》中以放下形体与智识执著来描述的一种自我转化意象，后来进入道教修炼论述。"
+        },
+        {
+          "term": "默观祈祷",
+          "definition": "基督宗教中以静默、经文或简短祷词转向上帝并深化关系的祈祷方式总称。"
+        }
+      ],
+      "conclusion": "冥想不是脱离历史的一件单一工具，而是多个传统中部分相似的注意、身体与诵念训练；理解它必须把可见技术放回伦理、解释、共同体与终极目标。",
+      "nextQuestion": "既然相似技术会因伦理、解释、共同体与终极目标而改变，一次练习究竟通过哪些层次成为某个传统中的修行？",
+      "nextPage": "practice-architectures.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "practice-architectures.html",
+      "title": "一口呼吸，五种方向",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把冥想理解为多个传统中具有家族相似性的训练集合，并会同时追问练什么、为何练、由谁解释以及怎样嵌入生活。",
+      "readerStateAfter": "读者能够用对象、操作、解释、伦理共同体和终极方向五个层次比较修行，并说明同样观息或诵念为何不会自动产生相同意义。",
+      "readerQuestion": "既然相似技术会因伦理、解释、共同体与终极目标而改变，一次练习究竟通过哪些层次成为某个传统中的修行？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "冥想不是脱离历史的一件单一工具，而是多个传统中部分相似的注意、身体与诵念训练；理解它必须把可见技术放回伦理、解释、共同体与终极目标。",
+      "coreExample": "继续追踪林澈对一口呼吸的练习：音频把它当作减压锚点，佛教课程把它放入戒、定、慧，道教教师把它与调身调息和养生修真相连，其他传统则可能以祷词或圣名组织注意。",
+      "newTerms": [
+        {
+          "term": "注意对象",
+          "definition": "练习中反复回到或持续观照的内容，例如呼吸、身体感觉、经文、圣名、图像或开放觉察。"
+        },
+        {
+          "term": "元觉察",
+          "definition": "察觉自己正在分心、评判或沉浸于某种经验的能力。"
+        },
+        {
+          "term": "仪式框架",
+          "definition": "由姿势、时间、空间、语言与共同体规则共同形成的实践情境。"
+        },
+        {
+          "term": "解脱论",
+          "definition": "一个传统对人的根本困境、转化道路和最终自由所作的系统理解。"
+        },
+        {
+          "term": "传承权威",
+          "definition": "一个共同体用经典、教师资格、修习经验与制度来判断解释是否可信的方式。"
+        }
+      ],
+      "conclusion": "修行的作用不只来自注意落在哪里，还来自如何操作经验、怎样解释变化、哪些伦理关系约束行动，以及实践朝向何种人生转化。",
+      "nextQuestion": "当现代课程和应用抽取其中的注意技术时，怎样判断这种改写是有益翻译、失真简化，还是对身心风险缺少照顾？",
+      "nextPage": "translation-and-discernment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "translation-and-discernment.html",
+      "title": "从古老修行到现代选择",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用对象、操作、解释、伦理共同体和终极方向五个层次比较修行，并说明同样观息或诵念为何不会自动产生相同意义。",
+      "readerStateAfter": "读者能够区分宗教修行、世俗训练与临床项目，按来源诚实、目标匹配、教师责任、身心反应和退出机制判断实践是否适合自己。",
+      "readerQuestion": "当现代课程和应用抽取其中的注意技术时，怎样判断这种改写是有益翻译、失真简化，还是对身心风险缺少照顾？",
+      "dependsOn": [
+        "practice-architectures.html"
+      ],
+      "priorConclusion": "修行的作用不只来自注意落在哪里，还来自如何操作经验、怎样解释变化、哪些伦理关系约束行动，以及实践朝向何种人生转化。",
+      "coreExample": "林澈准备选择一门周末静修课程，不再只看宣传中的平静承诺，而是核对课程来源、练习强度、带领者训练、健康筛查、困难反应处理和随时退出的安排。",
+      "newTerms": [
+        {
+          "term": "世俗化",
+          "definition": "把宗教实践改写为不要求特定信仰承诺的教育、健康或日常训练。"
+        },
+        {
+          "term": "去语境化",
+          "definition": "抽取一个技术时删去其原有伦理、共同体、解释与目的，使练习看似可独立运行。"
+        },
+        {
+          "term": "文化挪用",
+          "definition": "在权力不对等下取用他者文化元素，却忽视来源群体、历史处境或应有回馈的做法。"
+        },
+        {
+          "term": "创伤知情",
+          "definition": "在设计和带领练习时预先考虑创伤反应，保留选择、控制、稳定与转介路径。"
+        },
+        {
+          "term": "知情同意",
+          "definition": "参与者在了解目标、过程、替代方式、潜在收益与风险后，自主选择并可随时撤回。"
+        }
+      ],
+      "conclusion": "可靠的现代冥想实践既不必假装自己完整复制古老传统，也不能把传统和风险全部删除；它应诚实说明来源与目标，允许调整退出，并把健康问题交还合格专业照护。",
+      "nextQuestion": "未来面对新的冥想产品、跨传统课程或科学主张时，我们怎样既保持开放，又持续检验它对来源、参与者和现实后果承担了什么责任？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与阅读边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

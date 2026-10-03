@@ -1,0 +1,79 @@
+:root {
+  --color-paper: oklch(96.5% 0.014 82);
+  --color-paper-raised: oklch(93.5% 0.018 82);
+  --color-paper-deep: oklch(89% 0.022 78);
+  --color-ink: oklch(22% 0.025 58);
+  --color-ink-soft: oklch(34% 0.025 58);
+  --color-muted: oklch(43% 0.022 63);
+  --color-rule: oklch(73% 0.028 70);
+  --color-rule-strong: oklch(53% 0.04 60);
+  --color-accent: oklch(48% 0.16 31);
+  --color-accent-soft: oklch(88% 0.045 42);
+  --color-accent-ink: oklch(97% 0.01 82);
+  --color-focus: oklch(46% 0.18 258);
+  --color-error: oklch(46% 0.17 28);
+  --color-success: oklch(42% 0.1 145);
+  --color-overlay: oklch(18% 0.02 58 / 0.54);
+
+  --font-display: "LXGW WenKai", "STKaiti", "KaiTi", serif;
+  --font-body: "Noto Serif SC", "Songti SC", serif;
+
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --rule-thin: 1px;
+  --rule-heavy: 2px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+html[data-theme="dark"] {
+  --color-paper: oklch(16% 0.016 72);
+  --color-paper-raised: oklch(20% 0.018 72);
+  --color-paper-deep: oklch(25% 0.02 70);
+  --color-ink: oklch(93% 0.014 82);
+  --color-ink-soft: oklch(83% 0.016 78);
+  --color-muted: oklch(73% 0.019 74);
+  --color-rule: oklch(37% 0.025 68);
+  --color-rule-strong: oklch(58% 0.04 60);
+  --color-accent: oklch(69% 0.13 34);
+  --color-accent-soft: oklch(27% 0.055 35);
+  --color-accent-ink: oklch(17% 0.02 58);
+  --color-focus: oklch(75% 0.15 255);
+  --color-error: oklch(72% 0.13 28);
+  --color-success: oklch(72% 0.09 145);
+  --color-overlay: oklch(8% 0.01 58 / 0.68);
+}

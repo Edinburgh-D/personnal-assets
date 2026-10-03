@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-04T02:45:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当静坐、观息、诵念和祈祷都可能被译作冥想时，怎样理解它们的相似而不抹平各自传统？",
+      "readerStateChange": "读前把冥想当作闭眼放松的单一技巧；读后能把它理解为具有家族相似性的实践群，并会把技术放回伦理、解释、共同体和终极方向。",
+      "twoSentenceSummary": "文章从林澈接触多种静心实践的经历出发，说明相似姿势不等于相同道路，并分别呈现佛教、瑜伽、道教、基督宗教和苏菲传统的意义差异。它进一步建立可比较但不可抹平的原则，把判断尺度从短时感受扩展到行为、关系与长期转化。",
+      "continuityEvidence": "结尾把可见动作下方的解释、伦理、共同体和终极关切显露出来，并要求下一章说明这些层次怎样把同一口呼吸组织成不同修行。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "practice-architectures.html",
+      "centralQuestion": "既然相似技术会因伦理、解释、共同体与终极目标而改变，一次练习究竟通过哪些层次成为某个传统中的修行？",
+      "readerStateChange": "读前知道传统赋予技术不同意义；读后能用对象、操作、解释、伦理共同体与终极方向五层结构比较明确实践，并识别强度和时间的作用。",
+      "twoSentenceSummary": "文章继续追踪林澈的一口呼吸，拆解注意对象、元觉察、身体操作、仪式情境、伦理共同体和终极方向如何共同塑造实践。它说明相似心理机制既不能证明宗教终点相同，也不能让传统历史替代具体健康证据。",
+      "continuityEvidence": "本章承接开篇对技术与传统的区分，最终指出现代应用常只保留五层中的一两层，因此自然推进到如何判断改写、证据和安全责任。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "translation-and-discernment.html",
+      "centralQuestion": "当现代课程和应用抽取其中的注意技术时，怎样判断这种改写是有益翻译、失真简化，还是对身心风险缺少照顾？",
+      "readerStateChange": "读前能比较修行结构但不易评估现代课程；读后能按来源、目标、能力、剂量和退出机制判断实践，并知道健康问题需要专业照护。",
+      "twoSentenceSummary": "文章区分透明的世俗改写、隐藏取舍的去语境化与权力不对等下的文化挪用，再把健康主张限定到具体项目和证据。它以林澈筛选静修课程为线索，说明不良体验、创伤知情、知情同意、教师边界和就医转介应如何进入选择。",
+      "continuityEvidence": "本章直接运用前章五层模型检查现代改写，并以可迁移的责任问题收束，使读者能把尺度用于未来产品、跨传统课程和新的科学宣传。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能在正文中看到简短来源链接；读后能够区分经典原文、宗教机构自我说明、学术条目和健康研究各自能够支持的主张。",
+      "twoSentenceSummary": "来源页说明佛教、古典瑜伽、道家与道教、基督宗教、伊斯兰和苏菲材料在正文中的证据角色。它同时记录 NCCIH 与不良体验研究的适用边界，明确经典不能证明临床效果，横断面调查也不能单独证明因果。",
+      "continuityEvidence": "该页由三篇叙事的侧栏和末页翻页链接可达，并回链开篇，为整条阅读路径提供可核验材料与健康边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

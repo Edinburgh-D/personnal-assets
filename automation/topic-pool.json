@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-04",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3767,6 +3767,13 @@
       "generatedAt": "2026-10-03",
       "slug": "brain-computer-interface",
       "entry": "knowledge-bases/brain-computer-interface/main.html"
+    },
+    {
+      "name": "冥想与修行传统",
+      "domain": "宗教/神话",
+      "generatedAt": "2026-10-04",
+      "slug": "meditation-and-contemplative-traditions",
+      "entry": "knowledge-bases/meditation-and-contemplative-traditions/main.html"
     }
   ],
   "skipped": []
