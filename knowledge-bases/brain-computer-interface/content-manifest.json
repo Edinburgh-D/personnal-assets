@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "脑机接口与神经科技",
+  "type": "single-subject",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-03",
+  "audience": "general",
+  "entry": "main.html",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "只从新闻标题接触过意念打字、机械臂和读心等说法，无法区分真实能力、研究演示与想象。",
+      "readerStateAfter": "能用输入、映射和输出的直觉模型解释脑机接口，并能区分它与更广义神经科技的关系。",
+      "readerQuestion": "当新闻把“意念打字”“机械臂”和“读心”放在一起时，怎样理解脑机接口真正连接了什么？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "脑干卒中后无法清楚说话的林阿姨，尝试用神经活动在平板上选择“水”这个词。",
+      "newTerms": [
+        {
+          "term": "神经科技",
+          "definition": "直接测量、影响或利用神经系统结构与活动的设备、方法和程序的总称。"
+        },
+        {
+          "term": "神经信号",
+          "definition": "神经细胞及其群体活动留下、可被仪器记录的电、磁或代谢变化。"
+        },
+        {
+          "term": "侵入式",
+          "definition": "需要通过手术把电极或其他部件放到颅内、脑表面或神经附近的技术路径。"
+        },
+        {
+          "term": "闭环",
+          "definition": "系统把输出结果反馈给使用者或神经系统，并据此持续调整下一步操作。"
+        }
+      ],
+      "conclusion": "脑机接口不是直接读取完整思想，而是在特定任务中把可测的神经活动映射成设备可执行的命令。",
+      "nextQuestion": "这条从神经活动到设备命令的映射，为什么需要测量、特征、解码、反馈和共同学习？",
+      "nextPage": "signal-loop.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "signal-loop.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能用输入、映射和输出的直觉模型解释脑机接口，并能区分它与更广义神经科技的关系。",
+      "readerStateAfter": "能沿信号回路解释采集、预处理、特征、解码、反馈与校准，并理解性能为何会随人和时间变化。",
+      "readerQuestion": "这条从神经活动到设备命令的映射，为什么需要测量、特征、解码、反馈和共同学习？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "脑机接口不是直接读取完整思想，而是在特定任务中把可测的神经活动映射成设备可执行的命令。",
+      "coreExample": "林阿姨反复尝试选择“水”，系统从提示试次学习她的活动模式，她也通过屏幕反馈学习更稳定地执行同一意图。",
+      "newTerms": [
+        {
+          "term": "信噪比",
+          "definition": "目标活动相对于干扰的清晰程度；越高通常越容易稳定识别。"
+        },
+        {
+          "term": "特征",
+          "definition": "算法从原始记录中提取、用于区分任务状态的可计算模式。"
+        },
+        {
+          "term": "解码器",
+          "definition": "把神经活动模式转换为文字、光标移动或设备控制命令的模型。"
+        },
+        {
+          "term": "校准",
+          "definition": "用已知任务和反馈重新估计人与设备之间映射关系的过程。"
+        },
+        {
+          "term": "共同适应",
+          "definition": "使用者学习产生更稳定的活动模式，算法也随数据更新，两者同时改变。"
+        }
+      ],
+      "conclusion": "脑机接口的表现来自人、传感器、算法与反馈共同适应，任何一环变化都可能让昨天有效的映射今天失准。",
+      "nextQuestion": "面对一种新的脑机接口，怎样同时判断它的真实收益、证据边界、风险与权利安排？",
+      "nextPage": "benefits-risks-and-rights.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "benefits-risks-and-rights.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能沿信号回路解释采集、预处理、特征、解码、反馈与校准，并理解性能为何会随人和时间变化。",
+      "readerStateAfter": "能从使用者、任务、证据、长期可用性、安全、数据治理与公平接入七个方面审视新的神经科技主张。",
+      "readerQuestion": "面对一种新的脑机接口，怎样同时判断它的真实收益、证据边界、风险与权利安排？",
+      "dependsOn": [
+        "signal-loop.html"
+      ],
+      "priorConclusion": "脑机接口的表现来自人、传感器、算法与反馈共同适应，任何一环变化都可能让昨天有效的映射今天失准。",
+      "coreExample": "把林阿姨在受控实验中成功选择“水”的一次演示，逐层检验为她在家中长期、独立、安全沟通的真实能力。",
+      "newTerms": [
+        {
+          "term": "临床可行性",
+          "definition": "一种技术在真实照护条件下能否安全、稳定并产生对使用者有意义的结果。"
+        },
+        {
+          "term": "神经数据",
+          "definition": "来自神经系统结构、功能或活动的记录，以及可据此作出的相关推断。"
+        },
+        {
+          "term": "认知自由",
+          "definition": "个人对自身精神活动保持自主决定、免受不当干预并能拒绝使用相关技术的原则。"
+        },
+        {
+          "term": "治疗误解",
+          "definition": "研究参与者把探索性研究误认为已经证实有效的个体化治疗。"
+        }
+      ],
+      "conclusion": "评价脑机接口应从具体使用者和任务出发，把独立完成、长期可用、安全、可撤回同意、数据治理与公平接入放在同一张证据表上。",
+      "nextQuestion": "当技术从少数研究参与者走向更广泛场景时，谁应拥有解释、纠错、退出和分享收益的决定权？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "signal-loop.html",
+        "benefits-risks-and-rights.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4
+  }
+}

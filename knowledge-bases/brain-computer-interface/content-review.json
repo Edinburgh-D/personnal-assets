@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-03T23:20:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当新闻把“意念打字”“机械臂”和“读心”放在一起时，怎样理解脑机接口真正连接了什么？",
+      "readerStateChange": "读前容易把脑机接口理解成通用读心装置；读后能用使用者、任务、记录与输出四个条件解释其实际能力，并区分记录、刺激和更广义神经科技。",
+      "twoSentenceSummary": "本章从林阿姨选择“水”出发，把脑机接口还原为特定任务中的输入、映射、输出与反馈。它比较头皮、脑表面和皮层内记录的取舍，并说明双向接口也不等于全脑读写。",
+      "continuityEvidence": "结尾把一次成功拆成传感器、算法、输出与确认步骤，并明确提出下一章要解释这条映射为何需要训练且会随时间漂移。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "signal-loop.html",
+      "centralQuestion": "这条从神经活动到设备命令的映射，为什么需要测量、特征、解码、反馈和共同学习？",
+      "readerStateChange": "读前只知道接口把活动变成命令；读后能沿采集、清理、表示、解码与反馈说明完整机制，也能解释共同适应、校准和分布漂移。",
+      "twoSentenceSummary": "本章跟随林阿姨多次选择“水”，说明原始记录如何经过清理、特征表示与解码形成候选输出。它进一步解释人与算法共同学习、跨日漂移和离线成绩为何不能直接代表家庭独立使用。",
+      "continuityEvidence": "本章结论指出任何一环变化都可能使映射失准，因此自然要求下一章把长期可用、风险、维护和使用者权利纳入评价。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "benefits-risks-and-rights.html",
+      "centralQuestion": "面对一种新的脑机接口，怎样同时判断它的真实收益、证据边界、风险与权利安排？",
+      "readerStateChange": "读前主要依据演示效果判断技术；读后能从使用者、任务、证据、负担、安全、权利与公平七个方面审视新的脑机接口主张。",
+      "twoSentenceSummary": "本章把一次受控成功逐层检验为长期、独立、安全的生活能力，并区分可检测、可解码、可交互、可重复与可生活化证据。它把手术和软件风险、神经数据、持续同意、研究退出与公平接入放入同一判断框架。",
+      "continuityEvidence": "本章承接上一章的漂移和维护问题，最终把技术判断推进到更开放的治理问题：谁拥有解释、纠错、退出和分享收益的决定权。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前可能把监管文件、试验登记和论文视为同类证据；读后能区分各类来源能支持的结论与不能支持的外推。",
+      "twoSentenceSummary": "本页汇集 FDA、NIH、ClinicalTrials.gov、UNESCO、OECD 与同行评议原始研究。每条来源均说明用途和证据边界，并提示具体产品状态应回到最新监管数据库核对。",
+      "continuityEvidence": "来源按监管、研究与治理三组对应前三章的关键主张，并提供回到判断章和入口页的完整链接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

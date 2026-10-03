@@ -3760,6 +3760,13 @@
       "generatedAt": "2026-10-03",
       "slug": "scripts-and-reading",
       "entry": "knowledge-bases/scripts-and-reading/main.html"
+    },
+    {
+      "name": "脑机接口与神经科技",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-03",
+      "slug": "brain-computer-interface",
+      "entry": "knowledge-bases/brain-computer-interface/main.html"
     }
   ],
   "skipped": []

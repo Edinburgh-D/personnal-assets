@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="沿采集、清理、特征、解码、反馈与校准的完整回路，理解脑机接口为何是人与算法共同学习的系统。">
+  <meta name="kb_darkMode" content="supported">
+  <title>一条信号怎样变成动作｜脑机接口与神经科技</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="mobile-bar">
+    <a class="mobile-title" href="main.html">脑机接口</a>
+    <button class="nav-menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">目录</button>
+  </div>
+  <nav class="site-nav" id="site-nav" aria-label="知识库导航">
+    <a class="site-mark" href="../../index.html" data-site-home>Personal Assets</a>
+    <ul class="rail-links">
+      <li><a href="main.html" title="建立直觉">入门</a></li>
+      <li><a href="signal-loop.html" aria-current="page" title="信号回路">回路</a></li>
+      <li><a href="benefits-risks-and-rights.html" title="收益、风险与权利">判断</a></li>
+      <li><a href="sources.html" title="来源与边界">来源</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" data-theme-toggle data-storage-key="kb_darkMode" aria-pressed="false">深色</button>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">脑机接口不是直接读取完整思想，而是在特定任务中把可测的神经活动映射成设备可执行的命令。</template>
+    <template data-narrative="question">这条从神经活动到设备命令的映射，为什么需要测量、特征、解码、反馈和共同学习？</template>
+    <template data-narrative="example">林阿姨反复尝试选择“水”，系统从提示试次学习她的活动模式，她也通过屏幕反馈学习更稳定地执行同一意图。</template>
+    <template data-narrative="conclusion">脑机接口的表现来自人、传感器、算法与反馈共同适应，任何一环变化都可能让昨天有效的映射今天失准。</template>
+    <template data-narrative="next-question">面对一种新的脑机接口，怎样同时判断它的真实收益、证据边界、风险与权利安排？</template>
+
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../index.html">知识库目录</a><span aria-hidden="true">/</span><a href="main.html">脑机接口</a><span aria-hidden="true">/</span><span>信号回路</span>
+    </nav>
+
+    <header class="hero hero--chapter">
+      <p class="hero__label">测量 → 表示 → 决策 → 反馈</p>
+      <h1>一条信号怎样变成动作</h1>
+      <p class="lede">接口的能力不藏在某一块芯片里。它分布在传感器、数据处理、模型、使用者的练习和每一次可见反馈之间。</p>
+    </header>
+
+    <article class="prose">
+      <section id="measurement">
+        <h2>先承认：记录到的不是“水”这个字</h2>
+        <p>上一章把脑机接口理解为特定任务中的映射。现在把镜头拉近：林阿姨看到提示后尝试选择“水”，电极并不会捕捉到一个带标签的词。它只会记录电压或其他物理量随时间的变化。研究团队需要从这些变化中找到与任务稳定相关的部分。</p>
+        <p>任何记录都同时包含目标活动和干扰。<dfn data-term="信噪比">信噪比</dfn>描述目标活动相对于干扰的清晰程度。头皮记录会混入眨眼、咬牙、颈部肌肉和电源噪声；植入记录也会受到电极位置、组织反应、运动和电子部件变化影响。信号更靠近神经元，不等于从此没有噪声。</p>
+        <p>“目标活动”也不是固定物体。林阿姨今天精神充足，明天可能疲劳；她第一次尝试时紧张，熟悉后会形成新的策略。即使她的意图相同，活动模式也会在分钟、天和月的尺度上变化。神经系统本身是会学习的生物系统，不是静止电路板。</p>
+        <p>采集阶段的任务是让记录足够可靠，并保存必要的时间信息。采样速度、通道位置、接触质量、放大器范围和无线传输都会影响可见内容。工程团队必须同时控制功耗、发热、带宽和安全。单纯追求更多数据，可能把其他约束推到不可接受的位置。</p>
+        <div class="case-thread">
+          <h3>林阿姨的第一次提示试次</h3>
+          <p>屏幕依次显示“水”和“疼”。研究人员知道每个提示出现的时刻，也知道她被要求尝试哪个选择。这些已知标签让系统可以比较两类活动。没有任务时间和提示标签，原始曲线很难自动说明她想表达什么。</p>
+        </div>
+      </section>
+
+      <section id="pipeline">
+        <h2>五个环节不是流水线，而是相互牵制的回路</h2>
+        <ol class="signal-chain">
+          <li><span class="step-code">01 / 采集</span><div><h3>把活动变成可计算的记录</h3><p>传感器选择可见范围，硬件把微弱变化放大并数字化。位置和材料决定能看见什么，也决定风险和维护方式。</p></div></li>
+          <li><span class="step-code">02 / 清理</span><div><h3>分开可能的活动与明显伪迹</h3><p>系统滤除已知频段干扰，识别坏通道和异常幅度。清理过度也会删掉有用信息，所以规则必须在真实数据上验证。</p></div></li>
+          <li><span class="step-code">03 / 表示</span><div><h3>从曲线中提取可比较模式</h3><p>算法把连续记录压缩成与时间、频率或群体活动有关的量，使不同试次可以放到同一坐标中比较。</p></div></li>
+          <li><span class="step-code">04 / 解码</span><div><h3>把模式映射为候选命令</h3><p>模型依据训练数据估计“水”“疼”或其他目标的可能性，再按任务规则决定是否输出。</p></div></li>
+          <li><span class="step-code">05 / 反馈</span><div><h3>让使用者看见并修正结果</h3><p>屏幕、声音或触觉告诉使用者系统做了什么。新的反应又进入下一轮，使人与模型都有机会调整。</p></div></li>
+        </ol>
+        <p>这五步常被画成从左到右的直线，真实系统却会反复回头。若模型频繁把眨眼当作选择，团队可能改变电极接触、清理规则或提示设计。若两个词的活动过于相似，也可能先缩小任务，而不是强迫一个模型从不足的信息中猜答案。</p>
+      </section>
+
+      <section id="features">
+        <h2>算法先决定什么值得看</h2>
+        <p>原始记录每秒可能产生大量数值。直接把全部数值交给模型并不总是更好。<dfn data-term="特征">特征</dfn>是从原始记录中提取、用于区分任务状态的可计算模式。它可以是某个频段的能量、多个电极的空间组合，也可以是神经脉冲计数随时间的变化。</p>
+        <p>选择这些模式时，工程知识和统计学习会共同发挥作用。有些系统使用预先定义的频段，有些让神经网络从数据中学习表示。后者并不意味着无需解释。训练样本少、记录随时间漂移或任务范围改变时，复杂模型仍可能把偶然相关当成规律。</p>
+        <p>接下来由<dfn data-term="解码器">解码器</dfn>把活动模式转换为文字、光标移动或设备控制命令。分类模型回答“更像水还是疼”，连续模型则估计光标速度或关节方向。语言型系统还会预测音素、文字或声学参数，再借助语言模型形成可读输出。</p>
+        <p>语言模型会利用语法与常见搭配填补不确定部分。它能把含噪候选变得流畅，也可能把一个不常见但重要的表达改成常见句子。若使用者想说的是罕见药名、姓名或否定词，流畅并不等于忠实。系统需要显示置信信息、保留纠错入口，并允许使用者确认关键输出。</p>
+        <p>训练与测试还必须真正分开。如果同一句话或相邻时间片同时出现在两边，模型可能记住记录环境，而不是学会可推广的活动规律。严格评估会把未见试次、未见日期甚至未见任务单独保留，并说明模型何时重新训练。</p>
+        <p>模型可解释性在这里不是要求每个参数都能用一句话说明，而是要能追踪输入、版本、输出和已知失效条件。团队应知道某次决定依赖哪些通道，更新后哪些错误增加，以及异常能否回放。对高风险输出，这种可追溯性与平均成绩同样重要。</p>
+        <figure class="inline-figure" aria-labelledby="decoder-title decoder-desc">
+          <svg viewBox="0 0 760 210" role="img" aria-labelledby="decoder-title decoder-desc">
+            <title id="decoder-title">从多通道波形到候选选择</title>
+            <desc id="decoder-desc">三条不同波形被转换为一个活动模式，解码器比较两个候选，并把不确定结果交给反馈环节确认。</desc>
+            <path class="rule" d="M28 35H732M28 174H732"></path>
+            <path class="line" d="M42 72c14-25 28 25 42 0s28 25 42 0 28 25 42 0"></path>
+            <path class="line" d="M42 105c14-13 28 13 42 0s28 13 42 0 28 13 42 0"></path>
+            <path class="line" d="M42 138c14-20 28 20 42 0s28 20 42 0 28 20 42 0"></path>
+            <rect class="node" x="224" y="58" width="126" height="90" rx="8"></rect>
+            <path class="line" d="M168 105h56M350 105h64"></path>
+            <rect class="node" x="414" y="58" width="126" height="90" rx="8"></rect>
+            <path class="line" d="M540 105h64"></path>
+            <rect class="node" x="604" y="58" width="118" height="90" rx="8"></rect>
+            <text x="55" y="55">多通道记录</text><text x="252" y="106">活动模式</text><text x="451" y="106">解码器</text><text x="632" y="92">水 / 候选</text><text x="632" y="120">疼 / 候选</text>
+          </svg>
+          <figcaption>模型输出通常是带不确定性的候选，不是从大脑中取出的原句。</figcaption>
+        </figure>
+      </section>
+
+      <section id="learning">
+        <h2>机器学习之外，还有“人学习”</h2>
+        <p>模型在第一次使用前通常需要训练数据。林阿姨按照提示多次尝试选择，系统比较记录并更新参数。这个过程称为<dfn data-term="校准">校准</dfn>：用已知任务和反馈重新估计人与设备之间的映射关系。校准不是一次安装动作，而可能是长期使用中的日常维护。</p>
+        <p>与此同时，林阿姨也会学习。她可能发现，轻微想象某个动作比用力想更稳定；她也可能学会在反馈出现前保持注意。<dfn data-term="共同适应">共同适应</dfn>指使用者学习产生更稳定的活动模式，算法也随数据更新，两者同时改变。最终表现属于整个人机回路，不能只归功于模型。</p>
+        <p>这解释了为何“零训练、戴上就用”是一个需要格外核实的宣传点。某些简单任务可以利用大多数人共有的反应，减少个体训练；自由度更高的控制通常仍要适配个体。减少训练负担是有价值的研究目标，但不能用隐藏的预训练或受限词表制造通用性的错觉。</p>
+        <p>反馈设计也会改变学习。若光标连续移动，使用者能逐步修正；若系统只在最后给出对错，学习线索更少。若错误会触发轮椅或刺激器动作，系统还要设置确认、停止和安全边界。反馈越接近现实动作，错误成本越不能只用准确率表示。</p>
+      </section>
+
+      <section id="drift">
+        <h2>为什么昨天会用，今天可能失准</h2>
+        <p>神经记录的统计特性会变化。头皮电极位置稍有移动，皮肤阻抗便不同；植入电极附近组织也可能随时间改变。睡眠、药物、压力、疼痛和任务熟悉度会影响活动。算法把这类变化统称为分布漂移，但对使用者来说，它表现为光标突然不听话。</p>
+        <p>一种应对方式是定期重新训练，另一种是让模型在使用中缓慢更新。两者都有代价。频繁训练占用时间，自动更新则可能把错误反馈学进去。医疗场景还要保留版本、日志和回退机制，确保团队能解释一次异常来自硬件、数据、模型还是使用条件。</p>
+        <p>长期稳定并不等于每个电极永远不变。一个稳健系统可以容忍部分通道失效，也能在记录变化时维持任务表现。评估时应同时看信号稳定、功能稳定和维护负担。使用者最终关心的是能否可靠沟通，而不是内部波形是否保持漂亮。</p>
+        <div class="boundary-note">
+          <h3>自动更新也需要边界</h3>
+          <p>持续学习模型若改变了输出行为，使用者应知道变化发生过，并能恢复到较安全的版本。关键命令应保留人工确认和紧急停止。对植入式医疗设备而言，软件更新还涉及监管、网络安全与长期支持责任。</p>
+        </div>
+      </section>
+
+      <section id="metrics">
+        <h2>“准确率很高”为什么仍然不够</h2>
+        <p>离线分析可以反复处理已经记录的数据，在线系统却必须及时给出结果。复制屏幕上给定句子也不同于自由表达。研究论文中的最好一次表现，不一定代表跨天平均，更不代表无人协助的家庭使用。比较系统时，先确认测试发生在什么条件下。</p>
+        <p>准确率还会被类别数量影响。在两个选项间达到高准确，不能直接外推到上万个词。文字系统要同时报告速度和错误类型；连续控制要关注延迟、轨迹稳定与错误动作。对使用者更重要的指标还包括准备时间、疲劳、照护者投入和每天可用时长。</p>
+        <p>平均值也会遮住关键波动。一个系统若大多数时候很好，却偶尔连续失效，使用体验可能比成绩较低但行为稳定的系统更差。应查看不同会话、不同时间段和不同使用条件下的分布，并询问最差情形如何被检测和处理。</p>
+        <p>“独立使用”需要清楚定义。研究人员是否在旁边调整电极、重启程序或挑选可用通道？照护者是否需要每天准备设备？若这些支持没有计入，读者会把团队共同完成的实验误认为参与者已经能独自在家完成。</p>
+        <p>一次成功演示能证明“有可能”，多名参与者重复可以检验“是否普遍”，长期家庭研究才更接近“能否生活化”。这些层级不是互相否定，而是回答不同问题。概念验证值得重视，也应被准确地称为概念验证。</p>
+        <p>林阿姨在受控房间里选中“水”，说明这一映射在当时成立。要说她获得了新的沟通能力，还要看她能否在疲劳、噪声和不同照护情境中独立完成，错误能否及时纠正，设备是否持续可用。技术价值从瞬间演示走向日常生活，需要更长的证据链。</p>
+        <p>整条回路现在已经清楚：传感器决定可见内容，处理方法塑造表示，模型给出带不确定性的候选，反馈让人和算法继续学习。任何一环变化，都可能让昨天有效的映射今天失准。下一章将把这份机制理解转化为一套判断新主张的方法。</p>
+      </section>
+
+      <nav class="page-turn" aria-label="章节翻页">
+        <a href="main.html">← 返回：入门</a>
+        <a href="benefits-risks-and-rights.html">继续：判断框架 →</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="foot-line">
+    <p><span>脑机接口与神经科技</span><span>信号回路</span><a href="sources.html">来源与证据边界</a><a href="../../index.html">Personal Assets</a></p>
+  </footer>
+</body>
+</html>
