@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "韩非子 vs 马基雅维利",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-04",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "相似的冷峻，不同的问题",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "韩非子与马基雅维利为什么常被并列，他们面对的真是同一个政治问题吗？",
+      "readerStateBefore": "读者只知道两人都被贴上冷酷、权谋或不择手段的标签，容易把相似语气当成相同思想。",
+      "readerStateAfter": "读者能够把表面相似拆成共同的现实主义转向，并识别战国官僚国家与文艺复兴城邦危机这两种不同的问题背景。",
+      "priorConclusion": "",
+      "coreExample": "一位刚接手动荡政权的统治者，既要防止官员欺瞒与越权，又要抵御外敌、安顿新领地并争取民众不反叛；两位思想家会从不同入口处理这组难题。",
+      "conclusion": "韩非子与马基雅维利都拒绝只凭统治者的善意解释政治，但前者首先设计可持续控制官僚与臣民的统治结构，后者首先分析行动者如何在变动局势中取得、保存并重塑政治秩序。",
+      "nextQuestion": "既然两人处理的是不同层面的统治难题，他们各自怎样把怀疑人性转化为可操作的政治机制？",
+      "nextPage": "mechanisms.html",
+      "newTerms": [
+        { "term": "政治现实主义", "definition": "从权力、冲突、利益和行动后果出发理解政治，而不把道德愿望直接当成制度如何运作的说明。" },
+        { "term": "法家", "definition": "后世用来归类战国时期若干重视标准、行政技术与国家权力思想家的名称，并非当时成员自称的统一学派。" },
+        { "term": "鉴诫文学", "definition": "向统治者提供道德劝诫、历史先例与治国规范的一类传统政治写作。" }
+      ]
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "一套制度机器，两种行动技艺",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然两人处理的是不同层面的统治难题，他们各自怎样把怀疑人性转化为可操作的政治机制？",
+      "readerStateBefore": "读者能够把表面相似拆成共同的现实主义转向，并识别战国官僚国家与文艺复兴城邦危机这两种不同的问题背景。",
+      "readerStateAfter": "读者能够用标准、行政技术、职位权势与能力、时势这两组机制，解释韩非子偏重组织控制而马基雅维利偏重情势行动的差别。",
+      "priorConclusion": "韩非子与马基雅维利都拒绝只凭统治者的善意解释政治，但前者首先设计可持续控制官僚与臣民的统治结构，后者首先分析行动者如何在变动局势中取得、保存并重塑政治秩序。",
+      "coreExample": "同一位新统治者面对税粮虚报、将领邀功、邻国威胁和新领地不服：韩非子检验职位、名责与赏罚链条，马基雅维利检验军队、声望、时机与必要行动。",
+      "conclusion": "韩非子的核心方案是让权力通过标准、考核、赏罚与君位结构持续运转，马基雅维利的核心方案则是训练政治行动者在不确定情势中以自身力量、判断和适应能力保全共同体。",
+      "nextQuestion": "这些机制看似有效，却把谁的安全当成目标，又会在什么制度与伦理条件下暴露盲点？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "法", "definition": "韩非思想中可公开传布并用来衡量行为、功绩与责任的标准，不宜直接等同现代限制统治者的法治。" },
+        { "term": "术", "definition": "君主任官、核验言责与实际功效、控制信息并防范臣下的行政技术。" },
+        { "term": "势", "definition": "来自统治职位和制度位置的权势，使普通能力的人也能借位置发令并实施赏罚。" },
+        { "term": "virtù", "definition": "马基雅维利笔下政治行动者把握局势、敢于决断并塑造结果的综合能力，并非通常意义上的道德美德。" },
+        { "term": "fortuna", "definition": "政治生活中难以完全控制的时势、偶然与环境力量，行动者只能预备、利用或部分抵御它。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "权力有效之后，还要追问什么",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["mechanisms.html"],
+      "readerQuestion": "这些机制看似有效，却把谁的安全当成目标，又会在什么制度与伦理条件下暴露盲点？",
+      "readerStateBefore": "读者能够用标准、行政技术、职位权势与能力、时势这两组机制，解释韩非子偏重组织控制而马基雅维利偏重情势行动的差别。",
+      "readerStateAfter": "读者能够区分君主安全、国家秩序与公共自由，用信息质量、纠错能力、暴力边界和制度目标评估现实主义方案。",
+      "priorConclusion": "韩非子的核心方案是让权力通过标准、考核、赏罚与君位结构持续运转，马基雅维利的核心方案则是训练政治行动者在不确定情势中以自身力量、判断和适应能力保全共同体。",
+      "coreExample": "那位新统治者已经压住叛乱并整顿官僚，但恐惧让坏消息消失、临时手段变成常规，民众只求不受侵害；此时用两位思想家的边界重新评估所谓成功。",
+      "conclusion": "比较韩非子与马基雅维利的价值不在于寻找一套更高明的权术，而在于看清任何现实主义政治都必须回答信息如何回流、权力如何纠错、必要手段何时停止以及秩序最终服务于谁。",
+      "nextQuestion": "当现实政治再次以安全和必要为理由扩张权力时，我们能否同时追问它的证据、期限、纠错机制与公共目的？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "vivere sicuro", "definition": "马基雅维利讨论中的安全生活，指在强有力秩序下免于任意侵害并保持日常安定。" },
+        { "term": "vivere libero", "definition": "马基雅维利共和论述中的自由生活，指公民在法律与制度中参与并避免受他人任意支配。" },
+        { "term": "统治者困境", "definition": "统治者需要依靠臣属取得信息和执行政策，却又担心他们隐瞒、结党或借职权反噬自己的结构性难题。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、争论与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

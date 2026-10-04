@@ -1,0 +1,68 @@
+/* Hallmark · macrostructure: Split Studio · genre: editorial · theme: Editorial · tone: philosophical editorial · anchor hue: cinnabar · enrichment: none · nav: N6 · footer: Ft6 */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+:root {
+  --color-paper: oklch(96% 0.012 72);
+  --color-paper-raised: oklch(93% 0.016 72);
+  --color-paper-deep: oklch(88% 0.018 72);
+  --color-ink: oklch(19% 0.018 48);
+  --color-ink-soft: oklch(34% 0.018 48);
+  --color-muted: oklch(45% 0.018 52);
+  --color-rule: oklch(72% 0.022 60);
+  --color-accent: oklch(48% 0.165 32);
+  --color-focus: oklch(54% 0.19 32);
+  --color-shadow: oklch(22% 0.02 48 / 0.08);
+
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.65rem, 7vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --rule-hair: 1px;
+  --rule-strong: 2px;
+  --radius-sm: 0.2rem;
+  --radius-md: 0.45rem;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --content-max: 76rem;
+  --prose-max: 67ch;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(15% 0.014 48);
+  --color-paper-raised: oklch(19% 0.016 48);
+  --color-paper-deep: oklch(24% 0.018 48);
+  --color-ink: oklch(94% 0.012 72);
+  --color-ink-soft: oklch(82% 0.014 72);
+  --color-muted: oklch(72% 0.016 66);
+  --color-rule: oklch(39% 0.022 52);
+  --color-accent: oklch(68% 0.135 32);
+  --color-focus: oklch(74% 0.15 32);
+  --color-shadow: oklch(5% 0.01 48 / 0.28);
+}

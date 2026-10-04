@@ -3781,6 +3781,13 @@
       "generatedAt": "2026-10-04",
       "slug": "spaced-repetition-memory",
       "entry": "knowledge-bases/spaced-repetition-memory/main.html"
+    },
+    {
+      "name": "韩非子 vs 马基雅维利",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-04",
+      "slug": "han-feizi-vs-machiavelli",
+      "entry": "knowledge-bases/han-feizi-vs-machiavelli/main.html"
     }
   ],
   "skipped": []

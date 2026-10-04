@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-04T16:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "韩非子与马基雅维利为什么常被并列，他们面对的真是同一个政治问题吗？",
+      "readerStateChange": "读前容易把两人都理解成冷酷权谋家；读后能区分共同的现实主义语气、不同的历史处境，以及组织控制和情势行动两个问题入口。",
+      "twoSentenceSummary": "页面先解释两人为何都拒绝以善意直接说明政治成败，再把战国官僚国家与文艺复兴城邦危机并置。虚构的新统治者让差别具体化：韩非先查职位和信息，马基雅维利先查力量与时机。",
+      "continuityEvidence": "末段把共同点收束为对政治不可靠性的警觉，并明确提出下一页需要进入标准、考核、军力和时势等机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "既然两人处理的是不同层面的统治难题，他们各自怎样把怀疑人性转化为可操作的政治机制？",
+      "readerStateChange": "读前只知道两人的问题入口不同；读后能够分别解释韩非的标准、行政控制与职位权势，以及马基雅维利的行动能力、时势和自身力量。",
+      "twoSentenceSummary": "页面以税粮虚报、将领邀功和邻国威胁贯穿两套机制，说明一方偏向可重复的组织控制，另一方偏向不确定局势中的适应行动。末节进一步比较时间尺度、失败诊断与反馈回路。",
+      "continuityEvidence": "结尾指出两套机制都可能把信息和最终裁断集中于最高权力，因而自然推出谁的安全、如何纠错和必要性边界的问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "这些机制看似有效，却把谁的安全当成目标，又会在什么制度与伦理条件下暴露盲点？",
+      "readerStateChange": "读前能够解释两套机制；读后能够用信息回流、权力纠错、比例与停止条件、公共安全和公民自由检验现实主义主张。",
+      "twoSentenceSummary": "页面先说明控制可能使坏消息消失，再区分君主安全、日常安定与公共自由。随后把古典洞见转成证据、期限、复核和公共目的四项现代判断接口。",
+      "continuityEvidence": "本页接住机制页暴露的集中裁断风险，并在结尾留下开放问题，引导读者把四项检查迁移到新的安全与必要性主张。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文概括；读后能够区分原典、权威研究与站内关联阅读，并知道关键文本争论应从哪里继续核对。",
+      "twoSentenceSummary": "来源页列出《韩非子》关键篇章、《君主论》和《论李维》的公开文本。它还以斯坦福哲学百科和学术译本信息说明概念误译、文本形成与共和主义解释的边界。",
+      "continuityEvidence": "该页承接三篇正文中的出处提示，并为读者核对原典、版本与解释争论提供可达链接，不另起新的叙事分支。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
