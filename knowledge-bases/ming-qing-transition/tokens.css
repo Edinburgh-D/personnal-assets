@@ -1,0 +1,82 @@
+/* Hallmark · macrostructure: Long Document · tone: editorial · anchor hue: cinnabar · genre: editorial · theme: Newsprint · enrichment: none · nav: N6 · footer: Ft5 · contrast: pass (40–41) · slop: pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (49) · icons: pass (30) · mobile: pass (34, 49, 50–57) */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+:root {
+  color-scheme: light dark;
+  --color-paper: oklch(96% 0.014 82);
+  --color-paper-2: oklch(92% 0.018 78);
+  --color-paper-3: oklch(88% 0.020 74);
+  --color-ink: oklch(22% 0.024 52);
+  --color-ink-soft: oklch(32% 0.020 55);
+  --color-muted: oklch(43% 0.018 58);
+  --color-rule: oklch(69% 0.024 70);
+  --color-accent: oklch(43% 0.135 28);
+  --color-accent-soft: oklch(89% 0.045 30);
+  --color-focus: oklch(48% 0.145 28);
+  --color-selection: oklch(84% 0.065 30);
+  --font-display: "ZCOOL XiaoWei", "Noto Serif SC", ui-serif, serif;
+  --font-body: "Noto Serif SC", ui-serif, serif;
+  --font-ui: "Noto Serif SC", ui-serif, serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.15rem, 5vw, 3.4rem);
+  --text-display: clamp(2.6rem, 7vw, 5.1rem);
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --rule-hair: 0.0625rem;
+  --rule-heavy: 0.1875rem;
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --measure: 72ch;
+  --control-min: 2.75rem;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(16% 0.014 62);
+  --color-paper-2: oklch(20% 0.016 60);
+  --color-paper-3: oklch(25% 0.018 58);
+  --color-ink: oklch(93% 0.014 82);
+  --color-ink-soft: oklch(84% 0.016 78);
+  --color-muted: oklch(71% 0.018 72);
+  --color-rule: oklch(40% 0.025 60);
+  --color-accent: oklch(72% 0.105 30);
+  --color-accent-soft: oklch(28% 0.050 28);
+  --color-focus: oklch(78% 0.115 32);
+  --color-selection: oklch(40% 0.070 30);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(16% 0.014 62);
+    --color-paper-2: oklch(20% 0.016 60);
+    --color-paper-3: oklch(25% 0.018 58);
+    --color-ink: oklch(93% 0.014 82);
+    --color-ink-soft: oklch(84% 0.016 78);
+    --color-muted: oklch(71% 0.018 72);
+    --color-rule: oklch(40% 0.025 60);
+    --color-accent: oklch(72% 0.105 30);
+    --color-accent-soft: oklch(28% 0.050 28);
+    --color-focus: oklch(78% 0.115 32);
+    --color-selection: oklch(40% 0.070 30);
+  }
+}

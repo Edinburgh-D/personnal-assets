@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-05T20:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么不能把1644年看成明朝一夜消失、清朝立即统一中国的单日换班？",
+      "readerStateChange": "读前把明清更替压缩为北京与山海关的几个事件；读后能用1618年至1683年的长时段和多中心竞争解释1644年的枢纽性质。",
+      "twoSentenceSummary": "正文沿北京—山海关—北京路线还原1644年的急剧转折，再从战争财政、灾荒货币、民变与东北建国拆解单一原因。它把首都易手放回多个政权、地方选择和信息延迟并存的格局，说明入关不等于统一。",
+      "continuityEvidence": "结尾把北京的象征胜利推进为军队、官署和地方资源如何被持续接收的问题，直接引出下一卷对清初扩张机制的分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "conquest-and-rule.html",
+      "centralQuestion": "在这场多中心竞争中，清政权为什么能够越过山海关，把一次军事机会转化为持续扩张的统治？",
+      "readerStateChange": "读前知道多个政权同时竞争；读后能从预先建国、军队整合、制度承接、利益交换和强制服从解释清政权如何扩张及其代价。",
+      "twoSentenceSummary": "正文追踪八旗、绿营、降将、地方官绅、后勤和告示如何把战场胜利接到行政网络上。江南强制政策、南明分裂、三藩战争和海疆战事又显示联盟既能加速征服，也会制造新的反抗与创伤。",
+      "continuityEvidence": "本卷承接入口页的多中心格局，把结果还原为可观察的军事与治理机制；结尾由获胜方式自然推进到制度改变和社会记忆的评价问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "legacies-and-memory.html",
+      "centralQuestion": "当征服逐步结束后，应该怎样判断清朝既继承明制又重塑帝国的结果，并理解不同群体留下的易代记忆？",
+      "readerStateChange": "读前能解释清廷获胜机制但尚难综合评价；读后能区分首都、宗室、内陆军权和海疆四种结束时间，并用四个坐标比较不同叙事。",
+      "twoSentenceSummary": "正文并列1644、1662、1681和1683四个节点，说明结束时间随政治、军事、地方和社会尺度而变化。它以制度连续、帝国重组、社会恢复和创伤记忆同时检验盛世叙事与单线征服叙事。",
+      "continuityEvidence": "开头直接使用上一卷的联盟、强制与制度承接机制，随后检验这些机制在官僚、士人、地方居民和海疆社会中留下的不同结果。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分清廷诏书、博物馆藏品说明、档案收藏介绍与现代学术研究各自适合证明的内容，并识别数字和命名争议。",
+      "twoSentenceSummary": "参考页汇集故宫、国家博物馆、台北故宫与中研院档案入口，并列出剑桥、普林斯顿等现代研究。它解释了分期、伤亡数字和统一用语的证据边界，帮助读者回查正文主张。",
+      "continuityEvidence": "来源分别对应前三卷的1644年事件链、军事制度、南明与郑氏、白银争论和记忆立场，并从末卷的判断方法返回原始证据。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

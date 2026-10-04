@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "明清易代史",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-05",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "1644：枢纽，不是终点",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [],
+      "readerQuestion": "为什么不能把1644年看成明朝一夜消失、清朝立即统一中国的单日换班？",
+      "readerStateBefore": "读者把明清更替压缩成李自成进北京、吴三桂引清兵入关和清朝建立三个相邻事件，尚未看见此前数十年的积累与此后数十年的战争。",
+      "readerStateAfter": "读者能够把1644年放进1618年至1683年的长时段，辨认明廷、民变政权、清政权与地方力量同时竞争的基本格局。",
+      "priorConclusion": "",
+      "coreExample": "沿1644年三月至十月的北京—山海关—北京路线，观察崇祯自缢、大顺入京、山海关战役、清军入京与迁都如何连续发生，却没有立即结束全国战争。",
+      "conclusion": "1644年是北京政权更替的枢纽，而非战争终点；明清易代是明廷危机、民变政权、东北新国家与地方选择长期叠加的多中心竞争。",
+      "nextQuestion": "在这场多中心竞争中，清政权为什么能够越过山海关，把一次军事机会转化为持续扩张的统治？",
+      "nextPage": "conquest-and-rule.html",
+      "newTerms": [
+        { "term": "易代", "definition": "一个王朝失去统治、另一个政权取得并重建统治的长期过程，不等于某一天更换皇帝。" },
+        { "term": "辽饷", "definition": "明朝为辽东防务加征的军费，是晚明战争财政压力的一部分。" },
+        { "term": "大顺政权", "definition": "李自成于1644年建立、以西安和北京为重要政治中心的短期政权。" },
+        { "term": "多中心竞争", "definition": "多个政权和地方力量同时争夺军队、税粮、城市与政治承认的局面。" }
+      ]
+    },
+    {
+      "file": "conquest-and-rule.html",
+      "title": "从入关到建立统治",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "在这场多中心竞争中，清政权为什么能够越过山海关，把一次军事机会转化为持续扩张的统治？",
+      "readerStateBefore": "读者能够把1644年放进1618年至1683年的长时段，辨认明廷、民变政权、清政权与地方力量同时竞争的基本格局。",
+      "readerStateAfter": "读者能够从预先建国、军事整合、降附合作、财政与官制承接、强制政策五个机制解释清政权的扩张，并看见其暴力代价。",
+      "priorConclusion": "1644年是北京政权更替的枢纽，而非战争终点；明清易代是明廷危机、民变政权、东北新国家与地方选择长期叠加的多中心竞争。",
+      "coreExample": "从山海关战役追踪吴三桂部、八旗军、投降明军与地方官绅如何被编入清军推进及城市接收网络，再比较江南剃发抵抗与西南、海疆的长期战事。",
+      "conclusion": "清政权的优势不是单靠八旗骑兵，而在于把既有国家建构、降附官兵、财政承诺、地方合作与高压征服组合起来；联盟扩大了统治能力，也把暴力与服从写进新秩序。",
+      "nextQuestion": "当征服逐步结束后，应该怎样判断清朝既继承明制又重塑帝国的结果，并理解不同群体留下的易代记忆？",
+      "nextPage": "legacies-and-memory.html",
+      "newTerms": [
+        { "term": "八旗", "definition": "兼具军事、户籍和政治组织功能的编制，是清政权早期国家建构的骨架。" },
+        { "term": "绿营", "definition": "清朝入关后以归附和招募的汉人官兵为主体建立的常备军体系。" },
+        { "term": "南明", "definition": "北京失守后，明宗室与官员在南方先后建立的若干延续明朝名号的政权。" },
+        { "term": "剃发令", "definition": "清廷要求成年男子改从满洲发式的强制命令，成为政治服从的外在标志并引发抵抗。" },
+        { "term": "招抚", "definition": "以赦免、授官、保留利益等条件促使对手归附的政治与军事手段。" }
+      ]
+    },
+    {
+      "file": "legacies-and-memory.html",
+      "title": "谁的结束，谁的开始",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["conquest-and-rule.html"],
+      "readerQuestion": "当征服逐步结束后，应该怎样判断清朝既继承明制又重塑帝国的结果，并理解不同群体留下的易代记忆？",
+      "readerStateBefore": "读者能够从预先建国、军事整合、降附合作、财政与官制承接、强制政策五个机制解释清政权的扩张，并看见其暴力代价。",
+      "readerStateAfter": "读者能够区分王朝终结、战争结束与新秩序稳定的不同时间尺度，并用制度连续、帝国重组、社会恢复和创伤记忆比较不同叙事。",
+      "priorConclusion": "清政权的优势不是单靠八旗骑兵，而在于把既有国家建构、降附官兵、财政承诺、地方合作与高压征服组合起来；联盟扩大了统治能力，也把暴力与服从写进新秩序。",
+      "coreExample": "把1644年北京、1662年永历帝之死、1681年三藩平定与1683年郑氏降清并列，再从官员、遗民、军户、江南居民和海疆社会的不同位置判断何时才算易代结束。",
+      "conclusion": "评价明清易代不能只问谁取得正统，而应同时观察制度连续、帝国重组、地方社会恢复与战争创伤；同一场易代对宫廷、士人、军户、商民和边疆群体意味着不同的结束与开始。",
+      "nextQuestion": "当我们用“统一”“入关”或“亡国”概括易代时，哪些人的经历被保留，哪些又被压缩在一个年份里？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "正统", "definition": "政治共同体用来说明谁有资格继承天下秩序、代表合法王朝的一套主张。" },
+        { "term": "遗民", "definition": "王朝更替后仍以故国臣民自居，并以拒仕、著述或纪念等方式表达立场的人。" },
+        { "term": "制度连续", "definition": "新政权沿用前朝官僚、税制、法律或治理技术，使政权变化与日常行政之间并非完全断裂。" },
+        { "term": "帝国重组", "definition": "统治者重新安排不同地区、族群、军政机构与政治身份，而不只是接管原有疆域。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "史料、争议与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

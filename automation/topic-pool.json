@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3802,6 +3802,13 @@
       "generatedAt": "2026-10-04",
       "slug": "translation-theory-practice",
       "entry": "knowledge-bases/translation-theory-practice/main.html"
+    },
+    {
+      "name": "明清易代史",
+      "domain": "历史/军事",
+      "generatedAt": "2026-10-05",
+      "slug": "ming-qing-transition",
+      "entry": "knowledge-bases/ming-qing-transition/main.html"
     }
   ],
   "skipped": []

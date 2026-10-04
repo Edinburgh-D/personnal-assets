@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-05",
+  "framework": "vanilla-html",
+  "fontStack": "new knowledge-base scoped pairing",
+  "palette": "new knowledge-base scoped OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt scale",
+  "preserve": ["repository publishing contract", "static HTML delivery", "site-home navigation"]
+}
