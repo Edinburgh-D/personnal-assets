@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "内向者优势",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-04",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "安静不是空白",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把内向和外向看成非此即彼的身份标签，并容易把安静、害羞、独处和能力强弱混在一起。",
+      "readerStateAfter": "读者能把内外向理解为连续的人格维度，区分社交偏好、行为表现与焦虑，并用情境匹配而非优劣排序理解所谓优势。",
+      "readerQuestion": "如果内向不是一种固定类型，也不是害羞的同义词，那么所谓内向者优势究竟指什么？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "林默在十二人的项目会议中很少抢话，会后却能从笔记里找出遗漏条件；在一对一讨论中，他能更快把想法说清楚。",
+      "newTerms": [
+        {
+          "term": "内向—外向维度",
+          "definition": "描述一个人通常如何接近社交刺激、表达活力与争取影响力的连续人格维度，而不是两个封闭类型。"
+        },
+        {
+          "term": "人格特质",
+          "definition": "跨时间和情境相对稳定、但不会机械决定每一次行为的感受与行动倾向。"
+        },
+        {
+          "term": "害羞",
+          "definition": "在社交评价情境中出现紧张、自我关注或退缩的倾向，与喜欢较少刺激并不是同一件事。"
+        },
+        {
+          "term": "情境匹配",
+          "definition": "个人倾向与任务要求、环境节奏和可用策略之间形成的适配关系。"
+        }
+      ],
+      "conclusion": "内向者优势不是一组人人自动拥有的天赋，而是较低外向倾向在合适任务、环境和策略中转化出的条件性能力。",
+      "nextQuestion": "既然优势来自特质与情境的配合，较低外向倾向通过哪些心理和行为路径影响表现？",
+      "nextPage": "how-strengths-emerge.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "how-strengths-emerge.html",
+      "title": "优势怎样长出来",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能把内外向理解为连续的人格维度，区分社交偏好、行为表现与焦虑，并用情境匹配而非优劣排序理解所谓优势。",
+      "readerStateAfter": "读者能从奖励敏感、外向行为成本、主动独处和互动结构四条路径解释优势为何只在特定条件下出现。",
+      "readerQuestion": "既然优势来自特质与情境的配合，较低外向倾向通过哪些心理和行为路径影响表现？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "内向者优势不是一组人人自动拥有的天赋，而是较低外向倾向在合适任务、环境和策略中转化出的条件性能力。",
+      "coreExample": "林默分别经历即兴大会、提前拿到议程的小组会和独自整理材料，比较同一个人在不同刺激与准备条件下的注意、表达和恢复成本。",
+      "newTerms": [
+        {
+          "term": "热情性",
+          "definition": "外向维度中与社交亲近、积极情绪和群体活力相关的一组倾向。"
+        },
+        {
+          "term": "自信主导性",
+          "definition": "外向维度中与主动发言、影响他人和占据领导位置相关的一组倾向。"
+        },
+        {
+          "term": "奖励敏感性",
+          "definition": "对可能带来愉快、地位或达成感的线索产生接近动机的程度。"
+        },
+        {
+          "term": "自主独处",
+          "definition": "出于自己认可的理由选择独处，而不是被排斥、恐惧或压力迫使离开他人。"
+        }
+      ],
+      "conclusion": "较低外向倾向只有经过准备时间、可控刺激、自主独处和互补互动的中介，才可能表现为深思、专注、接纳意见或稳定表达。",
+      "nextQuestion": "既然同一倾向既能成为资源也能变成限制，普通人怎样设计环境、练习伸展并识别需要求助的边界？",
+      "nextPage": "using-the-advantage.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "using-the-advantage.html",
+      "title": "把优势用成选择",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能从奖励敏感、外向行为成本、主动独处和互动结构四条路径解释优势为何只在特定条件下出现。",
+      "readerStateAfter": "读者能按任务、刺激、关系与恢复条件设计适配做法，也能区分真实偏好、习惯性回避和影响生活的社交焦虑。",
+      "readerQuestion": "既然同一倾向既能成为资源也能变成限制，普通人怎样设计环境、练习伸展并识别需要求助的边界？",
+      "dependsOn": [
+        "how-strengths-emerge.html"
+      ],
+      "priorConclusion": "较低外向倾向只有经过准备时间、可控刺激、自主独处和互补互动的中介，才可能表现为深思、专注、接纳意见或稳定表达。",
+      "coreExample": "林默为项目会议建立会前书面输入、会中限时轮流发言和会后异步补充的组合，同时保留必要的公开表达练习。",
+      "newTerms": [
+        {
+          "term": "人格—情境交易",
+          "definition": "人会选择、改变并被环境反馈塑造，长期下来倾向与情境彼此强化的过程。"
+        },
+        {
+          "term": "伸展行为",
+          "definition": "在重要目标需要时暂时采用不那么习惯、但仍可恢复且不违背价值的行为。"
+        },
+        {
+          "term": "社交焦虑障碍",
+          "definition": "对可能被审视或否定的社交情境持续产生强烈恐惧，并造成明显回避、痛苦或生活功能受损的焦虑障碍。"
+        }
+      ],
+      "conclusion": "真正可持续的内向者优势来自可选择的环境设计与灵活行为，而不是把标签当豁免证；当恐惧和回避持续损害生活时，应把它作为可获得专业帮助的问题。",
+      "nextQuestion": "在新的工作、学习或关系情境中，我能否先检查任务结构、刺激成本、选择感和回避代价，再决定顺势而为还是主动伸展？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "读者已经理解内向优势的条件模型，希望核对定义、实验结果和健康边界。",
+      "readerStateAfter": "读者能够识别各来源支持的具体主张、研究设计限制与不可外推之处。",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "how-strengths-emerge.html",
+        "using-the-advantage.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ]
+}

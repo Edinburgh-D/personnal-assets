@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-04T16:15:42+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "如果内向不是一种固定类型，也不是害羞的同义词，那么所谓内向者优势究竟指什么？",
+      "readerStateChange": "读前容易用固定类型解释安静与能力；读后能区分内向、害羞、孤独和可见行为，并以情境匹配理解优势。",
+      "twoSentenceSummary": "本页把内向还原为连续人格维度，说明特质只能描述行为概率，不能决定能力与命运。林默在两种会议结构中的不同表现证明，所谓优势是倾向、任务、环境和策略配合后的结果。",
+      "continuityEvidence": "结尾把条件性优势明确为本页结论，并顺势追问倾向通过哪些心理和行为路径转化为表现，直接引向机制页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-strengths-emerge.html",
+      "centralQuestion": "既然优势来自特质与情境的配合，较低外向倾向通过哪些心理和行为路径影响表现？",
+      "readerStateChange": "读前只知道优势有条件；读后能从奖励吸引、行为成本、自主独处与互动互补解释优势怎样形成及失效。",
+      "twoSentenceSummary": "本页拆开外向维度，讨论奖励敏感、长期练习路径和持续外向行为的个体成本。独处与领导研究进一步显示，选择感和团队主动性等中介条件决定安静倾向成为资源还是限制。",
+      "continuityEvidence": "开头承接条件性优势，结尾把四条机制收束为可调整条件，并提出如何设计环境、练习伸展和识别边界的下一步。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "using-the-advantage.html",
+      "centralQuestion": "既然同一倾向既能成为资源也能变成限制，普通人怎样设计环境、练习伸展并识别需要求助的边界？",
+      "readerStateChange": "读前能解释机制但不会迁移；读后能调整参与结构与刺激密度，也能区分偏好、疲惫、回避和社交焦虑。",
+      "twoSentenceSummary": "本页把准备、低刺激和深度互动转成会议、学习、工作及关系中的可协商流程，同时保留必要的伸展行为。它以功能损害和持续恐惧划出社交焦虑边界，避免把心理健康问题或普通偏好都塞进人格标签。",
+      "continuityEvidence": "本页逐一把机制页的准备、自主、互动与行为成本转为实践判断，最后给出可迁移到新情境的四项检查条件。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文编号；读后能分辨定义、理论、实验、日记、组织研究和政府健康资料各自支持的主张与限制。",
+      "twoSentenceSummary": "来源页逐条说明八项权威或原始材料在正文中的证据角色，并明确样本、设计和外推边界。它还解释实验、日记与现场研究各自的能力，提醒人格测验和网页资料都不能代替个体诊断。",
+      "continuityEvidence": "三个叙事页的编号引用与末页翻页链接都能到达本页，本页又回链第三章、开篇和知识库总览，证据路径闭合。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
