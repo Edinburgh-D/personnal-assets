@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "情报战与间谍史",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-05",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "秘密不是情报",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [],
+      "readerQuestion": "为什么不能把情报战的历史只写成传奇间谍、奇巧密码与一次次秘密行动的故事？",
+      "readerStateBefore": "读者熟悉若干间谍人物和破译传奇，却容易把情报等同于秘密，把胜负归因于某个天才或一条关键消息。",
+      "readerStateAfter": "读者能够把情报理解为服务决策的组织过程，并用通信技术、国家能力和制度分工解释间谍活动为何逐渐变成现代情报体系。",
+      "priorConclusion": "",
+      "coreExample": "以1917年齐默尔曼电报为贯穿案例，先区分截获密电、破译文本、判断真伪、保护来源、选择公开时机与影响决策这些不同环节。",
+      "conclusion": "情报史不是秘密数量不断增加的历史，而是国家把零散消息转化为决策优势的组织史；个人间谍重要，却始终嵌在通信、档案、分析与权力关系之中。",
+      "nextQuestion": "当情报成为组织化过程后，不同来源的碎片怎样被加工成足以支持决策、同时又保留不确定性的判断？",
+      "nextPage": "collection-and-analysis.html",
+      "newTerms": [
+        {
+          "term": "间谍活动",
+          "definition": "以隐蔽身份、秘密关系或未经对方同意的方式获取受保护信息的活动。"
+        },
+        {
+          "term": "情报",
+          "definition": "围绕具体决策问题，对信息进行收集、核验、解释并及时送达后形成的判断。"
+        },
+        {
+          "term": "反情报",
+          "definition": "识别、阻断或利用对手情报活动，并保护本方人员、信息和判断过程的工作。"
+        },
+        {
+          "term": "情报机构",
+          "definition": "持续承担收集、分析、反情报或秘密行动等职能的专业组织。"
+        }
+      ]
+    },
+    {
+      "file": "collection-and-analysis.html",
+      "title": "从线索到判断",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [
+        "main.html"
+      ],
+      "readerQuestion": "当情报成为组织化过程后，不同来源的碎片怎样被加工成足以支持决策、同时又保留不确定性的判断？",
+      "readerStateBefore": "读者能够把情报理解为服务决策的组织过程，并用通信技术、国家能力和制度分工解释间谍活动为何逐渐变成现代情报体系。",
+      "readerStateAfter": "读者能够沿需求、收集、处理、分析与分发的链条解释情报如何形成，并区分来源可靠性、内容可信度与分析结论。",
+      "priorConclusion": "情报史不是秘密数量不断增加的历史，而是国家把零散消息转化为决策优势的组织史；个人间谍重要，却始终嵌在通信、档案、分析与权力关系之中。",
+      "coreExample": "沿齐默尔曼电报从英国海军情报部门截获、破译、寻找可公开的来源，到美国政府判断并公布的路径，观察原始材料怎样成为可行动的情报。",
+      "conclusion": "秘密材料只有经过问题设定、来源校验、交叉印证、解释和及时分发才成为情报；真正的优势来自一条能纠错的链条，而不是某一种来源天然可靠。",
+      "nextQuestion": "如果对手会故意制造假象，而机构自身也会受偏见、保密与政策压力影响，我们应怎样判断一次情报成功或失败？",
+      "nextPage": "deception-and-judgment.html",
+      "newTerms": [
+        {
+          "term": "人力情报",
+          "definition": "通过人员接触、报告和秘密关系获得的信息及其分析成果。"
+        },
+        {
+          "term": "信号情报",
+          "definition": "从通信或其他电子信号的截获、处理与分析中获得的情报。"
+        },
+        {
+          "term": "情报周期",
+          "definition": "把需求、收集、处理、分析和分发连接起来，并由新问题重新启动的工作模型。"
+        },
+        {
+          "term": "全源分析",
+          "definition": "把不同收集方式和公开材料放在一起比较，以形成综合判断。"
+        },
+        {
+          "term": "交通分析",
+          "definition": "即使看不见消息正文，也从通信的时间、频率、方向和网络关系中寻找模式。"
+        }
+      ]
+    },
+    {
+      "file": "deception-and-judgment.html",
+      "title": "欺骗、失察与证据边界",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [
+        "collection-and-analysis.html"
+      ],
+      "readerQuestion": "如果对手会故意制造假象，而机构自身也会受偏见、保密与政策压力影响，我们应怎样判断一次情报成功或失败？",
+      "readerStateBefore": "读者能够沿需求、收集、处理、分析与分发的链条解释情报如何形成，并区分来源可靠性、内容可信度与分析结论。",
+      "readerStateAfter": "读者能够从对手是否受骗、决策是否改善、替代解释是否被检验和档案是否完整四个方面评价历史案例，而不把破译或抓获本身等同于胜利。",
+      "priorConclusion": "秘密材料只有经过问题设定、来源校验、交叉印证、解释和及时分发才成为情报；真正的优势来自一条能纠错的链条，而不是某一种来源天然可靠。",
+      "coreExample": "把齐默尔曼电报的成功链条与二战英国双重间谍欺骗、剑桥间谍网的长期渗透、VENONA解密材料以及2002年伊拉克武器评估并置，检验成功与失败的不同尺度。",
+      "conclusion": "情报成败必须放回具体决策和对抗关系中衡量：材料可能真实而解释错误，行动可能成功而代价被隐藏，档案也可能因保密与事后选择而不完整；可靠判断来自可追溯证据、替代解释和明确的不确定性。",
+      "nextQuestion": "当更多档案解密、旧叙述被修正时，我们应怎样更新对一场秘密战争的评价，同时避免把新材料再次当成最后真相？",
+      "nextPage": null,
+      "newTerms": [
+        {
+          "term": "欺骗行动",
+          "definition": "有计划地让对手接收并相信错误图景，从而影响其部署或决策。"
+        },
+        {
+          "term": "双重间谍",
+          "definition": "表面为一方工作，实际受另一方控制或向另一方提供服务的人员。"
+        },
+        {
+          "term": "分析置信度",
+          "definition": "对一项判断所依据证据的质量、完整性和稳定程度的说明，不等同于事件发生的概率。"
+        },
+        {
+          "term": "认知偏差",
+          "definition": "人在选择、解释和记忆证据时出现的系统性倾向，会让既有预期压过相反信息。"
+        },
+        {
+          "term": "情报失误",
+          "definition": "收集、分析、传递或决策衔接中的缺陷，使机构未能提供足够准确、及时或有用的判断。"
+        }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "档案、官方调查与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

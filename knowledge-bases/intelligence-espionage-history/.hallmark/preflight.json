@@ -1,0 +1,14 @@
+{
+  "scannedAt": "2026-10-05",
+  "framework": "vanilla-html",
+  "fontStack": "repository history pages use paired Chinese serif and sans faces",
+  "palette": "existing knowledge bases use OKLCH token files",
+  "motion": "motion-cut",
+  "spacing": "4-point semantic scale",
+  "preserved": [
+    "standalone tokens.css",
+    "responsive static HTML",
+    "dark mode",
+    "keyboard focus"
+  ]
+}

@@ -1,0 +1,84 @@
+/* Hallmark · macrostructure: Split Studio · tone: editorial archive · anchor hue: dossier blue · genre: editorial · theme: Almanac · enrichment: none · nav: N3 · footer: Ft4 */
+:root {
+  color-scheme: light;
+  --color-paper: oklch(96% 0.014 87);
+  --color-paper-2: oklch(92% 0.018 84);
+  --color-paper-3: oklch(88% 0.021 82);
+  --color-ink: oklch(20% 0.022 248);
+  --color-ink-soft: oklch(31% 0.026 247);
+  --color-muted: oklch(43% 0.024 247);
+  --color-rule: oklch(72% 0.025 79);
+  --color-rule-strong: oklch(52% 0.035 248);
+  --color-accent: oklch(43% 0.095 27);
+  --color-accent-ink: oklch(96% 0.014 87);
+  --color-focus: oklch(56% 0.14 250);
+  --color-mark: oklch(87% 0.068 87);
+  --color-shadow: oklch(18% 0.018 248 / 0.08);
+
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.86rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.55rem, 5vw + 0.5rem, 5.1rem);
+  --text-display-s: clamp(2.25rem, 3.5vw + 0.6rem, 4rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-heavy: 2px;
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --page-gutter: clamp(1rem, 4vw, 3rem);
+  --content-max: 78rem;
+  --prose-measure: 68ch;
+  --control-min: 2.75rem;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(16% 0.018 248);
+  --color-paper-2: oklch(20% 0.021 248);
+  --color-paper-3: oklch(25% 0.023 248);
+  --color-ink: oklch(93% 0.014 87);
+  --color-ink-soft: oklch(84% 0.016 87);
+  --color-muted: oklch(72% 0.018 87);
+  --color-rule: oklch(38% 0.025 248);
+  --color-rule-strong: oklch(63% 0.035 87);
+  --color-accent: oklch(69% 0.105 35);
+  --color-accent-ink: oklch(16% 0.018 248);
+  --color-focus: oklch(56% 0.12 250);
+  --color-mark: oklch(34% 0.06 75);
+  --color-shadow: oklch(8% 0.012 248 / 0.22);
+}

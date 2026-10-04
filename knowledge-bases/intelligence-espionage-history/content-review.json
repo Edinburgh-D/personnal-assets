@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-05T07:17:02+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么不能把情报战的历史只写成传奇间谍、奇巧密码与一次次秘密行动的故事？",
+      "readerStateChange": "读前容易把秘密、间谍和情报视为同义词；读后能从人员、通信技术、行政记录、机构分工与决策链理解情报体系的形成。",
+      "twoSentenceSummary": "正文以齐默尔曼电报拆开截获、破译、核验、保护来源、分发与行动六个环节，并说明秘密程度不等于信息价值。它把人物传奇放回国家记录能力、通信基础设施、语言与档案分类之中，建立情报作为组织过程的直觉。",
+      "continuityEvidence": "结尾把齐默尔曼电报概括为一条暂时运转顺畅的组织链，并明确把下一步推进到线索如何被分级、加工、组合和表达不确定性。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "collection-and-analysis.html",
+      "centralQuestion": "当情报成为组织化过程后，不同来源的碎片怎样被加工成足以支持决策、同时又保留不确定性的判断？",
+      "readerStateChange": "读前只知道情报依赖组织链条；读后能沿需求、收集、处理、分析、分发与反馈辨认每一步的作用，并区分渠道可靠性、内容可信度和问题相关性。",
+      "twoSentenceSummary": "正文用齐默尔曼电报展示人员、信号、公开与图像材料怎样经过处理和全源分析，强调观察、推断、替代解释与证据缺口必须分开。它进一步说明分发对象、保密范围和反馈会改变判断的实际价值，因此周期的核心是可追溯与可纠错。",
+      "continuityEvidence": "本页承接入口页的组织史视角，把抽象链条逐段展开；结尾指出对手学习、机构权限和政策偏好会破坏链条，直接引出下一页对欺骗、渗透与分析偏见的检验。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "deception-and-judgment.html",
+      "centralQuestion": "如果对手会故意制造假象，而机构自身也会受偏见、保密与政策压力影响，我们应怎样判断一次情报成功或失败？",
+      "readerStateChange": "读前能解释正常加工链条但容易以破译或抓获衡量成败；读后能从材料、解释、决策、结果、代价与档案完整度多层评价案例。",
+      "twoSentenceSummary": "正文并置双十字体系、剑桥间谍网、VENONA与伊拉克武器评估，展示行动成功、组织渗透和分析失败可以同时存在。它给出阅读解密档案的四个问题，并要求概率、置信度、替代解释和未知范围与结论一起呈现。",
+      "continuityEvidence": "本页直接使用上一页的来源评估与可纠错链条，再用对手欺骗和组织偏见检验其边界；结尾把开放问题留给未来解密材料如何修正而不终结历史判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够按原始记录、机构历史、监督调查和专业标准区分材料用途，并知道如何记录档号、形成日期、删节和解密边界。",
+      "twoSentenceSummary": "来源页汇集美国国家档案馆、GCHQ、CIA、MI5、NSA、英国国家档案馆、美国参议院与英美分析标准。每条来源都说明适合证明什么和不能单独证明什么，同时坦白在线英语档案造成的地域偏斜。",
+      "continuityEvidence": "十项来源逐一对应正文的齐默尔曼电报、机构沿革、双十字、VENONA、剑桥间谍、伊拉克评估与分析规范，并提供三个站内相关知识库入口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

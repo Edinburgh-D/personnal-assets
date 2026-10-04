@@ -3809,6 +3809,13 @@
       "generatedAt": "2026-10-05",
       "slug": "ming-qing-transition",
       "entry": "knowledge-bases/ming-qing-transition/main.html"
+    },
+    {
+      "name": "情报战与间谍史",
+      "domain": "历史/军事",
+      "generatedAt": "2026-10-05",
+      "slug": "intelligence-espionage-history",
+      "entry": "knowledge-bases/intelligence-espionage-history/main.html"
     }
   ],
   "skipped": []
