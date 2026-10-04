@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-04T22:45:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么同一句话可以有多个可靠译法，而翻译质量仍然能够被讨论和判断？",
+      "readerStateChange": "读前把翻译想成双语词语逐项替换；读后能用意义、用途、语气、文化距离和媒介约束解释多种可靠版本为何能够并存。",
+      "twoSentenceSummary": "页面从词典与语境的差别入手，用同一句虚构博物馆说明生成展签、图录和儿童导览三个版本。随后用对等、双关、诗歌和回译边界说明，多种译法仍可按事实、用途、证据和后果判断。",
+      "continuityEvidence": "结尾把可靠性概括为可说明、可检查的约束，并明确转向下一页对功能、目的、文化距离与译者位置的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "decisions.html",
+      "centralQuestion": "既然译文是受约束的选择，译者究竟依据哪些信息决定保留什么、改变什么，又如何解释这些取舍？",
+      "readerStateChange": "读前只知道译文需要在多项约束中选择；读后能分别用受众反应、行动目的、文化距离和译者可见性说明选择及其适用边界。",
+      "twoSentenceSummary": "页面先定义功能对等、目的论、归化、异化和译者可见性，再用三种博物馆版本检验每套理论能照亮的关系。它强调理论可以协作，也可能因低估读者、服从强势委托或表演陌生而失效。",
+      "continuityEvidence": "本页把首页的多种可能转化为可反驳的决策理由，结尾由理由是否充分自然推进到下一页的流程、复核、工具和风险问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "当多个译法都能提出理由时，我们怎样在真实工作中检验其可靠性，并处理权力、技术与高风险场景的边界？",
+      "readerStateChange": "读前能解释不同理论如何支持译法；读后能按用途、证据、风险、过程与责任评估译文，并识别机器辅助和专业转介的边界。",
+      "twoSentenceSummary": "页面把理论转成翻译简报、术语记录、修订和后编辑四个实践支点，并按后果区分低风险、公开文化和高风险文本。它进一步讨论自动工具、隐私版权、命名权与制度权力，最终以可追溯责任链收束。",
+      "continuityEvidence": "开头接住上一页对译者责任的结论，结尾回答可靠性如何检验，并留下语言、媒介和自动化变化下继续协商决定权与后果的问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文概括；读后能区分经典原典、当代教材、职业准则与权利框架，并从正式入口继续核对版本和适用范围。",
+      "twoSentenceSummary": "来源页列出施莱尔马赫、奈达、赖斯与费米尔、韦努蒂的原典或出版社入口，并补充当代综述教材。它还汇集 UNESCO、欧盟 EMT、ISO、ATA 与 WIPO 的正式页面，说明各自适用边界。",
+      "continuityEvidence": "该页承接三篇正文中的编号出处，为理论概念、标准状态、高风险边界和站内概念连接提供可达依据，不另建叙事分支。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

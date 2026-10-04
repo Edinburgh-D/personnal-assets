@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "翻译理论与实践",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-04",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "翻译从来不只是在换词",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "为什么同一句话可以有多个可靠译法，而翻译质量仍然能够被讨论和判断？",
+      "readerStateBefore": "读者把翻译主要理解为双语词语之间的替换，容易用是否逐字对应判断译文好坏。",
+      "readerStateAfter": "读者能够把翻译理解为在意义、用途、语气、文化距离和媒介限制之间作出有根据的选择。",
+      "priorConclusion": "",
+      "coreExample": "一则虚构的博物馆英文说明“This bowl has travelled farther than its maker ever did.”，分别进入展签、学术图录和儿童语音导览时形成不同中文译文。",
+      "conclusion": "可靠翻译不是复制一个藏在原文里的唯一答案，而是在可说明的约束下重建意义关系，并让必要的损失与补偿可被检查。",
+      "nextQuestion": "既然译文是受约束的选择，译者究竟依据哪些信息决定保留什么、改变什么，又如何解释这些取舍？",
+      "nextPage": "decisions.html",
+      "newTerms": [
+        { "term": "源文本", "definition": "翻译活动所依据的原始文本、话语或多模态材料。" },
+        { "term": "目标文本", "definition": "为特定受众、用途和媒介形成的译入语文本。" },
+        { "term": "对等", "definition": "原文与译文在某些被选定的层面上建立可比较关系，而不是所有形式都完全相同。" },
+        { "term": "语境", "definition": "使一句话获得具体含义的情境、说话关系、文体惯例和文化知识。" }
+      ]
+    },
+    {
+      "file": "decisions.html",
+      "title": "理论不是答案，而是选择的透镜",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然译文是受约束的选择，译者究竟依据哪些信息决定保留什么、改变什么，又如何解释这些取舍？",
+      "readerStateBefore": "读者能够把翻译理解为在意义、用途、语气、文化距离和媒介限制之间作出有根据的选择。",
+      "readerStateAfter": "读者能够用功能、受众反应、文化距离和译者可见性解释译法差异，并识别每种理论的适用边界。",
+      "priorConclusion": "可靠翻译不是复制一个藏在原文里的唯一答案，而是在可说明的约束下重建意义关系，并让必要的损失与补偿可被检查。",
+      "coreExample": "把同一则博物馆说明分别写成简短展签、可追溯的学术图录文字与适合儿童聆听的导览句，逐项比较信息、节奏、隐喻和文化位置的变化。",
+      "conclusion": "翻译理论的实际价值，是把隐蔽的直觉变成可以争论的理由；目的、受众反应与文化差异共同限定选择，却都不能单独免除译者对原文、读者和情境的责任。",
+      "nextQuestion": "当多个译法都能提出理由时，我们怎样在真实工作中检验其可靠性，并处理权力、技术与高风险场景的边界？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "功能对等", "definition": "重视译文受众如何理解和回应信息，而不把形式逐项相同视为唯一目标的取向。" },
+        { "term": "目的论", "definition": "把翻译行动的预期目的与目标受众视为重要决策条件的功能主义理论。" },
+        { "term": "归化", "definition": "让译文更贴近目标语习惯与读者预期，从而降低陌生感的策略倾向。" },
+        { "term": "异化", "definition": "有意保留原作语言或文化差异，使读者感到文本来自另一语境的策略倾向。" },
+        { "term": "译者可见性", "definition": "承认译文由具体译者在制度与文化条件中选择形成，而非透明复制原作。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "把译文当作一项可追溯的决定",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["decisions.html"],
+      "readerQuestion": "当多个译法都能提出理由时，我们怎样在真实工作中检验其可靠性，并处理权力、技术与高风险场景的边界？",
+      "readerStateBefore": "读者能够用功能、受众反应、文化距离和译者可见性解释译法差异，并识别每种理论的适用边界。",
+      "readerStateAfter": "读者能够按用途、证据、风险、过程和责任评估译文，知道何时需要专业复核并怎样审慎使用机器辅助。",
+      "priorConclusion": "翻译理论的实际价值，是把隐蔽的直觉变成可以争论的理由；目的、受众反应与文化差异共同限定选择，却都不能单独免除译者对原文、读者和情境的责任。",
+      "coreExample": "为博物馆展签建立简短委托说明、术语记录、双人复核与机器辅助边界，并与药品说明、合同条款等高风险文本作对照。",
+      "conclusion": "成熟的翻译判断不寻找脱离情境的万能译法，而要求目的明确、证据可追溯、风险与流程相称，并让译者和工具的责任边界保持可见。",
+      "nextQuestion": "当语言、媒介与自动化继续变化时，我们应如何重新协商哪些差异值得保留、谁有权决定，以及谁承担误解的后果？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "翻译简报", "definition": "在动笔前明确用途、受众、媒介、风格、交付要求与风险的约定。" },
+        { "term": "术语管理", "definition": "记录关键概念、首选译法、禁用译法、定义与来源，并在项目中持续维护一致性。" },
+        { "term": "修订", "definition": "由译者本人或另一位合格人员对译文与原文进行系统比较和纠正。" },
+        { "term": "机器翻译后编辑", "definition": "在明确用途和质量要求下，对机器生成的译文进行人工核验、改写与负责的过程。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、规范与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

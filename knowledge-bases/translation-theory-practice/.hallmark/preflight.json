@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-04",
+  "framework": "vanilla HTML",
+  "fontStack": "repository pages use local and web-safe stacks; this knowledge base uses paired CJK serif and sans stacks",
+  "palette": "repository supports per-knowledge-base OKLCH tokens",
+  "motion": "motion-cut; only functional theme-control feedback",
+  "spacing": "4-point semantic scale",
+  "preserved": ["static deployment", "standalone knowledge-base assets", "relative navigation"]
+}
