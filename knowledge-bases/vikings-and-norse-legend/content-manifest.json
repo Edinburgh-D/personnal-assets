@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "维京人与北欧传奇",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-05",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "海上的北方人",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "“维京人”究竟指一个民族、一种职业，还是八至十一世纪北欧社会的一组海上行动？",
+      "readerStateBefore": "读者把维京人想成戴角盔的单一战士民族，知道劫掠和北欧神话，却难以解释农庄、市场、船队与远方殖民之间的联系。",
+      "readerStateAfter": "读者能够区分北欧人口与维京行动，把劫掠、贸易、迁徙和服役放进同一片海上世界，并知道需要追问这种流动怎样转化为力量。",
+      "priorConclusion": "",
+      "coreExample": "罗斯基勒峡湾发现的五艘 Skuldelev 船：远洋货船、沿海商船、大小不同的战船和渔运船在同一船组中并存。",
+      "conclusion": "维京时代不是一个统一民族突然出海的故事，而是北欧各地的人借助多种船舶、家庭经济和政治网络，在不同场合成为商人、袭击者、移民、雇佣兵或统治者的历史。",
+      "nextQuestion": "既然同一社会能造出用途不同的船，又是什么机制把航海能力转化为劫掠、贸易、迁徙与统治？",
+      "nextPage": "ships-and-power.html",
+      "newTerms": [
+        {
+          "term": "维京时代",
+          "definition": "现代历史研究用来概括约八至十一世纪北欧海上扩张与社会转型的时期标签，各地区起止时间并不完全一致。"
+        },
+        {
+          "term": "诺斯人",
+          "definition": "对中世纪早期北欧古诺斯语人群的宽泛称呼，强调语言文化联系，不等于单一民族国家。"
+        },
+        {
+          "term": "维京行动",
+          "definition": "带有远航、武装结队和获取财富意味的海上活动，用来提醒读者“维京”首先描述行动和身份情境。"
+        }
+      ]
+    },
+    {
+      "file": "ships-and-power.html",
+      "title": "船、财富与权力",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": [
+        "main.html"
+      ],
+      "readerQuestion": "既然同一社会能造出用途不同的船，又是什么机制把航海能力转化为劫掠、贸易、迁徙与统治？",
+      "readerStateBefore": "读者能够区分北欧人口与维京行动，把劫掠、贸易、迁徙和服役放进同一片海上世界，并知道需要追问这种流动怎样转化为力量。",
+      "readerStateAfter": "读者能够用船舶分工、家庭生产、首领动员、暴力与市场的相互转换解释扩张，也能看到奴役、征税和殖民给他人造成的代价。",
+      "priorConclusion": "维京时代不是一个统一民族突然出海的故事，而是北欧各地的人借助多种船舶、家庭经济和政治网络，在不同场合成为商人、袭击者、移民、雇佣兵或统治者的历史。",
+      "coreExample": "从 Skuldelev 2 的都柏林木材与大型战船结构，到 Skuldelev 1、3 的载货能力，再追踪英格兰袭击如何升级为大军、丹麦法区与克努特的北海王权。",
+      "conclusion": "船只扩大了行动半径，却只有在农庄供给、专业工艺、首领分配、市场交换和强制暴力共同作用时，海上机动才会变成持续的财富与政治权力。",
+      "nextQuestion": "当后世主要通过基督教作者、符文、考古遗物与数百年后成书的萨迦认识这段历史时，哪些故事可以当证据，哪些只能作为记忆与文学来读？",
+      "nextPage": "saga-and-evidence.html",
+      "newTerms": [
+        {
+          "term": "船板搭接",
+          "definition": "让相邻船板边缘彼此覆盖并固定的造船方法，使船体兼具轻巧、韧性与适应海浪的能力。"
+        },
+        {
+          "term": "克纳尔",
+          "definition": "船体较宽、吃水较深、以帆航为主的远洋货船类型，适合运输木材、牲畜和大宗货物。"
+        },
+        {
+          "term": "扈从集团",
+          "definition": "围绕首领形成、以馈赠、食宿、荣誉和战利品维系的武装追随者群体。"
+        },
+        {
+          "term": "奴隶",
+          "definition": "在法律和社会上被他人占有、可被买卖或强迫劳动的人，古诺斯语材料常称 thrall。"
+        },
+        {
+          "term": "丹麦法区",
+          "definition": "九世纪末以后英格兰北部和东部受斯堪的纳维亚统治与法律习惯影响的地区性政治格局。"
+        }
+      ]
+    },
+    {
+      "file": "saga-and-evidence.html",
+      "title": "传奇留下了什么",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.45,
+      "dependsOn": [
+        "ships-and-power.html"
+      ],
+      "readerQuestion": "当后世主要通过基督教作者、符文、考古遗物与数百年后成书的萨迦认识这段历史时，哪些故事可以当证据，哪些只能作为记忆与文学来读？",
+      "readerStateBefore": "读者能够用船舶分工、家庭生产、首领动员、暴力与市场的相互转换解释扩张，也能看到奴役、征税和殖民给他人造成的代价。",
+      "readerStateAfter": "读者能够按材料形成时间、写作目的和可互证程度给北欧传奇分层，不把神话当纪实，也不因成书较晚而抹去其文学与记忆价值。",
+      "priorConclusion": "船只扩大了行动半径，却只有在农庄供给、专业工艺、首领分配、市场交换和强制暴力共同作用时，海上机动才会变成持续的财富与政治权力。",
+      "coreExample": "把《文兰萨迦》关于跨大西洋航行的叙述，同兰塞奥兹牧草地遗址、1021 年木材年代、原住民在地历史和萨迦成书时间逐层对照。",
+      "conclusion": "北欧传奇既不是可以逐句还原维京时代的录像，也不是毫无史料价值的虚构；把同时代记录、物质证据和后世叙事分层互证，才能同时看见历史行动、社会记忆与现代想象。",
+      "nextQuestion": "当新的遗址、年代测定或手稿研究出现时，我们能否先问证据属于哪一层，再决定它改变的是事实判断、故事解释还是现代身份记忆？",
+      "nextPage": null,
+      "newTerms": [
+        {
+          "term": "萨迦",
+          "definition": "中世纪冰岛以古诺斯语写成的一类散文叙事，题材包括家族、国王、远航、圣徒和远古英雄。"
+        },
+        {
+          "term": "埃达",
+          "definition": "后世用来称呼《诗体埃达》与斯诺里《散文埃达》的名称，两者是理解北欧神话与诗歌传统的重要材料。"
+        },
+        {
+          "term": "斯卡尔德诗",
+          "definition": "服务于首领和宫廷的古诺斯语诗歌传统，形式严密，部分诗句可能比现存手稿记录更早。"
+        },
+        {
+          "term": "互证",
+          "definition": "把来源、年代和目的不同的材料相互比较，只在它们独立支持的范围内提高判断可靠性。"
+        }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "证据、来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

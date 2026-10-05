@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-05T11:17:58+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "“维京人”究竟指一个民族、一种职业，还是八至十一世纪北欧社会的一组海上行动？",
+      "readerStateChange": "读者从把维京人视为单一战士民族，转向理解诺斯人可在不同情境中成为农民、商人、袭击者、移民与统治者，并能用五艘用途不同的 Skuldelev 船说明海上社会的分工。",
+      "twoSentenceSummary": "本页先拆解角盔战士的流行印象，再用身份、行动与时期三个层次说明“维京”概念。继而以 Skuldelev 船组串起造船、贸易、劫掠、家庭劳动与季节性活动，并解释维京时代起止只是便于分析的区域性坐标。",
+      "continuityEvidence": "结尾明确提出海上能力如何转化为持续权力，并指向下一章对船舶、动员、市场和暴力机制的分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "ships-and-power.html",
+      "centralQuestion": "既然同一社会能造出用途不同的船，又是什么机制把航海能力转化为劫掠、贸易、迁徙与统治？",
+      "readerStateChange": "读者能够从船体、船员、维修、农庄剩余、首领馈赠和港市规则共同解释扩张，并意识到奴役、贡金和殖民不是英雄故事之外的附注，而是权力形成机制的一部分。",
+      "twoSentenceSummary": "本页从船板搭接、浅吃水和船型分工出发，追踪大型战船背后的材料与劳动力。随后说明首领如何借战利品维持扈从，港市与暴力如何相互强化，以及英格兰的大军、丹麦法区和北海王权怎样把临时远征转成制度。",
+      "continuityEvidence": "开头承接总览页对多重身份的结论，结尾把机制解释的边界交给下一章，要求用分层证据检验萨迦人物与神话叙事。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "saga-and-evidence.html",
+      "centralQuestion": "当后世主要通过基督教作者、符文、考古遗物与数百年后成书的萨迦认识这段历史时，哪些故事可以当证据，哪些只能作为记忆与文学来读？",
+      "readerStateChange": "读者能够按形成时间、作者目的、材料直接记录的对象和独立互证程度评价萨迦、埃达、符文、考古与同期文字，不再把传奇逐句当史实，也不会把晚成书材料一概丢弃。",
+      "twoSentenceSummary": "本页先区分萨迦、埃达、斯卡尔德诗、同期编年史与物质遗存。再以文兰故事、兰塞奥兹牧草地遗址和 1021 年木材年代为完整案例，建立四步互证方法，并用耶灵石、长船实验和现代角盔形象检验其适用边界。",
+      "continuityEvidence": "开头接续机制章对权力的分析，结尾不另起散题，而把读者带回本库总判断，并给出面对新发现时继续使用的证据分层问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者可以从正文脚注返回十二项权威来源，区分博物馆解释、遗产地管理材料、手稿研究与自然科学年代测定，并据此继续核查具体判断。",
+      "twoSentenceSummary": "本页按时代与身份、船舶与权力、文兰与手稿三个主题整理来源，并说明各来源能够支持的有限结论。它同时提醒读者，碑文、遗址、实验复原和后世手稿各有证据边界。",
+      "continuityEvidence": "来源编号与三篇叙事页中的方括号标注对应，并提供返回总览与章节导航，形成完整阅读闭环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ],
+  "result": "pass"
+}

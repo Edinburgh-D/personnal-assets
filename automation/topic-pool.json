@@ -3816,6 +3816,13 @@
       "generatedAt": "2026-10-05",
       "slug": "intelligence-espionage-history",
       "entry": "knowledge-bases/intelligence-espionage-history/main.html"
+    },
+    {
+      "name": "维京人与北欧传奇",
+      "domain": "历史/军事",
+      "generatedAt": "2026-10-05",
+      "slug": "vikings-and-norse-legend",
+      "entry": "knowledge-bases/vikings-and-norse-legend/main.html"
     }
   ],
   "skipped": []

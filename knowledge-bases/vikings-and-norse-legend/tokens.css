@@ -1,0 +1,92 @@
+/* Hallmark · token set: Atelier chart-room · anchor hue: fjord blue */
+:root {
+  --color-paper: oklch(96.5% 0.013 88);
+  --color-paper-raised: oklch(98.2% 0.009 88);
+  --color-paper-deep: oklch(91.5% 0.022 86);
+  --color-ink: oklch(21% 0.025 245);
+  --color-ink-soft: oklch(35% 0.025 242);
+  --color-muted: oklch(45% 0.022 240);
+  --color-rule: oklch(76% 0.025 82);
+  --color-rule-strong: oklch(58% 0.035 82);
+  --color-accent: oklch(43% 0.105 235);
+  --color-accent-hover: oklch(36% 0.095 235);
+  --color-accent-ink: oklch(97% 0.012 88);
+  --color-warm: oklch(49% 0.145 38);
+  --color-warm-soft: oklch(91% 0.035 48);
+  --color-focus: oklch(53% 0.16 235);
+  --color-shadow: oklch(21% 0.025 245 / 0.12);
+  --color-backdrop: oklch(17% 0.02 245 / 0.62);
+  --color-transparent: oklch(96.5% 0.013 88 / 0);
+  --color-svg-water: oklch(87% 0.04 225);
+  --color-svg-land: oklch(92% 0.025 88);
+
+  --font-display: "Source Serif 4", "Noto Serif SC", "Songti SC", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans Mono CJK SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.75rem, 6vw + 0.6rem, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-strong: 2px;
+  --radius-small: 0.25rem;
+  --radius-medium: 0.75rem;
+  --shadow-dialog: 0 1.5rem 4rem var(--color-shadow);
+  --measure: 68ch;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --page-max: 82rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 245);
+  --color-paper-raised: oklch(19% 0.021 245);
+  --color-paper-deep: oklch(23% 0.023 242);
+  --color-ink: oklch(94% 0.012 88);
+  --color-ink-soft: oklch(82% 0.017 88);
+  --color-muted: oklch(72% 0.018 88);
+  --color-rule: oklch(36% 0.025 240);
+  --color-rule-strong: oklch(53% 0.035 230);
+  --color-accent: oklch(70% 0.105 230);
+  --color-accent-hover: oklch(79% 0.085 225);
+  --color-accent-ink: oklch(16% 0.018 245);
+  --color-warm: oklch(72% 0.12 42);
+  --color-warm-soft: oklch(25% 0.055 38);
+  --color-focus: oklch(79% 0.13 225);
+  --color-shadow: oklch(7% 0.012 245 / 0.45);
+  --color-backdrop: oklch(6% 0.012 245 / 0.76);
+  --color-transparent: oklch(15% 0.018 245 / 0);
+  --color-svg-water: oklch(25% 0.04 230);
+  --color-svg-land: oklch(20% 0.025 86);
+}
