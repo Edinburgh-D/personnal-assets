@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "农业合作社模式",
+  "type": "single-subject",
+  "audience": "general",
+  "entry": "main.html",
+  "createdAt": "2026-10-05",
+  "depthLevel": "L2",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "只把农业合作社理解为农户抱团卖货或领取扶持项目的组织，不清楚它与普通公司、协会和临时团购有什么根本差别。",
+      "readerStateAfter": "能用成员共同拥有、共同控制并按使用受益的直觉模型识别合作社，也能说明小农户为什么会需要这种组织。",
+      "readerQuestion": "农业合作社究竟改变了小农户独自面对市场时的什么处境，又为什么不能把它简单理解成一家替农民卖货的公司？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "以青禾村二十户蔬菜种植户共同采购种苗、租用冷库并统一分级销售为贯穿案例，对照他们各自买卖时的成本、风险和决定权。",
+      "newTerms": [
+        {
+          "term": "合作社",
+          "definition": "由有共同需要的人自愿联合、共同拥有并民主管理，用来为成员提供服务的企业组织。"
+        },
+        {
+          "term": "交易成本",
+          "definition": "在价格之外，为寻找对象、谈判、核验质量、签约和监督履约付出的时间、信息与组织成本。"
+        },
+        {
+          "term": "规模经济",
+          "definition": "把分散需求或产量集中后，单位采购、加工、运输或销售成本可能下降的现象。"
+        },
+        {
+          "term": "成员惠顾",
+          "definition": "成员使用合作社服务、向合作社交售产品或通过合作社采购所形成的业务往来。"
+        }
+      ],
+      "conclusion": "农业合作社的核心不是把农户变成雇员，而是把一部分原本分散完成且成本较高的交易交给成员共同拥有的企业来办；它的价值来自服务成员，权力与收益也应回到实际使用者。",
+      "nextQuestion": "如果合作社的价值来自把分散交易组织起来，那么共同采购、共同服务、共同销售和盈余返还究竟怎样把组织优势变成成员能够感受到的收益？",
+      "nextPage": "how-it-works.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "how-it-works.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能用成员共同拥有、共同控制并按使用受益的直觉模型识别合作社，也能说明小农户为什么会需要这种组织。",
+      "readerStateAfter": "能沿着采购、生产服务、销售、资金回流四个环节解释合作社如何创造收益，也能分清降成本、提价格和分摊风险不是同一件事。",
+      "readerQuestion": "如果合作社的价值来自把分散交易组织起来，那么共同采购、共同服务、共同销售和盈余返还究竟怎样把组织优势变成成员能够感受到的收益？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "农业合作社的核心不是把农户变成雇员，而是把一部分原本分散完成且成本较高的交易交给成员共同拥有的企业来办；它的价值来自服务成员，权力与收益也应回到实际使用者。",
+      "coreExample": "继续追踪青禾村合作社的一季蔬菜：从二十户汇总种苗需求，到统一技术记录、分级入库、分批交货，再到扣除成本后按成员交易量返还盈余。",
+      "newTerms": [
+        {
+          "term": "联合采购",
+          "definition": "成员汇总需求，由合作社集中询价、验货和采购生产资料或服务。"
+        },
+        {
+          "term": "集货",
+          "definition": "把多个成员的小批量产品集中、记录并组成可运输或可销售批次。"
+        },
+        {
+          "term": "质量标准",
+          "definition": "成员共同遵守并能够检查的生产、分级、包装或安全要求。"
+        },
+        {
+          "term": "增值",
+          "definition": "通过分级、储藏、加工、品牌或稳定交付，让产品获得超过原始状态的市场价值。"
+        },
+        {
+          "term": "可分配盈余",
+          "definition": "合作社年度收入在弥补亏损、扣除经营成本并按规则提取公积金后，可依章程向成员返还或分配的剩余。"
+        }
+      ],
+      "conclusion": "合作社不会凭名称自动提高收入；只有当它在真实业务中减少重复成本、形成稳定批量、守住质量并把剩余按成员使用关系公平返还时，组织优势才会转化为成员收益。",
+      "nextQuestion": "既然共同经营既能创造价值也会集中权力，那么怎样判断一个合作社是在为成员服务，还是逐渐变成少数人控制的公司、项目外壳或高成本中间层？",
+      "nextPage": "governance-and-choice.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "governance-and-choice.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能沿着采购、生产服务、销售、资金回流四个环节解释合作社如何创造收益，也能分清降成本、提价格和分摊风险不是同一件事。",
+      "readerStateAfter": "能从真实需求、成员参与、交易记录、权责公开和退出安排判断合作社质量，并知道何时不应把合作社当成万能答案。",
+      "readerQuestion": "既然共同经营既能创造价值也会集中权力，那么怎样判断一个合作社是在为成员服务，还是逐渐变成少数人控制的公司、项目外壳或高成本中间层？",
+      "dependsOn": [
+        "how-it-works.html"
+      ],
+      "priorConclusion": "合作社不会凭名称自动提高收入；只有当它在真实业务中减少重复成本、形成稳定批量、守住质量并把剩余按成员使用关系公平返还时，组织优势才会转化为成员收益。",
+      "coreExample": "把青禾村合作社放进三个压力测试：大户要求更多表决权、市场价格突然下跌、普通成员想退出并查阅自己的交易与公积金记录。",
+      "newTerms": [
+        {
+          "term": "成员控制",
+          "definition": "合作社的重要规则、负责人和重大经营事项由成员按章程参与决定，并能获得必要信息。"
+        },
+        {
+          "term": "委托代理问题",
+          "definition": "成员把日常经营交给理事或经理后，经营者可能利用信息优势追求与成员不同利益的风险。"
+        },
+        {
+          "term": "搭便车",
+          "definition": "个别成员不承担共同标准和成本，却希望分享集体品牌、渠道或收益的行为。"
+        },
+        {
+          "term": "成员账户",
+          "definition": "分别记录成员出资、公积金份额以及与合作社交易量等权益信息的内部账目。"
+        },
+        {
+          "term": "退出权",
+          "definition": "成员依法律与章程终止成员资格，并按约定处理既有合同、出资和应得权益的权利。"
+        }
+      ],
+      "conclusion": "好的农业合作社不是规模最大或牌子最多的组织，而是能持续解决成员共同问题、让使用者掌握关键权力、让账目和分配可核验，并在市场变化与成员退出时仍按规则行事的企业。",
+      "nextQuestion": "当平台农业、订单农业和多主体联合越来越常见时，合作社怎样在引入资本、技术与职业经理人的同时继续守住成员控制和成员受益？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

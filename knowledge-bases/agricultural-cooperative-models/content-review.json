@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-05T22:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "农业合作社究竟改变了小农户独自面对市场时的什么处境，又为什么不能把它简单理解成一家替农民卖货的公司？",
+      "readerStateChange": "读前容易把合作社等同于代销公司或扶持项目；读后能从共同需要、真实使用、成员控制和按使用受益四层识别共同企业。",
+      "twoSentenceSummary": "页面从青禾村一户菜农的采购、服务、储运和销售成本切入，说明分散经营为何会产生重复的交易负担。随后以使用者所有、使用者控制和使用者受益为主线，区分合作社与公司、协会和临时团购。",
+      "continuityEvidence": "结尾把共同企业概括为需要、使用、控制、受益的连续链条，并明确转向采购、服务、集货、销售和分配的业务账本。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-it-works.html",
+      "centralQuestion": "如果合作社的价值来自把分散交易组织起来，那么共同采购、共同服务、共同销售和盈余返还究竟怎样把组织优势变成成员能够感受到的收益？",
+      "readerStateChange": "读前只知道联合可能降低成本；读后能逐环解释采购、服务、集货、销售、核算和盈余返还怎样创造或消耗成员价值。",
+      "twoSentenceSummary": "页面追踪青禾村一季蔬菜，把组织优势拆成集中询价、共享服务、分级交付、多渠道销售和按交易返还。它同时指出库存、质量、履约、账期和设备利用率会产生新成本，合作并不自动等于增收。",
+      "continuityEvidence": "本页从首页的共同企业模型进入真实业务，又在结尾指出业务集中会让管理者掌握合同、资金和信息，从而自然引出治理问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "governance-and-choice.html",
+      "centralQuestion": "既然共同经营既能创造价值也会集中权力，那么怎样判断一个合作社是在为成员服务，还是逐渐变成少数人控制的公司、项目外壳或高成本中间层？",
+      "readerStateChange": "读前能看经营环节却难以评价组织质量；读后能用成员授权、经理监督、业务记录、分配依据和退出程序进行压力测试。",
+      "twoSentenceSummary": "页面把青禾村置于大户争取表决权、市场下跌和普通成员退出三种压力下，解释授权、代理、投机和信息公开的难点。最后给出从共同问题到争议程序的五项现场判断，并说明合作社不是规模或称号竞赛。",
+      "continuityEvidence": "它直接承接上一页提出的权力集中风险，并在末尾留下资本、平台、技术和职业经理人进入后怎样维持成员主导的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能从正文接受结论；读后能区分合作原则、现行中国法律、一般经济解释和合成案例，并知道如何复核。",
+      "twoSentenceSummary": "页面逐项说明国际合作社联盟、中国法律、国际劳工组织、美国农业部和粮农组织资料分别支撑哪些内容。它也标明青禾村是合成案例，并给出法律、章程、合同和个案咨询的适用边界。",
+      "continuityEvidence": "来源页从治理判断页进入证据核对，同时提供返回治理篇与知识库开篇的双向导航，完整收束学习路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
