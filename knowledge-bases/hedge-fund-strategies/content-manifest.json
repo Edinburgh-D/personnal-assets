@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "对冲基金策略",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-06",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "不是一种神秘资产",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.56,
+      "dependsOn": [],
+      "readerQuestion": "对冲基金究竟是一类资产、一种法律外壳，还是一组组织和实施投资策略的方法？",
+      "readerStateBefore": "读者容易把对冲基金理解成专门做空、永远对冲风险或只供富人使用的一种神秘投资品。",
+      "readerStateAfter": "读者能够把基金外壳、策略选择与实施条件分开，并用收益来源、市场暴露和融资约束描述一项策略。",
+      "priorConclusion": "",
+      "coreExample": "虚构的北辰基金面对同一家航空公司的股票、债券与并购传闻，分别可以构造方向性、相对价值和事件驱动头寸，但每种头寸依赖的收益来源与失败方式不同。",
+      "conclusion": "对冲基金不是单一资产类别，也不保证把风险消除；它是一种较灵活的私募基金安排，真正需要理解的是策略靠什么赚钱、保留什么暴露以及用什么融资和流动性条件把判断变成头寸。",
+      "nextQuestion": "既然名称不能说明收益来源，常见对冲基金策略应怎样按赚钱机制而不是营销标签放进同一张地图？",
+      "nextPage": "strategy-map.html",
+      "newTerms": [
+        { "term": "对冲基金", "definition": "面向符合条件投资者募集、通常采用较灵活交易与融资安排的私募投资基金统称，而不是一种单一资产。" },
+        { "term": "多头", "definition": "持有会在价格上涨时受益、价格下跌时受损的头寸。" },
+        { "term": "空头", "definition": "通过借入卖出或衍生品等方式建立会在价格下跌时受益的头寸。" },
+        { "term": "市场暴露", "definition": "组合对股票、利率、汇率、信用等共同市场变化的敏感程度。" },
+        { "term": "绝对收益", "definition": "以获得正回报为目标的表述，不代表每个时期都能盈利或本金受到保护。" }
+      ]
+    },
+    {
+      "file": "strategy-map.html",
+      "title": "四条收益路径",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.52,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然名称不能说明收益来源，常见对冲基金策略应怎样按赚钱机制而不是营销标签放进同一张地图？",
+      "readerStateBefore": "读者能够把基金外壳、策略选择与实施条件分开，并用收益来源、市场暴露和融资约束描述一项策略。",
+      "readerStateAfter": "读者能够区分股票多空、宏观、相对价值与事件驱动四类收益引擎，并指出同一工具在不同策略中承担的角色。",
+      "priorConclusion": "对冲基金不是单一资产类别，也不保证把风险消除；它是一种较灵活的私募基金安排，真正需要理解的是策略靠什么赚钱、保留什么暴露以及用什么融资和流动性条件把判断变成头寸。",
+      "coreExample": "继续观察北辰基金：研究团队对航空公司的经营判断形成股票多空头寸，对油价与利率的看法形成宏观头寸，对股票与可转债价差形成相对价值头寸，对并购完成概率形成事件驱动头寸。",
+      "conclusion": "四类策略的差别不在用了股票、债券还是衍生品，而在主要利润来自方向判断、价格收敛、事件落地还是系统化趋势；同一策略名称下仍可能藏着截然不同的净暴露、杠杆和流动性风险。",
+      "nextQuestion": "当策略地图已经画清，怎样判断一个看似分散或对冲充分的组合会不会在压力中同时失灵？",
+      "nextPage": "risk-and-judgment.html",
+      "newTerms": [
+        { "term": "股票多空", "definition": "同时持有看好的股票多头与不看好股票的空头，并按需要保留或降低整体市场方向暴露。" },
+        { "term": "全球宏观", "definition": "围绕经济增长、通胀、政策与资金流动等判断，在利率、汇率、股票和商品市场建立头寸。" },
+        { "term": "相对价值", "definition": "利用相关资产之间价格关系偏离预期区间的机会，并期待这种差异收敛。" },
+        { "term": "事件驱动", "definition": "围绕并购、重组、破产或资本结构变化等可识别事件评估概率、时间与回收价值。" },
+        { "term": "管理期货", "definition": "主要通过期货和远期等工具，按系统化或基本面规则在多个市场建立多空头寸的策略。" }
+      ]
+    },
+    {
+      "file": "risk-and-judgment.html",
+      "title": "策略没有离开资产负债表",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.56,
+      "dependsOn": ["strategy-map.html"],
+      "readerQuestion": "当策略地图已经画清，怎样判断一个看似分散或对冲充分的组合会不会在压力中同时失灵？",
+      "readerStateBefore": "读者能够区分股票多空、宏观、相对价值与事件驱动四类收益引擎，并指出同一工具在不同策略中承担的角色。",
+      "readerStateAfter": "读者能够沿着头寸、融资、保证金、流动性和投资者赎回重建风险链，并用一致的问题审查策略而不被低波动或复杂名称迷惑。",
+      "priorConclusion": "四类策略的差别不在用了股票、债券还是衍生品，而在主要利润来自方向判断、价格收敛、事件落地还是系统化趋势；同一策略名称下仍可能藏着截然不同的净暴露、杠杆和流动性风险。",
+      "coreExample": "把北辰基金的国债现金—期货基差交易放进压力情景：价差尚未收敛时回购成本上升、期货保证金增加、交易对手降低融资额度，迫使基金先卖出本想持有到收敛的头寸。",
+      "conclusion": "审查对冲基金策略不能只看收益曲线或策略标签，而要同时追问暴露是否真的被抵消、融资能否续接、抵押品能否补足、资产能否在需要时卖出，以及费用和赎回条款把哪些风险留给投资者。",
+      "nextQuestion": "面对一只具体基金或一段亮眼业绩，哪些文件、持仓口径和压力情景足以支持判断，哪些信息缺口意味着应该停下来？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "杠杆", "definition": "通过借款、回购或衍生品让风险敞口大于投资者净资本的安排。" },
+        { "term": "保证金", "definition": "为覆盖融资或衍生品潜在损失而缴存、并可能随市场变化追加的资产。" },
+        { "term": "基差交易", "definition": "同时持有现金债券与相反方向期货，试图赚取两者价格差异收敛的相对价值交易。" },
+        { "term": "流动性错配", "definition": "资产变现所需时间长于融资、保证金或投资者赎回所允许时间的情形。" },
+        { "term": "高水位线", "definition": "只有基金净值超过此前计提业绩报酬后的最高水平，管理人通常才再次收取业绩报酬的门槛。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与口径",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

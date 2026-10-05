@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-06",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3830,6 +3830,13 @@
       "generatedAt": "2026-10-05",
       "slug": "agricultural-cooperative-models",
       "entry": "knowledge-bases/agricultural-cooperative-models/main.html"
+    },
+    {
+      "name": "对冲基金策略",
+      "domain": "金融/量化",
+      "generatedAt": "2026-10-06",
+      "slug": "hedge-fund-strategies",
+      "entry": "knowledge-bases/hedge-fund-strategies/main.html"
     }
   ],
   "skipped": []

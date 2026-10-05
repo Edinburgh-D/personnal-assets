@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-06T02:00:00+08:00",
+  "framework": "vanilla-html",
+  "fontSignals": ["Google Fonts", "Newsreader", "IBM Plex Sans"],
+  "paletteSignals": ["OKLCH custom properties", "light and dark color schemes"],
+  "motionStance": "motion-cut",
+  "spacing": "4-point semantic scale",
+  "preserved": ["repository overview conventions", "data-site-home return link", "shared CSS and JS per knowledge base"]
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="按收益机制理解股票多空、全球宏观、相对价值、事件驱动与管理期货策略。">
+  <meta id="kb_darkMode" name="color-scheme" content="light dark">
+  <title>四条收益路径｜对冲基金策略</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@400;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-edge">
+    <a class="wordmark" href="main.html"><span class="wordmark-prefix">Hedge Fund Atlas / </span>策略图谱</a>
+    <div class="nav-actions">
+      <a class="overview-link" href="../../index.html" data-site-home>知识库总览</a>
+      <button class="menu-button nav-menu-btn" type="button" data-menu-button aria-expanded="false" aria-controls="chapter-menu">章节</button>
+    </div>
+  </header>
+  <nav class="chapter-strip" id="chapter-menu" data-chapter-strip data-open="false" aria-label="知识库章节">
+    <ul>
+      <li><a href="main.html">起点</a></li>
+      <li><a href="strategy-map.html" aria-current="page">策略地图</a></li>
+      <li><a href="risk-and-judgment.html">风险判断</a></li>
+      <li><a href="sources.html">来源与口径</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">对冲基金不是单一资产类别，也不保证把风险消除；它是一种较灵活的私募基金安排，真正需要理解的是策略靠什么赚钱、保留什么暴露以及用什么融资和流动性条件把判断变成头寸。</template>
+    <template data-narrative="question">既然名称不能说明收益来源，常见对冲基金策略应怎样按赚钱机制而不是营销标签放进同一张地图？</template>
+    <template data-narrative="example">继续观察北辰基金：研究团队对航空公司的经营判断形成股票多空头寸，对油价与利率的看法形成宏观头寸，对股票与可转债价差形成相对价值头寸，对并购完成概率形成事件驱动头寸。</template>
+    <template data-narrative="conclusion">四类策略的差别不在用了股票、债券还是衍生品，而在主要利润来自方向判断、价格收敛、事件落地还是系统化趋势；同一策略名称下仍可能藏着截然不同的净暴露、杠杆和流动性风险。</template>
+    <template data-narrative="next-question">当策略地图已经画清，怎样判断一个看似分散或对冲充分的组合会不会在压力中同时失灵？</template>
+
+    <nav class="breadcrumb" aria-label="面包屑"><a href="../index.html">知识库</a><span aria-hidden="true">/</span><a href="main.html">对冲基金策略</a><span aria-hidden="true">/</span><span>策略地图</span></nav>
+    <header class="chapter-heading">
+      <h1>四条收益路径</h1>
+      <p class="lede">工具会重复，赚钱机制不会。把策略放到“方向判断、价格收敛、事件落地、趋势规则”四条路径上，复杂名称便开始变得可比较。</p>
+    </header>
+
+    <div class="prose-layout">
+      <aside class="toc" aria-label="本章目录">
+        <strong>策略地图</strong>
+        <ul>
+          <li><a href="#map">地图怎么读</a></li>
+          <li><a href="#equity">公司选择</a></li>
+          <li><a href="#macro">经济路径与规则</a></li>
+          <li><a href="#relative">价格收敛</a></li>
+          <li><a href="#event">公司事件</a></li>
+          <li><a href="#overlap">交叉地带</a></li>
+        </ul>
+      </aside>
+
+      <article class="prose">
+        <section id="map">
+          <h2>地图先问利润从哪里来</h2>
+          <p>上一章把对冲基金拆成外壳、策略和实施条件。现在可以进一步把策略按主要收益引擎排列，而不是按“高级”“量化”或“绝对收益”等宽泛称呼排列。SEC 的 Form PF 统计使用若干主要策略类别。监管统计需要把基金放进可汇总的格子，但真实基金可能同时使用几套方法，因此这张地图是分析工具，不是自然界的物种表。</p>
+          <p>横向可以想成从“保留较多市场方向”走向“尽量用成对头寸隔离价差”。纵向则从“依靠研究者对具体情境的判断”走向“依靠预先写定的规则在许多市场重复执行”。一只基金在地图上的位置不是荣誉等级。方向性策略可能用较少杠杆，价差策略也可能因预期利润很小而大量融资；系统化规则可以纪律严明，也可能在市场结构变化时集体失效。</p>
+          <p>地图把主要收益引擎分成几种工作语言：<dfn data-term="股票多空">股票多空</dfn>同时持有股票多头与空头；<dfn data-term="全球宏观">全球宏观</dfn>围绕经济与政策路径跨市场交易；<dfn data-term="相对价值">相对价值</dfn>等待相关价格收敛；<dfn data-term="事件驱动">事件驱动</dfn>评估并购或重组等结果；<dfn data-term="管理期货">管理期货</dfn>则主要通过期货和远期，按系统化或基本面规则建立多空头寸。下面逐条展开它们的机制与边界。</p>
+          <div class="risk-map" role="img" aria-label="四类策略地图：公司选择和经济路径较依赖方向判断，价格收敛路径依赖相对定价，公司事件路径依赖结果概率；规则策略可跨市场执行。">
+            <div class="risk-map__axis"><span>方向判断较多</span><span>相对价格较多</span></div>
+            <div class="risk-map__grid">
+              <div class="risk-node"><h3>股票多空</h3><p>公司差异＋可调净暴露；断点常在选股、风格与挤空。</p></div>
+              <div class="risk-node"><h3>全球宏观</h3><p>政策与经济路径；断点常在时点、相关性与政策反应。</p></div>
+              <div class="risk-node"><h3>相对价值</h3><p>价差收敛＋对冲；断点常在融资、模型和流动性。</p></div>
+              <div class="risk-node"><h3>事件驱动</h3><p>概率、时间与回收价值；断点常在事件失败与法律程序。</p></div>
+            </div>
+          </div>
+          <p>阅读地图时还要加一句限定：策略名称描述的是主要方法，不是完整风险清单。一个股票基金可以用指数期货和期权，一个宏观基金可以做相对价值曲线交易，一个事件驱动基金也会对冲大盘。分类真正提供的是追问方向：利润主要由什么变化创造，哪些头寸是核心，哪些只是对冲，失败时损失是否对称。</p>
+        </section>
+
+        <section id="equity">
+          <h2>股票多空：把公司判断和大盘方向拆开</h2>
+          <p>股票多空同时持有看好的股票多头与不看好股票的空头，并按需要保留或降低整体市场方向暴露。北辰基金买入甲航空、卖空乙航空，是最直观的一对。若甲涨 8%、乙涨 3%，多头赚钱、空头亏钱，但相对差异仍可能带来正贡献；若整个行业下跌，结果取决于两边跌幅、头寸大小和借券成本。</p>
+          <p>“多空”不等于“市场中性”。基金可以有较高净多头，让选股收益与大盘上涨共同贡献；也可以接近零净敞口，尽量突出个股差异。净敞口只是多头市值减去空头市值，总敞口则把两边绝对值相加。一亿元多头配九千万元空头，净敞口只有一千万元，总敞口却是一亿九千万元。前者描述大致方向，后者更接近交易量、融资和错配可能带来的压力。</p>
+          <p>股票多空的关键不是找到一只会涨的股票，而是理解多空两边为何应出现差异。甲航空可能拥有更好的航线与成本结构，但若市场突然偏好小盘、低质量或高杠杆公司，乙的股价可能涨得更快。空头还会面临借券费、股息补偿、被召回和挤空。损失路径因此可能不对称：多头最坏跌到接近零，空头价格却可能上涨数倍。</p>
+          <p>研究驱动的股票多空常把公司基本面、估值与催化剂结合；量化股票策略可能依据价值、质量、动量或其他特征同时持有许多头寸。两者在研究方法上不同，却都必须回答暴露问题。一个看似拥有上百只股票的组合，可能仍然高度依赖单一行业、单一风格或流动性较差的小盘股。</p>
+        </section>
+
+        <section id="macro">
+          <h2>宏观与管理期货：交易的是经济路径</h2>
+          <p>全球宏观围绕增长、通胀、央行政策、财政与跨境资金流动等判断，在利率、汇率、股票和商品市场建立头寸。北辰基金认为油价会因需求放缓而下跌，可以卖出原油期货；若同时认为经济放缓将推动利率下降，还可能持有国债。两个头寸表面分散在商品和债券，实际上都依赖同一个增长判断。</p>
+          <p>宏观策略的难点常常不是方向，而是路径和时点。通胀最终下降，不代表债券会立刻上涨；央行可能担忧汇率，财政扩张也可能改变利率反应。市场价格包含其他参与者的预期，因此“经济会怎样”与“市场已经定价了什么”是两个问题。一个宏观判断只有在幅度、时点和已有定价共同有利时，才会转化为收益。</p>
+          <p>管理期货主要通过期货和远期等工具，按系统化或基本面规则在多个市场建立多空头寸。常见的趋势跟随规则并不预测某个经济故事，而是当价格持续向某方向移动时跟随，在趋势反转时减仓或反向。它可能同时交易股指、债券、外汇与商品，并用波动率调整各市场风险。</p>
+          <p>趋势策略在持续行情中可能受益，在价格频繁反转、缺少明确方向时则可能连续小亏。它与主观宏观的共同点是跨市场，差别在于信号和执行。把两者都叫“宏观”会掩盖一个重要事实：同样的期货头寸，可能来自对政策的主观判断，也可能只是规则对价格趋势的反应。要判断风险，必须知道信号如何形成、多久更新，以及多个市场是否在表达同一隐含押注。</p>
+        </section>
+
+        <section id="relative">
+          <h2>相对价值：小价差背后常有大资产负债表</h2>
+          <p>相对价值利用相关资产之间价格关系偏离预期区间的机会，并期待这种差异收敛。北辰基金若认为甲航空的可转债相对其股票价格偏低，可以买入可转债，同时卖空一定数量股票，试图隔离债券便宜这一判断。国债现金—期货基差交易则买入现金国债、卖出相应期货，等待交割机制推动两者价格靠近。</p>
+          <p>相对价值听起来比方向交易稳健，因为一边亏损可能被另一边抵消。然而预期价差通常很小，为了让收益对资本有意义，基金可能借入大量资金或使用衍生品。此时“价格最终会收敛”并不足够。只要回购利率上升、抵押品折扣扩大、期货保证金增加，基金就可能在收敛前被迫缩减头寸。</p>
+          <p>所谓“相似资产”也只是模型判断。两只债券可能发行人相同，却有不同到期日、流动性和交割资格；可转债同时包含信用、利率和股票期权特征；波动率套利对期权定价模型与动态对冲质量敏感。价差扩大既可能是短暂错价，也可能是在告诉基金原先假设的关系已经改变。</p>
+          <p>SEC 2025 年第四季度 Form PF 汇总数据显示，按净资产加权的总资产与净资产之比，在相对价值类别中高于股票和事件驱动类别。这个统计不能代表每只基金，也不能直接等同于实际损失倍数，但它提醒我们：低方向暴露与低杠杆不是一回事。判断相对价值策略时，总头寸、融资期限和追加保证金能力往往比净方向更重要。</p>
+        </section>
+
+        <section id="event">
+          <h2>事件驱动：赚的是概率差，不是新闻标题</h2>
+          <p>事件驱动围绕并购、重组、破产或资本结构变化等可识别事件评估概率、时间与回收价值。假设甲航空宣布将以每股 20 元被收购，而股价只升到 18 元。两元差价不是免费午餐，它补偿审批失败、融资变化、时间拖延和交易取消的风险。基金必须估计成交概率、等待时间、失败后价格以及资金占用成本。</p>
+          <p>并购套利可以是买入目标公司，也可以同时卖空收购方，以减少换股比例和市场方向影响。困境债务策略则需要分析不同债权的优先顺序、抵押物、现金流和重组谈判。事件越接近法律与合同，越不能只看行情图。条款中的重大不利变化、监管先决条件、债权人顺位与投票门槛，都可能改变结果分布。</p>
+          <p>事件驱动收益常呈现“平时积累小收益、失败时突然回撤”的形态。稳定曲线容易让人低估尾部风险，因为尚未发生的失败并不会进入历史波动。若多笔交易都依赖宽松融资或相同监管环境，它们也并非真正分散。北辰基金持有五个并购标的，看似分布在五家公司，却可能同时受反垄断政策收紧影响。</p>
+          <p>因此，事件驱动不是押新闻会发生，而是给一组离散结果定价。投资者应看到的不只是预期收益，还包括失败损失、时间延长、资本占用和结果之间的关联。即使基金对最终结果判断正确，若交易延期一年，年化回报也会显著改变。</p>
+        </section>
+
+        <section id="overlap">
+          <h2>交叉地带比分类边界更重要</h2>
+          <p>真实组合不会停在四个格子里。北辰基金可以用股票多空表达公司观点，用油价期货降低成本风险，用可转债交易捕捉相对定价，再在并购公告后转成事件驱动。多策略基金还会把资本分配给不同团队，并根据波动、相关性与风险预算调整额度。分类因此是进入组合的入口，不是对组合的完整描述。</p>
+          <table class="comparison">
+            <caption>把策略标签改写成可检查的问题</caption>
+            <thead><tr><th>路径</th><th>主要收益来源</th><th>常见对冲</th><th>容易被忽略的断点</th></tr></thead>
+            <tbody>
+              <tr><td data-label="路径">股票多空</td><td data-label="收益来源">公司或因子表现差异</td><td data-label="常见对冲">股票、行业或指数空头</td><td data-label="断点">挤空、风格共振、借券成本</td></tr>
+              <tr><td data-label="路径">全球宏观</td><td data-label="收益来源">经济与政策路径偏离定价</td><td data-label="常见对冲">跨市场或期权头寸</td><td data-label="断点">时点错误、相关性反转</td></tr>
+              <tr><td data-label="路径">相对价值</td><td data-label="收益来源">相关价格收敛</td><td data-label="常见对冲">成对证券或衍生品</td><td data-label="断点">融资收紧、模型关系断裂</td></tr>
+              <tr><td data-label="路径">事件驱动</td><td data-label="收益来源">结果概率与市场定价之差</td><td data-label="常见对冲">收购方、行业或市场头寸</td><td data-label="断点">审批、诉讼、交易失败</td></tr>
+            </tbody>
+          </table>
+          <p>表格真正想表达的是：工具不能决定策略。卖空既可以是股票多空的收益来源，也可以只是并购套利的对冲；期货既可以表达宏观方向，也可以完成基差交易的一半；期权既能限制损失，也能制造复杂的波动率暴露。看到工具名称时，要继续追问它在组合句子中充当主语、谓语还是保护性的从句。</p>
+          <p>四条路径建立了机制地图，也暴露出共同盲点：每条策略都必须经过融资、保证金、交易对手和投资者条款才能存在。下一章将把镜头从“为什么可能赚钱”移到“为什么会被迫停止”。那时会看到，看似互不相关的策略可能因为共用同一种融资和流动性，在压力中突然一起失灵。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="main.html"><span>上一章</span>← 起点</a>
+          <a href="sources.html"><span>查证</span>来源</a>
+          <a href="risk-and-judgment.html"><span>下一章</span>风险判断 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-dense"><p>策略分类用于比较收益机制，不构成基金评级 · Form PF 分类按监管报告口径汇总，单只基金可能跨越多个类别 · <a href="sources.html">查看数据定义与一手来源</a></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

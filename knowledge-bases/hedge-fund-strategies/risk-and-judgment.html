@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="沿头寸、融资、保证金、流动性和赎回条款审查对冲基金策略风险。">
+  <meta id="kb_darkMode" name="color-scheme" content="light dark">
+  <title>策略没有离开资产负债表｜对冲基金策略</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@400;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-edge">
+    <a class="wordmark" href="main.html"><span class="wordmark-prefix">Hedge Fund Atlas / </span>策略图谱</a>
+    <div class="nav-actions">
+      <a class="overview-link" href="../../index.html" data-site-home>知识库总览</a>
+      <button class="menu-button nav-menu-btn" type="button" data-menu-button aria-expanded="false" aria-controls="chapter-menu">章节</button>
+    </div>
+  </header>
+  <nav class="chapter-strip" id="chapter-menu" data-chapter-strip data-open="false" aria-label="知识库章节">
+    <ul>
+      <li><a href="main.html">起点</a></li>
+      <li><a href="strategy-map.html">策略地图</a></li>
+      <li><a href="risk-and-judgment.html" aria-current="page">风险判断</a></li>
+      <li><a href="sources.html">来源与口径</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">四类策略的差别不在用了股票、债券还是衍生品，而在主要利润来自方向判断、价格收敛、事件落地还是系统化趋势；同一策略名称下仍可能藏着截然不同的净暴露、杠杆和流动性风险。</template>
+    <template data-narrative="question">当策略地图已经画清，怎样判断一个看似分散或对冲充分的组合会不会在压力中同时失灵？</template>
+    <template data-narrative="example">把北辰基金的国债现金—期货基差交易放进压力情景：价差尚未收敛时回购成本上升、期货保证金增加、交易对手降低融资额度，迫使基金先卖出本想持有到收敛的头寸。</template>
+    <template data-narrative="conclusion">审查对冲基金策略不能只看收益曲线或策略标签，而要同时追问暴露是否真的被抵消、融资能否续接、抵押品能否补足、资产能否在需要时卖出，以及费用和赎回条款把哪些风险留给投资者。</template>
+    <template data-narrative="next-question">面对一只具体基金或一段亮眼业绩，哪些文件、持仓口径和压力情景足以支持判断，哪些信息缺口意味着应该停下来？</template>
+
+    <nav class="breadcrumb" aria-label="面包屑"><a href="../index.html">知识库</a><span aria-hidden="true">/</span><a href="main.html">对冲基金策略</a><span aria-hidden="true">/</span><span>风险判断</span></nav>
+    <header class="chapter-heading">
+      <h1>策略没有离开资产负债表</h1>
+      <p class="lede">看似中性的组合，也要依靠借款、抵押品、保证金与可交易的市场才能活到价差收敛。风险往往不是观点突然变错，而是等待的资格先消失。</p>
+    </header>
+
+    <div class="prose-layout">
+      <aside class="toc" aria-label="本章目录">
+        <strong>压力链</strong>
+        <ul>
+          <li><a href="#leverage">两张表</a></li>
+          <li><a href="#basis">价差案例</a></li>
+          <li><a href="#liquidity">流动性与赎回</a></li>
+          <li><a href="#fees">费用与激励</a></li>
+          <li><a href="#check">一致的审查框架</a></li>
+        </ul>
+      </aside>
+
+      <article class="prose">
+        <section id="leverage">
+          <h2>风险放大至少有两张表</h2>
+          <p>策略地图告诉我们利润可能来自哪里，却不能单独说明损失会有多快。<dfn data-term="杠杆">杠杆</dfn>是通过借款、回购或衍生品让风险敞口大于投资者净资本的安排。它可以把小价差变成有意义的资本回报，也会让同样幅度的不利变化更快侵蚀资本。判断杠杆时，不能只找一个倍数，因为现金借款与衍生品名义金额回答不同问题。</p>
+          <p>第一张表是资产负债表。基金以一亿元资本借入四亿元，买入五亿元证券，资产与净资本之比约为五倍。第二张表是风险敞口表。基金可能用较少现金建立大量期货或互换头寸，名义金额很大，但不同工具的价格敏感度并不相同。把所有名义金额直接相加会夸大某些对冲组合，却完全忽视<dfn data-term="保证金">保证金</dfn>在压力中的现金需求。保证金是为覆盖融资或衍生品潜在损失而缴存、并可能随市场变化追加的资产。</p>
+          <p>SEC 的 Form PF 统计同时提供总资产、净资产、借款和衍生品等多种聚合口径，正是因为没有单一数字能完整描述杠杆。2025 年第四季度数据中，相对价值类别的净资产加权总资产与净资产之比高于股票和事件驱动类别；美联储 2026 年 5 月金融稳定报告则指出，对冲基金杠杆在可获得综合数据的时期内维持纪录高位。两项证据是总体风险信号，不应被误读为每只相对价值基金都比每只股票基金危险。</p>
+          <p>保证金把市场价格变化转换成当天的现金要求。期货每日盯市，互换和其他衍生品也可能需要追加抵押品。即使组合最终会回升，基金也必须先满足当下的现金要求。对冲可以减少最终价格损失，却未必让多空两边的现金流同步：一边先缴保证金，另一边的盈利可能尚未到账，形成时间差。</p>
+        </section>
+
+        <section id="basis">
+          <h2>价差收敛也会“最终正确，途中失败”</h2>
+          <p><dfn data-term="基差交易">基差交易</dfn>同时持有现金债券与相反方向期货，试图赚取两者价格差异收敛。北辰基金买入美国国债，并通过回购市场为债券融资；同时卖出相应国债期货。若期货相对现金债券偏贵，随着交割临近，两者理论上会靠拢。单笔价差很小，因此策略常依赖规模和杠杆。</p>
+          <ol class="mechanism-flow" aria-label="基差交易压力链">
+            <li>市场波动上升，现金债券与期货价差没有立即收敛，账面损失扩大。</li>
+            <li>期货清算要求追加保证金，现金需求在短时间内增加。</li>
+            <li>回购利率上升或抵押品折扣扩大，持有现金债券的融资成本变高。</li>
+            <li>交易对手降低额度，基金卖出债券并买回期货，平仓本身进一步影响价格。</li>
+          </ol>
+          <p>BIS 对美国国债期货的研究指出，现金—期货价差会吸引高杠杆相对价值交易，而保证金杠杆的变化可能形成不稳定的保证金螺旋。IMF 2026 年 4 月全球金融稳定报告也把回购利率上升、风险约束触发和快速平仓视为债券市场的脆弱性来源。这里的重点不是预测下一次危机日期，而是识别一条可重复的机制：小价差、短融资和动态保证金叠加后，时间成为风险。</p>
+          <p>基差交易也说明“风险中性”可能只在某个模型维度成立。现金债券多头与期货空头可以降低利率方向暴露，却留下融资利差、交割选择权、市场流动性和交易对手条件。正常时期，这些风险变化缓慢，收益曲线可能显得平稳；压力时期，它们会一起出现，历史波动便无法代表资金需求的峰值。</p>
+        </section>
+
+        <section id="liquidity">
+          <h2>流动性要同时看资产、融资和投资者</h2>
+          <p><dfn data-term="流动性错配">流动性错配</dfn>是资产变现所需时间长于融资、保证金或投资者赎回所允许时间的情形。一只基金持有每日报价的证券，不代表它能在大额卖出时不冲击价格；一项融资合同还有三个月到期，也不代表交易对手在此期间不会因抵押品价格下降要求补仓。流动性不是资产标签，而是数量、时间与市场状态的函数。</p>
+          <p>可以把基金想成有三个时钟。资产时钟记录“在不明显压价的情况下需要多久卖出”；融资时钟记录“借款多久续一次、保证金多久结算”；投资者时钟记录“投资者何时可以赎回、需提前多久通知”。稳健结构通常让融资和投资者时钟不短于资产时钟，并保留现金缓冲。若三个时钟在压力中同时加速，基金会从主动选择交易变成被动寻找现金。</p>
+          <p>对冲基金常通过锁定期、季度或更低频赎回、提前通知、暂停赎回和侧袋等安排管理投资者流动性。Investor.gov 提醒，投资者的赎回机会通常少于共同基金，基金还可能在市场压力或资产难以出售时暂停赎回。这些条款可以保护剩余组合免受火售，却把流动性风险的一部分转给投资者。投资者需要知道自己何时能拿回钱，而不是只看净值多久更新一次。</p>
+          <p>卖空也有独立的流动性。借出的股票可能被召回，借券费会提高，热门空头会因买回需求形成挤压。宏观和管理期货通常交易较深市场，但极端波动中保证金会迅速变化。事件驱动资产则可能在坏消息出现后突然失去买家。不同策略的流动性表现不同，共同点是：平时能成交不等于压力时能按模型价格成交。</p>
+        </section>
+
+        <section id="fees">
+          <h2>费用条款会改变谁在承担路径风险</h2>
+          <p>基金回报到达投资者之前，还要经过管理费、业绩报酬、交易成本与融资成本。Investor.gov 的概括是，对冲基金通常收取按净资产计算的管理费，并可能对利润收取业绩报酬；具体比例和条件以发行文件为准。费用不仅减少净回报，也可能改变管理人的风险激励。</p>
+          <p><dfn data-term="高水位线">高水位线</dfn>要求基金净值超过此前计提业绩报酬后的最高水平，管理人才通常再次收取业绩报酬。门槛收益率则要求回报先跨过约定门槛。它们可以减轻对同一段收益重复收费的问题，但不能消除所有利益冲突。例如，不同份额类别、费用重置、基金关闭后另开产品，都可能影响实际结果，必须读具体条款。</p>
+          <p>费用的路径依赖也值得注意。假设基金先涨 20% 再跌 20%，净值并未回到原点，而是比起点低 4%；若上涨阶段已经计提业绩报酬，投资者最终结果还会更低。这个教学算例没有代表任何特定基金，只说明百分比涨跌不对称，收费时点会影响复利。评估业绩时应看扣费后、与赎回限制一致、包含已关闭基金的长期记录，而不是只看一段最亮眼的区间。</p>
+          <aside class="margin-note"><p><strong>重要边界：</strong>策略解释无法替代具体产品的法律和财务尽调。不要仅凭网站、月报或历史回报作出投资决定。需要核对发行备忘录、费用和费用冲销、估值政策、审计、托管、主经纪商集中度、赎回门槛、侧袋、利益冲突以及管理人的监管与纪律记录。</p></aside>
+        </section>
+
+        <section id="check">
+          <h2>用一条压力链审查所有策略</h2>
+          <p>面对一只具体基金，第一步不是问“过去赚了多少”，而是复述收益机制。基金认为何种价格关系会改变，证据来自公司、宏观、事件还是统计规律？哪些持仓是收益来源，哪些是对冲？如果只能得到“低相关、绝对收益、量化驱动”一类形容词，说明信息还不足以进入下一步。</p>
+          <p>第二步同时画净暴露和总暴露。净暴露低，是否因为两边真的对冲，还是因为把不同风险的名义金额相减？同一因子是否藏在不同市场？第三步加入融资：现金借款、回购、衍生品保证金、借券和交易对手额度分别如何变化？在不利情景中，哪一个首先要求现金？</p>
+          <p>第四步比较三个时钟。资产多久能以合理价格卖出，融资多久续接，投资者多久可以赎回？基金给投资者的流动性不应明显快于资产提供给基金的流动性。第五步检查估值和激励：难估值资产由谁定价，是否有独立管理人或审计，业绩报酬如何计算，高水位线如何适用，管理人是否与投资者共同承担损失。</p>
+          <table class="comparison">
+            <caption>压力测试不是猜跌幅，而是寻找先断的环节</caption>
+            <thead><tr><th>检查层</th><th>要看什么</th><th>危险信号</th></tr></thead>
+            <tbody>
+              <tr><td data-label="检查层">头寸</td><td data-label="要看什么">净暴露、总暴露、因子集中</td><td data-label="危险信号">用低净敞口掩盖巨大总头寸</td></tr>
+              <tr><td data-label="检查层">融资</td><td data-label="要看什么">期限、折扣、保证金、交易对手</td><td data-label="危险信号">短融资支持长期或拥挤资产</td></tr>
+              <tr><td data-label="检查层">流动性</td><td data-label="要看什么">正常与压力成交量、赎回条款</td><td data-label="危险信号">承诺的赎回快于资产变现</td></tr>
+              <tr><td data-label="检查层">治理</td><td data-label="要看什么">估值、审计、托管、冲突处理</td><td data-label="危险信号">管理人同时控制估值与披露</td></tr>
+              <tr><td data-label="检查层">回报</td><td data-label="要看什么">扣费后记录、回撤、尾部情景</td><td data-label="危险信号">只展示短区间或平滑净值</td></tr>
+            </tbody>
+          </table>
+          <p>这些问题不会自动给出“值得买”或“不值得买”的答案，却能让判断停留在可验证层面。低波动可能来自真正分散，也可能来自资产估值不频繁；稳定收益可能来自可重复优势，也可能是在持续卖出小概率保险；复杂模型可能降低情绪干扰，也可能让风险依赖难以审计的假设。每一种漂亮解释都应配一个能推翻它的情景。</p>
+          <p>对普通读者而言，最重要的迁移不是学会复制交易，而是拒绝把策略名当成风险说明。先找收益来源，再找保留暴露；先看总头寸，再看净头寸；先问能否等到判断兑现，再谈长期正确。若关键信息拿不到、条款读不懂、损失路径无法承受，停下来本身就是完整的金融判断。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="strategy-map.html"><span>上一章</span>← 策略地图</a>
+          <a href="sources.html"><span>查证</span>来源与口径</a>
+          <a href="main.html"><span>回到起点</span>重新看地图</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-dense"><p>教育用途，不构成投资、法律或税务建议 · 具体私募产品应以发行文件、监管登记与独立专业意见为准 · <a href="sources.html">查阅监管材料与数据口径</a></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

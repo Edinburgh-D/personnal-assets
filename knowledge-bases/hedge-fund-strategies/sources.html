@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="对冲基金策略知识库的一手来源、统计口径、更新边界与延伸阅读。">
+  <meta id="kb_darkMode" name="color-scheme" content="light dark">
+  <title>来源与口径｜对冲基金策略</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@400;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-edge">
+    <a class="wordmark" href="main.html"><span class="wordmark-prefix">Hedge Fund Atlas / </span>策略图谱</a>
+    <div class="nav-actions">
+      <a class="overview-link" href="../../index.html" data-site-home>知识库总览</a>
+      <button class="menu-button nav-menu-btn" type="button" data-menu-button aria-expanded="false" aria-controls="chapter-menu">章节</button>
+    </div>
+  </header>
+  <nav class="chapter-strip" id="chapter-menu" data-chapter-strip data-open="false" aria-label="知识库章节">
+    <ul>
+      <li><a href="main.html">起点</a></li>
+      <li><a href="strategy-map.html">策略地图</a></li>
+      <li><a href="risk-and-judgment.html">风险判断</a></li>
+      <li><a href="sources.html" aria-current="page">来源与口径</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="reference">
+    <nav class="breadcrumb" aria-label="面包屑"><a href="../index.html">知识库</a><span aria-hidden="true">/</span><a href="main.html">对冲基金策略</a><span aria-hidden="true">/</span><span>来源</span></nav>
+    <header class="chapter-heading">
+      <h1>来源、口径与更新边界</h1>
+      <p class="lede">定义优先采用监管和国际金融机构材料；动态数据注明观察期。统计描述的是聚合样本，不应用来推断任意单只基金。</p>
+    </header>
+    <div class="prose-layout">
+      <aside class="toc" aria-label="本页目录">
+        <strong>资料架</strong>
+        <ul>
+          <li><a href="#primary">核心来源</a></li>
+          <li><a href="#method">统计口径</a></li>
+          <li><a href="#boundary">使用边界</a></li>
+          <li><a href="#related">关联阅读</a></li>
+        </ul>
+      </aside>
+      <article class="prose">
+        <section id="primary">
+          <h2>核心一手来源</h2>
+          <ol class="source-list">
+            <li><a href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/private-investment-funds/hedge-funds">Investor.gov：Hedge Funds</a><small>美国 SEC 投资者教育页面；用于基金性质、合格投资者、费用、估值、杠杆和赎回限制。访问核对：2026-10-06。</small></li>
+            <li><a href="https://www.sec.gov/data-research/statistics-data-visualizations/private-fund-statistics/private-funds-qualifying-hedge-fund-strategies">SEC：Private Funds — Qualifying Hedge Fund Strategies</a><small>Form PF 策略分类可视化入口；页面说明以超过 50% 资产集中于某策略作为分类方法，否则归入多策略。页面更新至 2026-08-19。</small></li>
+            <li><a href="https://www.sec.gov/files/investment/private-fund-statistics-2025-q4.pdf">SEC：Private Fund Statistics, 2025 Q4</a><small>用于策略净资产、借款、衍生品、总资产与净资产之比、流动性和压力测试等聚合口径。报告数据截至 2025 年第四季度。</small></li>
+            <li><a href="https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/form-pf-faq">SEC：Form PF Frequently Asked Questions</a><small>用于监管报告中的对冲基金定义、策略估计和流动性估计方法。部分问答在 2025 年更新。</small></li>
+            <li><a href="https://www.federalreserve.gov/publications/files/financial-stability-report-20260508.pdf">Federal Reserve：Financial Stability Report, May 2026</a><small>用于对冲基金总体杠杆和美国国债相对价值交易的当前金融稳定背景。结论属于聚合层面的系统风险观察。</small></li>
+            <li><a href="https://www.imf.org/-/media/files/publications/gfsr/2026/april/english/text.pdf">IMF：Global Financial Stability Report, April 2026</a><small>用于回购融资、风险约束、快速去杠杆与债券市场外溢机制。报告讨论的是全球金融稳定，不是单只基金评级。</small></li>
+            <li><a href="https://www.bis.org/publications/margin-leverage-and-vulnerabilities-us-treasury-futures">BIS：Margin leverage and vulnerabilities in US Treasury futures</a><small>用于现金—期货基差交易、期货保证金杠杆与保证金螺旋的机制说明。</small></li>
+          </ol>
+        </section>
+
+        <section id="method">
+          <h2>怎样阅读这些数字</h2>
+          <p>Form PF 是美国监管者面向一定范围私募基金管理人的保密报告表，SEC 发布的是经过汇总的统计。它不覆盖全球所有对冲基金，也不提供单只基金可识别数据。策略分类通常按基金报告的净资产配置估计；当超过一半资产集中于某一策略时归入该类，否则可能归入多策略。因此，分类变化既可能来自真实配置变化，也可能来自报告口径与基金结构。</p>
+          <p>总资产与净资产之比、总名义敞口与净资产之比、借款和衍生品名义金额各自测量不同侧面。衍生品名义金额不能直接当作可能损失，净敞口低也不能证明融资需求低。正文只用聚合数据支持“不同策略实施方式存在显著差异”和“杠杆与融资值得独立审查”，没有把总体均值套到具体产品。</p>
+          <p>美联储、IMF 与 BIS 的金融稳定材料关注市场整体的相互连接与压力传播，研究目的不同于投资者尽调。报告中的纪录高位、集中度或交易规模会随时间变化。本站保留报告日期和观察期，避免把动态数字写成恒久事实；后续若数据更新，应优先替换来源页和涉及当前状态的表述。</p>
+        </section>
+
+        <section id="boundary">
+          <h2>教育边界</h2>
+          <p>本知识库不评价、推荐或代销任何基金，不构成投资、法律、税务或会计建议。对冲基金通常只面向满足特定财务或专业标准的投资者，准入定义因司法辖区和基金结构而异。即使具备法律资格，也不代表产品适合个人的目标、期限和损失承受能力。</p>
+          <p>研究具体产品时，至少需要核对发行备忘录、认购文件、管理人监管记录、费用与业绩报酬、估值政策、审计与托管、主经纪商和交易对手集中度、杠杆上限、资产流动性、锁定期、赎回通知、暂停赎回和侧袋安排。无法获得或无法理解关键信息时，不应由历史收益或品牌声誉代替判断。</p>
+        </section>
+
+        <section id="related">
+          <h2>在现有知识库中继续连接</h2>
+          <p><a href="../soros-reflexivity/main.html">索罗斯反身性理论</a>解释价格如何反过来改变融资与经营现实，能补充宏观和事件策略中的反馈链。<a href="../yen-carry-trade/main.html">日元套息交易</a>把利差、汇率、杠杆和集中平仓拆开，适合继续理解宏观基金与管理期货的路径风险。<a href="../inequality-gini/main.html">基尼系数与不平等</a>则展示统计指标的定义边界，可帮助读者保持对单一数字的谨慎。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节翻页">
+          <a href="risk-and-judgment.html"><span>上一章</span>← 风险判断</a>
+          <a href="../../index.html"><span>返回</span>知识库总览</a>
+          <a href="main.html"><span>从头阅读</span>回到起点</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-dense"><p>来源页保留动态材料的发布日期与统计观察期 · 外部链接指向 SEC、Federal Reserve、IMF 与 BIS 官方页面 · 最后核对：2026-10-06</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-06T02:13:35+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "对冲基金究竟是一类资产、一种法律外壳，还是一组组织和实施投资策略的方法？",
+      "readerStateChange": "读前容易把对冲基金当成专门做空或自动消除风险的神秘资产；读后能把基金外壳、策略收益来源、市场暴露和实施约束分开描述。",
+      "twoSentenceSummary": "页面从基金、管理人和服务机构的结构入手，说明对冲基金是一种灵活的私募安排而非固定资产类别。北辰基金的航空公司案例进一步展示，对冲只是重塑风险，判断策略需要同时观察收益来源、暴露与融资条件。",
+      "continuityEvidence": "结尾把北辰基金的多种可能头寸改写成收益路径，并明确提出下一章要按赚钱机制绘制策略地图。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "strategy-map.html",
+      "centralQuestion": "既然名称不能说明收益来源，常见对冲基金策略应怎样按赚钱机制而不是营销标签放进同一张地图？",
+      "readerStateChange": "读前只能用宽泛名称描述基金；读后能区分公司差异、宏观路径、价格收敛、事件结果和系统化趋势等收益引擎，并辨认各自断点。",
+      "twoSentenceSummary": "页面以方向判断和相对价格为坐标，逐条解释股票多空、全球宏观、管理期货、相对价值与事件驱动。北辰基金的同一组航空证券贯穿各分支，说明工具相同不代表策略或风险相同。",
+      "continuityEvidence": "本页承接入口页的三副镜头，并在结尾指出各分支共用融资、保证金和流动性，从而自然转入压力判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "risk-and-judgment.html",
+      "centralQuestion": "当策略地图已经画清，怎样判断一个看似分散或对冲充分的组合会不会在压力中同时失灵？",
+      "readerStateChange": "读前能识别收益机制却难以判断路径风险；读后能沿头寸、借款、保证金、三个流动性时钟、费用和治理重建压力链。",
+      "twoSentenceSummary": "页面用国债现金—期货价差交易展示，最终可能收敛的头寸也会因回购成本、保证金和额度收缩被迫提前平仓。随后把资产、融资、赎回、估值与费用整理成适用于不同策略的一致审查框架。",
+      "continuityEvidence": "它直接处理上一页留下的共同实施约束，并以具体文件、持仓口径和压力情景的开放问题结束完整学习弧。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能接受正文对监管与市场风险的概括；读后能区分投资者教育、监管统计和金融稳定研究的证据用途，并知道动态数字的观察期。",
+      "twoSentenceSummary": "页面列出 SEC、Investor.gov、美联储、IMF 与 BIS 的一手材料，逐项标明它们支持的定义、统计或风险机制。它还说明 Form PF 的覆盖与分类边界，并给出具体产品尽调所需的文件范围。",
+      "continuityEvidence": "来源页为风险判断提供可复核证据，并通过返回起点、风险篇及相关知识库的链接收束阅读路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

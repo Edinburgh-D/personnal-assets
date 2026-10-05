@@ -1,0 +1,69 @@
+/* Hallmark · macrostructure: Map / Diagram · genre: editorial · theme: Almanac · tone: analytical economy · anchor hue: ledger red · enrichment: Tier-A CSS risk map · nav: N9 · footer: Ft4 · audience: general · use: continuous public learning · contrast: pass (40–41) · slop: pass (1–58) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (49) · icons: pass (30) · mobile: pass (34, 49, 50–57) */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5 */
+:root {
+  --color-paper: oklch(96% 0.012 78);
+  --color-paper-2: oklch(92% 0.018 78);
+  --color-paper-3: oklch(88% 0.022 78);
+  --color-ink: oklch(20% 0.018 45);
+  --color-ink-soft: oklch(35% 0.018 45);
+  --color-muted: oklch(48% 0.016 50);
+  --color-rule: oklch(76% 0.025 65);
+  --color-rule-strong: oklch(58% 0.038 55);
+  --color-accent: oklch(48% 0.15 30);
+  --color-accent-soft: oklch(88% 0.055 35);
+  --color-focus: oklch(46% 0.18 250);
+  --color-positive: oklch(43% 0.09 150);
+  --color-shadow: oklch(20% 0.018 45 / 0.08);
+  --font-display: "Newsreader", "Noto Serif SC", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  --font-mono: var(--font-body);
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.2rem;
+  --text-lg: 1.5rem;
+  --text-xl: 1.9rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+  --text-display-s: clamp(2.4rem, 7vw, 4.5rem);
+  --text-display: clamp(2.75rem, 8vw, 5.25rem);
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --rule-thin: 1px;
+  --rule-thick: 2px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: oklch(15% 0.014 50);
+    --color-paper-2: oklch(19% 0.016 50);
+    --color-paper-3: oklch(24% 0.019 50);
+    --color-ink: oklch(93% 0.014 78);
+    --color-ink-soft: oklch(82% 0.018 72);
+    --color-muted: oklch(70% 0.018 68);
+    --color-rule: oklch(37% 0.028 52);
+    --color-rule-strong: oklch(55% 0.045 45);
+    --color-accent: oklch(70% 0.13 35);
+    --color-accent-soft: oklch(27% 0.055 35);
+    --color-focus: oklch(76% 0.14 245);
+    --color-positive: oklch(70% 0.08 150);
+    --color-shadow: oklch(8% 0.01 45 / 0.2);
+  }
+}
