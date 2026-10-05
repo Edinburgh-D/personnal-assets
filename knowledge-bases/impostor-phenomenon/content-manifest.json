@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "冒名顶替综合征",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-06",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "成功为何像借来的",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把强烈自我怀疑笼统地理解为能力不足、谦虚或一种名叫冒名顶替综合征的疾病，难以区分感受与事实。",
+      "readerStateAfter": "读者能够把冒名顶替体验识别为对成功证据的特定解释模式，并能将它与正常的不确定、真实技能缺口和临床诊断分开。",
+      "readerQuestion": "所谓冒名顶替综合征究竟描述了什么，怎样判断自己经历的是一种解释模式，而不是能力不足的事实或一种正式疾病？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "林遥升任项目负责人后完成了一次获客户认可的提案，却把成功全部归为团队托底和运气，并把一个答不完整的问题当作自己迟早会被识破的证据。",
+      "newTerms": [
+        {
+          "term": "冒名顶替体验",
+          "definition": "一个人在已有能力和成绩证据面前，仍难以把成功归入自我认识，并持续担心被识破为不够格的心理体验。"
+        },
+        {
+          "term": "归因",
+          "definition": "人对结果为何发生所作的解释，例如把成功解释为能力、努力、运气、他人帮助或任务难度。"
+        },
+        {
+          "term": "胜任感",
+          "definition": "一个人依据经验形成的、自己能够应对某类任务与要求的判断。"
+        }
+      ],
+      "conclusion": "冒名顶替体验不是能力不足的证据，也不是正式诊断；它是一套在评价情境中反复折损自身证据、放大暴露风险的解释模式。",
+      "nextQuestion": "既然外部成绩没有自动转化为稳定的自我认识，功劳转出、失误留档和保护性行为怎样连成一个自我维持的循环？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "mechanism.html",
+      "title": "功劳被转走，失误被留下",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把冒名顶替体验识别为对成功证据的特定解释模式，并能将它与正常的不确定、真实技能缺口和临床诊断分开。",
+      "readerStateAfter": "读者能够解释成功归因、评价威胁、过度准备或拖延如何互相强化，也能看到模糊标准、代表性压力和排斥线索对体验的作用。",
+      "readerQuestion": "既然外部成绩没有自动转化为稳定的自我认识，功劳转出、失误留档和保护性行为怎样连成一个自我维持的循环？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "冒名顶替体验不是能力不足的证据，也不是正式诊断；它是一套在评价情境中反复折损自身证据、放大暴露风险的解释模式。",
+      "coreExample": "林遥为第二次提案反复改稿到深夜、避免在同事面前展示半成品，并在成功后认为只有持续透支才能维持别人对自己的高估。",
+      "newTerms": [
+        {
+          "term": "冒名顶替循环",
+          "definition": "评价任务触发暴露担忧，随后以过度准备或拖延保护自己，结果成功仍被外归、焦虑因而再次出现的循环。"
+        },
+        {
+          "term": "完美主义性关注",
+          "definition": "对犯错、负面评价和标准落差保持过强警觉，并把局部不足扩大为自我价值判断的倾向。"
+        },
+        {
+          "term": "保护性行为",
+          "definition": "为了避免羞耻或被否定而采取的短期自保做法，例如过度检查、隐瞒困难、拖延或拒绝有挑战的机会。"
+        },
+        {
+          "term": "心理安全",
+          "definition": "团队成员相信提出疑问、承认错误或表达不同意见不会因此遭到羞辱和惩罚的共同感受。"
+        }
+      ],
+      "conclusion": "这种体验由个人的高标准与保护行为、模糊反馈和环境中的身份线索共同维持，因此只纠正一个人的想法常常不够。",
+      "nextQuestion": "既然问题既在解释习惯中也在情境里，怎样在不自我欺骗、不忽视真实短板的前提下校准判断，并决定何时需要外部支持？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "judgment.html",
+      "title": "校准，而不是强迫自己自信",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释成功归因、评价威胁、过度准备或拖延如何互相强化，也能看到模糊标准、代表性压力和排斥线索对体验的作用。",
+      "readerStateAfter": "读者能够用可观察证据校准自我判断，区分个人练习与环境责任，并根据持续时间、痛苦和功能受损程度决定是否寻求专业帮助。",
+      "readerQuestion": "既然问题既在解释习惯中也在情境里，怎样在不自我欺骗、不忽视真实短板的前提下校准判断，并决定何时需要外部支持？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "这种体验由个人的高标准与保护行为、模糊反馈和环境中的身份线索共同维持，因此只纠正一个人的想法常常不够。",
+      "coreExample": "林遥把下一次项目拆成可观察标准，提前向同事展示草稿并索取具体反馈，同时记录团队中信息分配和发言机会是否公平。",
+      "newTerms": [
+        {
+          "term": "证据校准",
+          "definition": "把感受、可观察表现、他人反馈和任务标准分开记录，再按证据质量修正判断的过程。"
+        },
+        {
+          "term": "行为实验",
+          "definition": "用小规模、可回顾的行动检验某个担忧是否如预期发生，而不是只在头脑中反复推演。"
+        },
+        {
+          "term": "功能受损",
+          "definition": "痛苦已经持续影响睡眠、学习、工作、人际关系或基本自我照料。"
+        }
+      ],
+      "conclusion": "更可靠的应对不是把怀疑赶走，而是让判断重新服从证据、让支持进入日常行动，并把应由组织修复的条件还给组织。",
+      "nextQuestion": "当新的职位、身份变化或评价制度再次触发旧感受时，哪些证据说明这是可承受的成长不适，哪些变化提示需要调整环境或寻求专业帮助？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、证据与求助边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

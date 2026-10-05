@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-06",
+  "framework": "vanilla-html",
+  "fontStack": "repository uses per-knowledge-base token files",
+  "palette": "OKLCH custom properties",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["static multi-page structure", "local tokens.css pattern", "repository navigation contract"]
+}
