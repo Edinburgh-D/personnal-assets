@@ -1,0 +1,105 @@
+/* Hallmark · macrostructure: Letter · genre: editorial · theme: Newsprint · tone: archival art-editorial · anchor hue: postal red · enrichment: none · nav: N6 · footer: Ft6 · audience: general · use: continuous public learning */
+/* Hallmark · pre-emit critique: P5 H4 E4 S5 R5 V5 */
+:root {
+  color-scheme: light dark;
+  --color-paper: oklch(96% 0.012 82);
+  --color-paper-2: oklch(92% 0.018 78);
+  --color-paper-3: oklch(88% 0.022 74);
+  --color-ink: oklch(19% 0.018 52);
+  --color-ink-2: oklch(31% 0.018 52);
+  --color-muted: oklch(43% 0.016 54);
+  --color-rule: oklch(62% 0.025 66);
+  --color-rule-strong: oklch(42% 0.035 54);
+  --color-accent: oklch(45% 0.16 30);
+  --color-accent-soft: oklch(89% 0.045 38);
+  --color-focus: oklch(52% 0.19 30);
+  --color-selection: oklch(82% 0.07 45);
+
+  --font-display: "Bodoni Moda", "Songti SC", "Noto Serif CJK SC", serif;
+  --font-body: "Newsreader", "Noto Serif CJK SC", "Songti SC", serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans Mono CJK SC", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.45rem, 6vw, 4.5rem);
+  --text-display: clamp(2.75rem, 7vw, 5.25rem);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 100ms;
+  --dur-short: 150ms;
+  --dur-long: 150ms;
+  --rule-hair: 1px;
+  --rule-double: 4px;
+  --radius-none: 0;
+  --radius-soft: 0.25rem;
+  --page-gutter: clamp(1rem, 4vw, 3.5rem);
+  --measure: 68ch;
+  --z-base: 1;
+  --z-sticky: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(16% 0.014 55);
+    --color-paper-2: oklch(20% 0.017 55);
+    --color-paper-3: oklch(25% 0.019 55);
+    --color-ink: oklch(93% 0.014 78);
+    --color-ink-2: oklch(82% 0.015 74);
+    --color-muted: oklch(75% 0.014 70);
+    --color-rule: oklch(43% 0.026 62);
+    --color-rule-strong: oklch(64% 0.035 62);
+    --color-accent: oklch(72% 0.13 34);
+    --color-accent-soft: oklch(28% 0.055 34);
+    --color-focus: oklch(78% 0.14 38);
+    --color-selection: oklch(35% 0.075 38);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(16% 0.014 55);
+  --color-paper-2: oklch(20% 0.017 55);
+  --color-paper-3: oklch(25% 0.019 55);
+  --color-ink: oklch(93% 0.014 78);
+  --color-ink-2: oklch(82% 0.015 74);
+  --color-muted: oklch(75% 0.014 70);
+  --color-rule: oklch(43% 0.026 62);
+  --color-rule-strong: oklch(64% 0.035 62);
+  --color-accent: oklch(72% 0.13 34);
+  --color-accent-soft: oklch(28% 0.055 34);
+  --color-focus: oklch(78% 0.14 38);
+  --color-selection: oklch(35% 0.075 38);
+}
+
+:root[data-theme="light"] {
+  --color-paper: oklch(96% 0.012 82);
+  --color-paper-2: oklch(92% 0.018 78);
+  --color-paper-3: oklch(88% 0.022 74);
+  --color-ink: oklch(19% 0.018 52);
+  --color-ink-2: oklch(31% 0.018 52);
+  --color-muted: oklch(43% 0.016 54);
+  --color-rule: oklch(62% 0.025 66);
+  --color-rule-strong: oklch(42% 0.035 54);
+  --color-accent: oklch(45% 0.16 30);
+  --color-accent-soft: oklch(89% 0.045 38);
+  --color-focus: oklch(52% 0.19 30);
+  --color-selection: oklch(82% 0.07 45);
+}

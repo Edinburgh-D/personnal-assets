@@ -3844,6 +3844,13 @@
       "generatedAt": "2026-10-06",
       "slug": "impostor-phenomenon",
       "entry": "knowledge-bases/impostor-phenomenon/main.html"
+    },
+    {
+      "name": "世界语运动与人工语言",
+      "domain": "语言/文化",
+      "generatedAt": "2026-10-06",
+      "slug": "esperanto-and-constructed-languages",
+      "entry": "knowledge-bases/esperanto-and-constructed-languages/main.html"
     }
   ],
   "skipped": []

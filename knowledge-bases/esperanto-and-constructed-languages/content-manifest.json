@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "世界语运动与人工语言",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-06",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一门语言，如何成为一场运动",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": [],
+      "readerQuestion": "世界语为什么不能只被理解成一套人为设计的语法，而必须连同它形成共同体的历史一起理解？",
+      "readerStateBefore": "读者把世界语看成某位发明者一次性完成的语言方案，或把所有人工语言都视为相同的思想实验。",
+      "readerStateAfter": "读者能够区分语言方案、使用者共同体与社会运动，并用三者之间的循环解释世界语为何延续至今。",
+      "priorConclusion": "",
+      "coreExample": "想象一位叫林的普通学习者，从一张写着世界语短句的明信片开始，先解读规则，再寻找通信对象，最后进入一个会讨论、写作和争论的跨国共同体。",
+      "conclusion": "世界语的特殊性不只在规则较整齐，而在于一份可学习的方案被通信、聚会、出版与组织反复使用，逐渐形成了能再生产语言实践的共同体。",
+      "nextQuestion": "既然共同体才让方案持续运转，世界语运动究竟用哪些制度与日常实践维持语言统一，同时允许它像活语言一样变化？",
+      "nextPage": "movement.html",
+      "newTerms": [
+        { "term": "人工语言", "definition": "由个人或群体有意识规划核心规则与词汇的语言，目的可以是国际交流、逻辑实验、艺术创作或虚构世界建构。" },
+        { "term": "国际辅助语", "definition": "为不同母语者之间的补充交流而设计或推广的共同语言，不以取代母语为必要目标。" },
+        { "term": "世界语运动", "definition": "围绕学习、使用、传播世界语以及讨论语言平等而形成的组织、出版、会议与日常交往网络。" },
+        { "term": "语言共同体", "definition": "通过持续交往形成共享表达习惯、规范判断与文化记忆的一群使用者。" }
+      ]
+    },
+    {
+      "file": "movement.html",
+      "title": "规则、书信与共同体",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然共同体才让方案持续运转，世界语运动究竟用哪些制度与日常实践维持语言统一，同时允许它像活语言一样变化？",
+      "readerStateBefore": "读者能够区分语言方案、使用者共同体与社会运动，并用三者之间的循环解释世界语为何延续至今。",
+      "readerStateAfter": "读者能够解释基础规范、构词机制、使用习惯与组织网络如何相互制约，使世界语既保持互通又不冻结。",
+      "priorConclusion": "世界语的特殊性不只在规则较整齐，而在于一份可学习的方案被通信、聚会、出版与组织反复使用，逐渐形成了能再生产语言实践的共同体。",
+      "coreExample": "林尝试把“明天我会遇见你”写成世界语，并把新词带进线上读书会；句子的可解析性来自共享规则，而表达是否自然则要接受真实使用者的理解与修正。",
+      "conclusion": "世界语的稳定不是由发明者持续发号施令，而是由不可轻易改动的基础、可扩展的构词资源、使用传统与分散组织共同维持；规范和实践彼此校正。",
+      "nextQuestion": "如果一门人工语言最终也会积累历史、惯例与不平等，那么我们应如何比较不同设计目标，并判断世界语运动的成败与边界？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "《世界语基础》", "definition": "1905年确立的基础规范文本，包含语法、练习与词汇材料，为跨地区使用者提供共同参照。" },
+        { "term": "语素", "definition": "能够承载意义或语法功能的最小语言单位，例如词根、前缀、后缀和词尾。" },
+        { "term": "黏着式构词", "definition": "把边界较清楚的语素依次组合来构成词形和表达意义的方式。" },
+        { "term": "语言规划", "definition": "有意识地选择、整理或推广语言形式与使用领域的活动，不只发生在人工语言中。" },
+        { "term": "语用惯例", "definition": "使用者在真实交往中逐渐形成的表达偏好，它可能不由语法书直接规定，却影响什么听起来自然。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "成功不只等于成为世界通语",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": ["movement.html"],
+      "readerQuestion": "如果一门人工语言最终也会积累历史、惯例与不平等，那么我们应如何比较不同设计目标，并判断世界语运动的成败与边界？",
+      "readerStateBefore": "读者能够解释基础规范、构词机制、使用习惯与组织网络如何相互制约，使世界语既保持互通又不冻结。",
+      "readerStateAfter": "读者能够按设计目标、学习成本、表达能力、共同体与权力分配评估人工语言，不再用“是否取代英语”作为唯一尺度。",
+      "priorConclusion": "世界语的稳定不是由发明者持续发号施令，而是由不可轻易改动的基础、可扩展的构词资源、使用传统与分散组织共同维持；规范和实践彼此校正。",
+      "coreExample": "林同时查看世界语、Interlingua、Lojban与toki pona：它们分别优先考虑跨国共同体、罗曼语词汇的可辨认性、形式可解析性与极简表达，不能用同一把尺子排出总冠军。",
+      "conclusion": "评价人工语言应先问它想解决什么，再检验规则是否可学、表达是否可用、共同体是否可进入、治理是否可纠错，以及所谓中立是否公平分配学习与发言成本。",
+      "nextQuestion": "当机器翻译降低跨语沟通成本时，人们还会不会为了平等参与、共同文化与主动选择而学习一门共享语言？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "先验型人工语言", "definition": "主要从自定的逻辑、概念分类或形式系统出发设计，而不是大量借用某一组既有语言材料的人工语言。" },
+        { "term": "后验型人工语言", "definition": "明显借用和整理既有语言的词汇或结构，以熟悉度、可学性或跨语识别为目标的人工语言。" },
+        { "term": "语言中立", "definition": "交往语言不专属于某个民族国家的理想；它不等于结构上没有文化来源，也不自动消除资源差距。" },
+        { "term": "采用难题", "definition": "一种共同标准的价值随使用者增加而上升，但早期参与者又会因使用者少而缺乏加入动力的协调困境。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、机构与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

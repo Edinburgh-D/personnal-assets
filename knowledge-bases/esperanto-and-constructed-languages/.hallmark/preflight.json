@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-06",
+  "framework": "vanilla-static-html",
+  "fontSignals": "existing knowledge bases use paired web fonts",
+  "paletteSignals": "existing knowledge bases use OKLCH design tokens",
+  "motionStance": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserve": ["static publishing conventions", "main.html entry", "data-site-home navigation", "content manifest contract"]
+}

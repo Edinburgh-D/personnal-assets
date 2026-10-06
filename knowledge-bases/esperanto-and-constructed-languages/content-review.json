@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-06T11:20:33+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "世界语为什么不能只被理解成一套人为设计的语法，而必须连同它形成共同体的历史一起理解？",
+      "readerStateChange": "读前容易把世界语缩成柴门霍夫设计的一套规则；读后能够区分语言方案、传播基础设施和共同体生活，并解释三者怎样形成循环。",
+      "twoSentenceSummary": "页面从林拆解一张世界语明信片出发，说明规则只能打开文本，不能单独制造交流关系。1887年的方案经书信、1905年大会、规范文本、出版和文化实践，逐步成为可再生产的共同体。",
+      "continuityEvidence": "结尾把三部分模型收束为持续循环，并明确转向基础规范、构词资源和组织分工如何共同维持这一循环，直接承接共同体页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "movement.html",
+      "centralQuestion": "既然共同体才让方案持续运转，世界语运动究竟用哪些制度与日常实践维持语言统一，同时允许它像活语言一样变化？",
+      "readerStateChange": "读前只知道共同体使方案延续；读后能够用基础、构词、使用和组织四条回路解释稳定与变化，并识别口音和技术条件中的微观协商。",
+      "twoSentenceSummary": "页面解释《世界语基础》为何固定共同底线，又用renkont-构词、词汇采用和语用惯例展示语言怎样继续生长。学院、协会、青年组织与日常使用者分担不同权威，没有一个中心能强制控制全部语言生活。",
+      "continuityEvidence": "四条回路说明机制后，结尾主动暴露欧洲材料、地区资源和中立理想的张力，因此自然推出下一页对设计目标、权力和成败尺度的判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "如果一门人工语言最终也会积累历史、惯例与不平等，那么我们应如何比较不同设计目标，并判断世界语运动的成败与边界？",
+      "readerStateChange": "读前能够解释世界语怎样维持运转；读后能够先确认人工语言的目标，再从学习、表达、共同体、治理和权力五个维度作条件化评价。",
+      "twoSentenceSummary": "页面比较世界语、Interlingua、Lojban与toki pona的不同目标，拒绝用简单程度或使用规模排总名次。它进一步拆分制度中立与结构中立，并把世界语的工具、文化、政治和运动成果分别评估。",
+      "continuityEvidence": "页面从上一页已经揭示的欧洲中心与资源差异出发，发展出五项判断框架；末尾把框架迁移到机器翻译时代，保留关于共同语言价值的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者获得按原典、规范机构、运动组织、国际组织记录和其他人工语言第一方资料分层核对主张的清晰入口。",
+      "twoSentenceSummary": "来源页列出《世界语基础》《布洛涅宣言》、世界语学院、TEJO、UNESCO文件与UEA入口。它另列Interlingua、Lojban和toki pona的第一方材料，并说明机构自述与独立统计不能混用。",
+      "continuityEvidence": "该页被三个叙事页的导航和证据说明直接引用，同时提供返回开头和上一篇的路径；相关知识库链接也指向仓库中实际存在的页面。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
