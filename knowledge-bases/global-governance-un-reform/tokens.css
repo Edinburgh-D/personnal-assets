@@ -1,0 +1,97 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4
+ * Hallmark · genre: editorial · macrostructure: Long Document · theme: Almanac-inspired · enrichment: none · nav: N3 · footer: Ft4
+ * audience: general public · use: continuous study · tone: austere legal editorial · anchor hue: UN blue
+ * contrast: pass (40–41) · slop: pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48)
+ * responsive: pass (34, 49, 50–57) · icons: pass (30)
+ */
+:root {
+  --color-paper: oklch(96.5% 0.012 84);
+  --color-paper-raised: oklch(98.2% 0.008 84);
+  --color-paper-muted: oklch(92.8% 0.018 84);
+  --color-ink: oklch(20% 0.018 250);
+  --color-ink-soft: oklch(38% 0.022 250);
+  --color-muted: oklch(49% 0.018 250);
+  --color-rule: oklch(77% 0.025 250);
+  --color-rule-strong: oklch(58% 0.045 250);
+  --color-accent: oklch(47% 0.16 252);
+  --color-accent-soft: oklch(88% 0.05 252);
+  --color-seal: oklch(43% 0.13 24);
+  --color-focus: oklch(58% 0.18 252);
+  --color-shadow: oklch(20% 0.018 250 / 0.08);
+
+  --font-display: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --font-body: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.65rem, 5vw + 0.5rem, 5.1rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 180ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-heavy: 2px;
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --shadow-paper: 0 1.5rem 4rem var(--color-shadow);
+  --measure: 66ch;
+  --rail-width: 13rem;
+  --z-base: 1;
+  --z-sticky: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(16% 0.014 250);
+    --color-paper-raised: oklch(20% 0.017 250);
+    --color-paper-muted: oklch(24% 0.02 250);
+    --color-ink: oklch(94% 0.012 84);
+    --color-ink-soft: oklch(79% 0.018 84);
+    --color-muted: oklch(68% 0.018 84);
+    --color-rule: oklch(36% 0.028 250);
+    --color-rule-strong: oklch(58% 0.055 250);
+    --color-accent: oklch(70% 0.13 252);
+    --color-accent-soft: oklch(28% 0.065 252);
+    --color-seal: oklch(70% 0.11 24);
+    --color-focus: oklch(76% 0.15 252);
+    --color-shadow: oklch(8% 0.01 250 / 0.36);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(16% 0.014 250);
+  --color-paper-raised: oklch(20% 0.017 250);
+  --color-paper-muted: oklch(24% 0.02 250);
+  --color-ink: oklch(94% 0.012 84);
+  --color-ink-soft: oklch(79% 0.018 84);
+  --color-muted: oklch(68% 0.018 84);
+  --color-rule: oklch(36% 0.028 250);
+  --color-rule-strong: oklch(58% 0.055 250);
+  --color-accent: oklch(70% 0.13 252);
+  --color-accent-soft: oklch(28% 0.065 252);
+  --color-seal: oklch(70% 0.11 24);
+  --color-focus: oklch(76% 0.15 252);
+  --color-shadow: oklch(8% 0.01 250 / 0.36);
+}

@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-06",
+  "framework": "vanilla-html",
+  "fontStack": "root archive uses Georgia plus system Chinese sans; knowledge base pairs Noto Serif SC with Noto Sans SC",
+  "palette": "existing root uses OKLCH paper and blue accent tokens",
+  "motion": "motion-cut; no animation library",
+  "spacing": "4pt semantic token scale",
+  "preserved": ["editorial archive tone", "OKLCH token discipline", "quiet motion stance"]
+}

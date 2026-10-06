@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "全球治理与联合国改革",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-06",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先看清联合国能做什么",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "当战争、气候风险与跨境危机要求共同应对时，为什么联合国既不可替代，又总显得权力不足？",
+      "readerStateBefore": "读者容易把联合国想成一个应当命令各国行动的世界政府，并把任何行动迟缓都归结为组织无能。",
+      "readerStateAfter": "读者能够把联合国理解为主权国家共同授权的制度网络，并从代表性、行动能力与问责三项张力解释其价值和局限。",
+      "priorConclusion": "",
+      "coreExample": "一项假想改革包主张增加安全理事会席位、限制大规模暴行情形下的否决权，并要求安理会向全体会员国说明不行动的理由。",
+      "conclusion": "联合国改革不是把一个软弱政府改造成强大政府，而是在会员国不愿交出最终主权的条件下，重新平衡代表性、行动能力与问责。",
+      "nextQuestion": "如果改革必须经过会员国授权，现有宪章结构怎样决定哪些改变可以推进，哪些改变会被既得权力锁住？",
+      "nextPage": "architecture.html",
+      "newTerms": [
+        { "term": "全球治理", "definition": "国家、国际组织、市场与社会力量通过规则、协商和共同机构处理跨境问题的过程，并不等于建立世界政府。" },
+        { "term": "集体行动困境", "definition": "所有参与者都可能从合作中受益，却因成本分担、互不信任或搭便车而难以共同采取行动的局面。" },
+        { "term": "主权", "definition": "国家在其领土和政治秩序中拥有最高权威，并在国际关系中保持法律上的独立地位。" },
+        { "term": "授权", "definition": "会员国通过宪章、决议、预算或具体任务，把有限权力交给联合国机关行使。" },
+        { "term": "合法性", "definition": "制度的决定被相关参与者认为具有正当依据、形成程序可以接受，并值得遵守或认真回应的程度。" }
+      ]
+    },
+    {
+      "file": "architecture.html",
+      "title": "改革为何难过宪章这一关",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果改革必须经过会员国授权，现有宪章结构怎样决定哪些改变可以推进，哪些改变会被既得权力锁住？",
+      "readerStateBefore": "读者能够把联合国理解为主权国家共同授权的制度网络，并从代表性、行动能力与问责三项张力解释其价值和局限。",
+      "readerStateAfter": "读者能够区分宪章修正、会员国决定与秘书处管理三条改革路径，并解释否决权、修宪门槛和资源控制如何塑造可行空间。",
+      "priorConclusion": "联合国改革不是把一个软弱政府改造成强大政府，而是在会员国不愿交出最终主权的条件下，重新平衡代表性、行动能力与问责。",
+      "coreExample": "把假想改革包拆成三项：增加安理会席位需要修改宪章，否决权自我克制可由政治承诺推动，安理会说明理由则可通过工作方法与大会监督逐步改进。",
+      "conclusion": "联合国改革不是一扇只能整体打开的门，而是一组权限不同的入口：修宪改变权力结构，政府间决定改变规则，管理改革改变执行；三者需要不同联盟。",
+      "nextQuestion": "既然改革路径各不相同，我们怎样判断一项提案是在解决真实制度缺口，还是只把成本转移给别的国家、机关或公众？",
+      "nextPage": "pathways.html",
+      "newTerms": [
+        { "term": "否决权", "definition": "安全理事会常任理事国以反对票阻止非程序性决议通过的特殊表决权。" },
+        { "term": "宪章修正", "definition": "依照《联合国宪章》规定的高门槛程序，正式改变组织基本权力与机关结构。" },
+        { "term": "政府间谈判", "definition": "会员国代表在联合国框架内就制度安排直接协商，由国家而非秘书处作出政治决定的过程。" },
+        { "term": "任务授权", "definition": "会员国通过决议规定联合国机关、行动或实体要完成的目标、权限、期限与报告义务。" },
+        { "term": "摊款", "definition": "会员国按照大会核定的分摊办法承担的联合国经费，而不是自愿选择项目后才提供的捐款。" }
+      ]
+    },
+    {
+      "file": "pathways.html",
+      "title": "把改革口号变成可判断的方案",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["architecture.html"],
+      "readerQuestion": "既然改革路径各不相同，我们怎样判断一项提案是在解决真实制度缺口，还是只把成本转移给别的国家、机关或公众？",
+      "readerStateBefore": "读者能够区分宪章修正、会员国决定与秘书处管理三条改革路径，并解释否决权、修宪门槛和资源控制如何塑造可行空间。",
+      "readerStateAfter": "读者能够用问题、权限、联盟、取舍与复核证据评估安理会、代表性、任务和执行改革，并识别改革宣传中的偷换概念。",
+      "priorConclusion": "联合国改革不是一扇只能整体打开的门，而是一组权限不同的入口：修宪改变权力结构，政府间决定改变规则，管理改革改变执行；三者需要不同联盟。",
+      "coreExample": "对假想改革包逐项询问：新增席位改善了谁的代表性，否决权限制靠法律还是承诺，说明理由由谁核验，扩大成员后怎样避免决策更慢。",
+      "conclusion": "可信的联合国改革方案必须同时说清要修复的问题、合法权限、支持联盟、代价分配和复核办法；只承诺更强大或更民主，仍不足以证明它可行或公正。",
+      "nextQuestion": "当下一项改革主张进入新闻与外交争论时，你能否先确认它改变的是权力、程序还是执行，再判断谁获得代表、谁承担成本、谁能要求说明？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "代表性", "definition": "机关组成与发言机会在多大程度上反映会员国、地区与受影响人群的多样性。" },
+        { "term": "问责", "definition": "掌握权力者必须说明决定依据、接受审查，并在违反规则或造成不当后果时承担责任。" },
+        { "term": "工作方法改革", "definition": "不必修改宪章，通过会议公开、议程设置、说明理由、报告和参与规则改善机关运作。" },
+        { "term": "任务审查", "definition": "定期检查一项联合国任务是否仍有明确目标、适当资源、重复安排和可核验结果。" },
+        { "term": "替代性解释", "definition": "除提案支持者的说法之外，也能解释同一问题或结果的其他原因，用来检验因果判断是否过早。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "权威来源与阅读边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
