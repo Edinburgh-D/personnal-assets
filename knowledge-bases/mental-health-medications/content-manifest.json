@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "心理健康与精神科药物",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-07",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "药物不是情绪开关",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者容易把精神科药物想成改变性格、强行制造快乐或必须终身服用的单一工具，不清楚它与诊断、心理治疗和生活支持的关系。",
+      "readerStateAfter": "读者能够把精神科药物放进完整治疗计划，区分药名、症状目标与诊断，并用获益、负担和个人偏好理解是否值得尝试。",
+      "readerQuestion": "精神科药物在心理健康照护中究竟做什么，又为什么不能只凭药名判断一个人的诊断、严重程度或未来？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "周宁连续数周睡眠变差、情绪低落并难以完成工作；评估后，医生与她讨论心理治疗、现实支持和一次有明确目标的抗抑郁药试用，而不是把一张处方当成全部治疗。",
+      "newTerms": [
+        {
+          "term": "精神科药物",
+          "definition": "用于缓解精神或心理症状、降低复发风险或支持功能恢复的一组处方药物，具体用途必须结合个人评估。"
+        },
+        {
+          "term": "靶症状",
+          "definition": "治疗计划中特别希望改变、并能在复诊时追踪的具体症状或功能困难。"
+        },
+        {
+          "term": "超说明书使用",
+          "definition": "医生基于证据和临床判断，把已获批药物用于说明书未列出的疾病、年龄或用法；它不等于违规，也不等于已经充分证实。"
+        },
+        {
+          "term": "获益—风险平衡",
+          "definition": "把可能改善的症状与功能，同副作用、相互作用、监测负担和不治疗风险放在一起比较。"
+        }
+      ],
+      "conclusion": "精神科药物是针对具体症状和风险、嵌入整体照护的工具；药名不能代替诊断，处方也不能代替对功能、偏好、环境和其他治疗选择的持续评估。",
+      "nextQuestion": "既然药物只是整体照护中的一个工具，为什么有些作用很快出现，有些改善却要等待数周，而且同一种药会让不同的人得到不同结果？",
+      "nextPage": "how-medications-work.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "how-medications-work.html",
+      "title": "变化发生在一条时间线上",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把精神科药物放进完整治疗计划，区分药名、症状目标与诊断，并用获益、负担和个人偏好理解是否值得尝试。",
+      "readerStateAfter": "读者能够用时间、剂量、个体差异和多层作用解释药物反应，并理解复诊为何要同时记录症状、功能、副作用和安全信号。",
+      "readerQuestion": "既然药物只是整体照护中的一个工具，为什么有些作用很快出现，有些改善却要等待数周，而且同一种药会让不同的人得到不同结果？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "精神科药物是针对具体症状和风险、嵌入整体照护的工具；药名不能代替诊断，处方也不能代替对功能、偏好、环境和其他治疗选择的持续评估。",
+      "coreExample": "周宁开始用药后先出现轻微恶心和困倦，两周时睡眠稍稳但兴趣仍低；她用同一组靶症状、日常功能和副作用记录，与医生共同判断是否继续观察或调整。",
+      "newTerms": [
+        {
+          "term": "神经递质",
+          "definition": "神经细胞之间传递信号所使用的化学物质；药物可改变这些信号，但症状不能简单等同于某一种物质太多或太少。"
+        },
+        {
+          "term": "受体",
+          "definition": "细胞表面或内部能够识别特定信号并改变细胞活动的结构，也是许多药物发生作用的位置。"
+        },
+        {
+          "term": "半衰期",
+          "definition": "体内药物浓度下降到约一半所需的时间，它会影响服药间隔、漏服后的波动和停药节奏。"
+        },
+        {
+          "term": "治疗试验",
+          "definition": "在明确目标、观察期限和监测方案下尝试一种治疗，再依据实际反应决定继续、调整或停止。"
+        },
+        {
+          "term": "治疗依从性",
+          "definition": "实际用药与共同商定方案的一致程度；更准确的讨论会同时追问难以执行的原因，而不是把偏差归咎于意志。"
+        }
+      ],
+      "conclusion": "精神科药物的效果不是服下后立即出现的开关，而是一条由药物进入体内、神经信号变化、适应过程和现实生活共同塑造的时间线；判断需要预先约定目标并在复诊中比较趋势。",
+      "nextQuestion": "既然用药判断依赖连续观察，开始、加减、更换或停用时，怎样把获益、风险、撤药反应和复发可能变成可共同决定的计划？",
+      "nextPage": "safe-use-and-review.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "safe-use-and-review.html",
+      "title": "把处方变成可复核的计划",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用时间、剂量、个体差异和多层作用解释药物反应，并理解复诊为何要同时记录症状、功能、副作用和安全信号。",
+      "readerStateAfter": "读者能够在开始、复诊和考虑停药时提出关键问题，识别需要紧急求助的变化，并把治疗选择组织成可记录、可调整和可退出的共同计划。",
+      "readerQuestion": "既然用药判断依赖连续观察，开始、加减、更换或停用时，怎样把获益、风险、撤药反应和复发可能变成可共同决定的计划？",
+      "dependsOn": [
+        "how-medications-work.html"
+      ],
+      "priorConclusion": "精神科药物的效果不是服下后立即出现的开关，而是一条由药物进入体内、神经信号变化、适应过程和现实生活共同塑造的时间线；判断需要预先约定目标并在复诊中比较趋势。",
+      "coreExample": "周宁把用药目标、每天实际服法、睡眠与工作变化、副作用、其他药物和下次复诊条件写在一页记录中；当她想停药时，医生据此区分撤药反应、症状复发和新的健康问题。",
+      "newTerms": [
+        {
+          "term": "共同决策",
+          "definition": "患者与专业人员把最佳可得证据、临床判断和患者的目标偏好放在一起选择治疗。"
+        },
+        {
+          "term": "用药核对",
+          "definition": "把处方药、非处方药、保健品、草药及实际服法整理成准确清单，以发现重复、遗漏或相互作用。"
+        },
+        {
+          "term": "撤药症状",
+          "definition": "减量、漏服或停药后出现的身心反应，时间进程和表现可能与原病复发相似，也可能不同。"
+        },
+        {
+          "term": "复发",
+          "definition": "原有疾病在好转或稳定后再次出现达到临床意义的症状与功能受损。"
+        },
+        {
+          "term": "安全计划",
+          "definition": "预先写明个人警讯、可使用的应对方式、可联系的人与紧急服务路径的具体安排。"
+        }
+      ],
+      "conclusion": "安全用药不是无条件坚持或突然放弃，而是把理由、目标、可接受负担、监测、复诊节点和减停路径写成可复核计划；出现急性危险信号时，应优先获得及时的专业与紧急支持。",
+      "nextQuestion": "当新的证据、生活处境或个人目标出现时，哪些变化足以重新评估当前药物，哪些安全底线仍不应改变？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

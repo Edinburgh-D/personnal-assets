@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06",
+  "updatedAt": "2026-10-07",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3858,6 +3858,13 @@
       "generatedAt": "2026-10-06",
       "slug": "global-governance-un-reform",
       "entry": "knowledge-bases/global-governance-un-reform/main.html"
+    },
+    {
+      "name": "心理健康与精神科药物",
+      "domain": "医学/健康(西医)",
+      "generatedAt": "2026-10-07",
+      "slug": "mental-health-medications",
+      "entry": "knowledge-bases/mental-health-medications/main.html"
     }
   ],
   "skipped": []
