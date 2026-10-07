@@ -1,0 +1,104 @@
+/* Hallmark · macrostructure: Map / Diagram · genre: atmospheric · theme: Terminal · tone: technical calm · anchor hue: phosphor green · enrichment: Tier-A CSS task map · nav: N9 · footer: Ft2 · audience: general · use: continuous public learning
+ * Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5 · contrast: pass (40–41) · slop: pass (1–58) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · icons: pass (30) · mobile: pass (34, 49–57)
+ */
+:root {
+  color-scheme: dark;
+  --color-paper: oklch(14% 0.014 155);
+  --color-paper-raised: oklch(18% 0.016 155);
+  --color-paper-soft: oklch(21% 0.015 155);
+  --color-ink: oklch(94% 0.012 145);
+  --color-ink-soft: oklch(82% 0.015 145);
+  --color-muted: oklch(68% 0.014 150);
+  --color-rule: oklch(33% 0.025 155);
+  --color-rule-strong: oklch(46% 0.045 150);
+  --color-accent: oklch(82% 0.19 145);
+  --color-accent-soft: oklch(23% 0.055 145);
+  --color-accent-ink: oklch(15% 0.022 150);
+  --color-focus: oklch(88% 0.2 145);
+  --color-shadow: oklch(8% 0.012 155 / 0.45);
+  --color-overlay: oklch(11% 0.012 155 / 0.82);
+
+  --font-display: "Tomorrow", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: "IBM Plex Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "JetBrains Mono", "SFMono-Regular", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.75rem, 6vw + 0.5rem, 5.25rem);
+  --text-display-small: clamp(2.25rem, 4vw + 0.5rem, 4rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 180ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-strong: 2px;
+  --rule-offset: 0.125rem;
+  --radius-tight: 0.25rem;
+  --radius-panel: 0.5rem;
+  --shadow-panel: 0 var(--space-xs) var(--space-xl) var(--color-shadow);
+  --page-max: 74rem;
+  --prose-max: 67ch;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-paper: oklch(97% 0.012 145);
+  --color-paper-raised: oklch(99% 0.008 145);
+  --color-paper-soft: oklch(93% 0.02 145);
+  --color-ink: oklch(20% 0.025 155);
+  --color-ink-soft: oklch(31% 0.022 155);
+  --color-muted: oklch(46% 0.018 155);
+  --color-rule: oklch(78% 0.035 150);
+  --color-rule-strong: oklch(59% 0.07 148);
+  --color-accent: oklch(48% 0.16 145);
+  --color-accent-soft: oklch(91% 0.06 145);
+  --color-accent-ink: oklch(98% 0.008 145);
+  --color-focus: oklch(42% 0.17 145);
+  --color-shadow: oklch(35% 0.025 155 / 0.13);
+  --color-overlay: oklch(95% 0.012 145 / 0.9);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --color-paper: oklch(97% 0.012 145);
+    --color-paper-raised: oklch(99% 0.008 145);
+    --color-paper-soft: oklch(93% 0.02 145);
+    --color-ink: oklch(20% 0.025 155);
+    --color-ink-soft: oklch(31% 0.022 155);
+    --color-muted: oklch(46% 0.018 155);
+    --color-rule: oklch(78% 0.035 150);
+    --color-rule-strong: oklch(59% 0.07 148);
+    --color-accent: oklch(48% 0.16 145);
+    --color-accent-soft: oklch(91% 0.06 145);
+    --color-accent-ink: oklch(98% 0.008 145);
+    --color-focus: oklch(42% 0.17 145);
+    --color-shadow: oklch(35% 0.025 155 / 0.13);
+    --color-overlay: oklch(95% 0.012 145 / 0.9);
+  }
+}

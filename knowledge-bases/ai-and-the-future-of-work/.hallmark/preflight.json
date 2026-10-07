@@ -1,0 +1,16 @@
+{
+  "scannedAt": "2026-10-07T22:00:00+08:00",
+  "scope": "knowledge-bases/ai-and-the-future-of-work",
+  "framework": "vanilla-html",
+  "preserved": [
+    "repository publishing structure",
+    "main.html entry convention",
+    "data-site-home navigation requirement"
+  ],
+  "introduced": [
+    "local OKLCH token system",
+    "Map / Diagram macrostructure",
+    "static Terminal theme",
+    "responsive and dark-mode controls"
+  ]
+}

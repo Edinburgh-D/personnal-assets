@@ -3865,6 +3865,13 @@
       "generatedAt": "2026-10-07",
       "slug": "mental-health-medications",
       "entry": "knowledge-bases/mental-health-medications/main.html"
+    },
+    {
+      "name": "AI会取代你的工作吗",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-07",
+      "slug": "ai-and-the-future-of-work",
+      "entry": "knowledge-bases/ai-and-the-future-of-work/main.html"
     }
   ],
   "skipped": []

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "AI会取代你的工作吗",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-07",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先别问职业名",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把AI影响工作理解成一场职业会不会整体消失的二选一预测，容易被醒目的替代比例或个别案例推向恐慌或轻视。",
+      "readerStateAfter": "读者能够把一份工作看成不同任务、责任、关系和工作条件的组合，并区分技术暴露、任务变化与岗位消失。",
+      "readerQuestion": "当AI能写文案、编代码和分析表格时，“工作被取代”究竟意味着什么，为什么不能只凭职业名称直接回答？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "电商运营专员林晨的一周包括整理销售数据、起草商品文案、与设计和仓库协调、判断异常原因并对活动结果负责；AI对这些环节的作用并不相同。",
+      "newTerms": [
+        {
+          "term": "任务",
+          "definition": "工作中可以描述、观察和交付的一段具体活动，例如整理周报或确认库存异常。"
+        },
+        {
+          "term": "职业暴露",
+          "definition": "一个职业中的任务在多大程度上可能受到某项技术影响；它描述接触面，不等于失业概率。"
+        },
+        {
+          "term": "自动化",
+          "definition": "技术接手原本由人完成的某个活动或活动组合，并减少该部分所需的人力投入。"
+        },
+        {
+          "term": "增强",
+          "definition": "技术帮助人更快或更好地完成任务，但目标、判断或责任仍由人承担。"
+        }
+      ],
+      "conclusion": "AI通常先改变一份工作中的任务，而不是按职业名称整齐地消灭岗位；职业暴露只说明技术可能介入的范围，最终结果取决于剩余任务如何重新组合以及组织怎样使用节省下来的能力。",
+      "nextQuestion": "既然AI先触及任务而不是直接删除职业，一项技术能力要经过哪些环节，才会真正变成招聘减少、岗位重组、工资变化或新的工作需求？",
+      "nextPage": "from-capability-to-jobs.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62
+    },
+    {
+      "file": "from-capability-to-jobs.html",
+      "title": "从能力到岗位，中间隔着一家公司",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把一份工作看成不同任务、责任、关系和工作条件的组合，并区分技术暴露、任务变化与岗位消失。",
+      "readerStateAfter": "读者能够沿技术能力、工作流程、采用成本、需求反应和制度选择解释AI影响，并理解生产率提高为何既可能减少人手，也可能扩大产出或改变岗位结构。",
+      "readerQuestion": "既然AI先触及任务而不是直接删除职业，一项技术能力要经过哪些环节，才会真正变成招聘减少、岗位重组、工资变化或新的工作需求？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "AI通常先改变一份工作中的任务，而不是按职业名称整齐地消灭岗位；职业暴露只说明技术可能介入的范围，最终结果取决于剩余任务如何重新组合以及组织怎样使用节省下来的能力。",
+      "coreExample": "林晨所在公司把AI接入周报和商品文案后，还要决定数据权限、复核责任、与设计仓库的接口、绩效目标和新增产能用途；同一种工具可以形成裁员、扩张或岗位升级三种不同结果。",
+      "newTerms": [
+        {
+          "term": "生产率",
+          "definition": "在一定时间和资源下能够完成多少有价值的产出，而不只是操作速度变快。"
+        },
+        {
+          "term": "互补",
+          "definition": "一种能力变强后，另一种与它配合的能力变得更有价值，例如生成更快使核验和取舍更重要。"
+        },
+        {
+          "term": "技术扩散",
+          "definition": "一项技术从可演示的能力变成被不同组织稳定采用的过程，通常受到成本、数据、培训和制度约束。"
+        },
+        {
+          "term": "岗位重组",
+          "definition": "工作仍然存在，但任务比例、协作方式、绩效标准或进入门槛发生变化。"
+        }
+      ],
+      "conclusion": "从模型能做什么到劳动力市场发生什么，至少隔着流程可改造性、采用成本、需求反应和制度选择；生产率提升不会自动等于岗位减少，但会重新分配任务、议价能力、入门机会和错误责任。",
+      "nextQuestion": "当宏观预测不能直接告诉个人答案时，怎样判断自己工作中哪些部分容易被压缩、哪些会因AI更重要，以及应该把学习和职业选择放在哪里？",
+      "nextPage": "map-your-work.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62
+    },
+    {
+      "file": "map-your-work.html",
+      "title": "把焦虑改写成一张工作地图",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿技术能力、工作流程、采用成本、需求反应和制度选择解释AI影响，并理解生产率提高为何既可能减少人手，也可能扩大产出或改变岗位结构。",
+      "readerStateAfter": "读者能够用输入是否清晰、结果能否验证、错误后果、情境与关系依赖、需求变化等条件审视自己的任务组合，并选择比追逐单一工具更稳健的行动方向。",
+      "readerQuestion": "当宏观预测不能直接告诉个人答案时，怎样判断自己工作中哪些部分容易被压缩、哪些会因AI更重要，以及应该把学习和职业选择放在哪里？",
+      "dependsOn": [
+        "from-capability-to-jobs.html"
+      ],
+      "priorConclusion": "从模型能做什么到劳动力市场发生什么，至少隔着流程可改造性、采用成本、需求反应和制度选择；生产率提升不会自动等于岗位减少，但会重新分配任务、议价能力、入门机会和错误责任。",
+      "coreExample": "林晨不再把“电商运营会不会消失”当成唯一问题，而是把工作拆成可直接生成、需要核验、依赖现场协调和承担结果责任的活动，再观察公司把效率用于缩编还是扩张。",
+      "newTerms": [
+        {
+          "term": "验证成本",
+          "definition": "确认AI输出是否正确、完整并适合当前情境所需要的时间、知识和责任投入。"
+        },
+        {
+          "term": "隐性知识",
+          "definition": "难以完整写成规则、往往来自经验和关系的判断，例如知道何时应追问、让步或升级处理。"
+        },
+        {
+          "term": "责任边界",
+          "definition": "当结果出错或带来损失时，谁有权决定、谁必须解释并由谁承担后果。"
+        },
+        {
+          "term": "可迁移能力",
+          "definition": "能够跨工具、公司或行业继续发挥作用的能力，例如问题定义、证据核验和跨角色协作。"
+        }
+      ],
+      "conclusion": "面对AI，最稳健的个人策略不是押注某个职业永远安全，也不是只学习一个热门工具，而是持续识别可被标准化的任务、掌握验证与责任、理解真实业务情境，并让自己能够把更便宜的产出转化为更可靠的结果。",
+      "nextQuestion": "随着模型能力、组织规则和市场需求继续变化，哪些新的证据会让你重新绘制自己的工作地图？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.62
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
