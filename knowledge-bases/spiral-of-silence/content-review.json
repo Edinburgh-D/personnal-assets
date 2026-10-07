@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-08T16:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当许多人私下保留意见却在公共场合沉默时，少数声音为什么会显得像多数？",
+      "readerStateChange": "读前容易把公开声量当作真实人数；读后能够把私人意见、环境感知和表达行为分开，并解释关系风险怎样让意见退出可见空间。",
+      "twoSentenceSummary": "本页借澄江市的政策争论说明，公开意见是经过表达成本筛选的结果，不是私人态度的透明总和。它进一步区分沉默、从众、审查与态度改变，建立可见多数可能偏离人数多数的直觉模型。",
+      "continuityEvidence": "结尾把个人的场合判断与可见性偏差连接起来，并明确留下“个人选择如何汇成自我强化过程”这一机制问题，由 mechanism.html 继续展开。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "这种个人层面的表达选择，怎样汇成一个会自我强化的公共过程？",
+      "readerStateChange": "读前只能解释一个人为什么少说；读后能够沿线索、判断、成本、表达和反馈五个环节重建集体循环，并指出链条可能在哪些条件下断开。",
+      "twoSentenceSummary": "本页追踪澄江市讨论从群聊、媒体到议事会的扩散，说明表达结果如何变成下一轮环境线索。它把媒体分配、平台指标、群体边界、个人确信和研究方法放入同一机制图，并用反例限制理论外推。",
+      "continuityEvidence": "页面承接开篇对三层结构的区分，把它推进为五环反馈链；结尾强调链条并非必然，因而自然要求下一页建立证据标准并排除其他沉默原因。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然机制并非普遍定律，我们怎样判断现实案例中是否真的出现了沉默螺旋，而不是礼貌、冷漠、审查或抽样错觉？",
+      "readerStateChange": "读前知道反馈链受条件调节；读后能够按私人意见、气候感知、制裁预期和表达行为分层取证，并以时间顺序和替代解释控制结论强度。",
+      "twoSentenceSummary": "本页把沉默螺旋从解释框架变成可检验判断，说明仅有热度差异或安静现场都不足以证明循环。它进一步提出匿名反馈、独立表达、异议保护和透明呈现等改进，同时保留事实核查与权利边界。",
+      "continuityEvidence": "前页列出的调节条件在此被转化为参考群体、确信程度、信息接触和表达成本四项证据；结尾把整条路径迁移到读者面对热搜、评论区和饭桌沉默时的判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分原始理论、元分析、测量研究、反例和平台研究，并知道正文中的虚构案例不构成经验事实。",
+      "twoSentenceSummary": "来源页列出经典论文、两项元分析、自我审查测量、态度确定性、在线反例、皮尤调查与平台特征研究。每项来源说明它在正文中支持什么，也明确相关证据、单一议题调查与平台研究的外推边界。",
+      "continuityEvidence": "该页从判断页的证据分层继续，为核心主张提供可核对链接，并通过章节导航返回判断页与开篇，不承担叙事链中的下一步推论。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

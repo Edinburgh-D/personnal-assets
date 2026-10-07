@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-08",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3872,6 +3872,13 @@
       "generatedAt": "2026-10-07",
       "slug": "ai-and-the-future-of-work",
       "entry": "knowledge-bases/ai-and-the-future-of-work/main.html"
+    },
+    {
+      "name": "沉默的螺旋",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-08",
+      "slug": "spiral-of-silence",
+      "entry": "knowledge-bases/spiral-of-silence/main.html"
     }
   ],
   "skipped": []

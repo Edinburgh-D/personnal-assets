@@ -1,0 +1,80 @@
+/* Hallmark · token set: Atelier social parchment · anchor hue: oxblood */
+:root {
+  --color-paper: oklch(96.5% 0.014 78);
+  --color-paper-raised: oklch(98.2% 0.009 78);
+  --color-paper-deep: oklch(91.5% 0.023 76);
+  --color-ink: oklch(20% 0.018 42);
+  --color-ink-soft: oklch(33% 0.022 40);
+  --color-muted: oklch(45% 0.02 45);
+  --color-rule: oklch(76% 0.025 72);
+  --color-rule-strong: oklch(56% 0.038 55);
+  --color-accent: oklch(42% 0.13 25);
+  --color-accent-hover: oklch(34% 0.12 25);
+  --color-focus: oklch(52% 0.17 25);
+  --color-selection: oklch(89% 0.055 62);
+  --color-veil: oklch(89% 0.018 72);
+  --color-shadow: oklch(20% 0.018 42 / 0.1);
+  --color-transparent: oklch(96.5% 0.014 78 / 0);
+
+  --font-display: "Noto Serif SC", "Source Serif 4", serif;
+  --font-body: "Noto Sans SC", "IBM Plex Sans", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.75rem, 7vw + 0.5rem, 5.25rem);
+  --text-display: clamp(3.5rem, 10vw + 0.25rem, 7rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-strong: 2px;
+  --radius-small: 0.25rem;
+  --radius-medium: 0.75rem;
+  --measure: 68ch;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --page-max: 86rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(15% 0.016 42);
+  --color-paper-raised: oklch(19% 0.019 42);
+  --color-paper-deep: oklch(23% 0.021 42);
+  --color-ink: oklch(94% 0.014 78);
+  --color-ink-soft: oklch(82% 0.019 75);
+  --color-muted: oklch(72% 0.02 70);
+  --color-rule: oklch(35% 0.025 45);
+  --color-rule-strong: oklch(51% 0.042 38);
+  --color-accent: oklch(70% 0.12 28);
+  --color-accent-hover: oklch(79% 0.095 30);
+  --color-focus: oklch(80% 0.13 32);
+  --color-selection: oklch(31% 0.06 30);
+  --color-veil: oklch(22% 0.019 42);
+  --color-shadow: oklch(7% 0.012 42 / 0.44);
+  --color-transparent: oklch(15% 0.016 42 / 0);
+}

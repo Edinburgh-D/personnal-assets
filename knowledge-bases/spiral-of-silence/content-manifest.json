@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "沉默的螺旋",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-08",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "看不见的多数",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": [],
+      "readerStateBefore": "读者容易把公开场合最响亮、最常见的声音当成真实多数，也容易把沉默理解成赞同或没有意见。",
+      "readerStateAfter": "读者能够区分私人意见、可见表达与感知的意见环境，并用孤立风险解释一个人为何在不同场合选择开口或沉默。",
+      "readerQuestion": "当许多人私下保留意见却在公共场合沉默时，少数声音为什么会显得像多数？",
+      "priorConclusion": "",
+      "coreExample": "虚构城市澄江市讨论是否限制夜间广场活动；同一位居民林岚在家庭群、同事午餐和匿名论坛面对不同可见意见与关系风险。",
+      "newTerms": [
+        { "term": "沉默的螺旋", "definition": "人们因感到自己的立场缺少支持而减少公开表达，进而让该立场显得更弱并继续抑制表达的循环过程。" },
+        { "term": "意见气候", "definition": "一个人对周围哪些立场占优势、正在上升或具有公开正当性的总体感知。" },
+        { "term": "孤立恐惧", "definition": "担心表达某种立场会带来排斥、嘲讽、关系损失或身份受损的社会性顾虑。" },
+        { "term": "准统计感官", "definition": "人们通过谈话、媒体和环境线索粗略估计意见分布与变化方向的能力；它会工作，但并不保证准确。" }
+      ],
+      "conclusion": "沉默的螺旋描述的不是意见自动改变，而是人们依据可见的意见气候评估孤立风险，选择表达或保留，从而让可见多数与真实分布进一步偏离。",
+      "nextQuestion": "这种个人层面的表达选择，怎样汇成一个会自我强化的公共过程？",
+      "nextPage": "mechanism.html"
+    },
+    {
+      "file": "mechanism.html",
+      "title": "声音怎样推着声音走",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": ["main.html"],
+      "readerStateBefore": "读者能够区分私人意见、可见表达与感知的意见环境，并用孤立风险解释一个人为何在不同场合选择开口或沉默。",
+      "readerStateAfter": "读者能够沿可见线索、风险判断、表达选择与反馈更新重建螺旋，并说明媒体、群体和个人条件怎样加强或打断它。",
+      "readerQuestion": "这种个人层面的表达选择，怎样汇成一个会自我强化的公共过程？",
+      "priorConclusion": "沉默的螺旋描述的不是意见自动改变，而是人们依据可见的意见气候评估孤立风险，选择表达或保留，从而让可见多数与真实分布进一步偏离。",
+      "coreExample": "澄江市的讨论从一次业主群争执扩散到本地短视频和议事会；支持与反对者得到不同可见度，林岚据此不断调整发言方式。",
+      "newTerms": [
+        { "term": "能见度偏差", "definition": "容易表达、获得推荐或被媒体呈现的意见被过度看见，使公开画面偏离真实意见分布。" },
+        { "term": "多数无知", "definition": "群体成员私下并不认同某种规范，却因误以为多数人认同而在公开场合配合或保持沉默。" },
+        { "term": "自我审查", "definition": "个人在外部禁令尚未直接发生时，主动删除、弱化或推迟本来想表达的观点。" },
+        { "term": "核心分子", "definition": "即使感到自己处于少数，仍因高度确信、身份投入或道德承诺而持续公开表达的人。" }
+      ],
+      "conclusion": "螺旋之所以能够自我强化，是因为表达决定会改变下一轮可见线索，但这条链受媒体呈现、群体边界、议题重要性与个人确信共同调节，并非每次都闭合。",
+      "nextQuestion": "既然机制并非普遍定律，我们怎样判断现实案例中是否真的出现了沉默螺旋，而不是礼貌、冷漠、审查或抽样错觉？",
+      "nextPage": "judgment.html"
+    },
+    {
+      "file": "judgment.html",
+      "title": "别把安静当作同意",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": ["mechanism.html"],
+      "readerStateBefore": "读者能够沿可见线索、风险判断、表达选择与反馈更新重建螺旋，并说明媒体、群体和个人条件怎样加强或打断它。",
+      "readerStateAfter": "读者能够把私人意见、气候感知、制裁预期和表达行为分开取证，比较替代解释，并评估降低沉默的制度与交往条件。",
+      "readerQuestion": "既然机制并非普遍定律，我们怎样判断现实案例中是否真的出现了沉默螺旋，而不是礼貌、冷漠、审查或抽样错觉？",
+      "priorConclusion": "螺旋之所以能够自我强化，是因为表达决定会改变下一轮可见线索，但这条链受媒体呈现、群体边界、议题重要性与个人确信共同调节，并非每次都闭合。",
+      "coreExample": "澄江市表决前出现一片安静；通过匿名调查、不同场合的表达记录和制裁线索，检验这份安静究竟来自风险、无所谓、礼貌规范还是直接压制。",
+      "newTerms": [
+        { "term": "参考群体", "definition": "个人用来判断自己是否会被接纳、赞同或惩罚的具体人群，如家人、同事、邻居或网络社群。" },
+        { "term": "态度确定性", "definition": "一个人确信自身判断正确、稳定并值得坚持的程度，它会影响少数立场能否公开表达。" },
+        { "term": "选择性暴露", "definition": "人们更常接触符合既有立场或来自熟悉群体的信息，从而形成局部而偏斜的意见图景。" },
+        { "term": "表达成本", "definition": "公开意见可能带来的关系、身份、职业、时间与安全代价，以及个人主观上对这些代价的预期。" }
+      ],
+      "conclusion": "判断沉默螺旋，要分别核对私人意见、感知的意见气候、预期制裁与实际表达，并比较替代解释；改善公共讨论的关键，是降低表达惩罚并让沉默意见获得可信而安全的可见性。",
+      "nextQuestion": "当你下一次把热搜、评论区或饭桌上的安静当成“大家都这么想”时，能否先追问谁没有出现、为何没有出现？",
+      "nextPage": null
+    },
+    {
+      "file": "sources.html",
+      "title": "研究来源与概念边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
