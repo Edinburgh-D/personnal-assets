@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-09",
+  "framework": "vanilla-html",
+  "fontStack": "new directory; Noto Serif SC, Noto Sans SC, IBM Plex Mono selected",
+  "palette": "new directory; OKLCH Newsprint tokens selected",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["static multi-page repository conventions", "independent knowledge-base assets", "overview script integration"]
+}

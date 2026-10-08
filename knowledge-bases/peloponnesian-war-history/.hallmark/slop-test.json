@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-09T16:48:00+08:00",
+  "spec": "Hallmark 58-gate slop test",
+  "result": "pass",
+  "gatesPassed": 58,
+  "gatesFailed": 0,
+  "evidence": {
+    "macrostructure": "Long Document",
+    "genre": "editorial",
+    "theme": "Newsprint",
+    "navigation": "N6 Newspaper masthead",
+    "footer": "Ft1 Mast-headed",
+    "outlierTypefaceSlots": ["issue-line", "year"],
+    "motion": "none; reduced-motion rule present",
+    "responsiveWidthsReviewed": [320, 375, 414, 768, 1280],
+    "forbiddenVisualPatternMatches": 0,
+    "inlineMediaMatches": 0,
+    "minimumMeasuredContrast": "5.80:1",
+    "keyboardFocus": "pass",
+    "darkMode": "pass",
+    "overflowAndWrapping": "pass"
+  }
+}

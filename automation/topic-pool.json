@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08",
+  "updatedAt": "2026-10-09",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3893,6 +3893,13 @@
       "generatedAt": "2026-10-08",
       "slug": "korean-war-history",
       "entry": "knowledge-bases/korean-war-history/main.html"
+    },
+    {
+      "name": "伯罗奔尼撒战争史",
+      "domain": "历史/军事",
+      "generatedAt": "2026-10-09",
+      "slug": "peloponnesian-war-history",
+      "entry": "knowledge-bases/peloponnesian-war-history/main.html"
     }
   ],
   "skipped": []
