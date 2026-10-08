@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "中医外科与正骨手法",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-09",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先看伤，再谈手法",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把中医外科、骨伤科、推拿和正骨混成一类服务，面对扭伤、骨折或皮肤疮疡时难以判断入口。",
+      "readerStateAfter": "读者能够区分中医外科与骨伤正骨的主要对象，并知道手法必须建立在病史、检查、影像与风险分流之上。",
+      "readerQuestion": "中医外科与正骨分别处理什么问题，为什么一次看似普通的扭伤不能先从手法开始？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一名成年人下楼踩空后踝部肿痛，朋友建议马上去正骨，而他尚不能确定是扭伤、骨折还是脱位。",
+      "newTerms": [
+        {
+          "term": "中医外科",
+          "definition": "在中医理论与临床体系中处理疮疡、皮肤、肛肠、乳腺及部分周围血管等体表或局部病证的传统专科。"
+        },
+        {
+          "term": "中医骨伤科",
+          "definition": "运用中医骨伤理论并结合现代检查，诊治骨折、脱位、筋伤与退行性运动系统问题的临床专科。"
+        },
+        {
+          "term": "正骨手法",
+          "definition": "由合格专业人员针对明确的骨折、脱位或关节功能问题实施的检查、整复或调整技术，不等同于日常按摩。"
+        },
+        {
+          "term": "筋伤",
+          "definition": "中医骨伤科对肌肉、肌腱、韧带、关节囊等软组织损伤及相关功能障碍的一类概括。"
+        }
+      ],
+      "conclusion": "中医外科与骨伤正骨有各自的对象和技术边界；对急性损伤而言，先识别伤情、排除骨折脱位与神经血管危险，再讨论是否使用手法。",
+      "nextQuestion": "既然正骨不能脱离诊断，专业人员怎样从观察、触摸、活动与影像中形成判断，并把手法放进完整治疗方案？",
+      "nextPage": "examination-and-manual-logic.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "examination-and-manual-logic.html",
+      "title": "手下有分寸，心中有结构",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够区分中医外科与骨伤正骨的主要对象，并知道手法必须建立在病史、检查、影像与风险分流之上。",
+      "readerStateAfter": "读者能够解释检查、整复、固定和功能恢复如何组成一个治疗链，并理解响声、疼痛变化或一次复位感不能单独证明结构已经恢复。",
+      "readerQuestion": "既然正骨不能脱离诊断，专业人员怎样从观察、触摸、活动与影像中形成判断，并把手法放进完整治疗方案？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "中医外科与骨伤正骨有各自的对象和技术边界；对急性损伤而言，先识别伤情、排除骨折脱位与神经血管危险，再讨论是否使用手法。",
+      "coreExample": "继续观察这名踝伤者：医生先询问受伤方向与负重能力，再比较肿胀、压痛、活动、足背感觉和足部血运，必要时安排影像，最后才决定保护、固定、整复或转诊。",
+      "newTerms": [
+        {
+          "term": "手摸心会",
+          "definition": "中医骨伤传统中强调通过规范触诊获取位置、形态、张力与疼痛信息，并结合整体病情理解，而非凭手感下结论。"
+        },
+        {
+          "term": "手法整复",
+          "definition": "在明确损伤类型并具备安全条件后，以手法使移位的骨折端或脱位关节尽量恢复合适位置的医疗操作。"
+        },
+        {
+          "term": "固定",
+          "definition": "在损伤恢复期间限制有害位移、保护组织并允许必要功能活动的治疗环节，可采用夹板、支具、石膏或其他方式。"
+        },
+        {
+          "term": "练功疗法",
+          "definition": "中医骨伤体系中按恢复阶段安排的主动功能锻炼，目标是逐步恢复活动、力量、协调与日常能力。"
+        }
+      ],
+      "conclusion": "正骨的核心不是追求一次响声，而是把可靠检查、适应证选择、适量整复、稳定保护、复查和功能恢复连成可验证的治疗过程。",
+      "nextQuestion": "当手法既可能帮助复位或缓解症状，也可能在误诊和禁忌情况下造成伤害时，普通人怎样判断紧急程度、服务资质与疗效宣传？",
+      "nextPage": "safety-and-choice.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "safety-and-choice.html",
+      "title": "把安全放在手法之前",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释检查、整复、固定和功能恢复如何组成一个治疗链，并理解响声、疼痛变化或一次复位感不能单独证明结构已经恢复。",
+      "readerStateAfter": "读者能够用急症红旗、机构与人员资质、知情同意、复查计划和功能结果筛选服务，并在不适合手法时及时选择急诊或专科评估。",
+      "readerQuestion": "当手法既可能帮助复位或缓解症状，也可能在误诊和禁忌情况下造成伤害时，普通人怎样判断紧急程度、服务资质与疗效宣传？",
+      "dependsOn": [
+        "examination-and-manual-logic.html"
+      ],
+      "priorConclusion": "正骨的核心不是追求一次响声，而是把可靠检查、适应证选择、适量整复、稳定保护、复查和功能恢复连成可验证的治疗过程。",
+      "coreExample": "踝伤者把选择过程变成四道门：先查急症信号，再核对机构和医师，再听清诊断、替代方案与风险，最后用负重、活动、疼痛和复查结果判断恢复。",
+      "newTerms": [
+        {
+          "term": "红旗征象",
+          "definition": "提示可能存在骨折、脱位、感染、神经血管损伤或其他严重问题，需要优先医学评估的异常表现。"
+        },
+        {
+          "term": "神经血管评估",
+          "definition": "检查肢体感觉、运动、脉搏、皮肤颜色与温度等，以判断神经和血液循环是否受到损害。"
+        },
+        {
+          "term": "知情同意",
+          "definition": "患者在了解诊断依据、拟做操作、可能收益、风险和替代方案后，自主决定并可提出问题或拒绝的过程。"
+        },
+        {
+          "term": "共同决策",
+          "definition": "医患把可靠证据、临床判断与患者的目标和偏好放在一起选择方案，并约定复查与调整条件。"
+        }
+      ],
+      "conclusion": "选择中医外科或正骨服务时，安全判断先于流派偏好；可信服务应当能说明诊断、适应证、风险、资质、复查节点和转诊边界，并以功能恢复而非神奇话术检验结果。",
+      "nextQuestion": "未来遇到新的正骨流派、网络教学或疗效宣传时，哪些证据和安全信息足以改变判断，哪些底线仍不能让步？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

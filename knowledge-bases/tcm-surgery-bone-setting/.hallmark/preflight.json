@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-09",
+  "framework": "vanilla-html",
+  "fontStack": "repository CSS variables; page-level Chinese serif and sans pairing",
+  "palette": "repository uses OKLCH tokens; knowledge base uses a moss-and-rice-paper variant",
+  "motion": "motion-cut",
+  "spacing": "4pt token scale",
+  "preserved": ["static multi-page structure", "root overview contract", "no build dependency"]
+}

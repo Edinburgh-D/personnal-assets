@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-09T16:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "中医外科与正骨分别处理什么问题，为什么一次看似普通的扭伤不能先从手法开始？",
+      "readerStateChange": "读前把中医外科、骨伤、推拿与正骨看成一类服务；读后能按体表病证与运动损伤区分入口，并把检查和急症分流放在手法之前。",
+      "twoSentenceSummary": "页面先澄清中医外科、骨伤科、正骨手法与筋伤的范围，再用踝部扭伤说明负重能力和外观不能单独排除骨折。它把传统方法放回诊断、影像、转诊和综合照护中，避免在肯定或否定传统之间做空泛选择。",
+      "continuityEvidence": "末段从专科边界推进到诊室内部的观察、触诊、活动与影像，直接引出下一页如何形成判断和组织治疗链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "examination-and-manual-logic.html",
+      "centralQuestion": "既然正骨不能脱离诊断，专业人员怎样从观察、触摸、活动与影像中形成判断，并把手法放进完整治疗方案？",
+      "readerStateChange": "读前只知道手法前要检查；读后能解释病史、观察、触诊、活动、影像、整复、保护、复查与功能训练怎样前后相接。",
+      "twoSentenceSummary": "页面沿同一踝伤案例展示从受伤机制到影像选择的推理，并说明手感需要被结构证据和随访校准。随后把整复、保护、剂量、复测和主动恢复连成治疗链，区分急性损伤与慢性疼痛中的不同目标。",
+      "continuityEvidence": "结尾明确指出传统经验必须接受现代安全标准，并把读者从技术机制推进到如何识别风险、核验资质和审查宣传。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "safety-and-choice.html",
+      "centralQuestion": "当手法既可能帮助复位或缓解症状，也可能在误诊和禁忌情况下造成伤害时，普通人怎样判断紧急程度、服务资质与疗效宣传？",
+      "readerStateChange": "读前理解治疗链却缺少选择标准；读后能先看急症信号，再核对机构与医师，并用同意、记录、复查和功能目标判断服务。",
+      "twoSentenceSummary": "页面用急症分流表说明哪些情况应优先急诊，并把神经血管检查、机构备案、医师注册、第二意见和转诊能力纳入选择。它还拆解错位宣传、远程照片诊断和见证偏差，最后用可复查的功能目标评价疗效。",
+      "continuityEvidence": "作为叙事末页，它把前页的检查与治疗机制转换成公众可用的选择顺序，并留下如何用证据与安全信息审查新流派的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的机构名称；读后能按中国法规、国家术语标准、创伤指南与手法安全资料回查主张并识别外推边界。",
+      "twoSentenceSummary": "来源页列出中医药法、医师法、诊所备案规则、骨伤术语国标、NICE 创伤指南、WHO 腰痛指南与 NCCIH 安全资料。它另外说明法规、术语标准和临床证据解决不同问题，传统骨伤概念也不能与现代脊柱手法研究直接互换。",
+      "continuityEvidence": "来源条目对应前三页的执业边界、影像判断、神经血管安全和慢性腰痛主张，并为后续复核保留直接链接与访问日期。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V4
+ * Hallmark · genre: editorial · macrostructure: Long Document · theme: Garden · enrichment: none
+ * nav: N9 Edge-aligned minimal · footer: Ft6 Letter close · tone: calm clinical editorial · anchor hue: moss
+ */
+:root {
+  --color-paper: oklch(96.5% 0.018 93);
+  --color-paper-raised: oklch(98% 0.012 93);
+  --color-paper-soft: oklch(92.5% 0.026 99);
+  --color-ink: oklch(22% 0.025 78);
+  --color-ink-soft: oklch(39% 0.027 82);
+  --color-muted: oklch(42% 0.022 86);
+  --color-rule: oklch(78% 0.033 96);
+  --color-accent: oklch(45% 0.105 139);
+  --color-accent-strong: oklch(35% 0.095 139);
+  --color-accent-ink: oklch(98% 0.012 93);
+  --color-caution: oklch(49% 0.11 50);
+  --color-focus: oklch(56% 0.15 139);
+  --color-danger: oklch(44% 0.14 28);
+  --color-shadow: oklch(28% 0.025 80 / 0.09);
+
+  --font-display: "Noto Serif SC", "Songti SC", STSong, serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --font-outlier: "FangSong", "STFangsong", serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.76rem;
+  --text-sm: 0.9rem;
+  --text-base: 1.05rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.56rem;
+  --text-xl: 1.95rem;
+  --text-2xl: 2.44rem;
+  --text-display: clamp(2.65rem, 7vw, 5.2rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-heavy: 2px;
+  --radius-small: 0.35rem;
+  --radius-panel: 0.75rem;
+  --page-gutter: clamp(1rem, 4vw, 3rem);
+  --measure: 65ch;
+  --z-base: 1;
+  --z-sticky: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: oklch(16% 0.018 100);
+    --color-paper-raised: oklch(20% 0.02 100);
+    --color-paper-soft: oklch(23% 0.025 104);
+    --color-ink: oklch(92% 0.018 94);
+    --color-ink-soft: oklch(78% 0.023 94);
+    --color-muted: oklch(69% 0.021 94);
+    --color-rule: oklch(37% 0.032 105);
+    --color-accent: oklch(70% 0.1 139);
+    --color-accent-strong: oklch(81% 0.08 139);
+    --color-accent-ink: oklch(18% 0.018 100);
+    --color-caution: oklch(74% 0.1 62);
+    --color-focus: oklch(76% 0.13 139);
+    --color-danger: oklch(73% 0.12 28);
+    --color-shadow: oklch(6% 0.012 100 / 0.28);
+  }
+}
+
+[data-theme="dark"] {
+  --color-paper: oklch(16% 0.018 100);
+  --color-paper-raised: oklch(20% 0.02 100);
+  --color-paper-soft: oklch(23% 0.025 104);
+  --color-ink: oklch(92% 0.018 94);
+  --color-ink-soft: oklch(78% 0.023 94);
+  --color-muted: oklch(69% 0.021 94);
+  --color-rule: oklch(37% 0.032 105);
+  --color-accent: oklch(70% 0.1 139);
+  --color-accent-strong: oklch(81% 0.08 139);
+  --color-accent-ink: oklch(18% 0.018 100);
+  --color-caution: oklch(74% 0.1 62);
+  --color-focus: oklch(76% 0.13 139);
+  --color-danger: oklch(73% 0.12 28);
+  --color-shadow: oklch(6% 0.012 100 / 0.28);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}

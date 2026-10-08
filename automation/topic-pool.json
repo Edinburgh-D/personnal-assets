@@ -3900,6 +3900,13 @@
       "generatedAt": "2026-10-09",
       "slug": "peloponnesian-war-history",
       "entry": "knowledge-bases/peloponnesian-war-history/main.html"
+    },
+    {
+      "name": "中医外科与正骨手法",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-09",
+      "slug": "tcm-surgery-bone-setting",
+      "entry": "knowledge-bases/tcm-surgery-bone-setting/main.html"
     }
   ],
   "skipped": []
