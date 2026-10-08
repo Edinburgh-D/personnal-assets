@@ -3879,6 +3879,13 @@
       "generatedAt": "2026-10-08",
       "slug": "spiral-of-silence",
       "entry": "knowledge-bases/spiral-of-silence/main.html"
+    },
+    {
+      "name": "供应链牛鞭效应",
+      "domain": "商业/管理",
+      "generatedAt": "2026-10-08",
+      "slug": "supply-chain-bullwhip-effect",
+      "entry": "knowledge-bases/supply-chain-bullwhip-effect/main.html"
     }
   ],
   "skipped": []

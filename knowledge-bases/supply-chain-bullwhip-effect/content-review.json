@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-08T16:18:02+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么终端销售只发生一个小波动，上游工厂却可能经历大起大落？",
+      "readerStateChange": "读前只把缺货、积压与急单视为各企业分别预测失误；读后能区分消费、报单与生产计划，并用延迟反馈解释波动为何向上游放大。",
+      "twoSentenceSummary": "页面从假设的瓶装水补货出发，展示收银台销售、门店补货与工厂计划为何是三种不同信号。随后用鞭梢和反馈回路解释延迟、在途不可见与重复纠偏怎样造成上游震荡。",
+      "continuityEvidence": "结尾把现象收束为局部判断在延迟环境中相互连接，并明确推进到下一页对具体放大规则的拆解。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "这种放大怎样从看似合理的补货决策中一步步产生？",
+      "readerStateChange": "读前只有延迟反馈的直觉；读后能够沿库存与在途回路解释重复纠偏，并区分信号处理、凑批、价格变化和短缺博弈的时间痕迹。",
+      "twoSentenceSummary": "页面先说明预测误差如何经过补货规则转成更大的动作，再逐项解释四类经典成因。瓶装水案例把四类机制串成接力过程，并说明局部效率怎样把成本推向其他环节。",
+      "continuityEvidence": "本页从上一页的延迟直觉进入可识别机制，结尾把四类时间痕迹转成交给下一页验证的诊断线索。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然成因不止一种，企业怎样判断问题来自哪里，并选择不会把风险转嫁到别处的治理方法？",
+      "readerStateChange": "读前能列举四类放大器但还不会选择手段；读后能按数据、节奏、时间与激励定位首个放大节点，并用库存、服务、成本和响应复核治理。",
+      "twoSentenceSummary": "页面把销售、报单、库存、在途、价格与配额放到同一时间轴，说明如何由证据定位主要成因。它随后把信息共享、高频补货、稳定价格和配额规则分别配对，并强调用整体结果而非单一波动比判断成效。",
+      "continuityEvidence": "本页直接使用机制页的四类成因组织诊断与治理，并以生命周期、供应中断和算法变化留下可迁移的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只接触正文中的归纳与案例；读后能够追溯核心定义、四类成因、反馈误判与测量边界，并区分事实、推论和教学类比。",
+      "twoSentenceSummary": "参考页列出原始论文、MIT 管理文章、Sterman 实验、啤酒游戏规则与指标边界材料。页面同时明确瓶装水数字是教学假设，并说明季节性、计划批量与真实跃迁不能被机械归为牛鞭。",
+      "continuityEvidence": "参考页接住判断页对证据边界的要求，并为三页叙事中的定义、机制、实验解释和指标警告提供可追溯出处。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "供应链牛鞭效应",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-08",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一端轻摆，整条链剧烈震荡",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "为什么终端销售只发生一个小波动，上游工厂却可能经历大起大落？",
+      "readerStateBefore": "读者只把缺货、积压和紧急加单看成各家企业分别犯下的预测错误，不知道这些现象可能来自同一个系统结构。",
+      "readerStateAfter": "读者能够区分消费需求与企业订单，识别波动沿供应链向上游放大的基本形态，并用延迟反馈建立直觉解释。",
+      "priorConclusion": "",
+      "coreExample": "一个明确标注为假设的瓶装水案例：门店销量只短暂增加，零售商、分销商与工厂却因补库存和在途延迟逐级放大订单。",
+      "conclusion": "牛鞭效应不是消费需求本身必然剧烈变化，而是各环节把局部订单当作需求信号，并在延迟中各自调整，令订单波动沿供应链向上游逐级放大。",
+      "nextQuestion": "这种放大怎样从看似合理的补货决策中一步步产生？",
+      "nextPage": "mechanism.html",
+      "newTerms": [
+        { "term": "供应链", "definition": "产品从原料、生产、分销到零售和消费者之间流动所连接起来的组织与活动。" },
+        { "term": "牛鞭效应", "definition": "终端需求的小幅波动在订单逐级向上游传递时被放大的现象。" },
+        { "term": "消费需求", "definition": "消费者实际购买或使用产品所形成的需求，而不是企业之间互相提交的订单。" },
+        { "term": "订单", "definition": "下游环节向上游提出的补货请求，它既反映销售，也混入库存目标、预测与风险判断。" },
+        { "term": "提前期", "definition": "从发出补货或生产请求到货物实际可用之间经过的时间。" }
+      ]
+    },
+    {
+      "file": "mechanism.html",
+      "title": "合理动作如何叠成失控波动",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "这种放大怎样从看似合理的补货决策中一步步产生？",
+      "readerStateBefore": "读者能够区分消费需求与企业订单，识别波动沿供应链向上游放大的基本形态，并用延迟反馈建立直觉解释。",
+      "readerStateAfter": "读者能够沿着库存、在途货物和订单的反馈回路解释放大过程，并辨认四类经典成因怎样单独或共同改变订单。",
+      "priorConclusion": "牛鞭效应不是消费需求本身必然剧烈变化，而是各环节把局部订单当作需求信号，并在延迟中各自调整，令订单波动沿供应链向上游逐级放大。",
+      "coreExample": "同一瓶装水案例继续展开：零售商在到货前看不见效果而重复加单，分销商按周凑整车，促销与紧张配给又进一步改变各方报单。",
+      "conclusion": "牛鞭效应通常由延迟反馈与局部决策共同形成，需求信号处理、批量订货、价格波动和短缺博弈会以不同路径把消费变化改写成更剧烈的上游订单。",
+      "nextQuestion": "既然成因不止一种，企业怎样判断问题来自哪里，并选择不会把风险转嫁到别处的治理方法？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "库存位置", "definition": "现有可用库存加在途货物，再减去尚未满足需求后的净库存状态。" },
+        { "term": "需求信号处理", "definition": "企业根据近期订单不断更新预测，并据此调整补货和安全余量的做法。" },
+        { "term": "批量订货", "definition": "为节省下单、生产或运输成本而把多期需求合并成一次较大订单。" },
+        { "term": "价格波动", "definition": "折扣、促销或批发价变化诱发提前购买，使采购节奏偏离实际消耗节奏。" },
+        { "term": "短缺博弈", "definition": "供应紧张时买方为争取配额夸大订单，随后再取消多余部分的策略行为。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "先找放大器，再选择治理杠杆",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["mechanism.html"],
+      "readerQuestion": "既然成因不止一种，企业怎样判断问题来自哪里，并选择不会把风险转嫁到别处的治理方法？",
+      "readerStateBefore": "读者能够沿着库存、在途货物和订单的反馈回路解释放大过程，并辨认四类经典成因怎样单独或共同改变订单。",
+      "readerStateAfter": "读者能够用数据、节奏、激励和响应时间四个视角诊断主要放大器，匹配治理手段，并判断降波动是否真的改善整体成本与服务。",
+      "priorConclusion": "牛鞭效应通常由延迟反馈与局部决策共同形成，需求信号处理、批量订货、价格波动和短缺博弈会以不同路径把消费变化改写成更剧烈的上游订单。",
+      "coreExample": "瓶装水链条不再笼统要求各方预测更准，而是对照销售、订单、库存与在途记录，分别处理信息滞后、整车门槛、促销囤货和紧张期夸大报单。",
+      "conclusion": "治理牛鞭效应要先识别主要放大器，再组合共享真实消费、缩短响应时间、提高补货频率、稳定价格和重设配额规则等手段，并用总成本与服务结果检验成效。",
+      "nextQuestion": "当产品生命周期、供应中断或平台算法改变订货节奏时，原有诊断还需要加入哪些情境变量？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "实销数据", "definition": "终端真正卖给消费者的数量与时间记录，而不是渠道成员之间的补货订单。" },
+        { "term": "供应商管理库存", "definition": "由上游供应商依据约定数据和规则负责监控并补充下游库存的协作方式。" },
+        { "term": "服务水平", "definition": "需求出现时能够及时、完整满足顾客的程度。" },
+        { "term": "波动比", "definition": "用某一环节订单方差与终端需求方差之比描述放大程度的常见指标。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与概念边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
