@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "朝鲜战争全过程",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-08",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一场战争，三层结构",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": [],
+      "readerQuestion": "为什么朝鲜战争不能只理解为1950年6月开始、1953年7月结束的一场半岛内战？",
+      "readerStateBefore": "读者知道朝鲜战争发生在冷战初期，也许听过三八线、仁川登陆或上甘岭，却难以把分裂背景、参战各方和战局阶段连成一条因果链。",
+      "readerStateAfter": "读者能够把战争理解为朝鲜分裂、内战爆发与大国有限介入叠加的过程，并按战线、决策边界和民众处境三条线索追踪全程。",
+      "priorConclusion": "",
+      "coreExample": "沿首尔—三八线—平壤—鸭绿江—板门店这一条南北轴线，观察战线在三年间反复越过同一批城市，最终停在接近战争起点的位置。",
+      "conclusion": "朝鲜战争由半岛分裂引爆，却因美国主导的联合国军、中国人民志愿军和苏联支持先后卷入而国际化；理解全过程要同时追踪战线、决策边界与普通人的处境。",
+      "nextQuestion": "从北方军队越过三八线，到战线逼近鸭绿江再折返，1950年的三次急剧转向为什么会发生？",
+      "nextPage": "war-of-movement.html",
+      "newTerms": [
+        { "term": "三八线", "definition": "二战结束后美苏受降安排形成的北纬38度附近分界，后来成为南北两个政权大致的边界。" },
+        { "term": "冷战", "definition": "以美国和苏联为中心的两大阵营长期竞争、通常避免彼此直接全面开战的国际格局。" },
+        { "term": "代理战争", "definition": "大国支持地区盟友作战、借此竞争但尽量避免彼此直接全面战争的冲突形态。" },
+        { "term": "有限战争", "definition": "交战方主动限制目标、地域或武器使用，以避免冲突升级为无法承受的全面战争。" }
+      ]
+    },
+    {
+      "file": "war-of-movement.html",
+      "title": "1950：战线三次折返",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "从北方军队越过三八线，到战线逼近鸭绿江再折返，1950年的三次急剧转向为什么会发生？",
+      "readerStateBefore": "读者能够把战争理解为朝鲜分裂、内战爆发与大国有限介入叠加的过程，并按战线、决策边界和民众处境三条线索追踪全程。",
+      "readerStateAfter": "读者能够用兵力准备、补给线、制海制空权、战略目标扩张和中国安全判断解释1950年的三次战线逆转，而不是把它们看成孤立名战。",
+      "priorConclusion": "朝鲜战争由半岛分裂引爆，却因美国主导的联合国军、中国人民志愿军和苏联支持先后卷入而国际化；理解全过程要同时追踪战线、决策边界与普通人的处境。",
+      "coreExample": "连续追踪首尔在1950年6月失守、9月被收复、1951年1月再次易手的过程，比较每次城市易手背后的补给条件、联盟决策和战场纵深。",
+      "conclusion": "1950年的战线三度翻转，不是单次会战的直线结果，而是补给线、制海制空权、战略目标扩张和中国安全判断连续改变的结果；每次军事胜利都把下一方推向更大规模介入。",
+      "nextQuestion": "当双方都不能承受全面战争、又不愿接受失败时，战场为什么会在1951年转为阵地战，并与停战谈判同时延续两年？",
+      "nextPage": "stalemate-and-armistice.html",
+      "newTerms": [
+        { "term": "联合国军", "definition": "依据联合国安理会决议建立、由美国统一指挥并由多国提供作战或医疗力量的军事体系。" },
+        { "term": "釜山环形防御圈", "definition": "1950年夏韩军与美军在朝鲜半岛东南部围绕釜山港维持的最后主要防御区域。" },
+        { "term": "仁川登陆", "definition": "1950年9月联合国军在首尔西侧仁川实施的两栖登陆，切断北方军队深入南方的补给与退路。" },
+        { "term": "中国人民志愿军", "definition": "中华人民共和国于1950年10月派入朝鲜作战、以彭德怀为司令员兼政治委员的部队名称。" },
+        { "term": "运动战", "definition": "依靠快速机动、穿插、包围和撤退改变战线，而不是长期固守同一阵地的作战形态。" }
+      ]
+    },
+    {
+      "file": "stalemate-and-armistice.html",
+      "title": "从阵地僵持到停战",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["war-of-movement.html"],
+      "readerQuestion": "当双方都不能承受全面战争、又不愿接受失败时，战场为什么会在1951年转为阵地战，并与停战谈判同时延续两年？",
+      "readerStateBefore": "读者能够用兵力准备、补给线、制海制空权、战略目标扩张和中国安全判断解释1950年的三次战线逆转，而不是把它们看成孤立名战。",
+      "readerStateAfter": "读者能够解释阵地战与停战谈判如何相互作用，区分停火、停战与和平条约，并从目标、代价和长期影响比较不同参战方的战争叙事。",
+      "priorConclusion": "1950年的战线三度翻转，不是单次会战的直线结果，而是补给线、制海制空权、战略目标扩张和中国安全判断连续改变的结果；每次军事胜利都把下一方推向更大规模介入。",
+      "coreExample": "把1951年11月暂定军事分界线、此后山头争夺、战俘遣返争议与1953年7月停战协定并置，观察战场行动怎样服务谈判而又拖延谈判。",
+      "conclusion": "1953年停战终止了有组织的武装敌对，却没有缔结和平条约或解决半岛统一问题；战争的军事结果接近恢复分裂，政治与社会后果却重塑了东亚安全秩序，并把巨大代价留给朝鲜半岛居民。",
+      "nextQuestion": "如果一场战争以停战而非和平结束，后人应如何在国家叙事之外继续追问责任、代价与尚未完成的和解？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "阵地战", "definition": "双方围绕固定防线、山头和交通要点反复攻防，战线移动有限但伤亡与消耗持续的作战形态。" },
+        { "term": "军事分界线", "definition": "停战时双方地面部队实际接触线经协定确定后的分界，不等同于战前的三八线。" },
+        { "term": "非军事区", "definition": "以军事分界线为中心、双方部队按协定后撤形成的缓冲地带。" },
+        { "term": "战俘遣返", "definition": "交战方在停战安排中交还或安置被俘人员的过程，朝鲜战争中是否强制遣返成为核心争议。" },
+        { "term": "停战协定", "definition": "军事指挥方停止敌对行动并规定监督机制的协议，不等同于国家之间的和平条约。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "史料坐标与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

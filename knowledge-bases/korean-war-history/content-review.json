@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-08T22:11:37+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么朝鲜战争不能只理解为1950年6月开始、1953年7月结束的一场半岛内战？",
+      "readerStateChange": "读前只有三八线、仁川或上甘岭等零散印象；读后能够把半岛分裂、国际介入、有限战争和居民处境放进同一条因果链。",
+      "twoSentenceSummary": "正文从1945年受降分区与两个政权建立讲起，说明半岛内部统一竞争怎样被冷战联盟放大。它再用战线、决策和社会三条线索搭建全程地图，避免把战争压缩为大国代理或名战清单。",
+      "continuityEvidence": "结尾明确把全局模型推进到1950年三次战线折返，并指出下一步必须从补给、海空优势、目标扩张和中国安全判断解释急转。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "war-of-movement.html",
+      "centralQuestion": "从北方军队越过三八线，到战线逼近鸭绿江再折返，1950年的三次急剧转向为什么会发生？",
+      "readerStateChange": "读前知道战争已经国际化；读后能够把南进、仁川反攻、中国介入和1951年战线稳定解释为补给网络、联盟决策与升级边界连续变化的结果。",
+      "twoSentenceSummary": "正文沿首尔几次易手拆解北方攻势为何停在釜山、仁川为何能切断纵深，以及越过三八线怎样改变战争目标。中国参战和联合国军再反攻又显示，各方优势都有后勤与政治边界，无法直接兑换为统一半岛。",
+      "continuityEvidence": "本章承接总览提出的三条阅读线索，以首尔易手验证机制；结尾说明双方仍能作战却难以统一半岛，直接引出阵地战和谈判为何并存。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "stalemate-and-armistice.html",
+      "centralQuestion": "当双方都不能承受全面战争、又不愿接受失败时，战场为什么会在1951年转为阵地战，并与停战谈判同时延续两年？",
+      "readerStateChange": "读前能解释机动作战的转折；读后能说明阵地、空袭、战俘和联盟分歧怎样转化为谈判筹码，并区分停战、和平与不同尺度的胜负。",
+      "twoSentenceSummary": "正文解释固定防线并未降低战争强度，局部山头、空袭与战俘去向反而因谈判获得更高政治价值。它逐条说明停战协定的军事范围，再用最初目标、最终结果和社会代价比较各方叙事。",
+      "continuityEvidence": "开头使用上一章形成的相互制约解释战线稳定，结尾从军事停火推进到和平条约缺失、离散家庭和长期安全困境这一开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分决议与协定原文、同期政策文件、官方战役史、人道档案和国家纪念叙事，并识别伤亡统计的口径差异。",
+      "twoSentenceSummary": "参考页把联合国决议、停战协定、美国同期情报、中国与韩国官方资料、军史和红十字档案按证据层级排列。它说明每类来源能证明什么、带有什么立场，以及为何不应拼接互不相容的伤亡数字。",
+      "continuityEvidence": "来源逐项对应前三页的战争爆发、战线阶段、中国决策、战俘争议和停战边界，并把末页的多尺度判断返回可核对文件。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
