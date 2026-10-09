@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-10",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3914,6 +3914,13 @@
       "generatedAt": "2026-10-09",
       "slug": "sun-tzu-art-of-war",
       "entry": "knowledge-bases/sun-tzu-art-of-war/main.html"
+    },
+    {
+      "name": "情商比智商更重要吗",
+      "domain": "心理学",
+      "generatedAt": "2026-10-10",
+      "slug": "emotional-vs-cognitive-intelligence",
+      "entry": "knowledge-bases/emotional-vs-cognitive-intelligence/main.html"
     }
   ],
   "skipped": []

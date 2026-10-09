@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-10",
+  "framework": "vanilla-html",
+  "fontStack": "new independent pair for the knowledge base",
+  "palette": "independent OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt scale",
+  "preserve": ["repository index contract", "main.html entry", "data-site-home link"]
+}

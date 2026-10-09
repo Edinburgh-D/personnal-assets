@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "情商比智商更重要吗",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-10",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先别排座次",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把情商和智商想成两种彼此竞争的固定天赋，期待用一个统一答案判断谁更能决定成功。",
+      "readerStateAfter": "读者能区分认知能力、能力型情绪智力与自我报告式情商，并知道任何重要性判断都必须先指定结果和情境。",
+      "readerQuestion": "当人们问情商是否比智商更重要时，他们究竟在比较哪些能力，又把什么结果称为重要？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "产品负责人周岚在一次线上事故中既要从日志和指标判断故障路径，也要识别团队焦虑、协调分工并向客户解释不确定性。",
+      "newTerms": [
+        {
+          "term": "一般认知能力",
+          "definition": "在推理、学习、理解复杂信息和解决新问题等多类任务中表现出的共同能力。"
+        },
+        {
+          "term": "能力型情绪智力",
+          "definition": "把情绪信息当作问题材料，考察识别、理解和调节情绪等实际作答表现的能力。"
+        },
+        {
+          "term": "特质型情绪智力",
+          "definition": "通过自我报告描述一个人通常如何看待自己的情绪倾向、社交信心和调节习惯。"
+        },
+        {
+          "term": "混合型情商",
+          "definition": "把情绪能力、人格、自我效能、动机或社交风格等多种内容合并在同一标签下的宽泛测量。"
+        }
+      ],
+      "conclusion": "情商与智商不是两个可用同一把尺子排座次的总分；先分清测量对象、目标结果和使用情境，比较才有意义。",
+      "nextQuestion": "既然两个标签包含不同测量，研究者怎样判断它们各自与学习、工作和关系结果有多大关联？",
+      "nextPage": "measurement-and-evidence.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "measurement-and-evidence.html",
+      "title": "分数怎样变成证据",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能区分认知能力、能力型情绪智力与自我报告式情商，并知道任何重要性判断都必须先指定结果和情境。",
+      "readerStateAfter": "读者能解释相关、增量预测和测量重叠的差别，并能阅读情商或智商研究中的效应量而不把群体平均当成个人命运。",
+      "readerQuestion": "既然两个标签包含不同测量，研究者怎样判断它们各自与学习、工作和关系结果有多大关联？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "情商与智商不是两个可用同一把尺子排座次的总分；先分清测量对象、目标结果和使用情境，比较才有意义。",
+      "coreExample": "把周岚的事故处理拆成诊断故障、保持共享信息、安抚客户和事后复盘，再分别观察认知测验、能力型情绪任务与自我报告问卷能预测哪一段表现。",
+      "newTerms": [
+        {
+          "term": "效标关联效度",
+          "definition": "测量分数与外部结果之间关联程度的证据，例如测试分数与后续成绩或工作表现的关系。"
+        },
+        {
+          "term": "增量效度",
+          "definition": "在已有预测信息之后，一个新测量还能为结果解释增加多少独立信息。"
+        },
+        {
+          "term": "范围限制",
+          "definition": "样本只覆盖总体中的一小段分数范围，导致观察到的关联可能被压低或改变。"
+        },
+        {
+          "term": "共同方法偏差",
+          "definition": "预测变量与结果用相似方式或同一来源测量，从而人为放大二者关联的可能性。"
+        }
+      ],
+      "conclusion": "认知能力与不同情绪智力测量都能关联某些结果，但效应大小随测量、任务和统计控制而变；证据支持互补预测，不支持一个分数全面取代另一个。",
+      "nextQuestion": "既然两类能力的价值会随任务而变，普通人怎样判断眼前情境真正缺少什么，并选择可改进的环节？",
+      "nextPage": "context-and-choice.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "context-and-choice.html",
+      "title": "重要性藏在瓶颈里",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能解释相关、增量预测和测量重叠的差别，并能阅读情商或智商研究中的效应量而不把群体平均当成个人命运。",
+      "readerStateAfter": "读者能按任务的认知负荷、情绪劳动、协作依赖和最低门槛识别瓶颈，并把注意力放到可训练技能、流程与环境上。",
+      "readerQuestion": "既然两类能力的价值会随任务而变，普通人怎样判断眼前情境真正缺少什么，并选择可改进的环节？",
+      "dependsOn": [
+        "measurement-and-evidence.html"
+      ],
+      "priorConclusion": "认知能力与不同情绪智力测量都能关联某些结果，但效应大小随测量、任务和统计控制而变；证据支持互补预测，不支持一个分数全面取代另一个。",
+      "coreExample": "周岚用事故时间线定位团队瓶颈：诊断阶段缺少模型推理，交接阶段缺少信息共享，客户沟通阶段缺少情绪识别，复盘阶段则缺少允许异议的流程。",
+      "newTerms": [
+        {
+          "term": "瓶颈模型",
+          "definition": "把结果看成多段过程，优先寻找当前最限制整体表现的环节，而不是寻找一个万能人格标签。"
+        },
+        {
+          "term": "情绪劳动",
+          "definition": "工作要求人管理情绪表达，以符合角色、关系或服务目标的程度。"
+        },
+        {
+          "term": "最低门槛",
+          "definition": "任务要继续进行所需达到的基本能力水平，低于它时其他优势难以发挥。"
+        },
+        {
+          "term": "结构化判断",
+          "definition": "先明确目标、证据和条件，再按预先设定的步骤比较选项，减少标签与第一印象支配决策。"
+        }
+      ],
+      "conclusion": "情商并不普遍比智商更重要，智商也不是成功的唯一底盘；更可靠的做法是按具体任务找出认知、情绪或流程瓶颈，再训练技能并改造环境。",
+      "nextQuestion": "在下一次重要决定中，我能否先定义结果、拆开过程并寻找瓶颈，而不是用一个情商或智商标签解释整个人？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "读者已经掌握比较框架，希望核对概念、效应量、测量争议和训练证据。",
+      "readerStateAfter": "读者能够识别各来源支持的具体主张，区分定义、元分析、测验开发研究与应用研究的证据边界。",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "measurement-and-evidence.html",
+        "context-and-choice.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-10T02:08:44+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当人们问情商是否比智商更重要时，他们究竟在比较哪些能力，又把什么结果称为重要？",
+      "readerStateChange": "读前把情商和智商当成互相竞争的总分；读后能区分认知能力、能力型与自评型情绪智力，并先指定结果和情境。",
+      "twoSentenceSummary": "本页以周岚处理线上事故为主线，说明推理、情绪理解、专业知识和制度条件参与同一表现。它拆开智商与三种情商测量，证明没有统一尺子能直接回答谁更重要。",
+      "continuityEvidence": "末段把概念区分收束为测量、结果和情境三项条件，并明确追问研究如何估计关联与额外预测，直接引向证据页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "measurement-and-evidence.html",
+      "centralQuestion": "既然两个标签包含不同测量，研究者怎样判断它们各自与学习、工作和关系结果有多大关联？",
+      "readerStateChange": "读前只知道测量不同；读后能区分相关、增量效度、范围限制和共同方法偏差，并避免把群体效应量当作个人结局。",
+      "twoSentenceSummary": "本页比较认知能力与不同 EI 测量在学业、工作和蓬勃发展研究中的预测证据。它说明效应量会随效标、样本、统计校正和测量来源变化，现有证据更支持互补而非取代。",
+      "continuityEvidence": "开头接续测量与结果必须先定义的结论，结尾把效应差异归结为任务匹配，并提出如何在真实情境定位瓶颈。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "context-and-choice.html",
+      "centralQuestion": "既然两类能力的价值会随任务而变，普通人怎样判断眼前情境真正缺少什么，并选择可改进的环节？",
+      "readerStateChange": "读前能读懂研究但不会迁移；读后能按认知负荷、情绪劳动、协作依赖和最低门槛定位瓶颈，并选择技能或流程干预。",
+      "twoSentenceSummary": "本页把周岚的事故时间线改造成瓶颈模型，分别检查认知、情绪、技巧与制度条件。它结合训练证据、伦理边界和四步判断法，给出不依赖总标签的行动路径。",
+      "continuityEvidence": "本页逐一把证据页中的任务差异与测量限制转成可观察信号，最终回到题目并留下可迁移到下一次决定的开放检查。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文编号；读后能分辨权威定义、测验开发、元分析、二阶元分析与训练研究各自支持的主张和限制。",
+      "twoSentenceSummary": "来源页逐条说明十项权威或原始材料如何支持正文，并标出样本、测量、因果与利益相关边界。它还解释不同证据综合层级，避免把大型样本等同于统一机制。",
+      "continuityEvidence": "三个叙事页的编号引用均能到达对应来源，来源页回链判断页、开篇和全站总览，并提供两个站内延伸入口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

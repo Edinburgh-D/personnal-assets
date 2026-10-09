@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "skill": "hallmark@1.1.0",
+  "reviewedAt": "2026-10-10T02:08:44+08:00",
+  "genre": "editorial",
+  "macrostructure": "Split Studio",
+  "theme": "Newsprint",
+  "preEmitCritique": {
+    "philosophy": 5,
+    "hierarchy": 5,
+    "execution": 5,
+    "specificity": 5,
+    "restraint": 5,
+    "variety": 5
+  },
+  "result": "pass",
+  "passedGateCount": 58,
+  "passedGates": [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    31, 32, 33, 34, 35, 36, 37, 38, "38a", 39,
+    40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+    50, 51, 52, 53, 54, 55, 56, 57
+  ],
+  "contrastRatios": {
+    "lightBodyOnPaper": 16.39,
+    "lightMutedOnPaper": 6.46,
+    "lightFocusOnPaper": 4.48,
+    "darkBodyOnPaper": 16.51,
+    "darkMutedOnPaper": 7.36,
+    "darkFocusOnPaper": 9.27
+  },
+  "responsiveReview": {
+    "widths": [320, 375, 414, 768],
+    "mode": "static-source-review",
+    "checks": [
+      "html and body use overflow-x: clip",
+      "display headings allow anywhere wrapping",
+      "navigation collapses to a details disclosure below 40rem",
+      "comparison tables restack below 40rem",
+      "clickable labels are nowrap and rows can wrap",
+      "split grids use minmax(0, ...) tracks"
+    ],
+    "browserPreview": "blocked by browser security policy; no bypass attempted"
+  }
+}

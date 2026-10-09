@@ -1,0 +1,71 @@
+/* Hallmark · tokens: Newsprint · paper-band: light · display-style: roman-serif · accent-hue: warm */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap");
+
+:root {
+  --color-paper: oklch(96.5% 0.014 82);
+  --color-paper-raised: oklch(93.5% 0.018 82);
+  --color-paper-deep: oklch(89% 0.024 78);
+  --color-ink: oklch(20% 0.018 55);
+  --color-ink-soft: oklch(34% 0.018 55);
+  --color-muted: oklch(46% 0.016 60);
+  --color-rule: oklch(70% 0.025 68);
+  --color-accent: oklch(48% 0.145 36);
+  --color-accent-strong: oklch(37% 0.125 32);
+  --color-counter: oklch(42% 0.095 240);
+  --color-focus: oklch(54% 0.17 248);
+  --color-success: oklch(48% 0.11 145);
+  --color-error: oklch(49% 0.16 28);
+  --font-display: "Newsreader", "Times New Roman", serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.75rem, 7vw, 5.25rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+  --rule-hair: 1px;
+  --rule-strong: 2px;
+  --radius-control: 0.2rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+html[data-theme="dark"] {
+  --color-paper: oklch(15% 0.014 60);
+  --color-paper-raised: oklch(19% 0.016 60);
+  --color-paper-deep: oklch(23% 0.018 60);
+  --color-ink: oklch(94% 0.012 78);
+  --color-ink-soft: oklch(83% 0.014 76);
+  --color-muted: oklch(70% 0.014 72);
+  --color-rule: oklch(42% 0.025 62);
+  --color-accent: oklch(68% 0.12 40);
+  --color-accent-strong: oklch(78% 0.1 44);
+  --color-counter: oklch(73% 0.09 236);
+  --color-focus: oklch(76% 0.14 242);
+  --color-success: oklch(72% 0.09 145);
+  --color-error: oklch(70% 0.12 30);
+}
