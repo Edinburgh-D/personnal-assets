@@ -1,0 +1,8 @@
+{
+  "scannedAt": "2026-10-10",
+  "framework": "vanilla-html",
+  "fontStack": "per-library tokens",
+  "palette": "OKLCH custom properties",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale"
+}

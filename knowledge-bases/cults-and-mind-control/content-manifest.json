@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "邪教与精神控制",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-10",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先看权力，不先审判信仰",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者知道“邪教”和“洗脑”等常见说法，却容易把陌生信仰、强烈投入与伤害性控制混在一起。",
+      "readerStateAfter": "读者能够把教义是否陌生与成员是否保有知情、关系、生活决定和退出自由分开，并用可观察行为开始描述风险。",
+      "readerQuestion": "当一个群体被称作“邪教”时，我们怎样不靠标签，而在信仰自由与伤害风险之间建立可靠的判断起点？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "虚构合成案例中的阿宁加入“晨光研习社”后，先获得陪伴与秩序感，随后被要求逐渐交出时间、关系、金钱和对信息真伪的判断权。",
+      "newTerms": [
+        {
+          "term": "邪教标签",
+          "definition": "社会、政治或法律语境中对某些群体的强烈负面称呼，并不是跨地区通用的精神医学诊断。"
+        },
+        {
+          "term": "信仰自由",
+          "definition": "拥有、改变、表达或不持有宗教与非宗教信念的自由，其中也包括免受强迫的内在选择。"
+        },
+        {
+          "term": "强制控制",
+          "definition": "通过反复的孤立、监视、威胁、资源限制与规则变化，逐步压缩他人自主行动范围的控制模式。"
+        },
+        {
+          "term": "精神控制",
+          "definition": "对持续操纵思想、情绪、关系和行为的一组做法的通俗概括，不代表存在能够瞬间改写意志的单一技术。"
+        },
+        {
+          "term": "知情同意",
+          "definition": "人在获得足够真实信息、理解风险与替代选择且能够自由拒绝或退出后作出的同意。"
+        }
+      ],
+      "conclusion": "“邪教”不是精神医学诊断，也不是“陌生信仰”的同义词；更可靠的起点，是观察一个组织是否持续压缩成员知情、退出、维持关系和决定生活的自由。",
+      "nextQuestion": "如果关键不在某套教义本身，成员的知情、关系、生活决定和退出自由又是怎样在日常互动中被逐步压缩的？",
+      "nextPage": "mechanisms.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "选择是怎样一寸寸变窄的",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把教义是否陌生与成员是否保有知情、关系、生活决定和退出自由分开，并用可观察行为开始描述风险。",
+      "readerStateAfter": "读者能够解释欢迎、承诺升级、信息封闭、关系依赖和退出惩罚如何相互强化，同时不把成员理解成失去思考能力的人。",
+      "readerQuestion": "如果关键不在某套教义本身，成员的知情、关系、生活决定和退出自由又是怎样在日常互动中被逐步压缩的？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "“邪教”不是精神医学诊断，也不是“陌生信仰”的同义词；更可靠的起点，是观察一个组织是否持续压缩成员知情、退出、维持关系和决定生活的自由。",
+      "coreExample": "阿宁在“晨光研习社”中经历热情接纳、小额承诺、公开表态、睡眠与时间占用、外界污名化、互相汇报以及离开威胁；每一步单看都可能普通，组合后却改变了真实选择。",
+      "newTerms": [
+        {
+          "term": "承诺升级",
+          "definition": "人在已经投入时间、金钱、声誉或关系后，更难重新评估并停止投入的过程。"
+        },
+        {
+          "term": "封闭认知环境",
+          "definition": "信息来源被严格分级，外部证据预先被解释为敌意，内部说法因此难以被独立检验的环境。"
+        },
+        {
+          "term": "身份融合",
+          "definition": "个人对自我与群体的边界体验变得很弱，以至群体受质疑时像是自身存在受到攻击。"
+        },
+        {
+          "term": "间歇性强化",
+          "definition": "肯定、亲近或奖励以不可预测方式出现，使人更持续地追逐下一次被接纳的学习过程。"
+        },
+        {
+          "term": "退出成本",
+          "definition": "离开一个群体时可能同时失去的关系、住所、收入、身份、意义与安全感。"
+        }
+      ],
+      "conclusion": "所谓精神控制更适合被理解为一套累积的影响环境：它让信息、关系、身体状态、身份和退出成本彼此咬合，使顺从在当下显得比反对或离开更可行，而不是用某种神秘技术瞬间夺走意志。",
+      "nextQuestion": "既然控制依靠一组相互强化的条件，普通人怎样识别危险、与当事人交谈并寻求帮助，而不以另一种强迫取代原有控制？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "judgment.html",
+      "title": "判断危险，也把选择还给人",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释欢迎、承诺升级、信息封闭、关系依赖和退出惩罚如何相互强化，同时不把成员理解成失去思考能力的人。",
+      "readerStateAfter": "读者能够按行为模式、累积影响和选择空间评估风险，以非评判方式保持联系，并在现实危险中优先采用安全计划与合格专业支持。",
+      "readerQuestion": "既然控制依靠一组相互强化的条件，普通人怎样识别危险、与当事人交谈并寻求帮助，而不以另一种强迫取代原有控制？",
+      "dependsOn": [
+        "mechanisms.html"
+      ],
+      "priorConclusion": "所谓精神控制更适合被理解为一套累积的影响环境：它让信息、关系、身体状态、身份和退出成本彼此咬合，使顺从在当下显得比反对或离开更可行，而不是用某种神秘技术瞬间夺走意志。",
+      "coreExample": "阿宁的姐姐不再用“你被洗脑了”逼她表态，而是记录具体威胁与财务要求、保持低冲突联系、确认安全通讯方式，并让阿宁参与决定何时联系本地法律、医疗或心理支持。",
+      "newTerms": [
+        {
+          "term": "风险评估",
+          "definition": "把威胁、暴力、监控、资源控制、儿童处境与离开后的升级可能分别检查，而不是只凭直觉判断。"
+        },
+        {
+          "term": "安全计划",
+          "definition": "围绕可信联系人、紧急去处、证件、资金、药物、通讯与求助时机预先设计的可执行安排。"
+        },
+        {
+          "term": "创伤知情支持",
+          "definition": "在提供帮助时优先考虑安全、信任、选择和当事人的节奏，避免责怪或再次夺走控制权。"
+        },
+        {
+          "term": "专业边界",
+          "definition": "明确服务者能做什么、不能做什么，并让资质、费用、记录、保密例外与申诉途径可核查。"
+        }
+      ],
+      "conclusion": "负责任的判断看的是反复模式、累积影响和被压缩的选择；负责任的帮助则逐步恢复信息、关系、资源、时间与决定权，并在有现实危险时连接当地合格的法律、医疗和心理支持。",
+      "nextQuestion": "当一个群体要求高度投入却仍保留自由退出、外部关系与独立求证时，我们能否既警惕权力滥用，又不把不熟悉的信仰本身当成危险证据？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

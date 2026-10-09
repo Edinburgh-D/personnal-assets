@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "Codex fresh-context reader pass after disk reread",
+  "reviewedAt": "2026-10-10T07:11:35+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当一个群体被称作“邪教”时，我们怎样不靠标签，而在信仰自由与伤害风险之间建立可靠的判断起点？",
+      "readerStateChange": "读前容易把陌生信仰、严格投入和伤害性控制混为一谈；读后能区分信仰内容与权力行为，并从信息、关系、身体、资源和退出自由观察风险。",
+      "twoSentenceSummary": "正文先说明“邪教”不是跨地区通用诊断，并以联合国宗教或信念自由标准建立不污名化少数信仰的边界。随后通过阿宁的虚构合成案例，把注意力转向强制控制、知情同意和逐渐消失的现实选择。",
+      "continuityEvidence": "结尾把判断起点收束为“成员还拥有哪些可行选择”，并明确推进到这些选择如何在日常互动中被逐步压缩。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "如果关键不在某套教义本身，成员的知情、关系、生活决定和退出自由又是怎样在日常互动中被逐步压缩的？",
+      "readerStateChange": "读前能观察被压缩的选择；读后能解释真实需要、小步投入、封闭解释、身份集中、间歇奖励与退出代价如何形成反馈回路。",
+      "twoSentenceSummary": "正文以房间出口逐步被改造为直觉模型，沿阿宁的经历解释五段相互推进的控制过程。后半部分逐项讨论承诺升级、封闭认知环境、身份融合、间歇性强化与退出成本，并持续标明一般研究不能直接诊断具体组织。",
+      "continuityEvidence": "开头承接上一页的选择空间框架，结尾指出赢得信念辩论不足以打开出口，从而把问题推进到如何恢复多条现实通道。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然控制依靠一组相互强化的条件，普通人怎样识别危险、与当事人交谈并寻求帮助，而不以另一种强迫取代原有控制？",
+      "readerStateChange": "读前理解控制系统却缺少回应边界；读后能按紧急程度评估风险、进行非评判沟通、参与式安全计划并核查不同专业服务的角色与边界。",
+      "twoSentenceSummary": "正文先把风险判断拆成具体行为、累积影响和权力解释，并说明何时应优先联系所在地紧急与保护服务。随后以阿宁姐姐改变沟通方式为主线，展开安全计划、创伤知情支持、专业边界和退出后的长期重建。",
+      "continuityEvidence": "开头直接使用上一页“多通道控制”的结论；结尾以信息、关系、身体、资源与退出五个观察面完成从机制解释到现实判断的迁移。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分人权规范、特定司法辖区指引、医疗支持原则、一般社会心理学研究与历史案例，并理解每类材料的适用边界。",
+      "twoSentenceSummary": "参考页列出联合国、英国内政部、美国卫生与公众服务部、世界卫生组织以及同行评审研究的原始入口。页面逐项说明每份材料能支持什么、不能支持什么，并列出定义、抽样和外推方面仍然开放的问题。",
+      "continuityEvidence": "九项来源逐一对应前三页关于自由、控制模式、一般心理机制与支持原则的主张，并提供返回开篇的闭合导航。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
