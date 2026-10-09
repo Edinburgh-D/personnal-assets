@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-09T22:13:23+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么《孙子兵法》不应被读成胜战名句集，而应被读成一套约束战争的判断系统？",
+      "readerStateChange": "读前只熟悉若干流行名句；读后能够从政治支持、资源成本、组织能力、环境与情报条件解释这部兵书为何先判断能否开战，再讨论怎样取胜。",
+      "twoSentenceSummary": "正文先把《孙子兵法》放回先秦国家动员与战争扩大的语境，说明五事七计如何把冲动改写为条件比较。它再以河口小国为例，解释全胜、谋攻与欺骗都受政治目的和战争成本约束。",
+      "continuityEvidence": "结尾把战前比较推进到部署、力量组合、局部空实和情报反馈，明确提出下一页需要解释十三篇怎样形成循环系统。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "strategic-system.html",
+      "centralQuestion": "既然核心是先改变胜负条件而非追求奇谋，十三篇怎样把计算、造势、交锋与情报连成一套运行机制？",
+      "readerStateChange": "读前知道全书重视战前判断；读后能够沿比较、准备、接触和回报四个环节，说明稳定条件、动态力量、行动组合、局部空实与情报校正怎样相互制约。",
+      "twoSentenceSummary": "正文把十三篇重组为可返回修正的决策循环，并用河口小国的渡口、防御、调动与间者消息逐步演示。地形、军队组织、火攻和用间不再是并列技巧，而成为检验假设和降低代价的不同输入。",
+      "continuityEvidence": "本章承接首页的条件比较，把它展开为完整机制；结尾指出一次成功不能证明方法永远有效，直接引出版本证据与现代迁移边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reading-and-limits.html",
+      "centralQuestion": "当这套机制被移出先秦战争或套入商业、人生与现代战场时，哪些部分仍可迁移，哪些类比会把文本读歪？",
+      "readerStateChange": "读前能够解释十三篇的运行机制；读后能够区分传统作者记载、出土竹简、后世教材与现代解释的证据层级，并用目标、关系、代价和证据检查新类比。",
+      "twoSentenceSummary": "正文从《史记》、银雀山汉简和《武经七书》说明作者故事、文本历史与经典化各自能证明什么。它随后检验军事、商业和个人生活中的迁移，保留比较、塑造与反馈，同时拒绝普遍敌我化和无条件欺骗。",
+      "continuityEvidence": "开头接续上一章的反馈系统，结尾把判断法收束为查篇章、补前提、找反例和分证据类型，并留下如何校读下一句流行名言的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够按原典、传统记载、考古材料、经典化和现代研究区分来源，并理解每类材料的证明范围与局限。",
+      "twoSentenceSummary": "参考页汇总十三篇原文、集注影像、《史记》、银雀山汉简与《武经七书》的权威入口。它补充现代学术和军事研究，同时注明付费权限、机构立场、链接日期与译释边界。",
+      "continuityEvidence": "各来源逐项对应前三页的篇章结构、作者争议、汉简证据、宋代教材地位与现代解释，并为所有外部主张提供可回查路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

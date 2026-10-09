@@ -3907,6 +3907,13 @@
       "generatedAt": "2026-10-09",
       "slug": "tcm-surgery-bone-setting",
       "entry": "knowledge-bases/tcm-surgery-bone-setting/main.html"
+    },
+    {
+      "name": "孙子兵法",
+      "domain": "历史/军事",
+      "generatedAt": "2026-10-09",
+      "slug": "sun-tzu-art-of-war",
+      "entry": "knowledge-bases/sun-tzu-art-of-war/main.html"
     }
   ],
   "skipped": []

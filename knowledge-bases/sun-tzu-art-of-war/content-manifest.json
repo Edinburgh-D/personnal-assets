@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "孙子兵法：从庙算到用间",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-09",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先胜，而后求战",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5,
+      "dependsOn": [],
+      "readerQuestion": "为什么《孙子兵法》不应被读成胜战名句集，而应被读成一套约束战争的判断系统？",
+      "readerStateBefore": "读者听过“知彼知己”或“不战而屈人之兵”，却容易把全书理解成若干计谋、名句和可以随意搬用的成功学格言。",
+      "readerStateAfter": "读者能够把全书理解为一套从政治目的、资源成本、敌我比较到情报反馈的战争判断系统，并知道它首先讨论的是是否与如何进入战争。",
+      "priorConclusion": "",
+      "coreExample": "一个兵少粮短、守着河口交通线的小国面对强邻集结时，先比较政治支持、将领能力、地形、组织与法令，再决定结盟、示形、避战或交锋。",
+      "conclusion": "《孙子兵法》的核心不是保证取胜的奇谋，而是在战争不可承受且信息不完备的条件下，先比较政治、资源、组织和环境，尽量把胜负在交战前变成可判断、可控制的问题。",
+      "nextQuestion": "既然核心是先改变胜负条件而非追求奇谋，十三篇怎样把计算、造势、交锋与情报连成一套运行机制？",
+      "nextPage": "strategic-system.html",
+      "newTerms": [
+        { "term": "兵法", "definition": "关于组织、运用与约束军事力量的方法论，不等同于零散计策的集合。" },
+        { "term": "五事七计", "definition": "《始计》用来比较交战双方政治、天时、地利、将领和制度等条件的一组判断框架。" },
+        { "term": "全胜", "definition": "尽量完整保存己方并使对方失去抵抗条件的胜利理想，不是把所有敌人消灭。" },
+        { "term": "诡道", "definition": "通过隐蔽意图、制造错觉和扰乱判断来改变敌方行动的欺骗原则。" }
+      ]
+    },
+    {
+      "file": "strategic-system.html",
+      "title": "十三篇怎样共同运转",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然核心是先改变胜负条件而非追求奇谋，十三篇怎样把计算、造势、交锋与情报连成一套运行机制？",
+      "readerStateBefore": "读者能够把全书理解为一套从政治目的、资源成本、敌我比较到情报反馈的战争判断系统，并知道它首先讨论的是是否与如何进入战争。",
+      "readerStateAfter": "读者能够沿战前计算、形成有利态势、控制接触方式和持续校正信息四个环节解释十三篇的分工，并用同一案例检验这些环节如何相互制约。",
+      "priorConclusion": "《孙子兵法》的核心不是保证取胜的奇谋，而是在战争不可承受且信息不完备的条件下，先比较政治、资源、组织和环境，尽量把胜负在交战前变成可判断、可控制的问题。",
+      "coreExample": "继续推演河口小国的选择：它不与强邻正面争夺城池，而是守住渡口、伪装补给意图、迫使对方拉长运输线，并用间者确认对方内部争论后再决定是否出击。",
+      "conclusion": "十三篇并非十三个平行技巧，而是从战前比较、资源约束和组织编成出发，借形势与虚实控制接触方式，再用地形、火攻与间谍补足信息，使行动始终服务于降低不确定性和代价。",
+      "nextQuestion": "当这套机制被移出先秦战争或套入商业、人生与现代战场时，哪些部分仍可迁移，哪些类比会把文本读歪？",
+      "nextPage": "reading-and-limits.html",
+      "newTerms": [
+        { "term": "庙算", "definition": "出兵前在决策层比较敌我条件、推演胜负并决定是否行动的过程。" },
+        { "term": "形", "definition": "能够观察、部署和保存的相对稳定条件，例如兵力组织、防御准备与暴露程度。" },
+        { "term": "势", "definition": "把既有条件组织起来后形成的动态力量与行动优势。" },
+        { "term": "正奇", "definition": "常规牵制与非常变化相互配合的关系，不是固定地把一支部队永久分成“正兵”和“奇兵”。" },
+        { "term": "虚实", "definition": "敌我在具体时间和地点的空缺与充实，以及通过调动使力量出现不均衡的状态。" }
+      ]
+    },
+    {
+      "file": "reading-and-limits.html",
+      "title": "经典、证据与误读边界",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5,
+      "dependsOn": ["strategic-system.html"],
+      "readerQuestion": "当这套机制被移出先秦战争或套入商业、人生与现代战场时，哪些部分仍可迁移，哪些类比会把文本读歪？",
+      "readerStateBefore": "读者能够沿战前计算、形成有利态势、控制接触方式和持续校正信息四个环节解释十三篇的分工，并用同一案例检验这些环节如何相互制约。",
+      "readerStateAfter": "读者能够区分传统作者叙事、考古材料和后世经典化过程，也能在现代类比中检查目标、代价、对手能动性与信息条件，避免把兵书变成万能格言。",
+      "priorConclusion": "十三篇并非十三个平行技巧，而是从战前比较、资源约束和组织编成出发，借形势与虚实控制接触方式，再用地形、火攻与间谍补足信息，使行动始终服务于降低不确定性和代价。",
+      "coreExample": "回看河口小国：同一套观察条件、保存实力和更新情报的方法可以帮助组织决策，但若把客户、同事或家人直接当作必须欺骗和击败的敌人，迁移就已经越过边界。",
+      "conclusion": "可靠地阅读《孙子兵法》，既要把它放回先秦战争、传世文本与考古证据中，也要在现代迁移时保留条件句：可借鉴的是比较、塑造和校正的思路，不能照搬的是把一切关系敌我化、把欺骗当常态或把结果反推成永远正确。",
+      "nextQuestion": "面对下一句流行的《孙子兵法》名言，我们能否先找回它所在的篇章、对象与限制条件，再决定它对今天究竟说明了什么？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "传世本", "definition": "经长期抄写、整理、刊刻和注释流传到今天的文本形态。" },
+        { "term": "银雀山汉简", "definition": "1972年在山东临沂银雀山汉墓出土、包含《孙子兵法》和《孙膑兵法》等内容的竹简。" },
+        { "term": "武经七书", "definition": "北宋元丰年间确定为武学教材的七部兵书总称，《孙子》位列其中。" },
+        { "term": "类比迁移", "definition": "把一个领域的结构关系带到另一个领域帮助理解，同时明确两者差异的推理方式。" },
+        { "term": "目的错置", "definition": "把原本服务于政治与安全目的的军事手段，误当成不受约束的最终目的。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、版本与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}
