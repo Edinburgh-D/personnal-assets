@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>逼真不等于可用｜合成数据与数据增强</title>
+  <meta name="description" content="分别检查相似度、任务收益、群体覆盖、隐私和递归污染，用真实世界测试判断合成数据。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="逼真不等于可用">
+  <meta property="og:description" content="合成数据需要多轴评估：像真、有用、公平、可追溯与隐私安全并不是同一件事。">
+  <meta property="og:type" content="article">
+  <script>document.documentElement.dataset.theme=localStorage.getItem("kb_darkMode")===null?((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"):(localStorage.getItem("kb_darkMode")==="true"?"dark":"light");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="main.html">SYNTH / DATA</a>
+    <div class="header-actions">
+      <a class="header-link" href="../../index.html" data-site-home aria-label="返回知识库总览">总览</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+    </div>
+  </header>
+  <nav class="route-strip nav-menu-btn" aria-label="学习路径">
+    <div class="route-strip__inner">
+      <a class="route-link" href="main.html">直觉</a>
+      <a class="route-link" href="pipeline.html">生产线</a>
+      <a class="route-link" href="judgment.html" aria-current="page">判断</a>
+      <a class="route-link" href="sources.html">来源</a>
+    </div>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">合成数据与数据增强</a><span aria-hidden="true">/</span><span>判断</span>
+    </div>
+    <div class="article-layout">
+      <aside class="reading-rail" aria-label="页面目录">
+        <strong>五个检查面</strong>
+        <ol>
+          <li><a href="#axes">像真与有用</a></li>
+          <li><a href="#groups">群体覆盖</a></li>
+          <li><a href="#privacy">隐私边界</a></li>
+          <li><a href="#loops">递归污染</a></li>
+          <li><a href="#decision">采用门槛</a></li>
+        </ol>
+      </aside>
+
+      <main id="content" class="prose" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">可靠的数据生产线不是批量调用生成器，而是把缺口写成可检验条件，让生成、筛选、配比和独立真实评测彼此制约，并保存每个样本的来源。</template>
+        <template data-narrative="question">当合成样本看起来逼真且离线指标上升时，怎样判断它是在补足真实世界，还是在复制偏差、泄露隐私或制造闭环？</template>
+        <template data-narrative="example">道路团队发现合成夜雨画面整体准确率上升，却进一步检查小型骑行者、深色雨衣、罕见车灯组合、训练记录泄露和连续版本回灌。</template>
+        <template data-narrative="conclusion">采用合成数据或增强数据的证据应来自分层真实测试、来源追踪和隐私评估；它们适合补足可描述的缺口，却不能替代对真实世界持续采样与纠错。</template>
+        <template data-narrative="next-question">面对新的数据缺口，团队能否先说明要补哪一种现实变化，再选择最小、可追踪且能被真实测试证伪的生成方法？</template>
+
+        <header class="hero">
+          <h1>逼真不等于可用</h1>
+          <p class="lede">一张图可以骗过眼睛，却没有补上模型真正缺失的规律；一个平均分可以上升，却让罕见群体更危险。判断必须沿着不同的轴分别展开。</p>
+        </header>
+
+        <section id="axes">
+          <h2>先拆开相似与有效</h2>
+          <p>生产线已经把目标、生成、筛选和混合连在一起，也保留了来源。现在道路团队看到一个好消息：加入合成夜雨画面后，验证集准确率上升，抽样图片也很逼真。这个结果值得继续调查，却还不足以采用，因为“像真实数据”与“帮助真实任务”回答的是两类问题。</p>
+          <p><dfn data-term="保真度">保真度</dfn>衡量合成数据在统计规律、结构或观感上与目标真实数据有多相似。图像可比较亮度、纹理、物体结构与特征空间分布；表格可比较边际比例、相关关系和稀有组合。高分说明生成器复现了某些可测特征，却不能证明它复现了所有与道路安全相关的因素。</p>
+          <p><dfn data-term="任务效用">任务效用</dfn>关心数据是否改善一个明确任务。它必须通过下游模型和独立真实测试来观察。合成图可能存在人眼不在意、模型却会利用的重复纹理；也可能不够“好看”，但准确覆盖了遮挡边缘与目标位置。对于训练数据，后者有时反而更有价值。</p>
+          <p>保真度与效用还会因任务变化。同一份合成表格可以保留总体消费分布，适合做软件测试，却破坏极少数大额交易，因而不适合欺诈研究。道路图像可以支持车辆计数，却因车轮细节错误而不适合车型识别。宣称“合成数据质量高”若不说明用途，几乎没有可操作含义。</p>
+          <div class="comparison" aria-label="四种不同证据">
+            <div class="comparison-row"><strong>视觉或统计相似</strong><span>说明候选接近某些真实特征，不等于能改善目标任务。</span></div>
+            <div class="comparison-row"><strong>离线任务提升</strong><span>说明某个固定测试有收益，不等于部署条件与所有群体都受益。</span></div>
+            <div class="comparison-row"><strong>真实独立路测</strong><span>最接近部署证据，但仍需按条件分层，并持续观察环境变化。</span></div>
+            <div class="comparison-row"><strong>隐私与来源评估</strong><span>回答数据能否安全、合规地使用，不能由准确率替代。</span></div>
+          </div>
+        </section>
+
+        <section id="groups">
+          <h2>平均数会藏住尾部</h2>
+          <p>道路团队把测试集按目标大小、服装颜色、遮挡程度与光源方向拆开。总体召回提高，远距离儿童车却没有改善；深色雨衣在强逆光下甚至退化。原因可能是生成器偏爱轮廓清楚、画面主体居中的样本，筛选器也更容易给这类图片高分。生产线因此把“容易被机器认可”误当成“最需要学习”。</p>
+          <p>原始数据中的偏差也会沿着生成过程传播。若历史摄像头主要部署在中心城区，模拟参数和生成提示很可能围绕宽阔路面、充足照明和常见车型。生成器可以把这些常见模式扩充得非常丰富，同时让郊区无灯道路继续缺席。数量增长并不会自动修复代表性。</p>
+          <p>NIST 的 2025 年隐私指南提醒，合成数据可能降低子群体准确度，并把生成算法的偏差传到下游。这个提醒并不意味着合成数据必然伤害少数群体，而是要求评估按重要群体与困难条件展开。对道路系统来说，罕见但后果严重的条件不能被总体平均数抵消。</p>
+          <p>分层结果还要连同样本数和波动一起看。一个只有十个案例的小组，即使显示很大提升，也可能由少数偶然样本造成。团队可以重复训练、报告区间，并把证据不足明确写出。诚实的不确定性比精确到小数点后的单次结果更能支持安全决策。</p>
+          <p>解决办法不是无限细分，直到每组只剩一个样本。团队应根据用途与伤害路径选择分层：哪些人或场景若被漏检会产生不同后果，哪些环境是系统承诺支持的范围，哪些目前证据不足。样本量太小的组可以报告不确定性，而不是用一个不稳定的百分比装作确定。</p>
+        </section>
+
+        <section id="privacy">
+          <h2>“人工生成”不是隐私证明</h2>
+          <p><dfn data-term="隐私风险">隐私风险</dfn>是个人身份、属性或是否出现在原始数据中被推断出来的可能性及影响。若生成模型用真实道路画面训练，它可能过度记忆罕见车牌、面孔、住址特征或独特事件。输出并非原文件的逐像素复制，也仍可能泄露与个人有关的信息。</p>
+          <p>风险与效用之间常有拉扯。生成器越忠实地保留罕见组合，越能支持某些分析，也越可能暴露一个独特个体。ICO 的隐私增强技术指南指出，越接近真实数据，效用往往越高，揭示个人信息的可能性也会增加。ICO 同时强调，若以个人信息训练生成器，生成阶段本身仍需要数据保护治理。</p>
+          <p><dfn data-term="差分隐私">差分隐私</dfn>提供一种可量化边界：限制加入或移除某个个体记录对输出概率造成的影响。它可以用于生成统计或合成数据，但并不是给数据贴上“安全”标签的按钮。隐私预算如何设定、多个发布如何累计、实现是否正确，都会改变实际保证；更强保护也可能牺牲罕见模式的效用。</p>
+          <p>NIST SP 800-226 在 2025 年明确区分了满足差分隐私的合成数据与只有非正式保证的做法。NIST SP 800-188 则从治理角度建议，在发布去标识化或合成政府数据前确定共享模式、评估重识别风险并建立审查机制。技术测量和组织责任必须同时存在。</p>
+          <p>风险也会随接收者和发布方式变化。只在受控环境中供授权研究者使用，与把数据公开下载，攻击能力和后果并不相同。访问控制、用途限制、查询接口和安全环境可以与生成技术共同工作；没有必要把“完全公开的数据文件”当成唯一的共享形态。</p>
+          <aside class="aside-note">
+            <strong>边界说明</strong>
+            数据是否构成个人信息、能否共享以及需要何种影响评估，取决于数据、用途、接收者与所在地法律。此处提供的是技术判断框架，不能替代具体项目的隐私、安全与法律审查。
+          </aside>
+        </section>
+
+        <section id="loops">
+          <h2>当模型开始学习自己的回声</h2>
+          <p><dfn data-term="模型坍塌">模型坍塌</dfn>指生成模型在递归学习模型生成数据时，逐步丢失真实分布中的信息、质量或多样性。直觉上，第一代模型已经压缩并遗漏了现实的某些细节；下一代若把这些输出当成完整现实，会再压缩一次，稀有模式尤其容易消失。</p>
+          <p>2024 年发表在 Nature 的研究展示了递归生成训练中的退化现象。不过，把它简化成“任何合成数据都会毁掉模型”也不准确。2025 年 PMLR 收录的研究比较了不同训练工作流：完全用连续世代的合成数据替换真实数据会坍塌，而真实与合成数据共同累积的工作流在其研究设定中可以保持稳定。</p>
+          <p>差别在于系统是否保留来自真实世界的新信息，以及如何使用它。道路团队若把上一版识别模型挑选的“高质量夜雨图”继续喂给下一版，筛选偏好与生成偏好会层层叠加。若持续保留真实路测、明确标记合成来源，并让真实错误推动下一轮生成，闭环就多了外部纠偏信号。</p>
+          <p>递归污染不只发生在团队内部。公开网页、图片库和数据供应链中也可能混入无法识别的模型输出。团队无法把所有来源都完美分类，却可以记录已知来源、对不透明数据降低权重、保留可信真实集合，并监控模型输出的多样性与尾部性能是否随版本下降。</p>
+          <p>这也是数据血缘的长期价值。团队需要知道网页文本、图像或第三方数据中哪些可能由模型生成，哪些来自真实观测，哪些经过人工核验。无法追踪并不意味着数据一定不可用，但意味着团队应降低信任、增加抽检，并避免让它成为唯一参照。</p>
+        </section>
+
+        <section id="decision">
+          <h2>用最小充分证据决定采用</h2>
+          <p>判断可以从一个简单顺序开始。先确认缺口是否来自可描述的现实变化，再选择最小的变换或生成方法；然后检查标签、结构与覆盖；接着用不同合成比例训练；最后只在独立真实数据上比较，并按重要群体与困难条件分层。每一步都要保留失败结果，而不只保存最终成功版本。</p>
+          <p>若收益只出现在合成测试集，停止扩大规模。若总体收益伴随高风险群体退化，回到生成条件和筛选阈值。若个人数据参与生成，单独进行隐私攻击测试、访问控制与法律评估。若来源无法追踪，限制用途，不让数据进入高风险决策或成为后续模型的唯一训练材料。</p>
+          <p>道路案例的采用门槛可以写得很具体：真实夜雨路测中远距离骑行者的召回稳定改善，白天性能没有不可接受的退化，各关键条件都有足够证据，敏感素材可追溯并受控，连续版本保留新鲜真实数据。这样的门槛可能让大量“漂亮数据”被拒绝，但它保护了项目真正要改善的现实结果。</p>
+          <p>门槛还应包含撤回条件。若部署后出现此前未覆盖的误报模式，团队要能定位相关数据批次、停止继续回灌，并恢复到已知版本。数据生成不是一次性采购，而是模型生命周期的一部分；监测、事故记录和重新采样都应连接回生产线。</p>
+          <p>合成数据和数据增强最适合补足一个已经被说清楚的缺口。它们不擅长替代持续观察，因为现实会新增道路、设备、行为与异常组合。生成工具可以加速假设检验，不能免除采样、标注、申诉和事故复盘。越接近公共安全、医疗、金融或权利影响，越需要把真实世界反馈保留在循环中。</p>
+          <p>最终，成熟的团队不会问“要不要使用合成数据”，而会问得更窄：缺的是哪一种变化，哪种方法引入最少的新假设，失败能否被独立真实测试发现，来源能否被撤回与重做。这个问题比追逐某一种生成模型更慢，却能让每一批新增样本都承担清楚的责任。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节导航">
+          <a href="pipeline.html"><small>返回</small>← 回看生产线</a>
+          <a href="sources.html"><small>继续</small>核对来源与延伸 →</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-statement">真实世界，必须留在验证回路里。</p>
+      <div class="footer-meta"><span>合成数据与数据增强</span><a href="../../index.html">返回知识库总览</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

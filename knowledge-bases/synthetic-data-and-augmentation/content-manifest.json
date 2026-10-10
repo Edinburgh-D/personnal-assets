@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "合成数据与数据增强",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-11",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "不是越多越好",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "合成数据与数据增强分别在做什么，它们为什么不能简单理解为“更多数据”？",
+      "readerStateBefore": "读者把合成数据与数据增强都理解成扩充样本数量，却不清楚两者改变信息的方式和适用前提。",
+      "readerStateAfter": "读者能够区分变换已有样本与生成新样本，并用任务不变量、覆盖范围和标签可信度解释二者的作用。",
+      "priorConclusion": "",
+      "coreExample": "城市道路摄像头只有大量晴天画面，却要训练一个在夜雨中识别骑行者的模型。",
+      "conclusion": "数据增强通过保留任务含义的变换教模型忽略无关变化，合成数据通过显式或学习到的规则构造新情境；二者的价值都取决于新增变化是否贴近部署世界并保住正确标签。",
+      "nextQuestion": "既然二者都会改变训练数据的分布，一条可靠的数据生产线怎样生成、筛选并混合新样本？",
+      "nextPage": "pipeline.html",
+      "newTerms": [
+        { "term": "数据增强", "definition": "在尽量保持任务答案不变的前提下，对已有样本做旋转、裁剪、改写或加噪等变换。" },
+        { "term": "合成数据", "definition": "由规则、模拟器或生成模型人为构造，而不是直接记录自现实对象或事件的数据。" },
+        { "term": "任务不变量", "definition": "输入发生某种变化后，任务的正确答案仍应保持不变的性质。" },
+        { "term": "数据分布", "definition": "不同类型样本在一个数据集合中出现的范围、比例与相互关系。" }
+      ]
+    },
+    {
+      "file": "pipeline.html",
+      "title": "一条样本生产线",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然二者都会改变训练数据的分布，一条可靠的数据生产线怎样生成、筛选并混合新样本？",
+      "readerStateBefore": "读者能够区分变换已有样本与生成新样本，并用任务不变量、覆盖范围和标签可信度解释二者的作用。",
+      "readerStateAfter": "读者能够解释目标定义、生成、验证、混合与独立评测如何组成闭环，并知道生成器与判分器不能共享同一盲点。",
+      "priorConclusion": "数据增强通过保留任务含义的变换教模型忽略无关变化，合成数据通过显式或学习到的规则构造新情境；二者的价值都取决于新增变化是否贴近部署世界并保住正确标签。",
+      "coreExample": "道路团队用几何与光照变换、物理渲染和生成模型制作夜雨骑行者画面，再以规则检查、人工抽检和独立真实路测筛选。",
+      "conclusion": "可靠的数据生产线不是批量调用生成器，而是把缺口写成可检验条件，让生成、筛选、配比和独立真实评测彼此制约，并保存每个样本的来源。",
+      "nextQuestion": "当合成样本看起来逼真且离线指标上升时，怎样判断它是在补足真实世界，还是在复制偏差、泄露隐私或制造闭环？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "条件生成", "definition": "把类别、天气、姿态或文本说明作为控制条件，让生成器按指定情境产生样本。" },
+        { "term": "拒绝采样", "definition": "先生成候选，再用规则、模型或人工审查淘汰不合格样本的筛选方式。" },
+        { "term": "分布偏移", "definition": "训练数据与实际使用环境中的样本范围或比例发生差异。" },
+        { "term": "数据血缘", "definition": "记录一个样本由何种来源、模型、提示、规则和版本产生的可追溯信息。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "逼真不等于可用",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["pipeline.html"],
+      "readerQuestion": "当合成样本看起来逼真且离线指标上升时，怎样判断它是在补足真实世界，还是在复制偏差、泄露隐私或制造闭环？",
+      "readerStateBefore": "读者能够解释目标定义、生成、验证、混合与独立评测如何组成闭环，并知道生成器与判分器不能共享同一盲点。",
+      "readerStateAfter": "读者能够分别检查保真度、任务效用、群体覆盖、隐私与递归污染，并以真实世界独立测试决定是否采用。",
+      "priorConclusion": "可靠的数据生产线不是批量调用生成器，而是把缺口写成可检验条件，让生成、筛选、配比和独立真实评测彼此制约，并保存每个样本的来源。",
+      "coreExample": "道路团队发现合成夜雨画面整体准确率上升，却进一步检查小型骑行者、深色雨衣、罕见车灯组合、训练记录泄露和连续版本回灌。",
+      "conclusion": "采用合成数据或增强数据的证据应来自分层真实测试、来源追踪和隐私评估；它们适合补足可描述的缺口，却不能替代对真实世界持续采样与纠错。",
+      "nextQuestion": "面对新的数据缺口，团队能否先说明要补哪一种现实变化，再选择最小、可追踪且能被真实测试证伪的生成方法？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "保真度", "definition": "合成数据在统计规律、结构或观感上与目标真实数据相似的程度。" },
+        { "term": "任务效用", "definition": "数据对某个明确任务是否真的改善模型表现或分析结论。" },
+        { "term": "隐私风险", "definition": "个人身份、属性或是否出现在原始数据中被推断出来的可能性及影响。" },
+        { "term": "模型坍塌", "definition": "模型在递归学习模型生成数据时逐步丢失真实分布中的信息、质量或多样性的退化过程。" },
+        { "term": "差分隐私", "definition": "用可量化的隐私损失限制单个个体数据对发布结果影响的数学框架。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

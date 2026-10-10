@@ -1,0 +1,73 @@
+:root {
+  --color-paper: oklch(97% 0.008 145);
+  --color-paper-2: oklch(93% 0.012 145);
+  --color-paper-3: oklch(88% 0.016 145);
+  --color-ink: oklch(18% 0.018 145);
+  --color-body: oklch(29% 0.018 145);
+  --color-muted: oklch(47% 0.018 145);
+  --color-rule: oklch(77% 0.022 145);
+  --color-accent: oklch(60% 0.18 145);
+  --color-accent-soft: oklch(90% 0.055 145);
+  --color-focus: oklch(48% 0.2 145);
+  --color-shadow: oklch(18% 0.018 145 / 0.12);
+  --color-code: oklch(15% 0.018 145);
+  --color-code-ink: oklch(91% 0.08 145);
+
+  --font-display: "JetBrains Mono", "STSong", "SimSun", serif;
+  --font-body: "IBM Plex Sans", "Microsoft YaHei", "PingFang SC", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.4rem, 7vw, 4.2rem);
+  --text-display: clamp(2.7rem, 8vw, 5rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-strong: 2px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-round: 999rem;
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+}
+
+[data-theme="dark"] {
+  --color-paper: oklch(14% 0.014 145);
+  --color-paper-2: oklch(18% 0.016 145);
+  --color-paper-3: oklch(24% 0.018 145);
+  --color-ink: oklch(94% 0.012 145);
+  --color-body: oklch(86% 0.012 145);
+  --color-muted: oklch(70% 0.016 145);
+  --color-rule: oklch(38% 0.022 145);
+  --color-accent: oklch(73% 0.15 145);
+  --color-accent-soft: oklch(27% 0.065 145);
+  --color-focus: oklch(80% 0.16 145);
+  --color-shadow: oklch(5% 0.012 145 / 0.32);
+  --color-code: oklch(10% 0.014 145);
+  --color-code-ink: oklch(86% 0.13 145);
+}

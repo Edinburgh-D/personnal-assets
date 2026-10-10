@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-11",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3935,6 +3935,13 @@
       "generatedAt": "2026-10-10",
       "slug": "vector-database-comparison",
       "entry": "knowledge-bases/vector-database-comparison/main.html"
+    },
+    {
+      "name": "合成数据与数据增强",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-11",
+      "slug": "synthetic-data-and-augmentation",
+      "entry": "knowledge-bases/synthetic-data-and-augmentation/main.html"
     }
   ],
   "skipped": []

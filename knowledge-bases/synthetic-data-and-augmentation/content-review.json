@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-11T16:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "合成数据与数据增强分别在做什么，它们为什么不能简单理解为“更多数据”？",
+      "readerStateChange": "读前只把两类方法视为扩充数量；读后能区分变换已有观察与构造新情境，并用不变量、覆盖与标签判断价值。",
+      "twoSentenceSummary": "页面以夜雨骑行者识别为贯穿例子，区分数据增强与合成数据的信息来源。它进一步说明数量、覆盖、任务含义与隐私目标不能混为一谈。",
+      "continuityEvidence": "结尾把“新增多少”推进为目标、生成、筛选和真实测试如何相互约束，直接引出生产线机制页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "pipeline.html",
+      "centralQuestion": "既然二者都会改变训练数据的分布，一条可靠的数据生产线怎样生成、筛选并混合新样本？",
+      "readerStateChange": "读前能识别两类数据方法；读后能说明缺口定义、组合生成、异源筛选、配比实验、血缘和独立真实路测的关系。",
+      "twoSentenceSummary": "页面把生成器放进一条完整证据链，展示增强、模拟与条件生成如何互补。道路案例说明共享盲点、测试集泄漏和配比变化为何会让表面成功失真。",
+      "continuityEvidence": "页面最后指出总体真实路测仍可能遮蔽群体退化、记忆泄露和版本回灌，顺势提出下一页的多轴风险判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "当合成样本看起来逼真且离线指标上升时，怎样判断它是在补足真实世界，还是在复制偏差、泄露隐私或制造闭环？",
+      "readerStateChange": "读前理解可靠生产流程；读后能分别检查保真度、任务效用、群体尾部、隐私与递归污染，并设置采用和撤回门槛。",
+      "twoSentenceSummary": "页面拆开视觉相似、任务有效、群体覆盖与隐私安全，避免用单一分数代替判断。它结合递归训练研究说明，保留真实数据和外部纠偏比简单排斥合成数据更准确。",
+      "continuityEvidence": "本页承接生产线的独立评测原则，把它扩展成分层真实测试、隐私治理、来源追踪和持续回收机制，并留下可迁移的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只接触正文中的概括性引用；读后能定位每项关键判断对应的权威指南、官方文档或原始研究。",
+      "twoSentenceSummary": "页面汇总 NIST、ICO、PyTorch 与 2024–2025 年递归训练研究，并明确各来源支持的边界。它还连接知识图谱、向量数据库与 AI 工作主题，便于继续扩展。",
+      "continuityEvidence": "该参考页可从三篇叙事页和全站路径直接到达，并向前三页提供可核查证据，不进入叙事 nextPage 链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

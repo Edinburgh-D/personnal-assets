@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>合成数据与数据增强｜不是越多越好</title>
+  <meta name="description" content="从夜雨骑行者识别案例出发，理解合成数据与数据增强的区别、共同机制与适用边界。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="合成数据与数据增强">
+  <meta property="og:description" content="一条从直觉、生产线到风险判断的连续学习路径。">
+  <meta property="og:type" content="website">
+  <script>document.documentElement.dataset.theme=localStorage.getItem("kb_darkMode")===null?((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"):(localStorage.getItem("kb_darkMode")==="true"?"dark":"light");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="main.html">SYNTH / DATA</a>
+    <div class="header-actions">
+      <a class="header-link" href="../../index.html" data-site-home aria-label="返回知识库总览">总览</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+    </div>
+  </header>
+  <nav class="route-strip nav-menu-btn" aria-label="学习路径">
+    <div class="route-strip__inner">
+      <a class="route-link" href="main.html" aria-current="page">直觉</a>
+      <a class="route-link" href="pipeline.html">生产线</a>
+      <a class="route-link" href="judgment.html">判断</a>
+      <a class="route-link" href="sources.html">来源</a>
+    </div>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><span>合成数据与数据增强</span>
+    </div>
+    <div class="article-layout">
+      <aside class="reading-rail" aria-label="页面目录">
+        <strong>从一个缺口开始</strong>
+        <ol>
+          <li><a href="#two-tools">两种工具</a></li>
+          <li><a href="#meaning">保住含义</a></li>
+          <li><a href="#coverage">扩展覆盖</a></li>
+          <li><a href="#limits">先看边界</a></li>
+        </ol>
+      </aside>
+
+      <main id="content" class="prose" data-kb-content data-page-role="overview">
+        <template data-narrative="question">合成数据与数据增强分别在做什么，它们为什么不能简单理解为“更多数据”？</template>
+        <template data-narrative="example">城市道路摄像头只有大量晴天画面，却要训练一个在夜雨中识别骑行者的模型。</template>
+        <template data-narrative="conclusion">数据增强通过保留任务含义的变换教模型忽略无关变化，合成数据通过显式或学习到的规则构造新情境；二者的价值都取决于新增变化是否贴近部署世界并保住正确标签。</template>
+        <template data-narrative="next-question">既然二者都会改变训练数据的分布，一条可靠的数据生产线怎样生成、筛选并混合新样本？</template>
+
+        <header class="hero">
+          <h1>不是越多越好</h1>
+          <p class="lede">一张被调暗的照片和一张由模型生成的夜景，都可能让训练集变大。真正重要的却是：它们带来了哪一种变化，这种变化是否仍然对应现实世界。</p>
+        </header>
+
+        <section id="two-tools">
+          <h2>同一个数据缺口，两种补法</h2>
+          <p>想象一套城市道路识别系统。训练材料里有成千上万张晴天画面，模型在白天能看见骑行者；到了雨夜，反光路面、伞沿、车灯和运动模糊同时出现，错误便集中爆发。团队表面上缺的是“雨夜照片”，更准确地说，缺的是在夜雨条件下仍能辨认骑行者的证据。</p>
+          <p><dfn data-term="数据增强">数据增强</dfn>从已有样本出发，对画面进行裁剪、翻转、调暗、加噪或模糊。它不是凭空获得一个新的真实路口，而是让同一份观察经历一组受控变化。PyTorch 的官方图像变换文档把几何与光度变换、MixUp、CutMix 等都列为常见工具；这些工具的共同点，是把已有输入加工成训练时的新版本。</p>
+          <p><dfn data-term="合成数据">合成数据</dfn>则由规则、模拟器或生成模型构造。道路团队可以在三维模拟器里安排路口、雨量、车灯和骑行者姿态，也可以让图像生成模型按文字与参考图产生夜雨场景。表格数据也能由统计模型生成“并不存在的顾客”，文本数据可以由语言模型编写训练指令，机器人则能在物理仿真中经历虚拟碰撞。</p>
+          <div class="signal-line" role="figure" aria-label="数据增强与合成数据的直觉区别">
+            <div class="signal-node"><div><strong>已有观察</strong><br>同一骑行者，改变亮度、裁剪与噪声</div></div>
+            <div class="signal-arrow" aria-hidden="true">→ / ←</div>
+            <div class="signal-node"><div><strong>构造情境</strong><br>新的姿态、道路、雨量与交通组合</div></div>
+          </div>
+          <p>两者的边界并非总像词典一样整齐。把两张真实图像混合，会产生现实中未直接拍摄的像素；用生成模型修补一张真实图像的背景，也同时包含变换与生成。与其争论名称，不如追问新样本从哪里获得信息：它只是重排已有观察，还是借助外部规则、模拟环境或生成模型补进了新的组合？</p>
+        </section>
+
+        <section id="meaning">
+          <h2>变换必须保住任务的含义</h2>
+          <p>数据增强能够奏效，是因为任务中存在某些“变化了也不该改答案”的因素。<dfn data-term="任务不变量">任务不变量</dfn>就是这种性质。识别普通道路车辆时，小幅亮度变化不该把自行车变成汽车；识别手写数字时，轻微平移通常不该改变数字类别。增强把这些假设写进训练过程，告诉模型不要把光照位置或像素细节当作唯一线索。</p>
+          <p>但不变量永远依赖任务。把猫的照片水平翻转通常仍是猫；把带有行驶方向标志的道路图翻转，标志含义可能已经错了。语音识别可以容忍一定背景噪声，医学听诊却可能恰好依赖那段被“清理”掉的微弱杂音。增强不是无害的滤镜，它是一条关于世界的判断：这个变化与答案无关。</p>
+          <p>标签也必须随变换一起处理。目标检测图像旋转后，标出骑行者的边框要同步旋转；分割图像裁剪后，像素掩码要同步裁剪。Torchvision v2 把图像、边框和掩码放进同一变换体系，正是为了减少“图变了，答案没跟着变”的错误。若只看生成后的图片是否顺眼，这类安静的标签错位很容易潜入训练集。</p>
+          <p>文本与表格也有自己的含义边界。把一句客服提问改写成同义表达，意图标签或许不变；随意替换否定词、金额或时间，答案可能立刻反转。把表格中的年龄加一点噪声，可能保护部分细节，却也可能制造不可能的年龄或破坏年龄与疾病之间的关系。每一种数据类型都要求作者说明，哪些结构必须保持，哪些表面可以改变。</p>
+          <p>还有一类增强故意制造困难样本，例如遮住图片的一块区域，或把两个样本及其标签按比例混合。它们不一定像自然拍摄的画面，目标也不是复刻一张真实照片，而是阻止模型过度依赖某个局部线索。这里再次说明，视觉逼真不是唯一标准；只要变化与训练目标一致，略显人工的样本也可能提供有效约束。</p>
+          <aside class="aside-note">
+            <strong>一个实用区分</strong>
+            增强更像向模型声明“这些变化不重要”；合成更像向模型展示“这些情境也可能发生”。前者主要塑造不变性，后者主要扩展覆盖面，但二者都可能做错。
+          </aside>
+          <p>回到道路案例，把晴天画面调暗能够教模型减少对整体亮度的依赖，却不能自动创造雨滴遮挡、路面镜面反射和雨衣贴身后的形状变化。把白天照片染成蓝黑色，表面上接近夜晚，信息上仍可能只是“深色的白天”。当真实缺口涉及多个因素的相互作用，简单变换就会触到上限。</p>
+        </section>
+
+        <section id="coverage">
+          <h2>生成的不是数量，而是覆盖范围</h2>
+          <p><dfn data-term="数据分布">数据分布</dfn>描述不同样本出现的范围、比例与关系。道路训练集里，晴天、白天、直行骑行者占绝大多数，就是一种分布。模型不会直接学习“世界本身”，只会从这份有限分布中寻找规律。样本数量再大，如果只是重复同一时段、同一路口和同一拍摄角度，模型获得的新信息仍然很少。</p>
+          <p>合成系统的优势，在于能够有意识地改变稀缺条件。模拟器可以组合小雨与暴雨、成人车与儿童车、迎面灯光与背光、近距离与远距离。生成模型可以在人工审查下补充罕见姿态。规则系统还可以构造现实中危险、昂贵或尚未发生的极端场景，让安全系统在部署前先遇见它们。</p>
+          <p>控制变量还能帮助发现因果上的混淆。假如真实训练集中，骑行者总与自行车道同时出现，模型可能把车道颜色当作捷径。合成场景可以把骑行者放到不同路面，把空自行车道单独呈现，再观察预测如何变化。它不能凭自身证明模型学到了正确因果，但能把原本纠缠的线索拆开，形成更有针对性的测试。</p>
+          <p>这种“可控”并不等于“真实”。模拟器对水面反射的计算可能过于干净，生成模型可能把自行车辐条画错，语言模型则可能反复采用相似句式。更隐蔽的问题是，生成器本身从历史数据学习，它倾向于重现历史数据中常见的人、地点和表达。若原始记录很少包含穿深色雨衣的老人，生成器未必会主动补齐这部分。</p>
+          <p>覆盖也不是把每个选项机械排列一遍。雨量、距离、姿态和光源的组合会迅速增多，其中有些常见，有些几乎不可能。团队需要由真实观察、领域知识和风险后果共同决定优先级。否则，资源可能耗在奇特却无关的场景上，而经常发生但不醒目的失败仍被忽略。</p>
+          <div class="comparison" aria-label="数量与覆盖的区别">
+            <div class="comparison-row"><strong>重复增加</strong><span>同一张晴天图做十种轻微裁剪，样本数上涨，但天气与道路条件没有扩展。</span></div>
+            <div class="comparison-row"><strong>相关变化</strong><span>调节曝光、雨滴遮挡与运动模糊，并确认标签仍然正确，训练信号开始接近部署条件。</span></div>
+            <div class="comparison-row"><strong>新情境</strong><span>模拟远处儿童车、对向强光与湿地反射的组合，覆盖真实采集暂时没有触达的区域。</span></div>
+          </div>
+          <p>因此，“数据更多”是一个容易误导的计数方式。更好的描述是：训练材料覆盖了哪些条件，哪些条件仍靠猜测，以及新增样本是否让模型学到了可迁移的规律。一个规模较小但有代表性的集合，往往比一个巨大、重复且标签含混的集合更有价值。</p>
+        </section>
+
+        <section id="limits">
+          <h2>三种常被混在一起的目标</h2>
+          <p>第一种目标是让样本看起来像真的。第二种是让样本对训练或分析有用。第三种是减少真实个人信息的暴露。这三件事可能同时发生，也可能彼此冲突。高度逼真的合成人像可能复制训练对象的特征；隐私保护很强的表格数据可能损失罕见群体的统计规律；能提高某个分类器成绩的数据，未必适合另一项任务。</p>
+          <p>NIST 在 2025 年发布的差分隐私评估指南特别提醒，不满足差分隐私的合成方法通常只有非正式的隐私保证。NIST 还指出，合成过程会引入新的不确定性，并可能降低子群体准确度。也就是说，“这是合成的”不能自动推出“这是匿名的”，更不能自动推出“所有人都同样受益”。</p>
+          <p>ICO 的隐私增强技术指南给出相似边界：合成数据可能帮助减少个人信息的使用，但从个人信息生成数据的过程本身仍涉及处理，而且越贴近原始记录，泄露个人特征的风险可能越高。不同司法辖区的法律判断并不完全相同；涉及真实个人、医疗、金融或公共决策时，仍需由组织的隐私与法律专业人员结合具体用途评估。</p>
+          <p>这也解释了为什么合成数据与增强数据不应被视为廉价替代品。它们是把假设变成样本的工具：增强写入“哪些变化不重要”，合成写入“哪些情境可能存在”。假设越清楚，越容易验证；假设被埋在模型、提示词和筛选规则里，错误就越可能被规模掩盖。</p>
+          <p>同样的工具在不同阶段承担的角色也不同。开发初期，合成数据可以让软件接口、标注流程和训练代码先运转起来；模型上线前，它可以用于压力测试与安全演练；正式训练时，则需要更严格地证明它与真实目标一致。把“用于测试管线”得到的成功，直接解释成“适合训练生产模型”，是常见的越界。</p>
+          <p>道路团队此刻已经能把问题说得更精确：简单变换可以增加光照与局部遮挡的变化，模拟器与生成模型可以补充复杂夜雨组合，但每一种新样本都需要证明标签正确、条件合理，并且确实改善独立真实路测。下一步不再是“再生成多少张”，而是建立一条让目标、生成、筛选和测试相互约束的生产线。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节导航">
+          <a href="pipeline.html"><small>继续</small>进入样本生产线 →</a>
+          <a href="sources.html"><small>查证</small>查看权威来源 →</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-statement">不要数样本，先问它改变了什么。</p>
+      <div class="footer-meta"><span>合成数据与数据增强</span><a href="../../index.html">返回知识库总览</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>来源与延伸｜合成数据与数据增强</title>
+  <meta name="description" content="本知识库使用的 NIST、ICO、PyTorch 与原始研究来源，以及相关站内知识库。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="来源与延伸｜合成数据与数据增强">
+  <meta property="og:description" content="权威指南、官方技术文档与原始研究。">
+  <meta property="og:type" content="article">
+  <script>document.documentElement.dataset.theme=localStorage.getItem("kb_darkMode")===null?((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"):(localStorage.getItem("kb_darkMode")==="true"?"dark":"light");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="main.html">SYNTH / DATA</a>
+    <div class="header-actions">
+      <a class="header-link" href="../../index.html" data-site-home aria-label="返回知识库总览">总览</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+    </div>
+  </header>
+  <nav class="route-strip nav-menu-btn" aria-label="学习路径">
+    <div class="route-strip__inner">
+      <a class="route-link" href="main.html">直觉</a>
+      <a class="route-link" href="pipeline.html">生产线</a>
+      <a class="route-link" href="judgment.html">判断</a>
+      <a class="route-link" href="sources.html" aria-current="page">来源</a>
+    </div>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">合成数据与数据增强</a><span aria-hidden="true">/</span><span>来源</span>
+    </div>
+    <div class="article-layout">
+      <aside class="reading-rail" aria-label="页面目录">
+        <strong>证据地图</strong>
+        <ol>
+          <li><a href="#primary">权威与原始来源</a></li>
+          <li><a href="#reading">研究延伸</a></li>
+          <li><a href="#related">站内串联</a></li>
+        </ol>
+      </aside>
+
+      <main id="content" class="prose" data-kb-content data-page-role="reference">
+        <header class="hero">
+          <h1 class="long-title">来源与延伸</h1>
+          <p class="lede">这里集中列出正文中涉及的监管指南、官方技术文档与原始研究。链接指向发布机构或论文页面，便于核对适用范围与更新状态。</p>
+        </header>
+
+        <section id="primary">
+          <h2>权威指南与官方文档</h2>
+          <p>隐私、数据治理与软件接口会变化，因此正文以当前可访问的一手材料为主。监管指南提供的是风险与治理框架，不替代具体司法辖区的法律意见；软件文档说明现行接口，不代表某种变换必然适合特定任务。</p>
+          <ul class="source-list">
+            <li>
+              <a href="https://csrc.nist.gov/pubs/sp/800/226/final">NIST SP 800-226：Guidelines for Evaluating Differential Privacy Guarantees</a>
+              <span class="source-meta">NIST · 2025 年 3 月</span>
+              <p>用于核对差分隐私的基本保证、常见实现陷阱，以及合成数据在隐私与效用方面的专门讨论。正文关于非差分隐私合成方法只有非正式保证、子群体效用可能下降的判断来自该指南。</p>
+            </li>
+            <li>
+              <a href="https://csrc.nist.gov/pubs/sp/800/188/final">NIST SP 800-188：De-Identifying Government Datasets</a>
+              <span class="source-meta">NIST · 2023 年 9 月</span>
+              <p>提供去标识化治理视角，包括选择数据共享模式、审查重识别风险、建立披露审查机制，以及将合成数据放入更广的访问与治理方案中。</p>
+            </li>
+            <li>
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/privacy-enhancing-technologies">ICO：Privacy-enhancing technologies</a>
+              <span class="source-meta">英国信息专员办公室 · 页面当前标注部分内容正在复核</span>
+              <p>用于理解合成数据可能帮助数据最小化，也可能继承偏差或暴露个人信息。ICO 明确提示，生成过程若使用个人信息，仍需履行相应的数据保护责任。</p>
+            </li>
+            <li>
+              <a href="https://docs.pytorch.org/vision/stable/">Torchvision：Transforms 官方文档</a>
+              <span class="source-meta">PyTorch 官方文档 · stable</span>
+              <p>展示几何、光度和自动增强等图像变换。相关端到端文档也说明图像、边框与掩码应同步变换，这支撑了正文对标签一致性的说明。</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="reading">
+          <h2>原始研究与研究综述</h2>
+          <p>以下论文用于说明当前研究中的边界，而不是给出适用于所有模型的定律。尤其是递归训练，结果取决于真实数据是否保留、训练集如何累积、模型类别与任务设置。正文因此同时呈现退化证据与可被控制的工作流。</p>
+          <ul class="source-list">
+            <li>
+              <a href="https://www.nature.com/articles/s41586-024-07566-y">AI models collapse when trained on recursively generated data</a>
+              <span class="source-meta">Nature 631 · 2024 · Shumailov 等</span>
+              <p>研究连续世代使用模型生成数据时的信息退化，给出“模型坍塌”的实验与理论证据。它支持对递归污染保持警惕，但不应被外推成所有合成数据都会导致坍塌。</p>
+            </li>
+            <li>
+              <a href="https://proceedings.mlr.press/v267/kazdan25a/kazdan25a.pdf">Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World</a>
+              <span class="source-meta">ICML / PMLR 267 · 2025 · Kazdan 等</span>
+              <p>比较替换、累积与固定子集等训练工作流。研究观察到，连续用纯合成数据替换真实数据会退化，而真实与合成数据共同累积的设置可在其实验中维持稳定。</p>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2410.12896">A Survey on Data Synthesis and Augmentation for Large Language Models</a>
+              <span class="source-meta">arXiv · 2024 · Wang 等</span>
+              <p>梳理大语言模型生命周期中的数据合成与增强，包括预训练、指令调整、偏好对齐和评测。适合继续了解文本领域的方法分类与开放问题。</p>
+            </li>
+            <li>
+              <a href="https://doi.org/10.52202/079017-2074">Data Augmentation with Diffusion for Open-Set Semi-Supervised Learning</a>
+              <span class="source-meta">NeurIPS 2024 · Ban、Kong、Kim</span>
+              <p>展示扩散模型在开放集半监督学习中的一种生成式增强方案，也说明无标签数据包含无关类别时，生成与筛选必须共同处理分布不匹配。</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="related">
+          <h2>站内串联</h2>
+          <p>合成数据常与知识检索、向量表示和 AI 部署共同出现。下面三条路径分别补充数据如何被组织、如何被检索，以及技术变化如何进入工作流程。它们不是阅读本专题的前置条件。</p>
+          <ul class="source-list">
+            <li><a href="../knowledge-graph-primer/main.html">知识图谱入门</a><p>理解实体、关系与约束如何把结构知识写入数据，可帮助区分“生成表面文本”与“保持事实关系”。</p></li>
+            <li><a href="../vector-database-comparison/main.html">向量数据库对比</a><p>理解检索数据的嵌入、过滤与评测，为检索增强生成和数据筛选提供相邻背景。</p></li>
+            <li><a href="../ai-and-the-future-of-work/main.html">AI 与工作的未来</a><p>把数据生产自动化放回组织与劳动分工中，观察人工审查、责任和技能如何变化。</p></li>
+          </ul>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节导航">
+          <a href="judgment.html"><small>返回</small>← 回到判断框架</a>
+          <a href="main.html"><small>重读</small>从直觉重新开始 →</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-statement">来源不是装饰，它限定结论能走多远。</p>
+      <div class="footer-meta"><span>合成数据与数据增强</span><a href="../../index.html">返回知识库总览</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

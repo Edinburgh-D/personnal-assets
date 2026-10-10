@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-11",
+  "framework": "vanilla-html",
+  "fontStack": "new local knowledge-base; no inherited font stack",
+  "palette": "new OKLCH token system scoped to this knowledge base",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale"
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>一条样本生产线｜合成数据与数据增强</title>
+  <meta name="description" content="理解如何从数据缺口出发，生成、筛选、混合并独立评测增强样本与合成样本。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="一条样本生产线">
+  <meta property="og:description" content="生成器只是起点，目标、筛选、配比和独立真实测试共同决定数据是否可靠。">
+  <meta property="og:type" content="article">
+  <script>document.documentElement.dataset.theme=localStorage.getItem("kb_darkMode")===null?((window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"):(localStorage.getItem("kb_darkMode")==="true"?"dark":"light");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="main.html">SYNTH / DATA</a>
+    <div class="header-actions">
+      <a class="header-link" href="../../index.html" data-site-home aria-label="返回知识库总览">总览</a>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换到深色模式">深色</button>
+    </div>
+  </header>
+  <nav class="route-strip nav-menu-btn" aria-label="学习路径">
+    <div class="route-strip__inner">
+      <a class="route-link" href="main.html">直觉</a>
+      <a class="route-link" href="pipeline.html" aria-current="page">生产线</a>
+      <a class="route-link" href="judgment.html">判断</a>
+      <a class="route-link" href="sources.html">来源</a>
+    </div>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">合成数据与数据增强</a><span aria-hidden="true">/</span><span>生产线</span>
+    </div>
+    <div class="article-layout">
+      <aside class="reading-rail" aria-label="页面目录">
+        <strong>从缺口到证据</strong>
+        <ol>
+          <li><a href="#target">写清目标</a></li>
+          <li><a href="#generate">组合生成</a></li>
+          <li><a href="#filter">多道筛选</a></li>
+          <li><a href="#mix">配比与路测</a></li>
+        </ol>
+      </aside>
+
+      <main id="content" class="prose" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">数据增强通过保留任务含义的变换教模型忽略无关变化，合成数据通过显式或学习到的规则构造新情境；二者的价值都取决于新增变化是否贴近部署世界并保住正确标签。</template>
+        <template data-narrative="question">既然二者都会改变训练数据的分布，一条可靠的数据生产线怎样生成、筛选并混合新样本？</template>
+        <template data-narrative="example">道路团队用几何与光照变换、物理渲染和生成模型制作夜雨骑行者画面，再以规则检查、人工抽检和独立真实路测筛选。</template>
+        <template data-narrative="conclusion">可靠的数据生产线不是批量调用生成器，而是把缺口写成可检验条件，让生成、筛选、配比和独立真实评测彼此制约，并保存每个样本的来源。</template>
+        <template data-narrative="next-question">当合成样本看起来逼真且离线指标上升时，怎样判断它是在补足真实世界，还是在复制偏差、泄露隐私或制造闭环？</template>
+
+        <header class="hero">
+          <h1 class="long-title">一条样本生产线</h1>
+          <p class="lede">生成器只是其中一台机器。前面要有明确的缺口，后面要有筛选、配比和独立真实测试；否则流水线只会高效地复制自己的误差。</p>
+        </header>
+
+        <section id="target">
+          <h2>先把“夜雨表现差”拆成条件</h2>
+          <p>上一阶段留下的关键认识是：增强与合成都会改变训练材料，但改变必须贴近部署世界并保住标签。于是道路团队不能只写一句“补充夜雨数据”。夜晚可能意味着低照度、车灯眩光或传感器噪声；下雨可能意味着水滴遮挡、湿地反射或雨衣改变人体轮廓。不同因素需要不同的生成手段，也需要不同的验收方式。</p>
+          <p>团队先查看真实错误，而不是从工具菜单出发。他们把失败样本按距离、目标大小、遮挡、光源方向、路面材质和骑行者服装分层。若错误主要集中在远处的小目标，单纯生成近景高清骑行者没有帮助；若问题来自路面反光，只有把图像整体调暗也不会触及根因。</p>
+          <p>目标还要写成能被证伪的形式。例如：“在未用于生成与筛选的真实夜雨路测集中，提高远距离骑行者的召回，同时不明显增加行人误报。”这句话同时规定了场景、对象、测量方向和副作用。它避免团队用合成验证集证明合成训练集有效，也避免只汇报一个把不同群体平均掉的总分。</p>
+          <p>那份独立路测集必须在流程开始时就隔离。若团队反复查看其中的错误，再据此调整提示、筛选器和配比，它便逐渐参与了开发，不再是真正独立的最终检查。实践中可以保留开发用真实集与最终真实集，限制后者的访问次数，并把每次使用的目的和结果记录下来。</p>
+          <p>此时，数据工作从“制造图片”变成“设计证据”。缺口定义决定要控制哪些变量、保留哪些真实样本、请谁审查，以及最后必须在哪一组真实数据上接受失败。生成技术越强，这一步越重要，因为强大的工具也更容易用逼真的表面掩盖不相关的变化。</p>
+        </section>
+
+        <section id="generate">
+          <h2>让不同生成手段各做擅长的事</h2>
+          <p>最便宜的一层仍是基于真实图像的增强。团队可对曝光、对比度、局部模糊和传感器噪声做小幅随机变化。几何变换需要同步更新检测框和分割掩码。每一种变换都应对应一个部署中确实存在的变化来源，而不是因为库里有这个函数就打开它。</p>
+          <p>第二层是物理或程序模拟。模拟器能精确知道虚拟骑行者的位置、轮廓、深度和姿态，所以标签可以在渲染时一起产生。它适合系统性地扫描雨量、车灯角度和距离组合，也适合制造真实采集危险的临界事件。弱点是“模拟到现实”的差距：材质、镜头污染和人的行为若建模不足，标签虽精确，画面规律仍可能不对。</p>
+          <p>第三层是<dfn data-term="条件生成">条件生成</dfn>。团队给生成模型提供“夜雨、逆光、远处骑行者、深色雨衣”等控制条件，让它针对稀缺组合产生候选。文本条件方便，却容易含糊；参考图、姿态骨架、深度图或分割图能增加约束。条件越具体，生成结果越容易审查，但也越可能受上游标注与控制模型的偏差影响。</p>
+          <p>三层并不是竞争关系。真实增强保留摄像头的细节，模拟器提供可控变量与精确标签，生成模型补充纹理和场景多样性。道路团队可以先在模拟器中建立结构，再用生成模型改善外观，最后以真实图像的噪声模型贴近传感器。组合方法的代价是来源更复杂，因此每个步骤都必须留下版本与参数。</p>
+          <p>生成预算也应围绕信息缺口分配。若真实错误集中在远处小目标，团队可以提高这类条件的候选比例，而不是让生成器按默认偏好产出大量居中近景。对非常罕见却后果严重的条件，数量未必需要大，但标签和人工复核标准应更严格。生成的便利不能把所有场景压成同一种批量策略。</p>
+          <ol class="pipeline" aria-label="样本生产线">
+            <li><div><strong>描述缺口</strong>从真实错误中提取距离、光照、遮挡与群体条件。</div></li>
+            <li><div><strong>选择信息源</strong>决定哪些变化来自真实样本，哪些由规则、模拟或生成模型补充。</div></li>
+            <li><div><strong>生成候选</strong>保留控制条件、随机种子、模型版本、提示与上游素材。</div></li>
+            <li><div><strong>筛选与标注</strong>检查结构、标签、重复、群体覆盖和不应出现的内容。</div></li>
+            <li><div><strong>混合训练</strong>用多种配比训练，观察收益、退化与对真实样本的依赖。</div></li>
+            <li><div><strong>独立路测</strong>只用未参与前述步骤的真实数据作最终比较。</div></li>
+          </ol>
+        </section>
+
+        <section id="filter">
+          <h2>筛掉“漂亮但错误”的样本</h2>
+          <p>候选生成后，生产线进入<dfn data-term="拒绝采样">拒绝采样</dfn>：先大量产生，再淘汰不满足条件的样本。第一道可以是确定规则，例如边框不能越界、车轮数量要合理、交通灯颜色与标签一致。第二道可以是已有检测器或质量模型，但机器筛选只能发现它知道的错误，不能充当唯一裁判。</p>
+          <p>如果生成器与筛选器来自相同模型家族，它们可能共享盲点。生成模型把雨伞柄画成车把，视觉语言模型也可能把它解释为车把；两个系统达成一致，并不代表现实正确。更稳妥的安排是组合结构规则、与生成器不同来源的模型、领域专家抽检，以及对高风险和低置信样本的集中复核。</p>
+          <p>抽检也不能只看随机样本。随机抽样会被大量容易样本淹没，罕见错误仍可能漏掉。团队应按生成条件分层抽检，特别查看小目标、边缘姿态、深色服装和复杂反光。还应寻找近乎重复的画面，因为生成器可能用微小纹理差异制造“看似多样”的重复样本。</p>
+          <p>人工审查需要看到生成条件与任务标签，而不只是图片。审查者若不知道样本声称的是“逆光中的远距离儿童车”，可能只判断画面自然，却漏掉主体距离与年龄条件根本没有满足。审查表应允许记录错误类型和不确定性，这些记录随后可用来修改规则，而不是只留下一个通过或拒绝的二元结果。</p>
+          <p>筛选阈值会改变数据的性格。只保留评分最高的画面，可能得到非常干净却狭窄的集合；保留更多困难样本，又可能引入错误标签。阈值不该由审美决定，而应通过下游任务比较。团队需要观察准确率之外的召回、误报、校准与群体差异，并记录被筛掉的样本类型。</p>
+          <aside class="aside-note">
+            <strong>独立性比“再加一个模型”更重要</strong>
+            生成、筛选与评测若都依赖同一套模型或同一批真实数据，三个环节会互相确认共同偏差。独立真实路测不是流程末尾的装饰，而是打破闭环的外部参照。
+          </aside>
+        </section>
+
+        <section id="mix">
+          <h2>混合比例本身也是一个实验</h2>
+          <p>通过筛选的样本还不能直接全部倒进训练集。新数据会改变<dfn data-term="分布偏移">分布偏移</dfn>的方向：若训练集中一半画面突然都是暴雨，模型可能过度适应这一条件；若某种生成器反复使用同样的反光纹理，模型可能把纹理当成雨夜捷径。比例越大，生成器的特征越可能盖过真实世界的细节。</p>
+          <p>道路团队可以设置真实数据基线，再比较少量、中等与较高合成比例。每组保持训练预算、模型结构和随机种子策略尽量一致。除了总体成绩，还要查看原本表现良好的白天场景是否退化，以及收益是否只存在于与生成器相似的测试集。若只在合成测试上提升，证据仍然很弱。</p>
+          <p>比较还要考虑计算量。如果加入合成数据后训练步数同时翻倍，收益可能来自更多计算，而不是数据本身。团队可以在相同训练步数下比较替换配比，也可以在相同数据轮次下报告额外成本。只有把预算说明白，其他人才能判断收益来自新增信息、训练时间还是两者共同作用。</p>
+          <p>另一种做法是把合成样本用于预训练，再以真实样本收尾微调；也可以在训练中降低合成样本权重，或只对真实错误集中的批次加入它们。没有一个比例适用于所有任务。关键是让配比成为可重复的实验变量，而不是由“生成很便宜”推动的默认选择。</p>
+          <p>所有候选、筛选与混合过程都需要<dfn data-term="数据血缘">数据血缘</dfn>。每个样本至少应能追溯到真实来源或模拟资产、生成模型版本、控制条件、提示、随机种子、筛选结果和进入过哪些训练版本。它能支持删除有问题的上游素材，也能在模型异常时定位某一批合成数据，而不必推倒整个数据湖。</p>
+          <p>可复现并不要求永远保存每一个庞大中间文件。团队可以保存生成配方、软件与模型版本、随机种子、资产校验值和筛选日志，并对最终采用的数据做不可变快照。若第三方生成服务无法保证版本或重放能力，这一限制也应成为风险记录的一部分。</p>
+          <div class="matrix-wrap">
+            <table class="matrix">
+              <thead><tr><th>环节</th><th>道路案例的检查</th><th>若省略会怎样</th></tr></thead>
+              <tbody>
+                <tr><td>缺口定义</td><td>远处、小目标、逆光、湿地反射分别统计</td><td>生成大量与真实错误无关的漂亮夜景</td></tr>
+                <tr><td>候选筛选</td><td>规则、异源模型、分层人工抽检共同工作</td><td>共享盲点把错误标签放大</td></tr>
+                <tr><td>配比实验</td><td>保持训练条件可比，检查白天场景退化</td><td>生成器纹理取代真实规律</td></tr>
+                <tr><td>独立路测</td><td>真实数据不参与生成、调参或筛选</td><td>系统在自己的闭环里证明自己</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>至此，团队拥有的不是一袋“人工图片”，而是一套能被质疑和重做的证据链。它仍然不能保证安全，却让失败变得可定位。接下来要面对更难的判断：即使真实路测总体上升，某些群体是否被平均数藏住，生成器是否记住了个人记录，以及下一版模型会不会继续吃进上一版的输出。</p>
+        </section>
+
+        <nav class="chapter-nav" aria-label="章节导航">
+          <a href="main.html"><small>返回</small>← 重新建立直觉</a>
+          <a href="judgment.html"><small>继续</small>检验收益与风险 →</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-statement">生成器制造候选，证据决定去留。</p>
+      <div class="footer-meta"><span>合成数据与数据增强</span><a href="../../index.html">返回知识库总览</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
