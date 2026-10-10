@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>检索机制：索引、过滤与混合搜索｜向量数据库对比</title>
+  <meta name="description" content="用企业知识助手案例理解 HNSW、精确扫描、量化、过滤选择性与混合检索。">
+  <meta name="kb_darkMode" content="supported">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库章节">
+    <a class="rail-brand" href="main.html">向量数据库</a>
+    <div class="rail-nav">
+      <a class="rail-link" href="main.html" aria-label="第一章：直觉地图">01</a>
+      <a class="rail-link" href="retrieval.html" aria-label="第二章：检索机制" aria-current="page">02</a>
+      <a class="rail-link" href="choosing.html" aria-label="第三章：选型判断">03</a>
+      <a class="rail-link" href="sources.html" aria-label="来源与延伸阅读">S</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+  <nav class="mobile-bar" aria-label="移动端章节导航">
+    <a class="mobile-brand" href="main.html">Vector DB</a>
+    <select class="page-select nav-menu-btn" data-page-select aria-label="选择章节">
+      <option value="main.html">01 直觉地图</option>
+      <option value="retrieval.html" selected>02 检索机制</option>
+      <option value="choosing.html">03 选型判断</option>
+      <option value="sources.html">来源</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span>/</span><a href="main.html">向量数据库对比</a><span>/</span><span>检索机制</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">向量数据库不是只负责算相似度的容器，而是把候选生成、业务过滤、更新一致性和服务边界组合起来的检索系统；选型必须从真实查询路径出发。</template>
+      <template data-narrative="question">既然真实查询同时包含相似度与业务约束，不同索引、过滤和混合检索机制会怎样改变结果与成本？</template>
+      <template data-narrative="example">企业知识助手先按员工权限和文档时效缩小范围，再在允许访问的片段中寻找语义近邻，并把关键词命中与向量相似度合并。</template>
+      <template data-narrative="conclusion">索引只是候选生成器，过滤选择性、数据更新和稀疏与稠密信号的融合共同决定检索质量；因此应以自己的查询分布做端到端评测。</template>
+      <template data-narrative="next-question">当机制差异必须放进真实系统评测时，专用托管服务、可自托管引擎与 PostgreSQL 扩展分别适合怎样的团队？</template>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <h1>候选是怎样被找出来的</h1>
+          <p class="hero-lede">索引不是答案库，而是一种有损的导航方式。过滤改变可走的路，混合检索又把不同地图叠在一起。</p>
+        </div>
+        <div class="query-track" aria-label="索引、过滤、重排的检索轨道">
+          <div class="track-row"><span class="track-label">INDEX</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">SCOPE</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">FUSE</span><span class="track-line"></span></div>
+        </div>
+      </header>
+
+      <article class="prose">
+        <section>
+          <h2>先从一张不完整的地图说起</h2>
+          <p>上一章把向量数据库放回完整查询路径。现在可以进一步追问：当员工提出问题时，数据库如何避免逐条比较所有文档，同时又尽量不漏掉真正相关的制度？大多数系统会先建立一种导航结构，再利用它快速靠近可能的答案。</p>
+          <p><dfn data-term="HNSW">HNSW</dfn> 是常见的图索引。可以把每条向量看作一个节点，节点之间连接若干近邻。查询从较稀疏的高层开始，大步接近目标区域，再进入更密集的底层细找。它不保证检查每个节点，却通常能以较少比较找到高质量候选。</p>
+          <p>图索引的两个重要方向分别影响建库与查询。增加每个节点的连接或在查询时探索更多候选，通常可能改善找回质量，也会消耗更多内存、构建时间或查询计算。参数名称因产品而异，基本取舍却相似：索引把“完整检查”换成“有引导的探索”。</p>
+          <p>精确扫描则真的比较范围内的每条向量。小数据集、过滤后只剩很少对象，或者需要建立质量基线时，它并不过时。近似索引若在极小候选集上仍要维护复杂导航，未必占优。成熟系统往往会在索引搜索与扫描之间选择，而不是把一种算法用于所有请求。</p>
+          <p>企业知识助手可以保留一批人工确认的问答，把精确扫描得到的高质量候选当作参照，再观察近似索引遗漏了什么。这样讨论参数时就有明确目标：不是追求抽象的“更快”，而是在可接受的延迟和资源内，尽量保住对业务重要的相关材料。</p>
+        </section>
+
+        <section>
+          <h2>内存、速度和精度的三角关系</h2>
+          <p>向量通常由许多浮点数组成。数据量上升后，仅保存原始向量就可能占用显著内存，图的邻接关系还会增加额外开销。系统因此可能把部分数据放在磁盘，缓存热点，或使用更紧凑的表示。每种做法都改变查询时需要读取和计算的内容。</p>
+          <p><dfn data-term="量化">量化</dfn> 是把高精度向量近似成更紧凑表示的办法。粗略表示可用于快速筛选候选，随后再用原始向量对较小候选集重新计算。这样可能降低内存与带宽压力，但压缩误差也可能改变相近结果的顺序。</p>
+          <p>量化不是一个简单的开关。数据分布、距离函数、维度和目标召回都会影响效果。若许多候选本来就非常接近，轻微误差可能改变排名；若相关与不相关对象间隔明显，压缩造成的影响也许较小。评测必须使用自己的向量，而不是只看供应商在另一组数据上的数字。</p>
+          <p>磁盘化也有类似边界。把原始向量放到磁盘可以减少常驻内存，却可能增加输入输出等待。快速本地固态盘、云网络块存储和对象存储的行为差别很大。文档写着“支持磁盘”只说明功能存在，不代表你的延迟目标一定能够满足。</p>
+          <div class="note">
+            <strong>性能参数不是独立旋钮。</strong>
+            <p>提高探索范围可能增加召回，也会增加计算；提高压缩率可能降低资源，也会增加近似误差；扩大候选集可能帮助重排，却让后续模型更贵。每次调整都应同时观察质量、尾延迟和资源。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>过滤会改写图上的道路</h2>
+          <p>现在加入权限条件。假设图索引中的一个节点与查询非常接近，但员工无权访问；它的邻居也大多来自另一个部门。若算法只是沿原图前进，再把无权限节点丢掉，就可能无法穿过这片区域，错过后面真正允许访问的节点。</p>
+          <p><dfn data-term="过滤选择性">过滤选择性</dfn> 描述条件缩小数据范围的程度。只排除少量记录的宽松条件，与只允许千分之一记录的严格条件，对查询计划的影响完全不同。权限、租户、地域和有效期组合后，选择性还会随用户和时间变化。</p>
+          <p>常见处理思路有三类。预过滤先从结构化索引得到允许集合，再在其中做向量搜索；后过滤先做向量搜索，再删除不合格结果；集成过滤则在图遍历过程中同时判断条件。实际产品可能混合使用，并根据条件估算选择扫描还是索引。</p>
+          <p>预过滤能避免越界候选参与后续，却可能让原图连接不再有效。后过滤实现简单，但需要取得更多初始候选，严格条件下仍可能不够。集成过滤需要更复杂的索引与查询规划。Qdrant 的官方文档就强调载荷字段索引不仅帮助过滤，也帮助估算条件规模，并参与可过滤图结构的构建。</p>
+          <p>Milvus 的官方文档描述了另一种可理解的路径：先把标量条件解析为执行计划，在数据段内形成位集合，再用它限制向量搜索。pgvector 则依托 PostgreSQL 的 SQL 条件与查询计划。不同实现不能只用“支持过滤”四个字归为同一格。</p>
+          <p>企业知识助手还要区分安全过滤与偏好过滤。权限条件必须正确，宁可失败也不能越权；语言或文档类型偏好则可以在没有结果时放宽。把两者写成同一个可选过滤器，会让搜索质量问题演变成数据泄露风险。</p>
+        </section>
+
+        <section>
+          <h2>关键词与语义需要两张地图</h2>
+          <p>向量擅长处理表达不同但意思相近的文本，却未必可靠保存编号、缩写、人名和罕见产品代号。员工询问“FIN-2026-04”时，精确词项命中可能比语义相似更有用；询问“出差住店上限变了吗”时，语义表示更可能找到标题完全不同的制度。</p>
+          <p><dfn data-term="混合检索">混合检索</dfn> 把向量语义信号与关键词等稀疏信号组合。两路搜索可以各自产生候选，再用排名融合合并；也可以在统一查询接口中给不同信号权重。它不是把两个分数简单相加，因为不同检索器的分数范围和含义可能不同。</p>
+          <p>融合后仍可能需要重排。较便宜的搜索先从大量记录中找几十条候选，更精细的模型再逐条判断问题与片段是否真正相关。这个两阶段结构能把昂贵计算限制在小集合，但候选阶段若漏掉正确材料，重排器无法把不存在的结果找回来。</p>
+          <p>因此，评测需要拆层。候选召回测试关心正确材料有没有进入候选集；排序测试关心正确材料是否靠前；最终回答测试还要看引用是否支持结论。把三层混成一个“回答不错率”，很难定位问题究竟来自数据库、嵌入模型、重排器还是生成模型。</p>
+          <p>Weaviate、Qdrant、Milvus 与 Pinecone 的当前产品线都提供某种形式的稀疏或混合检索能力，但接口、内置模型、融合方法和部署边界会变化。选择时应阅读与当前版本对应的官方文档，并用同一批查询验证，而不是把“有混合搜索”当成等价能力。</p>
+        </section>
+
+        <section>
+          <h2>写入与删除也属于检索质量</h2>
+          <p>企业制度更新后，旧片段何时不再出现？新片段何时可检索？删除是立即从索引消失，还是先留下墓碑等待压缩？这些时间窗口会直接影响答案。只测稳定数据上的读取延迟，会遗漏生产系统最常见的变化。</p>
+          <p>图索引支持增量插入，但长期更新可能改变图结构和数据段布局。删除过多后，系统可能需要合并或重建。分布式系统还要在写入吞吐、复制一致性和查询新鲜度之间取舍。这里没有统一最佳值，只有与业务容忍度匹配的明确承诺。</p>
+          <p>对知识助手而言，可以把“制度发布后五分钟内可搜到”“撤回后一分钟内不再返回”等目标写成可测试条件。测试不仅发查询，还应在查询过程中插入、更新和删除文档，观察结果何时变化。这样才能发现索引刷新、缓存与副本之间的真实滞后。</p>
+          <p>同时要保存文档版本和稳定标识。向量由哪个模型产生、原文来自哪个版本、片段在原文中的位置，都应能够追溯。否则更换嵌入模型或重新切分后，很难判断结果变化来自模型，还是数据管道悄悄丢了内容。</p>
+        </section>
+
+        <section>
+          <h2>端到端评测应怎样落地</h2>
+          <p>先从生产日志中抽取一组匿名化问题，覆盖高频问题、罕见编号、不同权限、严格时间过滤和容易混淆的同义表达。再由了解业务的人标出可接受材料，并记录“不得出现”的越权或过期材料。这个集合比随机生成的问题更接近真实风险。</p>
+          <p>随后固定嵌入模型、数据版本和硬件条件，分别测精确基线与候选配置。记录候选召回、排序位置、平均与高分位延迟、写入后可见时间、内存与磁盘使用。成本必须包含运行环境和维护时间，而不只是单次查询报价。</p>
+          <p>过滤测试要按条件强弱分桶。完全不过滤、只限定部门、部门加地区、再叠加权限和时间，可能走不同查询计划。多租户系统还要同时测小租户和大租户，避免平均值掩盖某一类用户持续变慢。</p>
+          <p>故障测试同样重要。节点重启、网络抖动、索引重建和大批量导入期间，查询是否继续服务？数据是否重复或丢失？恢复后结果是否一致？如果团队选择托管服务，还应验证配额、超时和区域故障时的应用退化策略。</p>
+          <p>最后才比较产品。图索引参数多不等于一定更好，自动调优少也不等于缺乏能力。团队若没有人维护复杂配置，明确而稳定的默认值可能更有价值；若负载特殊且有人持续调优，开放更多控制面则可能形成优势。</p>
+          <div class="decision-frame">
+            <strong>评测的最小闭环。</strong>
+            <p>真实问题集 → 权限与时效条件 → 候选召回 → 重排与引用 → 延迟和成本 → 写入与故障。任何只覆盖其中一两项的演示，都不足以支撑长期架构选择。</p>
+          </div>
+          <p>机制层的结论已经清楚：索引负责快速提出候选，却不能独自保证正确。过滤条件改变搜索空间，混合信号改变排序，更新流程改变数据是否仍然可信。接下来才能把产品放进同一张架构地图，而不是继续比较孤立的功能清单。</p>
+        </section>
+
+        <div class="page-turn">
+          <p>先用自己的查询分布确定机制，再用团队边界选择承载这些机制的产品家族。</p>
+          <a class="page-link" href="choosing.html">继续：从产品名称回到团队约束 →</a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-mast">
+    <p class="foot-wordmark">向量数据库对比</p>
+    <p class="foot-tagline">索引、过滤和融合共同决定结果，单项基准不会替你完成判断。</p>
+    <nav class="foot-links" aria-label="页脚导航">
+      <a href="main.html">直觉地图</a>
+      <a href="choosing.html">选型判断</a>
+      <a href="sources.html">来源</a>
+      <a href="../index.html">知识库总览</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>向量数据库对比：先看检索路径，再看产品</title>
+  <meta name="description" content="从企业知识助手的完整检索路径出发，理解向量数据库的作用、边界与选型维度。">
+  <meta name="kb_darkMode" content="supported">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库章节">
+    <a class="rail-brand" href="main.html">向量数据库</a>
+    <div class="rail-nav">
+      <a class="rail-link" href="main.html" aria-label="第一章：直觉地图" aria-current="page">01</a>
+      <a class="rail-link" href="retrieval.html" aria-label="第二章：检索机制">02</a>
+      <a class="rail-link" href="choosing.html" aria-label="第三章：选型判断">03</a>
+      <a class="rail-link" href="sources.html" aria-label="来源与延伸阅读">S</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+  <nav class="mobile-bar" aria-label="移动端章节导航">
+    <a class="mobile-brand" href="main.html">Vector DB</a>
+    <select class="page-select nav-menu-btn" data-page-select aria-label="选择章节">
+      <option value="main.html" selected>01 直觉地图</option>
+      <option value="retrieval.html">02 检索机制</option>
+      <option value="choosing.html">03 选型判断</option>
+      <option value="sources.html">来源</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span>/</span><span>向量数据库对比</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="overview">
+      <template data-narrative="question">向量数据库究竟解决什么问题，为什么不能只看检索速度就决定选型？</template>
+      <template data-narrative="example">一家提供企业知识助手的团队，需要在员工提问时从不同部门、权限和更新时间的文档中找出可引用片段。</template>
+      <template data-narrative="conclusion">向量数据库不是只负责算相似度的容器，而是把候选生成、业务过滤、更新一致性和服务边界组合起来的检索系统；选型必须从真实查询路径出发。</template>
+      <template data-narrative="next-question">既然真实查询同时包含相似度与业务约束，不同索引、过滤和混合检索机制会怎样改变结果与成本？</template>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <h1>先别急着比较数据库</h1>
+          <p class="hero-lede">用户问的是一句自然语言，系统面对的却是一条由权限、更新时间、语义距离和排序规则共同组成的检索路径。产品名称只是路径末端的一次选择。</p>
+        </div>
+        <div class="query-track" aria-label="从提问到候选结果的检索轨道">
+          <div class="track-row"><span class="track-label">QUERY</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">FILTER</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">RANK</span><span class="track-line"></span></div>
+        </div>
+      </header>
+
+      <div class="reading-map" aria-label="阅读路径">
+        <div class="map-step"><span class="map-no">01</span><div><strong>看清问题</strong><p>把“找相似”放回真实业务请求。</p></div></div>
+        <div class="map-step"><span class="map-no">02</span><div><strong>拆开机制</strong><p>理解索引、过滤与混合信号。</p></div></div>
+        <div class="map-step"><span class="map-no">03</span><div><strong>形成判断</strong><p>先选架构家族，再验证具体产品。</p></div></div>
+      </div>
+
+      <article class="prose">
+        <section>
+          <h2>一条看似简单的提问</h2>
+          <p>设想一家企业正在建设内部知识助手。员工问：“今年的差旅报销有哪些变化？”系统不能把全公司的所有文档都交给生成模型。它要先确认员工属于哪个地区和部门，还要排除已经废止的制度，只保留此人有权访问的材料，最后找出真正讨论“今年变化”的片段。</p>
+          <p>文本进入检索系统前，通常会经过切分和模型编码。模型产生的 <dfn data-term="向量嵌入">向量嵌入</dfn> 是一串数字，它把文本在某个模型眼中的语义关系放进一个多维空间。两个片段的向量靠得近，只表示模型认为它们在训练所得的表示空间中相似，并不自动证明内容正确、最新或适合当前员工。</p>
+          <p>数据库接到查询向量后，可以比较它与已存向量的距离。若逐条比较，结果容易理解，却会随着数据增加而付出更多计算。实际系统往往使用 <dfn data-term="近似最近邻">近似最近邻</dfn> 方法：索引跳过大量明显不相关的对象，较快找到一组很可能接近的候选，但接受少量漏检的可能。</p>
+          <p>这正是“向量数据库”容易被误解的地方。它当然要保存向量并计算距离，可生产系统还要处理原始文本引用、文档标识、更新时间、删除、并发写入、租户边界、备份与监控。它更像一段专门服务于相似性检索的数据基础设施，而不是一个装满浮点数的抽屉。</p>
+        </section>
+
+        <section>
+          <h2>相似并不等于可用</h2>
+          <p>回到差旅制度。某个旧版文档可能与问题在语言上极为相似，却已经失效；另一个地区的制度也许写得几乎一样，却不适用于提问者。系统因此需要 <dfn data-term="元数据过滤">元数据过滤</dfn>，也就是用部门、地区、有效期、文档类型和权限标签等结构化条件限制候选范围。</p>
+          <p>过滤并非附带的小功能。若数据库先找出最相似的十条，再删去无权限结果，最后可能只剩一两条，甚至一条也没有。若先把过滤条件应用到允许访问的数据，再做相似性搜索，候选更干净，但严格过滤可能破坏近似索引原本依赖的连接结构。不同产品真正拉开差距的地方，常常就在这里。</p>
+          <p>检索质量也不能只看“第一条像不像”。<dfn data-term="召回率">召回率</dfn> 描述真正相关的材料中有多少被检索阶段找回。知识助手若漏掉唯一一份更新通知，即使返回得很快，答案仍可能错误。相反，一味提高候选数量会增加后续重排和生成模型的成本，还会让无关材料干扰回答。</p>
+          <p>因此，一个有意义的检索请求至少包含四层约束：语义上要接近，业务上要允许，时间上要有效，返回结果还要能够追溯到原文。向量距离只覆盖其中第一层的一部分。权限模型和更新流程若设计不当，再先进的索引也只能更快地返回不该出现的内容。</p>
+          <div class="case-study">
+            <strong>同一个问题，两条完全不同的路径。</strong>
+            <p>路径 A 在全库中取最相似的十条，再删除无权限片段。路径 B 先限定“华东地区、财务制度、当前有效、员工可见”，再在范围内找候选。两条路径调用的可能是同一种距离函数，结果和资源消耗却可能完全不同。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>数据库处在整条链的中段</h2>
+          <p>用户看到答案之前，数据已经历采集、清洗、切分、向量化、写入和索引。查询到来之后，还可能经历查询改写、过滤、候选融合、重排、去重与引用拼装。数据库既不是链条的起点，也不是终点。切分方式或嵌入模型改变后，同一数据库中的结果可能发生明显变化。</p>
+          <ol class="pipeline">
+            <li><span class="node">01</span><div><strong>数据准备</strong><br>保留原文、来源、权限、版本与稳定标识；向量只是新增的一列表示。</div></li>
+            <li><span class="node">02</span><div><strong>候选生成</strong><br>把查询变成向量，结合过滤条件，从大量记录中找出较小的候选集。</div></li>
+            <li><span class="node">03</span><div><strong>融合与重排</strong><br>把语义、关键词、时间和业务权重合在一起，必要时交给更昂贵的模型复核。</div></li>
+            <li><span class="node">04</span><div><strong>回答与观察</strong><br>展示可核对的引用，并记录漏检、越权、延迟和更新滞后等问题。</div></li>
+          </ol>
+          <p>如果原始文档已经存放在 PostgreSQL，向量只是其中一种字段，那么在原库增加 pgvector 可能保持事务和权限逻辑的集中。若检索成为独立的大规模服务，专用引擎通常提供更多索引调优、分片和搜索能力。若团队不想管理集群，托管服务可以把容量、升级与故障处理交给供应商。</p>
+          <p>这三种方向没有天然高下。它们把复杂性放在不同地方：原数据库扩展把搜索靠近业务数据，却要共享数据库资源；自托管专用引擎提供更多控制，也要求团队承担运行责任；托管服务降低运维门槛，却增加网络、费用模型和供应商边界的考虑。</p>
+        </section>
+
+        <section>
+          <h2>距离函数没有业务常识</h2>
+          <p>向量搜索还需要选择怎样衡量“近”。余弦相似度关注方向，点积同时受方向与长度影响，欧氏距离则衡量空间中的直线距离。嵌入模型通常会说明推荐度量，数据库只是按选定规则计算。换一种度量可能改变排序，却不会自动让模型理解公司的制度边界。</p>
+          <p>即使距离计算完全正确，语义表示也可能把措辞相似但法律效力不同的文本放在一起。标题为“差旅办法（征求意见稿）”的文件，可能比正式制度更接近员工的自然提问。若元数据没有记录状态，数据库无法从向量距离中推断哪份文件已经生效。</p>
+          <p>反过来，距离较远也不一定意味着无关。一个简短的审批表可能不复述制度正文，却是完成流程不可缺少的材料。这类关系需要关键词、显式链接、业务规则或后续重排补充。向量搜索擅长发现柔性的语义邻近，不负责替系统发明缺失的事实关系。</p>
+          <p>因此，评测数据应包含容易混淆的反例，而不只是明显相关与明显无关的样本。旧版与新版、草案与正式文件、不同地区的同名制度，都能检验系统是否把“语言相似”误当成“业务可用”。这种反例比随机负样本更接近上线后的真实风险。</p>
+        </section>
+
+        <section>
+          <h2>为什么排行榜往往帮倒忙</h2>
+          <p>公开基准可以帮助发现异常，却不能替代自己的数据。向量维度、数据量、写入频率、过滤条件、硬件、缓存状态和目标召回都会改变结果。一个系统在无过滤的静态数据上表现突出，不等于它在频繁更新、严格权限过滤的知识库中仍然合适。</p>
+          <p>价格表也不能直接给出总成本。数据库费用之外还有嵌入计算、数据传输、备份、监控、值班、容量预留和工程时间。托管产品看似单价较高，可能省下运维团队；自托管软件没有许可费用，也不意味着计算、存储和故障处理免费。</p>
+          <p>更可靠的起点是写出真实请求的形状。数据是否已经在关系数据库中？过滤字段有哪些？更新多久必须可见？是否有硬性的部署地域要求？查询峰值与平均值相差多大？一次越权结果的后果是什么？这些问题会先排除一批架构，再决定值得测试哪些产品。</p>
+          <p>对于企业知识助手，最重要的不是先问“Pinecone、Weaviate、Qdrant、Milvus 和 pgvector 谁最快”，而是先确认系统要负责到哪里。只有数据库负责的边界清楚，性能、功能和价格才有共同的比较口径。</p>
+          <div class="note">
+            <strong>一个实用的比较单位。</strong>
+            <p>不要把“数据库”当成孤立黑盒。把一次带权限的真实查询，加上结果质量、更新时间和完整成本，作为最小比较单位。这样测出的差异才可能在上线后继续成立。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>先建立五条判断轴</h2>
+          <p>第一条是数据归属。向量是主数据、派生数据，还是缓存？若它只是从已有文档重新计算得到的派生表示，重建索引可能可接受；若数据库同时保存唯一的业务记录，备份、事务和恢复要求就会显著提高。</p>
+          <p>第二条是查询形状。纯语义搜索、关键词与语义混合、地理或时间范围、复杂权限表达式，对索引和查询计划的要求不同。不要用一个简单演示查询代表全部生产请求。</p>
+          <p>第三条是变化速度。批量导入后长期只读，与每分钟都有删除和更新，是两类系统。索引构建时间、更新何时可见、删除何时真正回收空间，都可能比单次查询延迟更重要。</p>
+          <p>第四条是运行边界。托管还是自托管，单一区域还是多区域，团队是否能维护分布式存储，决定了许多“高级能力”是否真的可用。不能稳定运行的功能，在架构图上再漂亮也没有价值。</p>
+          <p>第五条是验证与退出。团队应保留一组真实问题、相关性标注和负载脚本，使模型或数据库变化后能够重测。同时保存稳定标识、原文和元数据的可导出形式，避免检索层变成无法替换的数据孤岛。</p>
+          <p>这五条轴把注意力从产品宣传拉回系统事实。接下来需要进入候选生成内部，理解图索引、过滤和混合检索为什么会互相牵制。只有看懂这些机制，产品文档中的“支持过滤”或“支持混合搜索”才不再只是复选框。</p>
+        </section>
+
+        <div class="page-turn">
+          <p>相似度只负责提出候选，业务条件决定哪些候选有资格留下。</p>
+          <a class="page-link" href="retrieval.html">继续：候选是怎样被找出来的 →</a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-mast">
+    <p class="foot-wordmark">向量数据库对比</p>
+    <p class="foot-tagline">从真实查询路径出发，不替任何产品制造万能冠军。</p>
+    <nav class="foot-links" aria-label="页脚导航">
+      <a href="retrieval.html">检索机制</a>
+      <a href="choosing.html">选型判断</a>
+      <a href="sources.html">来源</a>
+      <a href="../index.html">知识库总览</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

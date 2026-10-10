@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-10T22:45:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "向量数据库究竟解决什么问题，为什么不能只看检索速度就决定选型？",
+      "readerStateChange": "读前容易把向量数据库看成相似度排序工具；读后能把它放进包含权限、时效、更新、运维与业务一致性的完整检索路径。",
+      "twoSentenceSummary": "页面以企业差旅制度助手为例，说明语义相似并不等于业务可用，并拆开数据准备、候选生成、融合与回答四个阶段。它进一步提出数据归属、查询形状、变化速度、运行边界和退出验证五条选型轴。",
+      "continuityEvidence": "结尾指出产品文档中的过滤与混合搜索不能只看复选框，必须继续理解候选生成、过滤和融合如何互相牵制，直接引出机制页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "retrieval.html",
+      "centralQuestion": "既然真实查询同时包含相似度与业务约束，不同索引、过滤和混合检索机制会怎样改变结果与成本？",
+      "readerStateChange": "读前只知道选型要看完整查询路径；读后能够解释图索引、扫描、量化、过滤选择性与混合检索的配合，并设计端到端评测。",
+      "twoSentenceSummary": "页面把 HNSW 解释为不完整的导航地图，并说明量化、磁盘、过滤与更新如何改变候选质量和资源开销。企业权限案例贯穿预过滤、后过滤、集成过滤、混合检索与写入可见性的分析。",
+      "continuityEvidence": "开头承接入口页的完整路径模型，结尾把机制差异收束为真实查询分布上的评测要求，由此自然进入架构家族和具体产品选择。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "choosing.html",
+      "centralQuestion": "当机制差异必须放进真实系统评测时，专用托管服务、可自托管引擎与 PostgreSQL 扩展分别适合怎样的团队？",
+      "readerStateChange": "读前能够理解并评测检索机制；读后能先按治理与运维边界选择架构家族，再用同一数据验证五类常见候选并保留迁移能力。",
+      "twoSentenceSummary": "页面比较托管专用服务、可自托管引擎与 PostgreSQL 扩展的责任分配，并分别定位 Pinecone、Weaviate、Qdrant、Milvus/Zilliz 和 pgvector。它用硬门槛、小规模验证、完整成本与导出演练替代抽象总分。",
+      "continuityEvidence": "页面接住机制页提出的端到端评测，把索引和过滤差异放入团队边界；末段将结论推进到可重复评测与可迁移边界这一长期开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文中的机制概括；读后能够回到项目官方文档、官方仓库与原始论文核对当前能力，并知道供应商声明不能替代本地评测。",
+      "twoSentenceSummary": "来源页按算法基础、PostgreSQL 与专用向量系统整理权威入口，并说明核对日期和时效边界。它还连接站内知识图谱入门，帮助读者区分相似性检索与显式关系检索。",
+      "continuityEvidence": "该页承接三篇正文的出处提示和产品事实，提供可达链接而不另起叙事分支，并把读者带回可重复验证。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

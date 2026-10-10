@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>来源与延伸阅读｜向量数据库对比</title>
+  <meta name="description" content="向量数据库比较所依据的官方文档、项目仓库与基础论文。">
+  <meta name="kb_darkMode" content="supported">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库章节">
+    <a class="rail-brand" href="main.html">向量数据库</a>
+    <div class="rail-nav">
+      <a class="rail-link" href="main.html" aria-label="第一章：直觉地图">01</a>
+      <a class="rail-link" href="retrieval.html" aria-label="第二章：检索机制">02</a>
+      <a class="rail-link" href="choosing.html" aria-label="第三章：选型判断">03</a>
+      <a class="rail-link" href="sources.html" aria-label="来源与延伸阅读" aria-current="page">S</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+  <nav class="mobile-bar" aria-label="移动端章节导航">
+    <a class="mobile-brand" href="main.html">Vector DB</a>
+    <select class="page-select nav-menu-btn" data-page-select aria-label="选择章节">
+      <option value="main.html">01 直觉地图</option>
+      <option value="retrieval.html">02 检索机制</option>
+      <option value="choosing.html">03 选型判断</option>
+      <option value="sources.html" selected>来源</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span>/</span><a href="main.html">向量数据库对比</a><span>/</span><span>来源</span>
+    </nav>
+    <main id="content" data-kb-content data-page-role="reference">
+      <header class="hero">
+        <div class="hero-copy">
+          <h1>来源与延伸阅读</h1>
+          <p class="hero-lede">功能、部署方式和接口会持续变化。产品事实以官方文档为准；正文避免使用无法在相同工作负载中复核的性能排名。</p>
+        </div>
+        <div class="query-track" aria-label="来源核对轨道">
+          <div class="track-row"><span class="track-label">CLAIM</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">DOCS</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">TEST</span><span class="track-line"></span></div>
+        </div>
+      </header>
+
+      <article class="prose">
+        <section>
+          <h2>阅读这些来源的方法</h2>
+          <p>以下链接以项目官方文档、官方仓库和算法原始论文为主，核对日期为 2026 年 10 月 10 日。产品文档可能在日期之后更新，因此部署区域、价格、配额、版本支持与具体 API 不在正文中写成永久事实。准备采购或上线时，应再次核对与你使用的版本和服务区域相符的页面。</p>
+          <p>供应商文档最适合确认“产品声明支持什么”和“推荐怎样配置”，不等于独立性能结论。延迟、召回与成本必须在同一数据、硬件、过滤条件和目标质量下测试。正文中的比较因此聚焦责任边界、机制和验证方法，而没有给五个候选排一个总名次。</p>
+        </section>
+
+        <section>
+          <h2>索引与数据库基础</h2>
+          <ul class="source-list">
+            <li><a href="https://arxiv.org/abs/1603.09320">HNSW 原始论文：Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs</a><p>用于理解分层图如何进行近似最近邻搜索。论文解释算法，不代表任何具体数据库的当前实现细节。</p></li>
+            <li><a href="https://github.com/pgvector/pgvector">pgvector 官方仓库与 README</a><p>说明 PostgreSQL 中的向量类型、距离操作、精确搜索，以及 HNSW、IVFFlat 索引和过滤注意事项。</p></li>
+            <li><a href="https://www.postgresql.org/docs/current/">PostgreSQL 当前版官方文档</a><p>用于补充事务、查询计划、索引、分区、备份与访问控制等数据库基础。pgvector 的系统边界离不开 PostgreSQL 本身。</p></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>专用向量系统官方文档</h2>
+          <ul class="source-list">
+            <li><a href="https://docs.pinecone.io/guides/index-data/indexing-overview">Pinecone：索引数据概览</a><p>用于核对其托管索引、命名空间与服务模型。元数据过滤与隔离方案应结合当前 Pinecone 文档的对应章节继续确认。</p></li>
+            <li><a href="https://docs.weaviate.io/weaviate/concepts/vector-index">Weaviate：向量索引概念</a><p>介绍 HNSW、平面与动态索引等选择。混合搜索另见官方搜索文档，实际融合参数应以当前版本为准。</p></li>
+            <li><a href="https://qdrant.tech/documentation/manage-data/indexing/">Qdrant：索引</a><p>解释载荷索引、HNSW 与可过滤图结构的关系，也提醒常用过滤字段应在数据导入前建立索引。</p></li>
+            <li><a href="https://qdrant.tech/documentation/search-patterns/vector-search-filtering/">Qdrant：向量搜索过滤</a><p>说明预过滤、后过滤的代价，以及查询规划如何利用载荷索引和过滤规模估计。</p></li>
+            <li><a href="https://milvus.io/docs/architecture_overview.md">Milvus：架构概览</a><p>用于核对其存储与计算分离、协调服务、工作节点和存储层等分布式架构。</p></li>
+            <li><a href="https://milvus.io/docs/scalar_index.md">Milvus：标量索引</a><p>解释标量条件如何形成过滤结果，并与向量搜索结合；也列出标量索引的当前选择。</p></li>
+            <li><a href="https://docs.zilliz.com/docs/what-is-zilliz-cloud">Zilliz Cloud：产品概览</a><p>用于区分 Milvus 开源引擎与其托管服务路径。服务区域、配额和价格需要在采用时重新核对。</p></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>继续理解检索系统</h2>
+          <p>若要进一步学习 RAG，应把这套比较与文档切分、嵌入模型、重排器、引用验证和离线评测结合起来。数据库只能从现有表示与过滤条件中提出候选，无法修复错误原文，也不能替代权限治理。</p>
+          <p>站内的 <a href="../knowledge-graph-primer/main.html">知识图谱入门</a> 可以帮助区分“按相似性找候选”和“按明确关系追踪实体”两类检索思路。两者可以组合，却不应因为都用于知识系统就被当成同一种数据库能力。</p>
+          <p>回到具体选型时，建议从 <a href="choosing.html">选型判断</a> 中的小规模验证开始，并保留一套可重复的真实问题集。只要数据、模型或权限结构改变，就重新运行，而不是依赖这份静态比较替你决定。</p>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-mast">
+    <p class="foot-wordmark">向量数据库对比</p>
+    <p class="foot-tagline">链接用于核对声明；真实负载用于验证选择。</p>
+    <nav class="foot-links" aria-label="页脚导航">
+      <a href="main.html">直觉地图</a>
+      <a href="retrieval.html">检索机制</a>
+      <a href="choosing.html">选型判断</a>
+      <a href="../index.html">知识库总览</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3928,6 +3928,13 @@
       "generatedAt": "2026-10-10",
       "slug": "cults-and-mind-control",
       "entry": "knowledge-bases/cults-and-mind-control/main.html"
+    },
+    {
+      "name": "向量数据库对比",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-10",
+      "slug": "vector-database-comparison",
+      "entry": "knowledge-bases/vector-database-comparison/main.html"
     }
   ],
   "skipped": []

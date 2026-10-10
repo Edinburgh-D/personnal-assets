@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "向量数据库对比",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-10",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先别急着比较数据库",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "向量数据库究竟解决什么问题，为什么不能只看检索速度就决定选型？",
+      "readerStateBefore": "读者知道向量数据库与 AI 搜索有关，却容易把它理解成存放向量并按相似度排序的单一工具。",
+      "readerStateAfter": "读者能够把向量检索放回完整数据路径，并用数据归属、过滤、更新、运维与业务一致性理解选型问题。",
+      "priorConclusion": "",
+      "coreExample": "一家提供企业知识助手的团队，需要在员工提问时从不同部门、权限和更新时间的文档中找出可引用片段。",
+      "conclusion": "向量数据库不是只负责算相似度的容器，而是把候选生成、业务过滤、更新一致性和服务边界组合起来的检索系统；选型必须从真实查询路径出发。",
+      "nextQuestion": "既然真实查询同时包含相似度与业务约束，不同索引、过滤和混合检索机制会怎样改变结果与成本？",
+      "nextPage": "retrieval.html",
+      "newTerms": [
+        { "term": "向量嵌入", "definition": "模型把文本、图片或其他对象转换成的一串数字，用空间距离近似表达语义相近程度。" },
+        { "term": "近似最近邻", "definition": "不穷举全部向量，而用索引快速寻找大概率最接近候选的一类算法。" },
+        { "term": "元数据过滤", "definition": "在语义相似之外，按部门、时间、价格、权限等结构化条件限制候选范围。" },
+        { "term": "召回率", "definition": "真正相关的结果中，有多少被检索阶段成功找回；它衡量的是漏掉了多少好答案。" }
+      ]
+    },
+    {
+      "file": "retrieval.html",
+      "title": "候选是怎样被找出来的",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然真实查询同时包含相似度与业务约束，不同索引、过滤和混合检索机制会怎样改变结果与成本？",
+      "readerStateBefore": "读者能够把向量检索放回完整数据路径，并用数据归属、过滤、更新、运维与业务一致性理解选型问题。",
+      "readerStateAfter": "读者能够解释图索引、倒排式过滤、精确扫描与混合检索之间的配合，并知道基准结果为何不能直接搬到自己的数据上。",
+      "priorConclusion": "向量数据库不是只负责算相似度的容器，而是把候选生成、业务过滤、更新一致性和服务边界组合起来的检索系统；选型必须从真实查询路径出发。",
+      "coreExample": "企业知识助手先按员工权限和文档时效缩小范围，再在允许访问的片段中寻找语义近邻，并把关键词命中与向量相似度合并。",
+      "conclusion": "索引只是候选生成器，过滤选择性、数据更新和稀疏与稠密信号的融合共同决定检索质量；因此应以自己的查询分布做端到端评测。",
+      "nextQuestion": "当机制差异必须放进真实系统评测时，专用托管服务、可自托管引擎与 PostgreSQL 扩展分别适合怎样的团队？",
+      "nextPage": "choosing.html",
+      "newTerms": [
+        { "term": "HNSW", "definition": "一种分层图索引，通过沿着相邻节点逐步靠近查询目标来减少需要比较的向量数量。" },
+        { "term": "量化", "definition": "用更少位数近似表示向量，以较小内存和更快计算换取一定精度损失。" },
+        { "term": "混合检索", "definition": "把向量语义信号与关键词等稀疏信号组合，再对候选结果进行融合排序。" },
+        { "term": "过滤选择性", "definition": "过滤条件排除数据的强弱；条件越严格，最终允许进入候选集的数据比例通常越小。" }
+      ]
+    },
+    {
+      "file": "choosing.html",
+      "title": "从产品名称回到团队约束",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["retrieval.html"],
+      "readerQuestion": "当机制差异必须放进真实系统评测时，专用托管服务、可自托管引擎与 PostgreSQL 扩展分别适合怎样的团队？",
+      "readerStateBefore": "读者能够解释图索引、倒排式过滤、精确扫描与混合检索之间的配合，并知道基准结果为何不能直接搬到自己的数据上。",
+      "readerStateAfter": "读者能够先判断架构家族，再用权限、一致性、运维能力、数据规模与退出成本缩小候选，并设计小规模验证。",
+      "priorConclusion": "索引只是候选生成器，过滤选择性、数据更新和稀疏与稠密信号的融合共同决定检索质量；因此应以自己的查询分布做端到端评测。",
+      "coreExample": "企业知识助手团队分别评估 Pinecone、Weaviate、Qdrant、Milvus/Zilliz 与 pgvector，并用相同权限过滤、更新频率和真实问题集验证。",
+      "conclusion": "好的选型不是找出抽象意义上的冠军，而是先选与团队边界匹配的架构家族，再用真实数据验证质量、延迟、成本、隔离和迁移能力。",
+      "nextQuestion": "当业务数据、模型和负载继续变化时，团队能否保留可重复评测与可迁移的数据边界，而不是把一次选型当成永久结论？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "数据主权", "definition": "组织对数据存放地点、访问控制、审计与跨境处理方式拥有的治理要求。" },
+        { "term": "多租户隔离", "definition": "让多个客户或部门共享基础设施时，仍保持数据不可越权访问并控制相互资源影响。" },
+        { "term": "退出成本", "definition": "未来迁移到另一套系统时，在数据导出、接口改写、重建索引和停机风险上的总负担。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

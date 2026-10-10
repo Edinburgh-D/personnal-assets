@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>选型判断：Pinecone、Weaviate、Qdrant、Milvus 与 pgvector</title>
+  <meta name="description" content="先比较托管专用服务、可自托管引擎与 PostgreSQL 扩展，再用真实数据验证具体产品。">
+  <meta name="kb_darkMode" content="supported">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库章节">
+    <a class="rail-brand" href="main.html">向量数据库</a>
+    <div class="rail-nav">
+      <a class="rail-link" href="main.html" aria-label="第一章：直觉地图">01</a>
+      <a class="rail-link" href="retrieval.html" aria-label="第二章：检索机制">02</a>
+      <a class="rail-link" href="choosing.html" aria-label="第三章：选型判断" aria-current="page">03</a>
+      <a class="rail-link" href="sources.html" aria-label="来源与延伸阅读">S</a>
+    </div>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+  <nav class="mobile-bar" aria-label="移动端章节导航">
+    <a class="mobile-brand" href="main.html">Vector DB</a>
+    <select class="page-select nav-menu-btn" data-page-select aria-label="选择章节">
+      <option value="main.html">01 直觉地图</option>
+      <option value="retrieval.html">02 检索机制</option>
+      <option value="choosing.html" selected>03 选型判断</option>
+      <option value="sources.html">来源</option>
+    </select>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深色模式">深色</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a><span>/</span><a href="main.html">向量数据库对比</a><span>/</span><span>选型判断</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">索引只是候选生成器，过滤选择性、数据更新和稀疏与稠密信号的融合共同决定检索质量；因此应以自己的查询分布做端到端评测。</template>
+      <template data-narrative="question">当机制差异必须放进真实系统评测时，专用托管服务、可自托管引擎与 PostgreSQL 扩展分别适合怎样的团队？</template>
+      <template data-narrative="example">企业知识助手团队分别评估 Pinecone、Weaviate、Qdrant、Milvus/Zilliz 与 pgvector，并用相同权限过滤、更新频率和真实问题集验证。</template>
+      <template data-narrative="conclusion">好的选型不是找出抽象意义上的冠军，而是先选与团队边界匹配的架构家族，再用真实数据验证质量、延迟、成本、隔离和迁移能力。</template>
+      <template data-narrative="next-question">当业务数据、模型和负载继续变化时，团队能否保留可重复评测与可迁移的数据边界，而不是把一次选型当成永久结论？</template>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <h1>从产品名称回到团队约束</h1>
+          <p class="hero-lede">先选“谁来运行、数据放哪、业务一致性由谁保证”，再讨论具体引擎。架构家族选错，功能表再长也只是补丁。</p>
+        </div>
+        <div class="query-track" aria-label="从约束到验证的选择轨道">
+          <div class="track-row"><span class="track-label">BOUND</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">FAMILY</span><span class="track-line"></span></div>
+          <div class="track-row"><span class="track-label">PROVE</span><span class="track-line"></span></div>
+        </div>
+      </header>
+
+      <article class="prose">
+        <section>
+          <h2>先决定哪些边界不能移动</h2>
+          <p>前一章说明了索引、过滤与更新必须一起评测。真正进入产品选择时，第一步仍不是下载五个客户端，而是写出不可妥协的边界。企业知识助手若涉及内部制度和客户资料，部署地域、审计方式、权限失败模式往往比某项搜索参数更早决定候选范围。</p>
+          <p><dfn data-term="数据主权">数据主权</dfn> 指组织对数据存放地点、访问控制、审计和跨境处理方式的治理要求。它可能来自法律、合同或内部政策。某些团队可以采用公共云托管服务，另一些团队必须在指定云账户或自有环境中运行，二者不该使用同一张候选清单。</p>
+          <p><dfn data-term="多租户隔离">多租户隔离</dfn> 是多个客户或部门共享基础设施时，仍保证数据不能越权访问，并控制资源相互影响。隔离既有逻辑层面，也有物理层面。过滤一个租户字段、使用独立命名空间、独立分片或独立集群，成本和故障边界都不同。</p>
+          <p><dfn data-term="退出成本">退出成本</dfn> 是未来迁移时在数据导出、接口改写、索引重建和停机风险上的总负担。向量通常可以重算，真正难迁移的是供应商特有的过滤表达式、混合排名、内置向量化流程和运维脚本。越依赖专有便利能力，越需要提前验证导出与替代路径。</p>
+          <p>这三条边界会把问题从“哪家功能多”改写为“复杂性放在哪里”。托管服务把集群复杂性移给供应商；开源专用引擎把控制权和运行责任交给团队；PostgreSQL 扩展把向量搜索并入已有数据平台，同时让它与业务负载共享资源。</p>
+        </section>
+
+        <section>
+          <h2>三类架构家族</h2>
+          <div class="compare-wrap">
+            <table class="compare-table">
+              <thead><tr><th>维度</th><th>托管专用服务</th><th>可自托管专用引擎</th><th>PostgreSQL 扩展</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">典型代表</th><td data-label="托管专用服务">Pinecone；Zilliz Cloud 等</td><td data-label="可自托管专用引擎">Weaviate、Qdrant、Milvus</td><td data-label="PostgreSQL 扩展">pgvector</td></tr>
+                <tr><th scope="row">复杂性位置</th><td data-label="托管专用服务">供应商负责大部分容量、升级与故障处理</td><td data-label="可自托管专用引擎">团队控制部署、参数与升级，也承担运行责任</td><td data-label="PostgreSQL 扩展">沿用数据库团队、SQL、事务与备份体系</td></tr>
+                <tr><th scope="row">数据关系</th><td data-label="托管专用服务">常作为独立检索服务，业务主数据另有来源</td><td data-label="可自托管专用引擎">常作为独立服务，可按需要接入数据管道</td><td data-label="PostgreSQL 扩展">向量与业务行、权限和事务可以保存在一起</td></tr>
+                <tr><th scope="row">优先验证</th><td data-label="托管专用服务">区域、费用模型、配额、导出与网络依赖</td><td data-label="可自托管专用引擎">运维能力、升级、容量规划与故障恢复</td><td data-label="PostgreSQL 扩展">共享资源、索引维护、水平扩展与查询计划</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>表格描述的是责任分配，不是绝对能力。Weaviate 和 Qdrant 也提供云服务，Milvus 对应的托管服务常由 Zilliz 提供；某些 PostgreSQL 云平台也会托管 pgvector。一个产品可以跨越家族，但团队实际购买或部署的形态仍然只会落在某个责任边界上。</p>
+          <p>因此，采购名称不能代替架构说明。写方案时应明确“供应商托管的专用索引”“团队在 Kubernetes 上运行的分布式引擎”或“现有 PostgreSQL 集群中的扩展”。这比单写产品名更能暴露备份、监控、网络和权限由谁负责。</p>
+        </section>
+
+        <section>
+          <h2>五个常见候选各自代表什么</h2>
+          <p><span class="inline-head">Pinecone。</span> 它代表以托管体验为核心的专用向量服务。团队通过服务接口创建索引、写入向量并查询，把大量基础设施工作交给供应商。它适合希望快速获得托管能力、愿意接受云服务边界，并能把检索数据作为独立服务管理的团队。</p>
+          <p>评估 Pinecone 时，应重点验证命名空间或其他隔离机制是否符合租户模型，元数据过滤能否表达权限规则，服务区域与备份要求是否满足治理边界。还要用实际读写量估算费用，并测试网络故障或配额触发时应用怎样降级。托管减少的是集群工作，不是应用责任。</p>
+          <p><span class="inline-head">Weaviate。</span> 它代表同时提供开源自托管与云形态的专用搜索系统。官方文档覆盖图、平面与动态向量索引，并提供关键词与向量的混合查询。它适合希望在对象结构、向量检索与混合搜索之间获得较完整能力，同时保留部署选择的团队。</p>
+          <p>评估 Weaviate 时，应分清由数据库生成向量还是应用自己生成。把模型调用放进数据库流程可以减少胶水代码，也会让模型供应商、重算流程与数据库升级更紧密。若团队希望检索层保持模型无关，明确由应用写入向量可能更容易迁移。</p>
+          <p><span class="inline-head">Qdrant。</span> 它同样提供开源自托管与云形态，产品重点突出向量检索和结构化载荷过滤。官方文档解释了载荷索引如何帮助估算过滤规模，并让图索引更适合在过滤条件下搜索。这对权限、租户和商品属性等过滤密集的工作负载很值得测试。</p>
+          <p>评估 Qdrant 时，不要只建立向量索引后直接导入。官方建议提前为常用过滤字段建立相应载荷索引，使后续图结构能够利用过滤信息。多租户还要比较共享集合、租户字段和自定义分片等方案，并观察小租户与大租户的资源隔离。</p>
+          <p><span class="inline-head">Milvus 与 Zilliz。</span> Milvus 代表面向较大规模和分布式运行的开源专用引擎。官方架构采用存储与计算分离，并把协调、工作节点和存储拆成不同层。Zilliz Cloud 则提供相应托管路径，适合希望获得这类能力却不自行运行复杂集群的团队。</p>
+          <p>评估 Milvus 时，要把部署规模与团队能力放在一起。分布式组件能分别扩展，也带来更多监控、容量和升级工作。若数据量和并发尚小，复杂架构可能没有立即收益；若检索已成为独立平台，能够分离计算与存储、选择多种索引则可能更有价值。</p>
+          <p><span class="inline-head">pgvector。</span> 它把向量类型和距离操作带入 PostgreSQL，支持精确搜索，也提供 HNSW 与 IVFFlat 等近似索引。最大的区别不是某个算法，而是向量、原文标识、权限字段和业务事务可以留在熟悉的 SQL 与数据库治理体系中。</p>
+          <p>评估 pgvector 时，要观察向量查询与交易负载是否争用 CPU、内存和输入输出，过滤条件能否让查询计划稳定，以及复制、备份和分区策略能否承受数据增长。它可能减少一套系统，却不保证无限扩展；优势来自整体简单，而不是“关系数据库永远够用”。</p>
+        </section>
+
+        <section>
+          <h2>企业知识助手怎样缩小候选</h2>
+          <dl class="signal-list">
+            <div class="signal-row"><dt>已有 PostgreSQL 团队</dt><dd>数据规模仍可控，权限大量依赖关系表与事务，先用 pgvector 做基线通常成本较低。只有测出共享资源或扩展边界，再拆出专用服务。</dd></div>
+            <div class="signal-row"><dt>希望少管集群</dt><dd>优先比较 Pinecone、Zilliz Cloud、Weaviate Cloud 或 Qdrant Cloud 等托管形态。把区域、费用、配额和退出路径列为硬门槛。</dd></div>
+            <div class="signal-row"><dt>严格自托管要求</dt><dd>把 Weaviate、Qdrant、Milvus 与 pgvector 放入候选，再按运维复杂度、过滤能力、规模和现有平台缩小范围。</dd></div>
+            <div class="signal-row"><dt>过滤组合很复杂</dt><dd>重点测试真实权限表达式在不同选择性下的召回与尾延迟。不要接受无过滤演示替代这项测试。</dd></div>
+            <div class="signal-row"><dt>检索成为独立平台</dt><dd>当多个业务共享检索、规模持续增长且团队能维护基础设施，专用引擎或托管专用服务通常更值得投入。</dd></div>
+          </dl>
+          <p>这些信号不是自动决策树。比如“已有 PostgreSQL”并不排除专用引擎，只说明 pgvector 是一个低摩擦基线；“规模很大”也不自动指向分布式系统，因为过滤后每次真正搜索的数据可能很少。信号的作用是减少盲测，而不是替代验证。</p>
+          <p>企业知识助手还要让安全团队参与。租户字段是否由可信服务注入，客户端能否绕过过滤，备份与日志是否包含敏感文本，删除请求能否传播到所有副本和缓存，这些问题通常不在向量算法基准里，却决定系统能否上线。</p>
+        </section>
+
+        <section>
+          <h2>一次可信的小规模验证</h2>
+          <p>验证不需要先导入全部历史数据。选择能够覆盖权限、更新和查询分布的一小批文档，保留稳定标识与原文。准备一组由业务人员标注的问题，其中既有语义改写，也有编号、人名、时间范围和严格租户条件。</p>
+          <p>所有候选使用同一个嵌入模型、同一份切分结果和同一组过滤字段。若某产品内置向量化，也应保留“应用侧统一向量”的对照，避免把模型差异误认为数据库差异。候选数量、重排流程和最终回答模型同样固定。</p>
+          <p>质量方面记录正确材料是否进入候选、是否排在前面，以及不得出现的材料是否为零。性能方面记录稳定状态和数据更新期间的高分位延迟。运行方面记录建库时间、扩缩容步骤、备份恢复、监控信号和一次模拟故障的恢复过程。</p>
+          <p>成本方面至少分成服务或基础设施费用、网络与存储费用、工程维护时间三部分。一次性迁移和未来重建也要估算。若团队必须为某产品新增一套值班与集群技能，这项组织成本可能远高于查询单价差异。</p>
+          <p>最后做一次导出练习。把向量、稳定标识、原文引用与元数据导出到中立格式，在另一个候选中重建小型索引。只有真正走过一遍，团队才能知道“支持导出”是否足以覆盖专有模式、过滤逻辑和停机窗口。</p>
+          <div class="decision-frame">
+            <strong>不要用一个总分掩盖硬门槛。</strong>
+            <p>越权返回、无法满足部署地域、恢复目标失败，都应该直接淘汰候选，而不是用更快的平均延迟补分。其余差异再按业务权重比较。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>选择之后，仍要保留重新选择的能力</h2>
+          <p>嵌入模型会变化，文档量会增长，权限结构也会重构。今天适合的索引参数，半年后未必仍适合。团队应把评测集合、数据版本、配置与结果保存在可重复运行的流程里，每次重大升级前后对比，而不是只在采购阶段跑一次演示。</p>
+          <p>应用接口也应表达业务意图，而不是直接泄露某个供应商的全部查询语法。比如由应用层定义“租户、可见范围、时间边界、查询文本与候选数量”，再由适配层翻译到具体数据库。这样不能消除迁移工作，却能把专有差异集中在较小范围。</p>
+          <p>原文与权限的权威来源最好独立于向量索引。索引可以删除并重建，业务事实不能只存在于检索副本。这个边界让团队更容易更换模型、调整切分或试验另一数据库，也减少索引损坏演变成主数据丢失的风险。</p>
+          <p>最终，Pinecone、Weaviate、Qdrant、Milvus/Zilliz 与 pgvector 不是一条赛道上尺寸相同的车辆。它们代表不同的责任分配与系统边界。先判断团队愿意承担什么，再比较产品怎样实现所需机制，选择才会稳定。</p>
+          <p>真正成熟的结论不是“某个数据库最好”，而是“在当前数据、查询、治理和团队条件下，这个方案通过了哪些验证；当哪些条件变化时，我们会重新评估”。这样的结论可以被复查，也允许未来承认环境已经改变。</p>
+        </section>
+
+        <div class="page-turn">
+          <p>产品会更新，可靠的判断方法应当留下来。</p>
+          <a class="page-link" href="sources.html">查看官方来源与延伸阅读 →</a>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-mast">
+    <p class="foot-wordmark">向量数据库对比</p>
+    <p class="foot-tagline">先匹配责任边界，再用同一份真实数据证明差异。</p>
+    <nav class="foot-links" aria-label="页脚导航">
+      <a href="main.html">直觉地图</a>
+      <a href="retrieval.html">检索机制</a>
+      <a href="sources.html">来源</a>
+      <a href="../index.html">知识库总览</a>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
