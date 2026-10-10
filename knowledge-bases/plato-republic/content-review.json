@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-11T07:09:05+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "《理想国》为什么从个人应否正义的问题，转向建造一座想象中的城邦？",
+      "readerStateChange": "读前只有哲学家王、洞穴等零散印象；读后能够把全书复述为回应古各斯戒指挑战的连续论证，并说明城邦为何是观察灵魂的放大镜。",
+      "twoSentenceSummary": "页面从刻法洛斯、玻勒马霍斯与色拉叙马霍斯的定义冲突，推进到格劳孔要求证明正义本身有益。随后以大字与小字的比喻解释建城方法，并把十卷内容还原为城邦与灵魂往返检验的一条路线。",
+      "continuityEvidence": "结尾明确把城邦模型从制度清单还原为灵魂秩序的公共投影，因此下一页必须拆解分工、教育、统治资格与心理结构如何联动。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "city-soul.html",
+      "centralQuestion": "既然城邦是一面放大灵魂的镜子，分工、教育、哲学家统治与灵魂三分怎样共同构成柏拉图的正义机制？",
+      "readerStateChange": "读前只知道建城用于放大个人问题；读后能够沿需要、冲突、防卫、教育与目标知识的因果链，解释三类城邦角色与三类灵魂动力的对应及其前提。",
+      "twoSentenceSummary": "页面先用口渴与克制解释理性、激情和欲望的内部关系，再说明护卫者教育、共有安排与建城神话怎样试图约束武力。最后把哲学家统治放回漫长教育、财产限制和不恋权等条件，并指出知识声称缺乏外部纠错的问题。",
+      "continuityEvidence": "本页从入口页的放大方法进入机制，并在结尾暴露知识可能只剩自我认证的缺口，直接推出下一页关于审查、等级、民主与纠错的判断任务。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "如果这套秩序以知识统治欲望为核心，它怎样防止知识变成自封的权威，又该如何评价审查、等级与反民主倾向？",
+      "readerStateChange": "读前能够解释柏拉图式秩序的机制；读后能够区分思想实验、伦理模型与制度蓝图，并用知识检验、权力纠错、自由代价和公共目的评价政治主张。",
+      "twoSentenceSummary": "页面把洞穴读成教育转向与知识政治风险的双重意象，再把政体序列处理为失衡诊断而非历史定律。它随后并置波普尔批评与时代错置的反驳，把专家、教育、自由和平台治理转化为可迁移的制度检查。",
+      "continuityEvidence": "本页接住机制页留下的知识自我认证问题，结尾保留关于领袖、专家或平台如何提供证据、反驳渠道和退出机制的开放追问。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前主要依赖正文概括；读后能够使用斯特凡页码回到原典，并区分公共译本、权威哲学辞典、现代批评与站内比较材料。",
+      "twoSentenceSummary": "来源页列出 Perseus、MIT 原典入口和 SEP、IEP 的解释资料，并说明对话体与译本差异。它还如实说明三个建议关联库并非同名独立站点，转而链接四个仓库中真实存在的相关知识库。",
+      "continuityEvidence": "该页承接三篇正文的卷次、页码和争议提示，为原典核对与延伸比较提供可达链接，不另建叙事分支。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

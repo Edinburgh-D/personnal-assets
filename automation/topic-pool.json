@@ -3942,6 +3942,13 @@
       "generatedAt": "2026-10-11",
       "slug": "synthetic-data-and-augmentation",
       "entry": "knowledge-bases/synthetic-data-and-augmentation/main.html"
+    },
+    {
+      "name": "柏拉图《理想国》",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-11",
+      "slug": "plato-republic",
+      "entry": "knowledge-bases/plato-republic/main.html"
     }
   ],
   "skipped": []

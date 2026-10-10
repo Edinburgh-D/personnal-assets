@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "柏拉图《理想国》",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-11",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先把正义放大",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "《理想国》为什么从个人应否正义的问题，转向建造一座想象中的城邦？",
+      "readerStateBefore": "读者只知道哲学家王、洞穴等零散意象，容易把《理想国》当成乌托邦制度清单或抽象名言合集。",
+      "readerStateAfter": "读者能够把全书理解为一场关于正义是否使人过得更好的连续论证，并说明城邦模型为何是观察灵魂秩序的放大镜。",
+      "priorConclusion": "",
+      "coreExample": "一座刚经历内乱、准备重建制度的虚构城邦：它既要安排生产、防卫与治理，也要回答掌权者为何不应把优势当成正义。",
+      "conclusion": "《理想国》建造城邦并非先写一部宪法，而是把难以看清的个人正义放大为公共秩序，以检验正义究竟是外在名声还是灵魂内部的良好结构。",
+      "nextQuestion": "既然城邦是一面放大灵魂的镜子，分工、教育、哲学家统治与灵魂三分怎样共同构成柏拉图的正义机制？",
+      "nextPage": "city-soul.html",
+      "newTerms": [
+        { "term": "正义", "definition": "在《理想国》中逐步被重构为整体内部各部分各司其职、由适当部分领导的有序状态，而不只是守法或偿还债务。" },
+        { "term": "权力即正义", "definition": "色拉叙马霍斯的挑战性主张：现行正义不过是强者制定并服务于自身利益的规则。" },
+        { "term": "城邦—灵魂类比", "definition": "先在较大的城邦中寻找正义结构，再把同一结构回照个人灵魂的论证策略。" },
+        { "term": "卡利波利斯", "definition": "学界常用来称呼《理想国》中被构造出来的理想城邦，字面义接近“美好之城”。" }
+      ]
+    },
+    {
+      "file": "city-soul.html",
+      "title": "一座城与一个灵魂",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.56,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然城邦是一面放大灵魂的镜子，分工、教育、哲学家统治与灵魂三分怎样共同构成柏拉图的正义机制？",
+      "readerStateBefore": "读者能够把全书理解为一场关于正义是否使人过得更好的连续论证，并说明城邦模型为何是观察灵魂秩序的放大镜。",
+      "readerStateAfter": "读者能够沿着需要、分工、教育、认知与欲望的因果链，解释理想城邦的制度安排如何对应灵魂秩序，并识别其依赖的强前提。",
+      "priorConclusion": "《理想国》建造城邦并非先写一部宪法，而是把难以看清的个人正义放大为公共秩序，以检验正义究竟是外在名声还是灵魂内部的良好结构。",
+      "coreExample": "同一座重建中的城邦面对粮食分配、边境防卫、官员选拔和公共教育：每一项安排都同时映出个人如何处理欲望、勇气与判断。",
+      "conclusion": "柏拉图的正义机制把政治秩序与心理秩序系在一起：理性必须经长期教育认识共同善，激情支持其判断，欲望接受节制；城邦分工与哲学家统治是这一结构的公共投影。",
+      "nextQuestion": "如果这套秩序以知识统治欲望为核心，它怎样防止知识变成自封的权威，又该如何评价审查、等级与反民主倾向？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "灵魂三分", "definition": "把人的动机区分为理性、激情与欲望三部分，用它们的关系解释自制、冲突与正义。" },
+        { "term": "护卫者", "definition": "负责保卫与治理城邦的群体，内部再区分辅助者与经过长期筛选的统治者。" },
+        { "term": "高贵的谎言", "definition": "以共同出身和金银铜铁禀赋为内容的建城神话，意在制造团结与角色认同，也暴露政治教育可能滑向操控。" },
+        { "term": "哲学家统治", "definition": "让真正爱智慧、能认识善并不贪恋权位的人承担统治责任，而非让职业口号中的“哲学家”自动取得权力。" },
+        { "term": "善的理念", "definition": "使知识与价值获得方向的最高对象；哲学教育最终不是积累信息，而是学习判断什么真正值得追求。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "走出洞穴以后",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["city-soul.html"],
+      "readerQuestion": "如果这套秩序以知识统治欲望为核心，它怎样防止知识变成自封的权威，又该如何评价审查、等级与反民主倾向？",
+      "readerStateBefore": "读者能够沿着需要、分工、教育、认知与欲望的因果链，解释理想城邦的制度安排如何对应灵魂秩序，并识别其依赖的强前提。",
+      "readerStateAfter": "读者能够区分思想实验、伦理模型与制度蓝图，用知识可检验性、权力可纠错性、自由代价和公共目的评估柏拉图式政治方案。",
+      "priorConclusion": "柏拉图的正义机制把政治秩序与心理秩序系在一起：理性必须经长期教育认识共同善，激情支持其判断，欲望接受节制；城邦分工与哲学家统治是这一结构的公共投影。",
+      "coreExample": "那座重建中的城邦已经由受教育的少数人稳定下来，却开始以真理之名筛选故事、限制选择并压低异议；读者必须判断这是教育、保护还是不可纠错的支配。",
+      "conclusion": "《理想国》最持久的价值既不在于照搬其制度，也不在于把它封存为专制古董，而在于迫使政治同时回答谁真正知道、谁能纠错、秩序服务何种生活以及灵魂是否因掌权而更有序。",
+      "nextQuestion": "当现实中的领袖、专家或平台声称自己比公众更清楚共同利益时，我们会要求怎样的证据、反驳渠道与退出机制？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "洞穴譬喻", "definition": "以囚徒从影像转向真实并返回洞穴的故事，说明教育是灵魂转向，也说明知识者承担公共责任。" },
+        { "term": "政体退化", "definition": "《理想国》把荣誉政体、寡头政体、民主政体和僭主政体写成欲望与权力逐步失序的序列。" },
+        { "term": "僭主政体", "definition": "由无节制欲望支配的统治形态；表面上权力最大，实则统治者本人也被恐惧与欲望奴役。" },
+        { "term": "开放社会", "definition": "波普尔用来强调制度可批评、统治者可更换、政策可渐进纠错的社会理想，并借此批判柏拉图。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、争论与关联阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.42,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
