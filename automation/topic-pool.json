@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-12",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3956,6 +3956,13 @@
       "generatedAt": "2026-10-11",
       "slug": "plastic-pollution-and-degradation",
       "entry": "knowledge-bases/plastic-pollution-and-degradation/main.html"
+    },
+    {
+      "name": "人口危机与少子化",
+      "domain": "政治/社会",
+      "generatedAt": "2026-10-12",
+      "slug": "population-crisis-low-fertility",
+      "entry": "knowledge-bases/population-crisis-low-fertility/main.html"
     }
   ],
   "skipped": []

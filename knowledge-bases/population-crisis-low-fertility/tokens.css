@@ -1,0 +1,74 @@
+:root {
+  --color-paper: oklch(96% 0.014 78);
+  --color-paper-deep: oklch(92% 0.018 76);
+  --color-panel: oklch(98% 0.009 78);
+  --color-ink: oklch(20% 0.018 48);
+  --color-ink-soft: oklch(35% 0.018 50);
+  --color-muted: oklch(47% 0.02 54);
+  --color-rule: oklch(74% 0.025 68);
+  --color-rule-strong: oklch(55% 0.032 62);
+  --color-grid: oklch(83% 0.019 72);
+  --color-accent: oklch(43% 0.155 28);
+  --color-accent-soft: oklch(88% 0.045 31);
+  --color-focus: oklch(52% 0.17 28);
+  --color-mark: oklch(90% 0.056 82);
+  --color-transparent: oklch(96% 0.014 78 / 0);
+  --color-overlay: oklch(20% 0.018 48 / 0.08);
+
+  --font-display: "Cardo", "Noto Serif SC", ui-serif, serif;
+  --font-body: "Noto Serif SC", ui-serif, serif;
+  --font-outlier: "IBM Plex Mono", ui-monospace, monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.86rem;
+  --text-base: 1rem;
+  --text-md: 1.22rem;
+  --text-lg: 1.5rem;
+  --text-xl: 1.9rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+  --text-display: clamp(2.65rem, 6vw, 5.1rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 100ms;
+  --dur-short: 180ms;
+  --dur-long: 360ms;
+
+  --rule-thin: 1px;
+  --rule-heavy: 3px;
+  --radius-small: 0.2rem;
+  --radius-card: 0.45rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: oklch(16% 0.014 58);
+    --color-paper-deep: oklch(20% 0.017 58);
+    --color-panel: oklch(19% 0.015 58);
+    --color-ink: oklch(93% 0.014 78);
+    --color-ink-soft: oklch(82% 0.016 74);
+    --color-muted: oklch(70% 0.018 70);
+    --color-rule: oklch(38% 0.025 60);
+    --color-rule-strong: oklch(57% 0.035 62);
+    --color-grid: oklch(27% 0.019 60);
+    --color-accent: oklch(69% 0.13 31);
+    --color-accent-soft: oklch(29% 0.052 30);
+    --color-focus: oklch(76% 0.13 35);
+    --color-mark: oklch(31% 0.055 75);
+    --color-transparent: oklch(16% 0.014 58 / 0);
+    --color-overlay: oklch(8% 0.014 58 / 0.24);
+  }
+}
