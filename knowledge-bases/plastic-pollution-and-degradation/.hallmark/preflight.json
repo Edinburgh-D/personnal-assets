@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-11",
+  "framework": "vanilla-html",
+  "fontStack": "repository uses per-library web font pairs and token files",
+  "palette": "repository supports scoped OKLCH token systems",
+  "motion": "motion-cut; no library detected for this static knowledge base",
+  "spacing": "4pt token scale",
+  "preserve": ["static deployment", "root overview integration", "per-library assets"]
+}

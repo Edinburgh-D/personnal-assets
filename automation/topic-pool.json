@@ -3949,6 +3949,13 @@
       "generatedAt": "2026-10-11",
       "slug": "plato-republic",
       "entry": "knowledge-bases/plato-republic/main.html"
+    },
+    {
+      "name": "塑料污染与降解",
+      "domain": "环境/生态",
+      "generatedAt": "2026-10-11",
+      "slug": "plastic-pollution-and-degradation",
+      "entry": "knowledge-bases/plastic-pollution-and-degradation/main.html"
     }
   ],
   "skipped": []

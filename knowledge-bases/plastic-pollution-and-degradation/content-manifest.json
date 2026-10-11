@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "塑料污染与降解",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-11",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一只瓶子没有消失",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "塑料离开手中以后发生了什么，为什么污染不能只理解为海面上的垃圾？",
+      "readerStateBefore": "读者主要把塑料污染想成可见的乱扔垃圾，并把回收标志当成物品最终去向的保证。",
+      "readerStateAfter": "读者能够沿完整生命周期追踪塑料，区分受控废物流与环境泄漏，并理解大件碎裂和微粒排放属于同一问题。",
+      "priorConclusion": "",
+      "coreExample": "一只装过饮料的透明塑料瓶在使用后分别进入回收、焚烧、填埋或河岸环境的不同命运。",
+      "conclusion": "塑料污染不是物品被丢弃的单一瞬间，而是材料在整个生命周期中从受控系统泄漏并长期迁移、碎裂和携带化学物质的过程。",
+      "nextQuestion": "既然塑料进入环境后不会简单消失，光、热、摩擦、微生物和材料配方究竟怎样改变它？",
+      "nextPage": "degradation-pathways.html",
+      "newTerms": [
+        { "term": "塑料污染", "definition": "塑料物品、碎片、颗粒及相关化学物质进入环境并造成持续压力的过程与状态。" },
+        { "term": "生命周期", "definition": "从原料获取、制造、使用到废弃和最终去向的完整材料旅程。" },
+        { "term": "环境泄漏", "definition": "塑料离开收集、处理和监管系统，进入土壤、水体或空气的过程。" },
+        { "term": "微塑料", "definition": "通常指尺寸小于五毫米的塑料颗粒，既可直接排放，也可由大件塑料碎裂形成。" }
+      ]
+    },
+    {
+      "file": "degradation-pathways.html",
+      "title": "碎裂不是消失",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然塑料进入环境后不会简单消失，光、热、摩擦、微生物和材料配方究竟怎样改变它？",
+      "readerStateBefore": "读者能够沿完整生命周期追踪塑料，区分受控废物流与环境泄漏，并理解大件碎裂和微粒排放属于同一问题。",
+      "readerStateAfter": "读者能够区分风化、碎裂与真正的生物降解，说明材料性质和环境条件为何共同决定速度与最终产物。",
+      "priorConclusion": "塑料污染不是物品被丢弃的单一瞬间，而是材料在整个生命周期中从受控系统泄漏并长期迁移、碎裂和携带化学物质的过程。",
+      "coreExample": "同一只透明塑料瓶在日晒河岸、深水底泥、填埋场和工业堆肥设施中经历完全不同的变化。",
+      "conclusion": "降解必须同时说明材料、环境、时间尺度和最终产物；外形破碎只代表尺寸改变，只有聚合物被转化为简单物质才接近真正消失。",
+      "nextQuestion": "当减量、重复使用、回收、焚烧和可降解材料都声称能解决问题时，怎样判断哪一种措施在具体情境中真正减少总伤害？",
+      "nextPage": "decisions-and-limits.html",
+      "newTerms": [
+        { "term": "风化", "definition": "材料在光、热、氧、水和机械作用下逐步变脆、变色或改变结构的过程。" },
+        { "term": "聚合物", "definition": "由大量重复分子单元连接成的长链物质，是多数塑料的主体。" },
+        { "term": "矿化", "definition": "有机材料最终被转化为二氧化碳、水、无机盐和生物质等简单产物的过程。" },
+        { "term": "生物降解", "definition": "微生物把材料作为反应底物并将其转化为更简单物质的过程。" },
+        { "term": "可堆肥塑料", "definition": "在规定堆肥条件和时间内能够分解，并满足相应残留与生态安全要求的塑料。" }
+      ]
+    },
+    {
+      "file": "decisions-and-limits.html",
+      "title": "先堵住入口，再谈善后",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["degradation-pathways.html"],
+      "readerQuestion": "当减量、重复使用、回收、焚烧和可降解材料都声称能解决问题时，怎样判断哪一种措施在具体情境中真正减少总伤害？",
+      "readerStateBefore": "读者能够区分风化、碎裂与真正的生物降解，说明材料性质和环境条件为何共同决定速度与最终产物。",
+      "readerStateAfter": "读者能够按避免泄漏、保留材料价值和核对当地设施的顺序比较措施，并对健康主张保持有证据边界的谨慎。",
+      "priorConclusion": "降解必须同时说明材料、环境、时间尺度和最终产物；外形破碎只代表尺寸改变，只有聚合物被转化为简单物质才接近真正消失。",
+      "coreExample": "为一场大型社区活动选择饮料供应方式，并比较一次性瓶、押金周转杯、普通回收和工业可堆肥杯的真实去向。",
+      "conclusion": "稳健的塑料治理先减少不必要的材料流和泄漏机会，再扩大可重复使用与高质量回收，最后为不可避免的残余选择与本地设施匹配的处理方式。",
+      "nextQuestion": "面对下一件带有绿色标签的塑料制品，我们能否先查清它替代了什么、会去哪里、需要什么条件，并确认这些条件在现实中存在？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "循环经济", "definition": "通过减少投入、延长使用和回收材料，让产品价值尽量留在经济系统内的组织方式。" },
+        { "term": "生命周期评价", "definition": "按统一功能比较产品从原料到终端处理各阶段环境影响的方法。" },
+        { "term": "暴露评估", "definition": "估计人或生态系统接触某种物质的途径、水平、频率和持续时间。" },
+        { "term": "危害识别", "definition": "判断一种因素在什么条件下可能造成何种不良影响。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.5,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

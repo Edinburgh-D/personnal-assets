@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-11T23:40:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "塑料离开手中以后发生了什么，为什么污染不能只理解为海面上的垃圾？",
+      "readerStateChange": "读前把污染主要理解为乱扔垃圾；读后能沿制造、使用、收集与泄漏追踪材料，并区分大件碎裂和直接微粒排放。",
+      "twoSentenceSummary": "页面以一只饮料瓶的多种去向建立塑料材料流模型，并用 OECD 数据说明全球循环仍然狭窄。它把海面垃圾扩展为贯穿空气、土壤、水体和基础设施边界的长期泄漏问题。",
+      "continuityEvidence": "结尾明确区分外形破碎、化学链断裂与微生物转化，直接把读者带到下一页的材料变化机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "degradation-pathways.html",
+      "centralQuestion": "既然塑料进入环境后不会简单消失，光、热、摩擦、微生物和材料配方究竟怎样改变它？",
+      "readerStateChange": "读前知道塑料会迁移和碎裂；读后能区分风化、碎裂、矿化与生物降解，并说明材料结构和环境条件为何共同决定结果。",
+      "twoSentenceSummary": "页面让同一只瓶子进入河岸、底泥、填埋与处理设施，逐层拆解光氧化、机械碎裂和微生物转化。它进一步区分生物基、可降解与可堆肥标签，说明标签必须带有环境和设施条件。",
+      "continuityEvidence": "最后把材料机制转成一次性瓶、周转杯、回收与堆肥设施的条件比较，自然提出下一页的方案判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "decisions-and-limits.html",
+      "centralQuestion": "当减量、重复使用、回收、焚烧和可降解材料都声称能解决问题时，怎样判断哪一种措施在具体情境中真正减少总伤害？",
+      "readerStateChange": "读前能够解释材料变化；读后能先定义功能、核对真实去向、检查泄漏，再比较总影响，并对健康结论保持证据分级。",
+      "twoSentenceSummary": "页面以社区活动供水为现场，比较自带容器、周转杯、回收与工业堆肥方案所需的真实系统。它还区分微塑料的检出、暴露、危害和风险，避免把研究空白写成确定诊断。",
+      "continuityEvidence": "本页承接降解条件，把材料属性扩展为功能、周转、设施与泄漏的系统判断，并留下可迁移到新产品的四项追问。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的机构结论；读后能定位全球流量、降解机制、材料标签和健康证据各自对应的权威出处与适用边界。",
+      "twoSentenceSummary": "页面汇总 OECD、UNEP、NOAA、欧盟委员会、WHO 与 EFSA 的官方资料，并逐条说明正文如何使用。它同时标出模型不确定性、地区适用性和健康评估仍在更新的边界。",
+      "continuityEvidence": "参考页从所有叙事页可达，也反向连接入口与判断页，为关键数字、标签条件和健康表述提供核查路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
