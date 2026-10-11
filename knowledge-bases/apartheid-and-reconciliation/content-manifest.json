@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "种族隔离与和解之路",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-12",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "隔离如何成为制度",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": [],
+      "readerQuestion": "南非的种族隔离为何不能只理解为人与人之间的偏见，而要理解为一套由法律、行政与空间共同运转的统治制度？",
+      "readerStateBefore": "读者知道种族隔离不公，却容易把它想成公共场所分开或个人歧视，不清楚国家怎样把分类变成日常生活的硬约束。",
+      "readerStateAfter": "读者能够沿身份分类、居住空间、流动控制、教育劳动与政治权利之间的连接，解释种族隔离怎样作为制度运行。",
+      "priorConclusion": "",
+      "coreExample": "以开普敦第六区在《群体地区法》下被划为白人区域、居民遭到强制搬迁，以及民主时代土地返还仍在进行为贯穿案例。",
+      "conclusion": "种族隔离的力量不只来自偏见，而来自法律把种族分类接入土地、流动、教育、劳动与政治权利，使歧视能够被行政机构持续复制。",
+      "nextQuestion": "既然种族隔离是一套彼此咬合的制度，它为何会在长期抵抗、国际压力与国内危机中走向谈判，并被新的宪法秩序拆除？",
+      "nextPage": "dismantling.html",
+      "newTerms": [
+        {
+          "term": "种族隔离制度",
+          "definition": "南非国家以种族分类为基础，系统分配政治权利、土地、居住、教育、劳动与流动机会的法律和行政秩序。"
+        },
+        {
+          "term": "种族分类",
+          "definition": "国家把人口划入法定种族类别，并据此决定个人与家庭可享有的权利和可进入的空间。"
+        },
+        {
+          "term": "通行证制度",
+          "definition": "通过证件、许可和执法限制非白人特别是非洲人进入、居留和工作的控制体系。"
+        },
+        {
+          "term": "班图斯坦",
+          "definition": "种族隔离政府为非洲族群划设并推动其取得名义自治或独立的地域单元，用以排除其在南非共同政治体中的公民权。"
+        },
+        {
+          "term": "结构性不平等",
+          "definition": "不平等由制度、资源和累积条件稳定产生，即使没有个人公开表达偏见，结果仍会持续。"
+        }
+      ]
+    },
+    {
+      "file": "dismantling.html",
+      "title": "从僵局到宪法桥梁",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": [
+        "main.html"
+      ],
+      "readerQuestion": "既然种族隔离是一套彼此咬合的制度，它为何会在长期抵抗、国际压力与国内危机中走向谈判，并被新的宪法秩序拆除？",
+      "readerStateBefore": "读者能够沿身份分类、居住空间、流动控制、教育劳动与政治权利之间的连接，解释种族隔离怎样作为制度运行。",
+      "readerStateAfter": "读者能够把制度终结理解为抵抗、组织、制裁、经济与安全困境、精英选择和谈判保障共同作用的结果，并区分法律断裂与社会延续。",
+      "priorConclusion": "种族隔离的力量不只来自偏见，而来自法律把种族分类接入土地、流动、教育、劳动与政治权利，使歧视能够被行政机构持续复制。",
+      "coreExample": "继续追踪第六区：居民被迁离后的权利主张，如何从反对强制搬迁进入民主宪法下的土地返还程序，并暴露法律改变与现实修复的时间差。",
+      "conclusion": "种族隔离的法律秩序因多重压力和政治选择而被谈判拆除，但宪法能够立刻改变权利规则，不能自动复原被搬迁的社区、资产与机会。",
+      "nextQuestion": "当新秩序既要揭示过去、追究责任、补偿受害者，又要避免转型重返暴力时，真相、正义与和解应怎样组合？",
+      "nextPage": "reconciliation.html",
+      "newTerms": [
+        {
+          "term": "谈判转型",
+          "definition": "旧秩序与反对力量通过协商安排权力交接和新规则，而不是由一方单独决定全部结果的政治转变。"
+        },
+        {
+          "term": "非种族民主",
+          "definition": "公民资格、选举权与法律保护不再按种族类别分配，并以共同而平等的政治成员身份为基础的民主秩序。"
+        },
+        {
+          "term": "宪法至上",
+          "definition": "宪法高于议会和政府，法律与国家行为必须符合宪法并接受法院审查。"
+        },
+        {
+          "term": "权利法案",
+          "definition": "宪法中集中确认基本权利并规定国家尊重、保护、促进和实现这些权利义务的部分。"
+        }
+      ]
+    },
+    {
+      "file": "reconciliation.html",
+      "title": "和解不是结案",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6,
+      "dependsOn": [
+        "dismantling.html"
+      ],
+      "readerQuestion": "当新秩序既要揭示过去、追究责任、补偿受害者，又要避免转型重返暴力时，真相、正义与和解应怎样组合？",
+      "readerStateBefore": "读者能够把制度终结理解为抵抗、组织、制裁、经济与安全困境、精英选择和谈判保障共同作用的结果，并区分法律断裂与社会延续。",
+      "readerStateAfter": "读者能够区分真相揭示、有条件大赦、刑事责任、赔偿、制度改革与物质修复，并据此判断和解主张是否把受害者和未完成义务置于中心。",
+      "priorConclusion": "种族隔离的法律秩序因多重压力和政治选择而被谈判拆除，但宪法能够立刻改变权利规则，不能自动复原被搬迁的社区、资产与机会。",
+      "coreExample": "以第六区土地返还的长期过程检验和解：公开承认强制搬迁固然重要，但住房、土地、代际损失和社区重建要求持续的法律与公共行动。",
+      "conclusion": "和解不是以宽恕替代责任，而是让真相、问责、赔偿、制度改革与物质修复相互支撑，并允许社会公开衡量哪些承诺仍未兑现。",
+      "nextQuestion": "面对任何以和解之名提出的政策或叙事，我们能否追问谁说出了真相、谁承担了责任、谁得到修复，以及哪些制度仍在复制旧有差距？",
+      "nextPage": null,
+      "newTerms": [
+        {
+          "term": "转型正义",
+          "definition": "社会从大规模压迫或冲突走向新秩序时，用真相、司法、赔偿、改革和纪念等方式处理过去侵害的整体努力。"
+        },
+        {
+          "term": "有条件大赦",
+          "definition": "只有满足法定条件才免除特定法律责任；南非制度要求行为具有政治目的并充分披露相关事实。"
+        },
+        {
+          "term": "恢复性正义",
+          "definition": "把受害者伤害、责任承认、关系修复与重建条件置于核心，而不只关注施加刑罚的正义路径。"
+        },
+        {
+          "term": "赔偿",
+          "definition": "国家或责任主体通过金钱、服务、返还、康复、道歉或纪念等方式回应受害者损害。"
+        },
+        {
+          "term": "不再发生保障",
+          "definition": "通过法律、机构、教育、监督和安全部门改革，降低同类侵害再次发生风险的安排。"
+        }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "权威来源与法律边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

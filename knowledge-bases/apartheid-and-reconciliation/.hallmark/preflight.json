@@ -1,0 +1,13 @@
+{
+  "scannedAt": "2026-10-12",
+  "framework": "vanilla-html",
+  "fontSignals": "Each knowledge base owns its font tokens; no package manager or framework fonts.",
+  "paletteSignals": "Repository index uses shared tokens; topic pages use local tokens.css files.",
+  "motionStance": "motion-cut",
+  "spacing": "4pt-derived local token scale",
+  "preserve": [
+    "static multi-page publishing convention",
+    "local tokens.css and stylesheet convention",
+    "data-site-home navigation contract"
+  ]
+}

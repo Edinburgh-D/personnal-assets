@@ -1,0 +1,81 @@
+/* Hallmark · macrostructure: Map / Diagram · genre: editorial · theme: Almanac · enrichment: Tier-A CSS institutional map · nav: N3 · footer: Ft2 · audience: general · use: continuous learning · tone: austere legal dossier · anchor hue: judicial blue */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+:root {
+  --color-paper: oklch(96.5% 0.012 82);
+  --color-paper-raised: oklch(93.5% 0.014 82);
+  --color-paper-deep: oklch(89% 0.016 82);
+  --color-ink: oklch(20% 0.022 255);
+  --color-ink-soft: oklch(34% 0.025 255);
+  --color-muted: oklch(45% 0.022 255);
+  --color-rule: oklch(72% 0.022 255);
+  --color-rule-strong: oklch(53% 0.05 255);
+  --color-accent: oklch(43% 0.12 255);
+  --color-accent-strong: oklch(35% 0.13 255);
+  --color-seal: oklch(45% 0.15 28);
+  --color-focus: oklch(58% 0.17 255);
+  --color-selection: oklch(83% 0.06 255);
+  --color-overlay: oklch(16% 0.02 255 / 0.46);
+
+  --font-display: "Source Serif 4", "Noto Serif SC", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans Mono CJK SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-s: clamp(2.35rem, 5vw + 0.5rem, 4.4rem);
+  --text-display: clamp(2.65rem, 6vw + 0.5rem, 5.2rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-heavy: 3px;
+  --radius-small: 0.125rem;
+  --radius-control: 0.25rem;
+  --radius-panel: 0.375rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 255);
+  --color-paper-raised: oklch(19% 0.02 255);
+  --color-paper-deep: oklch(23% 0.022 255);
+  --color-ink: oklch(93% 0.012 82);
+  --color-ink-soft: oklch(82% 0.015 82);
+  --color-muted: oklch(73% 0.018 82);
+  --color-rule: oklch(37% 0.025 255);
+  --color-rule-strong: oklch(61% 0.06 255);
+  --color-accent: oklch(72% 0.11 255);
+  --color-accent-strong: oklch(81% 0.09 255);
+  --color-seal: oklch(70% 0.13 28);
+  --color-focus: oklch(78% 0.13 255);
+  --color-selection: oklch(34% 0.08 255);
+  --color-overlay: oklch(8% 0.012 255 / 0.72);
+}
