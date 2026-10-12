@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "拉丁文与欧洲学术传统",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-13",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一门不属于任何一国的学术语言",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "为什么罗马帝国消失许久以后，拉丁文仍能成为欧洲知识生产与跨地域交流的共同语言？",
+      "readerStateBefore": "读者主要把拉丁文看成古罗马留下的死语言，难以解释它为何在中世纪和近代学术中继续发挥作用。",
+      "readerStateAfter": "读者能够把学术拉丁文理解为一种经由学习、制度和文本维持的跨地域共同语，并看见它的便利与门槛。",
+      "priorConclusion": "",
+      "coreExample": "从牛顿1687年以拉丁文出版《自然哲学的数学原理》出发，追踪一部伦敦科学著作如何进入跨地域的欧洲读者网络。",
+      "conclusion": "拉丁文的长久生命并非罗马口语自然延续，而是教会、学校与学者不断学习和使用的结果；它以牺牲普遍可及性为代价，换取了跨地域交流与长期文本连续性。",
+      "nextQuestion": "既然拉丁文要靠学习和制度维持，哪些具体机制把不同地区、时代与语言中的知识接入同一套学术交流系统？",
+      "nextPage": "institutions.html",
+      "newTerms": [
+        { "term": "学术共同语", "definition": "供来自不同母语社群的人在教育、写作、辩论和通信中共享的知识语言。" },
+        { "term": "中世纪拉丁文", "definition": "约从晚期古代以后在欧洲宗教、行政、教育与学术环境中发展出的多样拉丁文用法。" },
+        { "term": "拉丁基督教世界", "definition": "以罗马教会及拉丁文制度为重要联系纽带的中世纪西欧和中欧文化空间。" },
+        { "term": "双语域", "definition": "同一社会中不同语言或语言变体各自承担日常交往与正式知识等不同功能的格局。" }
+      ]
+    },
+    {
+      "file": "institutions.html",
+      "title": "共同语如何被做出来",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然拉丁文要靠学习和制度维持，哪些具体机制把不同地区、时代与语言中的知识接入同一套学术交流系统？",
+      "readerStateBefore": "读者能够把学术拉丁文理解为一种经由学习、制度和文本维持的跨地域共同语，并看见它的便利与门槛。",
+      "readerStateAfter": "读者能够解释学校训练、手抄与注释、翻译、大学辩论和印刷传播怎样共同维持学术拉丁文。",
+      "priorConclusion": "拉丁文的长久生命并非罗马口语自然延续，而是教会、学校与学者不断学习和使用的结果；它以牺牲普遍可及性为代价，换取了跨地域交流与长期文本连续性。",
+      "coreExample": "沿着牛顿《原理》的读者所继承的训练与文本工具，回看一名跨地区学生怎样学会语法、阅读注释本、参加大学辩论并使用翻译进入希腊—阿拉伯知识传统。",
+      "conclusion": "拉丁学术共同体不是靠一种语言单独维系，而是靠教学、抄写与印刷、翻译、辩论和资格认证组成的基础设施；这些机制既扩大了知识的时空范围，也决定了谁有资格发言。",
+      "nextQuestion": "当民族语、印刷市场和新学科都能承担知识工作时，拉丁文为何逐渐退居一侧，又以哪些形式留在现代学术之中？",
+      "nextPage": "transformation.html",
+      "newTerms": [
+        { "term": "文法教育", "definition": "以语法、修辞和经典文本训练读写与表达能力的基础教育体系。" },
+        { "term": "注释传统", "definition": "围绕权威文本不断抄录、解释、校订、反驳并添加评注的知识生产方式。" },
+        { "term": "经院方法", "definition": "在学校和大学中通过提出问题、列举相反论证、辨析概念并作出回应来组织讨论的方法。" },
+        { "term": "翻译运动", "definition": "在特定城市和网络中把希腊文、阿拉伯文等知识文本持续译入拉丁文的集体过程。" },
+        { "term": "学术共同体", "definition": "通过共享训练、文本规范、机构资格与交流渠道而彼此承认的知识生产者群体。" }
+      ]
+    },
+    {
+      "file": "transformation.html",
+      "title": "从共同语到多语学术",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["institutions.html"],
+      "readerQuestion": "当民族语、印刷市场和新学科都能承担知识工作时，拉丁文为何逐渐退居一侧，又以哪些形式留在现代学术之中？",
+      "readerStateBefore": "读者能够解释学校训练、手抄与注释、翻译、大学辩论和印刷传播怎样共同维持学术拉丁文。",
+      "readerStateAfter": "读者能够把拉丁文的变化判断为功能重组而非突然死亡，并用受众、制度、媒介与权力分析其他学术共同语。",
+      "priorConclusion": "拉丁学术共同体不是靠一种语言单独维系，而是靠教学、抄写与印刷、翻译、辩论和资格认证组成的基础设施；这些机制既扩大了知识的时空范围，也决定了谁有资格发言。",
+      "coreExample": "把1687年拉丁文《原理》与1729年英文译本及现代科学英语并置，观察读者范围、表达资源、教育门槛与国际传播如何重新组合。",
+      "conclusion": "拉丁文没有在某个日期退出历史，而是在教育、出版、国家与学科制度变化中逐步失去多数知识领域的默认地位，同时以术语、分类、格言、典礼和文献能力继续存在；评估任何学术共同语，都应同时考察它连接了谁、排除了谁、由什么制度维持。",
+      "nextQuestion": "当今天的全球学术越来越依赖英语与机器翻译时，我们能否在保留跨地域交流效率的同时，降低单一共同语造成的知识损失与进入门槛？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "民族语", "definition": "相对于跨地域学术拉丁文而言，在地方社群中作为日常语言并逐渐进入书写、行政和学术的语言。" },
+        { "term": "人文主义拉丁文", "definition": "文艺复兴人文学者以古典作家为规范，主动校正中世纪词汇和文体后形成的拉丁文实践。" },
+        { "term": "学术共和国", "definition": "近代早期学者通过书信、出版、旅行与社团构成的跨地域交往网络，并非真正的国家。" },
+        { "term": "知识不平等", "definition": "由语言、资源、机构资格与传播渠道差异造成的知识获取和发言机会不均。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "关键文献与继续阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
