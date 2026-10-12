@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-13T14:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "怎样把一段亲密关系拆成足够清楚、又不会把爱简化成打分表的五个基本维度？",
+      "readerStateChange": "读前容易用心动、争吵或付出概括关系；读后能用五个相互制约的维度观察具体行为，并先确认安全与平等。",
+      "twoSentenceSummary": "入口页把五要素界定为公众理解框架，而非学界统一量表，并逐一说明安全、信任、回应、自主与修复。阿宁与周澈的同居分歧显示，五个维度会互相支持或彼此破坏，不能简单相加。",
+      "continuityEvidence": "结尾从静态地图推进到互动过程，明确提出普通分歧怎样形成良性或恶性循环，正好由机制页承接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "既然五个维度彼此依赖，一次普通的分歧如何沿着回应、信任、边界和修复形成良性循环或恶性循环？",
+      "readerStateChange": "读前只知道五个观察维度；读后能够沿需求表达、回应、守约、边界和冲突后的恢复解释关系循环。",
+      "twoSentenceSummary": "机制页沿家务与独处冲突，拆解需求怎样抵达对方、承诺怎样累积为可靠，以及保护动作怎样互相触发。它进一步说明恢复、道歉与行为改变的区别，并强调循环语言不能平均分配控制行为的责任。",
+      "continuityEvidence": "本页从互动机制推出一个必要限制：技巧只有在双方都安全且能参与改变时才适用，因此自然进入判断页的处境区分。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然改善依赖双方都能参与互动，怎样区分可以共同练习的摩擦、长期的结构性失衡，以及不该用沟通技巧处理的控制和暴力？",
+      "readerStateChange": "读前能解释关系循环但未必会选择行动；读后能依据行为证据区分三类处境，并决定协商、求助或优先保护安全。",
+      "twoSentenceSummary": "判断页用可观察行为区分普通摩擦、长期失衡和危险状态，说明解释、道歉与真心都不能替代持续改变。它给出协商、专业支持、安全行动与结束关系的不同适用边界，并保留生活阶段变化带来的重新评估。",
+      "continuityEvidence": "页面回应机制页留下的适用边界，并以新生活条件下五个维度能否继续成立作为开放问题，完成判断阶段而不制造虚假终点。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的编号引文；读后能核对公共卫生、法律与同行评审研究，并理解框架的综合性质和证据限制。",
+      "twoSentenceSummary": "来源页列出健康关系教育、伴侣暴力预防、回应性、自主性、冲突恢复与中国法律等关键材料。它同时说明样本、文化、研究设计与因果解释的限制，避免把五要素冒充单一学术模型。",
+      "continuityEvidence": "该页由三篇叙事页的编号引文和翻页导航直接到达，并为安全边界、研究关联与法律路径提供可核对依据。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

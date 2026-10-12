@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "亲密关系五要素",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-13",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "爱不是单项得分",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者容易用心动、付出多少或是否争吵来概括整段关系，缺少一套能同时看见连接、自由与安全的整体框架。",
+      "readerStateAfter": "读者能够用安全与平等、信任与可靠、回应与理解、自主与边界、修复与成长五个相互制约的维度观察关系，并知道安全是其余维度发挥作用的前提。",
+      "readerQuestion": "怎样把一段亲密关系拆成足够清楚、又不会把爱简化成打分表的五个基本维度？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "阿宁与周澈同居后，因为家务分配、独处时间、查看手机和一次争吵出现紧张；同一组事件将被用来观察五个维度如何彼此牵动。",
+      "newTerms": [
+        {
+          "term": "关系安全",
+          "definition": "双方能够表达不同意见和拒绝，不必担心因此遭到威胁、羞辱、控制或伤害的基本状态。"
+        },
+        {
+          "term": "关系信任",
+          "definition": "依据反复可见的行为形成的预期：对方会诚实、守约，并在重要处不利用自己的脆弱。"
+        },
+        {
+          "term": "伴侣回应性",
+          "definition": "一个人感到伴侣愿意理解自己的处境、认可感受的合理部分，并以关心作出合适回应。"
+        },
+        {
+          "term": "关系自主性",
+          "definition": "人在亲密关系中仍能依照自己的价值和意愿行动，同时自愿承担共同生活的责任。"
+        },
+        {
+          "term": "关系修复",
+          "definition": "在误解、失约或冲突后承认影响、恢复理解、作出改变，并让连接重新可用的过程。"
+        }
+      ],
+      "conclusion": "健康关系不是五项分数的总和，而是以安全与平等为底线，让可靠、回应、自主和修复在日常行为中彼此支持的动态系统。",
+      "nextQuestion": "既然五个维度彼此依赖，一次普通的分歧如何沿着回应、信任、边界和修复形成良性循环或恶性循环？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "mechanism.html",
+      "title": "关系在小事里运行",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够用安全与平等、信任与可靠、回应与理解、自主与边界、修复与成长五个相互制约的维度观察关系，并知道安全是其余维度发挥作用的前提。",
+      "readerStateAfter": "读者能够解释需求如何被表达和回应、承诺如何累积为信任、边界如何保护亲密，以及冲突后的恢复如何放大或阻断长期循环。",
+      "readerQuestion": "既然五个维度彼此依赖，一次普通的分歧如何沿着回应、信任、边界和修复形成良性循环或恶性循环？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "健康关系不是五项分数的总和，而是以安全与平等为底线，让可靠、回应、自主和修复在日常行为中彼此支持的动态系统。",
+      "coreExample": "阿宁希望周澈按约分担家务并保留周六独处时间；周澈把提醒听成否定，要求查看手机证明忠诚，双方随后学习把事实、感受、需要和可执行承诺分开。",
+      "newTerms": [
+        {
+          "term": "需求—回应链",
+          "definition": "一个人发出需要或脆弱信号，另一方识别、理解并行动，随后双方据此更新关系预期的连续过程。"
+        },
+        {
+          "term": "信任校准",
+          "definition": "根据承诺是否具体、行为是否一致、失误后是否诚实修正，逐步调整对伴侣可靠程度的判断。"
+        },
+        {
+          "term": "负向循环",
+          "definition": "双方的保护动作彼此触发，使追问、退缩、防御或指责不断加重，而原本的需要越来越难被看见。"
+        },
+        {
+          "term": "冲突恢复",
+          "definition": "争执后降低敌意和生理唤起，重新回到合作与日常连接，并继续处理尚未解决问题的能力。"
+        }
+      ],
+      "conclusion": "关系质量主要由反复出现的互动过程塑造：清楚表达、合适回应、可验证的守约、允许差异和可兑现的修复会相互增强，反向过程也会彼此放大。",
+      "nextQuestion": "既然改善依赖双方都能参与互动，怎样区分可以共同练习的摩擦、长期的结构性失衡，以及不该用沟通技巧处理的控制和暴力？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "judgment.html",
+      "title": "先判断，再努力",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释需求如何被表达和回应、承诺如何累积为信任、边界如何保护亲密，以及冲突后的恢复如何放大或阻断长期循环。",
+      "readerStateAfter": "读者能够依据可观察行为判断关系处于普通摩擦、结构性失衡还是危险状态，选择共同协商、寻求专业支持或优先保护安全。",
+      "readerQuestion": "既然改善依赖双方都能参与互动，怎样区分可以共同练习的摩擦、长期的结构性失衡，以及不该用沟通技巧处理的控制和暴力？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "关系质量主要由反复出现的互动过程塑造：清楚表达、合适回应、可验证的守约、允许差异和可兑现的修复会相互增强，反向过程也会彼此放大。",
+      "coreExample": "阿宁与周澈把一个月内的约定、拒绝是否被尊重、争执后的行动变化和彼此是否感到害怕记录下来，以判断关系是在学习、停滞还是进入危险。",
+      "newTerms": [
+        {
+          "term": "可观察证据",
+          "definition": "能被具体描述和回顾的行为与结果，例如是否守约、是否停止越界、是否承担后果，而不是只看口头保证。"
+        },
+        {
+          "term": "结构性失衡",
+          "definition": "关系中的决定权、照料负担、金钱或解释权长期固定在一方，另一方的需要很难真正影响共同安排。"
+        },
+        {
+          "term": "强制控制",
+          "definition": "通过监视、隔离、威胁、经济限制或反复惩罚等方式缩小伴侣自由，并让对方因恐惧而服从的行为模式。"
+        }
+      ],
+      "conclusion": "五要素框架的价值不在于给关系判一个总分，而在于确认安全底线、观察双方是否都有改变能力，并把继续协商、寻求支持或离开危险的决定建立在行为证据上。",
+      "nextQuestion": "当关系进入新的生活阶段或压力上升时，双方能否继续让安全、可靠、回应、自主和修复在新的条件下成立？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

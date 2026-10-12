@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12",
+  "updatedAt": "2026-10-13",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3977,6 +3977,13 @@
       "generatedAt": "2026-10-12",
       "slug": "roman-empire-rise-and-fall",
       "entry": "knowledge-bases/roman-empire-rise-and-fall/main.html"
+    },
+    {
+      "name": "亲密关系五要素",
+      "domain": "情感/两性",
+      "generatedAt": "2026-10-13",
+      "slug": "intimate-relationship-five-elements",
+      "entry": "knowledge-bases/intimate-relationship-five-elements/main.html"
     }
   ],
   "skipped": []
