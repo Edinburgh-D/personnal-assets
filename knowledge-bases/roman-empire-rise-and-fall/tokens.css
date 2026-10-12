@@ -1,0 +1,105 @@
+/* Hallmark · macrostructure: Narrative Workflow · genre: editorial · theme: Atelier · enrichment: Tier-A CSS route line · nav: N6 · footer: Ft1 · audience: general · use: continuous public-history reading · tone: archival historical · anchor hue: imperial oxblood */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@600;900&display=swap");
+
+:root {
+  --color-paper: oklch(96% 0.018 78);
+  --color-paper-deep: oklch(92% 0.025 74);
+  --color-panel: oklch(98% 0.012 78);
+  --color-ink: oklch(21% 0.026 45);
+  --color-ink-2: oklch(33% 0.025 48);
+  --color-muted: oklch(47% 0.022 52);
+  --color-rule: oklch(76% 0.03 70);
+  --color-rule-strong: oklch(54% 0.05 55);
+  --color-accent: oklch(43% 0.14 28);
+  --color-accent-soft: oklch(88% 0.045 35);
+  --color-accent-ink: oklch(27% 0.09 28);
+  --color-focus: oklch(55% 0.18 28);
+  --color-dark-paper: oklch(16% 0.018 48);
+  --color-dark-paper-deep: oklch(20% 0.022 48);
+  --color-dark-panel: oklch(23% 0.022 48);
+  --color-dark-ink: oklch(93% 0.018 78);
+  --color-dark-ink-2: oklch(82% 0.022 74);
+  --color-dark-muted: oklch(70% 0.024 70);
+  --color-dark-rule: oklch(38% 0.035 48);
+  --color-dark-rule-strong: oklch(58% 0.05 44);
+  --color-dark-accent: oklch(70% 0.12 32);
+  --color-dark-accent-soft: oklch(27% 0.06 30);
+  --color-dark-accent-ink: oklch(85% 0.07 36);
+  --color-dark-focus: oklch(76% 0.13 34);
+
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.88rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.65rem, 5vw + 0.8rem, 5.1rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-strong: 2px;
+  --radius-sm: 0.18rem;
+  --radius-card: 0.25rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: var(--color-dark-paper);
+  --color-paper-deep: var(--color-dark-paper-deep);
+  --color-panel: var(--color-dark-panel);
+  --color-ink: var(--color-dark-ink);
+  --color-ink-2: var(--color-dark-ink-2);
+  --color-muted: var(--color-dark-muted);
+  --color-rule: var(--color-dark-rule);
+  --color-rule-strong: var(--color-dark-rule-strong);
+  --color-accent: var(--color-dark-accent);
+  --color-accent-soft: var(--color-dark-accent-soft);
+  --color-accent-ink: var(--color-dark-accent-ink);
+  --color-focus: var(--color-dark-focus);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: var(--color-dark-paper);
+    --color-paper-deep: var(--color-dark-paper-deep);
+    --color-panel: var(--color-dark-panel);
+    --color-ink: var(--color-dark-ink);
+    --color-ink-2: var(--color-dark-ink-2);
+    --color-muted: var(--color-dark-muted);
+    --color-rule: var(--color-dark-rule);
+    --color-rule-strong: var(--color-dark-rule-strong);
+    --color-accent: var(--color-dark-accent);
+    --color-accent-soft: var(--color-dark-accent-soft);
+    --color-accent-ink: var(--color-dark-accent-ink);
+    --color-focus: var(--color-dark-focus);
+  }
+}
