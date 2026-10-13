@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-13",
+  "framework": "vanilla-html",
+  "fontStack": "Noto Serif SC + Noto Sans SC + IBM Plex Mono",
+  "palette": "OKLCH tokens in local tokens.css",
+  "motion": "motion-cut with menu and button state feedback only",
+  "spacing": "4pt semantic scale",
+  "preserved": "repository static HTML publishing contract"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-13T22:12:45+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "如果作恶不会被发现，一个人为什么还要选择正义？",
+      "readerStateChange": "读前只记得洞穴、哲学家王等片段；读后能够把全书还原为对权力免罚挑战的连续回应，并区分正义的名声、外在后果与行动者的内部状态。",
+      "twoSentenceSummary": "页面从色拉叙马霍斯对规则与强者利益的怀疑，推进到格劳孔用隐身戒指剥掉惩罚和名声。随后以戴戒指者的权力轨迹说明，不正义的代价可能表现为欲望夺取行动者的领导权。",
+      "continuityEvidence": "结尾说明正义若能经受戒指试验，就必须进入欲望、判断和自我支配的内部结构，因此自然推出下一页的城邦放大法与灵魂结构。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "order-within.html",
+      "centralQuestion": "如果正义的价值在于塑造行动者，柏拉图怎样用城邦与灵魂的共同结构说明正义会使人更自由？",
+      "readerStateChange": "读前只知道正义需要具有内在价值；读后能够解释城邦放大、灵魂三分、各司其职与政体退化如何连成同一机制，并识别模型可能为等级支配提供语言的风险。",
+      "twoSentenceSummary": "页面从需要与分工建立城邦尺度，再用理性、激情与欲望解释内部冲突和自我支配。它继而把政体退化读成欲望换位，同时指出心理和谐与对他人公正之间仍需论证。",
+      "continuityEvidence": "本页接住戒指者的欲望轨迹，并在结尾把问题推进到谁能代表理性和共同善，直接要求下一页审查哲学家统治的知识资格与纠错条件。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "knowledge-and-rule.html",
+      "centralQuestion": "既然理性应当统治，谁有资格宣称自己认识共同善，又怎样避免哲学家统治变成不可纠错的专家专断？",
+      "readerStateChange": "读前能够解释柏拉图式内部秩序；读后能够把知识能力、权力动机和制度纠错分开审查，并用知识、动机、反驳与替换四项条件评价专家或领袖的统治主张。",
+      "twoSentenceSummary": "页面依次检验哲学家统治、善的理念、洞穴返回与政治教育，说明柏拉图要求知识、品格和公共责任结合。它同时指出自我认证、叙事操控与缺乏和平替换的问题，并把古代难题转化为可用于现代专家政治和算法治理的判断框架。",
+      "continuityEvidence": "本页直接回应上一页留下的知识统治资格问题，并以可反驳性和可替换性补入现代制度维度；结尾保留如何让可靠知识进入共同决定而不封闭决定的开放追问。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前主要依赖正文概括；读后能够用斯特凡页码定位关键论证，并区分开放原典、权威哲学百科、持续解释争议与真实存在的站内关联资料。",
+      "twoSentenceSummary": "参考页给出戒指、城邦正义、灵魂三分、哲学家统治、洞穴和政体退化的原典坐标，并链接 Perseus、MIT、SEP 与 IEP。它还明确标出伦理或政治、模型或蓝图、古代等级与现代极权标签三组未决争议。",
+      "continuityEvidence": "该页承接三篇正文中的原典坐标和争议提示，为事实核对与延伸比较提供可达入口，不另行扩张叙事链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

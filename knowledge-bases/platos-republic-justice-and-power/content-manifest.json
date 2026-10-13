@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "柏拉图《理想国》：正义与权力",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-13",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "一枚无人看见的戒指",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "如果作恶不会被发现，一个人为什么还要选择正义？",
+      "readerStateBefore": "读者把《理想国》理解为哲学家王、洞穴等著名片段的集合，还看不出这些片段共同回应的权力难题。",
+      "readerStateAfter": "读者能够把全书理解为对权力免罚试验的连续回应，并区分正义的名声、外在奖惩与灵魂自身状态。",
+      "priorConclusion": "",
+      "coreExample": "一个普通人得到一枚能让自己隐身且逃过追责的戒指，并逐步取得城邦权力；他的每一步选择都检验正义是否只靠外部监督维持。",
+      "conclusion": "《理想国》的出发点不是描绘完美国家，而是接受最强的权力免罚挑战：若正义仍值得选择，它必须不仅保护名声与安全，还塑造一个不被自身欲望奴役的行动者。",
+      "nextQuestion": "如果正义的价值在于塑造行动者，柏拉图怎样用城邦与灵魂的共同结构说明正义会使人更自由？",
+      "nextPage": "order-within.html",
+      "newTerms": [
+        { "term": "强者利益论", "definition": "色拉叙马霍斯提出的挑战：现实中的统治集团把对自己有利的规则称为正义。" },
+        { "term": "格劳孔之戒", "definition": "格劳孔讲述的隐身戒指思想实验，用来追问人在无需承担后果时是否仍会正义。" },
+        { "term": "内在价值", "definition": "一种事物不只因后果或名声有用，其本身的状态与活动也值得选择。" },
+        { "term": "僭主", "definition": "以不受约束的欲望支配自己和他人的统治者，也是柏拉图笔下最不自由的人。" }
+      ]
+    },
+    {
+      "file": "order-within.html",
+      "title": "秩序先发生在内部",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果正义的价值在于塑造行动者，柏拉图怎样用城邦与灵魂的共同结构说明正义会使人更自由？",
+      "readerStateBefore": "读者能够把全书理解为对权力免罚试验的连续回应，并区分正义的名声、外在奖惩与灵魂自身状态。",
+      "readerStateAfter": "读者能够解释城邦放大法、灵魂三分和政体退化如何连成同一机制，并指出秩序不等于服从现状。",
+      "priorConclusion": "《理想国》的出发点不是描绘完美国家，而是接受最强的权力免罚挑战：若正义仍值得选择，它必须不仅保护名声与安全，还塑造一个不被自身欲望奴役的行动者。",
+      "coreExample": "戴戒指者从一次无人发现的越界走向操纵职位、财富与舆论；同一过程被分别放大为个人欲望的夺权和城邦政体的退化。",
+      "conclusion": "柏拉图把正义解释为理性、激情与欲望各守其职并由能够判断整体善的部分引导；这说明自由不是欲望无阻，而是行动者不被任何单一欲望劫持，但该模型能否证明对他人的正当行动仍有争议。",
+      "nextQuestion": "既然理性应当统治，谁有资格宣称自己认识共同善，又怎样避免哲学家统治变成不可纠错的专家专断？",
+      "nextPage": "knowledge-and-rule.html",
+      "newTerms": [
+        { "term": "城邦—灵魂类比", "definition": "先在较大的城邦中辨认正义结构，再用相似结构理解个人灵魂的论证方法。" },
+        { "term": "灵魂三分", "definition": "把人的动力区分为理性、激情与欲望，并用三者关系解释冲突、自制与失序。" },
+        { "term": "各司其职", "definition": "《理想国》对正义的结构性表达：每一部分完成适合自己的工作，不篡夺其他部分的职责。" },
+        { "term": "政体退化", "definition": "理想城邦依次滑向荣誉政体、寡头、民主和僭主的心理与政治变形序列。" },
+        { "term": "节制", "definition": "城邦与灵魂中各部分对谁应当引导整体形成一致，而非单纯压抑一切欲望。" }
+      ]
+    },
+    {
+      "file": "knowledge-and-rule.html",
+      "title": "当知识要求统治",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["order-within.html"],
+      "readerQuestion": "既然理性应当统治，谁有资格宣称自己认识共同善，又怎样避免哲学家统治变成不可纠错的专家专断？",
+      "readerStateBefore": "读者能够解释城邦放大法、灵魂三分和政体退化如何连成同一机制，并指出秩序不等于服从现状。",
+      "readerStateAfter": "读者能够区分知识资格、权力动机与制度纠错三个问题，并据此批判性评价哲学家统治、教育审查和当代专家政治。",
+      "priorConclusion": "柏拉图把正义解释为理性、激情与欲望各守其职并由能够判断整体善的部分引导；这说明自由不是欲望无阻，而是行动者不被任何单一欲望劫持，但该模型能否证明对他人的正当行动仍有争议。",
+      "coreExample": "戴戒指者如今自称最了解城邦利益，并以稳定为由控制教育与信息；读者要判断知识、克制和公共目的能否替代公开质疑与制度纠错。",
+      "conclusion": "《理想国》让我们看见知识、品格与权力动机不可分离，却没有提供现代意义上的公开问责与和平更替；因此它更适合作为检验统治资格的高压问题集，而不是可直接复制的宪制蓝图。",
+      "nextQuestion": "面对任何声称更懂共同利益的领袖、专家或系统，我们应如何同时检验其知识、动机、可反驳性与可替换性？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "哲学家统治", "definition": "由经过长期教育、认识善且不贪恋权位的人承担治理责任的政治主张。" },
+        { "term": "善的理念", "definition": "柏拉图用来说明知识与价值何以获得方向的最高对象，不等于统治者的个人偏好。" },
+        { "term": "洞穴譬喻", "definition": "以囚徒从影像转向更真实事物并返回洞穴的故事，说明教育、认识与公共责任。" },
+        { "term": "高贵的谎言", "definition": "为建立共同身份与社会角色而讲述的建城神话，也暴露政治教育滑向操控的危险。" },
+        { "term": "可纠错性", "definition": "主张、决策和掌权者能够被质疑、修正或替换的制度能力。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典坐标与争论",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
