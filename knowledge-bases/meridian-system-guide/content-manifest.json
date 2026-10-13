@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "经络系统详解",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-14",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先把经络看成一张关系图",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者听过经络、穴位和气血，却容易把经络想成一套看不见的血管，也不清楚传统理论与现代证据的边界。",
+      "readerStateAfter": "读者能够把经络理解为中医组织路线、联系、症状与治疗部位的功能关系图，并主动区分理论模型与解剖实体。",
+      "readerQuestion": "经络在中医理论中究竟是一张怎样的网络，为什么不能把它简单理解成血管、神经或看不见的管道？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一名久坐后颈肩不适的人在图上看到手臂外侧的经络路线，试图用一条线解释所有疼痛；本页用这个误解说明路线、症状联系与实体组织不是同一回事。",
+      "newTerms": [
+        {
+          "term": "经络系统",
+          "definition": "中医理论中由经脉、络脉及其相关联系组成，用来描述身体各部、脏腑、气血与病候关系的网络。"
+        },
+        {
+          "term": "经脉",
+          "definition": "经络网络中承担主要纵向路线与整体联系的主干层。"
+        },
+        {
+          "term": "络脉",
+          "definition": "从主干分出并联系局部、表里与细小区域的分支层。"
+        },
+        {
+          "term": "腧穴",
+          "definition": "针灸学按名称和体表位置加以规范、供诊察与治疗使用的定位点。"
+        }
+      ],
+      "conclusion": "经络系统是中医用来组织体表路线、脏腑联系、症状分布与治疗部位的功能关系图；它能指导描述和选穴，但不能因此等同于已证实的单一解剖结构。",
+      "nextQuestion": "既然经络是一张关系图，十二经脉、奇经八脉、十五络脉与腧穴怎样分工并连接成可阅读的层级？",
+      "nextPage": "network-and-pathways.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "network-and-pathways.html",
+      "title": "主干、联络与入口",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把经络理解为中医组织路线、联系、症状与治疗部位的功能关系图，并主动区分理论模型与解剖实体。",
+      "readerStateAfter": "读者能够按主干、跨系统联系、分支与定位节点解释经络层级，并读懂十二经脉的分组、方向和传统流注次序。",
+      "readerQuestion": "既然经络是一张关系图，十二经脉、奇经八脉、十五络脉与腧穴怎样分工并连接成可阅读的层级？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "经络系统是中医用来组织体表路线、脏腑联系、症状分布与治疗部位的功能关系图；它能指导描述和选穴，但不能因此等同于已证实的单一解剖结构。",
+      "coreExample": "继续看这名颈肩不适者：不再沿一条线寻找唯一原因，而是先辨认上肢阴阳经的方向，再理解表里配对、头面衔接、络脉分支与局部腧穴各自提供哪一层信息。",
+      "newTerms": [
+        {
+          "term": "十二经脉",
+          "definition": "由手足各三阴、三阳组成的十二条主要经脉，是传统经络层级的主干。"
+        },
+        {
+          "term": "表里相合",
+          "definition": "传统理论把一条阴经与一条阳经按脏腑和路线关系配成一组的联系方法。"
+        },
+        {
+          "term": "流注次序",
+          "definition": "十二经脉在传统理论中首尾相接、依次承接气血运行的排列顺序。"
+        },
+        {
+          "term": "奇经八脉",
+          "definition": "督、任、冲、带、阴维、阳维、阴跷、阳跷八条特殊经脉的合称，用来描述对十二经脉的联络与调节。"
+        },
+        {
+          "term": "十五络脉",
+          "definition": "十二经脉各一条络脉，加上任脉络、督脉络和脾之大络构成的主要络脉集合。"
+        }
+      ],
+      "conclusion": "十二经脉提供主干次序，奇经八脉承担跨主干调节，络脉把联系分散到更细层级，腧穴则是临床进入这张网络的定位节点；理解层级比背诵一条条线更重要。",
+      "nextQuestion": "当这张层级网络进入诊疗与养生语境时，普通人怎样区分传统解释、临床证据和安全边界？",
+      "nextPage": "evidence-and-safety.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "evidence-and-safety.html",
+      "title": "把理论、疗效与安全分开判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够按主干、跨系统联系、分支与定位节点解释经络层级，并读懂十二经脉的分组、方向和传统流注次序。",
+      "readerStateAfter": "读者能够分别审查传统诊疗语言、具体病种证据、可能机制和操作安全，不再用一项研究或一次体感证明整套经络理论。",
+      "readerQuestion": "当这张层级网络进入诊疗与养生语境时，普通人怎样区分传统解释、临床证据和安全边界？",
+      "dependsOn": [
+        "network-and-pathways.html"
+      ],
+      "priorConclusion": "十二经脉提供主干次序，奇经八脉承担跨主干调节，络脉把联系分散到更细层级，腧穴则是临床进入这张网络的定位节点；理解层级比背诵一条条线更重要。",
+      "coreExample": "这名颈肩不适者在接受正规评估后考虑针灸：他把经络解释、疼痛改善、神经与局部组织反应、期待效应以及无菌操作分别看待，并预先约定何时复查或转诊。",
+      "newTerms": [
+        {
+          "term": "经络辨证",
+          "definition": "依据经络理论分析症状分布、相关脏腑和病机，并形成传统诊疗判断的方法。"
+        },
+        {
+          "term": "非特异性效应",
+          "definition": "并非由治疗中特定技术成分单独造成，而与期待、照护关系、情境和自然波动等因素有关的变化。"
+        },
+        {
+          "term": "假针刺",
+          "definition": "研究中用于比较的模拟针刺方法，可能采用非穿透装置、浅刺或不同位置，但并不一定完全没有生理作用。"
+        },
+        {
+          "term": "红旗征象",
+          "definition": "提示可能存在严重或紧急问题、应优先接受医学评估而不是继续自我调理的异常表现。"
+        }
+      ],
+      "conclusion": "经络理论可以作为传统医学内部的诊疗语言，针灸也可能在部分症状管理中发挥作用，但具体疗效、机制与安全必须按病种和操作条件分别审查，不能由经络叙述直接推出万能疗效。",
+      "nextQuestion": "未来面对新的经络研究、体感经验或商业宣传，哪些证据能真正提高可信度，哪些说法仍应停在假设层面？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

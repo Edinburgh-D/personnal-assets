@@ -1,0 +1,13 @@
+{
+  "scannedAt": "2026-10-14T15:30:00+08:00",
+  "target": "knowledge-bases/meridian-system-guide",
+  "fontStack": "Noto Serif SC + Noto Sans SC, with Chinese system fallbacks",
+  "palette": "OKLCH warm paper with leaf-green accent",
+  "motion": "motion-cut; functional menu state only",
+  "spacing": "4pt semantic scale",
+  "framework": "vanilla HTML, CSS and JavaScript",
+  "preserved": [
+    "repository multi-page knowledge-base conventions",
+    "root overview publishing markers"
+  ]
+}

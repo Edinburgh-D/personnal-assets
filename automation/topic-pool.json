@@ -3998,6 +3998,13 @@
       "generatedAt": "2026-10-14",
       "slug": "the-crowd-le-bon",
       "entry": "knowledge-bases/the-crowd-le-bon/main.html"
+    },
+    {
+      "name": "经络系统详解",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-14",
+      "slug": "meridian-system-guide",
+      "entry": "knowledge-bases/meridian-system-guide/main.html"
     }
   ],
   "skipped": []

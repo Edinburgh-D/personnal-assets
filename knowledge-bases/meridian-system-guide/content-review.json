@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-14T16:20:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "经络在中医理论中究竟是一张怎样的网络，为什么不能把它简单理解成血管、神经或看不见的管道？",
+      "readerStateChange": "读前容易把经络想成尚未发现的实体管道；读后能把它看作同时承载路线、功能与临床信息的传统关系图，并区分模型用途和解剖证据。",
+      "twoSentenceSummary": "页面用地铁图类比解释经、络、穴的层级和用途，再指出类比不能证明存在同样的物质管道。颈肩不适的连续案例展示了路线信息如何参与观察，又为什么不能代替肌肉、关节、神经和急症评估。",
+      "continuityEvidence": "结尾把经络确立为需要分层阅读的关系模型，并明确提出下一步要解释十二经脉、奇经、络脉和腧穴如何组成网络。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "network-and-pathways.html",
+      "centralQuestion": "既然经络是一张关系图，十二经脉、奇经八脉、十五络脉与腧穴怎样分工并连接成可阅读的层级？",
+      "readerStateChange": "读前只有关系图的总体直觉；读后能按四组方向、六组表里配对、传统流注次序、特殊路线、主要络脉和定位点说明网络层级。",
+      "twoSentenceSummary": "页面先把十二条主干整理为手足阴阳四组，并用传统次序说明它们怎样首尾承接。随后加入奇经、络脉、经别经筋皮部和腧穴，说明跨线调节、局部分支与临床定位承担不同任务。",
+      "continuityEvidence": "本页把入口页的抽象关系图拆成可读层级，结尾又从结构记忆推进到治疗语境中的疗效、机制与安全判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evidence-and-safety.html",
+      "centralQuestion": "当这张层级网络进入诊疗与养生语境时，普通人怎样区分传统解释、临床证据和安全边界？",
+      "readerStateChange": "读前能解释网络结构却可能混同理论与疗效；读后能分别审查传统诊疗语言、病种证据、候选机制、非特异性效应和操作安全。",
+      "twoSentenceSummary": "页面把经络辨证、针灸临床结果、现代候选机制和安全规范拆成四个独立问题，并说明假针刺比较与个人体验的解释限制。它进一步给出资质、无菌操作、急症信号、可复查目标和证据梯子，帮助公众审查服务与宣传。",
+      "continuityEvidence": "作为叙事末页，它把前页的网络层级转化为证据与安全判断，并留下如何评价新研究、体感经验和商业主张的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的机构和标准名称；读后能按术语定位、实践基准、临床证据与卫生监管四类用途回查主张，并识别来源的外推边界。",
+      "twoSentenceSummary": "来源页列出 WHO 中医药术语、标准针灸命名与实践基准，中国经穴国标、感染管理要求和养生保健服务规范，以及 NCCIH 针灸资料。页面同时解释标准化不等于机制获证、特定疗效不能证明整套理论，并标出仍待重复研究的问题。",
+      "continuityEvidence": "七项直接链接分别支撑前三页的术语结构、经典经穴数量、定位规范、针灸机制不确定性、无菌操作和非医疗机构边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
