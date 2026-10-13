@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13",
+  "updatedAt": "2026-10-14",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -3991,6 +3991,13 @@
       "generatedAt": "2026-10-13",
       "slug": "latin-and-european-scholarship",
       "entry": "knowledge-bases/latin-and-european-scholarship/main.html"
+    },
+    {
+      "name": "乌合之众解析",
+      "domain": "政治/社会",
+      "generatedAt": "2026-10-14",
+      "slug": "the-crowd-le-bon",
+      "entry": "knowledge-bases/the-crowd-le-bon/main.html"
     }
   ],
   "skipped": []

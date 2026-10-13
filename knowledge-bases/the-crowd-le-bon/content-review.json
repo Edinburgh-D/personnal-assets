@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-14T04:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "《乌合之众》究竟提出了怎样的群体模型，我们为什么仍会被它吸引？",
+      "readerStateChange": "读前只有“群众容易失去理性”的流行印象；读后能复述精神统一、暗示、传染与领袖威望的原著模型，并把它与时代偏见、方法限制分开。",
+      "twoSentenceSummary": "本页从心理群体与普通聚集的区别出发，重建勒庞解释匿名、情绪扩散和领袖影响的模型。随后把现象观察、机制推断与价值判断分层，说明这是一套需要检验的历史理论。",
+      "continuityEvidence": "结尾明确指出勒庞看见了集体情境中的变化，却把变化过早解释为人格消失，因此下一页必须寻找能解释具体方向的替代机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "如果人进入群体后并非简单失去自我，那么共同方向、情绪感染和领袖影响究竟怎样产生？",
+      "readerStateChange": "读前能辨认勒庞模型的历史性；读后能以共同身份、群体规范、集体效能、领导代表性和权威互动解释群体行为的不同方向。",
+      "twoSentenceSummary": "本页把“人格消失”改写为从个人身份到共同身份的重心转换，并说明规范为行为定向。广场案例进一步展示领导者与权威如何在互动中重画群体边界。",
+      "continuityEvidence": "本页以身份、规范和互动替代单纯传染论，结尾顺势要求把这套机制用于新闻、平台与公共冲突的证据审查。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "面对现实中的集会、网络热潮和公共冲突，怎样判断何时该借用勒庞，何时必须换一套解释？",
+      "readerStateChange": "读前能够解释现代群体机制；读后能够检查观察位置、身份边界、规范内容、互动转折、传播路径和过程证据，并把它迁移到新闻与社交媒体。",
+      "twoSentenceSummary": "本页把“人群失控”拆成可核实的身份、规范、互动、传播与时间线问题。它保留勒庞对口号、情绪和声望的现象提示，同时排除把群体非理性当作万能结论的用法。",
+      "continuityEvidence": "本页直接运用卷二建立的机制，并以同一广场案例展示从标签判断到过程重建的完整迁移，最后留下审查新群体叙事的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "哪些材料支持本文对勒庞原著与现代群体心理学的区分？",
+      "readerStateChange": "读前只看到正文中的概括；读后能够沿原著、国家图书馆书目、同行评审研究、系统综述和专业机构解释分别追溯证据。",
+      "twoSentenceSummary": "本页按材料用途列出原著文本、版本记录、现代研究和公众解释，并逐条注明能支持的主张。末尾说明现实事件还需要完整时间线、当地法律和多方独立材料。",
+      "continuityEvidence": "来源页分别承接前三页的文本重建、机制修正与判断边界，让读者能够反向核对关键论证而不打断主叙事链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

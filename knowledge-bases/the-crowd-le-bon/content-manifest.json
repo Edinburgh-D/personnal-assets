@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "乌合之众解析",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-14",
+  "audience": "general",
+  "entry": "main.html",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "熟悉“乌合之众”这个标签，却很难分清勒庞的原著主张、时代偏见和后来的流行转述。",
+      "readerStateAfter": "能复述勒庞的群体模型，并把它视为一套需要检验的历史理论，而不是关于大众的永恒定律。",
+      "readerQuestion": "《乌合之众》究竟提出了怎样的群体模型，我们为什么仍会被它吸引？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一场虚构的市政广场集会：互不相识的到场者因同一条公共议题信息聚集，口号、传言、组织者发言与警方行动不断改变现场气氛。",
+      "newTerms": [
+        {
+          "term": "心理群体",
+          "definition": "勒庞所说的不是单纯聚在一起的人，而是思想与感情暂时朝同一方向组织起来的人群。"
+        },
+        {
+          "term": "精神统一律",
+          "definition": "勒庞用来概括个人意识被集体方向压倒、群体仿佛形成共同心智的核心命题。"
+        },
+        {
+          "term": "暗示",
+          "definition": "在缺少充分论证时，某个形象、口号或行动线索直接引导判断与行为的过程。"
+        },
+        {
+          "term": "传染",
+          "definition": "勒庞用来描述情感和行动在人群中快速扩散的类比性概念，并非医学意义的感染。"
+        }
+      ],
+      "conclusion": "勒庞把群体描绘成由匿名、情绪传递与领袖威望驱动的暂时共同心智；这套模型抓住了集体行动的变化感，却把特定时代的恐惧扩大成了普遍定律。",
+      "nextQuestion": "如果人进入群体后并非简单失去自我，那么共同方向、情绪感染和领袖影响究竟怎样产生？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "mechanism.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能复述勒庞的群体模型，并把它视为一套需要检验的历史理论，而不是关于大众的永恒定律。",
+      "readerStateAfter": "能用共同身份、群体规范和情境互动解释群体行为，并知道情绪同步不等于理性消失。",
+      "readerQuestion": "如果人进入群体后并非简单失去自我，那么共同方向、情绪感染和领袖影响究竟怎样产生？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "勒庞把群体描绘成由匿名、情绪传递与领袖威望驱动的暂时共同心智；这套模型抓住了集体行动的变化感，却把特定时代的恐惧扩大成了普遍定律。",
+      "coreExample": "同一场虚构的市政广场集会：参与者对“我们是谁”、什么行动符合共同目标、警方举动是否正当的理解持续变化。",
+      "newTerms": [
+        {
+          "term": "社会认同",
+          "definition": "人把自己理解为某个共同类别成员，并据此理解他人、规范与处境的自我认识。"
+        },
+        {
+          "term": "自我分类",
+          "definition": "人在具体情境中从个人身份切换到某种群体身份，并按该身份的规范行动的过程。"
+        },
+        {
+          "term": "群体规范",
+          "definition": "群体成员认为“我们这种人”在此情境中应该或不应该怎样做的共享尺度。"
+        },
+        {
+          "term": "集体效能",
+          "definition": "成员相信共同努力能够改变结果的判断。"
+        }
+      ],
+      "conclusion": "群体行为更像个人依据显著的共同身份、规范和互动关系重新组织判断，而不是人格被清空；同样的情绪同步可能导向互助、克制或冲突。",
+      "nextQuestion": "面对现实中的集会、网络热潮和公共冲突，怎样判断何时该借用勒庞，何时必须换一套解释？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能用共同身份、群体规范和情境互动解释群体行为，并知道情绪同步不等于理性消失。",
+      "readerStateAfter": "能按身份、规范、互动、证据与权力位置审查群体叙事，并把这种判断迁移到新闻和社交媒体。",
+      "readerQuestion": "面对现实中的集会、网络热潮和公共冲突，怎样判断何时该借用勒庞，何时必须换一套解释？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "群体行为更像个人依据显著的共同身份、规范和互动关系重新组织判断，而不是人格被清空；同样的情绪同步可能导向互助、克制或冲突。",
+      "coreExample": "回看虚构的市政广场集会：分别从参与者、组织者、旁观者、媒体与执法者的位置重建同一段事件。",
+      "newTerms": [
+        {
+          "term": "观察者偏差",
+          "definition": "旁观者把自己看不见的内部关系误当作不存在，并用外部标签替代参与者实际意义的倾向。"
+        },
+        {
+          "term": "阐释性社会认同模型",
+          "definition": "强调群体身份会在参与者与权威的互动中被重塑，从而解释合作、对立与规范变化的模型。"
+        },
+        {
+          "term": "道德恐慌",
+          "definition": "某类人或行为被描述为对社会秩序的严重威胁，且威胁叙事可能明显超过可核实证据的公共反应。"
+        }
+      ],
+      "conclusion": "《乌合之众》最适合充当提出问题的历史透镜，而不适合作为给人群定性的判决书；可靠判断必须重建参与者身份、规范内容、互动过程和证据来源。",
+      "nextQuestion": "当新的群体叙事出现时，我们能否先重建过程，再决定它是失控、协作、抗争，还是被外部视角误读？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "能按身份、规范、互动、证据与权力位置审查群体叙事，并把这种判断迁移到新闻和社交媒体。",
+      "readerStateAfter": "能追溯原著、现代研究与延伸阅读，并区分文本证据、研究综述和面向公众的专家解释。",
+      "readerQuestion": "哪些材料支持本文对勒庞原著与现代群体心理学的区分？",
+      "dependsOn": [
+        "main.html",
+        "mechanism.html",
+        "judgment.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "把同一条主张沿着原著、实证研究、系统综述与公众解释四种材料反向追踪。",
+      "newTerms": [],
+      "conclusion": "来源的用途不同：原著回答勒庞写了什么，研究回答哪些机制得到支持，综述回答证据整体指向哪里。",
+      "nextQuestion": "面对新的群体心理说法，读者应先寻找哪一层来源？",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
