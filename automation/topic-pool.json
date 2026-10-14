@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14",
+  "updatedAt": "2026-10-15",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4005,6 +4005,13 @@
       "generatedAt": "2026-10-14",
       "slug": "meridian-system-guide",
       "entry": "knowledge-bases/meridian-system-guide/main.html"
+    },
+    {
+      "name": "高敏感人格(HSP)",
+      "domain": "心理学",
+      "generatedAt": "2026-10-15",
+      "slug": "highly-sensitive-person",
+      "entry": "knowledge-bases/highly-sensitive-person/main.html"
     }
   ],
   "skipped": []

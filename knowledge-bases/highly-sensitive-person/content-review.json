@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-15T07:11:07+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "“高敏感人格”究竟在描述什么，我们怎样在不把它疾病化或浪漫化的前提下理解日常经验？",
+      "readerStateChange": "读前容易把 HSP 当成疾病、天赋或固定类别；读后能把它理解为仍有测量争议的连续特质假设，并用输入、情境和恢复观察经验。",
+      "twoSentenceSummary": "入口页从林澈在开放办公室的细致与疲惫出发，区分通俗 HSP 标签、SPS 研究构念与临床诊断。它再把总标签拆为不同通道、累积负荷和可检验的四列观察，为机制解释建立具体地图。",
+      "continuityEvidence": "结尾把标签地图推进为输入、注意、意义与恢复的过程问题，和 mechanism.html 的中心问题完全衔接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "既然敏感不是单一开关，外界输入、注意加工、意义判断和恢复速度怎样共同形成“更容易察觉，也更容易超载”的体验？",
+      "readerStateChange": "读前只会罗列敏感表现；读后能沿输入、注意、意义评价和恢复解释一次超载，也能说明支持环境为何可能降低成本或放大收益。",
+      "twoSentenceSummary": "机制页把林澈的午后拆成四环加工链，并用可控性、状态波动和恢复窗口解释同一刺激为何产生不同结果。它同时审查环境敏感性、人格重叠和脑成像证据的限度，再用小实验把机制变成可检验预测。",
+      "continuityEvidence": "本页由入口页的四列观察自然进入加工链，并在结尾指出相似表象可能有多种原因，从而推出 judgment.html 的鉴别与行动问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然相似的疲惫、回避或感官不适可能来自不同原因，怎样区分可调节的特质差异、需要改善的环境，以及值得专业评估的健康问题？",
+      "readerStateChange": "读前可能用 HSP 总括所有不适；读后能依据情境、时间、功能与历史比较解释，实施不过度回避的调整，并识别专业或紧急求助边界。",
+      "twoSentenceSummary": "判断页比较情境负荷、焦虑、内向、神经发育差异与身体问题，强调感官表现缺少单一诊断特异性。它随后给出输入管理、可预测性、恢复、解释核对和分级行动，并把持续或广泛受损导向专业评估。",
+      "continuityEvidence": "页面承接机制页的多因素模型，用林澈的记录区分办公室调整与独立健康信号；结尾把固定标签改写为随新情境持续更新的证据判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文编号；读后能区分构念提出、批判性综述、测量研究、跨诊断研究与官方健康建议各自支持的范围。",
+      "twoSentenceSummary": "来源页逐项说明十组研究和机构材料在正文中的证据角色，并标明量表、脑成像与群体关联不能承担个人诊断。它还集中说明专业评估、功能影响与紧急求助的边界。",
+      "continuityEvidence": "该页由每个叙事页的导航与编号链接到达，并回链入口和判断页，为整条学习路径提供可核验的证据底座。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

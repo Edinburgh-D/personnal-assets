@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "高敏感人格（HSP）",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-15",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "高敏感不是一张诊断书",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把高敏感理解成脆弱、内向或一种疾病，也可能仅凭网络清单就给自己贴上固定标签。",
+      "readerStateAfter": "读者能够把 HSP 视为对感官加工敏感性研究的通俗称呼，知道它描述连续差异而非临床诊断，并能从具体情境观察自己的反应。",
+      "readerQuestion": "“高敏感人格”究竟在描述什么，我们怎样在不把它疾病化或浪漫化的前提下理解日常经验？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "林澈在开放办公室里同时留意灯光嗡鸣、同事语气和任务细节，上午表现细致，下午却因信息累积而疲惫，并开始怀疑自己是否过于脆弱。",
+      "newTerms": [
+        {
+          "term": "感官加工敏感性",
+          "definition": "研究中用来描述个体对环境与社会信息的感受、反应和加工方式存在差异的特质构念。"
+        },
+        {
+          "term": "维度特质",
+          "definition": "人人都可在高低连续线上占据某个位置，而不是只有“有”或“没有”两类。"
+        },
+        {
+          "term": "刺激阈值",
+          "definition": "某种声音、光线、触感或社会线索开始被明显注意并引发反应的大致水平。"
+        },
+        {
+          "term": "过度唤醒",
+          "definition": "输入超过当下处理与恢复能力后出现的紧绷、疲惫、烦躁或思考效率下降。"
+        }
+      ],
+      "conclusion": "HSP 更适合作为理解个体差异的假设地图，而不是身份判决；真正有用的起点是观察哪些输入在何种情境下累积，以及它们怎样影响功能。",
+      "nextQuestion": "既然敏感不是单一开关，外界输入、注意加工、意义判断和恢复速度怎样共同形成“更容易察觉，也更容易超载”的体验？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "mechanism.html",
+      "title": "从察觉到超载",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把 HSP 视为对感官加工敏感性研究的通俗称呼，知道它描述连续差异而非临床诊断，并能从具体情境观察自己的反应。",
+      "readerStateAfter": "读者能够用输入、注意、评价与恢复的连续过程解释敏感体验，并理解同一敏感性可能在不同环境中表现为负荷或收益。",
+      "readerQuestion": "既然敏感不是单一开关，外界输入、注意加工、意义判断和恢复速度怎样共同形成“更容易察觉，也更容易超载”的体验？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "HSP 更适合作为理解个体差异的假设地图，而不是身份判决；真正有用的起点是观察哪些输入在何种情境下累积，以及它们怎样影响功能。",
+      "coreExample": "林澈把同一个开放办公室拆成声音、光线、社交线索、任务切换和恢复间隔，发现午后崩溃并非由一个刺激造成，而是多个通道持续占用注意且没有清空时间。",
+      "newTerms": [
+        {
+          "term": "环境敏感性",
+          "definition": "个体对周围环境影响作出反应的程度，既包括不利环境，也包括支持性环境。"
+        },
+        {
+          "term": "自上而下加工",
+          "definition": "期待、经验、目标和当下解释对所注意信息及其意义产生的影响。"
+        },
+        {
+          "term": "自下而上加工",
+          "definition": "显著的声音、光线、气味、触感或身体信号从输入端吸引注意的过程。"
+        },
+        {
+          "term": "恢复窗口",
+          "definition": "负荷之后让唤醒水平下降、注意重新变得可用的一段低刺激时间。"
+        }
+      ],
+      "conclusion": "敏感体验来自输入强度、注意分配、意义评价和恢复条件的共同作用；它不是恒定缺陷，环境质量与调节余地会改变结果。",
+      "nextQuestion": "既然相似的疲惫、回避或感官不适可能来自不同原因，怎样区分可调节的特质差异、需要改善的环境，以及值得专业评估的健康问题？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "judgment.html",
+      "title": "把标签还原成判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用输入、注意、评价与恢复的连续过程解释敏感体验，并理解同一敏感性可能在不同环境中表现为负荷或收益。",
+      "readerStateAfter": "读者能够依据情境范围、持续时间、功能影响和发展线索区分不同解释，设计低风险调整，并在需要时寻求专业评估。",
+      "readerQuestion": "既然相似的疲惫、回避或感官不适可能来自不同原因，怎样区分可调节的特质差异、需要改善的环境，以及值得专业评估的健康问题？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "敏感体验来自输入强度、注意分配、意义评价和恢复条件的共同作用；它不是恒定缺陷，环境质量与调节余地会改变结果。",
+      "coreExample": "林澈先记录两周情境与恢复，再与主管协商专注时段；同时把持续失眠、惊恐和工作受损视为需要专业咨询的独立信号，而不再全部归入 HSP。",
+      "newTerms": [
+        {
+          "term": "功能受损",
+          "definition": "困扰已经持续妨碍睡眠、学习、工作、人际关系或基本自我照料。"
+        },
+        {
+          "term": "回避强化",
+          "definition": "回避在短期内减轻不适，却让大脑更难获得“我能应对”的新经验，使可承受范围逐渐缩小。"
+        },
+        {
+          "term": "鉴别评估",
+          "definition": "专业人员结合病史、发展经历、症状模式和现实功能，比较多种可能解释的过程。"
+        }
+      ],
+      "conclusion": "成熟的高敏感自我理解，不是证明自己属于某一类，而是用可观察证据调节负荷、保留生活空间，并让持续痛苦得到合适的专业判断。",
+      "nextQuestion": "当新的工作、关系或身体状态改变原有阈值时，哪些观察能帮助我们更新环境安排，而不是继续依赖一个固定标签？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
