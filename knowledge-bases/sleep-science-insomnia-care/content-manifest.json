@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "睡眠科学与失眠调理",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-16",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "睡眠不是一只开关",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把睡不好简单归因于睡得不够、身体虚弱或意志不足，难以区分偶发波动、作息错位与需要治疗的失眠。",
+      "readerStateAfter": "读者能够用睡眠压力、昼夜节律与身心唤醒解释一个夜晚，并区分睡眠不足、节律错位和失眠症。",
+      "readerQuestion": "一个人明明很累却睡不着，究竟是睡眠时长不够、身体时钟错位，还是已经形成了失眠症？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "四十二岁的林岚连续加班后提前上床补觉，却在床上反复看时间；周末睡到中午，周日晚更加清醒，白天开始担心自己是不是身体虚弱。",
+      "newTerms": [
+        {
+          "term": "睡眠稳态",
+          "definition": "清醒越久，身体积累的睡眠需要通常越强；睡过之后，这股压力逐步下降。"
+        },
+        {
+          "term": "昼夜节律",
+          "definition": "身体按接近二十四小时周期安排清醒与睡眠倾向的内在时间系统，会受光线和作息等线索校准。"
+        },
+        {
+          "term": "睡眠机会",
+          "definition": "一个人有足够时间和合适环境可以睡觉，而不是因工作、照护或主动熬夜而被迫少睡。"
+        },
+        {
+          "term": "失眠症",
+          "definition": "在有合适睡眠机会时仍反复难以入睡、维持睡眠或对睡眠不满意，并造成日间困扰或功能受损。"
+        }
+      ],
+      "conclusion": "睡眠由睡眠压力、昼夜节律和身心唤醒共同塑造；偶尔睡差不等于失眠症，只有把睡眠机会、持续时间与日间影响放在一起，才能判断问题属于不足、错位还是失眠。",
+      "nextQuestion": "既然失眠并非单纯缺少睡意，担心、补觉和过早上床为什么会把短期睡不好变成反复发生的失眠，又该怎样松开这个循环？",
+      "nextPage": "how-insomnia-persists.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.65
+    },
+    {
+      "file": "how-insomnia-persists.html",
+      "title": "床如何重新变回睡觉的地方",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够用睡眠压力、昼夜节律与身心唤醒解释一个夜晚，并区分睡眠不足、节律错位和失眠症。",
+      "readerStateAfter": "读者能够解释短期失眠如何被睡眠努力和补偿行为维持，并理解认知行为治疗为何同时调整时间、环境、想法与唤醒。",
+      "readerQuestion": "既然失眠并非单纯缺少睡意，担心、补觉和过早上床为什么会把短期睡不好变成反复发生的失眠，又该怎样松开这个循环？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "睡眠由睡眠压力、昼夜节律和身心唤醒共同塑造；偶尔睡差不等于失眠症，只有把睡眠机会、持续时间与日间影响放在一起，才能判断问题属于不足、错位还是失眠。",
+      "coreExample": "林岚为了保证睡着，把上床时间提前到晚上九点，午后补眠并在夜里频繁看钟；她随后在专业指导下固定起床时间、按困意上床，并用睡眠日记逐周调整在床时间。",
+      "newTerms": [
+        {
+          "term": "条件性唤醒",
+          "definition": "床、卧室或夜晚逐渐与担心、计算和清醒联系起来，以致进入这些情境便更警觉。"
+        },
+        {
+          "term": "失眠认知行为治疗",
+          "definition": "把睡眠教育、行为调整与认知方法组合起来，处理慢性失眠维持因素的结构化治疗。"
+        },
+        {
+          "term": "刺激控制",
+          "definition": "通过按困意上床、清醒过久时暂时离床和固定起床时间，重新加强床与睡眠之间的联系。"
+        },
+        {
+          "term": "睡眠限制疗法",
+          "definition": "依据睡眠日记暂时缩短在床时间，并随睡眠整合情况逐步调整的专业行为治疗方法。"
+        },
+        {
+          "term": "睡眠效率",
+          "definition": "实际睡眠时间占在床时间的比例，用于观察睡眠是否更集中，但不能单独代表健康或疗效。"
+        }
+      ],
+      "conclusion": "慢性失眠常由条件性唤醒、过度睡眠努力和补偿行为共同维持；有效治疗不是更用力追睡，而是在专业评估下重新校准在床时间、床与睡眠的联系、担忧方式和放松能力。",
+      "nextQuestion": "既然行为治疗需要结合个人情况，普通人怎样分清可以自行调整的习惯、需要专业评估的睡眠障碍，以及中医、针灸、草本或安眠药各自的证据与边界？",
+      "nextPage": "care-and-safety.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.65
+    },
+    {
+      "file": "care-and-safety.html",
+      "title": "调理之前，先分清是哪一种夜晚",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释短期失眠如何被睡眠努力和补偿行为维持，并理解认知行为治疗为何同时调整时间、环境、想法与唤醒。",
+      "readerStateAfter": "读者能够记录并描述睡眠问题，识别需要就医的线索，比较行为治疗、中医与药物选择的证据和风险，并与专业人员共同制定计划。",
+      "readerQuestion": "既然行为治疗需要结合个人情况，普通人怎样分清可以自行调整的习惯、需要专业评估的睡眠障碍，以及中医、针灸、草本或安眠药各自的证据与边界？",
+      "dependsOn": [
+        "how-insomnia-persists.html"
+      ],
+      "priorConclusion": "慢性失眠常由条件性唤醒、过度睡眠努力和补偿行为共同维持；有效治疗不是更用力追睡，而是在专业评估下重新校准在床时间、床与睡眠的联系、担忧方式和放松能力。",
+      "coreExample": "林岚用两周睡眠日记记录上床、入睡估计、觉醒、起床、午睡、咖啡与日间功能；她同时说明打鼾、心悸和现用药物，让睡眠门诊与中医师共享同一份信息。",
+      "newTerms": [
+        {
+          "term": "共病",
+          "definition": "两种或更多健康问题同时存在并相互影响，治疗时需要分别识别而不能只归入一个标签。"
+        },
+        {
+          "term": "阻塞性睡眠呼吸暂停",
+          "definition": "睡眠中上气道反复塌陷，造成呼吸暂停或变浅，常见线索包括响亮打鼾、憋醒和日间嗜睡。"
+        },
+        {
+          "term": "不宁腿综合征",
+          "definition": "休息时腿部出现难受感觉和强烈活动冲动，活动后暂时缓解，并常在傍晚或夜间加重。"
+        },
+        {
+          "term": "辨证论治",
+          "definition": "中医根据症状组合、病程和个体整体情况形成证候判断，再选择相应治法的临床过程。"
+        },
+        {
+          "term": "共同决策",
+          "definition": "患者与专业人员把现有证据、临床判断、个人目标和风险偏好放在一起选择并复查方案。"
+        }
+      ],
+      "conclusion": "失眠调理应从分型和安全开始：先排查其他睡眠或身心疾病，再以 CBT-I 等有证据的方法为主线；中医和其他辅助方式可以纳入共同决策，但不能替代诊断、隐瞒相互作用或延误危险信号。",
+      "nextQuestion": "当新的症状、治疗反应或研究证据出现时，哪些信息足以调整方案，哪些安全底线仍应保持不变？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.65
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

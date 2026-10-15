@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-16T07:12:16+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "一个人明明很累却睡不着，究竟是睡眠时长不够、身体时钟错位，还是已经形成了失眠症？",
+      "readerStateChange": "读前把睡不好归因于睡得不够、身体虚弱或意志不足；读后能用睡眠压力、昼夜节律和唤醒解释一个夜晚，并区分不足、错位与失眠症。",
+      "twoSentenceSummary": "页面从林岚提前上床却更加清醒的夜晚出发，解释睡眠稳态、昼夜节律和身心唤醒怎样共同决定入睡。随后比较睡眠机会不足、节律错位、失眠症和其他睡眠障碍，并用连续观察替代单晚分数。",
+      "continuityEvidence": "结尾确认睡眠不是单一开关，并指出提前躺床、补觉和看钟可能把床与清醒绑紧，直接推出下一页的失眠维持循环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-insomnia-persists.html",
+      "centralQuestion": "既然失眠并非单纯缺少睡意，担心、补觉和过早上床为什么会把短期睡不好变成反复发生的失眠，又该怎样松开这个循环？",
+      "readerStateChange": "读前只知道自己越想睡越睡不着；读后能解释条件性唤醒与补偿行为如何维持失眠，并理解 CBT-I 为何同时调整在床时间、环境联结、担忧与放松。",
+      "twoSentenceSummary": "页面沿林岚从提前上床、看钟和补眠到形成条件性唤醒的过程，说明短期保护动作如何产生长期代价。随后拆解 CBT-I 的刺激控制、睡眠限制、认知与放松部分，并明确限睡安全和睡眠卫生的适用边界。",
+      "continuityEvidence": "页面把慢性失眠归纳为可改变的维持循环，同时提出呼吸、腿部不适、情绪疾病与药物可能需要另一种入口，自然连接到调理分型和安全判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "care-and-safety.html",
+      "centralQuestion": "既然行为治疗需要结合个人情况，普通人怎样分清可以自行调整的习惯、需要专业评估的睡眠障碍，以及中医、针灸、草本或安眠药各自的证据与边界？",
+      "readerStateChange": "读前容易把全部夜间问题装进失眠或体虚标签；读后能记录可供评估的信息，识别呼吸暂停等线索，并按证据、风险与个人目标比较中西医和药物选择。",
+      "twoSentenceSummary": "页面先用共病、呼吸暂停、不宁腿和情绪危险说明为什么调理前要分型，再展示两周日记如何成为跨专业沟通工具。后半把中医辨证、针灸、身心练习、草本、褪黑素和处方药放入证据层级，并以共同决策形成可复查计划。",
+      "continuityEvidence": "作为叙事末页，它把前页的行为机制扩展到诊断分流和综合照护，并留下新症状、疗效与新证据何时足以调整方案的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能从正文看到来源编号；读后能逐条回查国家卫生健康委、NHLBI、AASM、VA/DoD、NCCIH 与 FDA 的原始材料，并理解各自主张边界。",
+      "twoSentenceSummary": "来源页列出十项权威入口，分别说明它们支持睡眠机制、诊断、CBT-I、中医边界、补充方法、相互作用与药物警示中的哪些主张。页面同时说明指南属于群体建议，传统证候不能直接等同现代生物机制，健康教育也不能代替个人诊疗。",
+      "continuityEvidence": "十项来源按前三页的睡眠地图、失眠机制和调理安全顺序提供回查路径，末尾健康边界与返回开篇链接形成阅读闭环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

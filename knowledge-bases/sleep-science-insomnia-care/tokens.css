@@ -1,0 +1,110 @@
+/* Hallmark · genre: editorial · macrostructure: Long Document · theme: Garden · nav: N6 · footer: Ft4 */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@400;700;900&display=swap");
+
+:root {
+  color-scheme: light;
+  --color-paper: oklch(97% 0.012 100);
+  --color-paper-2: oklch(94% 0.018 105);
+  --color-paper-3: oklch(90% 0.023 108);
+  --color-panel: oklch(98% 0.008 100);
+  --color-ink: oklch(21% 0.025 150);
+  --color-ink-2: oklch(33% 0.028 150);
+  --color-muted: oklch(43% 0.024 145);
+  --color-rule: oklch(76% 0.035 120);
+  --color-rule-strong: oklch(58% 0.052 135);
+  --color-accent: oklch(43% 0.125 153);
+  --color-accent-soft: oklch(91% 0.058 145);
+  --color-accent-ink: oklch(98% 0.009 100);
+  --color-focus: oklch(45% 0.16 145);
+  --color-warning: oklch(47% 0.12 65);
+  --color-warning-soft: oklch(92% 0.045 75);
+  --color-error: oklch(48% 0.17 25);
+  --color-success: oklch(44% 0.12 153);
+  --color-shadow: oklch(24% 0.025 150 / 0.08);
+
+  --font-display: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "Noto Serif SC", "Songti SC", serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display: clamp(2.7rem, 7vw, 5.1rem);
+  --text-display-s: clamp(2.35rem, 5.5vw, 4.2rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-bold: 3px;
+  --radius-control: 0.25rem;
+  --radius-panel: 0.5rem;
+  --shadow-paper: 0 1px 2px var(--color-shadow);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(15% 0.018 150);
+  --color-paper-2: oklch(19% 0.022 150);
+  --color-paper-3: oklch(24% 0.026 150);
+  --color-panel: oklch(18% 0.02 150);
+  --color-ink: oklch(94% 0.014 105);
+  --color-ink-2: oklch(82% 0.02 115);
+  --color-muted: oklch(72% 0.024 125);
+  --color-rule: oklch(36% 0.034 145);
+  --color-rule-strong: oklch(56% 0.06 145);
+  --color-accent: oklch(69% 0.105 150);
+  --color-accent-soft: oklch(27% 0.055 150);
+  --color-accent-ink: oklch(15% 0.02 150);
+  --color-focus: oklch(77% 0.135 145);
+  --color-warning: oklch(76% 0.11 75);
+  --color-warning-soft: oklch(25% 0.045 70);
+  --color-error: oklch(72% 0.14 25);
+  --color-success: oklch(70% 0.1 150);
+  --color-shadow: oklch(8% 0.012 150 / 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: oklch(15% 0.018 150);
+    --color-paper-2: oklch(19% 0.022 150);
+    --color-paper-3: oklch(24% 0.026 150);
+    --color-panel: oklch(18% 0.02 150);
+    --color-ink: oklch(94% 0.014 105);
+    --color-ink-2: oklch(82% 0.02 115);
+    --color-muted: oklch(72% 0.024 125);
+    --color-rule: oklch(36% 0.034 145);
+    --color-rule-strong: oklch(56% 0.06 145);
+    --color-accent: oklch(69% 0.105 150);
+    --color-accent-soft: oklch(27% 0.055 150);
+    --color-accent-ink: oklch(15% 0.02 150);
+    --color-focus: oklch(77% 0.135 145);
+    --color-warning: oklch(76% 0.11 75);
+    --color-warning-soft: oklch(25% 0.045 70);
+    --color-error: oklch(72% 0.14 25);
+    --color-success: oklch(70% 0.1 150);
+    --color-shadow: oklch(8% 0.012 150 / 0.35);
+  }
+}

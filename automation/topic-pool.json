@@ -4019,6 +4019,13 @@
       "generatedAt": "2026-10-16",
       "slug": "foreign-exchange-market",
       "entry": "knowledge-bases/foreign-exchange-market/main.html"
+    },
+    {
+      "name": "睡眠科学与失眠调理",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-16",
+      "slug": "sleep-science-insomnia-care",
+      "entry": "knowledge-bases/sleep-science-insomnia-care/main.html"
     }
   ],
   "skipped": []

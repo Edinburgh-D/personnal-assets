@@ -1,0 +1,17 @@
+{
+  "scannedAt": "2026-10-16",
+  "target": "knowledge-bases/sleep-science-insomnia-care",
+  "framework": "vanilla-html",
+  "fontSignals": [],
+  "paletteSignals": [],
+  "motion": "motion-cut",
+  "spacing": "new-4pt-scale",
+  "preserve": [],
+  "introduce": [
+    "Garden token system",
+    "Long Document macrostructure",
+    "responsive masthead navigation",
+    "dark mode",
+    "focus-visible discipline"
+  ]
+}
