@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "外汇市场与汇率博弈",
+  "audience": "general",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "entry": "main.html",
+  "createdAt": "2026-10-16",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者知道货币有涨跌，却容易把汇率当成由单一新闻或某个强势参与者决定的数字。",
+      "readerStateAfter": "读者能够把汇率看成两种货币的相对价格，并从贸易、投资、融资和预期四类需求理解报价变化。",
+      "readerQuestion": "一条汇率报价究竟在比较什么，又为什么会不停变化？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一家中国进口商九十天后需要支付十万美元，预算汇率为一美元兑七点一元人民币。",
+      "newTerms": [
+        { "term": "基础货币", "definition": "货币对中写在前面、作为一单位计量基准的货币。" },
+        { "term": "报价货币", "definition": "货币对中写在后面、表示购买一单位基础货币需要多少的货币。" },
+        { "term": "双边汇率", "definition": "两种特定货币之间的兑换价格。" },
+        { "term": "名义有效汇率", "definition": "一国货币对多个贸易伙伴货币的加权平均价格指数。" },
+        { "term": "实际有效汇率", "definition": "在名义有效汇率基础上进一步考虑各经济体价格水平差异的指数。" }
+      ],
+      "conclusion": "汇率不是一国货币的独立身价，而是两种货币在具体报价规则下，由跨境支付、资产配置、融资需求和预期共同形成的相对价格。",
+      "nextQuestion": "这些不同目的的交易进入市场后，银行、做市商与衍生品怎样把它们汇成眼前的一条价格？",
+      "nextPage": "mechanics.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "mechanics.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把汇率看成两种货币的相对价格，并从贸易、投资、融资和预期四类需求理解报价变化。",
+      "readerStateAfter": "读者能够沿着客户订单、银行库存、即期与远期市场、利差和风险约束重建短期价格形成过程。",
+      "readerQuestion": "这些不同目的的交易进入市场后，银行、做市商与衍生品怎样把它们汇成眼前的一条价格？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "汇率不是一国货币的独立身价，而是两种货币在具体报价规则下，由跨境支付、资产配置、融资需求和预期共同形成的相对价格。",
+      "coreExample": "同一家进口商向银行询价并选择立即购汇、签订九十天远期或暂时保留敞口。",
+      "newTerms": [
+        { "term": "买卖价差", "definition": "做市商买入价与卖出价之间的差额，用来覆盖成本、库存和风险。" },
+        { "term": "订单流", "definition": "一段时间内实际买卖指令的方向、规模与到达顺序。" },
+        { "term": "即期交易", "definition": "按当前商定价格成交并在通常结算周期内交割两种货币的交易。" },
+        { "term": "远期合约", "definition": "现在约定未来日期按指定价格兑换两种货币的合约。" },
+        { "term": "外汇掉期", "definition": "同时约定近端与远端两次反向换汇，用于管理跨币种资金和期限。" }
+      ],
+      "conclusion": "短期汇率由分散订单经银行和电子市场汇合，并受利差、期限、流动性、库存与资产负债表约束；新闻只有改变这些条件或预期时才会持续影响价格。",
+      "nextQuestion": "当央行、政府和大资金都试图改变这些条件时，谁能影响汇率，谁又必须为自己的目标付出代价？",
+      "nextPage": "policy-and-judgment.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "policy-and-judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿着客户订单、银行库存、即期与远期市场、利差和风险约束重建短期价格形成过程。",
+      "readerStateAfter": "读者能够区分制度约束、政策工具、市场预期与企业风险管理，并用一套顺序检查框架审慎解读汇率新闻。",
+      "readerQuestion": "当央行、政府和大资金都试图改变这些条件时，谁能影响汇率，谁又必须为自己的目标付出代价？",
+      "dependsOn": ["mechanics.html"],
+      "priorConclusion": "短期汇率由分散订单经银行和电子市场汇合，并受利差、期限、流动性、库存与资产负债表约束；新闻只有改变这些条件或预期时才会持续影响价格。",
+      "coreExample": "进口商面对本国加息、央行口头沟通与一次外汇干预传闻，决定是否锁定九十天成本。",
+      "newTerms": [
+        { "term": "汇率制度", "definition": "一国允许货币价格浮动或承诺稳定到某个目标的政策安排。" },
+        { "term": "外汇干预", "definition": "货币当局通过买卖外汇等操作影响市场条件或汇率表现。" },
+        { "term": "不可能三角", "definition": "固定汇率、资本自由流动与独立货币政策三项目标无法长期同时完全实现的约束。" },
+        { "term": "汇率传递", "definition": "汇率变化通过进口品和中间投入等渠道影响国内价格的过程。" },
+        { "term": "套期保值", "definition": "用相反方向或匹配期限的金融安排降低既有业务风险，而不是押注额外收益。" }
+      ],
+      "conclusion": "汇率博弈没有单一永胜者：政策当局受制度目标和资源约束，市场参与者受资金与风险限额约束，企业最可靠的做法是先识别真实敞口，再管理可承受的结果。",
+      "nextQuestion": "面对下一条升值、贬值或干预新闻，哪些事实足以改变判断，哪些只是把同一价格波动重新讲了一遍？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": ["main.html", "mechanics.html", "policy-and-judgment.html"],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-16",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4012,6 +4012,13 @@
       "generatedAt": "2026-10-15",
       "slug": "highly-sensitive-person",
       "entry": "knowledge-bases/highly-sensitive-person/main.html"
+    },
+    {
+      "name": "外汇市场与汇率博弈",
+      "domain": "金融/量化",
+      "generatedAt": "2026-10-16",
+      "slug": "foreign-exchange-market",
+      "entry": "knowledge-bases/foreign-exchange-market/main.html"
     }
   ],
   "skipped": []

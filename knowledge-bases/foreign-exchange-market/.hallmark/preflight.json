@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-16",
+  "framework": "vanilla HTML",
+  "fontSignals": "repository root tokens exist; knowledge base uses a scoped editorial pairing",
+  "paletteSignals": "repository uses CSS custom properties; scoped output preserves token discipline",
+  "motionStance": "motion-cut",
+  "spacing": "4pt scale",
+  "preserve": ["static deployment", "relative navigation", "root index conventions"]
+}

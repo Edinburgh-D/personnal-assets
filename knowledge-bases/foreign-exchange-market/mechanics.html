@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>价格在柜台后面形成｜外汇市场与汇率博弈</title>
+  <meta name="description" content="沿着进口商的美元订单，理解银行报价、库存、即期与远期、外汇掉期、利差和流动性如何共同形成汇率。">
+  <script>try{const kb_darkMode=localStorage.getItem("kb_darkMode");if(kb_darkMode!==null)document.documentElement.dataset.theme=kb_darkMode==="true"?"dark":"light";}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-mast">
+    <p class="mast-line"><span>FOREIGN EXCHANGE READER</span><span>MECHANICS · 02</span></p>
+    <p class="mast-name">外汇市场与汇率博弈</p>
+    <p class="mast-subtitle">把屏幕上跳动的数字，还原成跨境支付、资产选择与政策约束。</p>
+    <nav class="mast-nav" aria-label="知识库主导航">
+      <ul>
+        <li><a href="main.html">报价直觉</a></li>
+        <li><a href="mechanics.html" aria-current="page">市场机制</a></li>
+        <li><a href="policy-and-judgment.html">政策判断</a></li>
+        <li><a href="sources.html">来源</a></li>
+        <li><a href="../index.html">知识库总览</a></li>
+        <li><a href="../../index.html" data-site-home>网站首页</a></li>
+      </ul>
+      <button class="theme-toggle nav-menu-btn" type="button" aria-pressed="false">深色阅读</button>
+    </nav>
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">首页</a><span class="breadcrumb-separator" aria-hidden="true">/</span>
+      <a href="../index.html">知识库</a><span class="breadcrumb-separator" aria-hidden="true">/</span>
+      <a href="main.html">外汇市场与汇率博弈</a><span class="breadcrumb-separator" aria-hidden="true">/</span>
+      <span>市场机制</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">汇率不是一国货币的独立身价，而是两种货币在具体报价规则下，由跨境支付、资产配置、融资需求和预期共同形成的相对价格。</template>
+      <template data-narrative="question">这些不同目的的交易进入市场后，银行、做市商与衍生品怎样把它们汇成眼前的一条价格？</template>
+      <template data-narrative="example">同一家进口商向银行询价并选择立即购汇、签订九十天远期或暂时保留敞口。</template>
+      <template data-narrative="conclusion">短期汇率由分散订单经银行和电子市场汇合，并受利差、期限、流动性、库存与资产负债表约束；新闻只有改变这些条件或预期时才会持续影响价格。</template>
+      <template data-narrative="next-question">当央行、政府和大资金都试图改变这些条件时，谁能影响汇率，谁又必须为自己的目标付出代价？</template>
+
+      <header class="article-head">
+        <p class="article-kicker">第二章 · 进入价格形成</p>
+        <h1>价格在柜台后面形成</h1>
+        <p class="article-deck">客户看到一条报价，银行看到的是库存、期限、融资与下一笔交易。市场不是一场统一拍卖，而是相互连接的多层网络。</p>
+        <p class="article-meta"><span>连续阅读约 9 分钟</span><span>解释机制</span></p>
+      </header>
+
+      <nav class="lesson-map" aria-label="学习路径">
+        <a href="main.html"><span class="map-index">01</span><span class="map-title">一条报价在比较什么</span><span class="map-time">上一章</span></a>
+        <a href="mechanics.html" aria-current="page"><span class="map-index">02</span><span class="map-title">订单怎样变成市场价格</span><span class="map-time">现在</span></a>
+        <a href="policy-and-judgment.html"><span class="map-index">03</span><span class="map-title">政策与资金如何相互约束</span><span class="map-time">下一章</span></a>
+      </nav>
+
+      <div class="prose-layout">
+        <aside class="margin-note">把银行想成连接客户与批发市场的风险仓库。它提供立即成交的便利，也要为暂时持有不平衡付出资金与风险成本。</aside>
+        <article class="prose">
+          <section id="dealer-network">
+            <h2>市场没有一座统一大厅</h2>
+            <p class="opening">进口商给往来银行打电话或在电子平台询价：“九十天后买十万美元，要多少人民币？”银行不会只把一条公共价格原样转发。它先判断客户金额、交割日期与信用，再观察批发市场，同时查看自己手上已有的美元买卖。最终报价是服务客户的承诺，也是银行愿意接下多少风险的条件。</p>
+            <p>银行给出的买入价与卖出价之间存在<dfn data-term="买卖价差">买卖价差</dfn>。它不是纯粹利润标签，还要覆盖系统、资本、结算、信用和库存风险。交易活跃、信息分歧小的时候，竞争会压窄差额；消息突然公布、报价快速跳动时，银行担心接到订单后无法按相近价格对冲，差额往往扩大。</p>
+            <p>客户如果接受报价，银行可能立即去市场买入美元，也可能用另一位客户卖出的美元相抵，还可能暂时保留头寸。实际买卖指令的方向、数量与到达顺序合称<dfn data-term="订单流">订单流</dfn>。它把分散信息压进成交：一批企业同时提前买汇，可能说明真实付款需求集中，也可能反映它们对未来的共同担忧。</p>
+            <p>短期价格变化因此不只来自宏观“基本面”。即使长期增长和通胀判断没有变化，大额再平衡、月底结算、保证金追加或风险限额收紧，也能让急于成交的一方跨过原有价格。做市商看到自己的库存朝同一方向累积，会降低承接意愿，并用更不利的报价把风险转给市场。</p>
+            <p><span class="head-inline">网络分成多层。</span>普通个人面对零售银行或支付机构，企业面对关系银行和交易平台，大型银行、非银行做市商与机构投资者则在批发层相互交易。价格会跨层传递，却不会完全相同。交易规模、信用、技术速度和可访问的对手方决定每个参与者真正看到的市场。</p>
+            <p>BIS 的二〇二五年调查覆盖五十二个司法辖区的一千一百多家银行与交易商。数据显示，交易商彼此之间的交易占全球外汇成交额百分之四十六，与其他金融机构的交易占百分之五十，非金融客户仅占百分之五。这不是说企业不重要，而是说明企业需求进入后会被金融机构反复分配、对冲和融资。</p>
+            <div class="flow-ledger" aria-label="客户订单进入市场的路径">
+              <div class="flow-step"><span class="flow-label">客户</span><p>提出币种、金额、期限与可接受条件。</p></div>
+              <div class="flow-step"><span class="flow-label">银行</span><p>结合信用、库存与市场深度形成双向报价。</p></div>
+              <div class="flow-step"><span class="flow-label">批发市场</span><p>交易商和机构通过多个场所重新分配风险。</p></div>
+              <div class="flow-step"><span class="flow-label">结算</span><p>两种货币按约定日期交付，信用与操作风险才真正结束。</p></div>
+            </div>
+          </section>
+
+          <section id="time">
+            <h2>现在的价格与未来的价格不是一回事</h2>
+            <p><dfn data-term="即期交易">即期交易</dfn>按当下商定的价格成交，并在市场惯例的结算周期内交付货币。进口商可以今天就买入十万美元并持有九十天。这样消除了未来购汇价格的不确定性，却提前占用人民币资金，还要处理美元存款利息与资金保管。</p>
+            <p>另一种选择是签订<dfn data-term="远期合约">远期合约</dfn>，今天约定九十天后的兑换价格。到期时，无论市场价格更高还是更低，双方都按约定执行。它让企业更早知道人民币成本，但同时放弃了汇率向有利方向变化时的额外收益。确定性本身有价值，也有机会成本。</p>
+            <p>远期价格不能简单理解为银行对未来即期价格的预测。在理想化条件下，两种货币的利率差会反映到远期与即期的差异中。否则，参与者可能通过借入一种货币、兑换、投资另一种货币并锁定反向兑换来获得无风险收益。现实还有信用、监管、资产负债表和交易成本，所以关系不会每时每刻精确成立。</p>
+            <p>银行还大量使用<dfn data-term="外汇掉期">外汇掉期</dfn>。它把一次近端换汇与一次远端反向换汇组合起来。银行可以今天用人民币获得美元，并约定九十天后换回，从而补足一段期限内的美元资金。企业也能用类似结构管理短期现金流，但合约名义金额不能直接等同于方向性押注。</p>
+            <p>BIS 数据显示，二〇二五年四月外汇掉期日均成交约四万亿美元，占全球外汇成交额百分之四十二，是最大单一工具。即期约三万亿美元，占百分之三十一；直接远期约一点八万亿美元，占百分之十九。掉期份额大，凸显跨币种融资和对冲在市场中的核心地位。</p>
+            <div class="spec-wrap">
+              <table class="spec-sheet">
+                <caption>三种常见安排怎样改变进口商的九十天</caption>
+                <thead><tr><th scope="col">安排</th><th scope="col">今天发生什么</th><th scope="col">九十天后的不确定性</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">保留敞口</th><td data-label="今天">暂不成交</td><td data-label="以后">成本随届时价格变化</td></tr>
+                  <tr><th scope="row">现在买入</th><td data-label="今天">支付人民币并持有美元</td><td data-label="以后">价格风险下降，资金提前占用</td></tr>
+                  <tr><th scope="row">签订远期</th><td data-label="今天">约定未来兑换条件</td><td data-label="以后">成本较确定，同时放弃有利变化</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>没有一种安排天然更优。答案取决于企业现金流、利润空间、会计规则、信用额度和容忍波动的能力。把远期称为“预测”，会让人错误地用事后市场价评价风险管理；更合理的评价是，它是否让原本不可承受的业务结果变得可承受。</p>
+          </section>
+
+          <section id="price-moves">
+            <h2>新闻通过预期、资金与仓位进入价格</h2>
+            <p>央行调整利率时，直接改变的是本币短期资金条件。市场随后重估未来利率路径、经济增长、资产回报和风险补偿。若本国利率相对提高，而且其他条件不变，本币资产可能更有吸引力；但若加息源于通胀失控或金融压力，风险上升又可能抵消利率吸引力。</p>
+            <p>“其他条件不变”在现实中几乎从不完整成立。相同加息对汇率的影响，会随预期差、政策可信度、全球风险偏好和已有仓位改变。市场在公告前已经交易预期，公告后交易的是实际信息与预期之间的差。方向正确但幅度不足，也可能引发反向调整。</p>
+            <p>资产管理人还会动态改变对冲。假设一家欧洲基金持有大量美元资产。美元下跌后，它可能卖出更多美元远期，控制本币计价损失。二〇二五年四月美国贸易政策消息带来波动时，BIS 认为这类事后对冲活动推动了远期成交上升。政策新闻由此通过投资组合规则放大交易量。</p>
+            <p>在平静市场，做市商愿意暂时吸收客户流量，价格调整较平缓。压力时期，波动上升、信用额度收紧、资本变贵，多家机构可能同时减仓。原本可以相互抵消的订单变得同向，价差扩大，成交深度下降。此时一个并不巨大的新增订单，也可能推动更明显的价格变化。</p>
+            <p>所以，成交量大不等于市场观点更确定。它可能代表买卖双方分歧加大，也可能只是机构对冲和内部转移增加。反过来，价格快速变化也不一定需要巨额净买入；当愿意接单的资产负债表突然减少，价格必须移动得更远，才能找到新的对手方。</p>
+            <p><span class="head-inline">把链条写完整。</span>看到“某消息推动某货币上涨”时，可以追问：消息改变了哪段未来利率或增长预期；哪些参与者必须调整现金流或对冲；做市商是否愿意承接；变化发生在即期、远期还是掉期；这种力量会持续多久。回答越具体，故事越接近机制。</p>
+            <h3>成交之后，还要安全交付两种货币</h3>
+            <p>外汇交易有两条交付腿。进口商交出人民币，银行交出美元；批发交易则可能跨越两个支付系统与时区。如果一方已经付款，另一方在完成前违约，前者会暴露在本金损失中。报价看似完成时，信用、操作与结算风险仍未消失。</p>
+            <p>专业市场会用同步交付安排降低“一边付了、另一边没到”的风险，但并非所有货币和交易都能覆盖。银行还要管理支付时间、日内流动性和对手方额度。市场压力中，即使方向判断没有变化，机构也可能因为结算和资金要求减少交易。</p>
+            <p>这能解释为什么流动性不能只用成交额衡量。一个市场平日成交很大，却可能在所有人同时需要同一货币时失去深度。高成交量也可能伴随更宽价差，因为参与者正在快速换手，而不是稳定提供相反方向的资金。</p>
+            <h3>银行的容量决定价格能否平滑吸收订单</h3>
+            <p>做市商承接客户订单，会占用资本、信用额度和融资。库存越集中，潜在损失越大；市场波动越高，维持同样头寸需要的风险预算也越多。银行不是被动管道，而是在有限容量内决定何时报价、报多大金额，以及多快把风险转出去。</p>
+            <p>正常时期，多家银行竞争并相互交易，不平衡可以逐层分散。压力时期，它们可能同时降低额度、提高保证金或缩短愿意持有的期限。客户看到的是价格突然跳跃，背后则是承接风险的容量同时收缩。</p>
+            <p>这也给“市场操纵一切”或“央行控制一切”两种极端看法设置了边界。大型参与者确实能用订单影响短期价格，但影响能否持续，要看其他资金是否跟随、基本现金流是否支持，以及它能否承担逆向波动。市场深度和资产负债表把力量转化成有成本的能力。</p>
+            <aside class="source-note"><strong>数据口径：</strong>BIS 的日均成交额是对调查月交易的统计，并按规则处理交易商之间的重复计算。它适合描述市场结构，不是全球风险敞口或利润的直接数值。详细口径见<a href="sources.html">来源与口径</a>。</aside>
+            <p>进口商现在可以理解银行为何给出一个不同于新闻中间价的九十天价格。这个价格吸收了当前即期水平、两币利率、期限、银行信用与资产负债表成本，也反映市场在此刻愿意承接多少风险。下一章要再加上一层：政策制定者会主动改变这些条件，但他们同样受到制度与资源约束。</p>
+            <div class="chapter-turn">
+              <p>价格形成不是匿名力量，而是一组受到资金、期限与制度约束的选择。</p>
+              <a class="next-link" href="policy-and-judgment.html">继续：政策怎样进入博弈</a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="foot-dense">
+      <p>外汇市场与汇率博弈 · 市场机制 · 交易规模和份额来自 BIS 2025 年三年期调查 · 教学情景不代表报价。</p>
+      <div class="foot-links"><a href="main.html">返回报价直觉</a><a href="sources.html">查看权威来源</a><a href="../index.html">知识库总览</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

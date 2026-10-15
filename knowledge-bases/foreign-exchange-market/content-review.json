@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-16T12:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "一条汇率报价究竟在比较什么，又为什么会不停变化？",
+      "readerStateChange": "读前容易把汇率当作一国货币的单独身价；读后能先辨报价方向，再从贸易、投资、融资与预期解释相对价格。",
+      "twoSentenceSummary": "本章用九十天后的十万美元货款说明货币必须成对报价，且参考价不等于实际成交价。随后把双边价格扩展到有效汇率、交叉价格和不同期限的资金需求。",
+      "continuityEvidence": "结尾把进口商的真实敞口带入银行柜台，明确要求下一章解释客户需求怎样经做市商、期限和工具形成价格。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanics.html",
+      "centralQuestion": "这些不同目的的交易进入市场后，银行、做市商与衍生品怎样把它们汇成眼前的一条价格？",
+      "readerStateChange": "读前只知道多类需求共同影响报价；读后能沿客户订单、银行库存、即期远期、融资结算和风险容量重建短期价格形成过程。",
+      "twoSentenceSummary": "本章跟随进口商询价，解释银行如何用价差、库存和批发市场承接客户流量。它进一步区分即期、远期与掉期，并说明新闻只有经预期、对冲、结算和资产负债表约束才进入价格。",
+      "continuityEvidence": "本章由前页的四类需求进入银行网络，并在结尾指出价格形成还受政策主动改变的利率、流动性与预期支配，从而推出下一章。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "policy-and-judgment.html",
+      "centralQuestion": "当央行、政府和大资金都试图改变这些条件时，谁能影响汇率，谁又必须为自己的目标付出代价？",
+      "readerStateChange": "读前能解释短期市场机制却未必看见政策代价；读后能区分制度、利率、干预和企业风险管理，并按五步检查新闻因果。",
+      "twoSentenceSummary": "本章说明不同政策安排如何在汇率稳定、资本流动和货币政策空间之间取舍，并拆解干预的流量与信号渠道。最后把进口商的付款风险转化为报价、期限、预期、流量和约束五项检查。",
+      "continuityEvidence": "开篇直接承接上一章的利率、流动性和预期条件，末尾把机制压缩为可迁移到下一条汇率新闻的稳定判断顺序。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的机构简称与数字；读后能定位原始发布页、辨认成交额口径，并知道哪些结论需要随政策更新重新核对。",
+      "twoSentenceSummary": "来源页列出 BIS、IMF、ECB、PBOC、SAFE 和全球外汇委员会的一手材料，并解释各自在正文中支持的主张。它同时说明成交额、币种份额、参考汇率与教学案例的适用边界。",
+      "continuityEvidence": "该页由三章正文和页脚共同链接进入，并为市场规模、政策框架、企业风险管理及站内延伸阅读提供可追溯出口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

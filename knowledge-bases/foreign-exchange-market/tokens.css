@@ -1,0 +1,90 @@
+/* Hallmark · tokens · Newsprint economy */
+:root {
+  --color-paper: oklch(97% 0.012 82);
+  --color-paper-2: oklch(93% 0.016 82);
+  --color-panel: oklch(95% 0.013 82);
+  --color-ink: oklch(20% 0.018 65);
+  --color-ink-2: oklch(34% 0.018 65);
+  --color-muted: oklch(46% 0.016 65);
+  --color-rule: oklch(72% 0.022 75);
+  --color-rule-strong: oklch(48% 0.03 68);
+  --color-accent: oklch(49% 0.145 39);
+  --color-accent-soft: oklch(91% 0.055 50);
+  --color-focus: oklch(55% 0.19 39);
+  --color-risk: oklch(45% 0.14 29);
+  --color-positive: oklch(40% 0.085 151);
+  --color-shadow: oklch(20% 0.018 65 / 0.08);
+  --font-display: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --font-body: "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "SFMono-Regular", monospace;
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-display-s: clamp(2.35rem, 6vw, 4.2rem);
+  --text-display: clamp(2.75rem, 7vw, 5.25rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 0ms;
+  --dur-short: 0ms;
+  --dur-long: 0ms;
+  --rule-hair: 1px;
+  --rule-heavy: 3px;
+  --radius-sm: 0.125rem;
+  --radius-card: 0.25rem;
+  --page-gutter: clamp(1rem, 4vw, 3rem);
+  --measure: 66ch;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+}
+
+html[data-theme="dark"] {
+  --color-paper: oklch(15% 0.014 65);
+  --color-paper-2: oklch(19% 0.016 65);
+  --color-panel: oklch(18% 0.015 65);
+  --color-ink: oklch(94% 0.012 82);
+  --color-ink-2: oklch(82% 0.014 82);
+  --color-muted: oklch(69% 0.016 82);
+  --color-rule: oklch(36% 0.024 70);
+  --color-rule-strong: oklch(62% 0.028 70);
+  --color-accent: oklch(70% 0.13 43);
+  --color-accent-soft: oklch(25% 0.05 43);
+  --color-focus: oklch(76% 0.15 43);
+  --color-risk: oklch(72% 0.12 29);
+  --color-positive: oklch(72% 0.08 151);
+  --color-shadow: oklch(8% 0.012 65 / 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --color-paper: oklch(15% 0.014 65);
+    --color-paper-2: oklch(19% 0.016 65);
+    --color-panel: oklch(18% 0.015 65);
+    --color-ink: oklch(94% 0.012 82);
+    --color-ink-2: oklch(82% 0.014 82);
+    --color-muted: oklch(69% 0.016 82);
+    --color-rule: oklch(36% 0.024 70);
+    --color-rule-strong: oklch(62% 0.028 70);
+    --color-accent: oklch(70% 0.13 43);
+    --color-accent-soft: oklch(25% 0.05 43);
+    --color-focus: oklch(76% 0.15 43);
+    --color-risk: oklch(72% 0.12 29);
+    --color-positive: oklch(72% 0.08 151);
+    --color-shadow: oklch(8% 0.012 65 / 0.35);
+  }
+}
