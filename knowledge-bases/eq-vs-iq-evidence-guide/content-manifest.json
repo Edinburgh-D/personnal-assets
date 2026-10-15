@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "情商比智商更重要吗：从口号到可检验的比较",
+  "type": "comparison",
+  "depthLevel": "入门到判断",
+  "audience": "general",
+  "entry": "main.html",
+  "createdAt": "2026-10-15",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先拆开“重要”",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者熟悉“情商比智商重要”的流行说法，却把两个宽泛标签和人生成功混在一次比较里。",
+      "readerStateAfter": "读者能区分认知能力、不同类型的情绪智力与具体结果，并把冠军式提问改写成可检验的条件比较。",
+      "readerQuestion": "“情商比智商更重要”这句话为什么看似直观，却不能直接成为一个科学结论？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "项目负责人林然要在一次延期发布中读懂技术风险、发现团队的防御情绪、协调分工并向客户说明不确定性；同一结果同时依赖推理、知识、情绪信息与组织流程。",
+      "newTerms": [
+        {
+          "term": "一般认知能力",
+          "definition": "多种推理、学习和复杂问题解决任务所共享的能力成分。"
+        },
+        {
+          "term": "能力型情绪智力",
+          "definition": "把识别、理解和调节情绪当作有较优答案的问题来测量的能力取向。"
+        },
+        {
+          "term": "特质型情绪智力",
+          "definition": "用自我报告描述一个人通常如何看待自己的情绪倾向和社会情绪功能。"
+        },
+        {
+          "term": "效标",
+          "definition": "研究中用来代表学习、工作、关系或福祉结果的具体指标。"
+        }
+      ],
+      "conclusion": "情商与智商都不是覆盖人生的单一总能力；只有明确测量的构念、关注的结果与发生的情境，谁更重要才会变成可检验的问题。",
+      "nextQuestion": "既然比较必须落到测量与结果上，现有研究究竟能证明两类能力与学习、工作和福祉有多强的关系？",
+      "nextPage": "evidence-and-measurement.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "evidence-and-measurement.html",
+      "title": "证据不是排行榜",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能区分认知能力、不同类型的情绪智力与具体结果，并把冠军式提问改写成可检验的条件比较。",
+      "readerStateAfter": "读者能解释相关、增量效度与测量重叠的差别，并能识别群体平均、因果结论和个体预测之间的边界。",
+      "readerQuestion": "既然比较必须落到测量与结果上，现有研究究竟能证明两类能力与学习、工作和福祉有多强的关系？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "情商与智商都不是覆盖人生的单一总能力；只有明确测量的构念、关注的结果与发生的情境，谁更重要才会变成可检验的问题。",
+      "coreExample": "把林然的延期发布拆成技术诊断、风险沟通、协作与复盘四段，再比较认知测验、能力型情绪任务和自评问卷分别能预测哪一段，而不是寻找一个包办全部表现的分数。",
+      "newTerms": [
+        {
+          "term": "相关",
+          "definition": "两个变量在群体中共同变化的程度，本身不说明谁造成了谁。"
+        },
+        {
+          "term": "增量效度",
+          "definition": "一种测量在已有预测信息之外，是否还能增加独立的预测信息。"
+        },
+        {
+          "term": "共同方法偏差",
+          "definition": "预测和结果采用相似来源或相同问卷方式时，关联可能被测量方法人为放大。"
+        },
+        {
+          "term": "范围限制",
+          "definition": "样本只覆盖总体中较窄的一段分数，使观察到的关联被压低或改变。"
+        },
+        {
+          "term": "因果推断",
+          "definition": "在排除替代解释后，判断某因素的变化是否导致结果变化。"
+        }
+      ],
+      "conclusion": "认知能力和多种情绪智力测量都与部分重要结果有关，但关联大小随定义、测量、效标和控制变量而改变；证据支持条件性的互补价值，不支持跨情境的总冠军。",
+      "nextQuestion": "如果研究没有给出一个永远领先的分数，普通人怎样在真实学习、工作和关系情境中判断当前更需要哪种能力？",
+      "nextPage": "context-and-decisions.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "context-and-decisions.html",
+      "title": "把标签换成瓶颈",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能解释相关、增量效度与测量重叠的差别，并能识别群体平均、因果结论和个体预测之间的边界。",
+      "readerStateAfter": "读者能按任务门槛、过程瓶颈、情绪劳动与环境条件选择改进点，并拒绝用单一分数评价整个人。",
+      "readerQuestion": "如果研究没有给出一个永远领先的分数，普通人怎样在真实学习、工作和关系情境中判断当前更需要哪种能力？",
+      "dependsOn": [
+        "evidence-and-measurement.html"
+      ],
+      "priorConclusion": "认知能力和多种情绪智力测量都与部分重要结果有关，但关联大小随定义、测量、效标和控制变量而改变；证据支持条件性的互补价值，不支持跨情境的总冠军。",
+      "coreExample": "林然用发布过程图定位问题：技术诊断有知识门槛，风险会议有信息共享瓶颈，客户沟通要求情绪识别与边界表达，而组织惩罚坏消息会让个人能力难以转化为表现。",
+      "newTerms": [
+        {
+          "term": "瓶颈",
+          "definition": "一段过程里最限制整体结果的环节，改善其他环节也难以绕过它。"
+        },
+        {
+          "term": "能力门槛",
+          "definition": "完成任务必须达到的基本水平，未达到时其他优势很难补偿。"
+        },
+        {
+          "term": "情绪劳动",
+          "definition": "为了角色或工作目标而调节、呈现或压抑情绪表达的要求。"
+        },
+        {
+          "term": "迁移",
+          "definition": "在训练环境中学到的技能能否在新的真实情境中继续发挥作用。"
+        }
+      ],
+      "conclusion": "更可靠的答案不是“情商胜出”或“智商决定一切”，而是先定义结果、识别能力门槛与过程瓶颈，再练习具体技能并修正阻碍能力发挥的环境。",
+      "nextQuestion": "面对下一次重要决定，我能否先说清结果与过程，再选择证据、技能和环境改进，而不是用情商或智商给人定性？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "读者已经掌握条件比较框架，希望核对定义、元分析和训练研究的原始出处。",
+      "readerStateAfter": "读者能把正文中的关键主张对应到定义、元分析、系统综述与批判性综述，并理解每类来源能支持到哪里。",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "evidence-and-measurement.html",
+        "context-and-decisions.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ]
+}

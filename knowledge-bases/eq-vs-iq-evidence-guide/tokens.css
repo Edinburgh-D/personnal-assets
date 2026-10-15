@@ -1,0 +1,94 @@
+/* Hallmark · tokens: Almanac · paper-band: light · display-style: scholarly-serif · accent-hue: cool-teal */
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=IBM+Plex+Mono:wght@500;700&display=swap");
+
+:root {
+  --color-paper: oklch(96% 0.016 92);
+  --color-paper-raised: oklch(98% 0.012 92);
+  --color-paper-inset: oklch(92% 0.021 92);
+  --color-ink: oklch(20% 0.024 85);
+  --color-ink-soft: oklch(38% 0.022 85);
+  --color-muted: oklch(40% 0.026 92);
+  --color-rule: oklch(76% 0.028 92);
+  --color-rule-strong: oklch(57% 0.035 92);
+  --color-accent: oklch(43% 0.09 187);
+  --color-accent-strong: oklch(34% 0.085 187);
+  --color-accent-soft: oklch(88% 0.045 187);
+  --color-focus: oklch(56% 0.15 187);
+  --color-mark: oklch(88% 0.065 88);
+  --color-shadow: oklch(20% 0.02 85 / 0.08);
+
+  --font-display: "Cardo", "Songti SC", "SimSun", serif;
+  --font-body: "IBM Plex Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "FangSong", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.76rem;
+  --text-sm: 0.88rem;
+  --text-base: 1rem;
+  --text-md: 1.18rem;
+  --text-lg: 1.48rem;
+  --text-xl: 1.85rem;
+  --text-2xl: 2.31rem;
+  --text-3xl: 2.89rem;
+  --text-display: clamp(2.55rem, 5vw + 0.6rem, 5.1rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 190ms;
+  --dur-long: 360ms;
+
+  --rule-hair: 0.0625rem;
+  --rule-medium: 0.125rem;
+  --radius-small: 0.25rem;
+  --radius-control: 0.4rem;
+  --shadow-lift: 0 0.125rem 0.75rem var(--color-shadow);
+}
+
+html[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 92);
+  --color-paper-raised: oklch(19% 0.02 92);
+  --color-paper-inset: oklch(12% 0.016 92);
+  --color-ink: oklch(94% 0.013 92);
+  --color-ink-soft: oklch(80% 0.017 92);
+  --color-muted: oklch(76% 0.023 92);
+  --color-rule: oklch(35% 0.028 92);
+  --color-rule-strong: oklch(53% 0.036 92);
+  --color-accent: oklch(74% 0.095 187);
+  --color-accent-strong: oklch(83% 0.08 187);
+  --color-accent-soft: oklch(25% 0.05 187);
+  --color-focus: oklch(78% 0.13 187);
+  --color-mark: oklch(30% 0.055 88);
+  --color-shadow: oklch(6% 0.012 92 / 0.24);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: oklch(15% 0.018 92);
+    --color-paper-raised: oklch(19% 0.02 92);
+    --color-paper-inset: oklch(12% 0.016 92);
+    --color-ink: oklch(94% 0.013 92);
+    --color-ink-soft: oklch(80% 0.017 92);
+    --color-muted: oklch(76% 0.023 92);
+    --color-rule: oklch(35% 0.028 92);
+    --color-rule-strong: oklch(53% 0.036 92);
+    --color-accent: oklch(74% 0.095 187);
+    --color-accent-strong: oklch(83% 0.08 187);
+    --color-accent-soft: oklch(25% 0.05 187);
+    --color-focus: oklch(78% 0.13 187);
+    --color-mark: oklch(30% 0.055 88);
+    --color-shadow: oklch(6% 0.012 92 / 0.24);
+  }
+}

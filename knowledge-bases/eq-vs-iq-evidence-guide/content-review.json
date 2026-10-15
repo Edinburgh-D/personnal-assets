@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-15T22:11:37+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "“情商比智商更重要”这句话为什么看似直观，却不能直接成为一个科学结论？",
+      "readerStateChange": "读前把情商、智商和成功当成两个总分的一次竞争；读后能区分不同构念、效标与情境，并改写比较问题。",
+      "twoSentenceSummary": "页面用林然处理延期发布的案例说明，同一个结果同时需要推理、情绪信息、知识与流程。随后拆分认知能力、能力型和特质型情绪智力，并要求把“重要”落到具体效标。",
+      "continuityEvidence": "结尾把比较从选边改成校准测量，明确提出下一页要检查相关、增量信息和群体证据边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evidence-and-measurement.html",
+      "centralQuestion": "既然比较必须落到测量与结果上，现有研究究竟能证明两类能力与学习、工作和福祉有多强的关系？",
+      "readerStateChange": "读前只知道不同测量需要分开；读后能解释相关、增量效度、共同方法偏差和因果推断，并理解群体平均不能定性个人。",
+      "twoSentenceSummary": "页面比较当代认知能力工作效度、情绪智力学业与福祉元分析，并逐层说明数字怎样受工具、效标和校正影响。它进一步用混合型测量和训练研究说明，相关、独立预测与可训练效果不是同一主张。",
+      "continuityEvidence": "页面先承接首章的测量区分，结尾再指出平均效应不能定位眼前瓶颈，因此自然引向具体情境判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "context-and-decisions.html",
+      "centralQuestion": "如果研究没有给出一个永远领先的分数，普通人怎样在真实学习、工作和关系情境中判断当前更需要哪种能力？",
+      "readerStateChange": "读前能读懂研究证据却还不会选择行动；读后能按结果、过程、能力门槛、瓶颈和环境限制定位改进，并检查技能迁移。",
+      "twoSentenceSummary": "页面把林然的延期发布画成过程，区分专业知识门槛、信息共享瓶颈、情绪劳动与组织激励。它把学习、工作和关系中的标签改写为可观察步骤，并说明训练具体技能与修正环境要同时进行。",
+      "continuityEvidence": "页面直接使用上一页的条件性互补结论建立判断框架，末尾把全库结论收束为面对新情境时可重复使用的提问顺序。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前已经理解正文判断但尚未逐项核对出处；读后能把定义、元分析、训练综述与批判性综述对应到具体主张和限制。",
+      "twoSentenceSummary": "来源页列出 APA 定义、认知能力与情绪智力元分析、训练综述及暗面综述，并提供原始记录链接。每条来源同时说明支持范围，避免把定义当效度或把相关当因果。",
+      "continuityEvidence": "来源页从前三页所有脚注和末章继续链接可达，并提供返回末章与从头阅读的闭环导航。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
