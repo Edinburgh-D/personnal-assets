@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="沿一笔交易的路径，理解钱包签名、节点验证、共识排序、智能合约执行与最终确认如何共同更新共享状态。" />
+  <meta name="robots" content="index, follow" />
+  <title>从一次签名到共享状态｜Web3与去中心化</title>
+  <script>try{const t=localStorage.getItem("web3-kb-theme")||(localStorage.getItem("kb_darkMode")==="true"?"dark":localStorage.getItem("kb_darkMode")==="false"?"light":null);document.documentElement.dataset.theme=t||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="css-styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="学习路径">
+    <a class="rail-brand" href="main.html">WEB3<br />DECENTRALIZATION</a>
+    <ul class="nav-list">
+      <li><a href="main.html">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html" aria-current="page">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html">来源说明</a></li>
+    </ul>
+    <div class="rail-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+      <a href="../index.html">知识库目录</a>
+      <a href="../../index.html" data-site-home>站点总览</a>
+    </div>
+  </nav>
+
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="main.html">WEB3 / 去中心化</a>
+    <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="移动端学习路径" hidden>
+    <ul>
+      <li><a href="main.html">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html" aria-current="page">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html">来源说明</a></li>
+      <li><a href="../index.html">知识库目录</a></li>
+      <li><a href="../../index.html">站点总览</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb"><a href="main.html">Web3与去中心化</a><span aria-hidden="true">/</span><span>交易机制</span></div>
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">Web3不是把整个互联网搬上链，而是把账户、共享状态和部分规则的验证权从单一运营者转向公开协议；界面、密钥管理、治理、现实数据和法律责任仍然离不开人和机构。</template>
+      <template data-narrative="question">一笔Web3操作怎样从钱包签名经过节点验证、共识与智能合约，最终成为所有参与者都能检查的共享状态？</template>
+      <template data-narrative="example">合作社成员林青用钱包签署一笔支持器材资助提案的操作，节点验证权限与余额，网络确定顺序，合约按既定门槛记录投票并在条件满足后拨款。</template>
+      <template data-narrative="conclusion">Web3交易通过密钥授权、独立验证、共识排序和确定性程序执行，把对单一数据库管理员的信任改造成对协议规则、客户端实现、经济激励与可验证数据的组合信任。</template>
+      <template data-narrative="next-question">既然核心机制可以公开验证，我们该怎样判断一个项目究竟有多去中心化、风险藏在哪一层，以及它是否真的需要Web3？</template>
+
+      <header class="article-header">
+        <div>
+          <p class="kicker">机制 / 状态如何更新</p>
+          <h1>从一次签名到共享状态</h1>
+        </div>
+        <p class="lede">公开账本不会凭空达成一致。它要把一个人的意图变成网络共同接受的结果，中间必须经过授权、传播、独立检查、排序、程序执行和确认。</p>
+      </header>
+
+      <article class="prose">
+        <p>上一部分建立了一个边界：Web3只把部分验证权交给公开协议，人的判断和现实机构并不会消失。现在把镜头拉近。合作社成员林青想支持一项器材资助提案。网页上看起来只是点一下“投票”，但背后没有一台可以直接改表格的中央服务器。她的意图必须被翻译成其他参与者都能验证的消息。</p>
+
+        <p>先明确一件事：区块链不是不断搬运“硬币”的管道。它更像一台由许多人共同复算的状态机。当前状态包括地址余额、会员证归属、提案票数和合约存储。交易是一份请求，描述谁授权了什么操作。网络按规则处理请求后，得到新的共同状态。</p>
+
+        <h2>密钥先回答“谁授权了这件事”</h2>
+
+        <p>林青的钱包先构造一条交易消息，其中包括目标合约地址、要调用的功能、投票选项、交易序号和愿意支付的最高费用。钱包随后用私钥生成<dfn data-term="数字签名">数字签名</dfn>。签名不是把私钥发给网络，而是产生一份可由公钥关系验证的证明。其他人可以确认对应地址授权了消息，也能发现消息是否在签名后被改动。</p>
+
+        <p>签名只证明“这个地址授权了这条消息”，不证明“操作人就是现实中的林青”。地址与现实身份之间的联系，仍要由合作社的入会程序、可信凭证或其他制度建立。若私钥被盗，网络通常只能看到一份有效签名，无法理解背后发生了诈骗。密码学提供明确授权，却不会自动提供撤销、客服或身份恢复。</p>
+
+        <p>钱包还会显示交易内容，帮助用户判断自己究竟要签什么。这里是常见风险入口。恶意网页可以诱导用户授权无限额度，或者把复杂调用包装成模糊按钮。以太坊官方安全指南强调，助记词和私钥永远不应交给网站或所谓客服，交易确认前也应核对地址和授权范围。自我保管增加了控制权，同时取消了许多熟悉的找回机制。</p>
+
+        <h2>消息由多台计算机分别验证</h2>
+
+        <p>钱包通常通过RPC接口把签名交易交给一个<dfn data-term="节点">节点</dfn>。节点是运行协议客户端的联网计算机实例。它会检查签名、交易序号、余额、费用上限和交易格式。有效交易进入待处理池，再被传播给其他节点。无效交易不会因为发送者名气大就获得特殊通道，也不会因为多数人喜欢就变成有效。</p>
+
+        <p>每个完整验证节点都能按照同一套协议规则独立检查区块和交易。这里的“独立”不代表它们使用完全不同的程序。相反，客户端实现需要兼容共同规范。多种独立实现可以降低单一软件缺陷影响全网的风险，但也增加了协调升级的复杂度。运行自己的节点，意味着应用不必完全相信第三方RPC服务提供的链上视图。</p>
+
+        <p>普通用户往往没有运行节点，而是通过钱包默认的RPC服务读取余额和提交交易。此时底层网络可能很分散，用户入口却集中在少数提供商。RPC服务能看到请求来源，也可能过滤、延迟或错误返回数据。轻客户端试图在资源有限的设备上直接验证关键证明，从而减少对中心化数据接口的依赖，但可用性和支持范围仍在演进。</p>
+
+        <ol class="steps" aria-label="一笔交易成为共享状态的六个阶段">
+          <li><div><h3>构造</h3><p>钱包把投票意图编码为交易，写入目标合约、参数、序号与费用限制。</p></div></li>
+          <li><div><h3>签名</h3><p>私钥生成授权证明，地址无需向节点暴露私钥本身。</p></div></li>
+          <li><div><h3>广播</h3><p>接入节点检查基本有效性，再把交易传播到点对点网络。</p></div></li>
+          <li><div><h3>排序</h3><p>区块提议者选择待处理交易，验证者依网络规则接受有效区块。</p></div></li>
+          <li><div><h3>执行</h3><p>各节点重放同一段合约逻辑，计算相同的票数和余额变化。</p></div></li>
+          <li><div><h3>确认</h3><p>后续证明让回滚越来越困难，应用据风险水平决定等待多久。</p></div></li>
+        </ol>
+
+        <h2>网络还要解决顺序和最终结果</h2>
+
+        <p>网络同时收到大量交易，而且消息传播有延迟。不同节点短时间内看到的顺序可能不同。<dfn data-term="共识">共识</dfn>是一组让节点对有效区块及其顺序形成共同结果的规则。它不等于大家针对每笔交易开会，而是通过区块提议、验证、奖励、惩罚和分叉选择等机制，让诚实参与者逐步收敛到同一条历史。</p>
+
+        <p>以太坊当前使用权益证明。验证者质押资产并运行客户端，协议选择提议者打包区块，其他验证者对区块作出证明。明显违反规则的区块会被完整节点拒绝，某些恶意或矛盾行为还可能受到经济惩罚。经济成本提高了攻击门槛，但安全仍依赖质押分布、客户端多样性、网络连通性和社区对极端事件的响应。</p>
+
+        <p>交易顺序并非无关紧要。若两个人同时争取最后一个名额，先执行哪笔交易会改变结果。在去中心化交易中，排序还可能带来抢先交易和价值提取。共识负责给出一个共同顺序，却不会自动保证这个顺序对每个人都公平。公平性需要额外的协议设计、加密排序、批量拍卖或应用层限制。</p>
+
+        <h2>程序让同一输入得到同一结果</h2>
+
+        <p>区块包含林青的交易后，每个节点都会执行目标<dfn data-term="智能合约">智能合约</dfn>。智能合约是部署在链上地址的程序，保存代码和状态。合作社合约可以检查她是否持有有效会员证，是否已经投票，以及提案是否处于开放期。条件满足时，合约把赞成票增加一，并记录事件；条件不满足时，交易回退。</p>
+
+        <p>所有验证节点必须对同一输入算出同一结果，因此链上程序不能随意读取本地时间、网页或天气。它能直接可靠读取的是链上已有状态。现实世界信息若要进入合约，必须通过额外的数据机制。也正因为执行必须可复算，链上计算和存储很昂贵，不适合视频处理、机器学习训练或大文件保存。</p>
+
+        <p>确定性还要求软件实现精确一致。不同计算机不能因为当地时区、随机数来源或浮点误差得出不同余额。协议会限制可用操作，并规定每个步骤的结果。开发者因此要把业务规则翻译成适合共同复算的形式。许多复杂工作留在链下完成，只把必要证明或最终状态交给网络验证。</p>
+
+        <p><dfn data-term="Gas">Gas</dfn>是对计算和存储工作计价的机制。每种操作消耗一定Gas，用户用网络原生资产支付费用。它既补偿区块空间和验证成本，也防止攻击者用无限循环占满网络。费用随需求变化，因此一个在低流量时便宜的应用，可能在拥堵时变得难以使用。扩容网络可以降低部分成本，但通常会引入新的排序者、桥或数据可用性假设。</p>
+
+        <p>合约“按代码执行”也不是无条件优势。代码把规则变得可复查，却可能把错误同样稳定地执行。升级机制能修补漏洞，但管理员密钥会重新集中权力。完全不可升级减少了管理者干预，也可能让缺陷永久存在。成熟设计通常需要在可预测性、紧急暂停、延迟升级、多签授权和退出渠道之间明确取舍。</p>
+
+        <h2>确认不是瞬间完成的神奇盖章</h2>
+
+        <p>林青的投票被打包进区块后，钱包会显示“已确认”。不过，不同系统对最终性的定义不同。区块刚出现时，网络还可能因为短暂分歧重组历史。随着更多证明累积，回滚成本上升，应用便把结果视为足够稳定。购买咖啡、跨链转移和大额金库拨款对等待时间的要求理应不同。</p>
+
+        <p>应用还要处理失败交易。合约执行若触发不满足的条件，状态更新会回退，但用户仍可能支付已经消耗的计算费用。这看似苛刻，却避免攻击者用必然失败的请求免费占用全网资源。好的界面会在签名前模拟交易、解释失败原因，并让用户看清费用上限，而不是只显示一个模糊的确认按钮。</p>
+
+        <p>同一笔操作也可能跨越多个系统。用户在扩容网络上投票，再把结果或资产带回主网时，需要额外的消息证明和等待期。每增加一层，就增加一组客户端、运营者和故障模式。扩容可以降低成本，却没有免除信任分析；它只是让分析从单一网络扩展到整条数据路径。</p>
+
+        <p>合作社合约在票数达到门槛后拨款，看似已经自动完成治理。实际上，资金接收地址是谁、器材有没有买到、交付是否符合承诺，仍然需要链外证据和问责。链上执行能保证“满足这些可计算条件就执行这段程序”，不能保证条件本身完整，也不能代替现实中的合同、仲裁和信任关系。</p>
+
+        <aside class="margin-note">
+          <strong>“无需信任”的准确含义</strong>
+          它通常表示用户可以减少对特定中介诚信的依赖，因为关键结果能由公开规则验证。用户依然要信任密码学假设、客户端、网络激励、接口、密钥设备和治理过程。
+        </aside>
+
+        <p>现在可以把整条链串起来。密钥证明谁授权，节点检查交易是否符合规则，共识确定有效交易的共同顺序，智能合约把输入转成状态变化，确认过程提高历史回滚的成本。Web3把一个管理员的数据库写入权，替换为一组可由不同参与者复算的制度。</p>
+
+        <p>这种替换并非免费。网络要复制数据，参与者要协调升级，用户要承担费用和密钥风险，应用还可能依赖集中式入口。理解机制之后，讨论重点就从“链上是不是更先进”转向“控制权究竟分布在哪里”。这也是判断一个项目是否真的去中心化、是否值得采用这套结构的起点。</p>
+
+        <p class="page-turn"><a href="judging-decentralization.html">继续：画出控制权地图</a></p>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-dense">
+    <p>Web3与去中心化 · 交易机制 · 节点、共识与合约依据以太坊开发者文档交叉核对 · <a href="sources.html">查看来源与边界</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

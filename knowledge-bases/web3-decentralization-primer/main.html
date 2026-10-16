@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="从记账权、账户与规则执行入手，理解Web3真正改变的权力关系，以及它仍然依赖的人、机构与现实世界。" />
+  <meta name="robots" content="index, follow" />
+  <title>先别从币价理解 Web3｜Web3与去中心化</title>
+  <script>try{const t=localStorage.getItem("web3-kb-theme")||(localStorage.getItem("kb_darkMode")==="true"?"dark":localStorage.getItem("kb_darkMode")==="false"?"light":null);document.documentElement.dataset.theme=t||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="css-styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="学习路径">
+    <a class="rail-brand" href="main.html">WEB3<br />DECENTRALIZATION</a>
+    <ul class="nav-list">
+      <li><a href="main.html" aria-current="page">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html">来源说明</a></li>
+    </ul>
+    <div class="rail-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+      <a href="../index.html">知识库目录</a>
+      <a href="../../index.html" data-site-home>站点总览</a>
+    </div>
+  </nav>
+
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="main.html">WEB3 / 去中心化</a>
+    <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="移动端学习路径" hidden>
+    <ul>
+      <li><a href="main.html" aria-current="page">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html">来源说明</a></li>
+      <li><a href="../index.html">知识库目录</a></li>
+      <li><a href="../../index.html">站点总览</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb"><a href="../index.html">知识库目录</a><span aria-hidden="true">/</span><span>Web3与去中心化</span></div>
+    <main id="content" data-kb-content data-page-role="overview">
+      <template data-narrative="question">当网页不再由单一平台记账和授权时，Web3究竟改变了什么，又没有改变什么？</template>
+      <template data-narrative="example">一个跨城市创作者合作社希望共同管理数字会员证、公共金库与资助提案，又不愿把全部账户和规则交给一家平台长期控制。</template>
+      <template data-narrative="conclusion">Web3不是把整个互联网搬上链，而是把账户、共享状态和部分规则的验证权从单一运营者转向公开协议；界面、密钥管理、治理、现实数据和法律责任仍然离不开人和机构。</template>
+      <template data-narrative="next-question">一笔Web3操作怎样从钱包签名经过节点验证、共识与智能合约，最终成为所有参与者都能检查的共享状态？</template>
+
+      <header class="article-header">
+        <div>
+          <p class="kicker">入口 / 概念地图</p>
+          <h1>先别从价格理解这场实验</h1>
+        </div>
+        <p class="lede"><dfn data-term="Web3">Web3</dfn>在这里指一组用公开账本、密码学账户和可编程协议重新分配网络控制权的架构设想。它最值得理解的不是某一种资产，而是陌生人能否在公开规则下协作。</p>
+      </header>
+
+      <article class="prose">
+        <p>先想象一个跨城市的创作者合作社。成员共同筹钱购买器材，并投票决定资助哪些项目。最省事的做法，是让某位管理员开一个银行账户，再用普通网站记录会员、提案和投票。这样效率很高，出了问题也知道该找谁，但管理员和网站运营者握有相当大的权力。他们能冻结账户、修改数据库、改变准入规则，也可能因为公司倒闭或服务器故障让整个合作网络停摆。</p>
+
+        <p>合作社真正面对的并不是“网页够不够酷”，而是谁有权定义事实。谁被承认为成员？某项提案获得了多少票？公共资金是否按照承诺拨出？在传统平台里，这些答案通常来自平台自己的数据库。用户能看到结果，却很难独立验证历史记录有没有被改过。Web3从这个问题出发，尝试让多方在没有共同数据库管理员的情况下，仍能维护一份可检查的共享状态。</p>
+
+        <h2>从“相信运营者”到“检查共同规则”</h2>
+
+        <p><strong>Web3</strong>并没有唯一、严格的定义。较稳妥的理解，是把它看成一组互联网架构设想。它借助公开账本、密码学账户和可编程协议，让用户能够共同验证某些数字状态，并在不同应用之间携带资产或身份关系。以太坊官方也承认这个词是一个宽泛概念，因此“使用了某种链式账本”并不能自动证明一个产品实现了这些目标。</p>
+
+        <p>“Web1只能读、Web2可以读写、下一阶段还能拥有”是一种流行的历史速记，却不应被当成严格分期。早期互联网本来就建立在开放协议上，电子邮件和网页链接并不归单一公司所有。后来大型平台降低了发布、社交和支付门槛，也把身份、推荐、数据和商业规则集中到自己的服务中。新的实验不是从零发明开放网络，而是试图把可验证的账户与数字权利重新放回开放协议。</p>
+
+        <p>这种变化最容易在“退出”时看清。传统平台账户通常是服务商数据库中的一条记录，离开服务时，关注关系、购买记录和声誉很难一起带走。开放协议中的地址和公开状态可以被另一套界面继续读取。不过，可读取不等于可理解，更不等于新应用必须承认旧应用的全部社会关系。技术可迁移只是起点，格式兼容和社区接受同样重要。</p>
+
+        <p>这里的关键词是<dfn data-term="去中心化">去中心化</dfn>。它不是“没有中心”这么绝对，也不是把一台服务器拆成十台就算完成。真正需要观察的是关键权力有没有分散：谁能写入记录，谁能验证记录，谁能升级规则，谁能阻止用户退出，谁能在系统失败后修复损害。一个系统可能在记账层很分散，却在网页入口、开发团队或管理员密钥上高度集中。</p>
+
+        <p><dfn data-term="区块链">区块链</dfn>是这套架构中最常见的共享账本。交易记录被分组写入区块，区块之间通过密码学摘要相连。多个节点保存或验证账本，并按照协议规则接受新的有效记录。NIST把它概括为由参与者共同维护、可显示篡改痕迹并提高事后修改难度的数字账本。它的价值不是让数据神秘消失，而是让修改必须面对公开规则和其他验证者。</p>
+
+        <figure class="network-map" aria-labelledby="map-caption">
+          <figcaption id="map-caption">合作社的三层事实：界面可以更换，密钥决定授权，共享账本保存大家可复核的状态。</figcaption>
+          <ol class="node-chain">
+            <li><span>界面</span><small>浏览提案、显示余额、组织讨论</small></li>
+            <li><span>授权</span><small>成员用密钥签署自己的操作</small></li>
+            <li><span>共享状态</span><small>节点按同一套规则验证更新</small></li>
+          </ol>
+        </figure>
+
+        <p>这张图故意没有把三层画成一个无缝整体。用户看到的网页仍可能由一家团队托管，域名也可能被停用。区别在于，如果底层协议和数据保持开放，其他团队理论上可以制作新的入口，用户则可用同一地址继续证明控制权。这个“理论上”非常重要，因为迁移是否真的可行，还取决于数据格式、合约权限、费用和社区是否愿意继续维护。</p>
+
+        <h2>密钥不是银行账户，数字单位也不自动代表所有权</h2>
+
+        <p>合作社成员进入应用时，通常不会向平台提交用户名和密码，而是连接一个<dfn data-term="钱包">钱包</dfn>。钱包是管理密钥并帮助用户签名的软件或设备。资产记录实际位于链上账本，钱包只是让持有者证明自己有权发起某项操作。这个设计减少了平台保管密码的需要，却把更多安全责任交给了用户。</p>
+
+        <p>合作社可以发行数字会员证，也可以给每位成员记录投票额度。这样的<dfn data-term="代币">代币</dfn>只是协议中可记录和转移的数字单位。它能表示使用权、收藏品、积分、支付媒介或治理权，但名称不会决定法律性质。某个“治理代币”可能只提供咨询性投票，也可能被少数大户控制。某个NFT能证明链上地址持有一个编号，却未必附带作品版权或现实物品的所有权。</p>
+
+        <p>再看“拥有”这个词。用户用密钥控制某个链上地址，说明其能按协议转移相关记录。可是数字作品的版权、游戏道具的使用许可和现实资产的所有权，都可能由链外合同决定。界面显示“你拥有它”时，应继续追问：拥有的是可转移记录、服务访问权、收益请求权，还是法律承认的财产权。不同答案对应完全不同的风险。</p>
+
+        <p>因此，Web3把“账户”拆成了两个问题。第一个问题是，谁能用密钥授权操作；第二个问题是，现实世界是否承认该操作的法律或社会意义。密码学擅长回答前者，却无法单独回答后者。合作社仍需章程解释成员资格，仍需银行、稳定币发行方或托管机构连接现实资金，也仍需有人确认器材是否真的交付。</p>
+
+        <aside class="margin-note">
+          <strong>一种更准确的直觉</strong>
+          Web3不是删除信任，而是改变信任的对象和验证方式。用户少信任某个数据库管理员，转而信任公开协议、软件实现、经济激励、密钥管理和社区治理的组合。
+        </aside>
+
+        <h2>三种常见误解</h2>
+
+        <p><span class="head-inline">“上链就不会被篡改。”</span> 区块链通常让已经确认的历史更难被单方面改写，但输入的数据仍可能是假的。智能合约代码也可能有漏洞。某些协议还保留升级权限，管理员能够替换逻辑。更准确的说法是：链上记录提供了一套可审计的变更历史，而不是给所有信息盖上“真实”印章。</p>
+
+        <p><span class="head-inline">“去中心化就没有中介。”</span> 许多中介只是换了形态。钱包软件替你组织签名，RPC服务替浏览器读取链上数据，交易聚合器帮助寻找价格，预言机把外部信息带入合约。用户也常通过中心化交易平台购买资产。判断重点不是有没有中介，而是这些中介能否被替换、能否单方面扣押资产，以及用户是否能够独立核验。</p>
+
+        <p><span class="head-inline">“所有数据都应该公开。”</span> 公开可验证与隐私存在真实张力。把个人身份、健康资料或商业秘密直接写入不可轻易删除的公共账本，可能造成长期风险。很多合理设计只把承诺、摘要或最小证明放到链上，把大文件和敏感内容留在链下。公开账本更适合共享状态，不是通用数据库的无条件替代品。</p>
+
+        <p>还有一个容易忽略的区别：分布式不等于去中心化。内容分发网络会把数据复制到许多地区，却仍由一家公司决定规则。相反，一个协议也可能只有有限数量的高性能验证者，但普通用户能独立校验其输出，并能在争议时选择其他实现。判断时应分别看故障是否分散、权力是否可约束、结果是否可验证，而不是只看机器数量。</p>
+
+        <p>同样，开放参与也有成本。任何人都能提交交易，并不意味着任何操作都是免费的。网络要限制资源滥用，通常会收取费用或要求质押。硬件、带宽、专业知识和资产门槛都会影响谁能真正参与验证与治理。名义上的开放若只对少数资源充足者可行，权力仍可能在实践中重新集中。</p>
+
+        <h2>Web3改变的，是可退出与可验证的边界</h2>
+
+        <p>回到创作者合作社。如果所有规则和记录都在一家平台的封闭数据库里，成员退出平台时很难带走会员关系，外部人也无法复核公共资金的链路。若关键状态由开放协议维护，成员可以用自己的地址授权，第三方可以重建界面，审计者也可以复算合约结果。系统由“平台说了算”转向“协议结果可被多方检查”。</p>
+
+        <p>但这并不等于平台、公司或公共机构失去价值。集中式服务在速度、隐私、客服、纠错和明确责任方面经常更合适。Web3真正提供的是另一种权衡：为了减少单点控制并增加可迁移性，参与者接受更高的协调成本、公开性、费用和自我保管责任。是否值得，要看问题本身，而不是看技术标签是否新潮。</p>
+
+        <p class="boundary-note"><strong>阅读与风险边界</strong>这里讨论的是技术结构和公共风险，不构成投资、交易或法律意见。加密资产价格波动显著，不同司法辖区的规则差异很大。中国境内读者尤其应以2026年2月发布的现行部门通知为准；该通知继续对虚拟货币及现实世界资产代币化相关非法金融活动采取禁止性政策。</p>
+
+        <p>到这里，Web3可以被压缩成一句不夸张的话：它不是把整个互联网搬上链，而是把账户、共享状态和部分规则的验证权从单一运营者转向公开协议。界面、密钥管理、治理、现实数据和法律责任仍然离不开人和机构。理解这一点之后，下一步就不该继续争论口号，而应跟随一笔具体操作，看共享状态究竟怎样更新。</p>
+
+        <p class="page-turn"><a href="from-signature-to-shared-state.html">继续：一笔交易如何成立</a></p>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-dense">
+    <p>Web3与去中心化 · 面向普通大众的技术导读 · 依据截至2026年10月核对的一手资料 · <a href="sources.html">查看来源与边界</a></p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

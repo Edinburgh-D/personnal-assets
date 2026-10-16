@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "Web3与去中心化",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-16",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先别从币价理解 Web3",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把Web3与加密货币、NFT或营销口号混在一起，不清楚去中心化到底改变了系统中的哪一种权力。",
+      "readerStateAfter": "读者能够把Web3看成一组重新分配记账、授权与规则执行权的架构选择，并开始追问一笔操作如何在没有单一平台拍板时成立。",
+      "readerQuestion": "当网页不再由单一平台记账和授权时，Web3究竟改变了什么，又没有改变什么？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一个跨城市创作者合作社希望共同管理数字会员证、公共金库与资助提案，又不愿把全部账户和规则交给一家平台长期控制。",
+      "newTerms": [
+        {
+          "term": "Web3",
+          "definition": "一组借助区块链、密码学账户和可编程协议，让用户能共同验证并携带数字资产或身份关系的互联网架构设想。"
+        },
+        {
+          "term": "去中心化",
+          "definition": "把关键控制权、验证能力或故障风险分散到多个相互独立的参与者，而不是简单地把服务器数量变多。"
+        },
+        {
+          "term": "区块链",
+          "definition": "由多个节点按共同规则维护、可检验历史改动的共享账本。"
+        },
+        {
+          "term": "钱包",
+          "definition": "管理密钥并帮助用户查看地址、签名消息和发起交易的软件或设备，而不是装着代币的文件夹。"
+        },
+        {
+          "term": "代币",
+          "definition": "由账本规则记录和转移的数字单位，可表示支付媒介、使用权、收藏品或治理权，但不自动等同于货币或证券。"
+        }
+      ],
+      "conclusion": "Web3不是把整个互联网搬上链，而是把账户、共享状态和部分规则的验证权从单一运营者转向公开协议；界面、密钥管理、治理、现实数据和法律责任仍然离不开人和机构。",
+      "nextQuestion": "一笔Web3操作怎样从钱包签名经过节点验证、共识与智能合约，最终成为所有参与者都能检查的共享状态？",
+      "nextPage": "from-signature-to-shared-state.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "from-signature-to-shared-state.html",
+      "title": "从一次签名到共享状态",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把Web3看成一组重新分配记账、授权与规则执行权的架构选择，并开始追问一笔操作如何在没有单一平台拍板时成立。",
+      "readerStateAfter": "读者能够沿着签名、广播、验证、排序、执行与确认的链条解释共享账本如何更新，也能说清所谓无需信任实际把信任转移到了哪些规则和参与者。",
+      "readerQuestion": "一笔Web3操作怎样从钱包签名经过节点验证、共识与智能合约，最终成为所有参与者都能检查的共享状态？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "Web3不是把整个互联网搬上链，而是把账户、共享状态和部分规则的验证权从单一运营者转向公开协议；界面、密钥管理、治理、现实数据和法律责任仍然离不开人和机构。",
+      "coreExample": "合作社成员林青用钱包签署一笔支持器材资助提案的操作，节点验证权限与余额，网络确定顺序，合约按既定门槛记录投票并在条件满足后拨款。",
+      "newTerms": [
+        {
+          "term": "数字签名",
+          "definition": "用私钥对消息生成可公开验证的证明，用来说明某个地址确实授权了这次操作。"
+        },
+        {
+          "term": "节点",
+          "definition": "运行协议软件、接收并验证交易和区块数据的联网计算机实例。"
+        },
+        {
+          "term": "共识",
+          "definition": "多个节点在可能有延迟、故障或恶意参与者时，对有效交易及其顺序形成共同结果的规则集合。"
+        },
+        {
+          "term": "智能合约",
+          "definition": "部署在区块链地址上、收到交易后按代码读取和更新链上状态的程序。"
+        },
+        {
+          "term": "Gas",
+          "definition": "对链上计算和存储工作计价的机制，用费用限制资源滥用并分配稀缺区块空间。"
+        }
+      ],
+      "conclusion": "Web3交易通过密钥授权、独立验证、共识排序和确定性程序执行，把对单一数据库管理员的信任改造成对协议规则、客户端实现、经济激励与可验证数据的组合信任。",
+      "nextQuestion": "既然核心机制可以公开验证，我们该怎样判断一个项目究竟有多去中心化、风险藏在哪一层，以及它是否真的需要Web3？",
+      "nextPage": "judging-decentralization.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "judging-decentralization.html",
+      "title": "去中心化不是开关",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿着签名、广播、验证、排序、执行与确认的链条解释共享账本如何更新，也能说清所谓无需信任实际把信任转移到了哪些规则和参与者。",
+      "readerStateAfter": "读者能够从基础设施、应用控制、治理、资产托管、外部数据与法律环境六个层面判断去中心化主张，并识别不适合上链的情境。",
+      "readerQuestion": "既然核心机制可以公开验证，我们该怎样判断一个项目究竟有多去中心化、风险藏在哪一层，以及它是否真的需要Web3？",
+      "dependsOn": [
+        "from-signature-to-shared-state.html"
+      ],
+      "priorConclusion": "Web3交易通过密钥授权、独立验证、共识排序和确定性程序执行，把对单一数据库管理员的信任改造成对协议规则、客户端实现、经济激励与可验证数据的组合信任。",
+      "coreExample": "重新审视创作者合作社：即使投票合约在公链上，成员仍可能依赖单一网页、一个RPC服务、少数管理员密钥、中心化稳定币和人工确认的现实交付。",
+      "newTerms": [
+        {
+          "term": "预言机",
+          "definition": "把价格、天气、交付结果等链外信息提交给智能合约的数据机制或服务。"
+        },
+        {
+          "term": "跨链桥",
+          "definition": "在不同区块链之间传递资产表示或消息的协议与合约组合。"
+        },
+        {
+          "term": "托管",
+          "definition": "由第三方代为控制私钥或资产操作权限，用户实际持有的是对该机构的请求权。"
+        },
+        {
+          "term": "DAO",
+          "definition": "以链上规则和数字投票协调成员、资金或提案的组织形式，其法律地位和实际控制结构因项目与司法辖区而异。"
+        }
+      ],
+      "conclusion": "去中心化是一组可以逐层核查的权力与依赖分布；只有当多方确实难以共同信任单一运营者，且公开验证、可迁移性或抗单点控制的收益超过成本、隐私和治理代价时，Web3才可能是合适工具。",
+      "nextQuestion": "面对下一种声称去中心化的身份、社交或现实资产应用，我们能否先画出控制权地图，再决定哪些环节值得公开验证、哪些环节应保留可纠错的责任主体？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与边界",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

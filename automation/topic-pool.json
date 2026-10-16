@@ -4026,6 +4026,13 @@
       "generatedAt": "2026-10-16",
       "slug": "sleep-science-insomnia-care",
       "entry": "knowledge-bases/sleep-science-insomnia-care/main.html"
+    },
+    {
+      "name": "Web3与去中心化",
+      "domain": "科技/AI",
+      "generatedAt": "2026-10-16",
+      "slug": "web3-decentralization-primer",
+      "entry": "knowledge-bases/web3-decentralization-primer/main.html"
     }
   ],
   "skipped": []

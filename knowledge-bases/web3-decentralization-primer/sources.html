@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Web3与去中心化知识库的权威一手来源、事实边界、监管日期与继续阅读入口。" />
+  <meta name="robots" content="index, follow" />
+  <title>来源与边界｜Web3与去中心化</title>
+  <script>try{const t=localStorage.getItem("web3-kb-theme")||(localStorage.getItem("kb_darkMode")==="true"?"dark":localStorage.getItem("kb_darkMode")==="false"?"light":null);document.documentElement.dataset.theme=t||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="css-styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="nav-rail" aria-label="学习路径">
+    <a class="rail-brand" href="main.html">WEB3<br />DECENTRALIZATION</a>
+    <ul class="nav-list">
+      <li><a href="main.html">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html" aria-current="page">来源说明</a></li>
+    </ul>
+    <div class="rail-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+      <a href="../index.html">知识库目录</a>
+      <a href="../../index.html" data-site-home>站点总览</a>
+    </div>
+  </nav>
+
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="main.html">WEB3 / 去中心化</a>
+    <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="移动端学习路径" hidden>
+    <ul>
+      <li><a href="main.html">概念地图</a></li>
+      <li><a href="from-signature-to-shared-state.html">交易机制</a></li>
+      <li><a href="judging-decentralization.html">判断边界</a></li>
+      <li><a href="sources.html" aria-current="page">来源说明</a></li>
+      <li><a href="../index.html">知识库目录</a></li>
+      <li><a href="../../index.html">站点总览</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-shell">
+    <div class="breadcrumb"><a href="main.html">Web3与去中心化</a><span aria-hidden="true">/</span><span>来源与边界</span></div>
+    <main id="content" data-kb-content data-page-role="reference">
+      <header class="article-header">
+        <div>
+          <p class="kicker">参考 / 核对路径</p>
+          <h1>来源与边界</h1>
+        </div>
+        <p class="lede">资料按“协议原理、基础设施、风险与监管”分层。技术说明优先采用标准组织和协议官方文档，风险判断同时纳入公共机构的批判性材料。</p>
+      </header>
+
+      <article class="prose">
+        <p>本知识库最后核对日期为2026年10月16日。Web3没有单一权威定义，协议也会升级，因此概念性陈述与时效性陈述采用不同证据。以太坊和IPFS文档适合解释各自系统的设计，却不应被当作对整个行业的中立评价。NIST、BIS、FSB与中国监管部门资料用来补足技术宣传中容易被忽略的治理、金融与法律边界。</p>
+
+        <ul class="source-list">
+          <li>
+            <h2><a href="https://www.nist.gov/information-technology/blockchain">NIST：Blockchain</a></h2>
+            <p>用于核对共享账本、区块密码学链接、节点验证与防篡改表述。NIST的定义强调“可显示篡改”和“提高篡改阻力”，没有把区块链描述成绝对不可更改的真相机器。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/web3/">Ethereum.org：Introduction to Web3</a></h2>
+            <p>用于呈现Web3社群常见的“去中心化、开放参与、原生支付和减少第三方信任”主张。该页面本身属于生态倡议材料，正文已把这些目标与实际实现程度分开。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/developers/docs/accounts">Ethereum.org：Ethereum accounts</a></h2>
+            <p>用于核对地址、私钥、签名、钱包与账户的关系。关键边界是：钱包管理密钥和交互，资产状态记录在账本上；有效签名证明地址授权，并不自动证明现实身份。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/developers/docs/nodes-and-clients">Ethereum.org：Nodes and clients</a></h2>
+            <p>用于核对执行客户端、共识客户端、完整节点和RPC访问。页面明确说明，自行运行节点可以独立验证交易和区块，也能减少对中心化数据提供商的依赖。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/developers/docs/consensus-mechanisms/pos/">Ethereum.org：Proof-of-stake</a></h2>
+            <p>用于解释交易广播、待处理池、区块提议、证明和最终确认的端到端过程。正文只描述机制，不把某一种共识设计推广为所有链的统一结构。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/developers/docs/smart-contracts/">Ethereum.org：Introduction to smart contracts</a></h2>
+            <p>用于核对智能合约是部署在链上地址、由交易触发并更新状态的程序。官方文档同时提醒交互通常不可逆，公开可组合性并不能消除代码缺陷和权限风险。</p>
+          </li>
+          <li>
+            <h2><a href="https://ethereum.org/security/">Ethereum.org：Security and scam prevention</a></h2>
+            <p>用于钱包安全边界，包括永不分享助记词或私钥、核对交易地址、限制合约授权额度，以及交易确认后通常无法由中央客服撤销。</p>
+          </li>
+          <li>
+            <h2><a href="https://docs.ipfs.tech/concepts/how-ipfs-works/">IPFS Docs：How IPFS works</a></h2>
+            <p>用于核对内容寻址、CID、路由与传输。IPFS能让接收者按内容标识验证数据，却不自动保证内容永远在线，也不默认保护文件内容和网络元数据的隐私。</p>
+          </li>
+          <li>
+            <h2><a href="https://www.bis.org/publications/crypto-ecosystem-key-elements-and-risks">BIS：The crypto ecosystem — key elements and risks</a></h2>
+            <p>用于核对加密资产与DeFi的事实集中、拥堵、费用、杠杆和投资者风险。BIS立场偏向审慎监管，适合与生态官方资料并读，而不是单独充当技术定义。</p>
+          </li>
+          <li>
+            <h2><a href="https://www.fsb.org/2023/12/policy-recommendations-for-decentralized-finance-defi/">FSB：Policy Recommendations for DeFi</a></h2>
+            <p>用于核对市场诚信、投资者保护、风险管理、信息披露、执法与跨境合作等政策关注。建议强调监管应观察实际功能和控制结构，而不只接受“去中心化”名称。</p>
+          </li>
+          <li>
+            <h2><a href="https://www.csrc.gov.cn/csrc/c100028/c7614318/content.shtml">中国八部门：关于进一步防范和处置虚拟货币等相关风险的通知</a></h2>
+            <p>2026年2月6日发布的现行通知，取代2021年银发〔2021〕237号文件。它继续明确境内对虚拟货币相关业务活动的禁止性政策，并纳入现实世界资产代币化相关风险。涉及具体行为时应咨询合格法律专业人士。</p>
+          </li>
+        </ul>
+
+        <h2>事实边界</h2>
+
+        <p>正文没有使用币价、锁仓量、用户数、节点数或攻击损失金额，因为这些数字变化快，口径也不统一。文中关于“更分散”“更安全”或“更适合”的判断都附带条件。任何具体协议都应重新检查代码版本、权限配置、客户端分布、治理提案和当地法律，不能把概念性结论直接套用。</p>
+
+        <p>这套材料提供的是理解和判断框架，不提供代币推荐、收益预测、交易策略或法律意见。读者若要实际使用钱包，应先在无真实资产的环境中理解签名内容，核对官方域名，并独立保管恢复材料。涉及资金、税务、证券、支付或现实资产权利时，应查阅所在地最新规则。</p>
+
+        <p class="page-turn"><a href="main.html">返回：从概念地图重读</a></p>
+      </article>
+    </main>
+  </div>
+
+  <footer class="foot-dense">
+    <p>Web3与去中心化 · 来源与边界 · 最后核对2026-10-16 · 外部链接用于事实追溯，不构成任何项目背书</p>
+  </footer>
+  <script src="interactive-features.js"></script>
+</body>
+</html>

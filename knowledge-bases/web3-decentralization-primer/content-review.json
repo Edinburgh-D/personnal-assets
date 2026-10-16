@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-16T23:10:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当网页不再由单一平台记账和授权时，Web3究竟改变了什么，又没有改变什么？",
+      "readerStateChange": "读前容易把Web3等同于币价、NFT或营销口号；读后能把它理解为重新分配记账、授权和规则验证权的架构选择，并能指出界面、治理与法律仍在链外发挥作用。",
+      "twoSentenceSummary": "正文以跨城市创作者合作社为例，把平台数据库中的账户与规则控制权拆成可验证的共享状态、密钥授权和现实制度三层。随后区分Web3、去中心化、区块链、钱包与代币，说明公开协议增加可迁移和复核能力，却没有自动消除中介、隐私风险与现实责任。",
+      "continuityEvidence": "结尾把Web3的变化限定为账户、共享状态与部分规则的验证权转移，并明确要求下一步沿一笔操作检查这种转移如何在技术上成立。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "from-signature-to-shared-state.html",
+      "centralQuestion": "一笔Web3操作怎样从钱包签名经过节点验证、共识与智能合约，最终成为所有参与者都能检查的共享状态？",
+      "readerStateChange": "读前只知道公开协议减少平台控制；读后能沿构造、签名、广播、验证、排序、执行和确认解释状态更新，也能说出组合信任替代单一管理员信任的具体含义。",
+      "twoSentenceSummary": "正文跟随合作社成员林青的一次投票，解释数字签名如何授权、节点如何独立检查、共识如何确定顺序，以及智能合约如何对同一输入产生一致状态变化。费用、失败交易、最终性、扩容与链外交付进一步说明，公开验证依赖协议、实现、经济激励和接口，而不是完全取消信任。",
+      "continuityEvidence": "开头承接前页对验证权转移的限定，结尾把完整交易链重新整理成多层依赖，从而自然引出对实际控制权和适用边界的审查。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judging-decentralization.html",
+      "centralQuestion": "既然核心机制可以公开验证，我们该怎样判断一个项目究竟有多去中心化、风险藏在哪一层，以及它是否真的需要Web3？",
+      "readerStateChange": "读前能够解释一笔链上交易的机制；读后能从账本、应用权限、入口、资产、外部数据和治理法律六层画出控制权地图，并判断普通数据库或混合方案是否更合适。",
+      "twoSentenceSummary": "正文把合作社重新拆成六层依赖，用替代性、可验证性、退出能力和责任安排审查去中心化主张。随后对照单点控制、可组合和抗审查收益与效率、隐私、安全、治理及监管成本，形成四个可迁移的判断问题。",
+      "continuityEvidence": "本章逐层展开前页列出的协议、客户端、经济激励和接口依赖，最终把机制理解转化为面对身份、社交或现实资产项目时可复用的控制权地图。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分协议官方文档、标准机构说明、金融稳定材料与现行监管文件，并按技术机制、风险判断和法律边界回查正文主张。",
+      "twoSentenceSummary": "参考页汇集NIST、Ethereum.org、IPFS、BIS、FSB与中国监管部门的一手材料，并逐项说明其支持范围和立场边界。页面同时标记2026年10月核对日期，解释为何不采用快速变化且口径不一的币价、锁仓量或用户数字。",
+      "continuityEvidence": "来源条目分别覆盖概念地图中的共享账本、机制页中的账户节点与合约，以及判断页中的事实集中、金融风险和中国现行政策。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
