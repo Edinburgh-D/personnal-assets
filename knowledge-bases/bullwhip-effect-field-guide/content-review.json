@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-17T11:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "终端购买只轻微变化时，为什么越靠近工厂的订单反而可能越剧烈？",
+      "readerStateChange": "读前只把缺货与积压归因于一次预测错误；读后能分开消费者购买、企业订单、库存和在途，并用延迟与局部安全动作解释逐级放大。",
+      "twoSentenceSummary": "本页沿燕麦奶从门店到包材供应商的路径，说明订单会混入补库存、风险余量与批量约束，因此不等于终端需求。它进一步展示延迟如何让各层重复加码，并限定了真实需求变化与牛鞭效应的区别。",
+      "continuityEvidence": "末段把消费、订单、库存、在途和提前期组成观察地图，并明确引出下一页对预测、补货、批量、价格与配额反馈回路的拆解。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "feedback-loop.html",
+      "centralQuestion": "这些看似合理的局部动作，究竟通过怎样的反馈回路把一次小变化放大？",
+      "readerStateChange": "读前只有延迟放大的直觉；读后能用库存位置还原重复加单，并能区分信号处理、批量、价格变化和短缺博弈的作用路径。",
+      "twoSentenceSummary": "本页先用在途未到、再次加单和集中到货还原基本库存回路，再解释预测追随订单、批量制造脉冲、价格搬移采购以及配额诱发夸大。最后说明这些机制会互相叠加，信息共享本身不能替代物理流动与激励调整。",
+      "continuityEvidence": "开头承接上一页的四类数量，结尾把机制问题推进为数据诊断问题，要求下一页对齐波动发生的时间、位置与规则变化。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "diagnosis-and-governance.html",
+      "centralQuestion": "既然多种放大器会同时出现，怎样用真实数据辨认主因，并选择不会把问题转移到别处的治理组合？",
+      "readerStateChange": "读前能解释机制但不会选择手段；读后能对齐四条曲线、从峰值形状追到业务规则，并用总成本与服务结果检查治理是否转移问题。",
+      "twoSentenceSummary": "本页给出从统一产品、单位、时间窗口到识别延后峰值、固定脉冲、促销时移和紧张期报单的证据路径。随后把信息、时间、批量和激励手段分别匹配到主因，并用边界、试点和共同评价防止过度治理。",
+      "continuityEvidence": "本页直接使用上一页识别的多种放大器建立诊断表，最后留下真实需求突变下区分必要响应与系统过度反应的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的研究概括；读后能够定位定义、行为实验、信息共享价值与教学模拟的原始来源，并理解案例和指标的适用边界。",
+      "twoSentenceSummary": "来源页列出 Lee 等人的经典定义论文、Sterman 的反馈实验、Cachon 与 Fisher 的信息共享研究，以及 MIT 与 Stanford 的机构页面。它同时区分教学假设、模型结论与真实企业诊断，避免把特定研究结果当成普遍收益。",
+      "continuityEvidence": "该页由三篇叙事页的来源链接可达，并提供返回入口与治理篇的链接，作为全路径的证据闭环而不进入叙事 nextPage 链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

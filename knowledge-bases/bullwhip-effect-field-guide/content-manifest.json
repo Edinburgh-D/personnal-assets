@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "供应链牛鞭效应：从订单波纹到协同治理",
+  "audience": "general",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-17",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "订单不是需求",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把缺货、积压与加急生产理解成一次预测不准，不知道为什么终端的小变化会在供应链内部演成大波动。",
+      "readerStateAfter": "读者能够区分消费者购买、企业订单、库存与在途货物，并用一条延迟的反馈链解释波动为何会向上游放大。",
+      "readerQuestion": "终端购买只轻微变化时，为什么越靠近工厂的订单反而可能越剧烈？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一款常温燕麦奶在周末短暂热销：门店、区域仓、灌装厂与包材供应商根据各自看到的订单、库存和在途货物连续调整。",
+      "newTerms": [
+        { "term": "供应链", "definition": "产品、信息和资金在供应商、生产者、渠道与顾客之间流动所形成的连接系统。" },
+        { "term": "牛鞭效应", "definition": "终端需求的小变化在订单向上游传递时被逐级放大的现象。" },
+        { "term": "终端需求", "definition": "最终消费者实际购买或使用产品形成的需求，而不是企业之间互相提交的补货订单。" },
+        { "term": "提前期", "definition": "从发出补货或生产请求，到货物真正可用所经过的时间。" }
+      ],
+      "conclusion": "牛鞭效应不是简单的需求暴涨，而是供应链各环节在信息有限和到货延迟下，把订单当成需求、把局部安全动作叠在一起，最终制造出逐级放大的波动。",
+      "nextQuestion": "这些看似合理的局部动作，究竟通过怎样的反馈回路把一次小变化放大？",
+      "nextPage": "feedback-loop.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "feedback-loop.html",
+      "title": "放大藏在反馈回路里",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够区分消费者购买、企业订单、库存与在途货物，并用一条延迟的反馈链解释波动为何会向上游放大。",
+      "readerStateAfter": "读者能够沿库存位置、预测更新和到货延迟还原放大过程，并判断批量订货、价格变化与短缺博弈如何改变回路。",
+      "readerQuestion": "这些看似合理的局部动作，究竟通过怎样的反馈回路把一次小变化放大？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "牛鞭效应不是简单的需求暴涨，而是供应链各环节在信息有限和到货延迟下，把订单当成需求、把局部安全动作叠在一起，最终制造出逐级放大的波动。",
+      "coreExample": "继续追踪燕麦奶：门店补足货架又追加安全量，区域仓把多店订单视为趋势，工厂凑整批生产，包材商则在紧张配额下收到被放大的报单。",
+      "newTerms": [
+        { "term": "库存位置", "definition": "现有库存加在途货物，再减去尚未满足订单后得到的补货判断基础。" },
+        { "term": "需求信号处理", "definition": "企业根据近期销售或订单不断修正预测，并据此改变补货量的过程。" },
+        { "term": "批量订货", "definition": "为了摊薄下单、运输或生产成本，把多期需求合成一次较大订单。" },
+        { "term": "短缺博弈", "definition": "供应紧张时，下游为争取更多配额而夸大订单，供应恢复后再取消多余部分的行为。" },
+        { "term": "反馈回路", "definition": "一个行动改变系统状态，新的状态又反过来影响下一次行动的循环关系。" }
+      ],
+      "conclusion": "波动放大来自反馈回路而非单一坏决策：预测更新、库存修正、在途忽视、批量门槛、价格激励与短缺博弈会在提前期内相互叠加，因此只要求某一方预测更准通常不够。",
+      "nextQuestion": "既然多种放大器会同时出现，怎样用真实数据辨认主因，并选择不会把问题转移到别处的治理组合？",
+      "nextPage": "diagnosis-and-governance.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "diagnosis-and-governance.html",
+      "title": "先诊断，再压低波动",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿库存位置、预测更新和到货延迟还原放大过程，并判断批量订货、价格变化与短缺博弈如何改变回路。",
+      "readerStateAfter": "读者能够比较销售、订单、库存和在途数据，识别主要放大器，匹配信息、节奏、时间与激励方面的治理手段，并检查服务与总成本后果。",
+      "readerQuestion": "既然多种放大器会同时出现，怎样用真实数据辨认主因，并选择不会把问题转移到别处的治理组合？",
+      "dependsOn": ["feedback-loop.html"],
+      "priorConclusion": "波动放大来自反馈回路而非单一坏决策：预测更新、库存修正、在途忽视、批量门槛、价格激励与短缺博弈会在提前期内相互叠加，因此只要求某一方预测更准通常不够。",
+      "coreExample": "燕麦奶链条把实销、订单、库存、在途、促销与交付时间放到同一时间轴，分别检验共享实销、缩短提前期、小批频补、稳定价格和重设配额规则。",
+      "newTerms": [
+        { "term": "波动比", "definition": "某环节订单波动与终端需求波动的相对大小，用来观察是否存在放大。" },
+        { "term": "实销数据", "definition": "终端真正卖给消费者的数量与时间记录，而不是渠道之间的补货订单。" },
+        { "term": "服务水平", "definition": "顾客需要产品时，企业能够按时并足量满足需求的程度。" },
+        { "term": "供应商管理库存", "definition": "由供应商根据约定的数据与规则监控并补充客户库存的协作安排。" }
+      ],
+      "conclusion": "治理牛鞭效应应从共同时间轴上的证据出发，先找出主要放大器，再组合共享真实消费、缩短提前期、提高补货频率、稳定价格和校准激励，并以整体成本和服务水平而非单点库存检验结果。",
+      "nextQuestion": "当新品上市、真实需求突变或供应能力受损时，怎样区分必要响应与系统过度反应？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与概念边界",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
