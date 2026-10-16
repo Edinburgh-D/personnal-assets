@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "黄金比例与数学之美",
+  "slug": "golden-ratio-mathematical-beauty",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-17",
+  "audience": "general",
+  "entry": "main.html",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "听说过神奇的 1.618 和若干著名例子，却不知道数学性质与审美传说应当怎样区分。",
+      "readerStateAfter": "能用整体与部分的相似关系解释黄金比例的直觉，并意识到数学吸引力不等于普遍审美定律。",
+      "readerQuestion": "黄金比例真正特别在哪里，它的“美”首先是一种什么样的数学经验？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "把一条 100 厘米纸带分成约 61.8 厘米与 38.2 厘米，并从同一比例的矩形中反复切去正方形。",
+      "newTerms": [
+        {
+          "term": "黄金比例",
+          "definition": "把整体分成较长与较短两段，使整体比长段等于长段比短段时得到的固定比例。"
+        },
+        {
+          "term": "极端与中项比",
+          "definition": "欧几里得对这种线段分割关系的称呼，即整体与长段之比等于长段与短段之比。"
+        },
+        {
+          "term": "相似",
+          "definition": "形状相同而尺度可以不同，对应长度保持同一比例的几何关系。"
+        },
+        {
+          "term": "自相似",
+          "definition": "一个对象的部分在缩放后重现整体结构的性质。"
+        }
+      ],
+      "conclusion": "黄金比例的核心不是神秘数值，而是“整体与部分共享同一比例”的自我复制结构；这解释了它的数学吸引力，却尚未证明它必然更美。",
+      "nextQuestion": "这种自我复制结构如何推出 φ 的方程，并把直线分割、五边形与斐波那契数列连接起来？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "mechanism.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能用整体与部分的相似关系解释黄金比例的直觉，并意识到数学吸引力不等于普遍审美定律。",
+      "readerStateAfter": "能从比例条件推出 φ 的方程，解释它为何同时出现在五边形与斐波那契比值中，并区分趋近与相等。",
+      "readerQuestion": "这种自我复制结构如何推出 φ 的方程，并把直线分割、五边形与斐波那契数列连接起来？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "黄金比例的核心不是神秘数值，而是“整体与部分共享同一比例”的自我复制结构；这解释了它的数学吸引力，却尚未证明它必然更美。",
+      "coreExample": "继续使用 100 厘米纸带与可反复切去正方形的矩形，再把同一比例放入正五边形的对角线和相邻斐波那契数之比。",
+      "newTerms": [
+        {
+          "term": "无理数",
+          "definition": "不能写成两个整数之比、其小数展开既不终止也不循环的实数。"
+        },
+        {
+          "term": "递推",
+          "definition": "用前面若干项来规定下一项的生成规则。"
+        },
+        {
+          "term": "极限",
+          "definition": "一列数不断推进时可以任意接近的确定值。"
+        },
+        {
+          "term": "连分数",
+          "definition": "把数写成整数与层层倒数相加的表达式。"
+        },
+        {
+          "term": "收敛分数",
+          "definition": "截断连分数后得到、用整数之比逼近原数的分数。"
+        }
+      ],
+      "conclusion": "φ 之所以在几何与数列中反复出现，是因为不同问题共享 x = 1 + 1/x 这一递归关系；出现的是同一机制，不是宇宙偏爱某个小数。",
+      "nextQuestion": "既然 φ 的数学机制清楚，怎样判断艺术、建筑与自然中的“黄金比例”主张是发现、近似，还是事后拟合？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能从比例条件推出 φ 的方程，解释它为何同时出现在五边形与斐波那契比值中，并区分趋近与相等。",
+      "readerStateAfter": "能检查对象、测量边界、误差与备选解释，判断一个黄金比例主张属于严格关系、近似模式还是事后选择。",
+      "readerQuestion": "既然 φ 的数学机制清楚，怎样判断艺术、建筑与自然中的“黄金比例”主张是发现、近似，还是事后拟合？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "φ 之所以在几何与数列中反复出现，是因为不同问题共享 x = 1 + 1/x 这一递归关系；出现的是同一机制，不是宇宙偏爱某个小数。",
+      "coreExample": "用一张海报、帕特农立面照片与鹦鹉螺壳对照同一套测量问题：边界如何选、误差多大、其他比例是否同样合适。",
+      "newTerms": [
+        {
+          "term": "对数螺线",
+          "definition": "旋转相同角度时半径按固定倍数增长的一族螺线。"
+        },
+        {
+          "term": "黄金螺线",
+          "definition": "每旋转四分之一圈，半径恰好按 φ 倍增长的特定对数螺线。"
+        },
+        {
+          "term": "事后拟合",
+          "definition": "先看到结果，再从许多可能的边界或规则中挑出最贴合预期的一种。"
+        },
+        {
+          "term": "比较模型",
+          "definition": "与目标解释同时接受检验、用来判断它是否真的更好的其他解释。"
+        }
+      ],
+      "conclusion": "黄金比例的可靠判断不靠看见一个近似的 1.618，而靠预先说明对象、边界、容差与比较模型；数学之美因此不是万能标签，而是结构、证据与克制共同形成的理解。",
+      "nextQuestion": "当另一个漂亮常数或图案被宣称为自然与艺术的普遍密码时，我们能否用同样的证据尺度重新审视它？",
+      "nextPage": null,
+      "minContentChars": 3000
+    }
+  ]
+}

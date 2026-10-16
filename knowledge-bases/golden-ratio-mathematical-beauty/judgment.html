@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>证据与边界｜黄金比例与数学之美</title>
+  <meta name="description" content="用测量边界、误差与比较模型审视黄金比例在艺术、建筑、自然和审美研究中的主张。">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="chapter-page">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="masthead">
+    <p class="mast-meta"><span>数学札记</span><span>比例 · 递归 · 判断</span><span>2026 年 10 月</span></p>
+    <a class="mast-name" href="main.html">黄金比例与数学之美</a>
+    <div class="mast-actions">
+      <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">目录</button>
+      <button class="theme-toggle" type="button" data-theme-toggle data-dark-mode-key="kb_darkMode" aria-pressed="false">深色</button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" data-primary-nav hidden aria-label="主导航">
+      <ul>
+        <li><a href="main.html">比例的直觉</a></li>
+        <li><a href="mechanism.html">方程与递归</a></li>
+        <li><a href="judgment.html" aria-current="page">证据与边界</a></li>
+        <li><a href="../index.html">知识库目录</a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>个人知识库</a><span aria-hidden="true">/</span><a href="main.html">黄金比例</a><span aria-hidden="true">/</span><span>证据与边界</span>
+    </nav>
+  </div>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">φ 之所以在几何与数列中反复出现，是因为不同问题共享 x = 1 + 1/x 这一递归关系；出现的是同一机制，不是宇宙偏爱某个小数。</template>
+    <template data-narrative="question">既然 φ 的数学机制清楚，怎样判断艺术、建筑与自然中的“黄金比例”主张是发现、近似，还是事后拟合？</template>
+    <template data-narrative="example">用一张海报、帕特农立面照片与鹦鹉螺壳对照同一套测量问题：边界如何选、误差多大、其他比例是否同样合适。</template>
+    <template data-narrative="conclusion">黄金比例的可靠判断不靠看见一个近似的 1.618，而靠预先说明对象、边界、容差与比较模型；数学之美因此不是万能标签，而是结构、证据与克制共同形成的理解。</template>
+    <template data-narrative="next-question">当另一个漂亮常数或图案被宣称为自然与艺术的普遍密码时，我们能否用同样的证据尺度重新审视它？</template>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>看见 1.618，不等于发现规律</h1>
+        <p class="hero-lede">数学里，φ 由前提推出；现实里，边界、误差与备选解释都要接受检查。谨慎不是在破坏美，而是在保护真正值得惊叹的部分。</p>
+      </div>
+      <figure>
+        <svg class="phi-figure" viewBox="0 0 620 390" role="img" aria-labelledby="measure-title measure-desc">
+          <title id="measure-title">同一建筑照片上的多种可选矩形</title>
+          <desc id="measure-desc">一个简化的古典建筑立面上叠着三种不同边界的测量矩形，表示只要移动测量边界就能得到不同宽高比。</desc>
+          <path class="strong" d="M75 322 H545 M115 322 V150 H505 V322 M145 150 V102 H475 V150 M185 102 L310 42 L435 102"></path>
+          <path class="guide" d="M135 322 V172 H485 V322 M85 322 V125 H535 V322"></path>
+          <rect class="accent" x="115" y="102" width="390" height="220"></rect>
+          <text x="130" y="92">屋檐还是柱顶？</text>
+          <text x="345" y="348">台阶算不算高度？</text>
+          <text x="520" y="220">边界改变，比值也改变</text>
+        </svg>
+        <figcaption class="figure-caption">同一立面可以框出许多矩形。若先移动边界直到比值接近 φ，再把矩形画回照片，图像只展示了选择结果，没有展示选择过程。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article">
+      <p class="lede">我们已经知道，正五边形中的 φ 有明确机制：角度关系产生相似三角形，比例由证明锁定。把视线转向建筑照片、画作或贝壳时，情况发生变化。这里没有定理替我们指定边界；观察者必须先决定量哪里。可靠判断的起点，不是“看起来很像”，而是把选择过程公开。</p>
+
+      <p><span class="head-inline">先问对象是什么。</span> 假设一张海报宽 1000 像素、高 618 像素。1000/618 约为 1.618，这个比值可以直接复核。如果设计文件还记录了设计师明确采用黄金比例网格，那么“海报外框按黄金比例设置”便有较强证据。即使如此，也不能自动推出标题位置、图像主体与留白都服从 φ，更不能推出观众一定更喜欢它。</p>
+
+      <p>建筑照片则困难得多。测量帕特农时，高度可以从最下层台阶、最上层台阶、柱脚或柱顶算起；宽度可以取柱廊、屋檐或山墙底边。照片还会受到透视、镜头位置与修复状态影响。若研究者试过许多组合，只报告最接近 1.618 的那一组，那么一个看似精确的矩形可能只是选择自由的产物。</p>
+
+      <p>数学家 George Markowsky 在 1992 年的综述中系统检查了常见说法。他指出，关于黄金比例在艺术、建筑与美学中的许多流行陈述是错误或严重误导的。对帕特农的分析尤其说明，测量点与数据来源的变化足以制造不同结果。这个批评并非断言古建筑毫无比例设计，而是要求把“存在比例秩序”与“比例恰好是 φ”分开。</p>
+
+      <p>历史措辞也值得谨慎。欧几里得讨论的是“极端与中项比”，并未把它称为普遍审美法则。后世才逐渐把神学、艺术与自然观叠加到这个比例上。若一座古代建筑早于某种命名与审美理论，仅凭现代叠图不能证明设计者以同样概念工作；还需要同时代文本、施工尺寸或可重复的比例体系。</p>
+
+      <p>因此，历史主张至少有三种强度。“作品包含接近 φ 的尺寸”只是一项测量；“设计者有意使用 φ”需要意图证据；“φ 使作品更美”还需要审美比较。三句话看似相近，证据负担却逐级增加。很多流行故事从第一句直接跳到第三句，中间两座桥都没有搭好。</p>
+
+      <p><span class="head-inline">螺线不是一种。</span> 自然界里的贝壳常接近<dfn data-term="对数螺线">对数螺线</dfn>：旋转相同角度时，半径按固定倍数增长。这样的螺线有无穷多条，增长倍数可以不同。<dfn data-term="黄金螺线">黄金螺线</dfn>只是其中一个特例；每转过 90°，半径增长 φ 倍。看见“越旋转越变大”只能支持对数螺线式生长，不能单独证明增长因子就是 φ。</p>
+
+      <p>2019 年发表的一项研究测量了史密森学会馆藏的 80 枚鹦鹉螺壳。作者明确指出，把鹦鹉螺视为黄金螺线并不符合测量，并讨论了更接近样本均值的其他比例模型。个体贝壳仍会有差异，研究也不是自然界所有螺壳的终局结论；它的重要性在于真正量了样本，并把竞争解释放在同一张桌上。</p>
+
+      <div class="margin-note">
+        <strong>画一条螺线并不能检验螺线</strong>
+        <p>常见叠图只展示一条预先选好的曲线与照片大致重合。更有信息量的做法是报告拟合方法、残差与样本，并比较 φ、4:3 及其他增长参数谁解释得更好。</p>
+      </div>
+
+      <p><span class="head-inline">警惕答案先行。</span> <dfn data-term="事后拟合">事后拟合</dfn>指的是看过结果之后，再从许多边界、变量或规则中挑出最符合预期的一个。黄金比例叠图特别容易出现这种问题，因为图片里有大量可测长度：画框、主体、地平线、眼睛、嘴角、台阶、柱距。几十种长度可以组成数百个比值，其中偶然接近 1.618 的并不会少。</p>
+
+      <p>判断事后拟合，可以做一个简单思想实验：在测量前，能否把规则写给另一个人，让他独立得到相同结果？例如“取画布完整宽度除以完整高度”很清楚；“取最重要的视觉线条之间的距离”则留出巨大解释空间。如果两个支持者必须在图上反复移动线框才能达成一致，证据并没有图形看起来那么坚固。</p>
+
+      <p>容差也必须预先说明。若 1.55、1.60、1.67 都被接受为“约等于黄金比例”，范围已经覆盖不少常见矩形。更公平的检验会依据测量精度给出误差，并计算其他候选比例落入同一误差带的机会。容差越宽，命中越容易，结论就越不能写成精确规律。</p>
+
+      <p>样本选择同样会改变故事。只展示最像 φ 的一枚贝壳、一幅画或一张脸，无法说明同类对象普遍如此。需要说明样本从哪里来、是否排除了不合预期的对象，以及同一测量规则能否应用到全部样本。规律应当承受不配合的案例，而不是只收藏顺从的例子。</p>
+
+      <p>照片叠线仍可作为提出问题的工具，只是不应被当成结论。它可以提示我们去找原始尺寸、设计草图或更大样本。探索阶段允许自由试验，验证阶段则要冻结规则；把两阶段分开，既保留发现的想象力，也减少答案先行的偏差。</p>
+
+      <p><span class="head-inline">给替代解释同样机会。</span> 检验 φ 时需要<dfn data-term="比较模型">比较模型</dfn>，也就是同时接受测试的其他解释。海报可能更接近 3:2、8:5 或常见纸张比例；摄影构图可能由三分法、对称、主体位置和语义共同影响；贝壳可能属于另一条对数螺线。只问“它离 φ 近不近”，无法知道 φ 是否比其他简单比例更有解释力。</p>
+
+      <div class="comparison">
+        <table>
+          <thead><tr><th>检查点</th><th>较强的证据</th><th>需要警惕的信号</th></tr></thead>
+          <tbody>
+            <tr><td data-label="检查点">对象</td><td data-label="较强的证据">原始尺寸、设计图或清楚的生长参数</td><td data-label="警惕信号">只看裁切后的照片</td></tr>
+            <tr><td data-label="检查点">边界</td><td data-label="较强的证据">测量前定义，别人可复现</td><td data-label="警惕信号">线框可随结果移动</td></tr>
+            <tr><td data-label="检查点">容差</td><td data-label="较强的证据">预先说明误差与仪器精度</td><td data-label="警惕信号">1.5 到 1.7 都被称为黄金比例</td></tr>
+            <tr><td data-label="检查点">比较</td><td data-label="较强的证据">与其他比例或模型同场检验</td><td data-label="警惕信号">只报告最贴近 φ 的结果</td></tr>
+            <tr><td data-label="检查点">机制</td><td data-label="较强的证据">构造、生长或设计过程能推出比例</td><td data-label="警惕信号">由近似数字反推神秘原因</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><span class="head-inline">审美实验也需要比较。</span> “黄金矩形是否最美”不是纯数学命题，而是关于人的经验判断。实验结果会随候选比例的范围、呈现顺序、刺激类别和参与者背景变化。1997 年的一项研究发现，矩形比例偏好会受到先呈现哪一组范围的影响。2022 年的研究报告总体轻微偏好，但简单几何图形没有显著优势。2024 年另一组研究则发现，对称的优势更稳定，黄金比例的显性偏好只在部分条件中出现，并与艺术知识和兴趣相关。</p>
+
+      <p>这些研究并非互相取消。它们共同说明“美”不是由一个比例单独控制的开关。黄金比例可能在某些对象与任务中影响加工流畅性或选择，也可能只是众多协调手段之一。更强的结论需要更广的人群、预先设定的比较、可重复的材料，以及对文化与语境的认真处理。</p>
+
+      <p><span class="head-inline">设计中仍然可以使用 φ。</span> 证据边界不妨碍创作者把黄金比例当作生成规则。它可以决定版心与边栏、字号层级或模块尺度，优点是不同尺寸之间有共同语法。设计师也可以改用 3:2、√2 或模块网格。选择何种系统属于创作判断；诚实的说法是“我用 φ 建立秩序”，而不是“φ 保证所有人觉得美”。</p>
+
+      <p>回到那张 100 厘米纸带，我们现在拥有三种不同能力。第一，能从分割关系看见自相似。第二，能从 x = 1 + 1/x 推出 φ，并识别它在五边形与斐波那契递推中的共同机制。第三，能在现实主张面前停下来，追问对象、边界、容差和比较。这第三步让数学之美免于变成万能装饰词。</p>
+
+      <blockquote class="pullquote">最好的祛魅不是把惊奇拿走，而是让惊奇只落在证据真正承受得住的地方。</blockquote>
+
+      <p>黄金比例因此不必是宇宙的秘密密码，仍然足够美。它把一个线段问题、一类矩形、正五边形的对角线、无限连分数和数列极限连成一条可证明的链。链条之外，我们用测量与实验继续探索，但不借用定理的确定性替代现实证据。下一次遇到“某个常数无处不在”的说法，也可以沿着同样的路径：先问定义，再找机制，最后审查选择与比较。</p>
+
+      <section class="source-notes" aria-labelledby="sources-title">
+        <h2 id="sources-title">本篇依据</h2>
+        <ol>
+          <li><a href="https://eric.ed.gov/?id=EJ445071" target="_blank" rel="noopener noreferrer">Markowsky，1992，《Misconceptions about the Golden Ratio》</a>：对艺术、建筑与美学中常见说法的系统辨析。</li>
+          <li><a href="https://doi.org/10.1007/s00004-018-0419-3" target="_blank" rel="noopener noreferrer">Bartlett，2019，《Nautilus Spirals and the Meta-Golden Ratio Chi》</a>：基于史密森学会 80 枚鹦鹉螺壳的测量研究。</li>
+          <li><a href="https://journals.sagepub.com/doi/10.2190/3X67-CUBD-VDGN-TY3D" target="_blank" rel="noopener noreferrer">Benjafield 与 McFarlane，1997</a>：矩形比例偏好受到呈现范围与顺序影响。</li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9787369/" target="_blank" rel="noopener noreferrer">De Bartolo 等，2022</a>：不同刺激类别中的黄金比例偏好与眼动实验。</li>
+          <li><a href="https://www.mdpi.com/2073-8994/16/3/333" target="_blank" rel="noopener noreferrer">《Implicit and Explicit Preferences for Golden Ratio》，2024</a>：比较黄金比例、对称以及艺术经验的作用。</li>
+        </ol>
+      </section>
+
+      <a class="next-link" href="main.html">回到开篇：再看那条纸带 →</a>
+    </article>
+  </main>
+
+  <footer class="foot-letter">
+    <p class="foot-close">愿比例保持清晰，<br><span>愿美感保留自由。</span></p>
+    <p class="foot-meta"><a href="mechanism.html">上一篇</a><a href="main.html">回到开篇</a><a href="../index.html">知识库目录</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>方程与递归｜黄金比例与数学之美</title>
+  <meta name="description" content="从线段方程推导 φ，理解五边形、连分数与斐波那契比值背后的共同递归。">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="chapter-page">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="masthead">
+    <p class="mast-meta"><span>数学札记</span><span>比例 · 递归 · 判断</span><span>2026 年 10 月</span></p>
+    <a class="mast-name" href="main.html">黄金比例与数学之美</a>
+    <div class="mast-actions">
+      <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">目录</button>
+      <button class="theme-toggle" type="button" data-theme-toggle data-dark-mode-key="kb_darkMode" aria-pressed="false">深色</button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" data-primary-nav hidden aria-label="主导航">
+      <ul>
+        <li><a href="main.html">比例的直觉</a></li>
+        <li><a href="mechanism.html" aria-current="page">方程与递归</a></li>
+        <li><a href="judgment.html">证据与边界</a></li>
+        <li><a href="../index.html">知识库目录</a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>个人知识库</a><span aria-hidden="true">/</span><a href="main.html">黄金比例</a><span aria-hidden="true">/</span><span>方程与递归</span>
+    </nav>
+  </div>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">黄金比例的核心不是神秘数值，而是“整体与部分共享同一比例”的自我复制结构；这解释了它的数学吸引力，却尚未证明它必然更美。</template>
+    <template data-narrative="question">这种自我复制结构如何推出 φ 的方程，并把直线分割、五边形与斐波那契数列连接起来？</template>
+    <template data-narrative="example">继续使用 100 厘米纸带与可反复切去正方形的矩形，再把同一比例放入正五边形的对角线和相邻斐波那契数之比。</template>
+    <template data-narrative="conclusion">φ 之所以在几何与数列中反复出现，是因为不同问题共享 x = 1 + 1/x 这一递归关系；出现的是同一机制，不是宇宙偏爱某个小数。</template>
+    <template data-narrative="next-question">既然 φ 的数学机制清楚，怎样判断艺术、建筑与自然中的“黄金比例”主张是发现、近似，还是事后拟合？</template>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>φ 不是量出来的，它是解出来的</h1>
+        <p class="hero-lede">100 厘米纸带给了我们近似值。方程则解释为什么答案只能是那个值，并揭示矩形、五边形与数列为何共享同一骨架。</p>
+      </div>
+      <figure>
+        <svg class="phi-figure" viewBox="0 0 620 390" role="img" aria-labelledby="pent-title pent-desc">
+          <title id="pent-title">正五边形与五角星中的黄金比例</title>
+          <desc id="pent-desc">正五边形的五条对角线组成五角星。对角线相交后，较长部分与边长相等，线段被分成极端与中项比。</desc>
+          <polygon class="strong" points="310,30 575,222 474,350 146,350 45,222"></polygon>
+          <path class="accent" d="M310 30 L474 350 L45 222 L575 222 L146 350 Z"></path>
+          <circle class="guide" cx="310" cy="222" r="192"></circle>
+          <text x="320" y="205">φ</text>
+          <text x="220" y="374">边</text>
+          <text x="405" y="112">对角线</text>
+        </svg>
+        <figcaption class="figure-caption">在正五边形中，对角线与边长之比是 φ；对角线彼此相交时，又把线段分成同样的比例。图形因此在内部产生更小的五边形与五角星。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article">
+      <p class="lede">上一层直觉告诉我们：黄金比例把整体与部分锁在同一个关系里。现在把长段的长度定为 1，短段与长段之比记为 1/x。整段便是 1 + 1/x，而定义又要求整段与长段之比等于 x。于是，图形的自我复制被压缩成一个只有一行的方程。</p>
+
+      <div class="equation" aria-label="黄金比例方程">x = 1 + 1/x　⇔　x² − x − 1 = 0</div>
+
+      <p><span class="head-inline">从比例到根式。</span> 用求根公式解 x² − x − 1 = 0，得到 x = (1 ± √5) / 2。比例必须为正，所以留下 φ = (1 + √5) / 2，约等于 1.6180339887。它是<dfn data-term="无理数">无理数</dfn>，不能精确写成两个整数的比。纸带上的 61.8 与 38.2 只能给出有限精度的近似；方程给出的根才是严格对象。</p>
+
+      <p>这个推导还解释一个常被忽略的事实：φ 不是设计师从许多长方形里投票选出的“最佳比例”，也不是先测量神庙再总结出的经验数。只要接受“整体比长段等于长段比短段”，正根就被方程唯一确定。数学意义上的必然性来自定义与逻辑，而不是来自样本数量。</p>
+
+      <p><span class="head-inline">一个数的两副面孔。</span> 方程 φ² = φ + 1 还可以写成 φ − 1 = 1/φ。也就是说，从 φ 中减去 1，结果恰好是它的倒数，约为 0.618。于是整体与长段之比是 φ，长段占整体的比例则是 1/φ。流行图示中同时出现 1.618 与 0.618，并不是两个巧合，而是同一恒等式的两面。</p>
+
+      <p>继续乘下去也会出现简洁关系：φ³ = 2φ + 1，φ⁴ = 3φ + 2。系数依次走出 1、1、2、3、5……。这是因为每次遇到 φ²，都能用 φ + 1 替换。斐波那契数并非后来偶然贴到 φ 上；它们已经藏在这个二次方程的幂次展开里。</p>
+
+      <div class="ratio-strip" aria-label="连续比例的近似">
+        <div><strong>2 / 1</strong><span>2.000，偏高</span></div>
+        <div><strong>3 / 2</strong><span>1.500，偏低</span></div>
+        <div><strong>5 / 3</strong><span>1.667，偏高</span></div>
+        <div><strong>8 / 5</strong><span>1.600，偏低</span></div>
+      </div>
+
+      <p><span class="head-inline">为什么五角星会出现它。</span> 正五边形的每个内角是 108°，五条对角线互相交叉，形成 36° 与 72° 的等腰三角形。相同角度组合制造出一组相似三角形，大三角形与内部小三角形共享形状。对应边一比较，对角线与边长之比便满足同一个“整体与部分”的关系。</p>
+
+      <p>欧几里得在《几何原本》第十三卷命题 8 中表述了这个事实：正五边形中跨越两个相邻内角的线彼此相交，并按极端与中项比切分；较长段等于五边形的边。换成现代语言，对角线长度是边长的 φ 倍。五角星内部又围出一个较小的正五边形，继续连对角线，图形可以递归下去。</p>
+
+      <p>这与黄金矩形切去正方形的情形相似，但不能含混地说“它们都是神秘螺旋”。两处的具体图形不同：一个依靠矩形相似，一个依靠五边形中的相似三角形。它们相遇在更抽象的一层——缩小后的结构仍保留原关系，于是比例必须满足 x = 1 + 1/x。</p>
+
+      <p><span class="head-inline">数列如何加入。</span> 斐波那契数列从 1、1 开始，每一项等于前两项之和：1、1、2、3、5、8、13、21……这种用已有项生成新项的规则叫<dfn data-term="递推">递推</dfn>。观察相邻两项的比值，会看到 2/1、3/2、5/3、8/5、13/8；它们在 φ 的上下两侧交替靠近。</p>
+
+      <p>设较后的一项与前一项之比最终稳定在 L 附近。因为下一项等于前两项之和，新的比值可写成 1 + 1/L。如果比值真的稳定，新旧两个值应当相同，所以 L = 1 + 1/L。我们又回到了黄金比例的方程。这里的“稳定值”就是<dfn data-term="极限">极限</dfn>：项数不断增加时，比值可以任意接近它。</p>
+
+      <p>必须留意“接近”并非“已经相等”。任何两个有限的斐波那契数都是整数，它们的比是有理数；φ 却是无理数。因此 13/8 虽然约为 1.625，永远不会精确等于 φ。把斐波那契方格拼成矩形时，得到的是越来越好的黄金矩形近似，不是每一步都已经完美。</p>
+
+      <p>交替靠近也不是图表上的偶然。2/1 高于 φ，3/2 低于 φ，5/3 又高于 φ。递推把上一轮的误差取倒数并改变方向，所以估计值在目标两侧来回摆动，同时误差迅速缩小。到 21/13 时约为 1.61538，到 34/21 时约为 1.61905；两者已经把 φ 夹在一个很窄的区间里。</p>
+
+      <p>若从别的正数起步，反复执行“新的数等于 1 加旧数的倒数”，许多起点也会靠近 φ。φ 因此可以看成这个变换的固定点：代入以后，输出仍是自己。黄金矩形切割、无限倒数与相邻项比值的稳定，都是“变换找到固定点”的不同版本。</p>
+
+      <p><span class="head-inline">无限嵌套的另一种读法。</span> 从 φ = 1 + 1/φ 出发，把右边的 φ 再换成 1 + 1/φ，就得到 1 + 1/(1 + 1/φ)。不断替换，便得到 1 + 1/(1 + 1/(1 + …))。这种层层出现倒数的写法叫<dfn data-term="连分数">连分数</dfn>。φ 的每一层都是 1，这使它把“同一个局部规则反复使用”表现得异常纯粹。</p>
+
+      <p>在某一层截断连分数，会得到 1、2、3/2、5/3、8/5 等分数。这些叫<dfn data-term="收敛分数">收敛分数</dfn>，恰好由相邻斐波那契数组成。连分数、斐波那契递推与黄金矩形不是三段互不相关的趣闻；它们是同一方程在数的表示、序列生成和几何缩放中的三种表情。</p>
+
+      <p><span class="head-inline">“最难逼近”需要说完整。</span> φ 的连分数只有 1，而小的连分数系数会让有理近似改善得较慢。在精确的数论意义下，φ 常被称作最难用分母较小的分数逼近的数之一。这不表示 1.618 很难算，也不表示自然必然选择它；它只描述有理近似误差的一种极值性质。</p>
+
+      <p>这个性质也解释了为什么斐波那契分数显得格外整齐。1/1、2/1、3/2、5/3 并不是随手挑出的近似，而是每次截断连分数所得的最佳候选。分母逐步增长时，它们以严格方式记录了我们能用多复杂的整数比看见 φ。</p>
+
+      <p><span class="head-inline">从 100 厘米回到精确长度。</span> 若整条纸带严格长 100 厘米，长段应为 100/φ，约 61.8034 厘米；短段应为 100/φ²，约 38.1966 厘米。两段相加仍是 100，因为 1/φ + 1/φ² = 1。先前的 61.8 与 38.2 是适合尺子操作的近似，现在我们知道误差来自哪里。</p>
+
+      <p>把长段再按同样比例分开，新长段是 100/φ²，恰好等于上一层的短段；新短段则是 100/φ³。每下降一层，长度都除以 φ。于是切割不是一串杂乱数字，而是一列几何缩放。矩形图里不断变小的边，正由这些 φ 的幂控制。</p>
+
+      <p>这也揭示证明与测量的分工。尺子让我们看到 61.8 附近的结果，代数说明它为何必须继续到无穷小数，几何则把相同关系放进可见形状。三种语言互相校验：任何一处若算出不同结果，就能回头检查假设或操作。</p>
+
+      <p>正五边形提供了几何上的回声。对角线交点把每条对角线分成长短两段，长段等于五边形边长。内部小五边形与外部五边形方向相反、大小不同，却保持角度结构。若继续连接小五边形的对角线，比例会在每一层重新出现，恰如连分数中每一层重新出现 1 + 1/x。</p>
+
+      <div class="comparison">
+        <table>
+          <thead><tr><th>入口</th><th>反复执行的规则</th><th>为何得到 φ</th></tr></thead>
+          <tbody>
+            <tr><td data-label="入口">线段分割</td><td data-label="规则">整体比长段＝长段比短段</td><td data-label="为何得到 φ">直接产生 x² − x − 1 = 0</td></tr>
+            <tr><td data-label="入口">黄金矩形</td><td data-label="规则">切去最大正方形，余下矩形与原形相似</td><td data-label="为何得到 φ">长边＝短边＋余段</td></tr>
+            <tr><td data-label="入口">正五边形</td><td data-label="规则">对角线制造相似三角形与更小五边形</td><td data-label="为何得到 φ">对应边满足相同分割关系</td></tr>
+            <tr><td data-label="入口">斐波那契数列</td><td data-label="规则">下一项＝前两项之和</td><td data-label="为何得到 φ">稳定比值满足 L＝1＋1/L</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><span class="head-inline">统一并不等于泛化。</span> 当一个对象确实由上述递归生成时，φ 的出现有机制可追踪。正五边形的角度关系保证它；斐波那契递推的加法保证极限；黄金矩形的相似条件保证切割后的比例。反过来，仅仅量到 1.60 或 1.63，不能倒推出对象使用了黄金比例，因为许多过程都可能产生相近数字。</p>
+
+      <p>这一点把我们带到真正困难的部分。数学内部可以从前提演绎结果，现实世界却要求先决定测量什么、怎样划边界、允许多大误差。艺术品会被装框、裁边和修复，建筑照片带有透视变形，贝壳的生长也有个体差异。若没有事先写清规则，φ 越容易在图中被“找到”，这个发现反而越需要怀疑。</p>
+
+      <section class="source-notes" aria-labelledby="sources-title">
+        <h2 id="sources-title">本篇依据</h2>
+        <ol>
+          <li><a href="https://aleph0.clarku.edu/~djoyce/elements/bookII/propII11.html?source=golden-ratio-kb" target="_blank" rel="noopener noreferrer">欧几里得《几何原本》第二卷命题 11</a>：用几何作图把线段按后来所谓的黄金比例分割。</li>
+          <li><a href="https://webspace.ship.edu/mrcohe/inside-out/vu1/d_joyce/elements/bookXIII/bookXIII.html?source=golden-ratio-kb" target="_blank" rel="noopener noreferrer">欧几里得《几何原本》第十三卷命题表</a>：命题 8 说明正五边形对角线的分割关系。</li>
+          <li><a href="https://mathworld.wolfram.com/FibonacciNumber.html?source=golden-ratio-kb" target="_blank" rel="noopener noreferrer">Wolfram MathWorld：Fibonacci Number</a>：相邻项之比的极限、特征方程与 Binet 公式。</li>
+        </ol>
+      </section>
+
+      <a class="next-link" href="judgment.html">继续：证据与边界 →</a>
+    </article>
+  </main>
+
+  <footer class="foot-letter">
+    <p class="foot-close">同一个方程，<br><span>在不同对象里留下不同笔迹。</span></p>
+    <p class="foot-meta"><a href="main.html">上一篇</a><a href="judgment.html">下一篇</a><a href="../index.html">知识库目录</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

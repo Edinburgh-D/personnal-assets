@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>黄金比例与数学之美</title>
+  <meta name="description" content="从一条线的分割出发，理解黄金比例的自相似结构、数学机制与审美边界。">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="masthead">
+    <p class="mast-meta"><span>数学札记</span><span>比例 · 递归 · 判断</span><span>2026 年 10 月</span></p>
+    <a class="mast-name" href="main.html">黄金比例与数学之美</a>
+    <div class="mast-actions">
+      <button class="menu-toggle nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">目录</button>
+      <button class="theme-toggle" type="button" data-theme-toggle data-dark-mode-key="kb_darkMode" aria-pressed="false">深色</button>
+    </div>
+    <nav class="primary-nav" id="primary-nav" data-primary-nav hidden aria-label="主导航">
+      <ul>
+        <li><a href="main.html" aria-current="page">比例的直觉</a></li>
+        <li><a href="mechanism.html">方程与递归</a></li>
+        <li><a href="judgment.html">证据与边界</a></li>
+        <li><a href="../index.html">知识库目录</a></li>
+      </ul>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumbs" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>个人知识库</a><span aria-hidden="true">/</span><span>黄金比例与数学之美</span>
+    </nav>
+  </div>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="overview">
+    <template data-narrative="question">黄金比例真正特别在哪里，它的“美”首先是一种什么样的数学经验？</template>
+    <template data-narrative="example">把一条 100 厘米纸带分成约 61.8 厘米与 38.2 厘米，并从同一比例的矩形中反复切去正方形。</template>
+    <template data-narrative="conclusion">黄金比例的核心不是神秘数值，而是“整体与部分共享同一比例”的自我复制结构；这解释了它的数学吸引力，却尚未证明它必然更美。</template>
+    <template data-narrative="next-question">这种自我复制结构如何推出 φ 的方程，并把直线分割、五边形与斐波那契数列连接起来？</template>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>一条线，如何容纳自己</h1>
+        <p class="hero-lede">黄金比例常被包装成宇宙的审美密码。真正值得凝视的地方更朴素：把一段长度分开以后，整体与局部竟能保持同一种关系。</p>
+      </div>
+      <figure>
+        <svg class="phi-figure" viewBox="0 0 620 390" role="img" aria-labelledby="rect-title rect-desc">
+          <title id="rect-title">黄金矩形反复切去正方形的结构</title>
+          <desc id="rect-desc">一个宽高比为黄金比例的矩形。切去左侧正方形后，右侧留下旋转九十度的小黄金矩形；过程继续重复。</desc>
+          <rect class="strong" x="30" y="35" width="550" height="340"></rect>
+          <line class="accent" x1="370" y1="35" x2="370" y2="375"></line>
+          <line class="strong" x1="370" y1="245" x2="580" y2="245"></line>
+          <line class="accent" x1="450" y1="245" x2="450" y2="375"></line>
+          <path class="guide" d="M370 375 A340 340 0 0 0 30 35 M370 35 A210 210 0 0 1 580 245 M580 245 A130 130 0 0 1 450 375"></path>
+          <text x="170" y="215">正方形</text>
+          <text x="416" y="145">同形的小矩形</text>
+          <text x="46" y="28">φ</text>
+          <text x="18" y="220">1</text>
+        </svg>
+        <figcaption class="figure-caption">切掉正方形后，剩下的矩形与原矩形相似。弧线只是帮助眼睛追踪尺度变化，并不把任何真实物体宣称为“黄金螺旋”。</figcaption>
+      </figure>
+    </header>
+
+    <article class="article">
+      <p class="lede">先忘掉 1.618。拿一条 100 厘米的纸带，在大约 61.8 厘米处剪开。现在有长段与短段：长段约 61.8 厘米，短段约 38.2 厘米。把整体除以长段，所得约为 1.618；再把长段除以短段，所得仍约为 1.618。一次分割制造了两个尺度，却只留下同一种比例。</p>
+
+      <p><span class="head-inline">关系先于数字。</span> 这就是<dfn data-term="黄金比例">黄金比例</dfn>最简洁的入口。若用符号表示，整段是 a + b，长段是 a，短段是 b，那么条件是 (a + b) / a = a / b。欧几里得在《几何原本》第六卷定义 3 中称它为<dfn data-term="极端与中项比">极端与中项比</dfn>：整条线与较长部分之比，等于较长部分与较短部分之比。古代文本关心的是线段之间的关系，还没有“神秘小数”这种现代叙事。</p>
+
+      <p>这个次序非常重要。1.618… 是关系的结果，不是关系的原因。如果只记小数，我们很容易在门框、脸庞、树叶或建筑照片里寻找相近数字；只要测量点足够多，总能挑出某一对长度接近它。若先抓住定义，问题会清楚得多：对象是否真的规定了“整体、长段、短段”？两次比值是否由同一构造保证相等？还是观察者先知道答案，再移动边界去迎合答案？</p>
+
+      <p><span class="head-inline">从纸带到矩形。</span> 把长边与短边之比做成同样的比例，就得到常说的黄金矩形。沿短边切掉一个正方形，留下的小矩形会旋转九十度，却保持原来的宽高比。这不是视觉错觉，而是比例条件的直接结果：原来的长边等于“一个短边再加上余下的一段”，余下矩形的长边正好是原来的短边，短边则是刚刚的余段。</p>
+
+      <p>两个形状若对应角相等、对应长度保持相同比例，就称为<dfn data-term="相似">相似</dfn>。相似允许大小变化，却不允许形状变化。因此，切去正方形不是把一个矩形随意削小，而是让原来的形状以更小尺度再次出现。继续切正方形，结构会一层层重复。部分在缩放后重现整体，这种性质叫<dfn data-term="自相似">自相似</dfn>。</p>
+
+      <div class="margin-note">
+        <strong>100 厘米纸带上的两次除法</strong>
+        <p>100 ÷ 61.8 ≈ 1.618；61.8 ÷ 38.2 ≈ 1.618。这里的数值经过四舍五入，所以只能近似相等；严格相等需要使用后文推导出的无穷小数 φ。</p>
+      </div>
+
+      <p><span class="head-inline">美感来自可压缩的秩序。</span> 数学家说一个结构“美”，常常不是说它像一幅画，而是说许多现象可以由很少的规则解释。黄金矩形只需要一句操作：“切去最大的正方形。”操作之后，规则仍然适用；再操作，仍然适用。描述没有随着层次增加而膨胀。一个局部规则组织了无数尺度，这种高度可压缩的秩序，正是数学审美的常见来源。</p>
+
+      <p>同一魅力也可以从信息的角度理解。普通矩形切去一个正方形后，剩下矩形的比例通常改变，于是下一步要换一套说明。黄金矩形不需要补充说明：新对象仍服从旧规则。它像一个句子，删去开头的一个词组后，余下部分仍具有同样语法。这个类比只解释“结构为何令人惊讶”，并不证明所有人都必须觉得某种长方形好看。</p>
+
+      <p><span class="head-inline">不变量让变化变得可懂。</span> 切割发生以后，矩形的大小、方向和位置都变了，宽高比却没有变。数学把这种在变换中保持不变的性质称作不变量。寻找不变量是一种强大的思考方式：我们不必记住每一步的全部细节，只需追踪那个始终没有离开的关系。</p>
+
+      <p>纸带也能显示同一件事。把 100 厘米看作整体，较长段约占整体的 0.618；再把较长段当成新的整体，原先的短段又约占它的 0.618。视角从大尺度移动到小尺度，比例没有改变。这里没有真的把纸带无限剪下去，但思想允许我们重复操作，从有限物体中看见一个无限过程。</p>
+
+      <p>这种经验与日常的“匀称”并不相同。对称要求两边经过某种翻转或旋转后重合；黄金分割通常是不对称的，一边明显更长。它的秩序不来自左右相等，而来自跨尺度的对应。对称把差异消去，黄金比例则保留大小差异，同时让关系重复。</p>
+
+      <p><span class="head-inline">为什么不是别的矩形。</span> 任何矩形都可以切掉一个正方形，但只有特定宽高比能让余下矩形与原矩形相似。若原比例是 2:1，切掉正方形后只剩另一个正方形；若比例是 3:2，余下部分变成 2:1；若比例是 √2:1，切去一个正方形后也不会回到原比例。黄金矩形的特别之处不是“看上去最舒服”，而是它恰好成为这项操作的固定形状。</p>
+
+      <p>也不要因此把其他比例看成失败。A 系列纸张使用 √2:1，是因为对折后仍保持原比例；电影、摄影与屏幕发展出 4:3、3:2、16:9 等系统，各自服务于制作与观看条件。不同约束会选出不同不变量。黄金比例回答的是一个精确问题，不是所有设计问题的唯一答案。</p>
+
+      <p>这一区分也让“数学之美”更丰富。一个比例可以因自相似而优雅，另一个比例可以因对折不变而实用；圆可以因旋转对称而简洁，素数可以因分解结构而深邃。美并不是给对象排出一张单一榜单，而是在对象与规则之间发现出乎意料的紧密联系。</p>
+
+      <blockquote class="pullquote">数学上的美，往往发生在“必须如此”与“仍有惊喜”同时出现的地方。</blockquote>
+
+      <p><span class="head-inline">三个层次不要混在一起。</span> 第一层是严格的数学定义：比例方程是否成立。第二层是现实中的近似模式：生长、制作与测量有噪声，一个对象可能接近某个比例。第三层是人的审美判断：某个比例是否在特定语境中更受偏爱。第一层可以演绎证明；第二层需要数据和误差范围；第三层还受对象类型、文化经验、实验设计与个人差异影响。把第一层的确定性直接借给第三层，便会把漂亮的数学变成过度承诺。</p>
+
+      <p>近年的实验也提醒我们保持这种区分。一项 2022 年发表的研究让参与者在 1.5、黄金比例与 1.8 三种比例之间选择，不同刺激类别的结果并不一致：总体上只有轻微偏好，简单几何图形中也没有显著优势。研究提供了一个值得继续检验的假设，却不是“所有人天生偏爱 φ”的证明。实验结论受候选比例、样本与材料影响，正如一张照片的裁切方式会影响构图判断。</p>
+
+      <p><span class="head-inline">把直觉放在手上。</span> 可以拿两张颜色相同的纸，一张裁成 16:10，另一张裁成接近 1.618:1，不标注尺寸地交给朋友。有人可能偏爱其一，也可能觉得两者无差别。这个小观察不能代替实验，却能揭示一个事实：肉眼的偏好没有小数点后三位的精度。严格数学关系与主观选择之间，存在一段必须由证据跨越的距离。</p>
+
+      <p>再把其中一张纸沿短边画出正方形，切下后旋转余片。此时问题已经改变：我们不再询问哪个矩形更漂亮，而是检查余片能否与原形重合。审美判断允许分歧，几何检验则有清楚标准。黄金比例最稳固的魅力，正存在于后者的确定性与前者的开放性彼此相邻。</p>
+
+      <p>哲学上，这是一种克制的惊奇。人很容易把简洁规律想象成自然的意图，把重复结构看成宇宙在暗示意义。数学允许我们享受结构，却要求把“由方程推出”与“被世界选择”分开。知道界线在哪里，并不会让关系变得冷淡；相反，它让我们确切知道自己为何惊叹。</p>
+
+      <p>还可以换一个角度看纸带。若把短段接到长段之后，得到整体；若把整体缩小到长段的大小，原来的长段便缩成短段。一次放大与一次拼接互为对应，尺度虽然改变，关系却闭合。这种闭合感让证明像一段完成的旋律：最后一个音并非简单停止，而是让开头显出必然。</p>
+
+      <p>真正的数学训练，往往从“它很漂亮”继续向前一步：究竟是哪项性质承担了漂亮？在这里，答案不是金色，不是螺线，也不是名人故事，而是相似变换下保持不变的比例。把感受指向可说明的结构，我们便能与别人共享理由，也能知道理由何时不再适用。</p>
+
+      <p>因此，黄金比例的第一重美不在博物馆、神庙或贝壳里，而在定义本身：整体与部分被同一种关系缝合起来。我们已经知道它为何值得研究，却还没有解释为什么准确数值是 1.618…，也没有说明五角星与斐波那契数列为何会加入这场对话。要回答这些问题，必须把直觉写成方程，并观察递归怎样从几何跨入数列。</p>
+
+      <section class="source-notes" aria-labelledby="sources-title">
+        <h2 id="sources-title">本篇依据</h2>
+        <ol>
+          <li><a href="https://webspace.ship.edu/mrcohe/inside-out/vu1/d_joyce/elements/bookVI/defVI3.html?source=golden-ratio-kb" target="_blank" rel="noopener noreferrer">欧几里得《几何原本》第六卷定义 3</a>：极端与中项比的原始表述及其与第二卷命题 11 的关系。</li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9787369/" target="_blank" rel="noopener noreferrer">De Bartolo 等，2022</a>：跨刺激类别的黄金比例偏好实验。本文只采用其报告范围内的结论，并保留样本与比较条件的限制。</li>
+        </ol>
+      </section>
+
+      <a class="next-link" href="mechanism.html">继续：方程与递归 →</a>
+    </article>
+  </main>
+
+  <footer class="foot-letter">
+    <p class="foot-close">把惊奇留给结构，<br><span>把判断交给证据。</span></p>
+    <p class="foot-meta"><a href="mechanism.html">下一篇</a><a href="../index.html">知识库目录</a><span>黄金比例与数学之美</span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

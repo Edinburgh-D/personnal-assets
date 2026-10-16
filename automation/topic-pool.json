@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4033,6 +4033,13 @@
       "generatedAt": "2026-10-16",
       "slug": "web3-decentralization-primer",
       "entry": "knowledge-bases/web3-decentralization-primer/main.html"
+    },
+    {
+      "name": "黄金比例与数学之美",
+      "domain": "数学/逻辑",
+      "generatedAt": "2026-10-17",
+      "slug": "golden-ratio-mathematical-beauty",
+      "entry": "knowledge-bases/golden-ratio-mathematical-beauty/main.html"
     }
   ],
   "skipped": []
