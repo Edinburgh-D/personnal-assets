@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "哈贝马斯交往理性",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-17",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "说过话，不等于讲通了",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "当一场公共讨论人人都能发言，却仍然无法形成可信决定时，哈贝马斯的交往理性究竟要修复什么？",
+      "readerStateBefore": "读者容易把理性理解为算得更准、说服别人或赢得争论，也容易把所有人都发过言当成程序已经公正。",
+      "readerStateAfter": "读者能够区分成功导向与理解导向的行动，并把交往理性理解为共同检验理由的能力，而不是礼貌聊天或强求共识。",
+      "priorConclusion": "",
+      "coreExample": "一场关于社区广场改造的居民听证会：政府已有工期与预算方案，商户担心客流，老人需要休憩空间，家长在意儿童安全，每个人都获得三分钟发言，但关键前提始终没有被共同检验。",
+      "conclusion": "交往理性不是要求所有人迅速同意，而是要求合作建立在可理解、可质疑、可回应的理由上；因此人人说过话只是起点，决定能否被共同辩护才是关键。",
+      "nextQuestion": "当事实、规范和个人经验彼此冲突时，一场谈话怎样转变为能够检验理由的话语过程，而不是赢得对手的技巧？",
+      "nextPage": "reasons-and-validity.html",
+      "newTerms": [
+        { "term": "工具理性", "definition": "按照既定目标选择最高效手段的推理方式，关心的是怎样成功做到，而不自动审查目标本身是否正当。" },
+        { "term": "交往理性", "definition": "人们通过提出、质疑和回应理由来检验可接受主张的能力，判断标准不是谁获胜，而是理由能否经受批评。" },
+        { "term": "策略行动", "definition": "行动者把他人反应当作实现自身目标的条件，借奖励、压力、信息选择或修辞影响对方。" },
+        { "term": "交往行动", "definition": "行动者以达成相互理解为协调基础，并承认相关主张可以被对方质疑和要求说明。" }
+      ]
+    },
+    {
+      "file": "reasons-and-validity.html",
+      "title": "理由如何进入公共检验",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "当事实、规范和个人经验彼此冲突时，一场谈话怎样转变为能够检验理由的话语过程，而不是赢得对手的技巧？",
+      "readerStateBefore": "读者能够区分成功导向与理解导向的行动，并把交往理性理解为共同检验理由的能力，而不是礼貌聊天或强求共识。",
+      "readerStateAfter": "读者能够分辨事实真实性、规范正当性与表达真诚性等不同争点，并解释话语、生活世界与系统机制如何共同塑造现代社会的协调。",
+      "priorConclusion": "交往理性不是要求所有人迅速同意，而是要求合作建立在可理解、可质疑、可回应的理由上；因此人人说过话只是起点，决定能否被共同辩护才是关键。",
+      "coreExample": "同一场广场听证会进入第二轮：参与者不再只重复立场，而是分别核查客流数据、讨论谁应承担噪声与安全风险、追问发言者是否隐瞒利益，并检验预算与行政命令是否挤压了真正的协商空间。",
+      "conclusion": "交往理性的机制在于把言语中隐含的可批判主张转化为分类型的理由检验；生活世界使理解成为可能，而金钱与行政权力虽能提高协调效率，却不能替代对事实、规范与公共目的的辩护。",
+      "nextQuestion": "如果真实讨论总被身份差异、资源不平等和议程控制影响，交往理性怎样成为批判现实的尺度，而不是脱离权力的理想图景？",
+      "nextPage": "power-and-judgment.html",
+      "newTerms": [
+        { "term": "有效性要求", "definition": "说话者随言语提出、并可能被听者要求说明的可接受性主张，例如内容是否真实、规范是否正当、表达是否真诚。" },
+        { "term": "话语", "definition": "日常协调受阻后，参与者暂缓直接行动，集中用理由检验某项有争议主张的反思性讨论。" },
+        { "term": "生活世界", "definition": "参与者在日常交往中共享且通常不必逐项说明的语言、文化知识、规范期待与身份背景。" },
+        { "term": "系统", "definition": "现代社会中主要借金钱、行政权力等非语言媒介协调大规模行动的功能领域与机制。" }
+      ]
+    },
+    {
+      "file": "power-and-judgment.html",
+      "title": "让理想经得起权力现实",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["reasons-and-validity.html"],
+      "readerQuestion": "如果真实讨论总被身份差异、资源不平等和议程控制影响，交往理性怎样成为批判现实的尺度，而不是脱离权力的理想图景？",
+      "readerStateBefore": "读者能够分辨事实真实性、规范正当性与表达真诚性等不同争点，并解释话语、生活世界与系统机制如何共同塑造现代社会的协调。",
+      "readerStateAfter": "读者能够把交往理性作为诊断制度的反事实尺度，检查参与资格、议程形成、理由回应、物质条件与纠错通道，同时识别强迫共识的误用。",
+      "priorConclusion": "交往理性的机制在于把言语中隐含的可批判主张转化为分类型的理由检验；生活世界使理解成为可能，而金钱与行政权力虽能提高协调效率，却不能替代对事实、规范与公共目的的辩护。",
+      "coreExample": "广场听证会即将表决时，租客代表因开会时间无法到场，工程公司掌握技术材料，主持方不接受修改议程；读者据此检验形式平等、实际参与、反驳机会和后续纠错是否同时存在。",
+      "conclusion": "交往理性最有力的用途不是把现实对话宣布为纯粹共识，而是把任何公共决定置于持续追问之下：谁被排除、什么被预设、哪些理由未获回应、权力如何影响表达，以及决定能否被修正。",
+      "nextQuestion": "当公共讨论越来越由平台排序、专家系统和生成式人工智能中介时，我们应怎样把可见的异议、可追溯的理由与可执行的纠错写进制度？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "系统殖民生活世界", "definition": "金钱和行政权力越过必要的功能边界，取代本应通过理解、信任与公共辩护来协调的生活领域。" },
+        { "term": "话语伦理", "definition": "把受影响者能够作为平等参与者共同检验规范，视为道德规范获得正当性的核心程序取向。" },
+        { "term": "公共领域", "definition": "公民围绕共同事务形成意见、交换理由并把问题传递给政治制度的社会沟通空间。" },
+        { "term": "交往权力", "definition": "公民在自由且公开的意见与意志形成中产生，并可转化为法律与公共决定正当性的力量。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原著坐标、争论与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

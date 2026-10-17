@@ -1,0 +1,90 @@
+/* Hallmark · macrostructure: Long Document · genre: editorial · theme: Studio · tone: philosophical editorial · anchor hue: forum teal · enrichment: Tier-A CSS dialogue rail · nav: N9 · footer: Ft2 · audience: general · use: continuous public learning */
+:root {
+  --color-paper: oklch(97% 0.012 155);
+  --color-paper-2: oklch(93% 0.018 155);
+  --color-paper-3: oklch(89% 0.022 155);
+  --color-ink: oklch(20% 0.025 165);
+  --color-ink-soft: oklch(34% 0.022 165);
+  --color-muted: oklch(47% 0.025 165);
+  --color-rule: oklch(62% 0.025 155);
+  --color-accent: oklch(46% 0.125 165);
+  --color-accent-soft: oklch(83% 0.055 165);
+  --color-focus: oklch(54% 0.19 150);
+  --color-danger: oklch(48% 0.16 28);
+  --color-success: oklch(45% 0.12 155);
+  --color-overlay: oklch(20% 0.025 165 / 0.08);
+
+  --font-display: "Newsreader", "Noto Serif SC", serif;
+  --font-body: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  --font-outlier: "JetBrains Mono", "Noto Sans Mono CJK SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.84rem;
+  --text-base: 1rem;
+  --text-md: 1.22rem;
+  --text-lg: 1.52rem;
+  --text-xl: 1.9rem;
+  --text-2xl: 2.38rem;
+  --text-3xl: 2.98rem;
+  --text-4xl: 3.72rem;
+  --text-display-s: clamp(2.3rem, 6vw, 4.4rem);
+  --text-display: clamp(2.7rem, 7vw, 5.2rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hairline: 1px;
+  --rule-strong: 2px;
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(15% 0.018 165);
+  --color-paper-2: oklch(19% 0.022 165);
+  --color-paper-3: oklch(24% 0.025 165);
+  --color-ink: oklch(94% 0.012 155);
+  --color-ink-soft: oklch(82% 0.018 155);
+  --color-muted: oklch(70% 0.02 155);
+  --color-rule: oklch(55% 0.03 165);
+  --color-accent: oklch(72% 0.105 160);
+  --color-accent-soft: oklch(31% 0.06 165);
+  --color-focus: oklch(77% 0.16 150);
+  --color-danger: oklch(72% 0.13 28);
+  --color-success: oklch(70% 0.105 155);
+  --color-overlay: oklch(5% 0.02 165 / 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(15% 0.018 165);
+    --color-paper-2: oklch(19% 0.022 165);
+    --color-paper-3: oklch(24% 0.025 165);
+    --color-ink: oklch(94% 0.012 155);
+    --color-ink-soft: oklch(82% 0.018 155);
+    --color-muted: oklch(70% 0.02 155);
+    --color-rule: oklch(55% 0.03 165);
+    --color-accent: oklch(72% 0.105 160);
+    --color-accent-soft: oklch(31% 0.06 165);
+    --color-focus: oklch(77% 0.16 150);
+    --color-danger: oklch(72% 0.13 28);
+    --color-success: oklch(70% 0.105 155);
+    --color-overlay: oklch(5% 0.02 165 / 0.28);
+  }
+}

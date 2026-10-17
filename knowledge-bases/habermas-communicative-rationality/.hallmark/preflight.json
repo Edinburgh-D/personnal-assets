@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-17",
+  "framework": "vanilla-html",
+  "fontStack": "per-knowledge-base Google Fonts with local fallbacks",
+  "palette": "per-knowledge-base OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserve": ["static multi-page deployment", "repository home-link contract", "independent knowledge-base assets"]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-17T23:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当一场公共讨论人人都能发言，却仍然无法形成可信决定时，哈贝马斯的交往理性究竟要修复什么？",
+      "readerStateChange": "读前容易把效率、说服和程序发言都算作理性；读后能够区分成功导向与理解导向，判断一项决定是否建立在可质疑、可回应的公共理由上。",
+      "twoSentenceSummary": "页面从一场程序完整却没有让理由真正相遇的社区听证会出发，说明工具理性为何不能独自判断公共目标。它再用策略行动、交往行动、妥协和表决的差别，建立交往理性不是礼貌聊天或强求一致的直觉模型。",
+      "continuityEvidence": "结尾把焦点从有没有麦克风推进到一句陈述包含哪些可追问承诺，直接引出下一页对事实、规范、真诚和理由检验机制的分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reasons-and-validity.html",
+      "centralQuestion": "当事实、规范和个人经验彼此冲突时，一场谈话怎样转变为能够检验理由的话语过程，而不是赢得对手的技巧？",
+      "readerStateChange": "读前能够辨认两种行动取向；读后能够区分真实性、正当性与真诚性争点，并解释反思性讨论、共享背景和非语言协调机制如何连接微观谈话与宏观社会。",
+      "twoSentenceSummary": "页面拆解商户的补偿主张，展示一句话怎样同时提出事实、规范与真诚承诺，并说明争议如何进入集中论证。它继而用生活世界与系统的双层视角，解释市场和行政协调为何必要，以及它们何时会挤压公共辩护。",
+      "continuityEvidence": "页面接住入口页关于可辩护决定的要求，又在结尾明确指出教育、时间、身份和可见性会改变谁显得有道理，从而推出下一页对权力与制度条件的检验。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "power-and-judgment.html",
+      "centralQuestion": "如果真实讨论总被身份差异、资源不平等和议程控制影响，交往理性怎样成为批判现实的尺度，而不是脱离权力的理想图景？",
+      "readerStateChange": "读前知道理由检验会被制度条件扭曲；读后能够用参与、议程、证据、回应、后果与纠错检查公共决定，并识别表面平等、过早共识和理性话语被权力利用的风险。",
+      "twoSentenceSummary": "页面从会议时间、技术材料和不可挑战的议程说明权力如何先于发言运作，再把反事实理想解释为揭示制度自我矛盾的尺度。它结合话语伦理、公共领域、交往权力及女性主义批评，形成既保留理由又保护异议的判断框架。",
+      "continuityEvidence": "本页回应上一页留下的权力疑点，把微观理由检验推进到参与条件和民主制度；结尾再把开放问题迁移到平台排序、专家模型与生成式人工智能中介的公共讨论。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前主要依赖正文概括；读后能够定位两部核心原著、数字公共领域的新近著作、权威百科导读与女性主义批评入口，并沿站内主题继续比较。",
+      "twoSentenceSummary": "参考页分别列出《交往行动理论》《在事实与规范之间》和数字公共领域著作的官方出版页面，并用 SEP、IEP 与 MIT Press 学术资源核对概念。它还说明 Young、Fraser 等批评如何扩展表达形式和多重公共领域，并提供三个站内关联入口。",
+      "continuityEvidence": "该页承接三篇正文中的原著、民主理论和批评线索，为事实核对与延伸比较提供可达来源，不进入叙事 nextPage 链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
