@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "斯多葛哲学",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-18",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先问什么值得在乎",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "斯多葛主义为什么不是压抑情绪的控制术，而是一套关于何为好生活的完整判断？",
+      "readerStateBefore": "读者主要从励志格言、情绪管理或“只管能控制的事”认识斯多葛主义，难以看见这些建议背后的伦理结构。",
+      "readerStateAfter": "读者能够把斯多葛主义理解为逻辑、自然观与伦理相连的生活哲学，并说明它为何把品格而非运气放在好生活的中心。",
+      "priorConclusion": "",
+      "coreExample": "项目负责人林舟在组织重组中突然失去负责已久的项目，又遭遇公开质疑；她既不能命令结果按愿望发生，也不能因此放弃对同事、事实与职责的回应。",
+      "conclusion": "斯多葛主义不是把感受冻结起来，而是重排价值的优先级：外在结果值得认真争取，却不能单独决定一个人是否活得好；真正决定性的，是在现实关系中作出明智、正义、勇敢而节制的选择。",
+      "nextQuestion": "既然外在结果不能单独决定好生活，斯多葛式练习怎样从一个突然出现的判断，经过同意与行动，改变我们对事件的回应？",
+      "nextPage": "practice-of-assent.html",
+      "newTerms": [
+        { "term": "斯多葛主义", "definition": "约公元前300年在雅典形成的哲学传统，主张逻辑、自然研究与伦理实践共同服务于有德性的生活。" },
+        { "term": "美德", "definition": "使判断与行动达到良好状态的品格与实践智慧，而不是顺从礼教或维持体面。" },
+        { "term": "外在事物", "definition": "健康、财富、名声、职位等不完全由人的判断与选择决定的条件。" },
+        { "term": "幸福生活", "definition": "古希腊伦理学所说的整体活得好，不等于一时愉快，也不只指主观满意。" },
+        { "term": "顺应自然", "definition": "依照人的理性与社会性，并在世界因果秩序中行动，而非消极服从眼前强者。" }
+      ]
+    },
+    {
+      "file": "practice-of-assent.html",
+      "title": "在行动之前暂停一拍",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然外在结果不能单独决定好生活，斯多葛式练习怎样从一个突然出现的判断，经过同意与行动，改变我们对事件的回应？",
+      "readerStateBefore": "读者能够把斯多葛主义理解为逻辑、自然观与伦理相连的生活哲学，并说明它为何把品格而非运气放在好生活的中心。",
+      "readerStateAfter": "读者能够用表象、同意、冲动与选择的链条解释斯多葛练习，并把控制之分用于澄清责任而不是逃避结果。",
+      "priorConclusion": "斯多葛主义不是把感受冻结起来，而是重排价值的优先级：外在结果值得认真争取，却不能单独决定一个人是否活得好；真正决定性的，是在现实关系中作出明智、正义、勇敢而节制的选择。",
+      "coreExample": "林舟读到项目取消通知后，先出现“我的能力被彻底否定”的念头；她把事实、解释、价值判断与可采取的行动拆开，再决定如何保护团队并向管理层提出异议。",
+      "conclusion": "斯多葛练习的核心不是命令自己别难过，而是在表象抵达后审查同意，把愿望从支配结果转向改善判断与行动；控制之分由此成为责任地图，而不是退出世界的许可证。",
+      "nextQuestion": "如果斯多葛练习要求接受不可支配的结果，它怎样避免把不义合理化、把受害归咎于个人，或把情绪与求助都误判为软弱？",
+      "nextPage": "judgment-and-limits.html",
+      "newTerms": [
+        { "term": "表象", "definition": "事件在心中最初呈现出的样子，包括感觉、图像与“这意味着什么”的初步印象。" },
+        { "term": "同意", "definition": "心灵接受某个表象所携带判断的活动，例如接受“失去职位等于人生失败”。" },
+        { "term": "冲动", "definition": "判断被接受后指向行动的倾向，不仅是突然情绪，也包括有理由的实践推动。" },
+        { "term": "选择能力", "definition": "爱比克泰德用来强调判断、欲求、拒斥与行动意向这一可由自己负责的核心能力。" },
+        { "term": "控制之分", "definition": "区分取决于自身判断与选择的事项，和不由自身单独决定的事项；它不是把世界切成重要与不重要两半。" }
+      ]
+    },
+    {
+      "file": "judgment-and-limits.html",
+      "title": "坚韧不能替代正义",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["practice-of-assent.html"],
+      "readerQuestion": "如果斯多葛练习要求接受不可支配的结果，它怎样避免把不义合理化、把受害归咎于个人，或把情绪与求助都误判为软弱？",
+      "readerStateBefore": "读者能够用表象、同意、冲动与选择的链条解释斯多葛练习，并把控制之分用于澄清责任而不是逃避结果。",
+      "readerStateAfter": "读者能够区分斯多葛主义、犬儒式忍耐与权力话术，并用正义、角色责任、可行动空间和身心边界判断现代应用。",
+      "priorConclusion": "斯多葛练习的核心不是命令自己别难过，而是在表象抵达后审查同意，把愿望从支配结果转向改善判断与行动；控制之分由此成为责任地图，而不是退出世界的许可证。",
+      "coreExample": "当管理层要求林舟以“接受现实”为由不再追问不透明裁撤时，她既承认无法保证申诉成功，也记录事实、保护受影响同事、使用正式渠道并为失败后的选择预留空间。",
+      "conclusion": "可取的现代斯多葛主义必须同时保留内在判断与公共责任：它帮助人承受行动的不确定性，却不能替权力免除解释、替制度错误卸责，也不能冒充专业的医疗或心理支持。",
+      "nextQuestion": "面对下一次损失、冲突或权力压力，我们能否同时问清事实、守住品格、联合他人，并承认自己需要帮助？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "首要反应", "definition": "尚未经过理性同意便出现的惊吓、脸红、心跳或哀痛波动；古代斯多葛作者并未把它简单算作道德失败。" },
+        { "term": "优先的无差别事物", "definition": "不构成最终善却通常有理由选择的外在条件，例如健康、安全与基本资源。" },
+        { "term": "保留条件", "definition": "行动时认真追求目标，同时承认结果仍受其他原因影响的态度，常被概括为“若无阻碍”。" },
+        { "term": "世界公民观", "definition": "把所有具有理性与社会关系的人看作共同体成员，由此把正义责任扩展到熟人和城邦之外。" },
+        { "term": "适当行动", "definition": "根据角色、关系与具体情势可以给出合理说明的行动，不要求行动者已经成为完美的贤者。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、证据与关联阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.42,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

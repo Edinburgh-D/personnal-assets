@@ -1,0 +1,10 @@
+{
+  "scannedAt": "2026-10-18",
+  "scope": "knowledge-bases/stoic-philosophy",
+  "framework": "vanilla-html",
+  "fontStack": "Noto Serif SC + Noto Sans SC + IBM Plex Mono",
+  "palette": "OKLCH Atelier-derived tokens in tokens.css",
+  "motion": "motion-cut; only direct interaction feedback",
+  "spacing": "4pt semantic scale",
+  "preserved": ["repository publishing contract", "main.html entry convention", "content manifest and review contract"]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-18T22:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "斯多葛主义为什么不是压抑情绪的控制术，而是一套关于何为好生活的完整判断？",
+      "readerStateChange": "读前主要把斯多葛主义视为抗压格言；读后能够从美德、外在事物、幸福生活与社会责任的关系，说明控制之分为何只是完整伦理的后果。",
+      "twoSentenceSummary": "页面从项目负责人林舟遭遇重组的处境切入，把流行的控制口号还原为逻辑、自然研究与伦理相连的体系。它说明外在结果值得争取但不独占善恶评价，并把接受事实与批准事实清楚分开。",
+      "continuityEvidence": "结尾指出价值排序必须进入心灵的具体过程，并用林舟最初的自我否定念头直接引出下一页对表象、同意与行动链的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "practice-of-assent.html",
+      "centralQuestion": "既然外在结果不能单独决定好生活，斯多葛式练习怎样从一个突然出现的判断，经过同意与行动，改变我们对事件的回应？",
+      "readerStateChange": "读前只理解品格应优先于运气；读后能够拆分事件、表象、同意、冲动与行动，并把控制之分用作分层责任地图而非二元控制圈。",
+      "twoSentenceSummary": "页面跟随林舟读到取消通知后的判断过程，解释最初呈现如何经由认可而推动行动。它再用四步流程、预想困难与晚间回顾说明练习方法，并以共同体责任限制个人化的逃避解释。",
+      "continuityEvidence": "本页接住入口页的价值结论，把它转化为可分析的判断机制；结尾主动暴露权力者和受伤者都可能误用控制语言，推出下一页的正义与求助边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment-and-limits.html",
+      "centralQuestion": "如果斯多葛练习要求接受不可支配的结果，它怎样避免把不义合理化、把受害归咎于个人，或把情绪与求助都误判为软弱？",
+      "readerStateChange": "读前能够解释斯多葛判断练习；读后能够用情绪层次、外在条件、角色责任、位置差异和健康边界，识别坚韧语言何时支持行动、何时服务权力。",
+      "twoSentenceSummary": "页面说明首要反应并非道德失败，外在条件仍有选择理由，接受因果也不等于服从组织权力。它把个人练习放回角色与共同体，区分哲学反思和现代心理治疗，并提供事实、品格、共同行动与求助四项检验。",
+      "continuityEvidence": "本页回应机制页留下的误用风险，以同一组织案例检验申诉、合作、退出与专业求助，最后留下如何同时守住判断并改变外部条件的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前依赖正文转述；读后能够区分早期残篇、罗马时期完整文本、现代学术重建与健康机构指引，并沿链接核对具体主张。",
+      "twoSentenceSummary": "来源页解释早期斯多葛文献散佚与后期作者各有写作目的，避免把公版译文或单句格言当作全学派定论。它列出 Perseus、SEP、IEP、MIT、芝加哥大学出版社、APA 与 WHO 材料，并提供三条真实站内关联路径。",
+      "continuityEvidence": "该页为前三页的历史、概念、原典定位与健康边界提供可达证据，同时明确站内比较材料只用于迁移检验，不另行延伸叙事链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
