@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-19T18:40:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "奈飞文化手册究竟是一组引人注目的口号，还是一套相互配合的管理系统？",
+      "readerStateChange": "读前容易把奈飞文化缩成自由或淘汰的口号；读后能区分二〇〇九年与二〇二四年文本，并用人才、信息、决定和反馈的组合解释它。",
+      "twoSentenceSummary": "页面先澄清文化幻灯片与现行文化备忘录的版本关系，再把四项原则还原为相互依赖的组织制度。《北岸来信》案例显示自由必须由共享信息、清楚责任和复盘托住。",
+      "continuityEvidence": "结尾把人才、情境、异议、责任与学习概括成一个待拆解的回路，直接引出下一页对日常运行机制的分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "这套制度组合如何把信息、异议、授权与人才决策连接成日常工作的运行回路？",
+      "readerStateChange": "读前只知道制度由多个部分组成；读后能复述给情境、找异议、负责人拍板、共同执行和事后复盘的闭环，并看见留任者测试带来的压力。",
+      "twoSentenceSummary": "页面沿《北岸来信》的立项过程说明情境而非控制、知情负责人和主动征求异议怎样协同。随后把反馈、复盘、薪酬与留任者测试纳入同一回路，说明授权不会减少管理劳动。",
+      "continuityEvidence": "最后将创意立项、支付合规和新人团队并置，明确提出同一授权程度在不同风险环境中可能产生相反结果，从而导向迁移边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "当组织想借鉴这条回路时，哪些条件决定它会释放判断力，哪些条件会让它变成失控或恐惧？",
+      "readerStateChange": "读前能解释奈飞式授权的机制；读后能按任务不确定性、决定可逆性、心理安全、法规边界和信息基础选择授权与流程，并设计小范围试验。",
+      "twoSentenceSummary": "页面用创意、合规与新人三种环境比较授权边界，并以心理安全研究解释异议为何不能只靠勇气。结尾把借鉴方式收束为低风险试验：先给信息与护栏，再指定负责人、征求异议并复盘。",
+      "continuityEvidence": "页面承接上一页的运行回路逐项检验其外部条件，并以一项低风险可逆决定作为开放的迁移问题结束完整学习弧。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "本文的事实、解释与判断分别依据哪些来源？",
+      "readerStateChange": "读前只能看到正文中的来源链接；读后能区分奈飞公司自述、历史版本、同行评审研究、组织内部研究与本文分析，并理解各自能证明什么。",
+      "twoSentenceSummary": "页面列出奈飞现行文化备忘录、二〇二四年版本说明、二〇〇九年原始幻灯片及两组组织研究。每项材料都注明用途与限制，并集中说明缺少内部数据和代表性员工经验的证据边界。",
+      "continuityEvidence": "参考页从前三页实际使用的公司主张与研究概念出发逐项落到原始链接，并把读者带回制度地图继续核对。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

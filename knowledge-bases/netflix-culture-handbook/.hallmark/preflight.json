@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-19",
+  "framework": "vanilla HTML",
+  "fontStack": "repository pages commonly use Noto Sans SC and Noto Serif SC",
+  "palette": "repository root uses OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": [
+    "OKLCH token discipline",
+    "responsive static HTML",
+    "Chinese reading-first typography"
+  ]
+}

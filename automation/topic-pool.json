@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-19",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4054,6 +4054,13 @@
       "generatedAt": "2026-10-18",
       "slug": "stoic-philosophy",
       "entry": "knowledge-bases/stoic-philosophy/main.html"
+    },
+    {
+      "name": "奈飞文化手册",
+      "domain": "商业/管理",
+      "generatedAt": "2026-10-19",
+      "slug": "netflix-culture-handbook",
+      "entry": "knowledge-bases/netflix-culture-handbook/main.html"
     }
   ],
   "skipped": []

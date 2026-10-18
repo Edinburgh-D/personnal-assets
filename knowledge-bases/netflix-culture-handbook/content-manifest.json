@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "奈飞文化手册",
+  "type": "single-subject",
+  "depthLevel": "公众导读",
+  "createdAt": "2026-10-19",
+  "audience": "general",
+  "entry": "main.html",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "只听过自由、责任与高绩效等口号，容易把奈飞文化理解成宽松福利或强硬淘汰的简单组合。",
+      "readerStateAfter": "能把奈飞文化视为一套为高不确定性工作设计的管理系统，并区分二〇〇九年文化幻灯片与二〇二四年现行文化备忘录。",
+      "readerQuestion": "奈飞文化手册究竟是一组引人注目的口号，还是一套相互配合的管理系统？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "虚构的流媒体团队准备在预算受限、市场反馈不明的条件下决定是否开发一部面向多地区观众的新剧《北岸来信》。",
+      "newTerms": [
+        {
+          "term": "人才密度",
+          "definition": "团队中能够独立作出高质量判断并与他人有效协作的人所占比例。"
+        },
+        {
+          "term": "制度互补",
+          "definition": "一项管理做法必须由其他做法支撑，组合起来才可能产生预期效果。"
+        }
+      ],
+      "conclusion": "奈飞文化不是把自由、坦率或绩效单独推到极端，而是用高人才密度、广泛信息、明确责任与持续反馈组成一套制度组合。",
+      "nextQuestion": "这套制度组合如何把信息、异议、授权与人才决策连接成日常工作的运行回路？",
+      "nextPage": "mechanism.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "mechanism.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能把奈飞文化视为一套为高不确定性工作设计的管理系统，并区分二〇〇九年文化幻灯片与二〇二四年现行文化备忘录。",
+      "readerStateAfter": "能解释人才密度、情境共享、决策授权、公开异议与事后复盘如何互相约束，并识别自由背后的管理劳动。",
+      "readerQuestion": "这套制度组合如何把信息、异议、授权与人才决策连接成日常工作的运行回路？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "奈飞文化不是把自由、坦率或绩效单独推到极端，而是用高人才密度、广泛信息、明确责任与持续反馈组成一套制度组合。",
+      "coreExample": "《北岸来信》项目由内容负责人担任决策负责人，在财务、市场与地区团队提出异议后作出是否立项的决定，并在上线结果出现后公开复盘。",
+      "newTerms": [
+        {
+          "term": "情境而非控制",
+          "definition": "管理者提供目标、约束和信息，让最接近问题的人判断，而不是逐项下达命令。"
+        },
+        {
+          "term": "知情负责人",
+          "definition": "在充分收集专业意见后，对一项重要决定拥有最终判断权并承担结果责任的人。"
+        },
+        {
+          "term": "主动征求异议",
+          "definition": "决策者有意识地寻找反对意见和遗漏信息，而不是等待别人冒险反驳。"
+        },
+        {
+          "term": "留任者测试",
+          "definition": "管理者反问自己是否会积极争取某位员工留下，以检验岗位与人员是否仍然匹配。"
+        }
+      ],
+      "conclusion": "奈飞式授权依赖一条完整回路：管理者给足情境，知情负责人主动征求异议后拍板，团队执行并用结果复盘，而人才与规则系统守住回路的能力和边界。",
+      "nextQuestion": "当组织想借鉴这条回路时，哪些条件决定它会释放判断力，哪些条件会让它变成失控或恐惧？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能解释人才密度、情境共享、决策授权、公开异议与事后复盘如何互相约束，并识别自由背后的管理劳动。",
+      "readerStateAfter": "能依据任务不确定性、信息透明度、心理安全、责任边界与法规要求判断哪些奈飞做法可以迁移，以及应当如何小范围试验。",
+      "readerQuestion": "当组织想借鉴这条回路时，哪些条件决定它会释放判断力，哪些条件会让它变成失控或恐惧？",
+      "dependsOn": [
+        "mechanism.html"
+      ],
+      "priorConclusion": "奈飞式授权依赖一条完整回路：管理者给足情境，知情负责人主动征求异议后拍板，团队执行并用结果复盘，而人才与规则系统守住回路的能力和边界。",
+      "coreExample": "《北岸来信》的立项回路分别被放入创意项目、支付合规系统和新人团队三种环境中，比较同一套做法为何需要不同程度的授权与流程。",
+      "newTerms": [
+        {
+          "term": "心理安全",
+          "definition": "团队成员相信提出疑问、承认错误或表达不同意见不会遭到羞辱或报复的共同感受。"
+        },
+        {
+          "term": "可逆决策",
+          "definition": "代价可控、能够撤回或通过后续调整修正的决定。"
+        },
+        {
+          "term": "最小必要流程",
+          "definition": "只保留用于安全、合规、协调和学习的必要规则，并定期检查其是否仍有作用。"
+        }
+      ],
+      "conclusion": "奈飞文化最值得迁移的不是少规则或高淘汰，而是根据风险设计决策权、让信息和异议真正流动，并用最小必要流程保护人和组织。",
+      "nextQuestion": "在自己的团队里，哪一项低风险且可逆的决定最适合先检验信息、授权与复盘能否形成闭环？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "已完成三页叙事路径，希望核对原始文本、研究证据与本文推论边界。",
+      "readerStateAfter": "能够区分奈飞自述、公开历史材料、组织研究与本文分析，并继续查证具体主张。",
+      "readerQuestion": "本文的事实、解释与判断分别依据哪些来源？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "以二〇二四年奈飞文化备忘录的四项原则与二〇〇九年原始文化幻灯片对照版本演变。",
+      "newTerms": [],
+      "conclusion": "一手材料能说明奈飞如何描述自己，组织研究能提供比较框架，但两者都不能单独证明这套文化适合所有组织。",
+      "nextQuestion": "后续版本、员工经验或独立研究会如何改变对这套制度的判断？",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
