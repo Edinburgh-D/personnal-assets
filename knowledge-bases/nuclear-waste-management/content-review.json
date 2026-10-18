@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-19T18:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "核废料究竟包含哪些不同的材料，为什么不能把它们都当成同一种危险物来处理？",
+      "readerStateChange": "读前把核废料视为同一种长期危险物；读后能按活度、寿命、发热与形态区分废物流，并分清贮存和处置。",
+      "twoSentenceSummary": "本页从医疗、运行、退役与乏燃料等来源说明核废料并非单一材料。随后沿一组乏燃料的去向，解释分类、冷却、后处理选择以及贮存与处置的责任差异。",
+      "continuityEvidence": "结尾把材料分类推进到具体安全功能，明确提出下一页要解释冷却、屏蔽、包容与核素迁移如何由不同屏障承担。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "containment-and-disposal.html",
+      "centralQuestion": "既然不同废物流需要不同终点，工程系统怎样把热、辐射和核素迁移逐层拦住，并在很长时间里保持安全？",
+      "readerStateChange": "读前只会按废物类别区分终点；读后能用热管理、屏蔽、包容和延缓迁移解释不同设施与屏障的分工。",
+      "twoSentenceSummary": "本页沿乏燃料从水池、干式系统到深地质处置的路径，拆解各阶段的安全功能。剖面图与正文说明容器、缓冲层、回填物和岩体会随时间接力，而不是依赖永不失效的单一屏障。",
+      "continuityEvidence": "页面末段明确区分通用处置概念与具体项目证明，并把场址证据、失效情景、独立监管和长期责任交给下一页检验。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judging-a-plan.html",
+      "centralQuestion": "多重屏障能够降低风险，却不能自动证明一个具体项目值得信任；公众应怎样检验场址、证据、治理与长期承诺？",
+      "readerStateChange": "读前能解释多重屏障的工程机制；读后能检查安全论证、暴露路径、监管独立性、资金责任、参与程序和可取回安排。",
+      "twoSentenceSummary": "本页把安全承诺拆成可复核的情景、模型、源—路径—受体和纵深防御证据，并补充健康风险的剂量边界。芬兰案例进一步区分运营方进展、监管评估与政府许可，避免把计划或里程碑写成已投运事实。",
+      "continuityEvidence": "作为叙事链末页，本页把判断方法迁移到新反应堆、后处理路线和气候条件，并留下重新检查废物流与场址前提的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "如何核对本文使用的安全标准、健康边界与项目状态？",
+      "readerStateChange": "读前知道文中引用了多类机构；读后能区分国际标准、健康评估、国家监管与项目运营方材料的证据角色。",
+      "twoSentenceSummary": "来源页按分类与处置、贮存与健康、芬兰项目状态三组列出权威一手入口。页面同时说明资料更新边界，并要求用政府和监管决定核对快速变化的许可状态。",
+      "continuityEvidence": "来源页承接前三页的关键主张，为分类、屏障、健康与许可状态提供逐类核对路径，并链接回判断页和起点。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

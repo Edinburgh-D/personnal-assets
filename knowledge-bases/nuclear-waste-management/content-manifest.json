@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "核废料处理",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "公众导读",
+  "createdAt": "2026-10-19",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先看清我们在处理什么",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "核废料究竟包含哪些不同的材料，为什么不能把它们都当成同一种危险物来处理？",
+      "readerStateBefore": "读者主要把核废料想成少量会长期发光的危险桶，难以区分来源、活度、寿命与最终去向。",
+      "readerStateAfter": "读者能够按放射性强度、寿命、发热和材料形态区分废物流，并理解贮存与处置承担不同任务。",
+      "priorConclusion": "",
+      "coreExample": "一组从压水堆卸出的乏燃料组件，先进入水池冷却，再面临继续贮存、后处理或最终处置的选择。",
+      "conclusion": "核废料不是单一物质，而是一组危险强度、持续时间和物理形态各异的废物流；处理方案必须让材料特性与隔离深度、时间和监管责任相匹配。",
+      "nextQuestion": "既然不同废物流需要不同终点，工程系统怎样把热、辐射和核素迁移逐层拦住，并在很长时间里保持安全？",
+      "nextPage": "containment-and-disposal.html",
+      "newTerms": [
+        {
+          "term": "放射性废物",
+          "definition": "不再计划利用、又因所含放射性核素而需要受控管理的材料。"
+        },
+        {
+          "term": "乏燃料",
+          "definition": "从反应堆卸出、已不能按原计划高效发电，但仍会放出热量和强辐射的核燃料组件。"
+        },
+        {
+          "term": "半衰期",
+          "definition": "某种放射性核素的活度因自然衰变降到一半所需的时间。"
+        },
+        {
+          "term": "贮存",
+          "definition": "在计划未来取回材料的前提下，对废物或乏燃料进行受控保管。"
+        },
+        {
+          "term": "处置",
+          "definition": "把废物置于专门设施中，设计上不以未来取回为目的的最终管理步骤。"
+        }
+      ]
+    },
+    {
+      "file": "containment-and-disposal.html",
+      "title": "屏障如何接力",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [
+        "main.html"
+      ],
+      "readerQuestion": "既然不同废物流需要不同终点，工程系统怎样把热、辐射和核素迁移逐层拦住，并在很长时间里保持安全？",
+      "readerStateBefore": "读者能够按放射性强度、寿命、发热和材料形态区分废物流，并理解贮存与处置承担不同任务。",
+      "readerStateAfter": "读者能够用热管理、屏蔽、包容和延缓迁移四项功能解释水池、干式贮存、近地表设施与深地质处置如何分工。",
+      "priorConclusion": "核废料不是单一物质，而是一组危险强度、持续时间和物理形态各异的废物流；处理方案必须让材料特性与隔离深度、时间和监管责任相匹配。",
+      "coreExample": "同一组乏燃料从水池转入干式贮存，最终装入耐腐蚀容器并置于深部岩体，让人工与天然屏障依次承担安全功能。",
+      "conclusion": "可靠的核废料管理不依赖一只永不失效的容器，而是让冷却、屏蔽、包容、缓冲和地质隔离在不同阶段接力，并用被动安全减少对持续操作的依赖。",
+      "nextQuestion": "多重屏障能够降低风险，却不能自动证明一个具体项目值得信任；公众应怎样检验场址、证据、治理与长期承诺？",
+      "nextPage": "judging-a-plan.html",
+      "newTerms": [
+        {
+          "term": "衰变热",
+          "definition": "反应堆停堆或燃料卸出后，放射性核素继续衰变而产生的热量。"
+        },
+        {
+          "term": "多重屏障",
+          "definition": "由废物形态、容器、缓冲材料和地质环境等彼此补充的隔离层共同提供安全。"
+        },
+        {
+          "term": "干式贮存",
+          "definition": "将已充分冷却的乏燃料密封在充有惰性气体的金属容器中，并用钢或混凝土提供屏蔽的贮存方式。"
+        },
+        {
+          "term": "深地质处置库",
+          "definition": "把长寿命或高放废物置于地下深部稳定地层，并依靠工程与天然屏障长期隔离的设施。"
+        }
+      ]
+    },
+    {
+      "file": "judging-a-plan.html",
+      "title": "把安全承诺拆成可检查的问题",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [
+        "containment-and-disposal.html"
+      ],
+      "readerQuestion": "多重屏障能够降低风险，却不能自动证明一个具体项目值得信任；公众应怎样检验场址、证据、治理与长期承诺？",
+      "readerStateBefore": "读者能够用热管理、屏蔽、包容和延缓迁移四项功能解释水池、干式贮存、近地表设施与深地质处置如何分工。",
+      "readerStateAfter": "读者能够区分工程概念与具体安全论证，检查场址证据、失效情景、独立监管、资金责任、公众参与和可逆性安排。",
+      "priorConclusion": "可靠的核废料管理不依赖一只永不失效的容器，而是让冷却、屏蔽、包容、缓冲和地质隔离在不同阶段接力，并用被动安全减少对持续操作的依赖。",
+      "coreExample": "以芬兰奥尔基洛托处置项目的许可进程为例，区分运营方的工程进展、监管机构的安全评估与政府最终许可决定。",
+      "conclusion": "判断核废料方案是否负责，关键不是寻找零风险口号，而是确认风险路径被系统识别、证据可复核、责任和资金跨代延续，并允许新信息在封闭前改变决策。",
+      "nextQuestion": "当新的反应堆类型、后处理路线或气候条件改变废物流与场址假设时，现有安全论证需要重新检查哪些前提？",
+      "nextPage": null,
+      "newTerms": [
+        {
+          "term": "安全论证",
+          "definition": "汇集场址资料、设计依据、模型、情景分析和管理证据，用来说明设施在运营期与关闭后为何足够安全的成套论证。"
+        },
+        {
+          "term": "源—路径—受体",
+          "definition": "把风险拆成放射性来源、迁移通道和可能受到暴露的人或生态系统三部分的分析框架。"
+        },
+        {
+          "term": "纵深防御",
+          "definition": "设置多层独立或相互补充的预防、控制和缓解措施，避免单点失效直接演变成严重后果。"
+        },
+        {
+          "term": "可取回性",
+          "definition": "在处置设施关闭前或特定阶段，保留用计划性操作取回废物包的可能性。"
+        }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与核对说明",
+      "role": "reference",
+      "stage": "transfer",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [
+        "main.html",
+        "containment-and-disposal.html",
+        "judging-a-plan.html"
+      ],
+      "readerQuestion": "如何核对本文使用的安全标准、健康边界与项目状态？",
+      "readerStateBefore": "读者已理解核废料管理的主要机制与判断框架，希望回到一手材料核对细节。",
+      "readerStateAfter": "读者能够按标准、健康证据、监管资料和项目状态四类来源继续查证。",
+      "priorConclusion": "",
+      "coreExample": "把同一项处置主张分别与国际安全标准、国家监管资料和项目运营方状态更新交叉核对。",
+      "conclusion": "来源页提供继续核对的入口，并标明不同机构在标准制定、健康评估、监管与项目实施中的角色。",
+      "nextQuestion": "后续更新是否改变了本文关于安全标准、健康证据或许可状态的描述？",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}
