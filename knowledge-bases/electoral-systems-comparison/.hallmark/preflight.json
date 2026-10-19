@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-20",
+  "framework": "vanilla HTML",
+  "fontStack": "new local token pairing",
+  "palette": "new OKLCH legal-almanac palette",
+  "motion": "motion-cut except functional menu state",
+  "spacing": "4pt semantic scale"
+}

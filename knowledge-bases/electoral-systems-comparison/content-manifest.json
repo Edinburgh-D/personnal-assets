@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "选举制度比较",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-20",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "同一批选票，不同的议会",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "为什么同一批选民的偏好，经过不同选举规则后，会形成差异很大的议会？",
+      "readerStateBefore": "读者容易把选举制度理解为投票动作或国家标签，并把席位结果直接等同于公众支持比例。",
+      "readerStateAfter": "读者能够用选票结构、选区规模和选举公式组成的转换链解释选票为何不会自动等比例变成席位。",
+      "priorConclusion": "",
+      "coreExample": "虚构的100席河湾共和国中，五个政党分别获得36%、28%、18%、12%和6%的全国选票；后续持续观察相同偏好如何被不同规则转换。",
+      "conclusion": "选举结果不是选民偏好的透明复印件，而是选票结构、选区规模、边界与选举公式共同加工出的制度产物。",
+      "nextQuestion": "如果制度是一台转换器，相对多数、两轮、名单比例、可转移单票与混合制分别怎样处理同一批选票？",
+      "nextPage": "mechanisms.html",
+      "newTerms": [
+        { "term": "选举制度", "definition": "把选民表达的选择转换为公职或议会席位的一整套规则，而不只是投票日的动作。" },
+        { "term": "选票结构", "definition": "选民在选票上可以表达什么，例如选一个人、选一个政党，或给多名候选人排序。" },
+        { "term": "选区", "definition": "为选举代表而划定的地理或政治单位，选民与候选人先在这里被分组。" },
+        { "term": "选区规模", "definition": "一个选区一次选出多少名代表；一席与多席会显著改变小党获得代表的机会。" },
+        { "term": "选举公式", "definition": "计票后判定谁当选或各党分得多少席位的数学与程序规则。" }
+      ]
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "四类转换器怎样工作",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.48,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果制度是一台转换器，相对多数、两轮、名单比例、可转移单票与混合制分别怎样处理同一批选票？",
+      "readerStateBefore": "读者能够用选票结构、选区规模和选举公式组成的转换链解释选票为何不会自动等比例变成席位。",
+      "readerStateAfter": "读者能够沿着选票表达、选区规模、胜负门槛和席位补偿四个环节复述主要制度家族的运作差异。",
+      "priorConclusion": "选举结果不是选民偏好的透明复印件，而是选票结构、选区规模、边界与选举公式共同加工出的制度产物。",
+      "coreExample": "把河湾共和国的五党选票依次放入100个单席选区、全国单一名单、多席排序选区以及50席选区加50席补偿名单，比较能算出的结果与仍缺少的信息。",
+      "conclusion": "制度家族真正的分界不在名称，而在席位是逐区授予、按总票分配、随偏好转移，还是用名单席位补偿选区结果。",
+      "nextQuestion": "既然每种转换器都放大一些价值并压低另一些价值，我们怎样比较制度而不把某个指标误当成唯一答案？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "相对多数制", "definition": "在单席选区中由得票多于任何对手的候选人胜出，不要求超过全部有效票的一半。" },
+        { "term": "两轮制", "definition": "第一轮未满足法定当选条件时举行第二轮，让选民在缩小或重新组合的候选范围中再作选择。" },
+        { "term": "名单比例代表制", "definition": "选民主要对政党名单投票，再按各名单票数和规定公式分配多席选区或全国席位。" },
+        { "term": "可转移单票制", "definition": "选民给候选人排序，达到配额者当选，多余票与落选者的票按后续偏好转移。" },
+        { "term": "混合成员比例制", "definition": "同时选出地方议员与名单议员，并用名单席位补偿地方席位造成的党派比例偏差。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "没有脱离目标的最佳制度",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["mechanisms.html"],
+      "readerQuestion": "既然每种转换器都放大一些价值并压低另一些价值，我们怎样比较制度而不把某个指标误当成唯一答案？",
+      "readerStateBefore": "读者能够沿着选票表达、选区规模、胜负门槛和席位补偿四个环节复述主要制度家族的运作差异。",
+      "readerStateAfter": "读者能够先辨认改革目标，再检查规则组合、行为反应、行政条件和过渡安排，并对制度优劣作有条件的判断。",
+      "priorConclusion": "制度家族真正的分界不在名称，而在席位是逐区授予、按总票分配、随偏好转移，还是用名单席位补偿选区结果。",
+      "coreExample": "河湾共和国出现三项改革主张：改用全国名单以提高比例性，改用排序选票以扩大候选人选择，再加入地方席位维持地域联系；逐项检查目标、代价和缺失规则。",
+      "conclusion": "可靠的制度比较必须把价值目标、完整规则、参与者反应与实施能力放在一起，并说明结论在什么条件下会改变。",
+      "nextQuestion": "面对下一项选制改革新闻，你能否先找出它改动了哪一环、帮助了谁、把什么代价转移给了谁，以及证据如何推翻原判断？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "比例性", "definition": "政党所得席位份额与其选票份额接近的程度，它是连续尺度，不是简单的有或没有。" },
+        { "term": "选举门槛", "definition": "政党或候选人获得席位前必须达到的最低支持条件，可以写进法律，也可能由选区规模实际形成。" },
+        { "term": "策略投票", "definition": "选民不只表达第一偏好，还根据胜算、门槛或第二选择调整投票，以避免更不想要的结果。" },
+        { "term": "选区划分", "definition": "决定选区边界与席位分配的过程；人口差异、边界标准和审议程序都会影响代表结果。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、时效与阅读边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>四类转换器怎样工作｜选举制度比较</title>
+  <meta name="description" content="比较相对多数、两轮、名单比例、可转移单票和混合成员比例制怎样把选票转换为席位。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;900&amp;display=swap" rel="stylesheet">
+  <script>if (localStorage.getItem('kb_darkMode') === 'true') document.documentElement.dataset.theme = 'dark';</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库主导航">
+    <a class="site-rail__wordmark" href="main.html">选制比较</a>
+    <ul>
+      <li><a href="main.html" aria-label="第一章：转换直觉">一</a></li>
+      <li><a href="mechanisms.html" aria-current="page" aria-label="第二章：制度机制">二</a></li>
+      <li><a href="judgment.html" aria-label="第三章：比较判断">三</a></li>
+      <li><a href="sources.html" aria-label="来源与边界">源</a></li>
+    </ul>
+    <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label="切换到深色模式">夜</button>
+    <a class="rail-home" href="../../index.html" data-site-home>Personal Assets</a>
+  </nav>
+  <header class="mobile-bar">
+    <a class="mobile-bar__title" href="main.html">选举制度比较</a>
+    <div class="mobile-bar__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label="切换到深色模式">夜</button>
+      <button class="nav-menu-btn icon-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="移动端目录" hidden>
+    <ul>
+      <li><a href="main.html">转换直觉</a></li>
+      <li><a href="mechanisms.html" aria-current="page">制度机制</a></li>
+      <li><a href="judgment.html">比较判断</a></li>
+      <li><a href="sources.html">来源边界</a></li>
+      <li><a href="../../index.html">Personal Assets</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">选举结果不是选民偏好的透明复印件，而是选票结构、选区规模、边界与选举公式共同加工出的制度产物。</template>
+    <template data-narrative="question">如果制度是一台转换器，相对多数、两轮、名单比例、可转移单票与混合制分别怎样处理同一批选票？</template>
+    <template data-narrative="example">把河湾共和国的五党选票依次放入100个单席选区、全国单一名单、多席排序选区以及50席选区加50席补偿名单，比较能算出的结果与仍缺少的信息。</template>
+    <template data-narrative="conclusion">制度家族真正的分界不在名称，而在席位是逐区授予、按总票分配、随偏好转移，还是用名单席位补偿选区结果。</template>
+    <template data-narrative="next-question">既然每种转换器都放大一些价值并压低另一些价值，我们怎样比较制度而不把某个指标误当成唯一答案？</template>
+
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="main.html">选制比较</a><span aria-hidden="true">/</span><span>制度机制</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>四类转换器怎样工作</h1>
+        <p class="hero__lede">相同的36、28、18、12、6，不会自动告诉我们席位。先看制度把胜负放在哪一层，再看败选票、剩余票与名单席位有没有第二条路。</p>
+      </div>
+      <div class="seat-ledger" aria-label="河湾共和国教学演算摘要">
+        <div class="seat-row"><strong>全国首选票</strong><div class="seat-row__bar" aria-label="甲36乙28丙18丁12戊6"><span class="party-a w36"></span><span class="party-b w28"></span><span class="party-c w18"></span><span class="party-d w12"></span><span class="party-e w6"></span></div></div>
+        <div class="seat-row"><strong>逐区胜负</strong><div class="seat-row__bar" aria-label="甲60乙40"><span class="party-a w60"></span><span class="party-b w40"></span></div></div>
+        <div class="seat-row"><strong>全国比例</strong><div class="seat-row__bar" aria-label="甲36乙28丙18丁12戊6"><span class="party-a w36"></span><span class="party-b w28"></span><span class="party-c w18"></span><span class="party-d w12"></span><span class="party-e w6"></span></div></div>
+      </div>
+    </header>
+
+    <article class="system-ledger">
+      <section class="system-entry">
+        <div>
+          <span class="system-entry__label">逐区授予</span>
+          <h2>一个选区，一个胜者</h2>
+          <p><dfn data-term="相对多数制">相对多数制</dfn>在单席选区中把席位交给票数多于任何对手的候选人，不要求超过全部有效票的一半。英国议会下院选举就是这一逻辑：选民在本选区勾选一名候选人，得票最多者当选。<a class="source-mark" href="sources.html#uk-fptp" aria-label="查看英国选举委员会来源">[4]</a></p>
+          <p>河湾共和国的六类甲党领先地区各给甲党一个席位，四类乙党领先地区各给乙党一个席位。重复十次后形成60比40。丙、丁、戊不是没有支持者，而是没有在任何一个单席选区成为第一。制度奖励的是“在多少个地方领先”，不是“全国共有多少支持”。</p>
+          <p>这类规则容易提供清楚的地域代表，也让选民知道谁是本区胜者。代价是席位对支持分布很敏感。一次小幅摆动可能翻转整个选区，而已经大胜地区的新增票并不会再增加席位。全国票席关系因此可能出现明显偏差。</p>
+          <p>候选人与政党的关系也会影响问责。选民表面上选择个人，但多数候选人依靠政党提名、资源和共同纲领。一个地方代表是否真正独立回应选区，不能从单席规则本身推出，还要观察党纪、初选或提名程序与议会运作。</p>
+        </div>
+        <dl>
+          <dt>选民表达</dt><dd>通常选择一名候选人</dd>
+          <dt>决定性层级</dt><dd>每个单席选区</dd>
+          <dt>无法从全国票推知</dt><dd>各党赢了多少区</dd>
+        </dl>
+      </section>
+
+      <section class="system-entry">
+        <div>
+          <span class="system-entry__label">再给一次选择</span>
+          <h2>过半要求改变联盟时点</h2>
+          <p><dfn data-term="两轮制">两轮制</dfn>在第一轮无人满足法定条件时举行第二轮。第二轮可能只允许领先者进入，也可能允许达到一定门槛的多人继续竞争。它仍常在单席选区授予席位，但把政党协调与选民重新选择放到两次投票之间。</p>
+          <p>在河湾共和国那六类甲党领先地区，甲党第一轮40%，并未过半。谁能在第二轮获胜，要看哪些候选人进入、落选政党是否背书、丙丁戊选民如何重新选择，以及有没有人弃权。仅凭全国36、28、18、12、6，连第二轮对阵都不能完整确定。</p>
+          <p>两轮安排可以让最终胜者获得更广的当轮支持，却不能自动把全国席位变得更接近全国票数。它也不会消除策略行为，只是把一部分协调显性地放在轮次之间。第一轮可以表达偏好，第二轮更像在剩余方案中决定可接受者。</p>
+          <p>轮次之间还可能发生新的信息与动员。落选者的背书并不能把支持者整齐搬给另一人，候选人的辩论表现与联盟条件也会改变选择。把第二轮票数简单视为第一轮各阵营相加，会把政治判断误写成算术。</p>
+        </div>
+        <dl>
+          <dt>选民表达</dt><dd>分两次作出选择</dd>
+          <dt>决定性层级</dt><dd>单席选区的最终轮</dd>
+          <dt>额外所需信息</dt><dd>晋级规则与第二轮流向</dd>
+        </dl>
+      </section>
+
+      <section class="system-entry">
+        <div>
+          <span class="system-entry__label">按票分席</span>
+          <h2>多席让份额进入议会</h2>
+          <p><dfn data-term="名单比例代表制">名单比例代表制</dfn>让选民主要对政党名单投票，再以除数法或最大余额法分配多个席位。名单可以覆盖全国，也可以分为多个地区；还可以封闭顺序，或允许选民影响具体候选人。名称相同，不代表候选人选择权与地方联系相同。</p>
+          <p>若河湾共和国全国就是一个100席选区，没有额外门槛，五党票数又恰好对应整数，那么36、28、18、12、6可直接成为席位数。现实中整数分配需要公式。欧洲议会的资料说明，D’Hondt法把各名单票数依次除以1、2、3等，再按最高商数逐席分配；与其他方法相比，它通常对大名单稍有利。<a class="source-mark" href="sources.html#ep-dhondt" aria-label="查看欧洲议会来源">[5]</a></p>
+          <p>比例制的效果还受选区规模与门槛影响。三席小选区即使名为比例制，也很难容纳许多小党；全国大选区则可能让较小支持也进入议会。门槛能减少碎片化，却同时把门槛下选票排除在席位分配之外。因此“采用比例制”只是句子开头。</p>
+          <p>名单类型又决定席位中的“谁”。封闭名单由政党预先决定候选人顺序，选民主要影响各党有几席；开放名单允许选民在党内表达偏好。前者让政党更能配置团队，后者把更多选择交给选民，也可能加剧同党候选人的个人竞争。</p>
+        </div>
+        <dl>
+          <dt>选民表达</dt><dd>选择名单，部分制度还能选人</dd>
+          <dt>决定性层级</dt><dd>多席选区或全国</dd>
+          <dt>必须继续追问</dt><dd>公式、门槛、名单与席次</dd>
+        </dl>
+      </section>
+
+      <section class="system-entry">
+        <div>
+          <span class="system-entry__label">偏好随票移动</span>
+          <h2>排序不只决定第一名</h2>
+          <p><dfn data-term="可转移单票制">可转移单票制</dfn>在多席选区中让选民给候选人排序。达到配额者当选，其超过配额的票按后续偏好转移；得票最低者被淘汰时，选票也按下一有效偏好继续流动。爱尔兰选举委员会对本国PR-STV的说明正是这一过程。<a class="source-mark" href="sources.html#ireland-stv" aria-label="查看爱尔兰选举委员会来源">[6]</a></p>
+          <p>它把候选人选择与比例目标结合起来，也让同党候选人之间存在竞争。选民可以跨党排序，政党无法只靠名单顺序决定谁进入议会。与此同时，计票需要保留每张选票的后续偏好，转移规则、配额与舍入都比简单勾选更复杂。</p>
+          <p>河湾共和国的五党首选票仍不足以演算结果。我们需要知道各党各有多少候选人、选区各选几席，以及每位选民的第二、第三偏好。若丙党选民普遍把乙党候选人排在甲党之前，转移方向会与反向排序产生不同赢家。这不是资料缺陷，而是排序本来就包含更多信息。</p>
+          <p>配额也不是“先拿到一定百分比就结束”。候选人达到配额后，如何确定余票价值、以什么顺序淘汰、同票怎样处理，都要由正式规则说明。公众看到较慢的计票，不应自动理解为不透明；关键是步骤能否复算、观察和申诉。</p>
+        </div>
+        <dl>
+          <dt>选民表达</dt><dd>按偏好给候选人排序</dd>
+          <dt>决定性层级</dt><dd>多席选区与多轮计数</dd>
+          <dt>全国首选票缺少</dt><dd>候选人数与后续偏好</dd>
+        </dl>
+      </section>
+
+      <section class="system-entry">
+        <div>
+          <span class="system-entry__label">地方席位加补偿层</span>
+          <h2>混合的关键是两层是否相连</h2>
+          <p><dfn data-term="混合成员比例制">混合成员比例制</dfn>同时产生地方议员与名单议员，并让名单层补偿地方层造成的党派比例偏差。新西兰选举委员会解释其MMP时指出，选民有政党票和选区票，政党票大体决定政党在议会中的总席位。<a class="source-mark" href="sources.html#nz-mmp" aria-label="查看新西兰选举委员会来源">[7]</a></p>
+          <p>在河湾共和国的简化版本中，50席来自单席选区，甲党赢30席、乙党赢20席；另外50席用于补偿。若五党的总席位目标仍是36、28、18、12、6，那么名单层依次补给6、8、18、12、6席。地方胜者保留，同时总结构回到全国比例。</p>
+          <p>“混合”并不总等于“补偿”。并立制也把选区席与名单席放在同一个议会，但两层各算各的，名单席不修正选区偏差。国际 IDEA 的2023年报告专门区分并立与补偿型混合制，因为两者的票席效果可能相差很大。<a class="source-mark" href="sources.html#idea-mixed" aria-label="查看国际IDEA混合制来源">[8]</a></p>
+          <p>现实规则还会处理超额地方席位、名单资格、门槛与议会总规模。德国从2025年联邦议院选举起强化第二票对总席位与选区席的约束，说明即使同属个性化比例代表，具体法律也会变化。比较时必须写清年份，不能把旧版制度永久化。<a class="source-mark" href="sources.html#germany-2025" aria-label="查看德国联邦选举主任来源">[9]</a></p>
+          <p>补偿还可以在全国、地区或多层之间完成。补偿范围越小，地方席位对总比例的影响通常越大；范围越大，整体比例更容易接近政党票，却可能弱化名单席与单一地区的对应。这里没有只看名称就能确定的答案。</p>
+        </div>
+        <dl>
+          <dt>选民表达</dt><dd>地方候选票与政党票</dd>
+          <dt>决定性层级</dt><dd>地方层加全国或地区补偿层</dd>
+          <dt>名称不能告诉你</dt><dd>两层是否真正补偿</dd>
+        </dl>
+      </section>
+    </article>
+
+    <section class="wide-section" aria-labelledby="compare-heading">
+      <h2 id="compare-heading">把名称还原成四个机械问题</h2>
+      <div class="comparison-table-wrap" tabindex="0" aria-label="可横向滚动的制度机制比较表">
+        <table class="comparison-table">
+          <thead><tr><th>制度家族</th><th>选民表达</th><th>席位授予层级</th><th>败选票或剩余票</th><th>全国首选票能否演算</th></tr></thead>
+          <tbody>
+            <tr><th>相对多数</th><td>单选候选人</td><td>单席选区</td><td>不跨区转移</td><td>不能，需逐区数据</td></tr>
+            <tr><th>两轮</th><td>分轮单选</td><td>单席选区</td><td>由第二轮重新选择</td><td>不能，需晋级与流向</td></tr>
+            <tr><th>名单比例</th><td>选名单，可能兼选人</td><td>多席选区</td><td>依公式参与分配</td><td>在规则完整时可以</td></tr>
+            <tr><th>可转移单票</th><td>排序候选人</td><td>多席选区</td><td>按后续偏好转移</td><td>不能，需完整排序</td></tr>
+            <tr><th>补偿型混合</th><td>地方票加政党票</td><td>地方层加名单层</td><td>由名单席补偿偏差</td><td>只能算目标，仍需地方结果</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose">
+        <p class="no-indent">表中最重要的不是哪一行最漂亮，而是哪一格需要额外信息。若有人只拿全国得票率预测单席选区结果，他跳过了地理分布；若只拿首选票预测排序计票，他删除了后续偏好；若把所有混合制都当成比例制，他忽略了补偿关系。</p>
+        <p>还要区分“选出谁”和“由谁组阁”。选举公式先产生议员与党团，行政权怎样形成则取决于宪法与议会规则。一个制度提高票席接近程度，不会自动规定哪些政党合作；一个制度产生单党多数，也不证明每项政策得到多数选民直接支持。</p>
+        <p>河湾共和国的演算因此保留了空白：两轮页没有捏造第二选择，排序页没有凭首选票猜转移，混合页明确把补偿关系作为额外规则。知道什么不能从现有数据推出，是理解机制的一部分，而不是分析尚未完成的缺点。</p>
+        <p>制度家族真正的分界不在名称，而在席位是逐区授予、按总票分配、随偏好转移，还是用名单席位补偿选区结果。理解机制之后，比较才进入更困难的一步：这些差别服务了什么目标，又把什么成本交给了选民、政党与选举管理机关。</p>
+      </div>
+    </section>
+
+    <nav class="page-turn" aria-label="章节导航">
+      <a href="main.html">← 返回：同一批选票</a>
+      <a class="page-turn__next" href="judgment.html">继续：没有脱离目标的最佳制度 →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p><span>选举制度比较</span><span aria-hidden="true">·</span><a href="sources.html">来源与时效</a><span aria-hidden="true">·</span><a href="../../index.html">返回总览</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

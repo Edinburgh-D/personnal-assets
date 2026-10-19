@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>选举制度比较｜同一批选票，不同的议会</title>
+  <meta name="description" content="从一场虚构的100席议会选举出发，理解选票结构、选区规模与计票公式如何共同塑造代表结果。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&amp;family=Noto+Sans+SC:wght@400;700&amp;family=Noto+Serif+SC:wght@700;900&amp;display=swap" rel="stylesheet">
+  <script>if (localStorage.getItem('kb_darkMode') === 'true') document.documentElement.dataset.theme = 'dark';</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="site-rail" aria-label="知识库主导航">
+    <a class="site-rail__wordmark" href="main.html" aria-current="page">选制比较</a>
+    <ul>
+      <li><a href="main.html" aria-current="page" aria-label="第一章：转换直觉">一</a></li>
+      <li><a href="mechanisms.html" aria-label="第二章：制度机制">二</a></li>
+      <li><a href="judgment.html" aria-label="第三章：比较判断">三</a></li>
+      <li><a href="sources.html" aria-label="来源与边界">源</a></li>
+    </ul>
+    <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label="切换到深色模式">夜</button>
+    <a class="rail-home" href="../../index.html" data-site-home>Personal Assets</a>
+  </nav>
+  <header class="mobile-bar">
+    <a class="mobile-bar__title" href="main.html">选举制度比较</a>
+    <div class="mobile-bar__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-pressed="false" aria-label="切换到深色模式">夜</button>
+      <button class="nav-menu-btn icon-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="移动端目录" hidden>
+    <ul>
+      <li><a href="main.html" aria-current="page">转换直觉</a></li>
+      <li><a href="mechanisms.html">制度机制</a></li>
+      <li><a href="judgment.html">比较判断</a></li>
+      <li><a href="sources.html">来源边界</a></li>
+      <li><a href="../../index.html">Personal Assets</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="page-shell" data-kb-content data-page-role="overview">
+    <template data-narrative="question">为什么同一批选民的偏好，经过不同选举规则后，会形成差异很大的议会？</template>
+    <template data-narrative="example">虚构的100席河湾共和国中，五个政党分别获得36%、28%、18%、12%和6%的全国选票；后续持续观察相同偏好如何被不同规则转换。</template>
+    <template data-narrative="conclusion">选举结果不是选民偏好的透明复印件，而是选票结构、选区规模、边界与选举公式共同加工出的制度产物。</template>
+    <template data-narrative="next-question">如果制度是一台转换器，相对多数、两轮、名单比例、可转移单票与混合制分别怎样处理同一批选票？</template>
+
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">Personal Assets</a><span aria-hidden="true">/</span><a href="../index.html">知识库</a><span aria-hidden="true">/</span><span>选举制度比较</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <h1>同一批选票，不同的议会</h1>
+        <p class="hero__lede">选民表达偏好之后，规则才开始工作。看懂中间的转换链，才能解释为何“谁得票多”不必然等于“谁占席最多”。</p>
+        <p class="hero__note">以下“河湾共和国”完全是教学模型。它用于隔离制度差异，不预测任何真实国家的选举。</p>
+      </div>
+      <figure class="ballot-map" aria-labelledby="map-title" aria-describedby="map-caption">
+        <h2 class="ballot-map__title" id="map-title">全国选票进入规则之前</h2>
+        <div class="vote-strip" aria-label="甲党36%，乙党28%，丙党18%，丁党12%，戊党6%">
+          <span class="party-a w36">甲 36</span><span class="party-b w28">乙 28</span><span class="party-c w18">丙 18</span><span class="party-d w12">丁 12</span><span class="party-e w6">戊 6</span>
+        </div>
+        <p class="map-arrow" aria-hidden="true">选票 → 选区 → 公式 → 席位</p>
+        <div class="seat-strip" aria-label="相对多数制示意：甲党60席，乙党40席，其余政党0席">
+          <span class="party-a w60">甲 60</span><span class="party-b w40">乙 40</span>
+        </div>
+        <figcaption class="map-caption" id="map-caption">这里只改变选票的地理分布与逐区胜负规则，就能让18%、12%和6%的支持没有变成席位。后文会拆解这个结果。</figcaption>
+      </figure>
+    </header>
+
+    <nav class="reading-map" aria-label="学习路径">
+      <a href="main.html" aria-current="page"><span class="reading-map__number">01</span><span><strong>先看转换链</strong><small>规则在什么位置改变结果</small></span></a>
+      <a href="mechanisms.html"><span class="reading-map__number">02</span><span><strong>再拆制度家族</strong><small>五种机制如何授予席位</small></span></a>
+      <a href="judgment.html"><span class="reading-map__number">03</span><span><strong>最后作条件判断</strong><small>目标、代价与实施条件</small></span></a>
+    </nav>
+
+    <article class="prose">
+      <section>
+        <h2>投票结束，不等于结果已经写好</h2>
+        <p class="no-indent"><dfn data-term="选举制度">选举制度</dfn>是把选民表达的选择转换为公职或议会席位的一整套规则。它先决定选民能表达什么，再决定哪些票放在一起计算，最后决定席位怎样授予。国际 IDEA 与 ACE 都把“票如何变成席位”放在定义中心，而不是只用国家名称给制度贴标签。<a class="source-mark" href="sources.html#idea-handbook" aria-label="查看来源一">[1]</a><a class="source-mark" href="sources.html#ace-concepts" aria-label="查看来源二">[2]</a></p>
+        <p>第一道门是<dfn data-term="选票结构">选票结构</dfn>。一张票可以要求选民只勾一个候选人，也可以把候选人按偏好排序；可以只选政党，也可以同时选择政党与地方候选人。表达空间不同，计票者获得的信息就不同。只允许一个记号的选票无法告诉我们第二选择是谁，排序选票则保留了偏好转移的可能。</p>
+        <p>第二道门是<dfn data-term="选区">选区</dfn>。选民并不总在全国大池里一起计算，常先按地区分组。即使两个国家的全国支持率完全相同，只要支持者的地理分布不同，逐区选出的代表也会不同。某党若在少数地区以极高票数取胜，却在多数地区小幅落后，它的许多支持可能集中在已经赢得的席位里。</p>
+        <p>第三道门是<dfn data-term="选区规模">选区规模</dfn>，也就是一个选区选出多少人。单席选区把竞争压缩为每区一个胜者；多席选区允许多个政党或候选人同时取得代表。ACE 指出，多席选区的席位数通常越大，比例代表制容纳较小政治力量的能力越强；与此同时，选区范围可能扩大，地方代表与具体社区的联系也会改变。<a class="source-mark" href="sources.html#ace-magnitude" aria-label="查看来源三">[3]</a></p>
+        <p>最后一道门是<dfn data-term="选举公式">选举公式</dfn>。它可能把席位给票数最多者，要求候选人达到过半条件，也可能用除数或配额把多个席位分给政党与候选人。公式必须处理整数席位，所以“比例”从来不是把百分数直接印在座位上。门槛、舍入、名单顺序和剩余席位规则都会留下痕迹。</p>
+      </section>
+
+      <section>
+        <h2>河湾共和国的100席实验</h2>
+        <p class="no-indent">设想河湾共和国有100个同样人口的单席选区。全国合计，甲、乙、丙、丁、戊五党分别获得36%、28%、18%、12%和6%的票。为了让地理效应清楚，我们把选区简化为十种典型地区，每种重复十次。</p>
+        <p>在其中六种地区，甲党得到40%，乙党20%，丙党20%，丁党14%，戊党6%；在其余四种地区，甲党30%，乙党40%，丙党15%，丁党9%，戊党6%。把十种地区合计，恰好仍是36、28、18、12、6。若每区只选一人且票多者胜，甲党拿到60席，乙党拿到40席，其余三党没有席位。</p>
+        <p>这个结果不是计算错误，也不能单凭结果证明选区被恶意操纵。它展示的是单席逐区胜负的逻辑：全国票数不会汇总为全国席位，败选者的票也不会转移到别区。若边界或支持分布改变，同样的全国比例还能产生别的席位结果。因此只报全国得票率，无法重建每个单席选区的胜负。</p>
+        <p>若改成全国单一选区、100席、没有额外门槛，并让各党票数恰好对应整数席位，最直观的比例分配会得到36、28、18、12、6席。这里故意选择整齐数字，是为了说明方向，不是说所有比例公式都会在现实中给出完全相同的结果。真实选举还要处理门槛、余数、独立候选人和无效票。</p>
+        <aside class="callout legal-note" aria-label="阅读边界">
+          <h3>制度说明不是投票法律意见</h3>
+          <p>选举资格、候选人登记、选票有效性、重计票和席位分配都由具体法域的现行法律决定。本知识库解释比较框架；遇到真实选举，应以当地选举管理机关与最新法条为准。</p>
+        </aside>
+      </section>
+
+      <section>
+        <h2>一张票要经过四次“选择”</h2>
+        <p class="no-indent">选民只完成了第一次选择：在给定选票上标记候选人、政党或偏好顺序。制度随后替全体作出三次集体选择。它决定哪些选票互相比较，什么条件足以获得席位，以及没有直接产生赢家的票还会不会继续发挥作用。</p>
+        <p>“哪些票互相比较”决定政治竞争的空间。全国名单把相距很远的支持合并起来，单席选区则只比较本地候选人。一个分散在全国、每地都有约一成支持的政党，在全国池中可能稳定获得席位，在单席竞争中却可能处处排在第二或第三。</p>
+        <p>“什么条件足以获胜”决定票数被怎样解释。票多者胜只要求比任何一个对手多，过半制要求胜者得到超过半数的有效支持，比例公式则不寻找唯一赢家，而是让多方分享多个席位。这些条件回答的是不同问题，不能用同一把尺子描述。</p>
+        <p>“未直接产生赢家的票怎么办”又把制度分开。有些规则在选区胜负确定后就停止，有些把余票或落选候选人的票转向后续偏好，还有些从名单层补偿地方结果。所谓“浪费票”因此不是选票被物理丢弃，而是该票没有帮助选出代表的分析说法。</p>
+        <p>这个说法也需要谨慎。败选票没有产生本区席位，不代表它毫无政治影响。它可能影响政党是否继续在当地组织、候选人能否获得公共资助，也可能成为下次选举的竞争信号。制度比较所说的未转化，通常只限定在当次席位分配。</p>
+        <p>同样，当选者超过胜选所需的票也可能被称为“剩余”。在逐区胜负制中，多出的票通常不会再创造一个席位；在可转移制度中，部分余票可以依规则流向下一偏好。两个概念看似都在谈没用上的票，处理方式却完全不同。</p>
+        <p>因此，读到“甲党有36%的全国支持，却取得60%的席位”时，正确的追问不是立刻断言规则公平或不公平，而是先定位转换发生在哪一步。若目标本来是逐区选出一位地方代表，60席是规则按设计工作的结果；若目标是让全国党派份额接近选票，偏差就是必须解释的代价。</p>
+      </section>
+
+      <section>
+        <h2>地图、人口与提名共同进入结果</h2>
+        <p class="no-indent">河湾实验假设100个选区人口相同，现实很少如此静止。人口迁移会让旧边界逐渐失衡，新增社区可能由较少代表服务，人口减少地区却保留原有席位。定期重划与人口容差规则，决定一张票在不同地方是否具有近似影响力。</p>
+        <p>边界也会改变支持者被组合的方式。把某群支持者集中在少数地区，可能让他们在这些地区大胜，却减少能竞争的其他席位；把他们分散到许多地区，又可能让他们难以成为第一。地理本来就可能自然集中，所以异常结果不能只靠地图外观判断。</p>
+        <p>判断边界过程，更可靠的证据包括公开标准、人口数据、社区边界、提案理由、公众意见与复核途径。一个形状奇特的选区可能沿河谷、岛屿或行政边界形成；一个形状整齐的选区也可能切开真实社区。程序证据比视觉直觉更有解释力。</p>
+        <p>政党提名则决定选民实际能选谁。即使公式不变，一党只在部分选区提名、两党协商避免互相竞争，或独立候选人集中在地方议题上，都会改变可观察的票数。选票从来不是抽象偏好的完整调查，而是在可用候选人和规则下作出的选择。</p>
+        <p>投票率还会改变分母。全国“36%”通常指有效票中的份额，不是全体合资格人口中的支持。若地区投票率不同，把百分比直接理解为人口支持就会夸大。比较选举结果时，应分清合资格选民、实际投票者、有效票和进入席位计算的票。</p>
+        <p>到这里，河湾共和国的模型完成了它的作用：先固定人口、提名和参与，只让转换规则变化。现实分析则要把这些暂时冻结的条件逐一放回去。模型帮助我们找到问题，不替我们免除查证。</p>
+      </section>
+
+      <section>
+        <h2>三个常见误读</h2>
+        <p class="no-indent">第一，比例结果不等于每个选民都有“自己的议员”。全国名单可以让政党席位接近票数，却可能把候选人选择权更多交给政党名单。开放名单、封闭名单、地区名单又会产生不同关系。讨论比例代表时，仍要追问谁决定名单顺序，以及代表向谁负责。</p>
+        <p>第二，地方代表清楚不等于全国意见被准确汇总。单席选区通常让选民容易辨认本区胜者，也方便把地方事务交给具体议员，但一个政党的全国票席差距可能很大。地方联系与整体比例是两项价值，不能把其中一项当作另一项的替代证明。</p>
+        <p>第三，制度结果不是固定的机械宿命。政党会决定在哪里提名、是否结盟，选民会判断谁有胜算，媒体会围绕门槛与第二轮重组叙事。规则改变行为，行为又改变规则产生的票数。教学演算把偏好暂时固定，是为了看清一段机制，而不是宣称现实参与者不会学习。</p>
+        <p>因此，比较制度的第一步不是问哪一种“最民主”，而是把转换链完整写出来：选民能表达什么，票在哪里合并，胜者需达到什么条件，落选票或剩余票能否转移，席位是否有补偿层。链条缺一环，制度名称就容易遮住关键差别。</p>
+        <p>选举结果不是选民偏好的透明复印件，而是选票结构、选区规模、边界与选举公式共同加工出的制度产物。接下来把河湾共和国依次放进几类常见转换器，便能看见哪些制度信息可以从首选票直接计算，哪些必须知道第二偏好或地方分布。</p>
+      </section>
+    </article>
+
+    <nav class="page-turn" aria-label="章节导航">
+      <span>起点：先认出规则介入的位置</span>
+      <a class="page-turn__next" href="mechanisms.html">继续：四类转换器怎样工作 →</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p><span>选举制度比较</span><span aria-hidden="true">·</span><a href="sources.html">来源与时效</a><span aria-hidden="true">·</span><a href="../../index.html">返回总览</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

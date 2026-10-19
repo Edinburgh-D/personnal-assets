@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-20T15:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么同一批选民的偏好，经过不同选举规则后，会形成差异很大的议会？",
+      "readerStateChange": "读前容易把全国得票率当作席位结果的直接答案；读后能沿选票结构、选区、选区规模和公式定位规则介入的位置。",
+      "twoSentenceSummary": "正文用河湾共和国的五党选票展示相同全国比例如何在100个单席选区形成60比40，并与全国比例分配对照。随后把人口、边界、提名和投票率逐一放回模型，说明选举结果是规则与分布共同加工的产物。",
+      "continuityEvidence": "结尾把转换链归纳为表达、汇总、胜负、转移和补偿五项检查，并明确引向下一页对相对多数、两轮、比例、排序和混合机制的逐项拆解。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "如果制度是一台转换器，相对多数、两轮、名单比例、可转移单票与混合制分别怎样处理同一批选票？",
+      "readerStateChange": "读前只知道规则会改变结果；读后能从逐区授予、再次投票、按票分席、偏好转移和名单补偿解释主要制度家族。",
+      "twoSentenceSummary": "正文把河湾共和国依次放入五种机制，区分哪些结果可由全国票直接计算，哪些还需要逐区分布、第二轮流向或完整偏好。比较表进一步把制度名称还原为选民表达、席位层级、票的后续处理与所需数据。",
+      "continuityEvidence": "开头承接前页的转换链，结尾把机械差别推进为价值与成本问题，为下一页讨论代表性、地方联系、治理和实施条件建立前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然每种转换器都放大一些价值并压低另一些价值，我们怎样比较制度而不把某个指标误当成唯一答案？",
+      "readerStateChange": "读前能够复述制度机制；读后能先写目标，再检查完整规则、行为适应、成本分配、实施能力和会推翻判断的新证据。",
+      "twoSentenceSummary": "正文用三项河湾改革口号检验比例、候选人选择与地方联系之间的取舍，并说明静态重算不能替代对政党和选民反应的分析。随后给出六步审读顺序，把行政能力、过渡、公平程序和规则时效纳入制度判断。",
+      "continuityEvidence": "本章逐项承接上一页的机制差异，最终形成可迁移到改革新闻的判断框架，并把开放问题落在谁受益、谁承担代价及何种证据要求改判。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分国际比较框架与具体法域现行规则，并按机构、用途和核对日期回查制度定义、计票流程与最新变化。",
+      "twoSentenceSummary": "参考页汇集国际 IDEA、ACE、英国、爱尔兰、新西兰和德国选举管理机关，以及欧洲议会研究服务的权威材料。页面明确区分教学模型与真实数据，并说明制度页面不能替代当地现行法律。",
+      "continuityEvidence": "来源按正文首次引用顺序排列，每项都说明支持的具体主张与不可外推的边界，可从三页正文的编号标记直接到达。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
