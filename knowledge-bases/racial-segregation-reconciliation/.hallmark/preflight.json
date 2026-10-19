@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-20",
+  "framework": "vanilla-html",
+  "fontStack": "Newsreader + IBM Plex Sans",
+  "palette": "Newsprint warm paper with brick-red accent",
+  "motion": "motion-cut",
+  "spacing": "4pt token scale",
+  "preserved": [
+    "repository multi-page knowledge-base conventions",
+    "content manifest and review contract",
+    "required Personal Assets home link"
+  ]
+}

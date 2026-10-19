@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-10-20",
+    "macrostructure": "Narrative Workflow",
+    "theme": "Newsprint",
+    "enrichment": "Tier-A CSS legal ledger",
+    "brief": "种族隔离制度、民主转型与和解机制的大众连续读本",
+    "nav": "N6",
+    "footer": "Ft4",
+    "finalSlopTest": {
+      "result": "pass",
+      "gatesPassed": 58,
+      "gatesTotal": 58,
+      "mode": "static code and responsive-contract review",
+      "browserPreview": "blocked by local browser permission policy"
+    }
+  }
+]

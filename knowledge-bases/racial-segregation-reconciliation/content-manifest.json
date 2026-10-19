@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "种族隔离与和解之路：从法律边界到共同生活",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-20",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "当地址决定人生",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者知道种族隔离意味着不平等，却容易把它理解为个人偏见或公共场所分开，不清楚国家规则怎样把差别变成稳定秩序。",
+      "readerStateAfter": "读者能够用分类、空间、流动、公共资源与政治权利的接合关系解释种族隔离制度，并区分个人敌意与制度性支配。",
+      "readerQuestion": "一套种族隔离秩序怎样把抽象分类变成住所、学校、工作、出行和政治权利中的日常事实？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "以开普敦第六区为贯穿案例：一个多族群社区被划为白人区域，居民遭强制迁离，地址因此成为权利、资产与机会重新分配的工具。",
+      "newTerms": [
+        {
+          "term": "种族隔离",
+          "definition": "国家或社会制度按被建构的种族类别系统分开人群，并使这种分开产生不平等权利与机会。"
+        },
+        {
+          "term": "种族隔离制度",
+          "definition": "南非以法定种族分类为基础，系统分配土地、居住、教育、劳动、流动与政治权利的国家秩序。"
+        },
+        {
+          "term": "种族分类",
+          "definition": "国家把人口归入法定类别，并让类别成为获取权利、进入空间和接受行政管理的依据。"
+        },
+        {
+          "term": "空间隔离",
+          "definition": "通过土地、住房、分区与交通安排，把不同人群分置于机会和公共资源明显不同的地域。"
+        },
+        {
+          "term": "结构性不平等",
+          "definition": "不平等由规则、机构、资产与累积条件稳定产生，即使没有个人公开表达偏见，差距仍会延续。"
+        }
+      ],
+      "conclusion": "种族隔离之所以成为可持续的统治秩序，不只因为社会偏见，而是因为国家把分类接入空间、流动、公共资源和政治权利，使不同制度彼此强化。",
+      "nextQuestion": "既然隔离秩序由彼此咬合的制度维持，社会要怎样拆除这些规则，同时避免权力转移重新滑向暴力？",
+      "nextPage": "transition.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "transition.html",
+      "title": "拆掉法条之后",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够用分类、空间、流动、公共资源与政治权利的接合关系解释种族隔离制度，并区分个人敌意与制度性支配。",
+      "readerStateAfter": "读者能够解释抵抗、国际压力、统治危机、政治谈判与宪法建设如何共同促成制度转型，并区分法律断裂与现实延续。",
+      "readerQuestion": "既然隔离秩序由彼此咬合的制度维持，社会要怎样拆除这些规则，同时避免权力转移重新滑向暴力？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "种族隔离之所以成为可持续的统治秩序，不只因为社会偏见，而是因为国家把分类接入空间、流动、公共资源和政治权利，使不同制度彼此强化。",
+      "coreExample": "继续追踪第六区：强制迁离留下的土地与社区权利诉求，如何在民主转型后进入宪法、土地返还法和长期行政执行之间的修复过程。",
+      "newTerms": [
+        {
+          "term": "谈判转型",
+          "definition": "旧秩序与反对力量通过协商安排权力交接和新制度，而不是由任何一方单独决定全部结果的政治转变。"
+        },
+        {
+          "term": "非种族民主",
+          "definition": "公民资格、选举权与国家保护不再按种族类别分配，以共同而平等的政治成员身份为基础的民主秩序。"
+        },
+        {
+          "term": "宪法至上",
+          "definition": "宪法高于议会和政府，法律与国家行为必须符合宪法并接受法院审查。"
+        },
+        {
+          "term": "实质平等",
+          "definition": "平等不只要求规则表面一视同仁，也关注历史劣势和现实效果，并允许采取补救措施实现平等享有权利。"
+        }
+      ],
+      "conclusion": "废除隔离法与建立民主宪法改变了权利分配的规则，但被迁离的社区、失去的资产和不均衡的机会不会随法条同时消失，转型因此必须继续处理历史后果。",
+      "nextQuestion": "当社会既要查明真相、追究责任、修复受害者，又要维护脆弱的和平时，和解应当包含哪些彼此制约的机制？",
+      "nextPage": "reconciliation.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "reconciliation.html",
+      "title": "和解不是遗忘",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释抵抗、国际压力、统治危机、政治谈判与宪法建设如何共同促成制度转型，并区分法律断裂与现实延续。",
+      "readerStateAfter": "读者能够从受害者参与、真相质量、责任承担、修复兑现与制度改变五个方面判断和解是否可信，并把这套判断迁移到其他社会。",
+      "readerQuestion": "当社会既要查明真相、追究责任、修复受害者，又要维护脆弱的和平时，和解应当包含哪些彼此制约的机制？",
+      "dependsOn": [
+        "transition.html"
+      ],
+      "priorConclusion": "废除隔离法与建立民主宪法改变了权利分配的规则，但被迁离的社区、失去的资产和不均衡的机会不会随法条同时消失，转型因此必须继续处理历史后果。",
+      "coreExample": "以第六区土地返还的长期过程检验和解：公开承认强制迁离只是起点，返还土地、提供住房、重建社区联系和持续监督才把承诺带回日常生活。",
+      "newTerms": [
+        {
+          "term": "转型正义",
+          "definition": "社会处理大规模侵害遗产的整体方法，通常组合真相调查、司法问责、赔偿、制度改革与纪念。"
+        },
+        {
+          "term": "有条件大赦",
+          "definition": "只有满足法定条件才免除特定责任；南非制度要求行为具有政治目的并充分披露相关事实。"
+        },
+        {
+          "term": "赔偿",
+          "definition": "通过返还、补偿、康复、道歉、纪念或公共服务等方式回应受害者损害和权利被侵害的后果。"
+        },
+        {
+          "term": "不再发生保障",
+          "definition": "通过法律、机构、监督、教育和安全部门改革，降低同类侵害再次发生风险的持续安排。"
+        }
+      ],
+      "conclusion": "可信的和解不是要求受害者停止追问，而是让真相、责任、修复、制度改革与平等参与相互支撑，并允许公众持续检验未兑现的承诺。",
+      "nextQuestion": "当另一个社会以和解之名提出大赦、道歉或纪念方案时，我们能否看见谁参与、谁负责、谁获得修复，以及哪些制度仍在复制旧差距？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与法律边界",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

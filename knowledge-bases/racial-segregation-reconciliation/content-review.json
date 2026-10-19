@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-20T02:10:23+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "一套种族隔离秩序怎样把抽象分类变成住所、学校、工作、出行和政治权利中的日常事实？",
+      "readerStateChange": "读前容易把问题缩减为个人偏见或公共场所分开；读后能够沿分类、空间、许可、公共供给与政治代表的反馈关系解释制度怎样持续运行。",
+      "twoSentenceSummary": "页面从第六区的地址与强制迁离切入，说明人口登记如何成为住房、流动、教育与政治权利的行政入口。随后区分个人敌意、制度接合和国际法罪名，并解释空间与资产为何让旧规则在废止后仍留下长期后果。",
+      "continuityEvidence": "结尾把分类、空间、许可、公共供给和政治排除收束为彼此强化的秩序，因此自然推进到下一页对制度为何失稳、如何被拆除的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "transition.html",
+      "centralQuestion": "既然隔离秩序由彼此咬合的制度维持，社会要怎样拆除这些规则，同时避免权力转移重新滑向暴力？",
+      "readerStateChange": "读前已能解释旧秩序的制度接合；读后能把抵抗、外压、统治危机、协商交接和宪法建设放进同一机制，并区分废法、机构改革与生活结果。",
+      "twoSentenceSummary": "页面拒绝把转型写成单一领袖或历史必然的故事，说明多种压力怎样打开谈判窗口，新宪法又怎样重写权利与决策边界。第六区的长期返还显示法律断裂、机构改变和物质修复拥有不同速度。",
+      "continuityEvidence": "页面最后指出宪法可以确认权利却不能独自完成真相、责任、修复和预防，这直接生成下一页关于和解机制如何组合的中心问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reconciliation.html",
+      "centralQuestion": "当社会既要查明真相、追究责任、修复受害者，又要维护脆弱的和平时，和解应当包含哪些彼此制约的机制？",
+      "readerStateChange": "读前知道法律转型仍留有历史后果；读后能够从受害者参与、真相质量、责任承担、修复兑现和制度改变五个方面检验和解主张。",
+      "twoSentenceSummary": "页面以南非真相与和解委员会及有条件大赦为中心，说明真相、问责、修复、制度改革和受害者参与不能由单一工具替代。第六区案例进一步表明，公开承认只有连接住房、土地、社区参与和持续监督，才会进入共同生活。",
+      "continuityEvidence": "末尾把三页内容收束为五项可迁移的公共判断，并保留面对其他社会时检查参与、责任、修复和制度遗产的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的简短引注；读后能够定位法律、判决、委员会报告、联合国文件与当前项目更新，并理解每类资料的证明边界。",
+      "twoSentenceSummary": "来源页列出九项一手或权威材料，并逐项说明它们能支持的事实与不能替代的判断。页面同时说明法律教育边界，并只连接仓库中真实存在的相关专题。",
+      "continuityEvidence": "该页从三篇叙事页均可到达，并提供返回和解页与入口页的链接，使证据核对不会成为阅读路径的终点。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
