@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "深度工作与注意力管理",
+  "type": "single-subject",
+  "audience": "general",
+  "entry": "main.html",
+  "createdAt": "2026-10-19",
+  "depthLevel": "L2",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "把专注主要理解为个人意志或时间管理问题，虽然一天很忙，却说不清为什么关键工作仍然没有推进。",
+      "readerStateAfter": "能把深度工作理解为围绕高认知任务保护连续注意力的工作方式，并能区分可见忙碌、响应性事务与真正推进产出的活动。",
+      "readerQuestion": "为什么一个人整天都在处理工作，却仍可能没有推进最重要的成果；深度工作的价值究竟来自哪里？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "产品经理林舟要在周五前完成一份六页定价提案，却在消息、会议、查资料与改文档之间频繁切换；以这份提案从周一到周五的推进过程贯穿全站。",
+      "newTerms": [
+        {
+          "term": "深度工作",
+          "definition": "在没有无关干扰的条件下，持续处理需要推理、学习或创造的高认知任务。"
+        },
+        {
+          "term": "产出标准",
+          "definition": "在开始工作前用可观察结果说明这一段时间结束时应该留下什么。"
+        },
+        {
+          "term": "响应性工作",
+          "definition": "由外部请求、消息、排期和即时协调推动，主要目标是保持业务流动的工作。"
+        }
+      ],
+      "conclusion": "深度工作的稀缺之处不是独处或安静本身，而是让一个明确的高认知成果在连续注意力中持续成熟；要获得这种连续性，必须把注意力当成工作系统的约束，而不是把失败归咎于意志薄弱。",
+      "nextQuestion": "如果深度工作依赖连续注意力，那么一次看似短暂的消息、会议或任务切换，究竟通过什么机制破坏正在形成的思路？",
+      "nextPage": "attention-mechanics.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "attention-mechanics.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能把深度工作理解为围绕高认知任务保护连续注意力的工作方式，并能区分可见忙碌、响应性事务与真正推进产出的活动。",
+      "readerStateAfter": "能用任务规则重载、未完成事项残留和工作记忆负担解释注意力碎片化，也能分辨必要中断、主动切换与无意识检查。",
+      "readerQuestion": "如果深度工作依赖连续注意力，那么一次看似短暂的消息、会议或任务切换，究竟通过什么机制破坏正在形成的思路？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "深度工作的稀缺之处不是独处或安静本身，而是让一个明确的高认知成果在连续注意力中持续成熟；要获得这种连续性，必须把注意力当成工作系统的约束，而不是把失败归咎于意志薄弱。",
+      "coreExample": "继续追踪林舟的定价提案：他刚把成本、客户分层与价格假设放进脑中，就被销售消息、临时会议和浏览器标签带走，再观察每次回来需要重建哪些上下文。",
+      "newTerms": [
+        {
+          "term": "切换成本",
+          "definition": "从一套任务目标和规则转到另一套时，为重新定向与激活规则付出的时间和认知代价。"
+        },
+        {
+          "term": "注意残留",
+          "definition": "已经转向新任务后，思绪仍有一部分停留在前一个任务上的现象。"
+        },
+        {
+          "term": "工作记忆",
+          "definition": "人在当前思考中临时保存并操作少量信息的认知空间。"
+        },
+        {
+          "term": "中断恢复线索",
+          "definition": "在离开任务前记录下一动作、关键假设和停顿位置，用来缩短返回时重建上下文的提示。"
+        }
+      ],
+      "conclusion": "注意力碎片化的主要代价不只是中断占用的几分钟，而是每次切换都可能要求重新加载目标、规则与临时信息，并让未完成任务继续占据思绪；减少切换、把同类沟通集中处理并留下恢复线索，才能降低这笔隐形成本。",
+      "nextQuestion": "既然不能消灭所有消息、会议与协作，那么怎样把深度工作嵌入真实日程，同时避免把专注变成长工时、拒绝合作或自我压榨？",
+      "nextPage": "system-and-boundaries.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "system-and-boundaries.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能用任务规则重载、未完成事项残留和工作记忆负担解释注意力碎片化，也能分辨必要中断、主动切换与无意识检查。",
+      "readerStateAfter": "能从成果、节律、通信约定、恢复与组织边界设计个人或团队的注意力系统，并判断深度工作何时适用、何时应让位。",
+      "readerQuestion": "既然不能消灭所有消息、会议与协作，那么怎样把深度工作嵌入真实日程，同时避免把专注变成长工时、拒绝合作或自我压榨？",
+      "dependsOn": [
+        "attention-mechanics.html"
+      ],
+      "priorConclusion": "注意力碎片化的主要代价不只是中断占用的几分钟，而是每次切换都可能要求重新加载目标、规则与临时信息，并让未完成任务继续占据思绪；减少切换、把同类沟通集中处理并留下恢复线索，才能降低这笔隐形成本。",
+      "coreExample": "把林舟的周四重新设计为一个九十分钟提案区块、两个明确沟通窗口和一次结束记录，再用突发客户事故、团队等待反馈与个人疲劳三个场景检验这套安排。",
+      "newTerms": [
+        {
+          "term": "专注区块",
+          "definition": "在日程中为一个明确的高认知成果预留、并尽量免受无关切换的一段时间。"
+        },
+        {
+          "term": "可达窗口",
+          "definition": "预先约定集中查看消息、回复协作请求和处理短事务的时间段。"
+        },
+        {
+          "term": "关闭仪式",
+          "definition": "结束工作前记录进度、未决事项与下一动作，使任务能被安全放下的简短流程。"
+        },
+        {
+          "term": "组织注意力债务",
+          "definition": "团队因模糊优先级、过密会议和默认即时响应而持续累积的切换与协调负担。"
+        }
+      ],
+      "conclusion": "可持续的深度工作不是把每小时都变成专注冲刺，而是让重要成果拥有受保护的区块，让协作拥有可信的响应窗口，让中断有优先级，让一天能够结束；个人技巧只有与团队规则和恢复条件相容时才会长期有效。",
+      "nextQuestion": "当工作角色、团队时区、照护责任或身心状态发生变化时，怎样重新校准专注区块与可达窗口，而不是照搬固定时长和他人的日程？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

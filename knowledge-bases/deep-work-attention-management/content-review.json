@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-19T22:15:06+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么一个人整天都在处理工作，却仍可能没有推进最重要的成果；深度工作的价值究竟来自哪里？",
+      "readerStateChange": "读前容易把忙碌、及时回复和专注时长混为一谈；读后能用响应性事务与高认知成果两套逻辑区分活动，并先定义可观察的产出。",
+      "twoSentenceSummary": "页面从林舟忙碌一天却只留下提案标题的情境出发，说明组织流动与复杂成果遵循不同的完成逻辑。它把深度工作的对象落到可检验产出，并指出注意力条件同时受个人习惯和团队制度影响。",
+      "continuityEvidence": "结尾把问题从自制力转向条件设计，并明确追问短暂切换为何让思路在返回后仍然迟钝，直接进入机制页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "attention-mechanics.html",
+      "centralQuestion": "如果深度工作依赖连续注意力，那么一次看似短暂的消息、会议或任务切换，究竟通过什么机制破坏正在形成的思路？",
+      "readerStateChange": "读前只知道消息会占时间；读后能分别解释规则重载、旧任务残留和临时关系丢失，也能按中断来源选择不同处理方式。",
+      "twoSentenceSummary": "页面继续追踪林舟被销售消息和会议带离提案的过程，用任务切换研究、注意残留和工作记忆桌面解释隐形损失。它同时引入短暂切换可能帮助单调警觉任务的反例，避免把连续时间绝对化。",
+      "continuityEvidence": "页面承接入口页的连续注意力命题，结尾拒绝简单的全面断联，并把问题推进到连续思考、可靠响应和正常结束如何共存。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "system-and-boundaries.html",
+      "centralQuestion": "既然不能消灭所有消息、会议与协作，那么怎样把深度工作嵌入真实日程，同时避免把专注变成长工时、拒绝合作或自我压榨？",
+      "readerStateChange": "读前能识别切换代价但不知如何安排；读后能组合成果区块、可达窗口、紧急通道、结束记录和组织规则，并判断何时应当让位。",
+      "twoSentenceSummary": "页面把林舟的周四改造成有明确成果、沟通窗口和停止边界的工作日，再用事故、依赖、疲劳与方向变化四种场景检验。随后把个人技巧扩展到团队优先级、异步信息、工作量与评价方式。",
+      "continuityEvidence": "开头直接采用机制页提出的减少切换与保留恢复线索，结尾把固定模板改写为随角色、责任和身心状态持续校准的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能接受正文对研究和实践的概括；读后能区分概念定义、实验机制、设计推论与职业健康指南，并知道哪些结论不能外推。",
+      "twoSentenceSummary": "页面列出深度工作定义、任务切换、注意残留、警觉变化和工作心理健康的直接来源，并逐项说明支撑范围。它同时标明林舟是合成案例，固定时长不是处方，生产力建议也不能替代专业健康支持。",
+      "continuityEvidence": "来源页承接判断页中的研究与健康边界，提供回到末篇和开篇的双向导航，使证据核查与学习路径闭合。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

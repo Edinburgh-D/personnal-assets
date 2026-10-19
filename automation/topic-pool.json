@@ -4068,6 +4068,13 @@
       "generatedAt": "2026-10-19",
       "slug": "nuclear-waste-management",
       "entry": "knowledge-bases/nuclear-waste-management/main.html"
+    },
+    {
+      "name": "深度工作与注意力管理",
+      "domain": "商业/管理",
+      "generatedAt": "2026-10-19",
+      "slug": "deep-work-attention-management",
+      "entry": "knowledge-bases/deep-work-attention-management/main.html"
     }
   ],
   "skipped": []
