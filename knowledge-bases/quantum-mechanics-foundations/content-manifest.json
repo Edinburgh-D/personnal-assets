@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "量子力学入门：从概率振幅到纠缠",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-21",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "概率从哪里来",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者知道量子世界很反常，却容易把电子想成沿一条未知但确定的轨迹运动的小球。",
+      "readerStateAfter": "读者能够把量子状态理解为对可能结果的概率振幅描述，并用双缝实验解释振幅相加为何不同于普通概率相加。",
+      "readerQuestion": "经典世界里的粒子有确定轨迹，为什么单个电子穿过双缝后却必须用概率振幅来描述？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "让电子一次一个地穿过双缝并落在屏幕上：每次只出现一个点，许多次以后却形成会随路径信息而变化的干涉分布。",
+      "newTerms": [
+        {
+          "term": "量子状态",
+          "definition": "用于计算一个量子系统在各种可能测量中会出现哪些结果以及相应概率的完整数学描述。"
+        },
+        {
+          "term": "波函数",
+          "definition": "在位置表象中表达量子状态的函数，它给每个位置分配带有大小和相位的复数振幅。"
+        },
+        {
+          "term": "概率振幅",
+          "definition": "先按路径相加、再取绝对值平方得到概率的复数，既包含大小也包含相位。"
+        },
+        {
+          "term": "叠加",
+          "definition": "多个允许状态可以按复数系数组合成另一个允许状态的线性结构。"
+        },
+        {
+          "term": "干涉",
+          "definition": "不同可能路径的振幅因相位关系而增强或抵消，从而重塑最终概率分布。"
+        }
+      ],
+      "conclusion": "量子力学不把单次结果视为未知轨迹的简单揭晓，而是先用可叠加的概率振幅描述各种可能，再由振幅的相位关系决定重复实验中的概率分布。",
+      "nextQuestion": "如果状态只给出各种结果的概率，那么一次测量究竟做了什么，为什么换一种测量会改变能够确定的性质？",
+      "nextPage": "states-and-measurement.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "states-and-measurement.html",
+      "title": "测量不是掀开盖子",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把量子状态理解为对可能结果的概率振幅描述，并用双缝实验解释振幅相加为何不同于普通概率相加。",
+      "readerStateAfter": "读者能够用测量基底解释量子结果、重复测量和不确定性，并区分量子不确定与仪器粗糙或主观无知。",
+      "readerQuestion": "如果状态只给出各种结果的概率，那么一次测量究竟做了什么，为什么换一种测量会改变能够确定的性质？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "量子力学不把单次结果视为未知轨迹的简单揭晓，而是先用可叠加的概率振幅描述各种可能，再由振幅的相位关系决定重复实验中的概率分布。",
+      "coreExample": "把同一束银原子依次送入不同方向的 Stern–Gerlach 装置，观察第一次筛选、旋转测量方向和再次测量怎样改变结果分布。",
+      "newTerms": [
+        {
+          "term": "可观测量",
+          "definition": "实验可以测量的物理量及其一组允许结果，例如位置、动量或某一方向的自旋。"
+        },
+        {
+          "term": "本征态",
+          "definition": "对某个可观测量测量时会确定地产生一个特定结果的状态。"
+        },
+        {
+          "term": "玻恩规则",
+          "definition": "把状态在某个测量结果方向上的振幅绝对值平方解释为该结果出现概率的规则。"
+        },
+        {
+          "term": "自旋",
+          "definition": "粒子的内禀量子性质，可沿选定方向测量并得到离散结果，但不是小球真的绕轴旋转。"
+        },
+        {
+          "term": "不确定性关系",
+          "definition": "对不相容可观测量的统计离散程度所设的状态依赖下界，而非单纯描述仪器误差。"
+        }
+      ],
+      "conclusion": "测量不是被动读取一份同时写好所有答案的清单，而是按所选可观测量把状态投向一组可能结果；不相容的测量基底因此限制了哪些性质能够同时被确定。",
+      "nextQuestion": "当两个系统共享一个不可拆开的量子状态时，这套测量规则会产生怎样的关联，又能否被用来超光速传递信息？",
+      "nextPage": "entanglement-and-boundaries.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "entanglement-and-boundaries.html",
+      "title": "纠缠的证据与边界",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用测量基底解释量子结果、重复测量和不确定性，并区分量子不确定与仪器粗糙或主观无知。",
+      "readerStateAfter": "读者能够解释纠缠关联、Bell 检验与无信号边界，并判断流行量子说法究竟属于实验事实、数学推论还是哲学解释。",
+      "readerQuestion": "当两个系统共享一个不可拆开的量子状态时，这套测量规则会产生怎样的关联，又能否被用来超光速传递信息？",
+      "dependsOn": [
+        "states-and-measurement.html"
+      ],
+      "priorConclusion": "测量不是被动读取一份同时写好所有答案的清单，而是按所选可观测量把状态投向一组可能结果；不相容的测量基底因此限制了哪些性质能够同时被确定。",
+      "coreExample": "把一对处于共同自旋状态的粒子送往相距很远的两端，让两位实验者随机选择测量方向，再比较多轮结果中的相关性。",
+      "newTerms": [
+        {
+          "term": "纠缠",
+          "definition": "复合系统具有不能拆成各部分独立状态乘积的共同量子状态。"
+        },
+        {
+          "term": "局域隐变量",
+          "definition": "假定结果由粒子携带的局部预设信息决定，且远处测量选择不会即时改变本地结果的模型。"
+        },
+        {
+          "term": "贝尔不等式",
+          "definition": "一类给局域隐变量模型可产生的相关性设定上限、从而可由实验检验的统计约束。"
+        },
+        {
+          "term": "退相干",
+          "definition": "量子系统与环境纠缠后，相位关系对局部观察变得难以利用，使行为近似经典化的过程。"
+        }
+      ],
+      "conclusion": "纠缠实验排除了广泛的局域隐变量解释，却没有提供可控的超光速通信；量子力学对实验概率的预测极为明确，而对状态如何对应现实仍允许不同解释。",
+      "nextQuestion": "在不诉诸神秘化的前提下，未来哪些实验或理论进展能够进一步区分量子力学的不同解释？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

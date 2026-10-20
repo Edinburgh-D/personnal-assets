@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>测量不是掀开盖子｜量子力学入门</title>
+  <meta name="description" content="用 Stern–Gerlach 装置理解量子测量、离散结果、不相容测量与不确定性的真正含义。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="测量不是掀开盖子｜量子力学入门">
+  <meta property="og:description" content="同一个量子系统面对不同测量装置时，为什么会给出不同的可能结果。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem("quantum-mechanics-theme") || (localStorage.getItem("kb_darkMode") === "true" ? "dark" : ""); } catch (error) {}
+      document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-mast">
+    <div class="mast-utility">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span>科学 / 自然 · 2026</span>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+    </div>
+    <p class="mast-name">量子力学入门</p>
+    <nav aria-label="主要导航">
+      <ul class="mast-links">
+        <li><a href="main.html">概率</a></li>
+        <li><a href="states-and-measurement.html" aria-current="page">测量</a></li>
+        <li><a href="entanglement-and-boundaries.html">纠缠</a></li>
+        <li><a href="sources.html">来源</a></li>
+      </ul>
+      <details class="mobile-menu nav-menu-btn">
+        <summary>目录</summary>
+        <ul>
+          <li><a href="main.html">概率</a></li>
+          <li><a href="states-and-measurement.html" aria-current="page">测量</a></li>
+          <li><a href="entanglement-and-boundaries.html">纠缠</a></li>
+          <li><a href="sources.html">来源</a></li>
+        </ul>
+      </details>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../index.html">知识库</a><span aria-hidden="true">/</span><a href="main.html">量子力学入门</a><span aria-hidden="true">/</span><span>测量</span>
+    </nav>
+
+    <div class="article-grid">
+      <main id="content" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">量子力学不把单次结果视为未知轨迹的简单揭晓，而是先用可叠加的概率振幅描述各种可能，再由振幅的相位关系决定重复实验中的概率分布。</template>
+        <template data-narrative="question">如果状态只给出各种结果的概率，那么一次测量究竟做了什么，为什么换一种测量会改变能够确定的性质？</template>
+        <template data-narrative="example">把同一束银原子依次送入不同方向的 Stern–Gerlach 装置，观察第一次筛选、旋转测量方向和再次测量怎样改变结果分布。</template>
+        <template data-narrative="conclusion">测量不是被动读取一份同时写好所有答案的清单，而是按所选可观测量把状态投向一组可能结果；不相容的测量基底因此限制了哪些性质能够同时被确定。</template>
+        <template data-narrative="next-question">当两个系统共享一个不可拆开的量子状态时，这套测量规则会产生怎样的关联，又能否被用来超光速传递信息？</template>
+
+        <article class="prose">
+          <header class="article-header">
+            <h1>测量不是掀开盖子</h1>
+            <p class="lede">在量子实验里，问题的问法属于实验装置本身。换一个方向、换一套刻度，不只是换个角度看同一张答案纸。</p>
+          </header>
+
+          <section id="apparatus">
+            <h2>装置先规定允许的答案</h2>
+            <p>上一章留下了一个悬念：状态能够预测分布，却不替单次实验预写结果。要理解测量，我们不能只盯着被测粒子，还要把装置怎样与它相互作用写进问题。不同装置把连续的物理可能性整理成不同的一组可记录结果。</p>
+            <p><dfn data-term="可观测量">可观测量</dfn>是一个可以被实验测量的物理量，以及它所允许的一组结果。位置、动量、能量都可以成为可观测量。形式上，它由一个数学算符表示；入门阶段更重要的直觉是：选定可观测量，就等于选定了装置要把状态分解到哪套“答案方向”上。</p>
+            <p>若一个状态面对某种测量时会确定地产生某个结果，它就是该测量的<dfn data-term="本征态">本征态</dfn>。例如，经过竖直方向筛选并保留下来的原子，再进入同方向的同类装置，仍会走向相同出口。第一次测量不仅给出记录，也准备了适合下一次同方向测量的状态。</p>
+            <p>一般状态不必恰好对准某个答案方向。它可以展开为多个本征态的组合，而每个展开系数就是相应结果的振幅。<dfn data-term="玻恩规则">玻恩规则</dfn>把某一系数的绝对值平方解释为该结果的概率。它把上一章的“落点分布”推广到任意量子测量。</p>
+            <p>同一个状态在不同测量中会有不同展开。好比一个平面箭头可以沿南北轴分解，也可以沿东北—西南轴分解；换轴不改变箭头本身，却改变两个分量。量子情形还保留复数相位，因此这种分解会影响后续组合与统计。</p>
+
+            <div class="equation" aria-label="量子测量的三步结构">
+              <strong>准备：</strong><span>给定状态 |ψ⟩</span>
+              <strong>选择：</strong><span>用一组结果方向 {|aᵢ⟩} 展开状态</span>
+              <strong>记录：</strong><span>结果 aᵢ 的概率为 |⟨aᵢ|ψ⟩|²</span>
+            </div>
+          </section>
+
+          <section id="stern-gerlach">
+            <h2>旋转磁铁，就换了问题</h2>
+            <p>Stern–Gerlach 装置把带有磁矩的原子束送入不均匀磁场。经典小磁针可以有任意朝向，因此人们或许期待屏幕上出现连续散开的轨迹。实际装置却把银原子束分成离散的两束，这为讨论二结果系统提供了干净的实验模型。MIT 的量子课程用这套装置讲解位置、动量、测量方向和二分结果。<sup class="source-ref"><a href="sources.html#src-mit805">[3]</a></sup></p>
+            <p>这种二结果性质称为<dfn data-term="自旋">自旋</dfn>。名称来自角动量的数学关系，但不应把电子想成表面真的在转的小球。沿某一方向测量时，二分之一自旋系统只给出“上”或“下”两个结果；沿另一个方向测量，则使用另一套上、下状态。</p>
+
+            <figure class="experiment-figure">
+              <svg viewBox="0 0 720 260" role="img" aria-labelledby="sg-title sg-desc">
+                <title id="sg-title">连续 Stern–Gerlach 测量示意</title>
+                <desc id="sg-desc">原子束先经竖直方向装置筛选向上分支，再经水平方向装置分成左右两束；若选择其中一束并重新测竖直方向，结果又恢复为上下两种。</desc>
+                <path class="diagram-axis" d="M20 130 H105"></path>
+                <rect class="diagram-soft" x="105" y="92" width="105" height="76"></rect>
+                <text class="diagram-label" x="125" y="122">测 z 方向</text>
+                <text class="diagram-label" x="125" y="142">保留“上”</text>
+                <path class="diagram-path" d="M210 130 C250 130 260 85 300 85"></path>
+                <path class="diagram-line" d="M210 130 C250 130 260 176 300 176"></path>
+                <path class="diagram-axis" d="M300 85 H330"></path>
+                <rect class="diagram-soft" x="330" y="47" width="105" height="76"></rect>
+                <text class="diagram-label" x="350" y="77">测 x 方向</text>
+                <text class="diagram-label" x="350" y="97">保留“右”</text>
+                <path class="diagram-path" d="M435 85 C475 85 485 47 525 47"></path>
+                <path class="diagram-line" d="M435 85 C475 85 485 123 525 123"></path>
+                <path class="diagram-axis" d="M525 47 H552"></path>
+                <rect class="diagram-soft" x="552" y="9" width="105" height="76"></rect>
+                <text class="diagram-label" x="572" y="39">再测 z</text>
+                <text class="diagram-label" x="572" y="59">上下各有机会</text>
+                <path class="diagram-path" d="M657 47 C680 47 684 25 704 25"></path>
+                <path class="diagram-path" d="M657 47 C680 47 684 69 704 69"></path>
+              </svg>
+              <figcaption>中间的 x 方向测量破坏了原先对 z 方向结果的确定性。装置不是偷偷读取三套早已并存的标签。</figcaption>
+            </figure>
+
+            <p>现在按三步做思想实验。先沿竖直的 z 方向测量，只保留“上”的原子；立刻再测 z，结果确定仍是“上”。如果第二台装置改为水平的 x 方向，原子会分到“右”与“左”两个出口。若保留其中一路，再用 z 方向测量，结果又会分成“上”与“下”。</p>
+            <p>若把第二台装置只旋转一个较小角度，而不是整整九十度，两个出口的概率也会连续改变。装置方向并没有创造额外的离散标签，它改变的是原状态在新基底上的投影。角度关系由振幅控制，概率则在取平方后出现。</p>
+            <p>关键不在磁铁把原子“撞乱了”这么简单。若只是粗暴扰动，我们应能设想更轻柔的装置逐步减少误差。但这里的概率结构与测量方向之间有精确关系，而且可以用状态在不同基底间的展开计算。x 方向的确定状态，本来就是 z 方向两个可能状态的特定叠加。</p>
+            <p>筛选在这里十分重要。如果不丢弃任何出口，后续统计会混合不同准备结果，难以判断装置做了什么。保留一个出口等于用第一次记录制备新集合，再让这个集合接受下一次测试。量子实验的推理经常依赖这种“制备—变换—测量”的严格顺序。</p>
+            <p>每个概率都要靠一批同样准备的原子估计。实验者不能对同一个原子同时收集所有不相容方向的答案，因为一次筛选已经改变后续实验所用的状态。比较不同方向时，必须分别重复制备，再比较各批次的频率。</p>
+          </section>
+
+          <section id="incompatibility">
+            <h2>不相容不是仪器不够精细</h2>
+            <p>经典物体可以同时具有位置与速度，只是测量可能不够准。量子理论中，有些可观测量对应的运算次序不能交换；先测 A 再测 B，与先测 B 再测 A，不一定保留相同的统计状态。这样的量被称为不相容。</p>
+            <p><dfn data-term="不确定性关系">不确定性关系</dfn>给某些不相容量在同一状态中的统计离散程度设定下界。最著名的是位置与动量：Δx·Δp ≥ ℏ/2。这里的 Δ 表示在许多次同样制备与测量中，结果分布的标准差，不是某位实验员对单个读数“心里没底”。</p>
+            <p>这条关系也不是“观察时光子把电子撞跑了”的同义词。测量扰动在具体装置中确实存在，但标准不确定性关系首先约束状态本身能否同时让两种分布都极窄。即使在测量之前，一个高度局域的位置状态也必须包含较宽的动量成分。</p>
+            <p>不等式给的是乘积下界，不是说两种量各自都有固定的最小模糊。我们可以准备位置分布很窄的状态，代价是动量分布变宽；也可以做相反选择。哪种权衡更合适，取决于实验想回答的问题。</p>
+            <p>可以用声音帮助建立有限的直觉。持续很久的纯音具有清楚频率，却难以定位到短促时刻；极短脉冲在时间上明确，却要包含较宽频率范围。位置与动量的数学关系也来自傅里叶变换，不过电子不是声音，这个类比只能说明“一个表示越窄，另一个表示越宽”的结构。</p>
+            <p>对于自旋的不同方向，也有类似但更离散的限制。z 方向确定的状态在 x 方向上给出两个概率，而 x 方向筛选又会抹去原有的 z 方向确定性。这里没有连续误差条，却同样显示不同问题不能共用一套完整答案。</p>
+
+            <div class="concept-note">
+              <strong>三种不同的不确定</strong>
+              <p>仪器误差意味着装置没有忠实记录目标量；经典无知意味着量已有确定值但我们不知道；量子离散意味着同一制备在选定测量下只规定结果分布。把三者混为一谈，会错过理论最具体的内容。</p>
+            </div>
+          </section>
+
+          <section id="collapse">
+            <h2>“坍缩”是一条更新规则，也是一道解释难题</h2>
+            <p>教科书常说，测得某个结果后，状态“坍缩”为相应本征态。这条规则解释了为什么立刻重复同一测量会得到同一结果。作为计算步骤，它非常有效：先按玻恩规则给出各结果概率，再以实际记录更新后续预测所用的状态。</p>
+            <p>需要注意“立刻重复”的条件。若两次测量之间存在磁场、相互作用或自由演化，状态会随时间变化，第二次结果不必相同。稳定复现不是测量标签永久贴在粒子上，而是因为准备后的状态在这段时间里保持对准同一测量方向。</p>
+            <p>难题在于，量子状态在不测量时按薛定谔方程连续演化，而测量规则似乎引入了随机、非连续的更新。装置本身也由原子组成，理论应在什么位置从连续演化切换到结果更新？这就是测量问题的一个核心版本。</p>
+            <p>不同解释对此给出不同回答。有的把更新视为关于信息的改变，有的认为真实发生了随机过程，有的让所有分支继续存在，还有的重写“一个系统在某时具有何种性质”的条件。它们往往共享日常实验的概率预测，却对理论中哪些对象代表现实持不同立场。Stanford 的量子测量综述梳理了这类分歧。<sup class="source-ref"><a href="sources.html#src-sep-measurement">[4]</a></sup></p>
+            <p>因此，学习量子测量时应把两个层次分开。操作层面已经十分明确：怎样准备、选择哪种测量、各结果概率多少、记录后如何预测下一次实验。解释层面仍有争论：状态是世界本身、知识，还是某种更复杂结构的组成部分。</p>
+            <p>单个系统的精密控制也不只是思想实验。2012 年诺贝尔物理学奖的科学背景介绍了被俘获离子和腔中光子的操纵与近乎无损测量，说明实验者可以在个体量子系统上反复制备、控制和读取状态。<sup class="source-ref"><a href="sources.html#src-nobel2012">[5]</a></sup></p>
+            <p>这类实验同时说明，测量并非只有“彻底摧毁”一种形式。研究者可以设计相互作用，让装置获得特定信息而尽量保留其他性质。能够少扰动地读取某个量，不代表所有不相容量也能同时确定；可测内容仍由状态和装置共同限制。</p>
+          </section>
+
+          <section id="what-follows">
+            <h2>从一个系统走向两个系统</h2>
+            <p>至此，测量可以被看成“状态、基底、结果”三者的关系。装置选择基底，状态给出各结果的振幅，记录产生一个具体结果并改变后续预测。不同基底不必共享一张同时确定的答案表，这正是自旋序列和不确定性共同揭示的结构。</p>
+            <p>当系统只有一个时，这些规则已经反直觉；当两个系统共享一个不能拆开的状态时，问题会更尖锐。两端各自的结果仍然随机，但放在一起比较时可能呈现超过经典预设指令所允许的相关性。下一章将用 Bell 检验说明“超过”究竟意味着什么。</p>
+          </section>
+
+          <footer class="chapter-end">
+            <p>测量方向不是从同一对象上挑选不同标签，而是规定了状态要沿哪套结果方向展开。这个认识将直接进入两地随机选择测量方向的纠缠实验。</p>
+            <a class="next-link" href="entanglement-and-boundaries.html">继续：纠缠的证据与边界 →</a>
+          </footer>
+        </article>
+      </main>
+
+      <aside class="side-notes" aria-label="页内导航">
+        <nav>
+          <strong>本章</strong>
+          <a href="#apparatus">装置与结果</a>
+          <a href="#stern-gerlach">旋转测量方向</a>
+          <a href="#incompatibility">不相容与下界</a>
+          <a href="#collapse">更新与解释</a>
+          <a href="#what-follows">走向两个系统</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="foot-dense">
+    <div class="foot-dense-inner">
+      <div class="footer-links">
+        <a href="main.html">上一章</a>
+        <a href="../index.html">知识库目录</a>
+        <a href="sources.html">来源说明</a>
+      </div>
+      <p>量子力学入门 · 面向普通大众 · 第二章 / 三章 · 公式用于说明结构，不要求读者进行计算。</p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

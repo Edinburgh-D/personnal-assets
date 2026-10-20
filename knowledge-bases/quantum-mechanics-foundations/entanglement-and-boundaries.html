@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>纠缠的证据与边界｜量子力学入门</title>
+  <meta name="description" content="从两地自旋实验理解纠缠、Bell 不等式、无信号边界，以及实验事实与量子解释之间的区别。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="纠缠的证据与边界｜量子力学入门">
+  <meta property="og:description" content="相关性可以排除哪些经典解释，又为什么不能传递超光速消息。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem("quantum-mechanics-theme") || (localStorage.getItem("kb_darkMode") === "true" ? "dark" : ""); } catch (error) {}
+      document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-mast">
+    <div class="mast-utility">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span>科学 / 自然 · 2026</span>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+    </div>
+    <p class="mast-name">量子力学入门</p>
+    <nav aria-label="主要导航">
+      <ul class="mast-links">
+        <li><a href="main.html">概率</a></li>
+        <li><a href="states-and-measurement.html">测量</a></li>
+        <li><a href="entanglement-and-boundaries.html" aria-current="page">纠缠</a></li>
+        <li><a href="sources.html">来源</a></li>
+      </ul>
+      <details class="mobile-menu nav-menu-btn">
+        <summary>目录</summary>
+        <ul>
+          <li><a href="main.html">概率</a></li>
+          <li><a href="states-and-measurement.html">测量</a></li>
+          <li><a href="entanglement-and-boundaries.html" aria-current="page">纠缠</a></li>
+          <li><a href="sources.html">来源</a></li>
+        </ul>
+      </details>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../index.html">知识库</a><span aria-hidden="true">/</span><a href="main.html">量子力学入门</a><span aria-hidden="true">/</span><span>纠缠</span>
+    </nav>
+
+    <div class="article-grid">
+      <main id="content" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">测量不是被动读取一份同时写好所有答案的清单，而是按所选可观测量把状态投向一组可能结果；不相容的测量基底因此限制了哪些性质能够同时被确定。</template>
+        <template data-narrative="question">当两个系统共享一个不可拆开的量子状态时，这套测量规则会产生怎样的关联，又能否被用来超光速传递信息？</template>
+        <template data-narrative="example">把一对处于共同自旋状态的粒子送往相距很远的两端，让两位实验者随机选择测量方向，再比较多轮结果中的相关性。</template>
+        <template data-narrative="conclusion">纠缠实验排除了广泛的局域隐变量解释，却没有提供可控的超光速通信；量子力学对实验概率的预测极为明确，而对状态如何对应现实仍允许不同解释。</template>
+        <template data-narrative="next-question">在不诉诸神秘化的前提下，未来哪些实验或理论进展能够进一步区分量子力学的不同解释？</template>
+
+        <article class="prose">
+          <header class="article-header">
+            <h1>两地结果为何这样相关</h1>
+            <p class="lede">把两个粒子送往远处，各自的结果都像随机掷币。等双方交换记录后，排列方式却强到无法用一套局部预写指令解释。</p>
+          </header>
+
+          <section id="joint-state">
+            <h2>整体可以比部分更确定</h2>
+            <p>上一章说明，测量方向决定状态沿哪套答案展开。现在把两个二结果系统放在一起。它们若各有独立状态，整体描述只是两份说明书的并列；若制备过程让它们共享一个不可分解的共同状态，情况就不同了。</p>
+            <p><dfn data-term="纠缠">纠缠</dfn>指复合系统的状态不能写成各部分独立状态的乘积。以总自旋为零的一对粒子为例，整体可以确定满足“沿同一方向测量时结果相反”，但任一粒子单独看都没有确定的上或下。完整信息存在于关系中，而非分别藏在两边。</p>
+            <p>这与两只手套装进两个盒子不一样。手套在开盒前已经分别是左手和右手，开盒只是揭晓。如果只在一个固定方向上比较结果，手套模型足以模仿“这边左、那边右”的相关。量子实验的关键是双方能够在最后时刻从几个不同测量方向中随机选择。</p>
+            <p>每个方向都对应一套不同基底。若粒子只是携带一张预先写好的答题卡，它必须同时规定遇到每个方向时回答什么。上一章已经暗示，不相容方向未必共享同时确定的答案；Bell 的洞见是把这种差异变成一个可统计检验的不等式。</p>
+            <p>单看任意一轮，我们总能事后编一个局部故事：这一对粒子恰好带着能产生该结果的指令。检验的力量来自许多轮随机设置。各种方向组合共同约束同一套假想指令，使它无法分别为每种组合临时改写答案。</p>
+
+            <figure class="experiment-figure">
+              <svg viewBox="0 0 720 270" role="img" aria-labelledby="bell-title bell-desc">
+                <title id="bell-title">两地随机选择测量方向的关联实验</title>
+                <desc id="bell-desc">共同粒子源位于中央，两个粒子向左右飞行；左侧和右侧各有可旋转的测量器，分别产生加或减结果，最后通过普通通信比较记录。</desc>
+                <circle class="diagram-soft" cx="360" cy="135" r="38"></circle>
+                <text class="diagram-label" x="336" y="139">共同源</text>
+                <path class="diagram-path" d="M322 135 H205"></path>
+                <path class="diagram-path" d="M398 135 H515"></path>
+                <rect class="diagram-soft" x="86" y="83" width="119" height="104"></rect>
+                <rect class="diagram-soft" x="515" y="83" width="119" height="104"></rect>
+                <path class="diagram-axis" d="M116 158 L174 104 M116 111 L174 166"></path>
+                <path class="diagram-axis" d="M545 158 L603 104 M545 111 L603 166"></path>
+                <text class="diagram-label" x="104" y="207">左侧随机选方向</text>
+                <text class="diagram-label" x="529" y="207">右侧随机选方向</text>
+                <text class="diagram-label" x="134" y="68">结果 ±</text>
+                <text class="diagram-label" x="563" y="68">结果 ±</text>
+                <path class="diagram-line" d="M150 229 C285 254 435 254 575 229"></path>
+                <text class="diagram-label" x="288" y="265">事后比较多轮记录</text>
+              </svg>
+              <figcaption>实验比较的是许多轮联合统计，不是观察某一轮后把消息从一端瞬间发送到另一端。</figcaption>
+            </figure>
+          </section>
+
+          <section id="bell-test">
+            <h2>Bell 把哲学争论变成计数实验</h2>
+            <p>设想一种<dfn data-term="局域隐变量">局域隐变量</dfn>模型：每对粒子在离开源头时携带某种共同信息；本地结果只取决于这份信息和本地设置；远处临时选择哪个方向，不会即时改变本地结果。这里的“局域”与“隐变量”都是明确假设，不等于笼统地说世界必须像日常物体。</p>
+            <p>从这些假设出发，可以推导<dfn data-term="贝尔不等式">贝尔不等式</dfn>。它不是量子理论内部必须遵守的限制，而是给这类局部预设模型所能产生的相关性划出上限。实验者让两端随机选择方向，分别记下加或减，再按方向组合计算相关系数。</p>
+            <p>一个直观版本可把任务看成两位相隔很远的答题者。他们事先可以商量策略，开始后却不能通信；裁判分别随机提问，并按回答是否满足某种关系计分。任何预写策略都有最高平均得分，而共享的量子状态在合适测量下能超过这个上限。</p>
+            <p>量子力学对某些共同状态和角度组合预言更强的相关性，会越过这条上限。1970 年代以来的实验逐步改善光源、随机设置和探测效率。2015 年，多组实验同时关闭关键的局域性与探测漏洞；2022 年诺贝尔物理学奖表彰了建立这条实验路线的工作。<sup class="source-ref"><a href="sources.html#src-nobel2022">[6]</a></sup><sup class="source-ref"><a href="sources.html#src-prl2015">[7]</a></sup></p>
+            <p>所谓漏洞，是指实验实现与理想推导之间可能让替代理论钻入的空隙。探测漏洞关注未被记录的事件是否造成选择偏差；局域性漏洞关注一端设置或结果是否来得及以亚光速影响另一端。关闭漏洞需要高效率探测、快速随机选择和足够的空间分离。</p>
+            <p>结论需要说得精确：自然界的联合统计不能由满足 Bell 假设的局域隐变量模型复现。这不等于所有可能的隐变量理论都被排除，也不等于实验直接拍到了某种“超光速作用”。放弃局域性、放弃预先结果、修改因果独立性，或重新理解状态，都可能形成不同理论路线，但每条路线都要承担自己的代价。</p>
+            <p>这也是为什么不同量子解释可以同意同一组实验数字。它们可能在“哪些对象真实存在”或“结果如何出现”上说法不同，却共享标准概率规则。只有当某种扩展理论预言了可观察偏差，实验才能在这些版本之间进一步裁决。</p>
+
+            <div class="claim-layers">
+              <div>
+                <dt>实验事实</dt>
+                <dd>在特定设置下，联合结果违反相应不等式，并与量子预测一致。</dd>
+              </div>
+              <div>
+                <dt>逻辑推论</dt>
+                <dd>满足一组明确局域性与预设结果假设的模型无法复现这些统计。</dd>
+              </div>
+              <div>
+                <dt>解释选择</dt>
+                <dd>状态、分支、因果关系或现实属性究竟怎样理解，仍取决于额外理论立场。</dd>
+              </div>
+            </div>
+          </section>
+
+          <section id="no-signal">
+            <h2>强关联不是可控信号</h2>
+            <p>假设左侧选择某个方向并得到“上”。若双方使用相同方向，右侧在对应共同状态中会得到“下”。这很容易诱发一个念头：左侧测量是否瞬间迫使右侧改变？无论采用哪种解释，单凭这个相关性都无法让左侧发送可控消息。</p>
+            <p>原因是每一端单独看到的结果仍然随机。左侧实验者不能选择自己得到上还是下，也不能仅凭本地记录判断右侧此刻选择了哪个方向。右侧的数据也一样。只有双方后来通过普通的、受光速限制的通信交换设置与结果，相关结构才会显现。</p>
+            <p>数学上，可以把联合分布对远端结果求和，得到本地的边缘分布。无论远端选择哪种允许测量，本地边缘分布保持不变。远端选择会改变双方记录如何配对相关，却不会在本地数据里刻出可读的“零”或“一”。</p>
+            <p>这就是无信号边界：量子理论允许某些联合概率不能分解为局部预设说明，却保证任一方的边缘概率不受远处测量选择的可控影响。关联的组织方式超出经典直觉，信息传递能力却没有越过相对论的通信限制。</p>
+            <p>所以“纠缠让信息瞬间传送”通常是不准确的。量子隐形传态会借助共享状态转移未知量子态，但完成协议仍需要普通经典信息抵达接收方。名称里的“传态”描述状态重建，不是物体消失后在远处立即出现。</p>
+          </section>
+
+          <section id="classical-world">
+            <h2>日常世界为何很少显出条纹</h2>
+            <p>微观规律并没有在物体变大时突然关闭。困难在于，大物体持续与光、空气、热振动和周围材料相互作用。环境不断带走关于不同状态分量的相位信息，使这些分量之间的交叉效应对局部观察迅速变得不可用。</p>
+            <p>这种过程称为<dfn data-term="退相干">退相干</dfn>。从系统与环境的整体角度看，演化仍可遵守量子规则；只看系统时，它却越来越像一个普通概率混合。退相干解释了经典行为为何稳定出现，也解释了大型量子装置为什么必须隔离、冷却并精密控制。</p>
+            <p>在双缝语言中，环境相当于留下极其分散的路径记录。空气分子、热辐射或支撑材料分别与不同路径产生略微不同的关联。我们不必真的收集这些记录；只要原则上它们让路径可以区分，局部干涉就会衰减。</p>
+            <p>退相干并不自动解决所有解释难题。它能说明不同分支为何很难继续干涉，却未必单独说明我们为什么经历一个确定结果，而不是整个关联结构。把“经典外观如何形成”与“唯一结果如何理解”分开，有助于避免用一个术语掩盖两个问题。</p>
+            <p>量子到经典也不是简单的尺寸分界线。分子束、超导电路和光学系统都能在合适条件下表现相干效应；相反，微小系统若与环境强烈耦合，也会很快失去可见干涉。决定因素是可控相位关系能维持多久，以及实验能否重新让分量相遇。</p>
+          </section>
+
+          <section id="judgment">
+            <h2>怎样审查一句“量子”说法</h2>
+            <p>面对新闻、广告或流行文化中的量子说法，可以先问它谈的是单次结果、重复统计，还是一种哲学解释。如果一句话从“结果具有概率性”直接跳到“人的意念创造现实”，中间缺少可操作的装置、变量和统计预测，它就没有继承量子理论的实验约束。</p>
+            <p>第二步是寻找比较对象。双缝条纹要与可区分路径的概率相加比较；不确定性要与仪器误差和经典无知比较；Bell 检验要与满足特定假设的模型比较。没有说明排除了哪一类备选解释，“反直觉”本身不能成为证据。</p>
+            <p>还要留意尺度跳跃。关于电子、自旋或光子的实验结论，不能不经说明就搬到人类意愿、社会关系或宏观命运上。宏观系统当然由量子成分构成，但从微观规律推到高层行为，需要具体模型、环境作用和可检验预测。</p>
+            <p>第三步是检查通信和因果边界。相关性不自动等于信号，状态更新不自动等于可利用的能量传输，数学上的非可分解也不自动等于日常语言里的神秘连接。Nobel 委员会的科学背景材料完整呈现了从 EPR、Bell 到实验漏洞的推理链。<sup class="source-ref"><a href="sources.html#src-nobel-advanced">[8]</a></sup></p>
+            <p>最后，把“预测是否成功”与“世界究竟是什么”分开。量子力学在原子、光子、材料和精密测量中提供了经受长期检验的预测框架。关于状态的本体含义，解释之间仍存在真实分歧。承认这条边界不会削弱科学，反而能让已知与未知各自更清楚。</p>
+            <p>一个可靠的入门结论因此不是“量子世界无法理解”，而是它需要换掉几条经典预设。结果依赖所选基底，可能性以振幅组合，复合系统可以拥有不可分解的整体状态。每一条都能连接到明确实验，而不是依赖神秘修辞。</p>
+          </section>
+
+          <footer class="chapter-end">
+            <p>从双缝到两地关联，贯穿全程的是同一套纪律：先明确制备与测量，再计算振幅和概率，最后用重复统计比较备选模型。神秘感可以是起点，却不能代替可检验的结构。</p>
+            <a class="next-link" href="sources.html">查阅来源与延伸阅读 →</a>
+          </footer>
+        </article>
+      </main>
+
+      <aside class="side-notes" aria-label="页内导航">
+        <nav>
+          <strong>本章</strong>
+          <a href="#joint-state">整体与部分</a>
+          <a href="#bell-test">Bell 检验</a>
+          <a href="#no-signal">无信号边界</a>
+          <a href="#classical-world">经典外观</a>
+          <a href="#judgment">审查量子说法</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="foot-dense">
+    <div class="foot-dense-inner">
+      <div class="footer-links">
+        <a href="states-and-measurement.html">上一章</a>
+        <a href="../index.html">知识库目录</a>
+        <a href="sources.html">来源说明</a>
+      </div>
+      <p>量子力学入门 · 面向普通大众 · 第三章 / 三章 · 实验结论、逻辑推论与哲学解释在正文中分层呈现。</p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

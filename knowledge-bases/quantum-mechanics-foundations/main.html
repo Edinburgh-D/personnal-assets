@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>概率从哪里来｜量子力学入门</title>
+  <meta name="description" content="从单电子双缝实验出发，理解量子力学为什么先组合振幅，再得到可检验的概率分布。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="量子力学入门：从概率振幅到纠缠">
+  <meta property="og:description" content="面向普通大众的连续学习路径，从双缝、测量到纠缠与 Bell 检验。">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=IBM+Plex+Sans:wght@400;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,800&amp;display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      var saved;
+      try { saved = localStorage.getItem("quantum-mechanics-theme") || (localStorage.getItem("kb_darkMode") === "true" ? "dark" : ""); } catch (error) {}
+      document.documentElement.dataset.theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="nav-mast">
+    <div class="mast-utility">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span>科学 / 自然 · 2026</span>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">深色</button>
+    </div>
+    <p class="mast-name">量子力学入门</p>
+    <nav aria-label="主要导航">
+      <ul class="mast-links">
+        <li><a href="main.html" aria-current="page">概率</a></li>
+        <li><a href="states-and-measurement.html">测量</a></li>
+        <li><a href="entanglement-and-boundaries.html">纠缠</a></li>
+        <li><a href="sources.html">来源</a></li>
+      </ul>
+      <details class="mobile-menu nav-menu-btn">
+        <summary>目录</summary>
+        <ul>
+          <li><a href="main.html" aria-current="page">概率</a></li>
+          <li><a href="states-and-measurement.html">测量</a></li>
+          <li><a href="entanglement-and-boundaries.html">纠缠</a></li>
+          <li><a href="sources.html">来源</a></li>
+        </ul>
+      </details>
+    </nav>
+    <hr class="mast-rule" aria-hidden="true">
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../index.html">知识库</a><span aria-hidden="true">/</span><span>量子力学入门</span>
+    </nav>
+
+    <div class="article-grid">
+      <main id="content" data-kb-content data-page-role="overview">
+        <template data-narrative="question">经典世界里的粒子有确定轨迹，为什么单个电子穿过双缝后却必须用概率振幅来描述？</template>
+        <template data-narrative="example">让电子一次一个地穿过双缝并落在屏幕上：每次只出现一个点，许多次以后却形成会随路径信息而变化的干涉分布。</template>
+        <template data-narrative="conclusion">量子力学不把单次结果视为未知轨迹的简单揭晓，而是先用可叠加的概率振幅描述各种可能，再由振幅的相位关系决定重复实验中的概率分布。</template>
+        <template data-narrative="next-question">如果状态只给出各种结果的概率，那么一次测量究竟做了什么，为什么换一种测量会改变能够确定的性质？</template>
+
+        <article class="prose">
+          <header class="article-header">
+            <h1>从屏幕上的一个点开始</h1>
+            <p class="lede">电子一次只留下一个落点。重复成千上万次后，那些点却排成明暗相间的条纹。量子力学的入口，就藏在单次事件与整体图样之间。</p>
+          </header>
+
+          <div class="reading-path" aria-label="阅读路径">
+            <strong>阅读顺序</strong>
+            <ol>
+              <li><a href="main.html">点如何积成分布</a></li>
+              <li><a href="states-and-measurement.html">装置如何定义结果</a></li>
+              <li><a href="entanglement-and-boundaries.html">关联能说明什么</a></li>
+            </ol>
+          </div>
+
+          <section id="one-dot">
+            <h2>每一次都很具体，规律却属于整体</h2>
+            <p>先把装置想得尽量简单。一束电子被调得很弱，使电子大体上一次一个抵达挡板。挡板上开着两条狭缝，后方是一块能够记录落点的屏幕。每次实验，屏幕只在某个位置亮起一个小点；没有半个点，也没有一团按比例摊开的电子。</p>
+            <p>如果电子只是普通小球，而且每个小球暗中选定左缝或右缝，那么两条缝同时打开时，落点分布应当是“只开左缝”与“只开右缝”两种分布的相加。实验给出的却是另一种图样：某些位置更常出现，某些位置几乎空白。亮暗条纹与水波的相长、相消很像，但屏幕上的每个记录仍是一个局部事件。</p>
+            <p>这里最值得保留的不是“电子既是波又是粒子”这句口号，而是两条可操作的事实。第一，单次探测给出离散落点。第二，多次重复的统计分布取决于两条路径能否保持相干关系。Feynman 以电子双缝为例，把这组现象作为量子行为的核心入口。<sup class="source-ref"><a href="sources.html#src-feynman">[1]</a></sup></p>
+
+            <figure class="experiment-figure">
+              <svg viewBox="0 0 720 270" role="img" aria-labelledby="double-slit-title double-slit-desc">
+                <title id="double-slit-title">单电子双缝实验示意</title>
+                <desc id="double-slit-desc">电子源在左，两条缝位于中央，通往屏幕的两组路径在右侧叠加；屏幕上的落点积累成非均匀分布。</desc>
+                <circle class="diagram-dot" cx="42" cy="135" r="7"></circle>
+                <text class="diagram-label" x="20" y="112">电子源</text>
+                <path class="diagram-line" d="M70 135 H245"></path>
+                <path class="diagram-screen" d="M270 35 V105 M270 126 V144 M270 165 V235"></path>
+                <text class="diagram-label" x="240" y="258">双缝</text>
+                <path class="diagram-path" d="M278 116 C390 62 500 74 642 112"></path>
+                <path class="diagram-path" d="M278 154 C390 208 500 196 642 158"></path>
+                <path class="diagram-screen" d="M665 34 V236"></path>
+                <circle class="diagram-dot" cx="665" cy="72" r="4"></circle>
+                <circle class="diagram-dot" cx="665" cy="86" r="4"></circle>
+                <circle class="diagram-dot" cx="665" cy="132" r="4"></circle>
+                <circle class="diagram-dot" cx="665" cy="136" r="4"></circle>
+                <circle class="diagram-dot" cx="665" cy="184" r="4"></circle>
+                <circle class="diagram-dot" cx="665" cy="198" r="4"></circle>
+                <text class="diagram-label" x="630" y="258">探测屏</text>
+              </svg>
+              <figcaption>示意图只表达路径关系，不代表电子沿图中的细线飞行。细线代表计算中需要共同考虑的可能过程。</figcaption>
+            </figure>
+          </section>
+
+          <section id="state">
+            <h2>理论首先描述“怎样准备”</h2>
+            <p>物理理论要把准备方式和可观察结果连接起来。量子力学用<dfn data-term="量子状态">量子状态</dfn>记录这种连接：已知系统怎样被制备，它就允许我们计算随后各种测量结果的概率。状态不是电子的照片，也不是一团稀薄物质；它是对实验可能性的结构化描述。</p>
+            <p>当问题关注电子可能在什么位置被发现时，常用<dfn data-term="波函数">波函数</dfn>来表达这个状态。它在每个位置给出一个复数。复数在这里并非多余的数学装饰，因为它同时携带大小与相位；仅有普通的正概率，无法表示两条路径如何相消。</p>
+            <p>波函数在某个位置的数值称为<dfn data-term="概率振幅">概率振幅</dfn>。如果只有一条通往某个落点的可区分路径，计算方式可以简写为“振幅的绝对值平方等于概率”。如果有多条不可区分的路径，则必须先把各路径的振幅相加，再对总和取绝对值平方。</p>
+
+            <p>可以把每个振幅暂时想成一根带方向的箭头。箭头长度影响概率大小，箭头方向表示相位。两条同向箭头相加会变长，反向箭头相加会缩短，转过其他角度则得到介于两者之间的新箭头。这个图像比“概率相加”多保存了一层方向信息。</p>
+
+            <p>从电子源到屏幕某一点，并不只计算两条画出来的细线。更完整的理论会为所有可能过程分配相位，并把它们共同纳入总振幅。双缝只是把这些过程粗略分成左、右两组，让相位结构变得容易看见。</p>
+
+            <div class="equation" aria-label="概率与振幅的关系">
+              <strong>路径可区分：</strong>
+              <span>P = |A₁|² + |A₂|²</span>
+              <strong>路径不可区分：</strong>
+              <span>P = |A₁ + A₂|²</span>
+            </div>
+
+            <p>两式看起来只差括号，物理含义却完全不同。第二式展开后多出一个交叉项，它可以是正，也可以是负。于是，打开第二条缝可能让某处更亮，也可能让某处更暗。普通概率只能增加，带相位的振幅却能抵消。</p>
+            <p>亮纹位置对应两组箭头大致同向，暗纹位置对应它们大致反向。改变电子波长、缝间距或屏幕距离，会改变相位差随位置变化的速度，于是条纹间距也随之改变。理论的内容因此不只是“有时会相消”，而是能够给出图样怎样移动的定量预测。</p>
+            <p>相位本身通常不能由一次直接读数获得。它的作用要通过两组分量重新相遇后才能显现，就像两只钟的相对指向只有放在一起比较才有意义。实验者常通过改变路径长度或外加场，控制相位差并观察条纹随之移动。</p>
+            <p>这揭示了状态描述的另一层特点：总体相位不会改变任何概率，但分量之间的相对相位会改变<dfn data-term="干涉">干涉</dfn>，也就是不同可能路径相互增强或抵消的图样。理论因此会区分“整个状态一起转过同一角度”与“其中一部分相对另一部分转动”。只有后者能进入可观察结果。</p>
+          </section>
+
+          <section id="superposition">
+            <h2>“同时经过”不是两份经典事实</h2>
+            <p><dfn data-term="叠加">叠加</dfn>指的是：如果两种状态都被理论允许，那么它们按复数权重组成的新状态通常也被允许。在双缝装置中，我们可以把到达屏幕的状态写成“经左缝的分量”与“经右缝的分量”之和。这个写法并不等于说电子内部藏着两张已经填好的路线票。</p>
+            <p>经典混合与量子叠加的区别可以用是否保留相位来检验。若随机地让一半电子只走左缝、另一半只走右缝，我们得到的是两种概率分布的加权平均。若装置不留下路径记录，两条分量之间的相位关系仍能影响落点，于是出现干涉。</p>
+            <p>“不可区分”也不是实验者偷懒不去看。只要世界中有某个自由度可靠地携带路径标记，即使记录从未显示在人眼前，屏幕分布也会改变。相反，如果标记可以被物理地擦除，使两种路径重新无法区分，某些条件筛选下的条纹能够恢复。</p>
+            <p>因此，“电子究竟走了哪条缝”不总是一个等待揭晓的普通问题。只有当实验装置真的把路径信息写进某个可区分的记录中，左右路径才会像经典备选那样被分别计数。记录可以留在探测器，也可以泄漏到环境；是否有人亲眼查看并不是关键。</p>
+            <p>一旦路径留下可靠标记，原先能够交叉相加的两组振幅就与不同记录相连。对只看屏幕的观察者而言，交叉项消失，条纹变成两团分布之和。常见说法“意识让波函数坍缩”把观察者的心理活动塞进了并不需要它的地方；实验关心的是物理上是否存在可区分的记录。</p>
+
+            <p>这也解释了为什么“电子劈成两半”不是好图像。探测器不会在左右两处各收到半个电子的电荷；完整的电子事件出现在一个位置。被分开演化的是状态中的可能分量，而这些分量仍能在后续装置中重新组合并影响完整事件的概率。</p>
+            <p>反过来，“电子其实只走一条我们不知道的路”也不是无代价的补充。若这种隐藏路线要复现所有干涉实验，它必须同时解释相位如何受两条路径装置影响，以及为何路径记录出现后交叉项消失。朴素的小球路线并不能自动完成这些工作。</p>
+
+            <div class="concept-note">
+              <strong>类比的边界</strong>
+              <p>水波类比能帮助理解增强与抵消，却不能解释为何屏幕每次只出现一个电子落点。小球类比能帮助理解离散探测，却无法产生振幅相消。量子描述恰好把这两类现象放在同一套预测规则中。</p>
+            </div>
+          </section>
+
+          <section id="prediction">
+            <h2>概率不是理论偷懒</h2>
+            <p>在经典统计中，概率经常来自无知。掷出的硬币实际上遵循确定的运动，只是我们没有精确掌握初始条件。量子实验更强：即使按照同一程序反复制备系统，单次结果仍不由状态给出，而重复结果的分布却能被极其精确地预测。</p>
+            <p>“同一程序”必须理解为可检验的制备条件，而不是要求每个环境细节绝对相同。实验者通过校准能量、方向、时间和探测器响应，让可控条件保持一致，再比较大量事件。若分布稳定复现，理论就获得支持；若系统性偏离，装置模型或理论都需要接受检查。</p>
+            <p>这并不意味着理论“什么都不知道”。它知道哪些结果不可能、哪些概率会随装置变化、不同路径如何组合，也知道某些关系必须保持。MIT 的入门课程同样从叠加、实验事实、波函数与不确定性逐步建立这套预测结构。<sup class="source-ref"><a href="sources.html#src-mit804">[2]</a></sup></p>
+            <p>也不要反过来把概率解释成“万事都由心念创造”。制备装置、磁场方向、狭缝宽度和探测器设置都会改变可检验的分布；仅仅希望某个结果出现不会改变计算规则。量子力学的反常之处受实验结构严格约束，不是任意性的许可证。</p>
+            <p>量子概率也不表示每种想象都有机会发生。边界条件、守恒关系和状态结构会把许多结果的振幅压到零。理论允许的随机性发生在一组精确定义的结果之间，而不是从所有语言上说得通的故事中任意抽签。</p>
+            <p>单次落点无法单独展示完整分布，所以量子主张通常依赖反复实验。一次罕见事件可能只是小概率波动；稳定条纹、相关系数或能级谱才是可比较的证据。读量子新闻时，先问样本如何积累，往往比先问现象是否“神奇”更有用。</p>
+            <p>实验分布还必须与探测器效率、背景噪声和装置漂移区分。研究者会做只开一条缝、关闭信号源或改变控制参数等对照，以确认条纹来自所讨论的量子过程。理论的精确性必须和实验误差模型一起接受检验。</p>
+            <p>到这里，双缝给出了一幅足够稳固的地图：状态提供振幅，多条不可区分路径先组合振幅，测量记录再从由此得到的分布中给出一个具体结果。下一步的难题不再是“电子像波还是像粒子”，而是装置为何能够规定什么算作一个结果。</p>
+          </section>
+
+          <footer class="chapter-end">
+            <p>我们已经从落点分布反推出振幅与相位的必要性。但同一个状态面对不同装置时，会被分解成不同的一组可能结果；这正是测量问题的技术核心。</p>
+            <a class="next-link" href="states-and-measurement.html">继续：测量不是掀开盖子 →</a>
+          </footer>
+        </article>
+      </main>
+
+      <aside class="side-notes" aria-label="页内导航">
+        <nav>
+          <strong>本章</strong>
+          <a href="#one-dot">单次与整体</a>
+          <a href="#state">状态与振幅</a>
+          <a href="#superposition">叠加与路径</a>
+          <a href="#prediction">概率的含义</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="foot-dense">
+    <div class="foot-dense-inner">
+      <div class="footer-links">
+        <a href="../../index.html">站点总览</a>
+        <a href="../index.html">知识库目录</a>
+        <a href="sources.html">来源说明</a>
+      </div>
+      <p>量子力学入门 · 面向普通大众 · 第一章 / 三章 · 内容依据公开课程、原始研究与权威科学资料编写。</p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

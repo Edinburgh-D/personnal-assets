@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-21T07:09:49+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "经典世界里的粒子有确定轨迹，为什么单个电子穿过双缝后却必须用概率振幅来描述？",
+      "readerStateChange": "读前容易把电子想成暗中选择一条确定路径的小球；读后能区分单次落点与重复分布，并说明为何不可区分路径要先相加振幅再计算概率。",
+      "twoSentenceSummary": "正文从单电子双缝的离散落点与整体条纹出发，说明量子状态、波函数和带相位振幅如何连接制备与统计结果。随后用路径标记、经典混合和相位箭头划清叠加、干涉与普通概率相加的差别。",
+      "continuityEvidence": "结尾把双缝建立的振幅模型推进到不同装置如何把同一状态分解为不同结果，直接引出下一页的测量基底与结果更新。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "states-and-measurement.html",
+      "centralQuestion": "如果状态只给出各种结果的概率，那么一次测量究竟做了什么，为什么换一种测量会改变能够确定的性质？",
+      "readerStateChange": "读前只知道振幅决定结果分布；读后能用可观测量、基底展开、重复筛选和统计下界解释测量，并区分状态限制、仪器误差与经典无知。",
+      "twoSentenceSummary": "正文用连续的 Stern–Gerlach 筛选展示测量方向如何规定离散结果，并用玻恩规则说明概率来自状态在选定基底上的展开。它进一步区分不确定性、实际扰动和测量问题，再把单系统规则推广到两地选择测量方向的情形。",
+      "continuityEvidence": "开头承接上一页的状态与振幅，结尾把不相容基底转化为两端随机选择方向的实验条件，为 Bell 检验所需的多设置比较建立前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "entanglement-and-boundaries.html",
+      "centralQuestion": "当两个系统共享一个不可拆开的量子状态时，这套测量规则会产生怎样的关联，又能否被用来超光速传递信息？",
+      "readerStateChange": "读前能解释单系统的测量基底；读后能说明共同状态、局域预设模型、Bell 统计上限与无信号边界，并把实验事实同解释选择分开。",
+      "twoSentenceSummary": "正文从不可分解的两粒子状态出发，解释随机设置如何让预写答题卡模型受到联合统计约束，以及关键漏洞实验为何排除广泛的局域预设解释。随后用边缘分布、环境记录和三层证据框架说明强关联不等于可控超光速通信，也不自动指定唯一哲学解释。",
+      "continuityEvidence": "本章直接复用上一页的测量方向与不相容基底，并把双缝中的可区分记录扩展到环境退相干，最终形成可迁移的量子说法审查框架。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分公开课程、诺贝尔科学背景、同行评议实验与哲学综述的证据角色，并按主题继续核对原始材料。",
+      "twoSentenceSummary": "参考页列出双缝、波函数、自旋测量、单系统控制和 Bell 检验所用的八项权威材料。每项均说明能够支持的正文结论与不能外推的边界，并给出从概念课程走向原始论文的阅读顺序。",
+      "continuityEvidence": "来源条目通过正文编号逐项对应三章中的实验、形式规则与解释边界，不进入叙事链但能从所有页面导航到达。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

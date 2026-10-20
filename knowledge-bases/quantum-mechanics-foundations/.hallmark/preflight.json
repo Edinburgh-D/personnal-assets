@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-21",
+  "framework": "vanilla-html",
+  "fontStack": "new project; paired Newsreader, IBM Plex Sans and IBM Plex Mono",
+  "palette": "new OKLCH token system",
+  "motion": "motion-cut; state transitions only",
+  "spacing": "4pt semantic scale"
+}

@@ -4096,6 +4096,13 @@
       "generatedAt": "2026-10-21",
       "slug": "game-theory-primer",
       "entry": "knowledge-bases/game-theory-primer/main.html"
+    },
+    {
+      "name": "量子力学入门",
+      "domain": "科学/自然",
+      "generatedAt": "2026-10-21",
+      "slug": "quantum-mechanics-foundations",
+      "entry": "knowledge-bases/quantum-mechanics-foundations/main.html"
     }
   ],
   "skipped": []
