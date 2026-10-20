@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-20T22:12:56+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么在同一个公共事件中，人们会像生活在不同世界？",
+      "readerStateChange": "读前容易把算法过滤、群体强化和政治极化混为一谈；读后能够按信息进入、社会强化与态度结果三层区分现象。",
+      "twoSentenceSummary": "页面用低排放区争议说明两个人如何从相近起点进入不同信息环境，并依次区分过滤气泡、回音室与极化。研究部分把候选供给、实际暴露、用户选择和态度结果拆开，说明密闭气泡不是默认结论。",
+      "continuityEvidence": "结尾把抽象隐喻还原为个人选择、关系信任、系统排序与态度变化的因果链，直接引出下一页对三类成因如何叠加的追问。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "同质信息环境究竟由谁造成：个人、社交网络，还是推荐系统？",
+      "readerStateChange": "读前只有三类现象的概念地图；读后能够沿现实处境、关系网络、平台排序与互动反馈解释同质环境，并说明单因果叙事为何不足。",
+      "twoSentenceSummary": "页面继续追踪两位居民，展示处境、同质关系、排序信号、算法放大和内容生产怎样形成反馈循环。平台合作实验与对立暴露实验说明，改变暴露结构会改变使用与内容，但未必在短期内改变政治态度。",
+      "continuityEvidence": "页面最终把四类主体写成可检验的适应系统，并列出每个节点可观察的变量，因此下一页能够据此建立证据阶梯和干预匹配。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然成因是叠加的，我们怎样判断一个“茧房”指控是否成立，并选择有效的应对办法？",
+      "readerStateChange": "读前能够解释多因素机制但尚不会评估具体主张；读后能够区分来源、观点、暴露、互动与态度证据，并为个人、媒体、平台和制度匹配干预。",
+      "twoSentenceSummary": "页面把低排放区案例改写成待审查卷宗，用从公开转发到随机干预的证据阶梯限定结论强度。随后分别讨论个人验证、媒体共同事实、平台选择与欧盟数字服务法中的透明、非画像选项和研究访问。",
+      "continuityEvidence": "最终结论把前三页的概念与机制收束为可核验事实、可理解异议和可质询分发，并留下推荐系统作为公共基础设施时应具备何种制度底线的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

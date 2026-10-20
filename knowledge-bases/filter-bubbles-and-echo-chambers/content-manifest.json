@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "信息茧房与回音室效应",
+  "audience": "general",
+  "type": "single-subject",
+  "depthLevel": "大众进阶",
+  "entry": "main.html",
+  "createdAt": "2026-10-20",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 3,
+    "narrativePages": 3,
+    "referencePages": 0
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "常把算法推荐、只看同温层和政治极化视为同一件事，难以判断自己看到的现象属于哪一种。",
+      "readerStateAfter": "能够区分过滤气泡、回音室与政治极化，并用信息进入、社会强化和态度结果三层地图描述现象。",
+      "readerQuestion": "为什么在同一个公共事件中，人们会像生活在不同世界？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "围绕某市是否设立中心城区低排放区的合成案例，两位居民从相近的起点逐渐看到不同信息、进入不同讨论圈。",
+      "newTerms": [
+        {
+          "term": "信息环境",
+          "definition": "一个人在特定时期实际能够接触、注意并反复遇到的信息集合。"
+        },
+        {
+          "term": "过滤气泡",
+          "definition": "平台个性化、搜索与推荐等过滤过程使不同人获得不同信息组合的现象。"
+        },
+        {
+          "term": "回音室效应",
+          "definition": "同一观点在相互连接的群体中被反复确认，并伴随对外部来源的不信任或排斥。"
+        },
+        {
+          "term": "选择性接触",
+          "definition": "人更愿意寻找、注意或保留与既有倾向相符的信息。"
+        }
+      ],
+      "conclusion": "过滤气泡描述信息如何被筛窄，回音室描述群体如何让观点自我加固，政治极化则是可能出现但并非必然出现的结果。",
+      "nextQuestion": "同质信息环境究竟由谁造成：个人、社交网络，还是推荐系统？",
+      "nextPage": "mechanisms.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "mechanisms.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能够区分过滤气泡、回音室与政治极化，并用信息进入、社会强化和态度结果三层地图描述现象。",
+      "readerStateAfter": "能够沿个人选择、关系网络与平台排序三条路径解释同质信息环境，并识别它们形成反馈循环的条件。",
+      "readerQuestion": "同质信息环境究竟由谁造成：个人、社交网络，还是推荐系统？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "过滤气泡描述信息如何被筛窄，回音室描述群体如何让观点自我加固，政治极化则是可能出现但并非必然出现的结果。",
+      "coreExample": "继续追踪低排放区案例中两位居民的点击、关注、群聊转发与平台排序，观察三类选择如何彼此放大。",
+      "newTerms": [
+        {
+          "term": "同质性",
+          "definition": "相似的人更容易建立关系或聚集在同一群体中的倾向。"
+        },
+        {
+          "term": "排序信号",
+          "definition": "推荐系统用来估计内容相关性或互动可能性的可观测线索。"
+        },
+        {
+          "term": "算法放大",
+          "definition": "排序系统让某些内容获得高于自然时间顺序或均匀分发时的可见度。"
+        },
+        {
+          "term": "反馈循环",
+          "definition": "一次选择改变后续供给，新的供给又继续影响下一次选择的循环过程。"
+        }
+      ],
+      "conclusion": "同质信息环境通常不是单一算法制造的密室，而是个人偏好、关系结构、内容供给与平台排序相互适应后形成的动态结果。",
+      "nextQuestion": "既然成因是叠加的，我们怎样判断一个“茧房”指控是否成立，并选择有效的应对办法？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能够沿个人选择、关系网络与平台排序三条路径解释同质信息环境，并识别它们形成反馈循环的条件。",
+      "readerStateAfter": "能够区分暴露、互动与态度证据，审查研究边界，并为个人、媒体、平台与制度层面匹配更合适的干预。",
+      "readerQuestion": "既然成因是叠加的，我们怎样判断一个“茧房”指控是否成立，并选择有效的应对办法？",
+      "dependsOn": [
+        "mechanisms.html"
+      ],
+      "priorConclusion": "同质信息环境通常不是单一算法制造的密室，而是个人偏好、关系结构、内容供给与平台排序相互适应后形成的动态结果。",
+      "coreExample": "把低排放区案例当作一份待审查的卷宗，分别检查两位居民看见了什么、信任谁、如何互动以及态度是否真正改变。",
+      "newTerms": [
+        {
+          "term": "来源多样性",
+          "definition": "一个人的信息是否来自不同组织、作者、平台或制度位置。"
+        },
+        {
+          "term": "观点多样性",
+          "definition": "接触的信息是否包含对问题前提、因果与政策取舍的实质分歧。"
+        },
+        {
+          "term": "情感极化",
+          "definition": "对政治外群体的厌恶、敌意或不信任扩大，而不一定伴随政策立场变得更极端。"
+        },
+        {
+          "term": "算法问责",
+          "definition": "要求平台说明推荐逻辑、评估系统风险并接受独立审查与纠正的治理安排。"
+        }
+      ],
+      "conclusion": "有效应对不是强迫每个人消费等量对立观点，而是提高信息路径的可见性、来源与观点的可核验多样性，以及跨群体接触的质量。",
+      "nextQuestion": "当推荐系统成为公共讨论的基础设施时，哪些透明度、研究访问与用户选择应当成为最低制度条件？",
+      "nextPage": null,
+      "minContentChars": 3000
+    }
+  ]
+}

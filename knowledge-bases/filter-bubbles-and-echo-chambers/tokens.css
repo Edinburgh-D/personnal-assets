@@ -1,0 +1,72 @@
+/* Hallmark · macrostructure: Long Document · tone: editorial law docket · anchor hue: 32 · genre: editorial · theme: Almanac · enrichment: none · nav: N6 · footer: Ft4 · contrast: pass (40–41) · slop: pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (49) · icons: pass (30) · mobile: pass (34, 49, 50–57) */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V4 */
+:root {
+  color-scheme: light;
+  --color-paper: oklch(96% 0.014 84);
+  --color-paper-2: oklch(92% 0.018 82);
+  --color-paper-3: oklch(88% 0.022 78);
+  --color-ink: oklch(19% 0.016 47);
+  --color-ink-2: oklch(29% 0.018 49);
+  --color-muted: oklch(43% 0.016 55);
+  --color-rule: oklch(69% 0.024 68);
+  --color-accent: oklch(42% 0.145 31);
+  --color-accent-strong: oklch(34% 0.13 29);
+  --color-accent-ink: oklch(96% 0.014 84);
+  --color-focus: oklch(50% 0.19 255);
+  --color-selection: oklch(84% 0.07 72);
+  --color-shadow: oklch(21% 0.015 42 / 0.09);
+
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-outlier: "IBM Plex Mono", "Noto Sans SC", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --text-display-s: clamp(2.5rem, 6vw, 4.4rem);
+  --text-display: clamp(2.75rem, 6vw + 0.5rem, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-heavy: 2px;
+  --radius-small: 0.2rem;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(15% 0.014 48);
+  --color-paper-2: oklch(19% 0.017 49);
+  --color-paper-3: oklch(24% 0.019 51);
+  --color-ink: oklch(94% 0.012 79);
+  --color-ink-2: oklch(84% 0.014 76);
+  --color-muted: oklch(70% 0.015 72);
+  --color-rule: oklch(39% 0.023 58);
+  --color-accent: oklch(67% 0.125 35);
+  --color-accent-strong: oklch(74% 0.105 40);
+  --color-accent-ink: oklch(15% 0.014 48);
+  --color-focus: oklch(75% 0.14 250);
+  --color-selection: oklch(39% 0.075 51);
+  --color-shadow: oklch(7% 0.012 45 / 0.24);
+}

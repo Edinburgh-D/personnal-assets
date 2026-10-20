@@ -4082,6 +4082,13 @@
       "generatedAt": "2026-10-20",
       "slug": "electoral-systems-comparison",
       "entry": "knowledge-bases/electoral-systems-comparison/main.html"
+    },
+    {
+      "name": "信息茧房与回音室效应",
+      "domain": "政治/社会",
+      "generatedAt": "2026-10-20",
+      "slug": "filter-bubbles-and-echo-chambers",
+      "entry": "knowledge-bases/filter-bubbles-and-echo-chambers/main.html"
     }
   ],
   "skipped": []

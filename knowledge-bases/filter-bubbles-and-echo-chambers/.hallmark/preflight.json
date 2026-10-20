@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-20",
+  "fontStack": "New knowledge-base uses Noto Serif SC, Noto Sans SC and IBM Plex Mono",
+  "palette": "New Almanac-like OKLCH paper, ink and docket-red tokens",
+  "motion": "Motion-cut; only functional theme and navigation state changes",
+  "spacing": "4-point semantic scale",
+  "framework": "Vanilla static HTML, CSS and JavaScript",
+  "scope": "knowledge-bases/filter-bubbles-and-echo-chambers"
+}
