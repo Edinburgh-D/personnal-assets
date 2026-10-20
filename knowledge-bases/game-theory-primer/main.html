@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>当你的选择取决于别人｜博弈论入门</title>
+  <meta name="description" content="面向普通读者的博弈论入门：从两户维修漏雨楼顶的选择出发，理解参与者、策略、收益与模型边界。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="博弈论入门：在相互依赖中做选择">
+  <meta property="og:description" content="从日常共同决策进入博弈论，学习描述局面、寻找稳定结果并判断模型边界。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=LXGW+WenKai:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme-storage="kb_darkMode">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-head">
+    <a class="wordmark" href="main.html">博弈论入门</a>
+    <button class="menu-toggle nav-menu-btn" type="button" aria-controls="site-drawer" aria-expanded="false">目录</button>
+  </header>
+  <div class="drawer-scrim" aria-hidden="true"></div>
+  <aside class="site-drawer" id="site-drawer" aria-hidden="true" aria-label="全站目录" inert>
+    <div class="drawer-head"><strong>阅读路径</strong><button class="drawer-close" type="button">关闭</button></div>
+    <nav class="chapter-nav" aria-label="章节导航">
+      <a href="main.html" aria-current="page"><span class="chapter-index">01</span><span>当你的选择取决于别人</span></a>
+      <a href="equilibrium.html"><span class="chapter-index">02</span><span>稳定并不等于理想</span></a>
+      <a href="institutions-and-limits.html"><span class="chapter-index">03</span><span>改变博弈，而非迷信算计</span></a>
+      <a href="sources.html"><span class="chapter-index">附</span><span>来源与延伸阅读</span></a>
+    </nav>
+    <div class="drawer-tools">
+      <button class="theme-toggle" type="button" aria-pressed="false">切换深色</button>
+    </div>
+  </aside>
+  <nav class="breadcrumbs" aria-label="面包屑">
+    <ol><li><a href="../../index.html" data-site-home>知识库总览</a></li><li><span aria-current="page">博弈论入门</span></li></ol>
+  </nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="overview">
+    <template data-narrative="question">博弈论究竟研究什么，它为什么不能被简化成猜心、算计或零和权术？</template>
+    <template data-narrative="example">一栋老楼的两户住户都受楼顶漏雨影响，双方可以出钱维修或等待对方承担；维修结果取决于两家的组合选择，而不由任何一家单独决定。</template>
+    <template data-narrative="conclusion">博弈论不是教人永远战胜对手，而是把相互依赖的选择压缩成可检查的模型；模型先说明谁能做什么、各自看重什么以及知道什么，再追问这些条件会把互动推向哪里。</template>
+    <template data-narrative="next-question">既然模型先固定参与者、选择、偏好与信息，我们怎样从这些条件中找出稳定结果，并看清个人理性为何可能导向集体困境？</template>
+
+    <header class="chapter-head">
+      <h1>当你的选择取决于别人</h1>
+      <p class="lede">两户人家面对一处漏雨的楼顶。每一家都希望屋顶尽快修好，也都希望费用最好由别人承担。问题不是谁更聪明，而是每个人的好选择都会被另一家的选择改变。</p>
+      <p class="opening-note">起点：一栋老楼、两户住户、一笔无法独自决定的维修费。</p>
+    </header>
+
+    <div class="reading-layout">
+      <aside class="margin-note" aria-label="阅读提示">
+        <strong>先画局面，再谈技巧</strong>
+        这一章不要求数学基础。只要把谁能选择、能选什么、在意什么、知道什么说清楚，抽象模型就有了落脚点。
+      </aside>
+      <article class="prose">
+        <section aria-labelledby="scope">
+          <h2 id="scope">一种研究相互依赖的语言</h2>
+          <p><dfn data-term="战略互动">战略互动</dfn>指的是：你的较好选择取决于别人怎样选择，而别人也在反过来考虑你的行动。模型中能够作出选择并受结果影响的行动单位叫作<dfn data-term="参与者">参与者</dfn>。它可以是个人，也可以是企业、政党、国家或一群遵循同一规则的生物。</p>
+          <p>每一方准备采用的完整行动方案叫作<dfn data-term="策略">策略</dfn>。一个行动只是眼前的一步，完整方案还要说明遇到不同情况时怎么办。棋手说“现在走马”是在描述行动；如果他说“对手进攻王翼时换后，否则保留后翼兵”，才更接近完整方案。</p>
+          <p>模型用<dfn data-term="收益">收益</dfn>表示各方对结果的偏好次序。这里的数字不必是钱，也不必是快乐的温度计。它可以综合费用、安全、声誉、时间、原则或风险，只要数字的高低忠实表达模型想表示的偏好。</p>
+          <p>把行动者、完整方案、结果偏好和已知信息压缩到一起，就得到一个<dfn data-term="博弈模型">博弈模型</dfn>。它不是现实的缩小复制品，而是有意删去枝节的分析工具。删得太少，局面复杂到无法推理；删得太多，结论又会离开现实。</p>
+          <p>博弈论因此不同于一般的个人决策。独自挑选雨伞时，天气不会因为你带伞而改变计划。与邻居商量修楼顶时，对方会观察你的态度、预计你的耐心，并根据这些判断调整自己的行动。环境不再是静止背景，另一个会回应的人进入了问题。</p>
+        </section>
+
+        <section aria-labelledby="roof">
+          <h2 id="roof">漏雨楼顶里的四个问题</h2>
+          <p>设想一栋只有两户的老楼。雨水已经沿公共楼顶渗入，两家都能选择“共同出资”或“暂不出资”。若两家都出钱，维修及时完成，费用平均分担。若只有一家出钱，工程也能完成，但付款的一家承担更多成本，等待的一家免费受益。若两家都等，漏水继续扩大，未来损失更高。</p>
+          <p>第一步不是立刻判断谁自私，而是确定行动者边界。房东、物业、保险公司和施工方是否也能影响结果？如果他们能够承担费用、提供担保或改变维修质量，就不能把他们永远藏在背景里。为了入门，我们暂时只保留两户，随后会把制度角色加回来。</p>
+          <p>第二步是列出真正可行的选择。口头同意、实际付款、分期付款和先垫付后追偿并不相同。若合同无法执行，“承诺以后补钱”也许不应被当作可靠选项。模型只写进纸面上想得到的行动，会给出漂亮却无效的答案。</p>
+          <p>第三步是辨认偏好。两家都希望不再漏雨，却可能对现金压力、施工噪音、邻里关系和未来出售房屋的打算有不同权重。同样的维修结果，对长期居住者和准备下月搬走的人并不等价。收益数字要表示这些差别，而不是假定人人只认金钱。</p>
+          <p>第四步是交代信息。两家是否知道真实报价？是否知道对方准备搬家？是否能看到对方已经付款？如果这些事实只有一方知道，互动就包含隐瞒、信号与猜测。信息不是剧情装饰，它直接决定哪些推理可用。</p>
+          <div class="model-ledger" aria-label="楼顶维修模型记录">
+            <dl>
+              <dt>谁在选择</dt><dd>甲户与乙户；暂不纳入物业和保险。</dd>
+              <dt>可做什么</dt><dd>共同出资，或暂不出资并等待。</dd>
+              <dt>在意什么</dt><dd>止漏、费用、现金压力、关系与未来损失。</dd>
+              <dt>知道什么</dt><dd>双方看见漏水和报价，但未必知道彼此的搬家计划。</dd>
+            </dl>
+          </div>
+          <p>这张记录的价值在于暴露假设。只要把“物业可以强制收费”加入局面，两个住户的选择集合就会改变。只要把“乙户下月搬走”变成公开信息，甲户对等待的预期也会改变。博弈的答案从来不是脱离设定悬在空中的。</p>
+        </section>
+
+        <section aria-labelledby="not-war">
+          <h2 id="not-war">不是所有局面都是零和</h2>
+          <p>日常语言常把“博弈”理解成你输我赢。严格说来，零和只是特殊情形：一方收益的增加恰好等于另一方收益的减少。扑克筹码在一桌玩家之间转移时，常可近似这样描述；楼顶维修却不是。双方合作可能一起少受损失，双方拖延也可能一起变差。</p>
+          <p>许多现实互动都混合了共同利益与冲突利益。企业在价格上竞争，却共同希望行业标准获得消费者信任；两个国家争夺影响力，也共同希望避免失控战争；合作者都想完成项目，却可能对功劳和风险分配意见不同。把这些局面一概画成战争，会抹掉可以协调的部分。</p>
+          <p>博弈论也不等于猜心。猜测对方性格有时有用，但模型更关心可检验的结构。假如任何一户垫付后都无法追偿，那么“邻居是否善良”只是一个不稳定的预测来源。若有公开账本、分期托管和验收规则，个人品格的重要性会下降，因为制度减少了被占便宜的空间。</p>
+          <p>这也说明“理性”在这里首先是技术词。它通常意味着行动者能按自己的偏好比较结果，并对他人的选择作出一致回应。它不自动等于聪明、高尚或冷酷。一个人可以非常一致地追求不公平目标；另一个人也可以把守信与公平真诚地写进自己的偏好。</p>
+          <p>模型更不能替代伦理判断。它能说明某组规则可能造成何种稳定行为，却不能单凭稳定性证明这种行为正当。奴役、恐吓或垄断也可能形成稳定安排。我们仍要另外追问权利、伤害、合法性和谁有权制定规则。</p>
+        </section>
+
+        <section aria-labelledby="model-use">
+          <h2 id="model-use">好模型从可以被质疑开始</h2>
+          <p>一个入门分析可以沿四个问题推进。先问谁能影响结果，再问每一方能采取哪些完整方案；随后问各方如何排列结果，最后问他们在每个时点掌握什么信息。把四项写明，别人才能指出你漏掉了谁、误解了什么偏好，或假定了不存在的知识。</p>
+          <p>这套做法比“我猜对方会怎么做”慢一些，却更可靠。它把分歧从性格评价移向模型设定。甲户认为乙户会等待，也许不是因为乙户贪婪，而是甲户相信乙户即将搬走。两种解释对应不同证据，也对应不同解决办法。</p>
+          <p>模型还有一个重要用途：分开预测与改造。预测问题问，在现有规则下，各方可能走向哪里。改造问题问，若结果不好，能否改变付款顺序、信息披露、违约后果或第三方角色。前者寻找结构的后果，后者寻找可以移动结构的杠杆。</p>
+          <p>模型还帮助我们比较看似不同的场景。住户等待别人维修、各国等待别人减排、团队成员等待别人先做公共工作，都可能包含免费受益的诱因。但相似只到结构为止。国家没有统一物业，团队可以由经理分配任务，减排影响又跨越数十年。类比越过这些差异，就会制造虚假的确定感。</p>
+          <p>反过来，看似敌对的局面也可能不是纯粹冲突。街边两家餐馆争夺顾客，却都受益于整条街的卫生与交通；议会中的政党争夺席位，却可能共同维护和平交接；谈判双方争夺价格，也共同希望合同最终能履行。识别共同利益，常比寻找击败对方的招数更有解释力。</p>
+          <p>同一个人进入不同规则，也可能作出相反选择。匿名捐款、公开承诺和强制收费会改变被看见的程度与不行动的后果。若行为随规则稳定变化，把结果归结为固定人格就过早了。结构解释并不否认品格，只是要求在责备之前先检查情境。</p>
+          <p>好的抽象还应保留回到现实的路线。收益排序可以通过访谈、实际选择或制度记录估计；对信息的假设可以用通知范围和可见行动核对；关于执行的设定可以查看合同、惯例与追责历史。无法连接任何证据的棋盘，只是一则寓言。</p>
+          <p>当然，证据也不会自动给出唯一模型。一次等待可能来自精明算计、现金困难、对报价不信任或误以为物业负责。分析者应并列这些解释，寻找能区分它们的观察。若乙户拿到分期方案后愿意付款，现金约束就比“天生自私”更有支持。</p>
+          <p>这种可质疑性使博弈论与权术手册分道扬镳。权术叙事喜欢把事后成功归功于高明布局，失败则归咎于对手不按常理。模型分析必须提前说明条件，并接受反例。它的尊严不来自永远正确，而来自错误时知道该改哪里。</p>
+          <p>对普通读者而言，这也提供了一种更平静的讨论方式。与其争论“谁就是坏人”，不如先问哪些选择真实存在，拒绝要付什么代价，哪些事实彼此可见。结构问题说清后，责任判断不会消失，反而能落在更准确的位置。</p>
+          <p>因此，学习博弈论不应从背诵“经典局”开始，而应从一种纪律开始：每个结论都必须附着在明确的行动、偏好和信息条件上。条件变化，结论也要跟着变化。能说出答案依赖什么，比迅速说出一个答案更重要。</p>
+          <blockquote>博弈论最有力量的时刻，不是它把人变成棋子，而是它迫使我们说明：谁画了棋盘，哪些走法被允许，结果又由谁来评价。</blockquote>
+          <p>漏雨楼顶的局面现在已经可以描述，但我们仍不知道它会停在哪里。下一步要把两家的偏好写进矩阵，逐格检查在对方选择不变时谁愿意改变。稳定结果会由此浮现，而稳定与理想之间的距离也会变得清楚。</p>
+        </section>
+
+        <nav class="next-reading" aria-label="下一章">
+          <p>下一章把维修选择写进收益矩阵，并区分稳定、效率与公平。</p>
+          <a href="equilibrium.html">继续：稳定并不等于理想 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-line"><p><span>博弈论入门</span><span>·</span><a href="sources.html">来源</a><span>·</span><a href="../../index.html">知识库总览</a><span>·</span><span>2026</span></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

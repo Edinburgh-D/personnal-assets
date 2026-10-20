@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "博弈论入门：在相互依赖中做选择",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-21",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "当你的选择取决于别人",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "博弈论究竟研究什么，它为什么不能被简化成猜心、算计或零和权术？",
+      "readerStateBefore": "读者把博弈论理解为识破对手的技巧，或把所有冲突都想成一方所得必然等于另一方所失。",
+      "readerStateAfter": "读者能够把博弈论理解为研究相互依赖选择的模型语言，并能从参与者、可选行动、偏好结果与信息条件四方面描述一个局面。",
+      "priorConclusion": "",
+      "coreExample": "一栋老楼的两户住户都受楼顶漏雨影响，双方可以出钱维修或等待对方承担；维修结果取决于两家的组合选择，而不由任何一家单独决定。",
+      "conclusion": "博弈论不是教人永远战胜对手，而是把相互依赖的选择压缩成可检查的模型；模型先说明谁能做什么、各自看重什么以及知道什么，再追问这些条件会把互动推向哪里。",
+      "nextQuestion": "既然模型先固定参与者、选择、偏好与信息，我们怎样从这些条件中找出稳定结果，并看清个人理性为何可能导向集体困境？",
+      "nextPage": "equilibrium.html",
+      "newTerms": [
+        { "term": "战略互动", "definition": "一个人的较好选择取决于别人怎样选择，而别人也在反过来考虑他的行动。" },
+        { "term": "参与者", "definition": "在模型中能够作出选择并受到结果影响的个人、组织或其他行动单位。" },
+        { "term": "策略", "definition": "参与者在模型允许的各种情形下准备采用的完整行动方案。" },
+        { "term": "收益", "definition": "用来表示参与者对不同结果偏好次序的数值，不必等同于金钱或快乐。" },
+        { "term": "博弈模型", "definition": "对参与者、策略、结果偏好与信息条件所作的有意简化。" }
+      ]
+    },
+    {
+      "file": "equilibrium.html",
+      "title": "稳定并不等于理想",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然模型先固定参与者、选择、偏好与信息，我们怎样从这些条件中找出稳定结果，并看清个人理性为何可能导向集体困境？",
+      "readerStateBefore": "读者能够把博弈论理解为研究相互依赖选择的模型语言，并能从参与者、可选行动、偏好结果与信息条件四方面描述一个局面。",
+      "readerStateAfter": "读者能够从收益矩阵逐格寻找最佳回应，识别占优选择与纳什均衡，并区分稳定、效率和公平这三种不同评价。",
+      "priorConclusion": "博弈论不是教人永远战胜对手，而是把相互依赖的选择压缩成可检查的模型；模型先说明谁能做什么、各自看重什么以及知道什么，再追问这些条件会把互动推向哪里。",
+      "coreExample": "把两户维修楼顶的结果写成二乘二收益矩阵，再改变费用分担、先后顺序与是否能签订协议，观察最佳回应和稳定结果如何移动。",
+      "conclusion": "均衡只表示在给定规则与预期下无人愿意单方面改动，并不保证结果有效率、公平或合乎道德；真正的分析要同时检查最佳回应、可替代均衡以及产生这些收益和信息的制度条件。",
+      "nextQuestion": "如果均衡会随规则、时间与信息改变，我们怎样通过重复互动、可信承诺和制度设计改善合作，同时避免把模型误当成人性定律？",
+      "nextPage": "institutions-and-limits.html",
+      "newTerms": [
+        { "term": "最佳回应", "definition": "在假定其他参与者策略不变时，能给自己带来最高收益的选择。" },
+        { "term": "占优策略", "definition": "无论别人选择什么，对自己都不差于其他可选方案的策略。" },
+        { "term": "纳什均衡", "definition": "一组相互最佳回应的策略组合，其中任何人单独改变都不能提高自己的收益。" },
+        { "term": "混合策略", "definition": "按照特定概率在若干纯策略之间随机化的完整方案。" },
+        { "term": "扩展式博弈", "definition": "用决策树表示行动顺序、可见信息与后续选择的博弈表达方式。" }
+      ]
+    },
+    {
+      "file": "institutions-and-limits.html",
+      "title": "改变博弈，而非迷信算计",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["equilibrium.html"],
+      "readerQuestion": "如果均衡会随规则、时间与信息改变，我们怎样通过重复互动、可信承诺和制度设计改善合作，同时避免把模型误当成人性定律？",
+      "readerStateBefore": "读者能够从收益矩阵逐格寻找最佳回应，识别占优选择与纳什均衡，并区分稳定、效率和公平这三种不同评价。",
+      "readerStateAfter": "读者能够判断重复关系、可验证承诺、信息透明与规则设计如何改变激励，也能用假设、证据和伦理边界审查现实中的博弈论类比。",
+      "priorConclusion": "均衡只表示在给定规则与预期下无人愿意单方面改动，并不保证结果有效率、公平或合乎道德；真正的分析要同时检查最佳回应、可替代均衡以及产生这些收益和信息的制度条件。",
+      "coreExample": "回到漏雨楼顶：住户委员会把一次性的互相等待改成公开报价、分期付款、维修验收与未来共同维护，由此改变信息、承诺与违约后果，而不是要求双方突然变得无私。",
+      "conclusion": "成熟的博弈论思维不是把所有关系敌我化，而是先确认互动结构，再寻找能改变信息、承诺与收益的制度杠杆；当真实偏好、权力差异或行为证据不符合模型时，应修正模型而不是责怪现实。",
+      "nextQuestion": "面对一场新的谈判、公共事务或组织冲突，我们能否先画出可检验的互动结构，再决定应当预测均衡、改变规则，还是干脆放弃这个模型？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "重复博弈", "definition": "同一参与者多次互动，使今天的行动可能影响未来回应的博弈。" },
+        { "term": "可信承诺", "definition": "到了真正需要兑现时，作出承诺的一方仍有动机或受机制约束去履行的承诺。" },
+        { "term": "信息结构", "definition": "谁在何时知道哪些事实、行动与类型，以及这些知识是否彼此共有的安排。" },
+        { "term": "机制设计", "definition": "从希望实现的结果出发，反向设计规则与激励，使参与者按自身动机行动时也更可能到达该结果。" },
+        { "term": "有限理性", "definition": "现实中的人受计算能力、注意力、时间与认知偏差限制，无法总按理想模型完成推理。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、模型与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

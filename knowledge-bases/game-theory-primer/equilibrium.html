@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>稳定并不等于理想｜博弈论入门</title>
+  <meta name="description" content="从楼顶维修收益矩阵出发，理解最佳回应、占优策略、纳什均衡、混合策略与行动顺序。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="稳定并不等于理想｜博弈论入门">
+  <meta property="og:description" content="逐格寻找稳定结果，并区分稳定、效率与公平。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=LXGW+WenKai:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme-storage="kb_darkMode">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-head">
+    <a class="wordmark" href="main.html">博弈论入门</a>
+    <button class="menu-toggle nav-menu-btn" type="button" aria-controls="site-drawer" aria-expanded="false">目录</button>
+  </header>
+  <div class="drawer-scrim" aria-hidden="true"></div>
+  <aside class="site-drawer" id="site-drawer" aria-hidden="true" aria-label="全站目录" inert>
+    <div class="drawer-head"><strong>阅读路径</strong><button class="drawer-close" type="button">关闭</button></div>
+    <nav class="chapter-nav" aria-label="章节导航">
+      <a href="main.html"><span class="chapter-index">01</span><span>当你的选择取决于别人</span></a>
+      <a href="equilibrium.html" aria-current="page"><span class="chapter-index">02</span><span>稳定并不等于理想</span></a>
+      <a href="institutions-and-limits.html"><span class="chapter-index">03</span><span>改变博弈，而非迷信算计</span></a>
+      <a href="sources.html"><span class="chapter-index">附</span><span>来源与延伸阅读</span></a>
+    </nav>
+    <div class="drawer-tools"><button class="theme-toggle" type="button" aria-pressed="false">切换深色</button></div>
+  </aside>
+  <nav class="breadcrumbs" aria-label="面包屑">
+    <ol><li><a href="../../index.html" data-site-home>知识库总览</a></li><li><a href="main.html">博弈论入门</a></li><li><span aria-current="page">稳定结果</span></li></ol>
+  </nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">博弈论不是教人永远战胜对手，而是把相互依赖的选择压缩成可检查的模型；模型先说明谁能做什么、各自看重什么以及知道什么，再追问这些条件会把互动推向哪里。</template>
+    <template data-narrative="question">既然模型先固定参与者、选择、偏好与信息，我们怎样从这些条件中找出稳定结果，并看清个人理性为何可能导向集体困境？</template>
+    <template data-narrative="example">把两户维修楼顶的结果写成二乘二收益矩阵，再改变费用分担、先后顺序与是否能签订协议，观察最佳回应和稳定结果如何移动。</template>
+    <template data-narrative="conclusion">均衡只表示在给定规则与预期下无人愿意单方面改动，并不保证结果有效率、公平或合乎道德；真正的分析要同时检查最佳回应、可替代均衡以及产生这些收益和信息的制度条件。</template>
+    <template data-narrative="next-question">如果均衡会随规则、时间与信息改变，我们怎样通过重复互动、可信承诺和制度设计改善合作，同时避免把模型误当成人性定律？</template>
+
+    <header class="chapter-head">
+      <h1>稳定并不等于理想</h1>
+      <p class="lede">模型已经把两户住户的选择和偏好摆上桌面。现在要逐格追问：当另一家暂时不动时，哪一种选择会让自己更满意？</p>
+      <p class="opening-note">工具：收益矩阵、逐格比较、行动顺序与反事实。</p>
+    </header>
+
+    <div class="reading-layout">
+      <aside class="margin-note" aria-label="阅读提示">
+        <strong>先找稳定，再作评价</strong>
+        稳定回答“谁会单独改变”，效率回答“是否存在大家都更好的结果”，公平还要追问成本与权力如何分配。
+      </aside>
+      <article class="prose">
+        <section aria-labelledby="responses">
+          <h2 id="responses">沿着对方的选择逐格比较</h2>
+          <p>给定别人暂时不改变时，能让自己得到最高收益的选择叫作<dfn data-term="最佳回应">最佳回应</dfn>。寻找它时，不要先猜最终结果。先固定乙户的一列，比较甲户在这一列里的两个数字；再固定甲户的一行，比较乙户在这一行里的两个数字。</p>
+          <p>如果某个选择不论别人做什么，都不差于自己的其他选择，它就是<dfn data-term="占优策略">占优策略</dfn>。严格占优意味着每一种情况下都更好；弱占优允许某些情况下相同。现实分析必须说明是哪一种，不能只说“这是优势选择”。</p>
+          <p>一组策略若互为最佳回应，任何一方单独改动都不能提高自己的收益，就构成<dfn data-term="纳什均衡">纳什均衡</dfn>。它描述的是一种自我维持的状态。约翰·纳什在一九五〇年的论文中给出有限博弈存在均衡点的证明，其中允许参与者进行概率随机化。</p>
+          <p>所谓<dfn data-term="混合策略">混合策略</dfn>，是按照特定概率在若干纯策略之间随机化。它并不是犹豫不决。足球罚点球时，射手若永远踢同一侧，门将就能利用规律；有纪律的随机化反而能让对手无法从固定模式中获利。</p>
+          <p>楼顶维修先用纯策略就能看清。下面的数字只是偏好次序示意，不是维修收益的实测金额。每格第一个数字属于甲户，第二个属于乙户；数字越大，表示该户越偏好这个结果。</p>
+          <div class="matrix-wrap">
+            <table class="payoff-matrix">
+              <caption>两户同时选择时的示意收益。选择任一格，可查看其结构含义。</caption>
+              <thead><tr><th scope="col">甲＼乙</th><th scope="col">共同出资</th><th scope="col">暂不出资</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th scope="row">共同出资</th>
+                  <td><button class="outcome-button" type="button" aria-pressed="false" data-explanation="双方分担费用并及时止漏，收益为（3，3）。它比共同等待更好，却不是任何一方在对方出资时最偏好的结果。">3，3</button></td>
+                  <td><button class="outcome-button" type="button" aria-pressed="false" data-explanation="甲户独自付费，乙户免费受益，收益为（1，4）。若乙户等待，甲户也会偏好等待所对应的数字2，而不是独付所对应的数字1。">1，4</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">暂不出资</th>
+                  <td><button class="outcome-button" type="button" aria-pressed="false" data-explanation="乙户独自付费，甲户免费受益，收益为（4，1）。对称地，乙户会想从独付改成等待。">4，1</button></td>
+                  <td><button class="outcome-button" type="button" aria-pressed="false" data-explanation="双方都等待，眼前不付款但漏水恶化，收益为（2，2）。任何一家单独改成出资都会从2降到1，所以这个结果稳定，却不如（3，3）。">2，2</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="matrix-note" aria-live="polite">选择一个收益格，查看它为什么稳定或不稳定。</p>
+          </div>
+          <p>固定乙户“共同出资”这一列，甲户比较三与四，会选择等待。固定乙户“暂不出资”这一列，甲户比较一与二，仍会选择等待。对乙户作同样比较，结论完全对称。于是双方都等待是相互的最佳回应。</p>
+        </section>
+
+        <section aria-labelledby="dilemma">
+          <h2 id="dilemma">个人推理怎样走进集体困境</h2>
+          <p>这个矩阵具有囚徒困境的结构。每一家从自己的两次纵向或横向比较出发，都有理由等待；两家的推理结合起来，却落到二、二。若双方都出资，则各得三。没有人单独犯了计算错误，问题来自个体激励与共同利益没有对齐。</p>
+          <p>这正是稳定不等于效率。三、三对双方都优于二、二，所以共同出资在这个模型中形成帕累托改进：至少一方变好且无人变差。可是从二、二出发，任何一家单独改动都会先承担全部费用，因此改进需要协调行动，而不是单方面觉悟。</p>
+          <p>稳定也不等于公平。假如甲户收入远高于乙户，平均分摊是否公平仍需争论。若甲户住房面积更大，或过去一直由乙户维护公共区域，合理比例可能不同。矩阵能把偏好写出来，却不能替我们决定哪些利益应当获得道德与法律上的权重。</p>
+          <p>更重要的是，囚徒困境不是解释一切合作失败的万能标签。若两家其实都愿意出资，只是甲户以为周一施工、乙户以为周二施工，那么问题更像协调失误。若一家根本付不起费用，问题包含资源约束。若物业有义务维修，问题还涉及权利与执行。</p>
+          <p>因此，识别一个经典结构之前，应先尝试反例。改变收益数字后，等待是否仍然是占优选择？让双方交流后，承诺能否执行？引入第三方后，选择集合是否改变？只要答案会变，就说明局面的结论依赖这些设定，而不是源于某种永恒人性。</p>
+        </section>
+
+        <section aria-labelledby="many-equilibria">
+          <h2 id="many-equilibria">一个局面也可能有多个稳定点</h2>
+          <p>把维修问题稍作改变。两家都同意必须修，只是在“本周末”与“下周末”之间选择。只要同时在场就能完成；时间错开则无人能搬动大型材料。此时两个日期都可能形成均衡，因为任何一方在对方日期不变时都愿意配合。</p>
+          <p>多个均衡带来选择问题。哪一个会出现，可能取决于先例、公开日历、显眼的截止日、语言习惯或权力关系。一个大家都注意到的线索可以成为协调焦点，但它不会自动保证公平。老板提议的日期可能最显眼，也可能把成本转嫁给无法拒绝的人。</p>
+          <p>均衡还可能不存在于纯策略之中。罚点球的射手和门将若都能被对方预测，任何固定方向都会诱发改变。双方需要让对手在几个行动之间无差异，随机化概率由这种相互制约决定。这里的稳定是一组概率，而不是每次都出现同一动作。</p>
+          <p>这提醒我们，均衡不是“最可能发生的单一事件”的同义词。它首先是一种一致性要求：每一方的计划都能在对他方计划的预期下站住。一个模型可以有多个均衡，也可能需要随机化；即使存在唯一均衡，现实中的人也未必立即走到那里。</p>
+          <div class="contrast-list" aria-label="三种评价的区别">
+            <div class="contrast-row"><strong>稳定</strong><span>在别人不改时，是否有人愿意单独改变？</span></div>
+            <div class="contrast-row"><strong>效率</strong><span>是否存在让至少一方更好且无人更差的可行结果？</span></div>
+            <div class="contrast-row"><strong>公平</strong><span>利益、成本、风险与发言权依据什么原则分配？</span></div>
+          </div>
+          <p>把三种评价分开，可以避免常见偷换。有人说“市场会停在这里”，只是在作稳定性判断；若随后说“因此这里最有效率”，需要额外证据；若再说“因此这里最公平”，又增加了一套规范前提。三个结论不能由同一个词“均衡”打包带走。</p>
+        </section>
+
+        <section aria-labelledby="sequence">
+          <h2 id="sequence">行动顺序会改写答案</h2>
+          <p>矩阵把两家描绘成同时选择，但现实中常有先后。用决策树表示行动顺序、每个时点可见的信息和后续选择，称为<dfn data-term="扩展式博弈">扩展式博弈</dfn>。树上的每个分叉是一方行动，每个末端则标出结果与收益。</p>
+          <p>假如甲户先公开支付一半订金，且订金不可退，乙户随后决定是否加入。甲户的行动不只是表达态度，也改变了之后的可行结果。乙户知道甲户已经承担成本，可能更相信工程会启动；甲户则要提前判断乙户看到订金后是否真会配合。</p>
+          <p>分析这类树时，常从末端向前推。先问乙户到了最后一步会如何选择，再问甲户预见这个回应后是否愿意先付订金。这种逆向归纳能排除只在口头上吓人、真正到达节点时却不愿执行的威胁。</p>
+          <p>但逆向推理也依赖知识条件。双方是否知道收益，是否相信对方会持续计算，是否确信订金不能退，都影响结论。把这些条件写清楚，比把“先发制人”当成普遍优势更重要。先行动有时带来承诺优势，有时只是提前暴露意图。</p>
+          <p>到这里，稳定结果已经不再神秘：它来自相互最佳回应，也受随机化、行动顺序和信息影响。它的用途不是宣布某个结果正确，而是暴露为什么没人会独自离开，以及要改善结果必须动哪些条件。</p>
+          <p>均衡分析也不是读心术。它并不要求每个人脑中真的写出方程，只要求行为能被一组彼此一致的计划描述。交通流可能在无人计算整体路线时形成稳定分布，市场惯例也可能由长期试错积累。解释这种结果时，要区分有意识推理与行为最终呈现的一致性。</p>
+          <p>从模型到预测，还需要均衡如何被选中的说明。一个局面若有两个稳定点，仅列出它们不能告诉我们现实会走向哪一个。过去经验、先行动者、公共线索、学习速度和权力都可能发挥作用。忽略选择过程，均衡集合更像地图，而不是行程表。</p>
+          <p>即使只有一个稳定点，人们也可能暂时偏离。新住户不了解惯例，双方误读对方，或一次维修报价突然变化，都会带来调整过程。模型若只拍下终点，便看不到试探、后悔和更新预期。现实数据往往记录的正是这些尚未稳定的路径。</p>
+          <p>实验和观察有助于判断模型是否贴近行为，但结果也依赖情境。匿名的一次选择、熟人间的长期往来和带有明确身份的公共会议，不应被视为同一环境。把实验室中的数字直接搬到政策或家庭关系，需要额外论证，而不是一个相似的收益表。</p>
+          <p>所以，均衡最可靠的用途是整理条件与反事实。若费用分担改变，谁的回应会改变？若付款可被验证，哪些怀疑会消失？若一方先承诺，另一方是否仍愿意等待？这些问题把分析推向可检验的制度变化，而不是给结果贴上宿命标签。</p>
+          <p>还有一种常见误读，是把“无人愿意单独改变”理解成“所有人都满意”。两者相差很远。双方可能都厌恶当前结果，却都害怕率先移动后承担更大损失。僵局之所以持续，往往不是参与者看不见更好结果，而是缺少把共同移动变得安全的办法。</p>
+          <p>这时，分析的注意力应从个人意愿转向转换路径。协议怎样签署，款项何时交付，工程如何验收，违约由谁裁定，都会决定从坏均衡走向好结果是否可信。比较终点只是开始，能否安全抵达才是制度问题。</p>
+          <blockquote>若一个坏结果稳定，劝其中一方单独变好通常不够。必须找到能让对方回应也随之改变的规则、信息或承诺。</blockquote>
+          <p>楼顶维修由此从“谁更自私”的争论，转成了可以改造的问题。下一章将把一次性互动拉长，考察未来关系如何支持合作，也会引入住户委员会、公开报价和验收规则，看看制度怎样移动均衡。</p>
+        </section>
+
+        <nav class="next-reading" aria-label="下一章">
+          <p>下一章不要求双方突然无私，而是改变重复关系、承诺与信息条件。</p>
+          <a href="institutions-and-limits.html">继续：改变博弈，而非迷信算计 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-line"><p><span>博弈论入门</span><span>·</span><a href="sources.html">来源</a><span>·</span><a href="../../index.html">知识库总览</a><span>·</span><span>2026</span></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

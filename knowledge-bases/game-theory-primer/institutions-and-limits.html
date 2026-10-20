@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>改变博弈，而非迷信算计｜博弈论入门</title>
+  <meta name="description" content="理解重复互动、可信承诺、信息结构和机制设计，并学习在现实中审查博弈论模型的证据与伦理边界。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="改变博弈，而非迷信算计｜博弈论入门">
+  <meta property="og:description" content="从预测均衡走向改变规则，并判断博弈论类比何时失效。">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&amp;family=LXGW+WenKai:wght@400;700&amp;family=Noto+Sans+SC:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme-storage="kb_darkMode">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <header class="site-head">
+    <a class="wordmark" href="main.html">博弈论入门</a>
+    <button class="menu-toggle nav-menu-btn" type="button" aria-controls="site-drawer" aria-expanded="false">目录</button>
+  </header>
+  <div class="drawer-scrim" aria-hidden="true"></div>
+  <aside class="site-drawer" id="site-drawer" aria-hidden="true" aria-label="全站目录" inert>
+    <div class="drawer-head"><strong>阅读路径</strong><button class="drawer-close" type="button">关闭</button></div>
+    <nav class="chapter-nav" aria-label="章节导航">
+      <a href="main.html"><span class="chapter-index">01</span><span>当你的选择取决于别人</span></a>
+      <a href="equilibrium.html"><span class="chapter-index">02</span><span>稳定并不等于理想</span></a>
+      <a href="institutions-and-limits.html" aria-current="page"><span class="chapter-index">03</span><span>改变博弈，而非迷信算计</span></a>
+      <a href="sources.html"><span class="chapter-index">附</span><span>来源与延伸阅读</span></a>
+    </nav>
+    <div class="drawer-tools"><button class="theme-toggle" type="button" aria-pressed="false">切换深色</button></div>
+  </aside>
+  <nav class="breadcrumbs" aria-label="面包屑">
+    <ol><li><a href="../../index.html" data-site-home>知识库总览</a></li><li><a href="main.html">博弈论入门</a></li><li><span aria-current="page">制度与边界</span></li></ol>
+  </nav>
+
+  <main class="page-shell" id="content" data-kb-content data-page-role="chapter">
+    <template data-narrative="recap">均衡只表示在给定规则与预期下无人愿意单方面改动，并不保证结果有效率、公平或合乎道德；真正的分析要同时检查最佳回应、可替代均衡以及产生这些收益和信息的制度条件。</template>
+    <template data-narrative="question">如果均衡会随规则、时间与信息改变，我们怎样通过重复互动、可信承诺和制度设计改善合作，同时避免把模型误当成人性定律？</template>
+    <template data-narrative="example">回到漏雨楼顶：住户委员会把一次性的互相等待改成公开报价、分期付款、维修验收与未来共同维护，由此改变信息、承诺与违约后果，而不是要求双方突然变得无私。</template>
+    <template data-narrative="conclusion">成熟的博弈论思维不是把所有关系敌我化，而是先确认互动结构，再寻找能改变信息、承诺与收益的制度杠杆；当真实偏好、权力差异或行为证据不符合模型时，应修正模型而不是责怪现实。</template>
+    <template data-narrative="next-question">面对一场新的谈判、公共事务或组织冲突，我们能否先画出可检验的互动结构，再决定应当预测均衡、改变规则，还是干脆放弃这个模型？</template>
+
+    <header class="chapter-head">
+      <h1>改变博弈，而非迷信算计</h1>
+      <p class="lede">两户住户共同等待，是现有规则下的稳定结果。要让合作可持续，关键不是要求某个人先吃亏，而是让今天的选择与明天的关系、可验证的承诺和共同规则连接起来。</p>
+      <p class="opening-note">判断：时间、承诺、信息、规则，以及模型没有写下的权力。</p>
+    </header>
+
+    <div class="reading-layout">
+      <aside class="margin-note" aria-label="阅读提示">
+        <strong>分析不是操纵许可证</strong>
+        模型可用于解释与改进共同决策，也可被用于剥削信息差。现实应用仍受法律、权利、职业伦理和伤害边界约束。
+      </aside>
+      <article class="prose">
+        <section aria-labelledby="repeat">
+          <h2 id="repeat">未来让今天的选择有了回声</h2>
+          <p>同一批行动者多次相遇，今天的行为会影响未来回应，这类模型叫作<dfn data-term="重复博弈">重复博弈</dfn>。两户住户不会只面对一次漏水。他们还要分担电梯维护、清理走廊、处理噪音。一次占便宜可能换来今后多次不合作。</p>
+          <p>未来的重要程度会改变当前激励。若双方都打算长期居住，也能观察彼此是否履约，那么合作可以由未来回报支持。若一方明天就搬走，未来惩罚几乎失去作用。于是“熟人更容易合作”不是无条件规律，它依赖关系是否持续、行为是否可见，以及回应是否真能发生。</p>
+          <p>重复也不会自动产生善意。持续互动同样可能维持排外联盟、价格合谋或报复循环。合作只是参与者之间减少冲突，不等于对旁观者有益。企业共同维持高价，对企业是合作，对消费者却可能是伤害。</p>
+          <p>结束时间也很关键。若双方确切知道最后一次互动何时到来，最后一轮缺少未来约束，倒数第二轮也可能因此失去约束。这个逆向逻辑依赖强假设，包括终点为共同知识，以及每一方都按同样方式推理。现实中，终点的不确定性和对对方类型的疑问会改变行为。</p>
+          <p>因此，重复关系的实用问题不是“还能见几次”，而是未来是否足够重要、行为能否被辨认、回应是否成比例、误判能否修复。过重惩罚会让一次噪声变成长期冲突，过轻回应又可能鼓励反复占便宜。稳定合作需要容错，也需要边界。</p>
+        </section>
+
+        <section aria-labelledby="commitment">
+          <h2 id="commitment">承诺只有在兑现时仍站得住</h2>
+          <p>到了真正需要执行的时点，作出承诺的一方仍有动机或受机制约束去履行，这样的承诺才是<dfn data-term="可信承诺">可信承诺</dfn>。一句“相信我会付款”没有改变后续激励；不可撤回的托管付款、书面合同和第三方验收则可能做到。</p>
+          <p>住户委员会可以先收取双方约定比例的款项，再向施工方下单。钱进入托管账户后，任何一家都不能在屋顶修好前取回；施工方也要通过验收才收到尾款。这个安排没有改变人格，却改变了临时反悔能得到什么。</p>
+          <p>承诺有时靠限制自己的选择发挥作用。商家承诺无理由退款，必须让顾客确信退款流程不会在购买后突然变难。谈判者公开设定授权边界，可能借此说明自己无法接受更低条件。然而自我限制也可能僵化局面，尤其当新信息出现时。</p>
+          <p>威胁同样要检查可信度。若甲户说“你不付款，我就让楼顶继续漏”，但漏水首先伤害甲户自己的房间，那么真正到达那一步时，他可能不会执行。乙户若预见到这一点，就不会被口头威胁改变。可靠分析要从未来行动者的当时利益倒推，而不是被强硬措辞迷惑。</p>
+          <p>承诺机制还有合法性边界。能够迫使他人履约，不等于有权设定任何条款。高额违约金可能对弱势一方形成不成比例的压迫；公开个人信息可能提高可观察性，却侵犯隐私。制度改造必须同时接受权利、程序和比例原则的审查。</p>
+        </section>
+
+        <section aria-labelledby="information">
+          <h2 id="information">看见什么，决定能推理到哪里</h2>
+          <p>谁在何时知道哪些事实、行动和类型，以及这些知识是否彼此共有，这套安排叫作<dfn data-term="信息结构">信息结构</dfn>。同一个收益表，在完全公开与私人信息环境中可能产生不同结果。信息不是附录，而是模型本身的一部分。</p>
+          <p>楼顶维修报价若只有甲户掌握，乙户可能担心费用被夸大。公开三家施工报价能减少这种疑虑。可是公开“报价”不等于公开“质量”，低价施工方可能隐瞒材料问题。增加信息只有在信息可验证、与决策相关且获取成本合理时才有帮助。</p>
+          <p>行动也可以传递信息。甲户愿意先付不可退订金，可能说明他确信漏水严重；但只有当轻微漏水者不愿承担同样成本时，这个行动才具有区分力。廉价口号谁都能说，因而往往缺少信息。昂贵行动也不是天然诚实，它可能只是财力展示。</p>
+          <p>透明还可能改变行为本身。公开每户付款记录能提高责任感，也可能把一次困难变成长期羞辱。公布竞标者报价能促进竞争，也可能方便彼此监视并维持合谋。判断透明政策时，要问公开给谁、公开多久、能否纠错，以及被公开者是否拥有申诉渠道。</p>
+          <p>信息的共同性也重要。甲户知道报价真实，还不够；甲户还要知道乙户知道，乙户也要知道甲户知道乙户知道。现实不可能无限确认，但会议纪要、公开签字和统一通知能把关键事实推进为共同基础，减少“我不知道你是否知道”的高阶猜测。</p>
+        </section>
+
+        <section aria-labelledby="rules">
+          <h2 id="rules">从预测结果转向设计规则</h2>
+          <p>从希望实现的结果出发，反向设计规则与激励，使人们按自身动机行动时也更可能到达该结果，这种研究思路称为<dfn data-term="机制设计">机制设计</dfn>。它不像普通分析那样先接受棋盘，而是追问棋盘怎样画才更合适。</p>
+          <p>对住户委员会而言，可选杠杆至少有四类。第一，改变付款方式，例如按受益面积分摊或允许分期。第二，改变信息，例如公开可比报价和验收记录。第三，引入承诺，例如托管款项与明确退款条件。第四，引入第三方，例如物业、保险或仲裁人。</p>
+          <p>每一种杠杆都可能产生新问题。按面积分摊需要可靠面积数据；公开报价可能牺牲商业隐私；托管产生管理成本；第三方也可能失职。机制不是免费补丁，而是把一种风险换成另一种风险。设计之后仍要问谁监督监督者。</p>
+          <p>好的规则还要考虑参与约束。如果乙户确实没有现金，强制一次付清会把“愿不愿合作”误写成“能不能合作”。允许分期可能让合作变得可行。反过来，若补贴过高，住户可能夸大维修需求。规则必须让如实表达和真实参与尽量相容。</p>
+          <p>因此，改变收益不等于操纵人。公共制度每天都在改变行动后果：交通罚款、存款保险、投票程序、合同法和平台声誉系统皆如此。规范问题在于目标是否正当、程序是否公开、负担是否公平，以及受影响者能否质疑与退出。</p>
+        </section>
+
+        <section aria-labelledby="limits">
+          <h2 id="limits">模型失效时，先修模型</h2>
+          <p>经典模型常假定行动者能稳定排序结果、理解规则并作一致推理。现实中的人受计算能力、注意力、时间和认知偏差限制，这称为<dfn data-term="有限理性">有限理性</dfn>。它不是说人毫无规律，而是说规律未必等于无限计算后的最优选择。</p>
+          <p>人还会关心公平、身份、愤怒、内疚和程序尊重。这些动机可以写进收益，但这样做需要独立证据，不能在预测失败后随意添加一个偏好来挽救模型。若任何行为都能通过事后改写收益解释，模型就失去可检验性。</p>
+          <p>权力差异也不能被“双方选择”四个字抹平。雇主与单个求职者、平台与小商户、国家与被占领群体，形式上都能拒绝，实际退出成本却可能极不对称。把强迫包装成自愿均衡，会遮蔽制度背景与替代选项的缺失。</p>
+          <p>应用博弈论时，可以做四项检查。其一，参与者边界是否漏掉受影响的第三方。其二，收益依据什么证据，而不是依据分析者的偏见。其三，信息与执行条件是否真实存在。其四，有哪些观察会让我们承认模型错了。</p>
+          <p>还要分清解释、预测与建议。一个模型可以解释过去为何出现僵局，却未必能预测下一次互动；它即使预测准确，也不自动给出正当建议。战争威慑、金融交易或法律谈判涉及高风险时，抽象模型不能替代领域证据、专业意见和适用规则。</p>
+          <blockquote>当现实不按模型行动时，最差的反应是把现实称为“不理性”然后继续。更好的反应是检查遗漏的偏好、信息、能力、权力和制度。</blockquote>
+          <p>回看漏雨楼顶，真正的进步并不是算出谁会等待，而是看见多种可改造的条件。公开报价减少怀疑，分期降低现金门槛，托管增强承诺，验收保护付款者，未来维护规则把一次选择连接到长期关系。每一项都能被检验，也都需要接受公平审查。</p>
+          <p>成熟的博弈论思维因此包含一种克制。先画出互动结构，再寻找稳定结果；若结果不好，优先改变规则而非羞辱个人；若证据不支持设定，就放弃或重建模型。博弈论的价值不在于把世界变成棋盘，而在于让我们知道哪块棋盘正在误导判断。</p>
+        </section>
+
+        <section aria-labelledby="transfer">
+          <h2 id="transfer">把框架带到新的局面</h2>
+          <p>面对一次新谈判，可以先写下五行：谁能影响结果，各自有哪些完整方案，各方怎样评价结果，谁知道什么，行动按什么顺序发生。随后寻找相互最佳回应，并把稳定、效率与公平分开。最后再问能否改变时间、信息、承诺或第三方角色。</p>
+          <p>若你研究军事战略，可以把这套框架与《孙子兵法》对条件、虚实和情报的关注对照，但不要把所有社会关系军事化。若你研究政治现实主义，可以比较韩非子与马基雅维利如何设计权力约束，同时追问信息如何回流、必要手段何时终止。</p>
+          <p>若你研究市场，可以看到价格、融资与预期如何形成反馈，但均衡概念不能给出必然的买卖时点。若你研究正义，可以借《理想国》的隐身戒指问题检验外部惩罚与内在动机，却仍需独立讨论何为正当。模型提供问题的骨架，不包办价值答案。</p>
+          <p>下一次听到“这是囚徒困境”或“对方一定会理性回应”时，可以停一下。要求说清收益来自哪里、信息是否共有、承诺能否兑现、还有没有别的均衡。能提出这些问题，就已经从背诵术语走向真正的结构判断。</p>
+        </section>
+
+        <nav class="next-reading" aria-label="来源与延伸阅读">
+          <p>继续核对原始论文、权威综述与本仓库的相关主题。</p>
+          <a href="sources.html">查看来源与延伸阅读 →</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="foot-line"><p><span>博弈论入门</span><span>·</span><a href="sources.html">来源</a><span>·</span><a href="../../index.html">知识库总览</a><span>·</span><span>2026</span></p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

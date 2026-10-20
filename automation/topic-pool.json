@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4089,6 +4089,13 @@
       "generatedAt": "2026-10-20",
       "slug": "filter-bubbles-and-echo-chambers",
       "entry": "knowledge-bases/filter-bubbles-and-echo-chambers/main.html"
+    },
+    {
+      "name": "博弈论入门",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-21",
+      "slug": "game-theory-primer",
+      "entry": "knowledge-bases/game-theory-primer/main.html"
     }
   ],
   "skipped": []

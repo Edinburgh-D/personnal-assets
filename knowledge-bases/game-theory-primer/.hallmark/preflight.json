@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-21",
+  "framework": "vanilla-html",
+  "fontStack": "per-knowledge-base web fonts",
+  "palette": "per-knowledge-base CSS tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt token scale",
+  "preserve": ["independent knowledge-base assets", "repository index contract", "data-site-home link"]
+}

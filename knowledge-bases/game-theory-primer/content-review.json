@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-21T10:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "博弈论究竟研究什么，它为什么不能被简化成猜心、算计或零和权术？",
+      "readerStateChange": "读前把博弈论视为猜心和权术；读后能从行动者、完整方案、结果偏好和信息条件四方面描述相互依赖的局面。",
+      "twoSentenceSummary": "本页用两户维修漏雨楼顶的选择说明，博弈论研究的是会彼此回应的选择，而非一套取胜诡计。它进一步把模型拆为行动者、可行选择、偏好与信息，并说明零和只是特殊情形。",
+      "continuityEvidence": "结尾明确指出楼顶局面已能描述但尚未知道会停在哪里，因此下一页必须把偏好写进矩阵并寻找稳定结果。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "equilibrium.html",
+      "centralQuestion": "既然模型先固定参与者、选择、偏好与信息，我们怎样从这些条件中找出稳定结果，并看清个人理性为何可能导向集体困境？",
+      "readerStateChange": "读前只能描述局面；读后能逐列逐行寻找最佳回应，识别占优选择和相互最佳回应，并将稳定、效率与公平分开。",
+      "twoSentenceSummary": "本页把维修结果写入收益矩阵，展示双方等待如何成为稳定却次优的结果，并解释多个稳定点和概率随机化。随后加入行动顺序，说明承诺能否兑现要从真正到达节点时的利益倒推。",
+      "continuityEvidence": "本页从入口页留下的模型要素出发求得稳定结果，结尾又把坏均衡转化为转换路径问题，直接引出重复关系、承诺与制度规则。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "institutions-and-limits.html",
+      "centralQuestion": "如果均衡会随规则、时间与信息改变，我们怎样通过重复互动、可信承诺和制度设计改善合作，同时避免把模型误当成人性定律？",
+      "readerStateChange": "读前会寻找均衡但不知如何改变它；读后能从未来关系、兑现约束、信息公开和规则设计中寻找杠杆，并检查权力与证据边界。",
+      "twoSentenceSummary": "本页说明重复相遇、托管付款、公开报价与验收规则如何改变合作的激励，而无需假定人突然无私。它也用有限理性、权力差异和可证伪要求限制模型的解释范围。",
+      "continuityEvidence": "本页承接上一页关于转换路径的结论，把楼顶僵局改造成可调整的制度问题，并在结尾给出可迁移到新情境的完整判断框架。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文转述；读后能定位原始论文、奖项官方说明、哲学综述与开放教材，并理解示例数字和现实应用的边界。",
+      "twoSentenceSummary": "本页列出纳什原始论文、诺贝尔奖官方材料、斯坦福哲学百科和作者开放教材，并逐项说明其用途。它同时标明楼顶案例为教学构造，并把本主题连接到四个既有知识库。",
+      "continuityEvidence": "来源页从前三页的核心主张回溯到原始与权威材料，并通过返回入口及相关知识库链接闭合全站导航。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
