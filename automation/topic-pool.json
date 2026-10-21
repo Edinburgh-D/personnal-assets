@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21",
+  "updatedAt": "2026-10-22",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4110,6 +4110,13 @@
       "generatedAt": "2026-10-21",
       "slug": "machiavelli-the-prince",
       "entry": "knowledge-bases/machiavelli-the-prince/main.html"
+    },
+    {
+      "name": "中日韩文化对比",
+      "domain": "语言/文化",
+      "generatedAt": "2026-10-22",
+      "slug": "china-japan-korea-culture",
+      "entry": "knowledge-bases/china-japan-korea-culture/main.html"
     }
   ],
   "skipped": []

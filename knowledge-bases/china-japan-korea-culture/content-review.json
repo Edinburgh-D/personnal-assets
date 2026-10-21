@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-22T02:09:04+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "面对中日韩文化中既相似又不同的现象，我们怎样避免把国家标签误当成固定性格，并建立可靠的比较地图？",
+      "readerStateChange": "读前容易用礼貌、集体主义等标签概括三国；读后能把现象拆成共享资源、地方制度与具体场景，并先校准比较尺度。",
+      "twoSentenceSummary": "入口页用三位朋友筹办年末家宴的分歧说明，相同动作会随关系与场合改变意义。正文建立资源、制度、场景三层地图，并以同类相较和反向检验替代国民性排名。",
+      "continuityEvidence": "结尾把文化界定为可移动和改写的资源，因此自然要求下一页解释这些资源通过哪些历史通道被传播、固定与重组。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "shared-roots-different-paths.html",
+      "centralQuestion": "既然相似与差异都不是天生的，共享文字、思想与制度资源究竟怎样在三地被选择、翻译并改造成不同的生活秩序？",
+      "readerStateChange": "读前只有资源、制度、场景的静态地图；读后能用传播、选择、制度化与现代重组四个环节解释共享形式为何分化。",
+      "twoSentenceSummary": "本页从汉字书写、儒佛资源、语言规范与近现代重组说明传播从来不是复制。四环节模型又回到请柬和家宴，展示传统如何在新关系中继续被组织。",
+      "continuityEvidence": "本页结论明确指出历史机制只能说明实践如何形成，不能预测眼前个人，因此下一页必须进入语言、家庭、餐桌和职场场景检验。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "living-comparison.html",
+      "centralQuestion": "当共享来源已经被改造成不同实践时，我们怎样在语言、家庭、餐桌、职场与流行文化中辨认真正的异同，同时保留地区与世代差异？",
+      "readerStateChange": "读前能解释文化形式的历史分化；读后能把国家倾向放回场景、关系、制度和个人证据，并提出允许反例修正的判断。",
+      "twoSentenceSummary": "本页比较敬语、内外关系、遗产饮食、组织沟通与流行文化，逐项说明国家标签能提示什么、又遗漏什么。家宴收束展示行为由收入、角色和关系协商共同形成。",
+      "continuityEvidence": "本页承接四环节历史模型并把它落实为可观察证据，末尾开放问题要求读者在新案例中继续核对尺度、制度与当事人关系。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分技术标准、政府语言规范与文化遗产档案的证据范围，并理解官方材料不能直接代表全国人口的日常实践。",
+      "twoSentenceSummary": "来源页按正文引用顺序列出 UNESCO、Unicode、日本文化厅与韩国国立国语院的一手材料。每项都说明它支持的主张及不能外推的边界，并提供三个真实存在的站内延伸入口。",
+      "continuityEvidence": "三页正文的编号引用均可直接到达对应来源，来源页末尾又返回资源、制度、场景框架，形成从论述到核查再回读的闭环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

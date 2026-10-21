@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "中日韩文化对比：共享传统、不同路径与当代生活",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "大众入门",
+  "createdAt": "2026-10-22",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "相似，不等于相同",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55,
+      "dependsOn": [],
+      "readerQuestion": "面对中日韩文化中既相似又不同的现象，我们怎样避免把国家标签误当成固定性格，并建立可靠的比较地图？",
+      "readerStateBefore": "读者容易用礼貌、集体主义或含蓄等宽泛标签概括三国，却难以解释相似从何而来、差异为何出现。",
+      "readerStateAfter": "读者能够区分共享资源、地方制度与具体场景三层，并把国家差异视为需要解释的历史结果而非天生性格。",
+      "priorConclusion": "",
+      "coreExample": "来自北京、大阪与首尔的三位朋友共同筹办一顿年末家宴，从称呼、座次、菜肴、敬酒到告辞方式观察相似礼节背后的不同判断。",
+      "conclusion": "中日韩文化比较的可靠起点，不是给三国各贴一张性格标签，而是观察共享资源如何被地方制度、社会关系与具体场景重新组合。",
+      "nextQuestion": "既然相似与差异都不是天生的，共享文字、思想与制度资源究竟怎样在三地被选择、翻译并改造成不同的生活秩序？",
+      "nextPage": "shared-roots-different-paths.html",
+      "newTerms": [
+        { "term": "比较尺度", "definition": "比较时选择的观察层级，例如国家、地区、世代、组织或一次具体互动。" },
+        { "term": "文化脚本", "definition": "人们在某类场景中习得的期待与行动顺序，它提供参照，却不会像程序一样决定每个人。" },
+        { "term": "文化资源", "definition": "群体可调用、改写或拒绝的语言、礼仪、制度、记忆与审美形式。" }
+      ]
+    },
+    {
+      "file": "shared-roots-different-paths.html",
+      "title": "同一部字典，三种改写",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.52,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然相似与差异都不是天生的，共享文字、思想与制度资源究竟怎样在三地被选择、翻译并改造成不同的生活秩序？",
+      "readerStateBefore": "读者能够区分共享资源、地方制度与具体场景三层，并把国家差异视为需要解释的历史结果而非天生性格。",
+      "readerStateAfter": "读者能够用传播、选择、制度化与现代重组四个环节解释三国为何共享大量形式，却形成不同的语言和社会实践。",
+      "priorConclusion": "中日韩文化比较的可靠起点，不是给三国各贴一张性格标签，而是观察共享资源如何被地方制度、社会关系与具体场景重新组合。",
+      "coreExample": "继续追踪三位朋友筹办年末家宴时写请柬、安排长幼称呼、选择节庆日期与准备菜肴的过程，观察共享词汇和礼仪资源如何进入不同制度。",
+      "conclusion": "三国的相似来自长期流动的共享资源，差异则来自各地持续的选择、制度化与现代重组；任何单线影响论都不足以解释今天的生活。",
+      "nextQuestion": "当共享来源已经被改造成不同实践时，我们怎样在语言、家庭、餐桌、职场与流行文化中辨认真正的异同，同时保留地区与世代差异？",
+      "nextPage": "living-comparison.html",
+      "newTerms": [
+        { "term": "汉字文化圈", "definition": "历史上以汉字书写、汉文典籍和相关制度交流为重要纽带的区域网络，不等于现代三国共享同一种文化。" },
+        { "term": "制度化", "definition": "某种观念或做法被学校、官僚、宗教、家庭或市场固定为可重复规则的过程。" },
+        { "term": "再语境化", "definition": "外来形式进入新环境后，被赋予新的用途、意义与边界。" },
+        { "term": "标准语", "definition": "由教育、行政和大众传媒推广的规范语言形式，它与地方方言和其他语言长期并存。" }
+      ]
+    },
+    {
+      "file": "living-comparison.html",
+      "title": "把比较放回生活现场",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.52,
+      "dependsOn": ["shared-roots-different-paths.html"],
+      "readerQuestion": "当共享来源已经被改造成不同实践时，我们怎样在语言、家庭、餐桌、职场与流行文化中辨认真正的异同，同时保留地区与世代差异？",
+      "readerStateBefore": "读者能够用传播、选择、制度化与现代重组四个环节解释三国为何共享大量形式，却形成不同的语言和社会实践。",
+      "readerStateAfter": "读者能够从场景、关系、制度与个人差异逐层检查文化解释，并在跨文化互动中形成可修正而非标签化的判断。",
+      "priorConclusion": "三国的相似来自长期流动的共享资源，差异则来自各地持续的选择、制度化与现代重组；任何单线影响论都不足以解释今天的生活。",
+      "coreExample": "三位朋友终于围桌吃饭：他们在称呼、分食、敬酒、拍照、付款和告辞上的选择既受各自经验影响，也随年龄、亲疏与所在城市改变。",
+      "conclusion": "成熟的文化比较不是背诵国民特征，而是在具体场景中提出可检验的解释，并随地区、世代、关系和个人证据不断修正。",
+      "nextQuestion": "下一次遇到看似典型的中日韩文化差异时，你能否先确认比较尺度、制度背景和当事人的具体关系，再决定国家文化究竟解释了多少？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "敬语系统", "definition": "通过词汇、词尾或表达方式标示说话者、听者与谈及人物之间关系的语言资源。" },
+        { "term": "内外关系", "definition": "人们依场景把自己和他人暂时归入己方或他方，并据此调整称呼、责任与礼貌的关系组织方式。" },
+        { "term": "非物质文化遗产", "definition": "由社区持续实践、传承并不断重造的知识、技能、仪式和社会实践，而不是冻结不变的古老样本。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与比较边界",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
