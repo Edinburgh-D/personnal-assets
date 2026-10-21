@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "假新闻与后真相时代",
+  "audience": "general",
+  "type": "single-subject",
+  "depthLevel": "大众进阶",
+  "entry": "main.html",
+  "createdAt": "2026-10-22",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "容易把错误报道、蓄意造假、政治宣传和自己不喜欢的新闻统称为假新闻，也把后真相理解成人人不再关心事实。",
+      "readerStateAfter": "能够区分内容真假、传播意图与公共信任三个层次，并把后真相理解为共同核验规则变弱的政治社会状态。",
+      "readerQuestion": "假新闻只是错误内容的别名，还是一种会改变公共判断规则的现象？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "虚构城市临河市选举期间，一段十八秒视频声称候选人陈岚要关闭两家社区诊所；短片来自真实议会录像，却删除了否定关闭方案的前后语句。",
+      "newTerms": [
+        {
+          "term": "事实主张",
+          "definition": "能够借助观察、记录或其他证据判断真假的陈述。"
+        },
+        {
+          "term": "错误信息",
+          "definition": "内容不准确或具有误导性，但传播者未必知道它有错。"
+        },
+        {
+          "term": "虚假信息",
+          "definition": "行动者明知内容虚假或具有欺骗性，仍有意制作或传播。"
+        },
+        {
+          "term": "恶意信息",
+          "definition": "以真实材料为基础，却通过泄露、断章取义或定向曝光造成伤害的信息。"
+        },
+        {
+          "term": "后真相",
+          "definition": "公共争论中，身份、情绪与阵营忠诚持续压过可共同检验的事实程序。"
+        }
+      ],
+      "conclusion": "假新闻不是一个足够精确的分析类别；真正需要警惕的是错误、欺骗与语境操控如何削弱共同核验事实的规则，并把公共争论推向后真相。",
+      "nextQuestion": "既然问题不只是一条消息真假，哪些心理、社会与平台机制会让未经核验的叙述获得可信度？",
+      "nextPage": "mechanisms.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "mechanisms.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "能够区分内容真假、传播意图与公共信任三个层次，并把后真相理解为共同核验规则变弱的政治社会状态。",
+      "readerStateAfter": "能够沿熟悉感、身份认同、传播激励、来源遮蔽与平台排序重建可信度形成过程，并说明这些因素为何会相互放大。",
+      "readerQuestion": "既然问题不只是一条消息真假，哪些心理、社会与平台机制会让未经核验的叙述获得可信度？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "假新闻不是一个足够精确的分析类别；真正需要警惕的是错误、欺骗与语境操控如何削弱共同核验事实的规则，并把公共争论推向后真相。",
+      "coreExample": "临河市诊所短片被不同账号改写标题、重复投放，随后进入家长群和本地生活账号；原始议会录像与剪辑者身份逐渐从传播链中消失。",
+      "newTerms": [
+        {
+          "term": "错觉真相效应",
+          "definition": "人们再次接触一项陈述时，可能因熟悉和处理更顺畅而把它评得更可信。"
+        },
+        {
+          "term": "可信度捷径",
+          "definition": "在时间和信息不足时，用熟悉度、转发者身份或版式等线索替代完整核验。"
+        },
+        {
+          "term": "来源漂白",
+          "definition": "信息经过多次转载或仿冒包装后，最初制作者、利益关系与证据缺口变得难以看见。"
+        },
+        {
+          "term": "互动排序",
+          "definition": "平台依据点击、停留、评论或分享等信号决定内容可见度的分发方式。"
+        },
+        {
+          "term": "注意力激励",
+          "definition": "传播者因流量、广告、政治影响或群体声望而偏好更能抓住注意的内容。"
+        }
+      ],
+      "conclusion": "后真相并非由单一谎言或单一算法制造，而是熟悉感、群体身份、内容包装、注意力收益与不透明分发共同降低核验成本优势后的系统结果。",
+      "nextQuestion": "当真实材料也能误导、纠错也可能被阵营化时，普通人和公共机构怎样判断并回应，同时避免犬儒主义与过度审查？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "judgment.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "能够沿熟悉感、身份认同、传播激励、来源遮蔽与平台排序重建可信度形成过程，并说明这些因素为何会相互放大。",
+      "readerStateAfter": "能够把主张、证据、来源、传播行为和现实后果分开核验，按证据强弱表达结论，并理解治理措施必须兼顾表达自由。",
+      "readerQuestion": "当真实材料也能误导、纠错也可能被阵营化时，普通人和公共机构怎样判断并回应，同时避免犬儒主义与过度审查？",
+      "dependsOn": [
+        "mechanisms.html"
+      ],
+      "priorConclusion": "后真相并非由单一谎言或单一算法制造，而是熟悉感、群体身份、内容包装、注意力收益与不透明分发共同降低核验成本优势后的系统结果。",
+      "coreExample": "把临河市诊所短片当作一份待审材料，找回完整会议录像、核对议程与预算文本、识别首发账号和转载关系，再区分可确认事实、合理推断与未知动机。",
+      "newTerms": [
+        {
+          "term": "横向阅读",
+          "definition": "暂时离开当前页面，另开来源检查发布者、证据出处与外部评价。"
+        },
+        {
+          "term": "内容溯源",
+          "definition": "追踪图片、视频或文件的最早可得版本、编辑过程与传播路径。"
+        },
+        {
+          "term": "独立印证",
+          "definition": "用彼此不依赖、来源清楚的材料检验同一主张，而不是把多个转载当成多份证据。"
+        },
+        {
+          "term": "证据等级",
+          "definition": "依据材料与主张的直接程度、来源透明度和可复核性区分结论强弱。"
+        },
+        {
+          "term": "比例原则",
+          "definition": "限制表达的措施应服务合法目的，确有必要，并采用足以实现目的的较小侵害手段。"
+        }
+      ],
+      "conclusion": "抵抗后真相不是寻找永不犯错的权威，而是维护可复核证据、透明纠错、来源多样性与权利边界，让观点竞争重新受共同事实程序约束。",
+      "nextQuestion": "当生成式媒体、内容凭证与平台治理继续变化时，我们怎样更新核验工具，却不把任何技术标签误当成真理印章？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ]
+}

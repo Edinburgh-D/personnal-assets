@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-22",
+  "framework": "vanilla-html",
+  "fontStack": "repository-local Google Fonts pattern",
+  "palette": "OKLCH custom properties",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["static multi-page publishing contract", "main.html entry", "local tokens.css"]
+}

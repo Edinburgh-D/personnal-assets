@@ -4117,6 +4117,13 @@
       "generatedAt": "2026-10-22",
       "slug": "china-japan-korea-culture",
       "entry": "knowledge-bases/china-japan-korea-culture/main.html"
+    },
+    {
+      "name": "假新闻与后真相时代",
+      "domain": "政治/社会",
+      "generatedAt": "2026-10-22",
+      "slug": "fake-news-and-post-truth",
+      "entry": "knowledge-bases/fake-news-and-post-truth/main.html"
     }
   ],
   "skipped": []

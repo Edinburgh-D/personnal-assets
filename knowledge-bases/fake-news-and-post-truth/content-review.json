@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-22T08:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "假新闻只是错误内容的别名，还是一种会改变公共判断规则的现象？",
+      "readerStateChange": "读前把所有不可靠内容和不喜欢的报道都叫作假新闻；读后能按内容、语境、意图与身份分层，并理解共同核验规则为何重要。",
+      "twoSentenceSummary": "页面以一段真实画面、错误标题的虚构短片为线索，区分错误信息、虚假信息与恶意信息。随后把后真相界定为共同事实程序失灵，而不是事实本身消失。",
+      "continuityEvidence": "末段从敌我标签吞没事实判断过渡到传播加速问题，直接引出下一页对熟悉感、身份、转载与排序机制的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "既然问题不只是一条消息真假，哪些心理、社会与平台机制会让未经核验的叙述获得可信度？",
+      "readerStateChange": "读前只会归因于说谎者或算法；读后能沿重复、身份信任、来源漂白、互动排序和注意力收益重建相互放大的传播回路。",
+      "twoSentenceSummary": "页面继续追踪诊所短片，解释重复如何制造熟悉、转载如何遮蔽源头，以及群体信任如何替代核验。最后把平台排序和传播者收益接入同一反馈回路，并说明各机制都有边界。",
+      "continuityEvidence": "本页结尾把问题推进到如何恢复证据优势并保留纠错空间，下一页正从主张、溯源、印证、证据措辞与治理边界展开。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "当真实材料也能误导、纠错也可能被阵营化时，普通人和公共机构怎样判断并回应，同时避免犬儒主义与过度审查？",
+      "readerStateChange": "读前容易在盲信与全面怀疑之间摇摆；读后能缩小主张、追踪来源、区分证据等级，并用必要性和比例性审视治理措施。",
+      "twoSentenceSummary": "页面把临河市短片作为待审材料，示范如何从完整录像、预算文件、发布者背景和替代解释建立分级结论。随后把个人核验扩展到媒体更正、平台透明和表达自由边界。",
+      "continuityEvidence": "页面承接上一页的系统机制，为每个环节匹配判断与治理方式；结尾保留技术凭证和平台规则变化下如何避免真理印章的新问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分官方规范、国际人权解释、平台标准与同行评议研究，并理解每类来源的适用范围和外推限制。",
+      "twoSentenceSummary": "页面列出概念、心理机制、传播研究、内容凭证、平台治理与表达自由所用的核心材料。每条来源都说明它支持什么，也说明不能从中推出什么。",
+      "continuityEvidence": "来源锚点与前三页的概念、机制和治理段落逐一对应，并提供返回开篇和重新核验正文主张的路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
