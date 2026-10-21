@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-21T22:11:08+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "《君主论》为什么不能只读成一本教人不择手段的权谋手册？",
+      "readerStateChange": "读前只有残酷、欺骗和操控的流行印象；读后能够把作品放回佛罗伦萨政权崩解、新君主缺少稳固合法性与作者失势献策的具体处境。",
+      "twoSentenceSummary": "页面以一座政权刚刚易手的虚构城邦展开，说明新君主为何比世袭统治者更受利益变动、外部武力和支持者期待困扰。它随后梳理成书背景、全书结构和三种流行误读，把问题从个人阴谋改写为新秩序怎样取得可持续基础。",
+      "continuityEvidence": "结尾把军队归属、民众支持、公共形象和机运列为尚待拆解的机制，直接推出下一页关于这些部件如何共同运作的分析。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanism.html",
+      "centralQuestion": "既然新政权的首要难题是让秩序站稳，马基雅维利怎样把武力、民众、形象与时机组织成一套行动机制？",
+      "readerStateChange": "读前知道作品研究新政权的脆弱；读后能够解释可靠武力、避免民众仇恨、协调声誉与因时调整如何共同影响统治稳定。",
+      "twoSentenceSummary": "页面沿着自身武力、民众支持、狐狸与狮子、必要、virtù 和 fortuna 展开，说明稳定来自减少依赖与适应变化，而不是把残酷程度开到最大。贯穿城邦在援军、贵族、居民和紧急措施之间的选择，使每个概念都回到可观察的政治后果。",
+      "continuityEvidence": "结尾指出整套机制仍把危险定义和停止时机集中给统治者，因而必须进入下一页检验个人成功、公共目的与制度纠错之间的差距。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "如果政治成败取决于必要、形象和适应，那么怎样区分清醒的现实主义、危险的犬儒主义与可以被纠错的公共权力？",
+      "readerStateChange": "读前能够说明新君主维持秩序的行动机制；读后能够用公共目的、事实证据、替代方案、比例、期限和纠错能力评价非常权力。",
+      "twoSentenceSummary": "页面先区分保住统治位置、增强制度能力和改善共同体安全三个效果层次，再以能否接受反证划开政治现实主义与犬儒主义。它把《君主论》与《论李维》并读，分析四种现代误用，并提出六项检验来约束危机中的非常措施。",
+      "continuityEvidence": "本页接住机制页留下的集中判断难题，结尾把虚构城邦从个人强力推进到信息回流、公共规则和例外撤回，并留下可迁移到现实危机的开放追问。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前主要依靠正文的章节概括；读后能够回到意大利语原典和两种开放英译，并用权威哲学百科核对生平、概念与解释争议。",
+      "twoSentenceSummary": "来源页说明 virtù、fortuna 与 lo stato 的译名差异，列出意大利语原典、公共领域英译和两部权威哲学百科。它还提供《论李维》入口与三个站内关联知识库，并明确在线版本、学术争议和网页时效边界。",
+      "continuityEvidence": "该页承接三篇叙事页中的章节定位、概念翻译和解释分歧，为原典核查与延伸比较提供可达路径，不另行扩展叙事链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

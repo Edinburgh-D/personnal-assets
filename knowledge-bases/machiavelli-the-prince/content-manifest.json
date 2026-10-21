@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "马基雅维利《君主论》",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-21",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先把魔鬼的面具摘下",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "《君主论》为什么不能只读成一本教人不择手段的权谋手册？",
+      "readerStateBefore": "读者大多只听过宁可被畏惧、目的证明手段之类流行说法，容易把马基雅维利等同于阴谋与冷酷。",
+      "readerStateAfter": "读者能够把《君主论》放回佛罗伦萨政权崩解与作者失势的处境，理解它首先研究新秩序怎样在危险中站稳。",
+      "priorConclusion": "",
+      "coreExample": "一位接管分裂城邦的新统治者面对旧贵族、外来军队、财政压力与不安民众，必须在没有稳固合法性时让命令开始生效。",
+      "conclusion": "《君主论》不是一张脱离场景的恶行许可证，而是一份针对新政权脆弱性的政治诊断；它把问题从统治者是否善良改写为秩序凭什么能够建立并维持。",
+      "nextQuestion": "既然新政权的首要难题是让秩序站稳，马基雅维利怎样把武力、民众、形象与时机组织成一套行动机制？",
+      "nextPage": "mechanism.html",
+      "newTerms": [
+        { "term": "新君主", "definition": "通过征服、机运、他人武力或自身能力新近取得统治地位的人，缺少世袭习惯提供的稳定支持。" },
+        { "term": "有效真实", "definition": "不从想象中的完美政治出发，而观察人在实际权力关系中如何行动及其真实后果。" },
+        { "term": "国家", "definition": "《君主论》中的 lo stato 常指君主占有并维持的统治地位或领地，不能不加说明地等同现代非人格化国家。" }
+      ]
+    },
+    {
+      "file": "mechanism.html",
+      "title": "狐狸、狮子与洪水",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.56,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然新政权的首要难题是让秩序站稳，马基雅维利怎样把武力、民众、形象与时机组织成一套行动机制？",
+      "readerStateBefore": "读者能够把《君主论》放回佛罗伦萨政权崩解与作者失势的处境，理解它首先研究新秩序怎样在危险中站稳。",
+      "readerStateAfter": "读者能够解释自身武力、民众支持、声誉管理、必要行动以及因时而变如何共同影响新政权的稳定。",
+      "priorConclusion": "《君主论》不是一张脱离场景的恶行许可证，而是一份针对新政权脆弱性的政治诊断；它把问题从统治者是否善良改写为秩序凭什么能够建立并维持。",
+      "coreExample": "同一位新统治者必须决定依靠雇佣军还是本地军队、拉拢贵族还是避免压迫民众、兑现承诺还是应对对手背约，并在局势突变时调整行动。",
+      "conclusion": "马基雅维利的行动机制不是持续残酷，而是用自己的力量降低依赖，以民众不仇恨维持统治基础，并让行动方式随局势变化；真正困难的是判断何时必须偏离常规善行以及何时停止。",
+      "nextQuestion": "如果政治成败取决于必要、形象和适应，那么怎样区分清醒的现实主义、危险的犬儒主义与可以被纠错的公共权力？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "virtù", "definition": "并非通常意义的道德美德，而是政治行动者把判断、胆识、自制和适应能力用于掌握局势的综合能力。" },
+        { "term": "fortuna", "definition": "超出行动者控制的机运与变局；它能改变处境，但并不取消预见、准备和选择的空间。" },
+        { "term": "自身武力", "definition": "由统治者所治理共同体掌握、可持续依赖的军事力量，与雇佣军和外国援军相对。" },
+        { "term": "必要", "definition": "危险局势对行动施加的约束；它在文本中解释某些非常手段为何出现，却不自动证明任何自称必要的行为。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "有效之后，还剩什么",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["mechanism.html"],
+      "readerQuestion": "如果政治成败取决于必要、形象和适应，那么怎样区分清醒的现实主义、危险的犬儒主义与可以被纠错的公共权力？",
+      "readerStateBefore": "读者能够解释自身武力、民众支持、声誉管理、必要行动以及因时而变如何共同影响新政权的稳定。",
+      "readerStateAfter": "读者能够用目的、证据、比例、期限、信息回流和纠错能力评估现实主义政治，并知道为何必须把《君主论》与共和论著并读。",
+      "priorConclusion": "马基雅维利的行动机制不是持续残酷，而是用自己的力量降低依赖，以民众不仇恨维持统治基础，并让行动方式随局势变化；真正困难的是判断何时必须偏离常规善行以及何时停止。",
+      "coreExample": "那位新统治者已经平定叛乱，却继续以紧急状态压制消息、延长恐惧并把个人安全称为公共安全；读者需要判断必要措施是否已经变成自我保护。",
+      "conclusion": "成熟地阅读《君主论》，既要承认权力、冲突与偶然不会因道德愿望消失，也要拒绝把成功当成正当性的全部；现实主义只有接受公共目的、证据检验、期限和纠错约束，才不会退化为强者的自我辩护。",
+      "nextQuestion": "当今天的组织或政府以危机、竞争和安全为理由要求非常权力时，我们能否追问它保护谁、依据什么、持续多久并由谁纠错？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "政治现实主义", "definition": "从权力、冲突、利益和行动后果出发理解政治，同时不预先保证成功者就是正当者。" },
+        { "term": "共和主义", "definition": "把公共自由、公民参与、制度制衡与对支配的防范置于政治判断中心的传统，也是理解马基雅维利其他著作的重要线索。" },
+        { "term": "犬儒主义", "definition": "认定原则只是伪装、所有人只为私利行动，因而把欺骗与伤害视为无需再论证的常态。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原典、版本与解释争议",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.42,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

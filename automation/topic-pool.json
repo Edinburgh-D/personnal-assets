@@ -4103,6 +4103,13 @@
       "generatedAt": "2026-10-21",
       "slug": "quantum-mechanics-foundations",
       "entry": "knowledge-bases/quantum-mechanics-foundations/main.html"
+    },
+    {
+      "name": "马基雅维利《君主论》",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-21",
+      "slug": "machiavelli-the-prince",
+      "entry": "knowledge-bases/machiavelli-the-prince/main.html"
     }
   ],
   "skipped": []
