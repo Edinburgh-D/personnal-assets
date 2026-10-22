@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-23T02:45:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "八段锦和太极看起来都慢而柔和，它们究竟在练什么，差异为什么会影响普通人的入门选择？",
+      "readerStateChange": "读前只把两者看成相似的慢动作养生；读后能从动作是否分段、步法与重心任务、空间和教学需求比较两种练法。",
+      "twoSentenceSummary": "页面用小林十二分钟晨练的情境，说明八段锦以八段相对独立动作降低开始成本，太极以连续套路和步法延长协调学习。随后区分传统教学语汇与现代健康解释，把选择落到具体版本和个人条件。",
+      "continuityEvidence": "结尾把共同底层练习概括为慢、稳、呼吸与注意整合，并明确转向下一页的动作机制与证据强弱。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "movement-mechanisms.html",
+      "centralQuestion": "既然两者共享慢练与身心整合，它们对平衡、活动能力和主观放松可能产生作用的共同机制是什么，证据又能支持到哪一步？",
+      "readerStateChange": "读前只能按动作外形比较；读后能用感知运动控制、重心挑战、呼吸注意和运动剂量解释可能收益，并识别疗效外推的限制。",
+      "twoSentenceSummary": "页面拆解慢速动作中的姿势控制、动态平衡、呼吸和注意，再说明练习效果取决于频率、强度、时长与具体类型。太极和气功证据支持部分平衡或功能收益的可能性，但不足以证明包治或把传统词汇当成解剖机制。",
+      "continuityEvidence": "页面承接上一页的共同底层练习，最后把机制结论转成下一页必须处理的剂量、目标、教学和安全选择。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "choosing-and-combining.html",
+      "centralQuestion": "在收益可能而非包治的前提下，普通人怎样按目标、可用时间、教学条件和身体反应选择八段锦、太极或两者组合？",
+      "readerStateChange": "读前理解机制却不会安排实践；读后能依据目标、时间、教学和症状反应选择版本，组织低门槛试练并渐进增加负荷。",
+      "twoSentenceSummary": "页面用小林的两周试练展示如何把工作日短段八段锦与周末太极教学组合，并用当下和次日反应判断可恢复性。它进一步给出急症信号、慢病协同和渐进负荷边界，防止把练习当成医疗替代。",
+      "continuityEvidence": "本页把机制页的剂量与证据边界落实为选择规则，并在结尾把动作结构、剂量、收益和安全边界推广为判断其他功法的方法。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的概括；读后能定位每类主张的官方来源，理解推广规范、公共健康指南与临床证据各自承担的不同作用。",
+      "twoSentenceSummary": "来源页汇集国家体育总局、世界卫生组织、美国国立补充和整合健康中心、疾病控制与预防中心及心脏协会资料。页面同时说明研究异质性、医疗边界和相关知识库之间的概念连接。",
+      "continuityEvidence": "来源页承接前三页的关键主张，提供原始链接，并回链开篇及经络、筋膜、正骨和睡眠相关知识库。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

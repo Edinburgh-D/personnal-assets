@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "八段锦与太极养生",
+  "entry": "main.html",
+  "type": "comparison",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-23",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "两种慢练，一张身体地图",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把八段锦和太极都理解成慢动作养生，既说不清两者的共同基础，也不知道差异会怎样影响自己的选择。",
+      "readerStateAfter": "读者能够从动作组织、学习路径与练习情境比较八段锦和太极，并把选择理解为练习结构的匹配而非门派高低。",
+      "readerQuestion": "八段锦和太极看起来都慢而柔和，它们究竟在练什么，差异为什么会影响普通人的入门选择？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "久坐的上班族小林每天早晨只有十二分钟，希望缓解僵硬、建立运动习惯，也担心膝盖在蹲起时不舒服。",
+      "newTerms": [
+        {
+          "term": "健身气功",
+          "definition": "把身体姿势、呼吸和注意调节结合起来的传统健身练习类别，八段锦是其中一种常见功法。"
+        },
+        {
+          "term": "套路",
+          "definition": "按一定顺序连接的动作组合，太极学习通常通过不同长度和风格的套路展开。"
+        },
+        {
+          "term": "重心转移",
+          "definition": "身体重量在两脚或支撑面之间有控制地移动，是步法与平衡训练的重要部分。"
+        },
+        {
+          "term": "身心运动",
+          "definition": "把动作、呼吸和注意调节整合在同一练习中的运动形式。"
+        }
+      ],
+      "conclusion": "八段锦以八段相对独立的动作降低入门门槛，太极以连续步法和重心转换提供更长的协调学习；两者共享慢、稳、呼吸与注意整合的底层练习，选择应看个人条件而非名称光环。",
+      "nextQuestion": "既然两者共享慢练与身心整合，它们对平衡、活动能力和主观放松可能产生作用的共同机制是什么，证据又能支持到哪一步？",
+      "nextPage": "movement-mechanisms.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "movement-mechanisms.html",
+      "title": "慢，不等于没有负荷",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够从动作组织、学习路径与练习情境比较八段锦和太极，并把选择理解为练习结构的匹配而非门派高低。",
+      "readerStateAfter": "读者能够用动作控制、重心挑战、运动剂量与注意呼吸解释可能的收益，并能区分传统解释、现代推论和临床证据的强弱。",
+      "readerQuestion": "既然两者共享慢练与身心整合，它们对平衡、活动能力和主观放松可能产生作用的共同机制是什么，证据又能支持到哪一步？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "八段锦以八段相对独立的动作降低入门门槛，太极以连续步法和重心转换提供更长的协调学习；两者共享慢、稳、呼吸与注意整合的底层练习，选择应看个人条件而非名称光环。",
+      "coreExample": "小林分别练习一轮简化八段锦和一段基础太极步法，比较呼吸是否顺畅、脚下是否稳定、动作后是否更愿意活动，而不是只追求出汗或神秘体感。",
+      "newTerms": [
+        {
+          "term": "感知运动控制",
+          "definition": "神经系统把视觉、前庭和身体感觉与肌肉动作结合起来，以维持姿势并完成目标动作的过程。"
+        },
+        {
+          "term": "运动剂量",
+          "definition": "一次或一段时期内运动的频率、强度、时长和具体类型的组合。"
+        },
+        {
+          "term": "中等强度",
+          "definition": "呼吸和心率明显加快但通常仍能说话的活动水平，具体感受会随体能与健康状况而变化。"
+        },
+        {
+          "term": "多组分身体活动",
+          "definition": "在同一计划中结合有氧、力量、平衡或协调等不止一种训练成分的身体活动。"
+        }
+      ],
+      "conclusion": "八段锦与太极的可解释价值主要来自反复动作、姿势控制、重心挑战、注意和呼吸的整合；证据较能支持它们作为身体活动与平衡练习的可能收益，却不足以把传统理论词汇直接当作解剖机制或把练习当成疾病治疗。",
+      "nextQuestion": "在收益可能而非包治的前提下，普通人怎样按目标、可用时间、教学条件和身体反应选择八段锦、太极或两者组合？",
+      "nextPage": "choosing-and-combining.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "choosing-and-combining.html",
+      "title": "把合适变成可持续",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用动作控制、重心挑战、运动剂量与注意呼吸解释可能的收益，并能区分传统解释、现代推论和临床证据的强弱。",
+      "readerStateAfter": "读者能够根据目标、时间、教学资源与症状反应选择或组合练习，安排可渐进的起步方案，并识别需要停止或寻求医疗评估的情况。",
+      "readerQuestion": "在收益可能而非包治的前提下，普通人怎样按目标、可用时间、教学条件和身体反应选择八段锦、太极或两者组合？",
+      "dependsOn": [
+        "movement-mechanisms.html"
+      ],
+      "priorConclusion": "八段锦与太极的可解释价值主要来自反复动作、姿势控制、重心挑战、注意和呼吸的整合；证据较能支持它们作为身体活动与平衡练习的可能收益，却不足以把传统理论词汇直接当作解剖机制或把练习当成疾病治疗。",
+      "coreExample": "小林用两周做低门槛试练：工作日选短段八段锦建立连续性，周末跟合格老师学习太极步法，并记录膝部反应、稳定感和第二天恢复情况。",
+      "newTerms": [
+        {
+          "term": "自觉用力程度",
+          "definition": "练习者根据呼吸、肌肉负担和整体感受，对当下用力大小作出的主观评分。"
+        },
+        {
+          "term": "谈话测试",
+          "definition": "用运动时能否完整说话来粗略判断强度的方法，能说话但不能轻松唱歌常提示中等强度。"
+        },
+        {
+          "term": "症状阈值",
+          "definition": "某种动作或负荷开始持续诱发疼痛、眩晕、气短等异常反应的边界。"
+        },
+        {
+          "term": "渐进负荷",
+          "definition": "根据恢复和适应情况，逐步增加练习时间、动作幅度、复杂度或其他挑战，而不是一次加满。"
+        }
+      ],
+      "conclusion": "适合的方案不是固定站队，而是以安全反应、可持续时间和清晰目标为依据：先选能稳定练下去的版本，再逐步增加动作质量与总活动量，并让医疗与康复问题回到专业评估。",
+      "nextQuestion": "当新的传统功法、短视频教程或健康宣称出现时，能否继续用动作结构、剂量、可验证收益和安全边界四个问题来判断？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4131,6 +4131,13 @@
       "generatedAt": "2026-10-22",
       "slug": "wittgenstein-language-philosophy",
       "entry": "knowledge-bases/wittgenstein-language-philosophy/main.html"
+    },
+    {
+      "name": "八段锦与太极养生",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-23",
+      "slug": "baduanjin-taijiquan-wellness",
+      "entry": "knowledge-bases/baduanjin-taijiquan-wellness/main.html"
     }
   ],
   "skipped": []
