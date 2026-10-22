@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-22T22:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "当同一句话在不同场合产生不同理解时，维特根斯坦为什么会把哲学的注意力从词所指的对象转向语言实际怎样工作？",
+      "readerStateChange": "读前容易把词义当成词语背后的固定对象；读后能用命题表象与具体使用两条路线解释维特根斯坦前后期的差别和延续。",
+      "twoSentenceSummary": "页面从社区“保持安静”的告示说明指物命名不足以覆盖语言工作，再用命题与可能事实的结构解释早期路线。随后通过命令、请求和工具箱类比进入后期使用观，并说明两期都在诊断语言造成的哲学幻象。",
+      "continuityEvidence": "结尾指出仅仅转向使用仍不能解释用法如何稳定，因而自然要求下一页讨论训练、规则与纠正机制。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "use-and-rules.html",
+      "centralQuestion": "如果词义要在实际活动中辨认，那么人们怎样学会同一种用法、继续一条规则，并在新情境中判断说法是否合适？",
+      "readerStateChange": "读前只知道意义要看使用；读后能说明语言活动、相似网络、训练、规则和共同背景如何让新情境中的继续与纠正成为可能。",
+      "twoSentenceSummary": "页面把告示改写成具体规则，展示文字不能预先列尽未来，而规则要靠范例、练习和公开纠正进入生活。共同背景提供稳定反应，却保留边缘争议，因此意义既不等于永恒本质，也不随个人心情改变。",
+      "continuityEvidence": "结尾以物业控制告示和处罚记录的案例表明，稳定用法未必公正，直接推出下一页关于私人经验、公共标准和权力的判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "limits-and-power.html",
+      "centralQuestion": "既然意义依赖共同实践，我们能否据此否认私人经验、把多数人的习惯当成真理，或直接从语言用法推出政治与道德上的正当性？",
+      "readerStateChange": "读前可能把公共条件误解为否认内在经验或服从多数；读后能分开私密体验、共享判准、规范评价与制度权力，并检查纠错空间。",
+      "twoSentenceSummary": "页面用私人记号案例说明，问题不是别人看不见体验，而是不可纠正的符号无法区分正确与看似正确。随后以物业定义“安静”为例，说明描述既有用法不能替代公正评价，并提出描述、规范、权力和纠错四层检查。",
+      "continuityEvidence": "本页收束前三页论证，并把开放问题推进到平台算法、机构分类和人工智能如何重写公共语言，来源页则提供继续核对的原著与争论入口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只有正文中的概念路线；读后能按原著编号、版本说明和争论专题核对关键主张，并找到站内比较入口。",
+      "twoSentenceSummary": "页面区分开放原著、出版方版本说明与学术百科的用途，并提醒译本、版权和解释分歧。它还把语言实践连接到交往理性、翻译、政治现实主义和柏拉图政治哲学，但明确保留理论边界。",
+      "continuityEvidence": "来源页从终章进入文本核对与比较阅读，同时提供返回终章和从开头重读的双向导航，完整闭合阅读路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

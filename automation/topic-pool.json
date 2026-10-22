@@ -4124,6 +4124,13 @@
       "generatedAt": "2026-10-22",
       "slug": "fake-news-and-post-truth",
       "entry": "knowledge-bases/fake-news-and-post-truth/main.html"
+    },
+    {
+      "name": "维特根斯坦语言哲学",
+      "domain": "哲学/权谋",
+      "generatedAt": "2026-10-22",
+      "slug": "wittgenstein-language-philosophy",
+      "entry": "knowledge-bases/wittgenstein-language-philosophy/main.html"
     }
   ],
   "skipped": []

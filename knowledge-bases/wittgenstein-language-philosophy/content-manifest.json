@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "维特根斯坦语言哲学",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-22",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "词语没有随身携带说明书",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "当同一句话在不同场合产生不同理解时，维特根斯坦为什么会把哲学的注意力从词所指的对象转向语言实际怎样工作？",
+      "readerStateBefore": "读者倾向于把意义想成词语背后固定不变的对象、定义或脑中观念，并把误解归因于某个人没有查清字典。",
+      "readerStateAfter": "读者能够区分早期的逻辑表象路线与后期的使用路线，并把二者理解为对语言迷惑的两种诊断，而不是简单的自我否定。",
+      "priorConclusion": "",
+      "coreExample": "社区活动室门口贴出“今晚请保持安静”的告示；值班员、排练乐队、晚自习学生与只是路过的人，对“安静”应当约束谁、约束到什么程度产生了不同理解。",
+      "conclusion": "词语不会脱离句子、情境和活动自行携带完整意义；维特根斯坦前后期虽改变了解释语言的工具，却始终试图划清有意义表达与语言幻象的边界。",
+      "nextQuestion": "如果词义要在实际活动中辨认，那么人们怎样学会同一种用法、继续一条规则，并在新情境中判断说法是否合适？",
+      "nextPage": "use-and-rules.html",
+      "newTerms": [
+        { "term": "图像论", "definition": "《逻辑哲学论》中用来说明有意义命题如何以结构对应可能事实的一种解释路线。" },
+        { "term": "逻辑形式", "definition": "命题与其所表象的可能事实得以具有相同结构关系的条件，它不能像普通对象那样由命题直接陈述。" },
+        { "term": "意义即使用", "definition": "后期维特根斯坦的核心转向：对许多词而言，理解其意义要看它在语言中的实际用法，而非寻找隐藏实体。" },
+        { "term": "哲学治疗", "definition": "通过重新排列熟悉用法、消除误导类比，让由语言误用造成的哲学困惑失去强制力的方法取向。" }
+      ]
+    },
+    {
+      "file": "use-and-rules.html",
+      "title": "规则活在共同做法里",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果词义要在实际活动中辨认，那么人们怎样学会同一种用法、继续一条规则，并在新情境中判断说法是否合适？",
+      "readerStateBefore": "读者能够区分早期的逻辑表象路线与后期的使用路线，并把二者理解为对语言迷惑的两种诊断，而不是简单的自我否定。",
+      "readerStateAfter": "读者能够用语言活动、相似网络、训练与共同做法解释意义如何稳定，也能说明规则为何既不是私人直觉也不是机械轨道。",
+      "priorConclusion": "词语不会脱离句子、情境和活动自行携带完整意义；维特根斯坦前后期虽改变了解释语言的工具，却始终试图划清有意义表达与语言幻象的边界。",
+      "coreExample": "社区协调会尝试把“保持安静”改写成可执行规则：何时开始、哪些活动算干扰、谁能提出例外、发生争议时依据什么实例纠正彼此。",
+      "conclusion": "意义的稳定来自可学习、可重复、可纠正的共同实践；规则为行动提供规范方向，却只有在训练、范例、判断和生活背景中才真正获得作用。",
+      "nextQuestion": "既然意义依赖共同实践，我们能否据此否认私人经验、把多数人的习惯当成真理，或直接从语言用法推出政治与道德上的正当性？",
+      "nextPage": "limits-and-power.html",
+      "newTerms": [
+        { "term": "语言游戏", "definition": "言语与相关行动交织成的具体活动单元，用来提醒我们不同表达承担不同工作。" },
+        { "term": "家族相似", "definition": "一组事物没有单一本质却凭交叉重叠的相似关系被归为同一概念的结构。" },
+        { "term": "规则遵循", "definition": "在训练与共同标准中把规则继续应用于新情境的实践，而不是被脑中解释自动推动。" },
+        { "term": "生活形式", "definition": "让语言活动可理解的人类行动方式、自然反应与社会背景的整体。" }
+      ]
+    },
+    {
+      "file": "limits-and-power.html",
+      "title": "从语言边界走向判断边界",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["use-and-rules.html"],
+      "readerQuestion": "既然意义依赖共同实践，我们能否据此否认私人经验、把多数人的习惯当成真理，或直接从语言用法推出政治与道德上的正当性？",
+      "readerStateBefore": "读者能够用语言活动、相似网络、训练与共同做法解释意义如何稳定，也能说明规则为何既不是私人直觉也不是机械轨道。",
+      "readerStateAfter": "读者能够区分经验的私密性与语言标准的公共性，并用描述、规范、权力和纠错四个维度审查维特根斯坦式分析的价值与限度。",
+      "priorConclusion": "意义的稳定来自可学习、可重复、可纠正的共同实践；规则为行动提供规范方向，却只有在训练、范例、判断和生活背景中才真正获得作用。",
+      "coreExample": "协调会最终由物业单方面规定“安静就是不得发出可听见的声音”，并以“大家一直这样理解”为理由处罚乐队；学生的学习需要、听障者的感受与临时庆典都被排除在定义过程之外。",
+      "conclusion": "维特根斯坦帮助我们看见概念如何在公共实践中运作，却不替我们决定现行实践是否公正；可靠判断还必须追问谁有定义权、异议能否表达、规则能否修正以及受影响者是否被听见。",
+      "nextQuestion": "当平台算法、机构术语与人工智能不断重写公共语言的常态时，我们怎样既描述真实用法，又保留质疑和改造这些用法的能力？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "私人语言", "definition": "原则上只能由单个说话者依据其不可共享的内在对象来理解的假想语言。" },
+        { "term": "公共标准", "definition": "使某种用法可以被学习、核对、纠正和继续应用的共享判准，而不是要求所有体验都公开。" },
+        { "term": "描述主义误读", "definition": "把对现有语言实践的描述误当成对该实践必然正确或道德正当的证明。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原著坐标、争论与关联阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
