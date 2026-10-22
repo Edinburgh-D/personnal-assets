@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>变化发生在种群中｜进化论与自然选择</title>
+  <meta name="description" content="从种群、可遗传变异与分叉谱系出发，建立理解进化论和自然选择的直觉框架。">
+  <meta name="kb_darkMode" content="supported">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="site-shell">
+    <nav class="nav-rail" aria-label="知识库章节">
+      <a class="wordmark" href="main.html">EVOLUTION / 选择</a>
+      <div class="rail-links">
+        <a class="rail-dot" href="main.html" aria-current="page" aria-label="变化发生在种群中">01</a>
+        <a class="rail-dot" href="selection-mechanism.html" aria-label="选择改变的是比例">02</a>
+        <a class="rail-dot" href="evidence-and-limits.html" aria-label="从变化到解释">03</a>
+        <a class="rail-dot" href="sources.html" aria-label="来源与延伸阅读">S</a>
+      </div>
+      <div class="rail-actions">
+        <button class="icon-button nav-menu-btn" type="button" data-command-open aria-label="打开章节导航">⌘</button>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">暗</button>
+      </div>
+    </nav>
+
+    <header class="mobile-bar">
+      <a class="wordmark" href="main.html">EVOLUTION / 选择</a>
+      <div class="utility-actions">
+        <button class="command-button nav-menu-btn" type="button" data-command-open aria-label="打开章节导航">导航</button>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">暗</button>
+      </div>
+    </header>
+
+    <div class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span aria-hidden="true">/</span>
+      <a href="../index.html">知识库目录</a>
+      <span aria-hidden="true">/</span>
+      <span>进化论与自然选择</span>
+    </div>
+
+    <main class="page" id="content" data-kb-content data-page-role="overview">
+      <template data-narrative="question">生物为何会在世代更替中改变，而这种改变为什么既不是个体努力的结果，也不是朝预设目标前进？</template>
+      <template data-narrative="example">一群生活在浅色沙地和深色岩面交界处的假想海岸甲虫，甲壳颜色存在可遗传差异；环境变化后，两种颜色在后代中的比例可能改变。</template>
+      <template data-narrative="conclusion">进化描述的是种群中可遗传差异随世代改变的历史过程；生命多样性来自共同祖先不断分叉的谱系，而不是个体朝同一终点主动升级。</template>
+      <template data-narrative="next-question">如果变异先已存在于种群中，环境怎样使其中一些差异在后代里越来越常见，并形成看似精巧的适应？</template>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <h1>变化发生在种群中</h1>
+          <p class="hero-lede">进化不是一只动物在一生中把自己练成了另一种样子，也不是生命沿着阶梯不断升级。真正发生变化的，是一代又一代种群中可遗传差异的比例。</p>
+          <div class="hero-meta" aria-label="主题范围">
+            <span>种群尺度</span>
+            <span>跨世代变化</span>
+            <span>分叉谱系</span>
+          </div>
+        </div>
+        <figure class="evolution-map">
+          <svg viewBox="0 0 560 340" role="img" aria-labelledby="tree-title tree-desc">
+            <title id="tree-title">生命谱系的分叉示意</title>
+            <desc id="tree-desc">一条祖先谱系向右延伸并多次分叉，形成若干并存的后代支系，强调进化不是通往单一终点的阶梯。</desc>
+            <path class="map-line" d="M55 170 C120 170 130 170 180 170 C235 170 220 80 285 80 C350 80 345 45 420 45"/>
+            <path class="map-line" d="M180 170 C235 170 220 250 285 250 C350 250 345 295 420 295"/>
+            <path class="map-line map-line-accent" d="M285 80 C350 80 345 125 420 125 C470 125 475 110 520 110"/>
+            <path class="map-line" d="M285 250 C350 250 345 215 420 215 C470 215 475 230 520 230"/>
+            <circle class="map-node" cx="55" cy="170" r="10"/>
+            <circle class="map-node" cx="180" cy="170" r="10"/>
+            <circle class="map-node" cx="285" cy="80" r="10"/>
+            <circle class="map-node" cx="285" cy="250" r="10"/>
+            <circle class="map-node map-node-accent" cx="420" cy="125" r="12"/>
+            <circle class="map-node" cx="420" cy="45" r="10"/>
+            <circle class="map-node" cx="420" cy="215" r="10"/>
+            <circle class="map-node" cx="420" cy="295" r="10"/>
+            <circle class="map-node map-node-accent" cx="520" cy="110" r="12"/>
+            <circle class="map-node" cx="520" cy="230" r="10"/>
+            <text class="map-label" x="28" y="198">共同祖先</text>
+            <text class="map-label" x="165" y="198">分叉</text>
+            <text class="map-label" x="395" y="152">仍在变化</text>
+            <text class="map-label" x="468" y="92">一个现生支系</text>
+          </svg>
+          <figcaption class="map-note">图中的端点彼此并列，没有哪一个天然代表“最高级”。每条仍在延伸的支线，都有同样长的演化历史。</figcaption>
+        </figure>
+      </header>
+
+      <article class="prose">
+        <section id="scale">
+          <h2>先把镜头从个体拉远</h2>
+          <p>想象海岸边生活着一群甲虫。它们大体相似，却不是同一个模子刻出来的。有些甲壳偏浅，有些偏深，还有许多介于两者之间。单只甲虫从出生到死亡，甲壳颜色通常不会因为它更想躲开鸟类就发生可遗传的改变。可是当我们比较许多代甲虫时，深浅颜色所占的比例可能明显不同。</p>
+          <p>这种跨世代的组成变化，才是生物学里讨论的<dfn data-term="进化">进化</dfn>。定义的重点不是“变得更强”或“变得更复杂”，而是可遗传特征在一群生物中的分布发生了变化。变化可以很小，也可以在漫长时间里累积到让后代谱系彼此差异巨大。</p>
+          <p>分析进化时，基本单位常常是<dfn data-term="种群">种群</dfn>。它指在同一地区生活并能相互繁殖的一群同种生物。个体会生长、学习、受伤和衰老；种群则会随着出生、死亡和迁移，改变其中各种遗传版本的比例。把两种尺度混在一起，就会产生“长颈鹿伸长脖子，孩子便继承长脖子”一类误解。</p>
+          <p>个体经历当然会影响它能否留下后代。例如一只甲虫躲藏得更好，可能活得更久。但只有当造成差异的部分能传给后代，这种差异才可能在种群中累积。锻炼形成的肌肉、一次受伤留下的疤痕，通常不会按原样写入生殖细胞并传给孩子。</p>
+          <p>因此，讨论进化需要同时保留两个事实。第一，选择的成败发生在具体个体身上；第二，能够被观察为进化的结果，表现为种群跨世代的组成变化。前者是每次繁殖的现实，后者是把许多次繁殖连起来后出现的历史图景。</p>
+        </section>
+
+        <section id="variation">
+          <h2>差异不是等待环境下订单</h2>
+          <p>甲虫之间的颜色差异若要参与进化，至少有一部分必须属于<dfn data-term="可遗传变异">可遗传变异</dfn>。它是能够通过遗传传给后代的个体差异。环境可以影响一个特征怎样表现，但环境并不是先提出需求，再要求生物制造恰好合用的新版本。</p>
+          <p>假如海岸原本以浅沙为主，后来一股熔岩冷却成大片深色岩面，种群面对的是新的视觉背景。深色甲虫可能原本就很少，也可能由后来出现的遗传改变产生。无论是哪一种，岩面本身都不会“指导”哪只甲虫把甲壳改深。变化先出现，环境再影响不同变化留下多少后代。</p>
+          <p>这一区分解释了为何变异的来源可以带有偶然性，而随后的自然选择却不是纯粹掷骰子。某个遗传变化并不知道未来环境是否需要它。可是一旦深浅甲虫在不同底色上被捕食的概率不同，它们留下后代的差异就会与环境形成稳定关系。</p>
+          <p>“随机”也不等于“所有结果同样可能”。DNA 的某些位置比另一些位置更容易变化，发育过程会限制哪些身体形态能够出现。这里的随机，主要是说变异不是因为生物预见了需要才定向产生。变异受物理和生物机制约束，却不为未来目标服务。</p>
+          <p>更重要的是，颜色只是一个容易看见的教学例子。真实种群中的差异可以涉及代谢、行为、耐受温度、繁殖时机或免疫反应。许多特征由多个基因和环境共同影响，不能简单归结为一个“开关”。机制可以复杂，但分析起点仍是确认种群中存在差异，并问哪些差异能够遗传。</p>
+
+          <div class="concept-table" aria-label="三个尺度的区别">
+            <div class="concept-row"><span class="concept-key">个体</span><span class="concept-value">在一生中生长、学习并面对环境，不因为需要而定向产生可遗传特征。</span></div>
+            <div class="concept-row"><span class="concept-key">种群</span><span class="concept-value">不同遗传版本的比例会随出生、死亡、迁移和繁殖成功而变化。</span></div>
+            <div class="concept-row"><span class="concept-key">谱系</span><span class="concept-value">种群分开后可沿不同路径累积变化，最终留下分叉的历史关系。</span></div>
+          </div>
+        </section>
+      </article>
+
+      <section class="dark-band simulator" aria-labelledby="sim-title">
+        <h2 id="sim-title">同一种颜色，没有永恒的优势</h2>
+        <p>下面不是实测数据，而是把逻辑压缩成八只甲虫的假想模型。切换底色，观察优势如何依赖环境。按钮改变的是下一代中颜色的示意比例，不是让现有甲虫当场变色。</p>
+        <div class="sim-controls" aria-label="选择环境">
+          <button class="sim-button" type="button" data-sim-state="start" aria-pressed="true">初始种群</button>
+          <button class="sim-button" type="button" data-sim-state="dark" aria-pressed="false">深色岩面</button>
+          <button class="sim-button" type="button" data-sim-state="light" aria-pressed="false">浅色沙地</button>
+        </div>
+        <div class="population-strip" role="img" aria-label="八只甲虫的颜色比例示意">
+          <span class="beetle dark" data-beetle></span><span class="beetle dark" data-beetle></span>
+          <span class="beetle dark" data-beetle></span><span class="beetle dark" data-beetle></span>
+          <span class="beetle" data-beetle></span><span class="beetle" data-beetle></span>
+          <span class="beetle" data-beetle></span><span class="beetle" data-beetle></span>
+        </div>
+        <p class="sim-readout" data-sim-readout aria-live="polite">起点：深色与浅色各占一半。这里只展示一个假想种群。</p>
+      </section>
+
+      <article class="prose">
+        <section id="branches">
+          <h2>生命史是一棵不断修订的树</h2>
+          <p>如果两个甲虫种群长期生活在不同环境中，而且彼此很少交换遗传材料，它们可能沿着不同方向累积变化。这个过程不是一条旧种变成新种后便消失的单线传送带。更常见的图景是一个祖先种群分开，形成两个或更多并存的后代支系。</p>
+          <p>这些支系共享<dfn data-term="共同祖先">共同祖先</dfn>，就像表亲共享祖辈。现代人不是由今天仍然生活的黑猩猩变来，两者是在过去某个祖先种群处发生分叉。此后，每个支系都继续改变。把现生物种排成“鱼—两栖类—爬行类—猴—人”的队列，会错误地把旁支当成通往人类的台阶。</p>
+          <p>树的端点也不等于进步排名。细菌并非停留在远古的“低级生命”，它们同样经历了漫长演化，并能迅速适应许多环境。复杂结构可能在某些条件下有利，简单结构也可能更省资源、更稳定。进化没有统一计分板。</p>
+          <p>同一棵树上的亲缘远近也不能只凭“看起来像不像”判断。蝙蝠的翼、鲸的鳍和人的手在功能上差异很大，却保留相应的骨骼排列。形态被不同生活方式改造后，深层结构仍可能保存祖先留下的关系。</p>
+          <p>分叉图还有一个重要含义：相似既可能来自共同祖先，也可能来自相似环境下的独立演化。鲸的鳍状肢与人的手臂具有相同的基本骨骼关系，支持共同祖先。鲨鱼与海豚的流线外形却更多反映水中运动带来的相似选择。单看外形，常常不足以恢复历史。</p>
+          <p>科学家会把形态、发育、化石、地理分布和 DNA 序列放在一起比较。不同证据若指向相容的分叉关系，解释便更可靠。若新证据与旧树冲突，研究者会重新检查样本、模型和假设。树不是刻在石头上的图标，而是对历史关系的可检验假说。</p>
+        </section>
+
+        <section id="history">
+          <h2>达尔文提出了机制，不是整套现代遗传学</h2>
+          <p>十九世纪中叶，查尔斯·达尔文和阿尔弗雷德·拉塞尔·华莱士分别形成了自然选择思想。达尔文在 1859 年出版的《物种起源》中系统论证了共同祖先、变异和选择如何解释生物多样性。这项贡献极其重要，但现代进化生物学并不止于复述一本十九世纪著作。</p>
+          <p>达尔文并不知道 DNA，也没有现代基因概念。他看到的是家养生物和自然种群中的变异、过量繁殖以及生存竞争，并据此提出差异性保留的机制。后来，孟德尔遗传学、群体遗传学、分子生物学和基因组学把遗传机制接入这一框架。</p>
+          <p>因此，“达尔文主义”如果被理解为某位科学家的所有原话，就无法代表今天的领域。科学理论会吸收新证据，修正旧解释，并扩展适用范围。现代进化理论包括自然选择，也研究新遗传变化、偶然抽样、种群间迁移、遗传重组和发育限制等过程。</p>
+          <p>“理论”在科学里也不是随口猜想。它是能够组织证据、产生预测并接受检验的解释框架。进化事实指种群确实随时间改变并具有共同祖先；进化理论则解释变化怎样发生、谱系怎样分化，以及不同证据为何会留下今天看到的模式。</p>
+          <p>宗教或价值观讨论可以提出科学方法之外的问题，但科学检验聚焦于可观察、可比较的自然证据。理解这条边界，不要求读者先处理所有哲学立场。它只要求在判断一项生物学主张时，询问证据如何取得、解释能否被反驳，以及别的机制是否也能产生相似结果。</p>
+        </section>
+
+        <section id="map-reading">
+          <h2>把四个判断放进同一张图</h2>
+          <p>遇到“某种生物为了生存而进化出某特征”的说法，可以先暂停拟人化叙述。更准确的问法是：种群原来有哪些差异，这些差异是否能够遗传，不同个体是否留下了不同数量的可繁殖后代，相关比例是否在连续世代中改变。</p>
+          <p>接着区分观察和解释。观察到深色岩面上深色甲虫更多，是一个分布模式。把原因归为捕食导致的自然选择，则是一项机制解释。解释需要额外证据，例如颜色的遗传基础、捕食风险差异、繁殖结果，以及迁移或偶然抽样能否排除。</p>
+          <p>最后把时间和分叉补回来。今天适合的特征可能在环境变化后成为负担，过去形成的身体结构也会限制未来能够走的路径。进化只能修改已有材料，不能从空白图纸开始。由此产生的生物常常“够用”，却不必完美。</p>
+          <p>如果一项解释只在结果出现后才说“它一定有用”，却不能指出可测的遗传差异和繁殖结果，它就很难被检验。好的解释会在观察新样本之前给出预期，也会说明出现什么结果时需要放弃或修改原来的判断。</p>
+          <p class="pull-line">进化没有预写终点。它保留的是在当时条件下留下后代的差异。</p>
+          <p>现在我们已经把镜头放在种群、变异和谱系上。下一步要进入更精确的因果链：差异怎样与遗传和繁殖成功连接，环境又怎样在多代之后改变特征比例。只有把这些环节逐一接上，“自然选择”才不再是“强者生存”的一句口号。</p>
+        </section>
+      </article>
+
+      <nav class="pathway" aria-label="知识库阅读路径">
+        <a class="path-link" href="main.html" aria-current="page"><span class="path-index">01</span><span class="path-title">变化发生在种群中</span><span>现在</span></a>
+        <a class="path-link" href="selection-mechanism.html"><span class="path-index">02</span><span class="path-title">选择改变的是比例</span><span>继续</span></a>
+        <a class="path-link" href="evidence-and-limits.html"><span class="path-index">03</span><span class="path-title">从变化到解释</span><span>判断</span></a>
+        <a class="path-link" href="sources.html"><span class="path-index">S</span><span class="path-title">来源与延伸阅读</span><span>核对</span></a>
+      </nav>
+    </main>
+
+    <footer class="foot-stmt">
+      <div class="foot-stmt__inner">
+        <p class="foot-stmt__line">不是阶梯，而是仍在生长的分叉。</p>
+        <div class="foot-stmt__meta">
+          <span>进化论与自然选择 · 2026</span>
+          <div class="footer-links"><a class="footer-link" href="selection-mechanism.html">下一章</a><a class="footer-link" href="sources.html">来源</a><a class="footer-link" href="../index.html">知识库目录</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="command-dialog" data-command-dialog aria-labelledby="command-title">
+    <div class="dialog-head">
+      <label class="visually-hidden" id="command-title" for="command-search">查找章节</label>
+      <input id="command-search" type="search" data-command-input placeholder="输入章节名称" autocomplete="off">
+      <button class="dialog-close" type="button" data-command-close aria-label="关闭导航">关</button>
+    </div>
+    <div class="command-list" role="listbox" aria-label="章节">
+      <a class="command-item" data-command-item role="option" aria-selected="true" href="main.html"><small>01</small><span>变化发生在种群中</span></a>
+      <a class="command-item" data-command-item role="option" aria-selected="false" href="selection-mechanism.html"><small>02</small><span>选择改变的是比例</span></a>
+      <a class="command-item" data-command-item role="option" aria-selected="false" href="evidence-and-limits.html"><small>03</small><span>从变化到解释</span></a>
+      <a class="command-item" data-command-item role="option" aria-selected="false" href="sources.html"><small>S</small><span>来源与延伸阅读</span></a>
+      <p class="command-empty" data-command-empty hidden>没有匹配章节。请缩短关键词。</p>
+    </div>
+  </dialog>
+</body>
+</html>

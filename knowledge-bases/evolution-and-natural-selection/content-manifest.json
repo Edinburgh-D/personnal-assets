@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "进化论与自然选择：从种群变化到证据判断",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-10-23",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "变化发生在种群中",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把进化想成个体为了适应环境而主动改变，或把生命史理解为从低级到高级的直线进步。",
+      "readerStateAfter": "读者能够把进化理解为种群中可遗传特征比例的跨世代变化，并用分叉而非阶梯描述共同祖先与多样化。",
+      "readerQuestion": "生物为何会在世代更替中改变，而这种改变为什么既不是个体努力的结果，也不是朝预设目标前进？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一群生活在浅色沙地和深色岩面交界处的假想海岸甲虫，甲壳颜色存在可遗传差异；环境变化后，两种颜色在后代中的比例可能改变。",
+      "newTerms": [
+        {
+          "term": "进化",
+          "definition": "一个种群中可遗传特征的组成在连续世代间发生变化。"
+        },
+        {
+          "term": "种群",
+          "definition": "在同一地区生活并能相互繁殖的一群同种生物个体。"
+        },
+        {
+          "term": "可遗传变异",
+          "definition": "个体之间能够通过遗传传给后代的差异。"
+        },
+        {
+          "term": "共同祖先",
+          "definition": "两个或多个后代谱系在过去共享的祖先种群。"
+        }
+      ],
+      "conclusion": "进化描述的是种群中可遗传差异随世代改变的历史过程；生命多样性来自共同祖先不断分叉的谱系，而不是个体朝同一终点主动升级。",
+      "nextQuestion": "如果变异先已存在于种群中，环境怎样使其中一些差异在后代里越来越常见，并形成看似精巧的适应？",
+      "nextPage": "selection-mechanism.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "selection-mechanism.html",
+      "title": "选择改变的是比例",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把进化理解为种群中可遗传特征比例的跨世代变化，并用分叉而非阶梯描述共同祖先与多样化。",
+      "readerStateAfter": "读者能够从变异、遗传和繁殖成功差异三个条件解释自然选择，并区分随机产生的变异与非随机的差异性保留。",
+      "readerQuestion": "如果变异先已存在于种群中，环境怎样使其中一些差异在后代里越来越常见，并形成看似精巧的适应？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "进化描述的是种群中可遗传差异随世代改变的历史过程；生命多样性来自共同祖先不断分叉的谱系，而不是个体朝同一终点主动升级。",
+      "coreExample": "继续追踪假想海岸甲虫：鸟类在不同底色上更容易发现对比强烈的个体，幸存者留下的后代使甲壳颜色比例逐代偏移。",
+      "newTerms": [
+        {
+          "term": "自然选择",
+          "definition": "可遗传差异造成繁殖成功不同，进而使相关特征在世代间改变频率的过程。"
+        },
+        {
+          "term": "适合度",
+          "definition": "个体相对于同一环境中的其他个体，把基因传入后代的成功程度。"
+        },
+        {
+          "term": "突变",
+          "definition": "DNA 序列发生的可遗传改变，是新遗传变异的重要来源。"
+        },
+        {
+          "term": "等位基因",
+          "definition": "同一基因位置上可能存在的不同版本。"
+        },
+        {
+          "term": "选择压力",
+          "definition": "使不同可遗传特征产生繁殖成功差异的环境因素总称。"
+        }
+      ],
+      "conclusion": "自然选择不预先制造所需特征，而是在既有可遗传变异上产生不等的繁殖结果；当环境持续影响这些差异时，种群组成会逐代改变。",
+      "nextQuestion": "既然种群比例也可能因偶然、迁移或环境转换而变化，我们怎样判断一项差异真是自然选择的结果，并理解选择的边界？",
+      "nextPage": "evidence-and-limits.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "evidence-and-limits.html",
+      "title": "从变化到解释",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够从变异、遗传和繁殖成功差异三个条件解释自然选择，并区分随机产生的变异与非随机的差异性保留。",
+      "readerStateAfter": "读者能够比较选择、漂变与基因流，使用多条独立证据判断进化解释，并识别适应并非完美设计或必然进步。",
+      "readerQuestion": "既然种群比例也可能因偶然、迁移或环境转换而变化，我们怎样判断一项差异真是自然选择的结果，并理解选择的边界？",
+      "dependsOn": [
+        "selection-mechanism.html"
+      ],
+      "priorConclusion": "自然选择不预先制造所需特征，而是在既有可遗传变异上产生不等的繁殖结果；当环境持续影响这些差异时，种群组成会逐代改变。",
+      "coreExample": "把假想甲虫模型与岩袋鼠真实研究对照：同时检查体色、栖息地底色、遗传标记、迁移与捕食假说，避免只凭外观匹配断言自然选择。",
+      "newTerms": [
+        {
+          "term": "遗传漂变",
+          "definition": "有限种群中因出生、死亡和繁殖的抽样偶然而发生的基因频率变化。"
+        },
+        {
+          "term": "基因流",
+          "definition": "个体或配子在种群间移动，把遗传变异带入或带出的过程。"
+        },
+        {
+          "term": "适应",
+          "definition": "在特定环境中因提高繁殖成功而被选择保留下来的可遗传特征。"
+        },
+        {
+          "term": "物种形成",
+          "definition": "种群分化并逐渐建立繁殖隔离，最终形成独立演化谱系的过程。"
+        },
+        {
+          "term": "系统发育树",
+          "definition": "依据证据提出的谱系分叉假说，用来表示生物之间的共同祖先关系。"
+        }
+      ],
+      "conclusion": "可靠的进化解释需要把机制与证据对应起来：自然选择只是多种频率变化机制之一，适应受历史和环境约束，而共同祖先与分叉谱系要由遗传、化石和地理等独立证据共同检验。",
+      "nextQuestion": "当新的基因组、化石或长期野外数据出现时，我们应如何更新某一谱系的演化解释，同时保留对证据强弱与不确定性的判断？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

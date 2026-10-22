@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-23T16:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "生物为何会在世代更替中改变，而这种改变为什么既不是个体努力的结果，也不是朝预设目标前进？",
+      "readerStateChange": "读前容易把进化理解为个体主动改变或生命直线升级；读后能把分析单位放到种群与世代，并用分叉谱系理解共同祖先。",
+      "twoSentenceSummary": "页面借假想海岸甲虫区分个体一生中的变化与种群跨世代的组成变化。随后用分叉树说明现生物种彼此并列，并把达尔文的历史贡献接到现代证据框架。",
+      "continuityEvidence": "结尾把种群、可遗传差异和谱系放在同一框架中，随后明确推进到差异怎样连接遗传与繁殖成功，正好形成机制页的起点。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "selection-mechanism.html",
+      "centralQuestion": "如果变异先已存在于种群中，环境怎样使其中一些差异在后代里越来越常见，并形成看似精巧的适应？",
+      "readerStateChange": "读前只知道种群会改变；读后能用差异、遗传和繁殖结果三项条件重建自然选择因果链，并区分变异来源与筛选结果。",
+      "twoSentenceSummary": "页面逐步连接自然选择的三个必要条件，并说明突变与重组提供材料、环境则改变不同版本的繁殖结果。岩袋鼠案例把甲虫模型扩展到真实遗传研究，也显示相似外观可以来自不同遗传路径。",
+      "continuityEvidence": "页面先承接入口页的种群尺度，再以频率偏移解释机制；结尾主动提出偶然与迁移也会改变频率，为比较竞争机制留下明确入口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evidence-and-limits.html",
+      "centralQuestion": "既然种群比例也可能因偶然、迁移或环境转换而变化，我们怎样判断一项差异真是自然选择的结果，并理解选择的边界？",
+      "readerStateChange": "读前会把频率变化直接归因于选择；读后能比较选择、漂变与基因流，并用遗传、生态、化石和地理证据判断解释强弱。",
+      "twoSentenceSummary": "页面先比较选择、遗传漂变和基因流，再用岩袋鼠的多层证据说明怎样从环境匹配推进到可检验因果。后半部分解释物种形成、系统发育树和适应的历史限制，并拆解五种常见误读。",
+      "continuityEvidence": "开头直接处理机制页留下的竞争解释问题，结尾把判断方法迁移到新案例，并提出新数据出现时如何更新谱系解释的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够区分教学模型、历史原著、权威综合资料和原始研究，并知道具体结论应回到哪类来源核对。",
+      "twoSentenceSummary": "来源页把达尔文原著、岩袋鼠原始论文和机构综述按证据角色分组。末尾说明正文主动回避的过度推断，并给出链接失效后的稳定检索线索。",
+      "continuityEvidence": "三个叙事页都能进入来源页，来源页也提供返回正文、回到入口和知识库目录的路径，因此参考资料可达且不打断叙事链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

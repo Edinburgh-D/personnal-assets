@@ -1,0 +1,9 @@
+{
+  "scannedAt": "2026-10-23",
+  "target": "knowledge-bases/evolution-and-natural-selection",
+  "framework": "vanilla-html",
+  "fontStack": "new knowledge base; no inherited local stack",
+  "palette": "repository indexes use light/dark tokens; knowledge base uses scoped Cobalt-derived OKLCH tokens",
+  "motion": "motion-cut except command palette state and one simulator update",
+  "spacing": "4pt semantic scale"
+}

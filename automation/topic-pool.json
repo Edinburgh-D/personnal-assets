@@ -4138,6 +4138,13 @@
       "generatedAt": "2026-10-23",
       "slug": "baduanjin-taijiquan-wellness",
       "entry": "knowledge-bases/baduanjin-taijiquan-wellness/main.html"
+    },
+    {
+      "name": "进化论与自然选择",
+      "domain": "科学/自然",
+      "generatedAt": "2026-10-23",
+      "slug": "evolution-and-natural-selection",
+      "entry": "knowledge-bases/evolution-and-natural-selection/main.html"
     }
   ],
   "skipped": []
