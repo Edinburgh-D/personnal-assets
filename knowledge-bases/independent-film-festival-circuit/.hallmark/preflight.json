@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-24",
+  "framework": "vanilla-html",
+  "fontStack": "new project scope; Newsreader + IBM Plex Sans + IBM Plex Mono",
+  "palette": "new project scope; warm newsprint OKLCH tokens",
+  "motion": "motion-cut",
+  "spacing": "4pt semantic scale",
+  "preserved": ["repository data-site-home convention", "repository overview routes"],
+  "introduced": ["Long Document macrostructure", "Newsprint theme", "responsive masthead", "dark mode"]
+}

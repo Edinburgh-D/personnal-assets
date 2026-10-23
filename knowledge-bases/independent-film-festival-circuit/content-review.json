@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-24T02:45:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "一部电影为什么会被称为独立电影，电影节又在它离开制作现场之后扮演什么角色？",
+      "readerStateChange": "读前把独立等同于低成本或特殊风格；读后能从决定权、资源条件和流通路径理解独立性，并把电影节视为临时组织注意力与语境的基础设施。",
+      "twoSentenceSummary": "页面先用《潮汐线》说明独立是一组可变化的创作、资金和权利关系，而不是可凭画面辨认的类型。随后解释电影节如何通过策展、排程和首映规则组织作品的第一次公共相遇。",
+      "continuityEvidence": "结尾把《潮汐线》获得的首映坐标转化为新问题：散场后，注意力如何继续成为评论、交易与下一站观众；这与后一页的中心问题完全衔接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "from-premiere-to-audience.html",
+      "centralQuestion": "电影节怎样把一次入选和几场放映，转化为评论、合作、交易与更长的观众路径？",
+      "readerStateChange": "读前知道电影节能集中注意力；读后能按放映准备、节目语境、现场反馈、市场会面、权利拆分和后续站点解释注意力怎样变成可行动的信号。",
+      "twoSentenceSummary": "页面跟随《潮汐线》经过技术交付、首映、问答、评论与不同参与者的观看目的。它进一步拆解电影市场、销售代理、发行、地区权利和窗口安排，说明节展只降低下一步的不确定性，并不保证成功。",
+      "continuityEvidence": "页面最终把节展机制概括为信号压缩，并明确追问海报桂冠、现场掌声和奖项各自能证明什么，直接导向下一页的观众判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reading-festival-signals.html",
+      "centralQuestion": "当入选、奖项和热烈掌声都只是信号时，普通观众怎样判断一部电影及其节展声誉真正说明了什么？",
+      "readerStateChange": "读前容易把桂冠当作通用质量证书；读后能核对年份、单元与奖名，识别样本偏差，并把影片形式、公共入口和后续观看机会纳入判断。",
+      "twoSentenceSummary": "页面区分官方选择、平行单元、市场放映与不同奖项，解释声誉信号为何有用却不完整。它再从选择偏差、语言和身体条件、票价与地理入口检验公共性，最后把判断重新落到作品和观众抵达。",
+      "continuityEvidence": "页面承接前页的信号机制，并在结尾把判断扩展到未来公共空间如何设计；作为末页，它保留了可迁移到新节展和新平台的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的简短脚注；读后能区分机构使命、年度资格规则和历史档案，并知道提交作品时必须回到当届官方文本。",
+      "twoSentenceSummary": "参考页汇总圣丹斯、戛纳、Film Independent 与美国电影艺术与科学学院的官方页面，并逐项说明可支持的主张。它还交代规则更新、规模数字和虚构案例的使用边界。",
+      "continuityEvidence": "参考页不进入叙事问题链，但从三篇叙事页的脚注和全站导航均可抵达，并提供返回入口与判断页的链接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

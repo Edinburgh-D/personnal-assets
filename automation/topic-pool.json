@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4145,6 +4145,13 @@
       "generatedAt": "2026-10-23",
       "slug": "evolution-and-natural-selection",
       "entry": "knowledge-bases/evolution-and-natural-selection/main.html"
+    },
+    {
+      "name": "独立电影与电影节",
+      "domain": "影视/娱乐",
+      "generatedAt": "2026-10-24",
+      "slug": "independent-film-festival-circuit",
+      "entry": "knowledge-bases/independent-film-festival-circuit/main.html"
     }
   ],
   "skipped": []

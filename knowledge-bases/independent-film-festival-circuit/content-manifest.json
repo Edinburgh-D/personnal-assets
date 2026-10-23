@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "独立电影与电影节",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-24",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": { "totalPages": 4 },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "银幕之外，独立如何发生",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者把独立电影当成低成本、冷门或风格古怪的影片，也把电影节主要理解为颁奖和明星亮相的活动。",
+      "readerStateAfter": "读者能从创作决定、资源关系和流通路径理解独立性，并把电影节看成让作品、观众与行业暂时相遇的基础设施。",
+      "readerQuestion": "一部电影为什么会被称为独立电影，电影节又在它离开制作现场之后扮演什么角色？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "虚构影片《潮汐线》由导演和小型制片团队完成，讲述海边家庭面对迁居的一个夏天；借它观察创作控制、融资、首映与寻找观众如何相互牵动。",
+      "newTerms": [
+        { "term": "独立电影", "definition": "在关键创作与经营决定上相对独立于主流制片体系的作品；它描述关系和过程，不是一种固定画面风格。" },
+        { "term": "电影节", "definition": "在限定时间与地点内，由策展团队选择、组织并呈现电影及相关交流活动的文化事件。" },
+        { "term": "首映资格", "definition": "电影节对作品此前公开放映或上线范围所设的准入条件，不同节展和单元规则并不相同。" },
+        { "term": "策展", "definition": "围绕目标、语境与观众，从大量作品中选择并组织节目，使影片在彼此关系中被理解。" }
+      ],
+      "conclusion": "独立电影的独立性不是一种可凭外观认出的风格，而是创作决定、资源来源与流通路径的相对自主；电影节则把分散的注意力、语境和行业机会临时组织起来。",
+      "nextQuestion": "电影节怎样把一次入选和几场放映，转化为评论、合作、交易与更长的观众路径？",
+      "nextPage": "from-premiere-to-audience.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "from-premiere-to-audience.html",
+      "title": "从首映夜到下一块银幕",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能从创作决定、资源关系和流通路径理解独立性，并把电影节看成让作品、观众与行业暂时相遇的基础设施。",
+      "readerStateAfter": "读者能解释电影节如何通过规则、节目语境、现场反馈、行业市场与权利交易，把一次放映变成后续流通的信号。",
+      "readerQuestion": "电影节怎样把一次入选和几场放映，转化为评论、合作、交易与更长的观众路径？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "独立电影的独立性不是一种可凭外观认出的风格，而是创作决定、资源来源与流通路径的相对自主；电影节则把分散的注意力、语境和行业机会临时组织起来。",
+      "coreExample": "继续追踪《潮汐线》：团队先保护首映资格，再接受节目编排与观众问答，随后与评论者、销售代理、地区发行方和其他电影节建立不同关系。",
+      "newTerms": [
+        { "term": "销售代理", "definition": "代表制片方在多个地区寻找买家、谈判授权并管理销售材料的专业机构或个人。" },
+        { "term": "电影市场", "definition": "与电影节并行或相邻的专业交易场域，买方、卖方、制片人与机构在此展示项目、洽谈权利和合作。" },
+        { "term": "发行", "definition": "把影片送到影院、电视、流媒体、教育或其他观看渠道，并完成宣传、排片与收入回收的过程。" },
+        { "term": "地区版权", "definition": "在约定国家或区域内，以特定媒介和期限利用影片的许可权。" },
+        { "term": "窗口期", "definition": "影院、点播、电视等不同观看渠道依次或重叠开放的时间安排。" }
+      ],
+      "conclusion": "电影节不会自动把一部片变成成功作品；它通过准入规则、节目语境、现场反应、可记录的荣誉和密集会面，把原本分散的信息压缩成不同参与者可以继续行动的信号。",
+      "nextQuestion": "当入选、奖项和热烈掌声都只是信号时，普通观众怎样判断一部电影及其节展声誉真正说明了什么？",
+      "nextPage": "reading-festival-signals.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "reading-festival-signals.html",
+      "title": "在桂冠之外观看",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能解释电影节如何通过规则、节目语境、现场反馈、行业市场与权利交易，把一次放映变成后续流通的信号。",
+      "readerStateAfter": "读者能把入选和奖项放回具体节展、单元与规则中解释，同时从作品、策展语境、可及性和流通结果形成自己的判断。",
+      "readerQuestion": "当入选、奖项和热烈掌声都只是信号时，普通观众怎样判断一部电影及其节展声誉真正说明了什么？",
+      "dependsOn": ["from-premiere-to-audience.html"],
+      "priorConclusion": "电影节不会自动把一部片变成成功作品；它通过准入规则、节目语境、现场反应、可记录的荣誉和密集会面，把原本分散的信息压缩成不同参与者可以继续行动的信号。",
+      "coreExample": "把《潮汐线》的入选桂冠、评审奖、观众问答、发行结果和未能进入其他节展的经历放在一起，辨认哪些是事实、哪些是推断、哪些只是宣传省略。",
+      "newTerms": [
+        { "term": "选择偏差", "definition": "只看已经进入视野的作品而忽略未被选择者，因而高估某种特征或路径普遍性的判断偏差。" },
+        { "term": "口碑信号", "definition": "帮助他人在无法完整观看或核验前形成预期的信息，例如入选、奖项、评论与观众反应。" },
+        { "term": "节目单元", "definition": "电影节按照竞赛资格、主题、形式、地区或创作者阶段组织的一组影片。" },
+        { "term": "可及性", "definition": "不同身体条件、语言、收入与地理位置的观众实际接触和理解活动或作品的可能程度。" }
+      ],
+      "conclusion": "节展桂冠是作品曾被某套规则和策展判断选中的历史证据，而不是普遍有效的质量证书；成熟观看要同时考察影片本身、单元语境、规则边界、谁能进入现场以及入选之后是否真正抵达观众。",
+      "nextQuestion": "当平台、院线与节展边界继续变化时，我们还能设计哪些让独立作品与观众相遇的公共空间？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.5
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与继续观看",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
