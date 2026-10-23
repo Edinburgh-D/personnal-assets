@@ -1,0 +1,13 @@
+{
+  "scannedAt": "2026-10-24",
+  "framework": "vanilla-html",
+  "fontSignals": "knowledge-base-local Google Fonts links",
+  "paletteSignals": "knowledge-base-local OKLCH tokens",
+  "motionStance": "motion-cut",
+  "spacing": "4pt token scale",
+  "preserved": [
+    "repository-local knowledge-base assets",
+    "static HTML publishing structure",
+    "kb_darkMode preference key"
+  ]
+}

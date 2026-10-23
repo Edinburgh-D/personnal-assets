@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "黑暗三人格：特质、权力与判断",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-24",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先别急着寻找坏人",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者听过黑暗三人格、操控者或自恋者等流行标签，容易把它们当作识破坏人的三格清单。",
+      "readerStateAfter": "读者能够把黑暗三人格理解为三种连续、重叠但不等同的人格倾向，并区分研究构念、临床诊断与道德判决。",
+      "readerQuestion": "“黑暗三人格”究竟是在描述三类坏人，还是三种彼此重叠的人格倾向？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一个虚构的跨部门项目中，负责人周岑擅长争取资源、包装成绩和调整联盟；同样的行为线索可能来自不同动机，也会因制度环境产生不同后果。",
+      "newTerms": [
+        {
+          "term": "黑暗三人格",
+          "definition": "人格心理学中把马基雅维利主义、自恋与亚临床精神病态并置研究的构念组合，描述连续倾向而非三种固定人类类型。"
+        },
+        {
+          "term": "人格特质",
+          "definition": "跨时间和情境相对稳定、但不会机械决定每一次行为的感受、思考与行动倾向。"
+        },
+        {
+          "term": "马基雅维利主义",
+          "definition": "心理学中偏向策略性操控、犬儒式人际观与工具性算计的特质构念，不等于马基雅维利本人的完整政治思想。"
+        },
+        {
+          "term": "自恋",
+          "definition": "围绕自我重要感、特权感、赞赏需求与地位维护组织起来的一组倾向，在研究中并不自动等同临床障碍。"
+        },
+        {
+          "term": "亚临床精神病态",
+          "definition": "在普通样本中测量的冷酷、低悔意、冒险或冲动等倾向，不应仅凭问卷分数或日常印象当作医学诊断。"
+        }
+      ],
+      "conclusion": "黑暗三人格是一张研究三种连续倾向及其重叠部分的地图，不是识别三类坏人的判决表；可靠理解必须同时保留构念差异、测量限制与情境作用。",
+      "nextQuestion": "如果三种特质并非同一种恶意，它们分别通过什么动机与行为路径作用于权力关系？",
+      "nextPage": "mechanisms.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "三条路径，一套放大器",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把黑暗三人格理解为三种连续、重叠但不等同的人格倾向，并区分研究构念、临床诊断与道德判决。",
+      "readerStateAfter": "读者能够分别解释策略性操控、地位维护与冷酷去抑制的作用路径，并说明权力、信息与问责怎样放大或抑制这些倾向。",
+      "readerQuestion": "如果三种特质并非同一种恶意，它们分别通过什么动机与行为路径作用于权力关系？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "黑暗三人格是一张研究三种连续倾向及其重叠部分的地图，不是识别三类坏人的判决表；可靠理解必须同时保留构念差异、测量限制与情境作用。",
+      "coreExample": "继续观察周岑主持的项目：他控制信息出口、把成果与个人声望绑定，并在惩罚成本很低时把风险转给弱势成员；三条路径在同一权力位置上交错出现。",
+      "newTerms": [
+        {
+          "term": "人际拮抗",
+          "definition": "在人际关系中较少顾及他人利益、更容易对抗、利用或贬低他人的广泛倾向。"
+        },
+        {
+          "term": "工具性操控",
+          "definition": "把他人主要视为实现目标的手段，并根据成本、收益和可控性安排关系的做法。"
+        },
+        {
+          "term": "地位调节",
+          "definition": "通过争取注意、维护优越形象和回应地位威胁来稳定自我评价的过程。"
+        },
+        {
+          "term": "去抑制",
+          "definition": "对冲动、冒险或违反规范的行为缺少足够内在约束，因而更快把欲望转成行动的倾向。"
+        },
+        {
+          "term": "黑暗核心",
+          "definition": "解释多种黑暗特质共同部分的理论假设，强调以他人为代价追求自身利益，并用信念为此辩护。"
+        }
+      ],
+      "conclusion": "三种特质共享较强的人际拮抗，却沿策略性操控、地位调节与冷酷去抑制走出不同路径；权力不是这些倾向的唯一来源，却会通过扩大裁量、遮蔽信息和降低代价把倾向变成后果。",
+      "nextQuestion": "既然特质只改变概率而不决定行为，我们应怎样识别风险、约束权力，并避免把心理学变成贴标签的武器？",
+      "nextPage": "judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "judgment.html",
+      "title": "看行为，也看权力结构",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够分别解释策略性操控、地位维护与冷酷去抑制的作用路径，并说明权力、信息与问责怎样放大或抑制这些倾向。",
+      "readerStateAfter": "读者能够用重复行为、权力不对称、证据质量与制度防护评估风险，避免远程诊断，同时知道何时应保存记录并寻求专业支持。",
+      "readerQuestion": "既然特质只改变概率而不决定行为，我们应怎样识别风险、约束权力，并避免把心理学变成贴标签的武器？",
+      "dependsOn": [
+        "mechanisms.html"
+      ],
+      "priorConclusion": "三种特质共享较强的人际拮抗，却沿策略性操控、地位调节与冷酷去抑制走出不同路径；权力不是这些倾向的唯一来源，却会通过扩大裁量、遮蔽信息和降低代价把倾向变成后果。",
+      "coreExample": "项目成员不再争论周岑究竟是哪一种人格，而是记录承诺与决策、拆分审批和执行、建立申诉与交叉复核，并观察这些约束是否改变重复伤害。",
+      "newTerms": [
+        {
+          "term": "基率忽视",
+          "definition": "只因某些线索像一个标签就高估结论成立的可能，而忽略这些线索在普通人和其他情境中也很常见。"
+        },
+        {
+          "term": "远程诊断",
+          "definition": "没有完整临床评估、当事人合作和专业责任关系，却依据片段信息给他人下精神健康诊断的做法。"
+        },
+        {
+          "term": "可审计性",
+          "definition": "重要决定能够被记录、复核并追溯到依据与责任人的制度属性。"
+        },
+        {
+          "term": "制度防护",
+          "definition": "通过分权、透明、申诉、轮岗和独立监督等安排，降低任何人格倾向造成持续伤害的机会。"
+        }
+      ],
+      "conclusion": "面对疑似黑暗特质，最稳健的做法不是猜中一个人的内心类型，而是核对可重复行为、保护受影响者并改变让伤害低成本发生的权力结构；心理学标签不能替代证据、边界和正式程序。",
+      "nextQuestion": "在下一次遇到魅力、算计与伤害混杂的局面时，我们能否先追踪行为和权力回路，再决定需要沟通、设限、举报还是专业支持？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、量表与证据边界",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "mechanisms.html",
+        "judgment.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-24T12:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "“黑暗三人格”究竟是在描述三类坏人，还是三种彼此重叠的人格倾向？",
+      "readerStateChange": "读前容易把概念当成三类坏人的识别清单；读后能区分连续特质、研究量表、临床诊断与道德判断，并知道同一行为可能来自不同动机。",
+      "twoSentenceSummary": "页面从虚构项目负责人的含混行为出发，解释三种构念为何相关但不等价。随后用概念三角、测量限制与思想史辨析，把流行标签还原为需要情境和证据约束的研究地图。",
+      "continuityEvidence": "结尾明确把概念地图推进到三条机制，并提出权力为何成为共同放大器，直接承接下一页的中心问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "如果三种特质并非同一种恶意，它们分别通过什么动机与行为路径作用于权力关系？",
+      "readerStateChange": "读前只知道三种倾向并不相同；读后能分别解释计算、地位和刹车三条路径，并说明裁量、信息、依赖与问责时差怎样改变行为后果。",
+      "twoSentenceSummary": "页面先以人际拮抗和黑暗核心解释三种倾向的共同部分，再分别展开工具性操控、地位维护与冷酷去抑制。后半把人格倾向放入权力结构，说明个体、情境和制度如何共同生成风险。",
+      "continuityEvidence": "页面以无法读心但仍需保护和纠错作为收束，把机制解释自然推进到下一页的证据判断、设限和制度防护。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "既然特质只改变概率而不决定行为，我们应怎样识别风险、约束权力，并避免把心理学变成贴标签的武器？",
+      "readerStateChange": "读前能解释风险如何生成但缺少行动尺度；读后能按事件、模式、边界反应和权力结构收集证据，并在低风险沟通、高风险保护和正式程序之间作区分。",
+      "twoSentenceSummary": "页面拆解基率忽视、直觉诊断与远程诊断三类捷径，建立从具体事件到模式和纠错反应的证据次序。周岑案例随后展示可审计性与制度防护如何让判断不再依赖人格猜谜。",
+      "continuityEvidence": "作为叙事终点，页面回收前两页的三角模型和权力放大器，并留下可迁移到新场景的行为—权力—响应检查问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够按概念起点、测量研究、综合证据、临床标准和思想史材料追溯正文主张，并识别每类来源不能支持什么结论。",
+      "twoSentenceSummary": "参考页汇总经典定义、短量表、构念重叠、黑暗核心、工作与领导研究，以及最新测量和欺凌元分析。页面同时给出 WHO 临床标准与马基雅维利思想史入口，防止跨越证据层级。",
+      "continuityEvidence": "来源按正文的概念、机制、权力与边界顺序组织，并为三个叙事页的关键主张提供可直接追溯的链接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
