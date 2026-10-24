@@ -1,0 +1,123 @@
+/* Hallmark · genre: editorial · macrostructure: Marquee Hero · theme: Studio · tone: archival field ledger · anchor hue: quartermaster green · enrichment: Tier-A CSS route diagram · nav: N9 · footer: Ft2 · audience: general · use: continuous public-history reading · contrast: pass (40–41) · slop: pass (1–58) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (34, 49–57) */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5 */
+:root {
+  color-scheme: light dark;
+
+  --color-paper: oklch(96.5% 0.014 96);
+  --color-paper-2: oklch(92.5% 0.018 96);
+  --color-paper-3: oklch(87% 0.022 96);
+  --color-ink: oklch(20% 0.025 112);
+  --color-ink-2: oklch(30% 0.026 112);
+  --color-neutral: oklch(42% 0.024 105);
+  --color-muted: oklch(39% 0.026 100);
+  --color-rule: oklch(72% 0.025 96);
+  --color-rule-strong: oklch(52% 0.034 108);
+  --color-accent: oklch(37% 0.09 145);
+  --color-accent-deep: oklch(28% 0.07 145);
+  --color-accent-soft: oklch(88% 0.045 136);
+  --color-accent-ink: oklch(97% 0.012 96);
+  --color-focus: oklch(52% 0.15 48);
+  --color-danger: oklch(46% 0.16 28);
+  --color-success: oklch(40% 0.1 150);
+  --color-clear: oklch(20% 0.01 112 / 0);
+  --color-overlay: oklch(14% 0.02 112 / 0.72);
+
+  --font-display: "ZCOOL XiaoWei", "Noto Serif SC", serif;
+  --font-body: "Noto Serif SC", serif;
+  --font-ui: var(--font-body);
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.56rem;
+  --text-xl: 1.95rem;
+  --text-2xl: 2.44rem;
+  --text-3xl: 3.05rem;
+  --text-4xl: 3.81rem;
+  --text-display-s: clamp(3rem, 7vw + 1rem, 4.6rem);
+  --text-display: clamp(3.4rem, 8vw + 1rem, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-thin: 1px;
+  --rule-emphasis: 2px;
+  --rule-strong: 3px;
+  --rule-focus: 3px;
+  --radius-sm: 0.2rem;
+  --radius-md: 0.45rem;
+
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --content-max: 76rem;
+  --prose-max: 68ch;
+  --nav-h: 4.5rem;
+  --z-base: 1;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(15% 0.014 112);
+  --color-paper-2: oklch(19% 0.017 112);
+  --color-paper-3: oklch(24% 0.019 112);
+  --color-ink: oklch(94% 0.014 96);
+  --color-ink-2: oklch(84% 0.017 96);
+  --color-neutral: oklch(75% 0.018 100);
+  --color-muted: oklch(76% 0.02 100);
+  --color-rule: oklch(37% 0.026 112);
+  --color-rule-strong: oklch(59% 0.035 120);
+  --color-accent: oklch(72% 0.1 145);
+  --color-accent-deep: oklch(80% 0.08 145);
+  --color-accent-soft: oklch(28% 0.055 145);
+  --color-accent-ink: oklch(15% 0.014 112);
+  --color-focus: oklch(75% 0.14 70);
+  --color-danger: oklch(72% 0.13 28);
+  --color-success: oklch(72% 0.1 150);
+  --color-clear: oklch(15% 0.014 112 / 0);
+  --color-overlay: oklch(8% 0.02 112 / 0.8);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: oklch(15% 0.014 112);
+    --color-paper-2: oklch(19% 0.017 112);
+    --color-paper-3: oklch(24% 0.019 112);
+    --color-ink: oklch(94% 0.014 96);
+    --color-ink-2: oklch(84% 0.017 96);
+    --color-neutral: oklch(75% 0.018 100);
+    --color-muted: oklch(76% 0.02 100);
+    --color-rule: oklch(37% 0.026 112);
+    --color-rule-strong: oklch(59% 0.035 120);
+    --color-accent: oklch(72% 0.1 145);
+    --color-accent-deep: oklch(80% 0.08 145);
+    --color-accent-soft: oklch(28% 0.055 145);
+    --color-accent-ink: oklch(15% 0.014 112);
+    --color-focus: oklch(75% 0.14 70);
+    --color-danger: oklch(72% 0.13 28);
+    --color-success: oklch(72% 0.1 150);
+    --color-clear: oklch(15% 0.014 112 / 0);
+    --color-overlay: oklch(8% 0.02 112 / 0.8);
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "军事物流与补给线：战争如何被一张网络支撑",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-24",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "胜负先经过仓库",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者知道军队需要粮食和弹药，却容易把补给理解成战场后方自动完成的运输工作。",
+      "readerStateAfter": "读者能够把军事物流看成连接生产、仓储、运输、维修、人员与前线需求的网络，并理解补给线不是地图上的一根线。",
+      "readerQuestion": "为什么军队拥有兵员和武器，仍可能因为补给网络而失去行动能力？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "沿1944年盟军从诺曼底快速向东推进的过程，追踪物资怎样从海滩与港口进入仓库，再经铁路、公路和红球快运送到不断前移的部队。",
+      "newTerms": [
+        {
+          "term": "军事物流",
+          "definition": "为军队筹集、储存、运输、分配、维修和回收人员与物资，使部队能够持续行动的一整套系统。"
+        },
+        {
+          "term": "补给线",
+          "definition": "连接生产地、港口、仓库、转运点与部队的交通和组织联系，通常是一张多节点网络而非单一路线。"
+        },
+        {
+          "term": "消耗率",
+          "definition": "部队在一定时间内使用粮食、燃料、弹药、备件等资源的速度。"
+        },
+        {
+          "term": "库存",
+          "definition": "为应付预期消耗、运输延迟与意外中断而预先储存在某处的物资。"
+        },
+        {
+          "term": "保障",
+          "definition": "让部队保持人员、装备和物资可用状态的综合活动，既包括物流，也包括医疗和其他支持。"
+        }
+      ],
+      "conclusion": "军队的行动能力不是武器与人数的静态总和，而是补给网络持续把正确资源送到正确地点的结果；补给线应被理解为会流动、会拥堵、会受损的系统。",
+      "nextQuestion": "既然补给线是一张动态网络，物资究竟怎样穿过节点与路段，而距离、节奏和优先级又如何制造瓶颈？",
+      "nextPage": "how-the-network-works.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "how-the-network-works.html",
+      "title": "物资怎样抵达前线",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把军事物流看成连接生产、仓储、运输、维修、人员与前线需求的网络，并理解补给线不是地图上的一根线。",
+      "readerStateAfter": "读者能够用需求、吞吐量、瓶颈、运输周转和反馈解释补给网络为何随推进而变脆弱，也能说明维修与回程为何同样重要。",
+      "readerQuestion": "既然补给线是一张动态网络，物资究竟怎样穿过节点与路段，而距离、节奏和优先级又如何制造瓶颈？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "军队的行动能力不是武器与人数的静态总和，而是补给网络持续把正确资源送到正确地点的结果；补给线应被理解为会流动、会拥堵、会受损的系统。",
+      "coreExample": "把红球快运拆成港口卸载、后方仓库、编组装车、单向公路、前方补给站、车辆维修和空车回程七个环节，观察任何一处变慢怎样影响整条链。",
+      "newTerms": [
+        {
+          "term": "吞吐量",
+          "definition": "一个港口、仓库、道路或运输系统在一定时间内真正能够处理并送出的物资数量。"
+        },
+        {
+          "term": "瓶颈",
+          "definition": "网络中能力最紧张、最先限制整体流量的环节，它可能随时间和任务变化。"
+        },
+        {
+          "term": "运输周转",
+          "definition": "运输工具从装载、前送、卸载到返回并再次可用的完整循环。"
+        },
+        {
+          "term": "前方补给点",
+          "definition": "靠近作战部队设置的临时或固定节点，用来接收、分拣并继续分发物资。"
+        },
+        {
+          "term": "需求可见性",
+          "definition": "指挥与保障人员及时知道哪里缺什么、缺多少、何时需要以及物资正在何处的能力。"
+        }
+      ],
+      "conclusion": "补给网络的有效能力取决于最紧张的节点、完整运输周转和可靠反馈，而不取决于后方物资总量；推进越快、距离越长、需求越不透明，局部摩擦越容易放大成全线停顿。",
+      "nextQuestion": "当史料只留下进军速度、缺油抱怨或道路中断时，我们怎样判断后勤究竟是决定性约束、众多原因之一，还是战败后的方便解释？",
+      "nextPage": "reading-campaigns.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "reading-campaigns.html",
+      "title": "怎样读懂一条补给线",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用需求、吞吐量、瓶颈、运输周转和反馈解释补给网络为何随推进而变脆弱，也能说明维修与回程为何同样重要。",
+      "readerStateAfter": "读者能够从任务、时间、网络结构、敌方干扰与替代方案五个维度评估后勤约束，并避免把每次胜负都简化为缺粮或缺油。",
+      "readerQuestion": "当史料只留下进军速度、缺油抱怨或道路中断时，我们怎样判断后勤究竟是决定性约束、众多原因之一，还是战败后的方便解释？",
+      "dependsOn": [
+        "how-the-network-works.html"
+      ],
+      "priorConclusion": "补给网络的有效能力取决于最紧张的节点、完整运输周转和可靠反馈，而不取决于后方物资总量；推进越快、距离越长、需求越不透明，局部摩擦越容易放大成全线停顿。",
+      "coreExample": "把1944年西欧推进与1941年德军在苏联的远距离作战并列，分别检查目标变化、铁路与道路转换、车辆损耗、季节、敌方行动和替代运输能力。",
+      "newTerms": [
+        {
+          "term": "作战节奏",
+          "definition": "部队发起行动、移动、整补和再次行动的速度及其连续性。"
+        },
+        {
+          "term": "冗余",
+          "definition": "在主路线、节点或运输方式失效时仍可接替的备用能力，不等于无目的地重复建设。"
+        },
+        {
+          "term": "脆弱点",
+          "definition": "一旦受损就会造成远大于局部损失的关键节点、路段、设备或组织接口。"
+        },
+        {
+          "term": "推进极限",
+          "definition": "部队因补给、疲劳、损耗与敌方抵抗累积而无法按原有速度继续推进的阶段性边界。"
+        }
+      ],
+      "conclusion": "后勤解释只有在任务与需求、网络能力、时间变化、敌方干扰和可行替代方案能够连成证据链时才有说服力；真正重要的不是宣布补给决定一切，而是找出它在何时通过哪个瓶颈改变了可选行动。",
+      "nextQuestion": "面对一场新的战争或历史争论，我们能否先画出资源从来源到部队的网络，再检验哪些节点真正改变了决策空间？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、口径与延伸阅读",
+      "role": "reference",
+      "stage": "transfer",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "how-the-network-works.html",
+        "reading-campaigns.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

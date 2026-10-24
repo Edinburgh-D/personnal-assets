@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-10-24T23:10:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么军队拥有兵员和武器，仍可能因为补给网络而失去行动能力？",
+      "readerStateChange": "读前容易把补给理解成后方自动完成的运输；读后能把生产、仓储、前送、维修、回收和需求信息连成一张动态网络，并区分库存与送达能力。",
+      "twoSentenceSummary": "页面从1944年红球快运的运输危机出发，说明兵员和武器只有得到持续保障才会转化为行动能力。随后沿来源、节点、干线、前方分发和回程展开补给网络，并用流入账与消耗账解释胜利后为何也会停顿。",
+      "continuityEvidence": "结尾把静态战史箭头改写为持续更新的网络，并明确提出流量怎样过节点、局部堵塞为何放大的机制问题，直接引向下一页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-the-network-works.html",
+      "centralQuestion": "既然补给线是一张动态网络，物资究竟怎样穿过节点与路段，而距离、节奏和优先级又如何制造瓶颈？",
+      "readerStateChange": "读前知道补给线是一张网络；读后能用吞吐量、移动瓶颈、完整运输周转、末端交接和需求反馈解释实际送达能力为何低于纸面总量。",
+      "twoSentenceSummary": "页面把红球快运拆成港口、仓储、装车、干线、前方分发和回程维修，展示最慢接口怎样限制全网。后半说明距离会降低周转次数，优先级会产生机会成本，而统一信息能让物流随任务变化。",
+      "continuityEvidence": "页面以红球快运的阶段性价值收束机制解释，并指出缺油、泥泞或铁路轨距本身不足以证明因果，下一页据此转向历史判断。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reading-campaigns.html",
+      "centralQuestion": "当史料只留下进军速度、缺油抱怨或道路中断时，我们怎样判断后勤究竟是决定性约束、众多原因之一，还是战败后的方便解释？",
+      "readerStateChange": "读前能解释补给网络机制但还可能把困难直接当成原因；读后能按任务、网络、时间、敌方干扰和替代方案组织证据，并识别史料立场与社会成本。",
+      "twoSentenceSummary": "页面比较1944年西欧推进和1941年德军东线作战，说明后勤作用必须放进任务变化、季节、敌方行动和资料立场中判断。随后以脆弱点、冗余和推进极限建立可迁移的五维证据框架。",
+      "continuityEvidence": "作为叙事终点，页面回收前两页的网络模型和流量机制，把它们转化为面对新战例时先画网络、再验证关键节点的开放问题。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读者能够按现行定义、诺曼底运输、东线战后研究与仓库内延伸阅读追溯正文主张，并知道官方军史的统计口径和立场边界。",
+      "twoSentenceSummary": "页面列出北约现行物流说明、美国陆军条令入口、红球快运官方军史和东线战后研究。它同时解释吨位差异、材料视角和术语时代差异，并连接孙子兵法、朝鲜战争、明清易代与牛鞭效应知识库。",
+      "continuityEvidence": "来源顺序对应正文的定义、红球快运机制和东线判断三个阶段，相关知识库则把网络视角迁移到战略、区域史与民用供应链。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

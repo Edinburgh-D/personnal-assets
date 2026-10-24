@@ -1,0 +1,10 @@
+{
+  "scannedAt": "2026-10-24",
+  "target": "knowledge-bases/military-logistics-supply-lines",
+  "framework": "vanilla-html",
+  "fontSignals": ["independent historical knowledge bases use Google Fonts and local CSS tokens"],
+  "paletteSignals": ["OKLCH token systems with light and dark variants"],
+  "motion": "motion-cut",
+  "spacing": "4pt scale",
+  "preserved": ["standalone knowledge-base structure", "responsive long-form reading", "dark-mode preference"]
+}
