@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-10-25",
+    "macrostructure": "Map / Diagram",
+    "theme": "Almanac",
+    "enrichment": "E5 semantic hand-built SVG",
+    "brief": "伤寒论六经辨证普通大众连续学习知识库",
+    "variationKnobs": "single semantic coordinate map, chapter ledger rows, cinnabar-underlined terminology",
+    "preEmitScores": "P5 H5 E5 S5 R5 V5",
+    "slopTest": "58/58 pass; responsive gates verified by static breakpoint audit because local-browser permission was unavailable"
+  }
+]

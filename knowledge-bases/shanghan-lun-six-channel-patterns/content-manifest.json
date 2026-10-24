@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "伤寒论六经辨证",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-25",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "先把六经看成辨证坐标",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者只知道太阳、阳明等六个名称，容易把六经当成六条经络、六种疾病或必然依次发展的六个阶段。",
+      "readerStateAfter": "读者能够把六经理解为围绕病位、病性、邪正盛衰与病势组织症状和体征的传统辨证框架，并知道它不是现代疾病名称。",
+      "readerQuestion": "《伤寒论》的六经究竟在分类什么，为什么不能把它简单理解成六条经络、六种病或固定的病程阶梯？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一名成年人先有恶寒、头痛和发热，随后出现口渴、胃口改变与腹泻；本页借这组不断变化的表现说明，六经用来组织当下证候关系，而不是替代病原学诊断。",
+      "newTerms": [
+        {
+          "term": "伤寒",
+          "definition": "在《伤寒论》及其历代阐释中具有特定历史语境的病类概念，不能直接等同于现代所说的伤寒杆菌感染。"
+        },
+        {
+          "term": "六经辨证",
+          "definition": "以太阳、阳明、少阳、太阴、少阴、厥阴六类病证组织临床表现，并分析病位、病性、病势与邪正关系的传统辨证方法。"
+        },
+        {
+          "term": "证候",
+          "definition": "对某一时点相互关联的症状、体征及其病机判断所作的整体概括，不等同于单一症状或现代疾病名称。"
+        },
+        {
+          "term": "六经病",
+          "definition": "《伤寒论》按太阳、阳明、少阳、太阴、少阴、厥阴展开的六类证候系统。"
+        },
+        {
+          "term": "脉证并治",
+          "definition": "把脉象、症状体征、病机判断与治法选择放在同一论述单元中考察的经典编排与思维方式。"
+        }
+      ],
+      "conclusion": "六经不是现代解剖通道、疾病标签或固定时间表，而是一套把当下表现整理成病位、寒热、虚实与进退关系的传统临床坐标；读懂它要先看证候组合，再看名称。",
+      "nextQuestion": "既然六经是一套临床坐标，太阳、阳明、少阳、太阴、少阴、厥阴各自突出什么关系，又怎样容纳兼见与变化？",
+      "nextPage": "six-pattern-map.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "six-pattern-map.html",
+      "title": "六个名称，四条判断轴",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把六经理解为围绕病位、病性、邪正盛衰与病势组织症状和体征的传统辨证框架，并知道它不是现代疾病名称。",
+      "readerStateAfter": "读者能够用表里倾向、寒热表现、邪正盛衰和病势方向解释六经的差异，并理解同一患者可能兼见、转化或不按固定顺序变化。",
+      "readerQuestion": "既然六经是一套临床坐标，太阳、阳明、少阳、太阴、少阴、厥阴各自突出什么关系，又怎样容纳兼见与变化？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "六经不是现代解剖通道、疾病标签或固定时间表，而是一套把当下表现整理成病位、寒热、虚实与进退关系的传统临床坐标；读懂它要先看证候组合，再看名称。",
+      "coreExample": "继续观察这名成年人：恶寒头痛、持续高热口渴、寒热往来、腹泻乏力等表现不是按名称排队，而要根据同时出现的症状、脉舌信息与变化方向重新组合。",
+      "newTerms": [
+        {
+          "term": "提纲证",
+          "definition": "后世常用来概括某一经病核心识别线索的纲领性证候表达，不能脱离全篇条文机械套用。"
+        },
+        {
+          "term": "三阳病",
+          "definition": "太阳、阳明、少阳三类病证的合称，通常更突出邪实、热势或身体抗邪反应，但内部差异明显。"
+        },
+        {
+          "term": "三阴病",
+          "definition": "太阴、少阴、厥阴三类病证的合称，通常更突出正气受损、寒热错杂或功能衰减，但不能简单等同于重症。"
+        },
+        {
+          "term": "传变",
+          "definition": "六经病证在病程中因邪正消长、体质与治疗影响而发生转属或变化的传统描述。"
+        },
+        {
+          "term": "合病",
+          "definition": "两经或以上的主要证候同时出现，提示临床表现可以跨越单一分类。"
+        }
+      ],
+      "conclusion": "六经的辨别依靠成组表现和多条判断轴，而不是把单一症状逐项配对；六类病证既有各自重心，也允许合病、转属和错杂，因此临床判断必须回到完整资料与变化过程。",
+      "nextQuestion": "当六经可以兼见、转化且历代解释并不完全一致时，普通人怎样阅读经典、理解方证，又不把它变成自诊自药工具？",
+      "nextPage": "boundaries-and-clinical-judgment.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "boundaries-and-clinical-judgment.html",
+      "title": "把经典推理留在安全边界内",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用表里倾向、寒热表现、邪正盛衰和病势方向解释六经的差异，并理解同一患者可能兼见、转化或不按固定顺序变化。",
+      "readerStateAfter": "读者能够区分经典文本、后世解释、现代诊断与个体处方四个层次，并用急症信号、执业资质、用药信息和复评节点守住阅读与求医边界。",
+      "readerQuestion": "当六经可以兼见、转化且历代解释并不完全一致时，普通人怎样阅读经典、理解方证，又不把它变成自诊自药工具？",
+      "dependsOn": [
+        "six-pattern-map.html"
+      ],
+      "priorConclusion": "六经的辨别依靠成组表现和多条判断轴，而不是把单一症状逐项配对；六类病证既有各自重心，也允许合病、转属和错杂，因此临床判断必须回到完整资料与变化过程。",
+      "coreExample": "这名成年人从网络症状表中认出多个六经名称，却先接受现代医学评估以排查感染与脱水，再把完整病史、用药和检验信息交给合格中医师，避免照抄古方。",
+      "newTerms": [
+        {
+          "term": "并病",
+          "definition": "一经病证未解而另一经病证又出现，前后相接并存的传统病程描述。"
+        },
+        {
+          "term": "直中",
+          "definition": "后世用来描述发病之初即呈现三阴病证特点、并非先经过三阳病证的概念。"
+        },
+        {
+          "term": "方证",
+          "definition": "把某一方剂的适用证候看作一组整体关系的临床思路，不等于见到一个症状就固定对应一个方。"
+        },
+        {
+          "term": "复评节点",
+          "definition": "预先约定在症状加重、出现新表现或达到某个时间点时重新评估诊断与处理方案。"
+        }
+      ],
+      "conclusion": "六经辨证适合作为理解《伤寒论》临床推理的历史医学框架，但个体诊疗必须同时接受现代疾病排查、合格执业者辨证、药物安全核对与动态复评；经典可帮助提问，不能替代诊断和处方。",
+      "nextQuestion": "未来读到新的六经阐释、经方经验或疗效研究时，哪些材料能增加理解，哪些主张仍需要更严格的比较证据与安全信息？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.55
+    },
+    {
+      "file": "sources.html",
+      "title": "来源、版本与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

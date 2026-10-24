@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-25",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4166,6 +4166,13 @@
       "generatedAt": "2026-10-24",
       "slug": "military-logistics-supply-lines",
       "entry": "knowledge-bases/military-logistics-supply-lines/main.html"
+    },
+    {
+      "name": "伤寒论六经辨证",
+      "domain": "中医/养生",
+      "generatedAt": "2026-10-25",
+      "slug": "shanghan-lun-six-channel-patterns",
+      "entry": "knowledge-bases/shanghan-lun-six-channel-patterns/main.html"
     }
   ],
   "skipped": []

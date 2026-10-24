@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>先把六经看成辨证坐标｜伤寒论六经辨证</title>
+  <meta name="description" content="面向普通大众读懂《伤寒论》六经辨证：六经在分类什么、六类病证如何关联，以及为什么它不能替代现代诊断。">
+  <meta name="robots" content="index, follow">
+  <script>try{const v=localStorage.getItem('kb_darkMode');if(v==='true'||v==='false')document.documentElement.dataset.theme=v==='true'?'dark':'light'}catch(e){}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" data-reading-progress aria-hidden="true"></div>
+  <nav class="site-rail" aria-label="章节捷径">
+    <a class="site-rail__mark" href="main.html">六经辨证</a>
+    <div class="site-rail__dots">
+      <a href="main.html" aria-current="page" aria-label="第一章：辨证坐标">一</a>
+      <a href="six-pattern-map.html" aria-label="第二章：六经图谱">二</a>
+      <a href="boundaries-and-clinical-judgment.html" aria-label="第三章：临床边界">三</a>
+      <a href="sources.html" aria-label="来源与证据">源</a>
+    </div>
+  </nav>
+  <header class="topbar">
+    <a class="topbar__title" href="main.html">六经辨证</a>
+    <div class="topbar__tools">
+      <a class="topbar__home" href="../../index.html" data-site-home>总览</a>
+      <button class="theme-toggle" type="button" data-theme-toggle>深色</button>
+      <details class="path-menu">
+        <summary class="nav-menu-btn">目录</summary>
+        <nav class="path-menu__panel" aria-label="完整学习路径">
+          <a href="main.html" aria-current="page">先把六经看成辨证坐标</a>
+          <a href="six-pattern-map.html">六个名称，四条判断轴</a>
+          <a href="boundaries-and-clinical-judgment.html">把经典推理留在安全边界内</a>
+          <a href="sources.html">来源、版本与证据边界</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="breadcrumb" aria-label="面包屑"><a href="../../index.html">知识库总览</a><span aria-hidden="true">/</span><span>伤寒论六经辨证</span></nav>
+    <main id="content" data-kb-content data-page-role="overview">
+
+      <header class="hero hero--mapped">
+        <div class="hero__copy">
+          <h1>先把六经看成辨证坐标</h1>
+          <p class="hero__lede">太阳、阳明、少阳、太阴、少阴、厥阴，不是六个抽屉，也不是病情自动行进的六级台阶。它们是一套观察关系的语言：眼前哪些表现同时成立，身体的抗病能力怎样，病势又在往哪里走。</p>
+          <p class="hero__note">本知识库讲解经典框架与阅读边界，不提供个人辨证、方药选择或剂量建议。</p>
+        </div>
+        <figure class="six-map">
+          <svg viewBox="0 0 720 500" role="img" aria-labelledby="six-map-title six-map-desc">
+            <title id="six-map-title">六经辨证关系图</title>
+            <desc id="six-map-desc">太阳、阳明、少阳、太阴、少阴、厥阴六个节点围绕病位、寒热、虚实和病势四条判断轴分布。节点之间以环线相连，表示可能兼见和转化，而不是固定单向阶梯。</desc>
+            <ellipse class="map-ring" cx="360" cy="250" rx="275" ry="185"></ellipse>
+            <line class="map-axis" x1="105" y1="250" x2="615" y2="250"></line>
+            <line class="map-axis" x1="360" y1="65" x2="360" y2="435"></line>
+            <line class="map-axis" x1="178" y1="112" x2="542" y2="388"></line>
+            <line class="map-axis" x1="542" y1="112" x2="178" y2="388"></line>
+            <path class="map-link" d="M185 132 Q360 60 535 132 Q640 250 535 368 Q360 440 185 368 Q80 250 185 132Z"></path>
+            <circle class="map-node" cx="185" cy="132" r="58"></circle>
+            <circle class="map-node" cx="535" cy="132" r="58"></circle>
+            <circle class="map-node" cx="615" cy="250" r="58"></circle>
+            <circle class="map-node" cx="535" cy="368" r="58"></circle>
+            <circle class="map-node" cx="185" cy="368" r="58"></circle>
+            <circle class="map-node" cx="105" cy="250" r="58"></circle>
+            <circle class="map-core" cx="360" cy="250" r="72"></circle>
+            <text class="map-name" x="185" y="128" text-anchor="middle">太阳</text><text class="map-note" x="185" y="149" text-anchor="middle">表与营卫</text>
+            <text class="map-name" x="535" y="128" text-anchor="middle">阳明</text><text class="map-note" x="535" y="149" text-anchor="middle">里热与燥实</text>
+            <text class="map-name" x="615" y="246" text-anchor="middle">少阳</text><text class="map-note" x="615" y="267" text-anchor="middle">枢机不利</text>
+            <text class="map-name" x="535" y="364" text-anchor="middle">太阴</text><text class="map-note" x="535" y="385" text-anchor="middle">中焦虚寒</text>
+            <text class="map-name" x="185" y="364" text-anchor="middle">少阴</text><text class="map-note" x="185" y="385" text-anchor="middle">整体衰减</text>
+            <text class="map-name" x="105" y="246" text-anchor="middle">厥阴</text><text class="map-note" x="105" y="267" text-anchor="middle">寒热错杂</text>
+            <text class="map-name" x="360" y="238" text-anchor="middle">证候组合</text><text class="map-note" x="360" y="260" text-anchor="middle">不是病名</text><text class="map-note" x="360" y="279" text-anchor="middle">不是时间表</text>
+            <text class="map-axis-label" x="360" y="48" text-anchor="middle">表里与病位</text>
+            <text class="map-axis-label" x="360" y="475" text-anchor="middle">邪正与虚实</text>
+            <text class="map-axis-label" x="654" y="250" text-anchor="middle" transform="rotate(90 654 250)">寒热表现</text>
+            <text class="map-axis-label" x="66" y="250" text-anchor="middle" transform="rotate(-90 66 250)">病势进退</text>
+          </svg>
+          <figcaption>这是一张阅读模型，不是人体解剖图。四条轴用于提醒读者同时观察病位、寒热、虚实和趋势；环线表示兼见与变化，不表示必然传递顺序。</figcaption>
+        </figure>
+      </header>
+
+      <nav class="path-strip" aria-label="学习路径">
+        <a href="main.html" aria-current="page">辨证坐标</a>
+        <a href="six-pattern-map.html">六经图谱</a>
+        <a href="boundaries-and-clinical-judgment.html">临床边界</a>
+        <a href="sources.html">来源证据</a>
+      </nav>
+
+      <section class="article-grid">
+        <div class="prose">
+          <h2>先拆开两个同名陷阱</h2>
+          <p>今天听到“<dfn data-term="伤寒">伤寒</dfn>”，很多人首先想到伤寒杆菌引起的感染。经典语境中的这个词却不是现代病名的同义词。它指向古代医家讨论外感病及其复杂变化的一套历史医学语境。阅读时若把两个概念直接重叠，后面的太阳、阳明等分类就会被误认为现代感染分期。</p>
+          <p><dfn data-term="六经辨证">六经辨证</dfn>把临床表现归入太阳、阳明、少阳、太阴、少阴、厥阴六类关系。《伤寒论》的传世文本与张仲景传统密切相关，但我们今天看到的篇章经过后世整理、注释和刊刻。国家中医药教育与医师考试大纲把这套方法列为中医诊断知识，而不是现代感染病分类。<a class="cite" href="sources.html#exam-outline" aria-label="来源二">[2]</a></p>
+          <p>这里的“归入”不是给病人贴一个永久标签，而是对某一阶段的整体情况作出判断。一组相互关联的表现及病机概括称为<dfn data-term="证候">证候</dfn>。判断材料包括自觉症状、可观察体征、病程变化以及传统脉诊与舌诊等信息。</p>
+          <p>六经名称与经脉名称共享三阴三阳词汇，却不能因此画上等号。经络系统主要组织路线、联系与腧穴；六经辨证则把疾病状态和变化规律组织成临床模型。两者有理论联系，但“太阳病”并不意味着太阳经脉这条线上发生了可见病变。</p>
+          <p>更准确的入口是证候关系。它既不是单一症状，也不是现代病名。一位发热者可能有恶寒、无汗、头痛，也可能有大渴、大汗和烦躁；同一个“发热”放进不同组合，会产生不同的传统判断。</p>
+        </div>
+        <aside class="marginalia"><strong>名称相同，不等于对象相同</strong>六经与十二经脉共享词汇，经典“伤寒”与现代伤寒也共享词汇。阅读时先问它正在指病证、经脉、病名还是历史文本。</aside>
+      </section>
+
+      <section class="article-grid article-grid--reverse">
+        <div class="prose">
+          <h2>六经不是六个孤立的盒子</h2>
+          <p><dfn data-term="六经病">六经病</dfn>是六类病证系统的合称。太阳部分重在表证与营卫关系，阳明部分常讨论里热与燥实，少阳部分突出枢机不利。太阴、少阴和厥阴则进一步呈现正气受损、寒热错杂以及升降出入失调等不同图景。</p>
+          <p>这些描述是认识方向，不是简化口诀。若把太阳只记成“怕冷”，把阳明只记成“发热”，就会遇到大量反例。恶寒可以出现在多种状态，发热也不会自动指向同一经。经典判断更像辨认一组相互支持又相互限制的线索。</p>
+          <p>地图比抽屉更接近六经的工作方式。抽屉要求一件物品只能放在一个格子里，地图却允许同一地点被多条坐标描述。一个病人可以同时出现两经的主要证候，也可能原有一经未解，另一经的表现随后加入。后世用合病、并病等概念处理这些重叠。</p>
+          <p>地图还有方向。病势可能由表入里，也可能由里出表；可能因正气恢复而缓解，也可能因病邪、体质或治疗影响而变复杂。方向来自连续观察，不是看到某个名称就自动推出下一站。经典中本来就有“不传”、合病与误治后变证等内容。</p>
+          <p>因此，六经并非一个统一的严重程度量表。三阳不等于轻症，三阴也不等于必然危重。某些阳明实热表现可很急重，某些太阴倾向则可能迁延而相对稳定。真正需要判断的是患者当时的整体状态与现代医学风险，而不是名称听起来更“阴”还是更“阳”。</p>
+        </div>
+        <aside class="marginalia"><strong>地图的限度</strong>地图帮助整理关系，却不会自动告诉人感染源、器官损伤或检验结果。它必须与现代疾病评估分层使用。</aside>
+      </section>
+
+      <section class="article-grid">
+        <div class="prose">
+          <h2>从一组变化的表现理解“当下状态”</h2>
+          <p>设想一名成年人旅行后先有明显怕冷、头痛和发热。一天后，他的口渴加重，胃口下降，后来又出现腹泻。把这段过程写成日记，比马上搜索“属于哪一经”更有价值。出现时间、体温、饮水、尿量、呼吸、意识与既往用药，都是首先需要保存的信息。</p>
+          <p>若只抓住最初的怕冷，网络表格可能把他归到太阳。若只抓住后来的口渴，另一张表格又可能把他归到阳明。腹泻出现后，太阴的词条也会跳出来。三个答案互相冲突，正说明单症状配对不是辨证，而只是关键词匹配。</p>
+          <p>传统临床会进一步看哪些表现持续，哪些已经消失，哪些同时出现。还要追问汗出与否、口渴方式、饮食与排便、精神状态以及脉舌变化。六经框架试图把这些关系压缩成可讨论的证候组合，而不是让一个症状独自决定全局。</p>
+          <p>现代医疗则会同时回答另一组问题：是否存在流感、新冠、细菌感染、胃肠炎或其他原因；是否已经脱水；有无基础病增加风险；是否需要检验、补液或特异治疗。这些问题不会因为使用六经语言而消失，也不能由六经名称代答。</p>
+          <p>成年人高热若持续恶化，或伴有呼吸困难、意识改变、严重脱水、剧烈胸腹痛等情况，应及时就医。英国国家医疗服务体系的成人发热页面也强调，居家处理后不改善或继续加重时需要寻求紧急医疗建议。<a class="cite" href="sources.html#nhs-fever" aria-label="来源六">[6]</a></p>
+          <div class="boundary boundary--urgent"><strong>不要用“传到哪一经”解释急症</strong><p>六经名称不能判断病原体，也不能排除肺炎、败血症、心脑血管事件或严重脱水。突然意识异常、呼吸困难、持续胸痛、抽搐、明显少尿等表现，应优先联系急救或就近就医。</p></div>
+        </div>
+        <aside class="marginalia"><strong>同一案例，两套不同问题</strong>六经关注证候怎样成组及变化；现代诊断关注病因、器官风险和可验证指标。两套问题可以并列，不能互相冒充。</aside>
+      </section>
+
+      <section class="article-grid article-grid--reverse">
+        <div class="prose">
+          <h2>经典编排显示的不是配方按钮</h2>
+          <p>传世篇名常把脉、证与治法放在一起。<dfn data-term="脉证并治">脉证并治</dfn>提醒读者，经典论述从来不是“症状—药名”的简单索引。一个条文会同时限定表现、脉象、病程条件和治疗方向，后文还会处理兼证、变证、禁忌与误治。</p>
+          <p>现代读者最容易跳过前面的限定，只记住“某症用某方”。这种截取方式会丢失决定安全性的部分。相似的腹泻可能由感染、药物、炎症、食物或其他疾病引起；相似的心悸也可能涉及贫血、甲状腺、心律失常或焦虑。名称相似不能保证病机相同。</p>
+          <p>国家药品监督管理部门公布的古代经典名方目录保留了《伤寒论》原文出处与传统制法。它证明这些方剂属于规范整理的历史药学资源，却不等于任何人都能照录自用。目录中的附子、细辛、麻黄、大黄等药物各有风险、禁忌与相互作用。<a class="cite" href="sources.html#nmpa-formulas" aria-label="来源四">[4]</a></p>
+          <p>世界卫生组织把传统医学安全放在从业者能力、产品质量、沟通与监管共同构成的环境中，也强调草药与其他药物相互作用需要监测。<a class="cite" href="sources.html#who-traditional" aria-label="来源五">[5]</a> 因此，“古方有出处”与“适合眼前这个人”之间，还隔着诊断、辨证、剂量、炮制、合并用药和复评。</p>
+          <p>把经典当作推理文本，读者会注意条件和转折；把经典当作搜索引擎，读者只会寻找与自己最像的一句。前一种读法能理解中医临床语言，后一种读法则容易制造确认偏误。越是看起来吻合的条文，越需要检查被忽略的限制条件。</p>
+        </div>
+        <aside class="marginalia"><strong>出处不等于适用证</strong>方名、原文和传统制法属于文献事实。是否适合个人，则是需要完整诊察、合法处方和药物安全核对的临床问题。</aside>
+      </section>
+
+      <section class="article-grid">
+        <div class="prose">
+          <h2>四个误读会把坐标变成标签</h2>
+          <p>第一种误读是把六经等同于六条经络。这样会把病证系统缩成身体路线，并误以为在某条线上按摩就能改变相应“经病”。经络知识可以解释体表路线与穴位，六经辨证却必须面对全身表现、病程与邪正关系。</p>
+          <p>第二种误读是把六经排成固定时钟。经典确实讨论传变，但也讨论不传、直中、合病、并病和误治后的复杂变化。所谓“一日太阳、二日阳明”若被理解成现代病程刻度，就会遮蔽真实病情的差异。</p>
+          <p>第三种误读是把每经简化成几个症状标签。症状来自多种原因，同一症状也能进入不同证候。辨证依赖组合、轻重、先后和相互关系。网络测验只能提供学习提示，不能完成临床资料采集和鉴别诊断。</p>
+          <p>第四种误读是把经典权威直接转换成现代疗效证明。历史影响、术语标准化、临床经验和随机对照研究回答的是不同问题。一个概念在传统体系中重要，并不自动证明相应治疗对所有现代疾病有效；反之，某项具体治疗有效，也不会一次证明整套理论。</p>
+          <p>全国标准信息公共服务平台将现行《中医临床诊疗术语 第2部分：证候》标为推荐性国家标准。标准化有助于统一术语和沟通，但其功能不是替代具体疗效与安全评估。<a class="cite" href="sources.html#pattern-standard" aria-label="来源一">[1]</a></p>
+        </div>
+        <aside class="marginalia"><strong>先判断句子类型</strong>它是在解释传统概念、记录历史文本、描述临床经验，还是报告现代研究？句子类型不同，需要的证据也不同。</aside>
+      </section>
+
+      <section class="article-grid article-grid--reverse">
+        <div class="prose">
+          <h2>一张坐标图，应该怎样继续读</h2>
+          <p>到这里，可以把六经暂时理解为四条判断轴上的六组典型关系。第一条轴观察表里与病位倾向，第二条轴观察寒热表现，第三条轴观察邪正盛衰与虚实，第四条轴观察病势进退。四条轴不是现代量表，而是帮助理解经典组织材料的阅读工具。</p>
+          <p>图中的六个节点没有箭头指向唯一下一站，因为真实条文并不支持单一路径。节点之间的环线也不是说任何状态都能任意转换。它只是提醒读者，病程会受体质、原有疾病、治疗与时间影响，结论必须从连续资料中产生。</p>
+          <p>下一章将逐一展开六经，但不会把它们写成六张症状卡。我们会观察每一类病证的中心关系，再把同一案例放回图中。这样既能理解太阳、阳明等名称的差异，也能看到为何一个人可能同时跨过多个边界。</p>
+          <p>读完这一页，最重要的不是背下六个名称，而是改变提问方式。不要问“这个症状是哪一经”，先问“哪些表现同时存在，它们怎样互相支持或排除，变化方向是什么，是否有需要现代医疗优先处理的风险”。这个问题比任何速查表都更接近辨证的本意。</p>
+          <p>六经因此不是现代解剖通道、疾病标签或固定时间表。它是一套把当下表现整理成病位、寒热、虚实与进退关系的传统临床坐标。读懂它要先看证候组合，再看名称；真正进入诊疗时，还必须把现代风险评估放在同一张桌面上。</p>
+        </div>
+        <aside class="marginalia"><strong>带着一条线索往下读</strong>名称只是坐标。下一步要看六类病证分别把哪种关系放在中心，以及它们如何容纳兼见与变化。</aside>
+      </section>
+
+      <template data-narrative="question">《伤寒论》的六经究竟在分类什么，为什么不能把它简单理解成六条经络、六种病或固定的病程阶梯？</template>
+      <template data-narrative="example">一名成年人先有恶寒、头痛和发热，随后出现口渴、胃口改变与腹泻；本页借这组不断变化的表现说明，六经用来组织当下证候关系，而不是替代病原学诊断。</template>
+      <template data-narrative="conclusion">六经不是现代解剖通道、疾病标签或固定时间表，而是一套把当下表现整理成病位、寒热、虚实与进退关系的传统临床坐标；读懂它要先看证候组合，再看名称。</template>
+      <template data-narrative="next-question">既然六经是一套临床坐标，太阳、阳明、少阳、太阴、少阴、厥阴各自突出什么关系，又怎样容纳兼见与变化？</template>
+
+      <nav class="page-turn" aria-label="继续阅读">
+        <a href="sources.html">查阅来源</a>
+        <a href="six-pattern-map.html">继续：六经图谱 →</a>
+      </nav>
+
+      <section class="related" aria-labelledby="related-title">
+        <h2 id="related-title">放回更大的中医知识脉络</h2>
+        <p>六经辨证与中医基础、体质、脏腑五行和诊断学有关，却不能由其中任何一套概念完全替代。若要对照经脉与穴位的关系，可继续阅读本仓库的经络系统；若关注传统技术的执业与安全边界，可对照中医外科与正骨知识库。</p>
+        <div class="related-links">
+          <a href="../meridian-system-guide/main.html">经络系统详解</a>
+          <a href="../tcm-surgery-bone-setting/main.html">中医外科与正骨手法</a>
+          <a href="../baduanjin-taijiquan-wellness/main.html">八段锦与太极养生</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer"><p>伤寒论六经辨证 · 经典框架、证候关系与现代安全边界 · 更新于 2026-10-25</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "scannedAt": "2026-10-25",
+  "framework": "vanilla-html",
+  "fontStack": "Existing knowledge bases use Chinese serif display and sans-serif body fallbacks",
+  "palette": "Existing repository and related knowledge bases use OKLCH design tokens",
+  "motion": "No motion library; motion-cut editorial stance",
+  "spacing": "4-point semantic scale",
+  "preserve": [
+    "repository index conventions",
+    "main.html entry",
+    "data-site-home navigation",
+    "dark mode and focus visibility"
+  ]
+}
