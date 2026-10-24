@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "黑格尔辩证法",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-25",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "不是“正反合”公式",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "黑格尔辩证法为什么不能被还原成把任何争论塞进“正题—反题—合题”的三步公式，它真正要求我们怎样观看一个概念或制度的运动？",
+      "readerStateBefore": "读者把辩证法理解为外部套用的三段论、双方折中或一句“事物都有两面”，难以说明黑格尔的方法究竟多做了什么。",
+      "readerStateAfter": "读者能够把辩证法理解为从对象自身的有限规定出发，经历固定、失稳与重新把握的运动，并识别“正反合”图式的误导。",
+      "priorConclusion": "",
+      "coreExample": "一场虚构的公民大会宣布：真正的自由要求每个人直接参与每一项共同决定，任何代表、分工与稳定程序都会背叛共同意志；这条原则随后在自己的实践中暴露困难。",
+      "conclusion": "黑格尔辩证法不是外加于材料的三步模板，而是追踪一个有限规定如何因自身所排除和依赖的东西而失稳，并在更具体的规定中被重新理解。",
+      "nextQuestion": "如果运动来自一个规定自身的有限性，那么否定怎样产生有内容的新规定，而不是只把旧事物推翻或把对立双方折中？",
+      "nextPage": "negation-and-sublation.html",
+      "newTerms": [
+        { "term": "辩证法", "definition": "追踪概念或形态如何因自身规定的有限性而发生转化，并在更具体关系中被重新把握的思考方式。" },
+        { "term": "知性", "definition": "把对象分开、命名并固定为清楚规定的思维能力；它必不可少，但若停在这里就会把有限规定当成绝对。" },
+        { "term": "否定理性", "definition": "让固定规定显出自己的片面性并转入对立面的环节，是黑格尔所谓逻辑运动的否定侧面。" },
+        { "term": "思辨理性", "definition": "不把对立简单抹平，而是在新的整体关系中把握它们的区别、联系与正面结果的能力。" }
+      ]
+    },
+    {
+      "file": "negation-and-sublation.html",
+      "title": "否定为什么能向前",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.64,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "如果运动来自一个规定自身的有限性，那么否定怎样产生有内容的新规定，而不是只把旧事物推翻或把对立双方折中？",
+      "readerStateBefore": "读者能够把辩证法理解为从对象自身的有限规定出发，经历固定、失稳与重新把握的运动，并识别“正反合”图式的误导。",
+      "readerStateAfter": "读者能够用内在矛盾、规定性否定、扬弃和中介解释辩证运动，区分有内容的转化、空洞反对与随意折中。",
+      "priorConclusion": "黑格尔辩证法不是外加于材料的三步模板，而是追踪一个有限规定如何因自身所排除和依赖的东西而失稳，并在更具体的规定中被重新理解。",
+      "coreExample": "公民大会为了确保所有人都直接决定一切而取消常设分工，却不得不指定议程、记录表决和执行决定；这些被排除的中介重新出现，并迫使大会重新规定自由与共同意志。",
+      "conclusion": "辩证的否定之所以能向前，是因为它否定的是一个确定规定的片面性，同时保留其有效内容，并把原先被遮蔽的关系纳入更具体的新规定。",
+      "nextQuestion": "当这种概念运动进入人与人、社会制度和政治国家时，它能帮助我们判断权力与自由到什么程度，又会在哪些地方被误用？",
+      "nextPage": "freedom-and-power.html",
+      "newTerms": [
+        { "term": "矛盾", "definition": "一个规定要成为它自己却又依赖、产生或转入自己所排除之物的内在张力，而非任意两句话互相反对。" },
+        { "term": "规定性否定", "definition": "由被否定对象的具体内容决定、因而产生新内容的否定，不是把一切归零的空洞否定。" },
+        { "term": "扬弃", "definition": "黑格尔对 aufheben 的技术性用法：一个环节被取消其独立地位，同时又被保存并提升到更具体的关系中。" },
+        { "term": "中介", "definition": "事物通过关系、过程或制度条件才成为它自身的连接环节，反面是把结果当作无需条件的直接存在。" }
+      ]
+    },
+    {
+      "file": "freedom-and-power.html",
+      "title": "从承认到政治判断",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.64,
+      "dependsOn": ["negation-and-sublation.html"],
+      "readerQuestion": "当这种概念运动进入人与人、社会制度和政治国家时，它能帮助我们判断权力与自由到什么程度，又会在哪些地方被误用？",
+      "readerStateBefore": "读者能够用内在矛盾、规定性否定、扬弃和中介解释辩证运动，区分有内容的转化、空洞反对与随意折中。",
+      "readerStateAfter": "读者能够用相互承认、抽象自由与具体自由区分支配关系、制度条件和历史叙事，并拒绝把黑格尔变成胜者必然正确的权谋公式。",
+      "priorConclusion": "辩证的否定之所以能向前，是因为它否定的是一个确定规定的片面性，同时保留其有效内容，并把原先被遮蔽的关系纳入更具体的新规定。",
+      "coreExample": "重新设计后的公民大会保留个人发言与反对权，同时承认议程、代表、司法与执行等制度中介；读者据此检验制度是否让个体在共同规则中获得承认，还是借“整体”之名压制异议。",
+      "conclusion": "黑格尔式政治判断的价值不在替胜利者证明必然性，而在检查自由是否获得相互承认和可持续制度形式；任何以整体、历史或扬弃之名取消个体权利与纠错空间的做法，都不能仅凭辩证术语取得正当性。",
+      "nextQuestion": "面对平台治理、社会冲突或组织改革，我们怎样在不预设历史终点的前提下，继续检验哪些矛盾真正来自制度内部、哪些所谓综合只是权力包装？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "承认", "definition": "自我意识通过其他自由主体的回应确认自身地位，并在相互关系中获得现实性的过程。" },
+        { "term": "主奴辩证法", "definition": "《精神现象学》中支配与服从因承认不对称而暴露不稳定性的意识形态，不是一套统治术。" },
+        { "term": "抽象自由", "definition": "只把自由理解为摆脱一切限制、保留纯粹选择，而忽略行动成立所需关系与制度的自由观。" },
+        { "term": "具体自由", "definition": "个人权利与特殊利益在家庭、市民社会和政治制度中得到承认，并能把共同规则理解为自身行动条件的自由。" },
+        { "term": "市民社会", "definition": "黑格尔用来分析家庭之外、国家之内由需要交换、劳动分工、司法和团体组织构成的社会领域。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "原著坐标与解释争论",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.48,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}
