@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "沙盒游戏与涌现玩法",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-10-25",
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "世界不写下一步",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": [],
+      "readerQuestion": "沙盒游戏为何能让玩家产生设计者没有逐段编排的玩法，而不只是提供更大的地图或更多内容？",
+      "readerStateBefore": "读者把沙盒游戏理解为地图很大、任务很多或可以随便行动，却难以说明自由度与涌现玩法有什么区别。",
+      "readerStateAfter": "读者能够把沙盒理解为由规则、可操作对象与持续世界构成的可能性空间，并能区分内容数量、行动自由与涌现玩法。",
+      "priorConclusion": "",
+      "coreExample": "在一个方块生存世界里，夜幕将至，玩家要保住刚找到的食物与栖身处；同一组采集、建造、光照、生物与昼夜规则允许挖洞、筑墙、引怪、设陷阱或连夜迁徙。",
+      "conclusion": "沙盒感不来自没有规则，而来自少量可理解、可组合且对世界持续生效的规则；当玩家能用这些规则形成设计者未逐段写好的解决方案时，玩法才表现出涌现。",
+      "nextQuestion": "既然涌现依赖可组合且持续生效的规则，一次看似意外的玩法究竟怎样从规则、世界状态与反馈循环中长出来？",
+      "nextPage": "mechanisms.html",
+      "newTerms": [
+        { "term": "沙盒游戏", "definition": "把一组可重复使用的行动和世界规则交给玩家，让目标与路径可以由玩家较大程度自行组织的游戏。" },
+        { "term": "可能性空间", "definition": "一套规则与可用行动共同允许玩家到达的全部局面和行动路径。" },
+        { "term": "涌现玩法", "definition": "由简单规则彼此作用并结合玩家选择而出现、未被设计者逐段预先编排的玩法过程。" },
+        { "term": "进程结构", "definition": "按设计者预先安排的顺序逐步引入关卡、谜题或剧情挑战的组织方式。" }
+      ]
+    },
+    {
+      "file": "mechanisms.html",
+      "title": "规则怎样长出故事",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然涌现依赖可组合且持续生效的规则，一次看似意外的玩法究竟怎样从规则、世界状态与反馈循环中长出来？",
+      "readerStateBefore": "读者能够把沙盒理解为由规则、可操作对象与持续世界构成的可能性空间，并能区分内容数量、行动自由与涌现玩法。",
+      "readerStateAfter": "读者能够沿着输入、局部规则、世界状态、反馈与玩家再决策的循环，解释一个涌现局面如何形成，并识别规则可组合性的作用。",
+      "priorConclusion": "沙盒感不来自没有规则，而来自少量可理解、可组合且对世界持续生效的规则；当玩家能用这些规则形成设计者未逐段写好的解决方案时，玩法才表现出涌现。",
+      "coreExample": "夜幕前的据点从一面临时土墙开始：光照改变生物出现位置，水流搬动物品，红石信号驱动机关，玩家观察结果后再修改结构，最终形成设计图上没有写明的防御与生产系统。",
+      "conclusion": "涌现不是规则自己凭空创造奇迹，而是通用规则在共享状态中连续作用，玩家读取反馈并再次介入，使一个局部变化能够跨系统传播并形成新的策略。",
+      "nextQuestion": "如果复杂结果可能只是漏洞、重复劳动或难以理解的混乱，我们应怎样判断一个沙盒是否真的产生了有意义的涌现玩法？",
+      "nextPage": "judgment.html",
+      "newTerms": [
+        { "term": "世界状态", "definition": "某一时刻世界中位置、资源、对象属性、关系和事件记录的总体情况。" },
+        { "term": "反馈循环", "definition": "行动改变世界，变化又成为玩家下一次判断依据，并继续影响后续行动的往复过程。" },
+        { "term": "系统性设计", "definition": "让对象遵守可复用的共同规则，使不同对象和行动能跨场景相互作用的设计方法。" },
+        { "term": "可供性", "definition": "环境或对象通过形状、位置和反馈向玩家提示它可以怎样被使用。" },
+        { "term": "正反馈", "definition": "某种变化会强化自身，使优势、风险或资源积累越来越快的循环。" }
+      ]
+    },
+    {
+      "file": "judgment.html",
+      "title": "自由不等于好玩",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.62,
+      "dependsOn": ["mechanisms.html"],
+      "readerQuestion": "如果复杂结果可能只是漏洞、重复劳动或难以理解的混乱，我们应怎样判断一个沙盒是否真的产生了有意义的涌现玩法？",
+      "readerStateBefore": "读者能够沿着输入、局部规则、世界状态、反馈与玩家再决策的循环，解释一个涌现局面如何形成，并识别规则可组合性的作用。",
+      "readerStateAfter": "读者能够从规则可读性、选择后果、解法差异、反馈质量与失控成本判断涌现是否有意义，也能看出沙盒与进程结构可以混合。",
+      "priorConclusion": "涌现不是规则自己凭空创造奇迹，而是通用规则在共享状态中连续作用，玩家读取反馈并再次介入，使一个局部变化能够跨系统传播并形成新的策略。",
+      "coreExample": "把夜幕据点的多种防御方案放到同一组判断标准下：它们是否真的利用了相互作用的规则，失败是否可理解，修正是否产生新决策，以及最优套路是否挤掉其他选择。",
+      "conclusion": "有意义的涌现要求玩家能理解因果、承担后果并形成彼此有差异的方案；优秀沙盒会用约束、反馈与适度的作者设计修剪可能性空间，而不是把无限自由本身当作品质。",
+      "nextQuestion": "当下一款游戏宣称拥有自由世界、系统玩法或无限可能时，我们能否追问它提供了哪些可组合规则、可读反馈与值得承担的后果？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "主导策略", "definition": "在多数情境下都明显优于其他方案，因而会把玩家选择挤向同一路径的做法。" },
+        { "term": "退化玩法", "definition": "规则允许但会持续压缩选择、破坏挑战或迫使玩家重复单调操作的玩法模式。" },
+        { "term": "作者设计", "definition": "由设计者直接安排的关卡、事件、任务或叙事节拍，用来塑造体验的结构。" },
+        { "term": "生成式叙事", "definition": "故事主要由角色、规则与世界事件的互动结果形成，而非完全依照预写剧情展开。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.5,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

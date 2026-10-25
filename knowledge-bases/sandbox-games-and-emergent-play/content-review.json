@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-10-25T23:30:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "沙盒游戏为何能让玩家产生设计者没有逐段编排的玩法，而不只是提供更大的地图或更多内容？",
+      "readerStateChange": "读前把沙盒等同于地图大、任务多和限制少；读后能用规则可组合、后果持续和玩家自定目标解释沙盒感，并区分内容数量、自由度与涌现。",
+      "twoSentenceSummary": "页面从夜幕前修建据点的具体压力出发，把沙盒定义为规则与行动构成的可能性空间。它进一步区分涌现和进程结构，说明有限规则如何支持未被逐段编排的解法与个人记忆。",
+      "continuityEvidence": "结尾指出意外可能是创造也可能是漏洞，并明确把阅读推进到共享状态、反馈和规则组合的机制分析；下一页正从土墙如何改变路径与资源开始承接。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "mechanisms.html",
+      "centralQuestion": "既然涌现依赖可组合且持续生效的规则，一次看似意外的玩法究竟怎样从规则、世界状态与反馈循环中长出来？",
+      "readerStateChange": "读前知道规则组合会产生不同解法；读后能沿输入、共享状态、反馈和再决策的闭环复述涌现过程，也能说明规则通用性、模拟分辨率和玩家目的的作用。",
+      "twoSentenceSummary": "页面追踪一面土墙怎样通过路径、光照、资源和时间尺度进入共享状态，并经反馈引导玩家继续修改据点。它用红石组合与任天堂开发者的“乘法”说明通用规则的力量，同时交代互通系统的测试、性能和社会成本。",
+      "continuityEvidence": "页面开头沿用入口页的夜幕据点，结尾则从反馈不可读、循环无限增强和枯燥重复三个风险推出质量判断问题，为下一页的可读性、后果与退化玩法标准提供直接前提。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "judgment.html",
+      "centralQuestion": "如果复杂结果可能只是漏洞、重复劳动或难以理解的混乱，我们应怎样判断一个沙盒是否真的产生了有意义的涌现玩法？",
+      "readerStateChange": "读前只能解释涌现如何发生；读后能从规则可学、反馈可读、方案差异、后果持续与修正空间评价质量，并识别主导策略、退化玩法和作者设计的互补作用。",
+      "twoSentenceSummary": "页面用夜幕据点的墙、水渠、陷阱和迁徙比较方案是否真正改变资源、风险和后续问题。它说明复杂系统也会产生主导套路与社会成本，并把作者设计、进程结构和生成式叙事放回同一套因果判断中。",
+      "continuityEvidence": "本页逐项回答上一页留下的三个风险，并在结尾把标准转化为面对新游戏宣传时可使用的问题；开放问题不再需要新叙事页，来源页提供概念与案例核验。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文中的概念转述；读后能定位涌现与进程、MDA、系统设计以及三个游戏实例的一手或权威来源，并理解各来源的适用边界。",
+      "twoSentenceSummary": "页面列出 DiGRA 论文、Game Studies 理论梳理、MDA 原论文、MIT Press 书目与 Minecraft、任天堂、GDC 的开发者材料。每条资料都说明正文借用了什么，也说明它不能独自证明什么。",
+      "continuityEvidence": "来源页按结构、动态、系统和案例回溯前三页的关键主张，提供返回判断页与知识库入口的可见链接，使研究证据与阅读导航同时闭合。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
