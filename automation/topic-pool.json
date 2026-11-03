@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4194,6 +4194,13 @@
       "generatedAt": "2026-11-03",
       "slug": "clinical-trials-evidence-based-medicine",
       "entry": "knowledge-bases/clinical-trials-evidence-based-medicine/main.html"
+    },
+    {
+      "name": "丝绸之路与文明交流",
+      "domain": "历史/军事",
+      "generatedAt": "2026-11-04",
+      "slug": "silk-road-civilizational-exchange",
+      "entry": "knowledge-bases/silk-road-civilizational-exchange/main.html"
     }
   ],
   "skipped": []

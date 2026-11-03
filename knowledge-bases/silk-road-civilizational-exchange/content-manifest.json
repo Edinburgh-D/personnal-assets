@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "丝绸之路与文明交流",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "createdAt": "2026-11-04",
+  "showCreatedAt": true,
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "路不是一条线",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者熟悉驼队、丝绸和张骞等符号，却容易把欧亚交流想成一条从中国直达欧洲的固定商道。",
+      "readerStateAfter": "读者能够把丝绸之路理解为随政治与环境变化的陆海网络，并开始从节点、分段旅程和中介人观察交流。",
+      "readerQuestion": "为什么把丝绸之路想成一条从东方直达西方的道路，会遮蔽文明交流真正发生的方式？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "以四世纪初写于河西走廊、后在敦煌附近发现的粟特古信札为线索，追踪一封商业书信怎样显露城市、商人侨团、政治危机与分段交通。",
+      "newTerms": [
+        {
+          "term": "丝绸之路",
+          "definition": "近代形成的总称，用来概括古代欧亚大陆及相连海域中不断变化的交通、贸易和交流网络。"
+        },
+        {
+          "term": "绿洲城市",
+          "definition": "依靠水源维持农业、补给与聚落，并在干旱地带连接不同路段的城市节点。"
+        },
+        {
+          "term": "粟特人",
+          "definition": "主要来自中亚粟特地区、使用东伊朗语支语言的人群，其中不少人在中古时期经营跨区域贸易。"
+        },
+        {
+          "term": "交通走廊",
+          "definition": "受山口、水源、道路与政治控制共同限定，较适合人员和物资连续通行的带状空间。"
+        }
+      ],
+      "conclusion": "所谓丝绸之路不是一条不变的东西向商道，而是由城市、港口、草原与山口构成的多中心网络；交流通常依靠分段接力和地方中介完成。",
+      "nextQuestion": "既然跨洲交流依靠许多人分段完成，商品、宗教和技术怎样穿过语言、制度与文化边界，并在目的地变成新的事物？",
+      "nextPage": "how-exchange-worked.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "how-exchange-worked.html",
+      "title": "中介者让远方彼此可懂",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把丝绸之路理解为随政治与环境变化的陆海网络，并开始从节点、分段旅程和中介人观察交流。",
+      "readerStateAfter": "读者能够用接力、信任、翻译、赞助和地方改造解释商品与观念如何跨越边界，而不再诉诸笼统的东西方相遇。",
+      "readerQuestion": "既然跨洲交流依靠许多人分段完成，商品、宗教和技术怎样穿过语言、制度与文化边界，并在目的地变成新的事物？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "所谓丝绸之路不是一条不变的东西向商道，而是由城市、港口、草原与山口构成的多中心网络；交流通常依靠分段接力和地方中介完成。",
+      "coreExample": "继续追踪粟特古信札背后的写信人、收信人、代理人和商站，再与敦煌佛教写本及图像的翻译、抄写和供养过程对照。",
+      "newTerms": [
+        {
+          "term": "接力贸易",
+          "definition": "货物经多名商人和多个市场逐段转手，而不是由同一人从起点运到终点的长距离贸易方式。"
+        },
+        {
+          "term": "商人侨团",
+          "definition": "商人在异地长期居住并以亲缘、乡缘、语言和信用维持合作的社群。"
+        },
+        {
+          "term": "文化翻译",
+          "definition": "把外来概念转入本地语言和习惯，同时重新解释其含义与用途的过程。"
+        },
+        {
+          "term": "赞助网络",
+          "definition": "由统治者、寺院、商人、地方家族等提供资源，使旅行、抄写、建造和教学得以延续的关系网。"
+        },
+        {
+          "term": "再语境化",
+          "definition": "一种物品或观念进入新环境后，被赋予新的形式、功能和社会意义。"
+        }
+      ],
+      "conclusion": "文明交流不是物品沿道路自动扩散，而是中介者在制度保护和社会信任下完成接力，再通过翻译、赞助与地方选择把外来资源改造成可被理解的新形式。",
+      "nextQuestion": "如果流动总伴随选择与权力，我们应怎样区分可靠的交流史、浪漫化的丝路故事和把复杂变化归因于单一来源的影响论？",
+      "nextPage": "reading-exchange-critically.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "reading-exchange-critically.html",
+      "title": "连接从来不是中性的",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够用接力、信任、翻译、赞助和地方改造解释商品与观念如何跨越边界，而不再诉诸笼统的东西方相遇。",
+      "readerStateAfter": "读者能够从证据、尺度、方向、权力和地方改造五个方面判断交流主张，并同时看见连接带来的创造与代价。",
+      "readerQuestion": "如果流动总伴随选择与权力，我们应怎样区分可靠的交流史、浪漫化的丝路故事和把复杂变化归因于单一来源的影响论？",
+      "dependsOn": [
+        "how-exchange-worked.html"
+      ],
+      "priorConclusion": "文明交流不是物品沿道路自动扩散，而是中介者在制度保护和社会信任下完成接力，再通过翻译、赞助与地方选择把外来资源改造成可被理解的新形式。",
+      "coreExample": "回到粟特古信札对洛阳动乱、饥荒与通信中断的报告，检验同一网络如何既创造商机和知识流动，也暴露侨团于战争、征税和强制迁徙。",
+      "newTerms": [
+        {
+          "term": "网络视角",
+          "definition": "把历史变化放在节点、关系、流量和中断中观察，而不是只寻找一条起点到终点的直线。"
+        },
+        {
+          "term": "物质文化",
+          "definition": "人类制造、使用和赋义的器物、建筑、图像与材料，它们能留下跨区域接触的证据。"
+        },
+        {
+          "term": "选择性吸收",
+          "definition": "社会接受外来资源的一部分并拒绝、改写或忽略其他部分的过程。"
+        },
+        {
+          "term": "结构性不平等",
+          "definition": "由制度与资源分配长期形成，使不同群体在移动、获利和承担风险方面处于不对等位置的状态。"
+        }
+      ],
+      "conclusion": "可靠的交流史既要追踪物品与观念的流动，也要核对中介、地方改造和权力代价；丝路的意义正在于多中心联系，而不是证明某个文明单向塑造了世界。",
+      "nextQuestion": "面对任何声称某种物品、宗教或技术源自远方并沿丝路传播的说法，我们能否先查清证据链、中介环节、地方改造和谁承担了代价？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.58
+    },
+    {
+      "file": "sources.html",
+      "title": "史料、来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [
+        "main.html",
+        "how-exchange-worked.html",
+        "reading-exchange-critically.html"
+      ],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800,
+      "minProseRatio": 0.35
+    }
+  ],
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  }
+}

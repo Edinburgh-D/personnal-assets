@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "framework": "vanilla-html",
+  "fontStack": "repository knowledge bases use paired Chinese serif and sans families",
+  "palette": "repository uses per-knowledge-base OKLCH tokens",
+  "motion": "motion-cut for long-form reading",
+  "spacing": "4pt semantic scale",
+  "preserved": ["standalone tokens.css", "shared page navigation", "dark mode", "responsive long-form layout"]
+}

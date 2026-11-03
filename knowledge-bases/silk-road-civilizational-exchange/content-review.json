@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "disk-reread-reader-pass",
+  "reviewedAt": "2026-11-04T02:00:00+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "为什么把丝绸之路想成一条从东方直达西方的道路，会遮蔽文明交流真正发生的方式？",
+      "readerStateChange": "读前只有驼队、丝绸和东西方直线的常见图像；读后能够从陆海网络、绿洲节点、分段旅程和粟特中介理解路线。",
+      "twoSentenceSummary": "入口页先说明名称的近代性不等于古代联系不存在，再把静态道路还原为随水源、政权与风险变化的网络。粟特古信札让宏观地图落到商人通信、侨团和中断的具体经验。",
+      "continuityEvidence": "结尾指出地图只能定位，真正的交流还要解释货物、语言与观念如何经中介被处理，直接引出机制页。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "how-exchange-worked.html",
+      "centralQuestion": "既然跨洲交流依靠许多人分段完成，商品、宗教和技术怎样穿过语言、制度与文化边界，并在目的地变成新的事物？",
+      "readerStateChange": "读前只知道网络由许多节点组成；读后能用接力、侨团信任、翻译、赞助和地方改造解释跨边界传播。",
+      "twoSentenceSummary": "本篇把贸易拆成逐段换手与关系担保，并用粟特商人社群说明远距离信用如何形成。随后以佛教文本、敦煌图像和造纸经验说明，观念与技术必须经过翻译、供养和地方重组。",
+      "continuityEvidence": "开头承接分段网络，结尾明确指出交流依赖选择和权力，由此自然推进到如何辨别影响与浪漫化叙事。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "reading-exchange-critically.html",
+      "centralQuestion": "如果流动总伴随选择与权力，我们应怎样区分可靠的交流史、浪漫化的丝路故事和把复杂变化归因于单一来源的影响论？",
+      "readerStateChange": "读前能解释传播机制却缺少判断边界；读后能够核对证据、时间、中介、地方改造与权力代价，并保留不确定性。",
+      "twoSentenceSummary": "本篇从器物、文书和断代说明交流主张需要完整证据链，也说明接受者会选择、拒绝并改造外来资源。它进一步把战争、征税、强制迁徙与收藏史放回连接叙事，避免把流动写成天然和谐。",
+      "continuityEvidence": "本篇承接翻译和赞助机制，最后把它们转化为五项可迁移的判断次序，并以开放问题指向新的传播案例。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只看到正文中的简要来源提示；读后能够区分公共历史入口、数字馆藏与研究条目，并继续核对具体材料。",
+      "twoSentenceSummary": "资料页列出 UNESCO、国际敦煌项目、英国博物馆、大都会艺术博物馆和《伊朗百科全书》的直接入口。每条说明对应支持范围与使用边界，避免把公共展览文字当成所有争议的最终结论。",
+      "continuityEvidence": "它承接三篇正文中的来源提示，并提供返回判断篇和入口页的双向导航，形成完整可达的阅读闭环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}
