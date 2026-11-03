@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>一项试验之后，证据才开始汇合｜临床试验与循证医学</title>
+  <meta name="description" content="把单项试验放进系统综述与证据确定性判断，区分效果、确定性和建议，并理解适用性与共同决策。">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-dark-mode-storage="kb_darkMode">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="side-rail" aria-label="学习路径快捷导航">
+    <a class="rail-mark" href="main.html">证据路径</a>
+    <ol class="rail-steps">
+      <li><a href="main.html" aria-label="第一阶段：比较">01</a></li>
+      <li><a href="trial-design.html" aria-label="第二阶段：设计">02</a></li>
+      <li><a href="from-results-to-evidence.html" aria-current="page" aria-label="第三阶段：判断">03</a></li>
+      <li><a href="sources.html" aria-label="来源与边界">S</a></li>
+    </ol>
+  </nav>
+
+  <header class="top-mast">
+    <div class="mast-row">
+      <a class="mast-brand" href="main.html">证据路径</a>
+      <div class="mast-actions">
+        <a class="mast-home" href="../../index.html" data-site-home>Personal Assets</a>
+        <button class="theme-toggle mast-theme" type="button" data-theme-toggle aria-pressed="false">切换深色</button>
+        <details class="mobile-nav nav-menu-btn">
+          <summary>目录</summary>
+          <div class="mobile-nav__panel">
+            <a href="main.html">为什么要比较</a>
+            <a href="trial-design.html">怎样减少偏差</a>
+            <a href="from-results-to-evidence.html" aria-current="page">怎样形成决策</a>
+            <a href="sources.html">来源与边界</a>
+            <button class="theme-toggle mobile-theme" type="button" data-theme-toggle aria-pressed="false">切换深色</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">知识库总览</a><span aria-hidden="true">/</span><a href="main.html">临床试验与循证医学</a><span aria-hidden="true">/</span><span>证据与决策</span>
+    </nav>
+    <div class="reading-grid">
+      <aside class="path-index" aria-label="完整学习路径">
+        <p>Evidence route</p>
+        <ol>
+          <li><a href="main.html"><span class="path-no">01</span><span class="path-label">为什么要比较</span></a></li>
+          <li><a href="trial-design.html"><span class="path-no">02</span><span class="path-label">怎样减少偏差</span></a></li>
+          <li><a href="from-results-to-evidence.html" aria-current="page"><span class="path-no">03</span><span class="path-label">怎样形成决策</span></a></li>
+          <li><a href="sources.html"><span class="path-no">S</span><span class="path-label">来源与边界</span></a></li>
+        </ol>
+      </aside>
+
+      <main id="content" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">随机分配、分配隐藏、盲法、预先注册和完整随访各自控制不同偏差，任何一个标签都不能单独保证可信；效果估计必须与绝对差异、不确定范围、缺失数据、伤害和实际执行一起解释。</template>
+        <template data-narrative="question">即使一项试验设计严谨、结果透明，我们怎样判断它能否代表全部研究、能否适用于眼前的人，并最终支持一个而不是另一个医疗选择？</template>
+        <template data-narrative="example">哮喘吸入治疗出现多项研究后，证据评估者需要比较研究人群、对照、随访和结局，检查结果是否一致，并把疗效、伤害、使用负担与患者偏好放进同一决策。</template>
+        <template data-narrative="conclusion">循证医学不是按证据等级自动开处方，而是先综合所有相关研究并判断每个结局的确定性，再结合适用性、获益与伤害、资源以及个人价值作出可复核决定；单项试验提供线索，不等于个人医疗指令。</template>
+        <template data-narrative="next-question">当新的试验、长期伤害资料或个人目标出现时，哪些证据判断需要更新，哪些透明、比较和共同决策原则仍应保持不变？</template>
+
+        <header class="phase-header">
+          <p class="phase-kicker">03 · 从证据到决定</p>
+          <h1>一项试验之后，证据才开始汇合</h1>
+          <p class="lede">一项好试验回答一个清楚问题。医疗决定却要面对全部研究、多个结局、现实差异，以及一个具体的人愿意承担什么。</p>
+        </header>
+
+        <article class="prose">
+          <section aria-labelledby="whole-title">
+            <h2 id="whole-title">单篇论文很醒目，完整证据往往分散</h2>
+            <p class="opening">哮喘吸入治疗的第一项大型试验报告了较少发作，很快进入新闻标题。几个月后，另一项研究没有观察到同样幅度，第三项研究纳入了年龄更大、合并疾病更多的人。若只挑最早、最大或最令人兴奋的一篇，结论会随着选择哪篇论文而改变。</p>
+            <p><dfn data-term="系统综述">系统综述</dfn>先把问题和方法写清，再系统寻找、筛选、评价并综合全部合格研究。它与普通叙述性回顾的区别，不在于文章更长，而在于选择研究的过程可追踪。检索范围、纳入标准、重复研究处理和偏倚评价都会影响最后看到的证据。</p>
+            <p>系统综述也不是自动正确。检索可能漏掉未发表试验，纳入标准可能在看到结果后改变，评价也会包含判断。好的综述会公开方案与检索日期，说明排除理由，并把研究差异和局限写进结论。注册平台和结果报告因此不仅服务单项试验，也帮助综述者发现没有进入期刊的研究。</p>
+            <p>证据还会过时。新的试验可能缩小不确定范围，也可能揭示早期研究没有发现的伤害或人群差异。持续更新的综述会明确上次检索时间和更新触发条件。读者看到结论时，应把日期当成证据的一部分，而不是把“系统综述”四个字当成永久有效的保证。</p>
+            <p>当研究在参与者、干预、比较和结局上足够可比时，综述者可能进行<dfn data-term="荟萃分析">荟萃分析</dfn>，用统计方法合并多个效果估计。合并可以提高精确度，也能展示研究之间是否一致。但它不会把不可比的问题变成同一个问题，更不会用一个菱形图形洗掉原始研究的偏倚。</p>
+            <p>Cochrane 手册明确提醒，荟萃分析可能严重误导，尤其在研究设计、研究内偏倚、研究差异和报告偏倚没有被认真考虑时。<a class="source-cite" href="sources.html#s9" aria-label="查看来源 9">[9]</a> 研究间结果不同，可能来自人群、剂量、随访、测量或偏倚，也可能是真实效果确实因情境而变。合并后的平均值不能替代对差异来源的解释。</p>
+
+            <figure class="evidence-chain" role="img" aria-label="证据从单项研究，经系统寻找、偏倚评价和可比性判断，进入综合与决策。任何一步都可能让确定性降低。">
+              <figcaption>证据汇合不是简单相加</figcaption>
+              <div class="chain-grid" aria-hidden="true">
+                <div class="chain-cell"><strong>找到研究</strong><span>包括不利与未发表结果</span></div>
+                <div class="chain-cell"><strong>评价研究</strong><span>看设计执行和选择性报告</span></div>
+                <div class="chain-cell"><strong>解释差异</strong><span>确认问题是否足够可比</span></div>
+                <div class="chain-cell"><strong>支持决定</strong><span>结合确定性与现实情境</span></div>
+              </div>
+            </figure>
+            <p>对哮喘治疗而言，若各试验对“发作”的定义不同、随访长短差别很大，直接合并会掩盖重要区别。若一组研究主要来自设备使用训练充分的专科中心，现实基层使用效果也可能较弱。综述的价值不是产出一个统一数字，而是把证据全景、分歧与空白一起呈现。</p>
+          </section>
+
+          <section aria-labelledby="certainty-title">
+            <h2 id="certainty-title">效果大小与我们有多确定，是两条不同坐标</h2>
+            <p>一项研究可以报告很大的效果，但数据少、偏倚风险高或与目标人群差距大。另一组研究可能只显示较小效果，却在不同环境中重复出现，并有较窄的不确定范围。只看数字大小，会把“看起来更强”误当成“更值得相信”。</p>
+            <p><dfn data-term="证据确定性">证据确定性</dfn>描述我们对某个结局的真实效果落在特定范围或重要阈值一侧有多大把握。GRADE 将它分为高、中、低和极低四级，评价对象是某个问题、某个结局的整体证据，而不是给每篇论文发一个总分。<a class="source-cite" href="sources.html#s10" aria-label="查看来源 10">[10]</a></p>
+            <p>随机试验的整体证据通常从较高起点考虑，但可能因五类问题降低：研究本身有偏倚风险；结果彼此不一致；研究与目标问题不够直接；估计不精确；不利或无差异结果可能缺失。等级不是对研究者努力的评价，而是对结论稳定性的说明。</p>
+            <p>确定性还必须逐个结局判断。哮喘治疗减少发作的证据可能较确定，长期罕见伤害却因随访短、事件少而很不确定。不能因为疗效证据强，就把安全性也自动评为强。反过来，伤害资料不足也不等于治疗已经被证明不安全，只表示决策要承认未知。</p>
+            <dl class="lens-list">
+              <div><dt>偏倚风险</dt><dd>分组、执行、缺失、测量或选择报告是否可能系统扭曲结果。</dd></div>
+              <div><dt>不一致</dt><dd>不同研究的方向或幅度为何不同，差异是否能由人群与方法解释。</dd></div>
+              <div><dt>不精确</dt><dd>不确定范围是否跨过会改变决定的重要阈值。</dd></div>
+              <div><dt>发表与报告偏倚</dt><dd>是否可能缺少未发表试验、未报告结局或不利分析。</dd></div>
+            </dl>
+            <p>GRADE 的最新官方材料强调，确定性应围绕决策阈值和绝对效果来理解。<a class="source-cite" href="sources.html#s10" aria-label="查看来源 10">[10]</a> 这比问“结果是否显著”更接近临床：真实效果若落在某个范围内，是否会让人改变选择？如果范围跨过“值得用”和“不值得用”的界线，决定就仍有关键不确定。</p>
+          </section>
+
+          <section aria-labelledby="fit-title">
+            <h2 id="fit-title">研究回答的是某类人，不是抽象的所有人</h2>
+            <p>试验可信，并不保证它与眼前的人完全相符。<dfn data-term="间接性">间接性</dfn>指现有研究在人群、干预、比较或结局上与要做的决定存在距离。这个距离不一定使证据无用，但需要明确说明，并可能降低我们对直接适用的把握。</p>
+            <p>哮喘试验若排除了孕妇、老人、严重合并疾病患者或吸入技术困难者，就不能假设结果对这些人毫无变化地成立。试验使用的随访密度、免费药物和专门培训，也可能与日常照护不同。研究中的“治疗”往往是一整套交付方式，而不只是药物分子。</p>
+            <p>适用性判断不能靠“与试验受试者不同，所以证据无关”简单结束。应该看哪些差异可能改变基础风险、相对效果、伤害或执行。年龄本身未必改变药效，却可能改变不良反应、合并用药和绝对获益。基础风险越高，同样相对效果可能带来更大的绝对收益。</p>
+            <p>亚组结果常被用来寻找“对谁更有效”。但在许多亚组和结局中反复比较，很容易偶然得到差异。更可信的亚组判断通常来自预先提出的机制、正式的组间差异检验、不同研究中的重复，以及效果方向和幅度的一致解释。只因某一亚组达到统计门槛而另一组没有，并不能证明两组效果不同。</p>
+            <p>观察性研究也不应被一概放到“低等级、无需看”的角落。随机试验适合估计许多干预效果，但罕见或长期伤害、现实使用、预后和暴露问题可能主要依赖其他设计。证据类型要与问题匹配。研究层级是起点，不是免于具体评价的快捷答案。</p>
+            <p>同样，机制合理、专家经验和个体病例都能提供信息，却不能自动替代比较证据。机制告诉我们一种作用是否可能，病例提醒我们发生了什么，比较研究估计平均因果效果。它们回答不同问题，强行排成一条永远不变的单线等级会损失信息。</p>
+          </section>
+
+          <section aria-labelledby="decision-title">
+            <h2 id="decision-title">建议不是证据的自动输出</h2>
+            <p>即使证据确定性较高，医疗选择仍要权衡获益、伤害、负担、资源与个人价值。一个治疗能轻度改善症状，却需要频繁监测、费用高或操作复杂。不同患者对这些代价的看法可能不同。证据告诉我们可能发生什么，不独自决定什么最值得追求。</p>
+            <p>指南制定者还要考虑公平性、可及性和卫生系统条件。因此，强建议与高确定性不是同义词，条件性建议也不等于“证据很差”。GRADE 把证据确定性与建议强度明确分开，要求说明净效应、价值偏好、资源和可行性等判断。<a class="source-cite" href="sources.html#s10" aria-label="查看来源 10">[10]</a></p>
+            <p><dfn data-term="共同决策">共同决策</dfn>把最佳可得证据、专业判断与患者目标放在一起。它不是把所有责任丢给患者，也不是医生列完方案后让患者签字。双方需要共享可理解的绝对获益与伤害、尚不确定之处、替代方案，以及什么结果对这个人最重要。</p>
+            <p>回到新吸入治疗，若一个人近期发作频繁、现行治疗控制不足，他可能更重视减少发作，也愿意接受额外监测。另一个人病情稳定，却很担心某类不良反应，可能更倾向继续现有方案。两种选择都应建立在同一份诚实证据上，而不是由广告、论文标题或“最新”二字替代权衡。</p>
+            <table class="comparison-table">
+              <caption>从研究结果到个人决定，中间至少经过三层判断</caption>
+              <thead><tr><th scope="col">层次</th><th scope="col">核心问题</th><th scope="col">常见误区</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-label="层次">效果估计</th><td data-label="核心问题">平均获益与伤害可能有多大</td><td data-label="常见误区">只看显著与否，不看绝对差异和范围</td></tr>
+                <tr><th scope="row" data-label="层次">确定性与适用性</th><td data-label="核心问题">对真实效果及眼前人群有多大把握</td><td data-label="常见误区">把随机试验标签当成自动高质量</td></tr>
+                <tr><th scope="row" data-label="层次">选择与复核</th><td data-label="核心问题">哪种权衡符合目标，并在何时复查</td><td data-label="常见误区">把指南建议当成不可改变的个人命令</td></tr>
+              </tbody>
+            </table>
+            <p>循证医学因此不是“只信随机试验”，也不是把临床经验排除出去。它要求先系统获取和评价证据，再把证据与专业判断、患者处境和偏好结合。经验帮助识别问题、解释适用性和执行方案，但不应掩盖不确定性；患者偏好影响选择，却不能改变研究结果本身。</p>
+            <div class="boundary-note">
+              <h3>方法知识不能替代个体医疗评估</h3>
+              <p>本页提供阅读和讨论证据的框架，不用于自行开始、停用或更换治疗。具体决定还需要个人病史、检查、合并用药、当地可及性与专业评估。出现急性症状或严重不良反应时，应优先获得及时医疗帮助。</p>
+            </div>
+            <p>到这里，单项试验回到了它合适的位置：它是一块经过设计的证据，不是全部答案。我们先综合相关研究，判断每个结局的确定性，再考虑适用性、获益与伤害、资源和个人价值。新的试验或新的个人目标出现时，结论可以更新，但透明比较、承认不确定和共同复核的原则不应消失。</p>
+
+            <nav class="page-turn" aria-label="前后章节">
+              <a href="trial-design.html">← 返回：设计怎样减少偏差</a>
+              <a href="sources.html">继续：查看来源与证据边界 →</a>
+            </nav>
+          </section>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <footer class="foot-line">
+    <p><span>临床试验与循证医学 · 大众教育</span><span>不替代个体诊断、治疗或参试建议</span><a href="sources.html">来源与证据边界</a></p>
+  </footer>
+</body>
+</html>

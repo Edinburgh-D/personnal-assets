@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>把差异交给可检验的设计｜临床试验与循证医学</title>
+  <meta name="description" content="理解随机分配、分配隐藏、盲法、随访与预先注册各自控制什么偏差，并学会同时阅读绝对效果、不确定性和伤害。">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-dark-mode-storage="kb_darkMode">
+  <a class="skip-link" href="#content">跳到正文</a>
+  <nav class="side-rail" aria-label="学习路径快捷导航">
+    <a class="rail-mark" href="main.html">证据路径</a>
+    <ol class="rail-steps">
+      <li><a href="main.html" aria-label="第一阶段：比较">01</a></li>
+      <li><a href="trial-design.html" aria-current="page" aria-label="第二阶段：设计">02</a></li>
+      <li><a href="from-results-to-evidence.html" aria-label="第三阶段：判断">03</a></li>
+      <li><a href="sources.html" aria-label="来源与边界">S</a></li>
+    </ol>
+  </nav>
+
+  <header class="top-mast">
+    <div class="mast-row">
+      <a class="mast-brand" href="main.html">证据路径</a>
+      <div class="mast-actions">
+        <a class="mast-home" href="../../index.html" data-site-home>Personal Assets</a>
+        <button class="theme-toggle mast-theme" type="button" data-theme-toggle aria-pressed="false">切换深色</button>
+        <details class="mobile-nav nav-menu-btn">
+          <summary>目录</summary>
+          <div class="mobile-nav__panel">
+            <a href="main.html">为什么要比较</a>
+            <a href="trial-design.html" aria-current="page">怎样减少偏差</a>
+            <a href="from-results-to-evidence.html">怎样形成决策</a>
+            <a href="sources.html">来源与边界</a>
+            <button class="theme-toggle mobile-theme" type="button" data-theme-toggle aria-pressed="false">切换深色</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html">知识库总览</a><span aria-hidden="true">/</span><a href="main.html">临床试验与循证医学</a><span aria-hidden="true">/</span><span>试验设计</span>
+    </nav>
+    <div class="reading-grid">
+      <aside class="path-index" aria-label="完整学习路径">
+        <p>Evidence route</p>
+        <ol>
+          <li><a href="main.html"><span class="path-no">01</span><span class="path-label">为什么要比较</span></a></li>
+          <li><a href="trial-design.html" aria-current="page"><span class="path-no">02</span><span class="path-label">怎样减少偏差</span></a></li>
+          <li><a href="from-results-to-evidence.html"><span class="path-no">03</span><span class="path-label">怎样形成决策</span></a></li>
+          <li><a href="sources.html"><span class="path-no">S</span><span class="path-label">来源与边界</span></a></li>
+        </ol>
+      </aside>
+
+      <main id="content" data-kb-content data-page-role="chapter">
+        <template data-narrative="recap">临床试验的核心不是让一群人试用新治疗，而是用预先规定、受伦理约束的比较，把治疗作用与其他可能解释尽量分开；读懂试验要先看它研究谁、比较什么、观察哪些结局。</template>
+        <template data-narrative="question">既然可信结论依赖公平比较，随机分配、对照、盲法、预先注册和完整随访分别在阻止哪些偏差，又怎样把观察差异变成可解释的效果估计？</template>
+        <template data-narrative="example">哮喘吸入治疗试验把符合条件的参与者分到新治疗与现行治疗两组，预先确定发作和不良反应等结局，并记录失访、停药、方案偏离与分析选择。</template>
+        <template data-narrative="conclusion">随机分配、分配隐藏、盲法、预先注册和完整随访各自控制不同偏差，任何一个标签都不能单独保证可信；效果估计必须与绝对差异、不确定范围、缺失数据、伤害和实际执行一起解释。</template>
+        <template data-narrative="next-question">即使一项试验设计严谨、结果透明，我们怎样判断它能否代表全部研究、能否适用于眼前的人，并最终支持一个而不是另一个医疗选择？</template>
+
+        <header class="phase-header">
+          <p class="phase-kicker">02 · 从分组到估计</p>
+          <h1>把差异交给可检验的设计</h1>
+          <p class="lede">公平比较不是一个标签，而是一串彼此衔接的防偏措施。每道措施只挡住一类问题，缺口仍要在结果中如实呈现。</p>
+        </header>
+
+        <article class="prose">
+          <section aria-labelledby="allocation-title">
+            <h2 id="allocation-title">分组之前，选择偏差已经可能发生</h2>
+            <p class="opening">上一章把疗效还原成一个比较问题。现在，哮喘试验准备招募符合条件的参与者。若医生把较健康、较能坚持用药的人安排到新治疗组，把病情复杂者留在常规组，即使出发点是善意，最后的差异也会混入两组原本不同的预后。</p>
+            <p><dfn data-term="随机化">随机化</dfn>用机会机制分配参与者，使研究者无法按个人判断选择分组。人数足够、执行正确时，已知和未知的预后因素更可能在两组间平衡。它的价值不是制造“完全相同”的两群人，而是切断分组与预后因素之间的系统联系，让后续差异更能归因于干预。</p>
+            <p>随机化也不是随便分。按就诊日、病历号单双或研究人员轮流安排，都可能被预见。招募者一旦知道下一位将进入哪组，就可能推迟、加速或阻止某位患者入组。因此还需要<dfn data-term="分配隐藏">分配隐藏</dfn>：在参与者正式进入研究前，招募者不知道下一次分配是什么。</p>
+            <p>这两个概念经常被混为一谈。随机化关注分配序列如何产生，分配隐藏关注序列在入组时是否保密。一个序列可以由计算机随机产生，却因名单放在开放文件夹里而失去隐藏。反过来，把非随机的轮流分组藏起来，也不能获得随机化的因果优势。</p>
+            <p>完成分组后，期待仍会改变照护、行为与测量。<dfn data-term="盲法">盲法</dfn>让参与者、照护者、研究者或结局评估者中的一方或多方不知道具体分组。哪些人能被盲化，取决于干预。药片外观可以做得相似，手术或康复训练往往无法让操作者不知道；此时可以尽量让独立评估者不知道分组，并选择较不易受期待影响的测量。</p>
+            <p>“双盲”并不是信息充分的质量印章，因为不同论文对“双”所指角色并不总一致。ClinicalTrials.gov 要求记录究竟是参与者、照护者、研究者还是结局评估者被遮蔽。<a class="source-cite" href="sources.html#s4" aria-label="查看来源 4">[4]</a> 读者应看具体角色和实施方式，而不是只数一个词。</p>
+
+            <figure class="participant-flow" role="img" aria-label="试验从符合条件、隐藏分配、干预随访到按原分组分析的流程。每一步旁边标明主要防止的偏差。">
+              <figcaption>公平比较是一条连续防线</figcaption>
+              <div class="flow-grid" aria-hidden="true">
+                <div class="flow-cell"><strong>资格确认</strong><span>同一规则选择参与者</span></div>
+                <div class="flow-cell"><strong>隐藏分配</strong><span>招募时不能挑选组别</span></div>
+                <div class="flow-cell"><strong>随访测量</strong><span>两组按同样节奏观察</span></div>
+                <div class="flow-cell"><strong>预定分析</strong><span>不按结果重新挑人挑结局</span></div>
+              </div>
+            </figure>
+            <p>这条流程中的每一格都可能失败。资格规则执行不一致会改变研究人群，随访频率不同会让一组更容易发现事件，知道分组的评估者可能无意中影响主观判断。Cochrane 的 RoB 2 框架正是按随机过程、偏离预定干预、结局缺失、结局测量和选择性报告等领域评价某个具体结果的偏倚风险。<a class="source-cite" href="sources.html#s8" aria-label="查看来源 8">[8]</a></p>
+          </section>
+
+          <section aria-labelledby="estimate-title">
+            <h2 id="estimate-title">结果不是“有效或无效”，而是一个带范围的估计</h2>
+            <p>完成随访后，研究者比较两组结局。真正有用的问题通常有三层：差异方向是什么，差异有多大，数据允许真实效果落在多宽范围。只说“有统计学意义”省略了后两层，也容易让读者把一种计算门槛误当成临床价值。</p>
+            <p>效果可以用相对方式表达，也可以用绝对方式表达。相对方式说明两组风险成比例地怎样变化；绝对方式说明在某个基础风险下，实际多发生或少发生多少事件。同一个相对变化用于低风险与高风险人群，绝对收益可能相差很大。因此，治疗决策不能只看“风险降低了几成”，还要知道对照组原本发生事件的可能性。</p>
+            <p>围绕效果估计的<dfn data-term="置信区间">置信区间</dfn>，表示由数据与统计模型共同给出的不确定范围。它不是“真实值有某个固定概率位于其中”的个人化承诺。对普通读者更实用的理解是：范围若同时容纳明显获益、几乎无差别甚至可能伤害，数据就还不能把这些重要可能性清楚分开。</p>
+            <p>样本较小、事件较少或个体差异较大时，区间通常更宽。扩大样本可能提高精确度，却不能修复系统偏差。一个巨大但分组有问题的试验，可以得到非常窄、却稳定偏离真实效果的范围。相反，小型严谨试验可能方向合理，但不足以支持强结论。精确与可信不是同一个概念。</p>
+            <p>样本量也应在研究开始前围绕主要结局、预期事件和希望达到的精确程度规划。人数过少可能让重要差异埋在宽范围里，也让参与者承担风险却难以产生有用知识。人数更多则增加成本与暴露，仍需要与问题价值相称。计算中的假设若过于乐观，最终试验可能达不到原先的回答能力。</p>
+            <table class="comparison-table">
+              <caption>摘要里的常见表达，应继续追问什么</caption>
+              <thead><tr><th scope="col">表达</th><th scope="col">它说明了什么</th><th scope="col">还要检查什么</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" data-label="表达">“差异显著”</th><td data-label="说明了什么">在特定模型下，数据与无差异假设不太相容</td><td data-label="还要检查什么">效果大小、绝对差异、区间与临床重要性</td></tr>
+                <tr><th scope="row" data-label="表达">“差异不显著”</th><td data-label="说明了什么">数据没有越过预设统计门槛</td><td data-label="还要检查什么">是否样本不足，区间是否仍容纳重要获益或伤害</td></tr>
+                <tr><th scope="row" data-label="表达">“风险降低一半”</th><td data-label="说明了什么">相对风险发生较大变化</td><td data-label="还要检查什么">对照组基础风险与实际少发生多少事件</td></tr>
+                <tr><th scope="row" data-label="表达">“安全性良好”</th><td data-label="说明了什么">作者对已收集伤害的概括</td><td data-label="还要检查什么">随访时长、事件数量、退出和未测到的罕见伤害</td></tr>
+              </tbody>
+            </table>
+            <p>对哮喘试验而言，平均症状分数略有变化，不一定等于患者少了一次严重发作。研究应说明差异是否跨过患者和临床人员认为重要的阈值，也应把不良反应、停药和生活负担放在同一画面里。若获益用精细量表报告，伤害却只写“耐受良好”，信息是不对称的。</p>
+          </section>
+
+          <section aria-labelledby="missing-title">
+            <h2 id="missing-title">退出、换药和缺失，不是可以扫到表外的杂音</h2>
+            <p>真实试验里，参与者可能忘记用药、换用其他治疗、因副作用停药或失去联系。这些情况会让“分到某组”与“实际接受什么”不再完全一致。若研究者只保留严格按方案完成的人，新治疗组可能剩下更能耐受、更有动力的一群人，原先的公平分组就被破坏了。</p>
+            <p><dfn data-term="意向性分析">意向性分析</dfn>原则上按最初分组比较参与者，用来估计“被分配到这种治疗策略”带来的效果。它保留随机比较，也更接近现实中有人停药或执行不完美的情况。但给分析贴上这个名称还不够；若大量结局缺失，研究仍需要解释缺失为何发生，并检验合理假设下结论是否改变。</p>
+            <p>按实际接受治疗分析可以回答不同问题，例如治疗真正被使用时可能产生什么效果。但如果换药和停药与病情、预后或副作用有关，直接按治疗后行为重新分组会产生新的混杂。严谨报告应明确要估计的效果是什么，再选择与问题相符的方法，而不是把某一种分析机械视为唯一正确答案。</p>
+            <p>哮喘试验中，因不良反应退出的人尤其重要。把他们从疗效与安全性分析中一起移除，会让治疗看起来既更有效又更安全。Cochrane 指南强调，缺失造成多大偏差不仅取决于缺失比例，还取决于缺失原因、结局类型以及两组之间的关系。<a class="source-cite" href="sources.html#s8" aria-label="查看来源 8">[8]</a></p>
+            <p>罕见或很晚出现的伤害通常不是单项试验最擅长回答的问题。即使没有观察到某种严重事件，也可能只是参与者不够多、随访不够久。安全解释应说明实际观察规模和时间，并与其他试验、上市后监测及适合的观察性资料共同更新，而不是把“未发现”写成“不会发生”。</p>
+            <div class="method-note">
+              <h3>“没有证据表明有差异”不等于“证据表明没有差异”</h3>
+              <p>前一句可能只是数据太少，后一句需要不确定范围已经排除有实际意义的差异。阅读时应看估计值和区间，而不是根据一个统计门槛把连续的不确定性切成两半。</p>
+            </div>
+          </section>
+
+          <section aria-labelledby="transparency-title">
+            <h2 id="transparency-title">可信度还取决于我们能否看见完整研究</h2>
+            <p>即使单项试验执行良好，公开世界里仍可能只出现更“好看”的结果。研究者可以不发表不利试验，也可以从多个结局、时间点和分析中只报告满意部分。预先注册让试验在结果出现前留下公开记录，帮助读者发现缺失研究和事后变更。</p>
+            <p>世界卫生组织把所有干预性试验的前瞻注册视为科学、伦理和道德责任，并要求在首位参与者招募前注册。<a class="source-cite" href="sources.html#s2" aria-label="查看来源 2">[2]</a> ICMJE 的期刊政策也要求适用试验在首位参与者入组前完成公开注册。<a class="source-cite" href="sources.html#s6" aria-label="查看来源 6">[6]</a> 注册不是质量认证，却为追踪问题提供起点。</p>
+            <p>结果公开同样关键。WHO 2025 年关于注册平台结果摘要的更新指导，强调及时、完整报告有助于形成不残缺的证据基础。<a class="source-cite" href="sources.html#s7" aria-label="查看来源 7">[7]</a> CONSORT 2025 的清单要求报告试验注册、方案与分析计划获取方式、参与者流程、结局、伤害、资金和利益冲突等信息。它改善的是透明报告，不会把设计不良的研究变成良好研究。</p>
+            <p>因此，随机分配、分配隐藏、盲法、注册和完整随访不是可以互相替代的荣誉徽章。它们针对不同偏差。读者还必须把效果大小与绝对差异、不确定范围、缺失数据、伤害和实际执行放在一起。做到这里，我们得到的是一项试验较可信的结果，却还没有得到全部证据，更没有自动得到某个人应选择什么。</p>
+
+            <nav class="page-turn" aria-label="前后章节">
+              <a href="main.html">← 返回：为什么要比较</a>
+              <a href="from-results-to-evidence.html">继续：一项试验如何进入决策 →</a>
+            </nav>
+          </section>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <footer class="foot-line">
+    <p><span>临床试验与循证医学 · 大众教育</span><span>不替代个体诊断、治疗或参试建议</span><a href="sources.html">来源与证据边界</a></p>
+  </footer>
+</body>
+</html>

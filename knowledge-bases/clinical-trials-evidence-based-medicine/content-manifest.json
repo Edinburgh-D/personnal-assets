@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "临床试验与循证医学",
+  "entry": "main.html",
+  "type": "single-subject",
+  "depthLevel": "L1",
+  "createdAt": "2026-11-03",
+  "audience": "general",
+  "targetReadingMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "治疗有效，究竟意味着什么",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者容易把治疗后好转直接理解为治疗有效，也容易把一篇论文、一个显著结果或一次权威推荐当成确定答案。",
+      "readerStateAfter": "读者能够把疗效理解为经过比较得到的因果判断，并能用人群、干预、比较和结局四个要素看清一项试验真正回答的问题。",
+      "readerQuestion": "当一群人在接受治疗后好转时，临床试验怎样区分治疗本身的作用与病程波动、期待、照护差异和人群差异？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一种用于成人持续性哮喘的新吸入治疗进入验证阶段；研究团队需要判断它是否比现行常规治疗更能减少发作，同时不能忽略不良反应、退出和真实就医情境。",
+      "newTerms": [
+        {
+          "term": "干预性研究",
+          "definition": "研究者按预先方案把一种或多种健康干预分配给参与者，再观察健康结局的研究。"
+        },
+        {
+          "term": "对照",
+          "definition": "用另一种治疗、常规照护、安慰剂或其他合适条件作为参照，以判断观察到的差异来自哪里。"
+        },
+        {
+          "term": "结局指标",
+          "definition": "研究预先规定要观察和比较的健康结果，例如症状、发作、住院、生活质量或不良反应。"
+        },
+        {
+          "term": "试验方案",
+          "definition": "在研究开始前写明研究问题、参与者、分组、干预、结局、随访和分析方法的计划。"
+        }
+      ],
+      "conclusion": "临床试验的核心不是让一群人试用新治疗，而是用预先规定、受伦理约束的比较，把治疗作用与其他可能解释尽量分开；读懂试验要先看它研究谁、比较什么、观察哪些结局。",
+      "nextQuestion": "既然可信结论依赖公平比较，随机分配、对照、盲法、预先注册和完整随访分别在阻止哪些偏差，又怎样把观察差异变成可解释的效果估计？",
+      "nextPage": "trial-design.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "trial-design.html",
+      "title": "把差异交给可检验的设计",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把疗效理解为经过比较得到的因果判断，并能用人群、干预、比较和结局四个要素看清一项试验真正回答的问题。",
+      "readerStateAfter": "读者能够解释随机分配、分配隐藏、盲法、完整随访和预先分析如何共同降低偏差，并能同时阅读绝对效果、不确定范围与伤害。",
+      "readerQuestion": "既然可信结论依赖公平比较，随机分配、对照、盲法、预先注册和完整随访分别在阻止哪些偏差，又怎样把观察差异变成可解释的效果估计？",
+      "dependsOn": [
+        "main.html"
+      ],
+      "priorConclusion": "临床试验的核心不是让一群人试用新治疗，而是用预先规定、受伦理约束的比较，把治疗作用与其他可能解释尽量分开；读懂试验要先看它研究谁、比较什么、观察哪些结局。",
+      "coreExample": "哮喘吸入治疗试验把符合条件的参与者分到新治疗与现行治疗两组，预先确定发作和不良反应等结局，并记录失访、停药、方案偏离与分析选择。",
+      "newTerms": [
+        {
+          "term": "随机化",
+          "definition": "用机会机制把参与者分配到不同组，使已知与未知的预后因素更可能在组间平衡。"
+        },
+        {
+          "term": "分配隐藏",
+          "definition": "在参与者正式入组前，不让招募者预知下一位将进入哪一组，以防选择性纳入。"
+        },
+        {
+          "term": "盲法",
+          "definition": "让参与者、照护者、研究者或结局评估者中的一方或多方不知道具体分组，以减少期待影响。"
+        },
+        {
+          "term": "置信区间",
+          "definition": "围绕效果估计给出的不确定范围；范围越宽，通常表示数据对真实效果位置的约束越弱。"
+        },
+        {
+          "term": "意向性分析",
+          "definition": "原则上按最初随机分组分析参与者，以保留随机比较并避免按治疗后行为重新挑人。"
+        }
+      ],
+      "conclusion": "随机分配、分配隐藏、盲法、预先注册和完整随访各自控制不同偏差，任何一个标签都不能单独保证可信；效果估计必须与绝对差异、不确定范围、缺失数据、伤害和实际执行一起解释。",
+      "nextQuestion": "即使一项试验设计严谨、结果透明，我们怎样判断它能否代表全部研究、能否适用于眼前的人，并最终支持一个而不是另一个医疗选择？",
+      "nextPage": "from-results-to-evidence.html",
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "from-results-to-evidence.html",
+      "title": "一项试验之后，证据才开始汇合",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够解释随机分配、分配隐藏、盲法、完整随访和预先分析如何共同降低偏差，并能同时阅读绝对效果、不确定范围与伤害。",
+      "readerStateAfter": "读者能够把单项试验放入完整证据体系，区分效果大小、证据确定性与建议强度，并结合适用性、个人目标和现实条件参与决策。",
+      "readerQuestion": "即使一项试验设计严谨、结果透明，我们怎样判断它能否代表全部研究、能否适用于眼前的人，并最终支持一个而不是另一个医疗选择？",
+      "dependsOn": [
+        "trial-design.html"
+      ],
+      "priorConclusion": "随机分配、分配隐藏、盲法、预先注册和完整随访各自控制不同偏差，任何一个标签都不能单独保证可信；效果估计必须与绝对差异、不确定范围、缺失数据、伤害和实际执行一起解释。",
+      "coreExample": "哮喘吸入治疗出现多项研究后，证据评估者需要比较研究人群、对照、随访和结局，检查结果是否一致，并把疗效、伤害、使用负担与患者偏好放进同一决策。",
+      "newTerms": [
+        {
+          "term": "系统综述",
+          "definition": "按预先方法系统寻找、筛选、评价并综合与明确问题有关的全部合格研究。"
+        },
+        {
+          "term": "荟萃分析",
+          "definition": "在研究足够可比时，用统计方法合并两个或更多研究的效果估计。"
+        },
+        {
+          "term": "证据确定性",
+          "definition": "对某个结局的真实效果落在特定范围或阈值一侧有多大把握，评价对象是整体证据而非论文名气。"
+        },
+        {
+          "term": "间接性",
+          "definition": "现有研究在人群、干预、比较或结局上与要做的决定不完全相符。"
+        },
+        {
+          "term": "共同决策",
+          "definition": "患者与专业人员把最佳可得证据、临床判断、个人目标和偏好放在一起选择方案。"
+        }
+      ],
+      "conclusion": "循证医学不是按证据等级自动开处方，而是先综合所有相关研究并判断每个结局的确定性，再结合适用性、获益与伤害、资源以及个人价值作出可复核决定；单项试验提供线索，不等于个人医疗指令。",
+      "nextQuestion": "当新的试验、长期伤害资料或个人目标出现时，哪些证据判断需要更新，哪些透明、比较和共同决策原则仍应保持不变？",
+      "nextPage": null,
+      "minContentChars": 3000,
+      "minProseRatio": 0.6
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与证据边界",
+      "role": "reference",
+      "stage": "judgment",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}
