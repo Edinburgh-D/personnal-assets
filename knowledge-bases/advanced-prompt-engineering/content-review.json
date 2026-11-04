@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-disk-reader-pass",
+  "reviewedAt": "2026-11-04T22:13:37+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "提示词从一句灵感变成可复用系统时，真正需要设计的是什么？",
+      "readerStateChange": "读前把进阶理解为寻找更长、更强硬的固定话术；读后能把提示拆成目标、权限、材料、示例、输出与失败出口，并理解它是一份随运行环境共同生效的任务规格。",
+      "twoSentenceSummary": "本页用退货助手说明，一句“专业判断”无法约束证据、权限和缺失信息，可靠提示需要把多类信息组织成可检查规格。它进一步区分指令层级、上下文、示例和输出结构，并说明角色设定与万能模板不能替代事实来源。",
+      "continuityEvidence": "结尾指出静态规格仍无法独自处理多页政策、外部系统和模糊来信，因此自然引出下一页对上下文组织、阶段拆分与工具边界的解释。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "context-and-workflows.html",
+      "centralQuestion": "既然提示词是一份任务规格，模型如何使用这些不同来源的信息，我们又该怎样把复杂任务拆成可靠的工作流？",
+      "readerStateChange": "读前只会识别提示规格的组成；读后能按权限、相关性与时序组织材料，把事实提取、政策检索、资格判断和顾客表达拆开，并为每段设置可验证结果和风险分支。",
+      "twoSentenceSummary": "本页沿用退货助手，把一次巨型调用拆成提取、检索、判断和表达四段，解释提示链为什么应沿不同职责与成功标准切开。它同时说明检索与工具并不自动带来真实性，权限、来源、结构化中间结果和确定性路由仍需在模型之外落实。",
+      "continuityEvidence": "开头承接任务规格的六类要素，结尾又指出可观察工作流仍会受措辞、模型更新与恶意输入影响，直接把问题推进到评估、回归和安全边界。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "evaluation-and-safety.html",
+      "centralQuestion": "当同一套提示在不同措辞、模型版本和边界案例上仍会波动时，我们如何用评估、回归与安全边界决定它是否足够可靠？",
+      "readerStateChange": "读前能构造可观察工作流但没有可靠性尺度；读后能用常见、边界、缺失、冲突和对抗案例比较版本，并以最小权限、确定性校验和人工复核限制失败后果。",
+      "twoSentenceSummary": "本页把“好不好”拆为事实、政策、决定、表达和权限等可观察维度，并用评估集与回归记录定位真实失败。随后说明提示注入不能只靠文本彻底防住，系统必须把敏感工具置于最小权限和降级流程之下。",
+      "continuityEvidence": "本页承接上一页留下的波动与恶意输入问题，把可观察中间结果转成可比较评估，并在结尾形成可迁移的提示、系统与自动化边界判断框架。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能依赖正文转述；读后能够定位 OpenAI、Anthropic、Google 与 OWASP 的当前原文，并知道哪些接口细节需要随模型和平台更新重新核对。",
+      "twoSentenceSummary": "本页列出提示设计、推理模型、评估、结构化输出和提示注入的官方或权威资料，并说明各自支持正文中的哪类主张。它还标明退货助手是教学构造，并连接仓库内的向量数据库、合成数据和测试主题。",
+      "continuityEvidence": "来源页回溯前三页关于规格、工作流、评估与安全的关键依据，同时提供返回末章和从头阅读的双向导航，闭合全站路径。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

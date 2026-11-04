@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="理解上下文组织、任务分解、提示链、检索与工具如何把复杂提示变成可检查工作流。" />
+  <meta name="kb-dark-mode-key" content="kb_darkMode" />
+  <title>让上下文各就各位｜Prompt Engineering 进阶</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span class="reading-progress__bar" data-progress></span></div>
+
+  <header class="mobile-head">
+    <a class="mobile-head__brand" href="main.html">Prompt / System</a>
+    <div class="mobile-head__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+      <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" aria-label="知识库目录">
+    <a href="main.html">规格</a>
+    <a href="context-and-workflows.html" aria-current="page">工作流</a>
+    <a href="evaluation-and-safety.html">评估与安全</a>
+    <a href="sources.html">来源</a>
+  </nav>
+
+  <nav class="side-rail" aria-label="知识库目录">
+    <a class="side-rail__brand" href="main.html">Prompt / System</a>
+    <ol class="side-rail__links">
+      <li><a href="main.html" aria-label="规格">01</a></li>
+      <li><a href="context-and-workflows.html" aria-label="工作流" aria-current="page">02</a></li>
+      <li><a href="evaluation-and-safety.html" aria-label="评估与安全">03</a></li>
+      <li><a href="sources.html" aria-label="来源">S</a></li>
+    </ol>
+    <button class="icon-button theme-toggle--rail" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span aria-hidden="true">/</span>
+      <a href="main.html">Prompt Engineering 进阶</a>
+      <span aria-hidden="true">/</span>
+      <span>工作流</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">进阶提示工程的核心不是修饰一句话，而是把目标、权限、上下文、示例、输出形式和失败出口组织成可检查的任务规格；好提示首先减少歧义，其次才追求语言上的聪明。</template>
+      <template data-narrative="question">既然提示词是一份任务规格，模型如何使用这些不同来源的信息，我们又该怎样把复杂任务拆成可靠的工作流？</template>
+      <template data-narrative="example">继续改造退货咨询助手：先提取订单事实，再检索适用政策，随后判断是否满足条件，最后生成面向顾客的答复；每一步都保留可核验的输入与输出。</template>
+      <template data-narrative="conclusion">可靠工作流把规则、事实和行动分开管理，并让每个阶段只承担一种可验证职责；上下文越多不一定越好，真正重要的是来源清楚、位置合理、结果可检查。</template>
+      <template data-narrative="next-question">当同一套提示在不同措辞、模型版本和边界案例上仍会波动时，我们如何用评估、回归与安全边界决定它是否足够可靠？</template>
+
+      <header class="hero">
+        <h1>让上下文各就各位</h1>
+        <p class="hero__lede">模型看到的是一次调用中被组织起来的信息。复杂任务要可靠，关键不是让它在一口气里做更多，而是安排好每种材料何时进入、每个阶段交付什么。</p>
+        <p class="hero__map">规则与材料分开 · 判断与行动分开 · 每一步都能复核</p>
+      </header>
+
+      <article class="prose">
+        <p>上一章把提示词还原成任务规格：目标、权限、上下文、示例、输出和失败出口共同决定系统行为。现在把退货助手放回真实环境，问题马上变得更具体。政策有多个版本，订单记录来自数据库，顾客来信可能混合事实、情绪和要求，最终回复还要符合品牌语气。即使每一项都写得清楚，让模型在一次生成里同时检索、核对、判断、措辞和执行，错误仍会互相遮挡。</p>
+
+        <p><span class="head-inline">一次调用不是一个无限资料室。</span>模型只能使用当前请求中可见的信息、平台保留的对话状态，以及工具返回给它的结果。它不会自动访问企业数据库，也不会知道某份政策刚刚更新。应用需要主动选择材料，并说明每段材料的身份。稳定的上下文通常有清楚的分区：长期规则保持简洁，当前任务靠近用户输入，参考资料带来源和版本，输出要求单独陈述。分隔符、标题或结构化字段的价值，正在于让这些区域不容易彼此冒充。</p>
+
+        <p>这里存在三个容易混淆的尺度。第一是<strong>权限</strong>：谁有资格改变规则；第二是<strong>相关性</strong>：哪些事实对当前订单有用；第三是<strong>时序</strong>：哪一步需要哪份材料。高权限信息不一定很长，长文档也不一定相关。把它们混为“上下文越多越好”，会造成成本上升、延迟增加和注意力分散，还可能让旧政策与新政策同时出现。组织上下文的真正目标，是让模型在正确阶段看到足够而不过量的证据。</p>
+
+        <h2>复杂度应当沿着责任边界拆开</h2>
+
+        <p>把一个大目标改写成若干职责单一的阶段，称为<dfn data-term="任务分解">任务分解</dfn>。对退货助手而言，第一阶段只从来信和订单中提取事实，不作退款决定；第二阶段只寻找适用政策；第三阶段比较事实与条件；第四阶段才生成顾客可读的解释。这样的安排不是为了模仿人的思考过程，而是为了建立可观察边界。事实抽取错了，可以在进入政策判断前修正；政策取错了，也不必猜测是哪段措辞影响了最终答复。</p>
+
+        <p>多个阶段顺序连接时，就形成<dfn data-term="提示链">提示链</dfn>。前一步的输出成为后一步的输入，中间可以加入程序验证、人工确认或分支路由。链条最有价值的地方并非“让模型多想几次”，而是把不同成功标准分开。例如，事实抽取可以检查字段是否来自原文，政策检索可以检查文档编号，资格判断可以检查规则覆盖，顾客回复则检查准确、清楚与语气。一次调用里混合这些标准，很难知道改动究竟改善了什么。</p>
+
+        <div class="comparison" role="group" aria-label="退货助手的四阶段工作流">
+          <div class="comparison__row"><span class="comparison__label">提取</span><strong>订单事实</strong><span>只保留来信或数据库中能定位的字段，不补猜测。</span></div>
+          <div class="comparison__row"><span class="comparison__label">检索</span><strong>适用政策</strong><span>按商品、地区、日期和渠道选择带版本的条款。</span></div>
+          <div class="comparison__row"><span class="comparison__label">判断</span><strong>条件匹配</strong><span>逐项标明满足、不满足或未知，并保留证据位置。</span></div>
+          <div class="comparison__row"><span class="comparison__label">表达</span><strong>顾客回复</strong><span>只陈述已验证决定；需要补充材料时说明原因和下一步。</span></div>
+        </div>
+
+        <p>链条也会带来代价。每增加一步，就增加一次延迟、费用和传递错误的机会。如果第一个阶段把购买日期抽错，后面再严谨也只是在错误基础上工作。因此，拆分不是越细越好，而应沿着“成功标准不同”“数据来源不同”或“风险等级不同”的地方切开。能够用确定性代码完成的日期比较、金额计算和格式校验，通常不必再交给模型。模型负责理解模糊语言，程序负责执行明确规则，两者各做擅长的部分。</p>
+
+        <h2>中间结果要能被独立检查</h2>
+
+        <p>如果链条的每一步仍然只输出一段自由文本，错误只是被搬到了中间。更稳妥的做法是产生<dfn data-term="可验证中间产物">可验证中间产物</dfn>，例如带原文位置的事实表、带版本号的政策清单、明确的条件匹配结果。它们可以由模式校验、业务规则或人工抽样检查。这里“可验证”不等于绝对正确，而是指出错时有证据可追溯，后续步骤也能拒绝不完整输入。</p>
+
+        <pre class="code-sample" aria-label="退货助手中间产物示例"><code><span class="code-sample__muted">order_id:</span> "A1842"      <span class="code-sample__muted">source:</span> order_db
+<span class="code-sample__muted">purchased_at:</span> "2026-10-18"
+<span class="code-sample__muted">item_state:</span> null       <span class="code-sample__muted">reason:</span> "顾客未说明"
+<span class="code-sample__muted">policy_version:</span> "CN-RETURN-2026-10"
+<span class="code-sample__muted">decision_ready:</span> false</code></pre>
+
+        <p>这个结果没有把缺失的商品状态补成“未拆封”，也没有直接写退款结论。空值让问题显露出来，来源字段让人知道购买日期来自数据库而非顾客自述，政策版本避免下一步引用旧条款。后续阶段看到 <code>decision_ready: false</code> 时，应请求照片或转交客服，而不是继续生成一封听起来完整的批准信。系统的可靠性往往来自这些保守的停顿。</p>
+
+        <h2>资料不足时，提示无法替代取证</h2>
+
+        <p>当模型自身没有最新或私有事实时，可以使用<dfn data-term="检索增强">检索增强</dfn>：先从文档库、搜索系统或向量数据库找到与当前问题有关的资料，再把选中的片段连同来源交给模型。它解决的是“信息不在当前输入里”的问题，不是自动保证答案正确。检索可能漏掉关键文档，也可能返回相似但不适用的旧版本；模型还可能错误解释被检索到的条款。因此，检索阶段同样需要测试命中率、版本过滤和无结果时的处理。</p>
+
+        <p>对退货助手来说，查询不应只是“退货政策”，而要利用订单中的商品类别、购买地区、销售渠道和日期。返回结果至少包含政策标识、有效时间和原文片段。判断阶段只能依据这些证据，不应把常见电商规则偷偷补进来。若检索结果互相冲突，正确行为不是挑一个看起来顺眼的答案，而是暴露冲突并升级处理。提示可以要求引用证据，却不能创造缺失的证据。</p>
+
+        <p>资料之外，系统还可能需要查询订单、计算期限或创建工单。由模型选择并请求外部能力，称为<dfn data-term="工具调用">工具调用</dfn>。工具把“生成一句话”扩展成“请求一个受控动作”，因此参数模式、权限和确认都非常重要。模型可以提出查询订单号 A1842，却不应获得任意读取全库的凭证；它可以建议创建复核工单，却不应在未确认身份时直接退款。工具返回值也属于外部输入，需要验证类型、状态和错误，而不能假设每次都成功。</p>
+
+        <aside class="aside-note">
+          <p>提示控制的是模型如何请求工具，真正的权限仍由工具层执行。把“禁止大额退款”只写在自然语言里，不如让退款接口在金额、身份和审批上强制校验。</p>
+        </aside>
+
+        <h2>推理能力不是越多步骤越好</h2>
+
+        <p>早期提示技巧常建议模型“逐步思考”。今天的推理型模型往往会在内部处理复杂步骤，官方指南也提醒，强迫它逐字展示思维过程未必提升表现，有时反而妨碍结果。更稳妥的做法是说明最终目标、关键限制和成功标准，并要求输出可以公开检查的证据、计划、计算或结论摘要，而不是把隐藏的内部推理当成质量证明。对简单任务，直接明确往往优于冗长的思考仪式。</p>
+
+        <p>这并不否定分阶段工作流。内部推理与外部流程是两件事：前者是模型如何生成答案，后者是应用如何安排数据、验证和动作。退货资格涉及多个来源和权限，因此即使模型本身很会推理，应用仍需要把订单查询、政策选择和退款执行分开。原因不是模型“想得不够久”，而是这些阶段需要不同权限、不同证据和不同失败处理。</p>
+
+        <h2>分支让同一套系统按风险改变路线</h2>
+
+        <p>真实工作流并非一条永远向前的直线。信息齐全、金额较低且政策明确的订单，可以进入自动答复；缺少商品状态时转入补充信息；政策冲突或高价值退款则进入人工复核。分支条件最好由结构化字段和确定性规则触发，而不是让模型凭一句“看起来风险不高”自由决定。模型可以帮助归纳情形，路由规则负责把风险边界落实。</p>
+
+        <div class="decision-grid" aria-label="退货助手的分支路线">
+          <section><h3>证据完整</h3><p>条款唯一适用，字段通过校验。生成答复，但仍记录政策版本与决定依据。</p></section>
+          <section><h3>信息缺失</h3><p>不猜未知字段。提出一项具体补充请求，并暂停资格判断。</p></section>
+          <section><h3>高后果或冲突</h3><p>冻结自动动作，把订单、证据、冲突说明和建议一并交给有权限的人。</p></section>
+        </div>
+
+        <p>这样设计后，所谓“高级提示”不再是一块越来越厚的文本，而是一组有边界的部件：稳定规则保持在高权限位置，当前材料按需检索，复杂职责沿阶段拆开，中间结果可以验证，工具权限在模型之外约束，风险通过分支改变路线。每个部件都能独立调整，也都可能单独失败。</p>
+
+        <p>对话历史也应按同样原则管理。长期偏好可以保留，已经完成的中间步骤可以压缩，但影响当前决定的原始证据不应被一句含糊摘要替代。状态管理的目的不是让模型“记住一切”，而是让下一次调用得到当前阶段真正需要、且来源仍可追溯的信息。</p>
+
+        <p>但可观察不等于已经可靠。同一条顾客来信换一种说法，输出可能变化；模型升级后，原本有效的示例可能失去作用；攻击者还可能把恶意指令埋进来信或网页。工作流已经让问题可定位，接下来必须建立一把尺子：哪些案例要测，怎样比较版本，哪些失败必须阻止自动化。</p>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="main.html">← 返回：把提示词当成规格</a>
+          <a href="evaluation-and-safety.html">继续：把好不好变成可比较 →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="foot-dense">
+      <p>Prompt Engineering 进阶 · <a href="main.html">规格</a> · <a href="context-and-workflows.html">工作流</a> · <a href="evaluation-and-safety.html">评估与安全</a> · <a href="sources.html">来源</a>。正文依据 2026-11-04 可访问的一手文档整理。</p>
+    </footer>
+  </div>
+</body>
+</html>

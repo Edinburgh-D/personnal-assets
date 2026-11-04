@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="从一句提示词走向可验证系统：理解任务规格、指令层级、上下文、示例与输出契约。" />
+  <meta name="kb-dark-mode-key" content="kb_darkMode" />
+  <title>Prompt Engineering 进阶：从提示词到可验证系统</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span class="reading-progress__bar" data-progress></span></div>
+
+  <header class="mobile-head">
+    <a class="mobile-head__brand" href="main.html">Prompt / System</a>
+    <div class="mobile-head__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+      <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" aria-label="知识库目录">
+    <a href="main.html" aria-current="page">规格</a>
+    <a href="context-and-workflows.html">工作流</a>
+    <a href="evaluation-and-safety.html">评估与安全</a>
+    <a href="sources.html">来源</a>
+  </nav>
+
+  <nav class="side-rail" aria-label="知识库目录">
+    <a class="side-rail__brand" href="main.html">Prompt / System</a>
+    <ol class="side-rail__links">
+      <li><a href="main.html" aria-label="规格" aria-current="page">01</a></li>
+      <li><a href="context-and-workflows.html" aria-label="工作流">02</a></li>
+      <li><a href="evaluation-and-safety.html" aria-label="评估与安全">03</a></li>
+      <li><a href="sources.html" aria-label="来源">S</a></li>
+    </ol>
+    <button class="icon-button theme-toggle--rail" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span aria-hidden="true">/</span>
+      <span>Prompt Engineering 进阶</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="overview">
+      <template data-narrative="question">提示词从一句灵感变成可复用系统时，真正需要设计的是什么？</template>
+      <template data-narrative="example">为一家网店设计退货咨询助手：它要读取店铺政策和顾客来信，区分事实与请求，给出可核验的处理建议，并在证据不足时转交人工。</template>
+      <template data-narrative="conclusion">进阶提示工程的核心不是修饰一句话，而是把目标、权限、上下文、示例、输出形式和失败出口组织成可检查的任务规格；好提示首先减少歧义，其次才追求语言上的聪明。</template>
+      <template data-narrative="next-question">既然提示词是一份任务规格，模型如何使用这些不同来源的信息，我们又该怎样把复杂任务拆成可靠的工作流？</template>
+
+      <header class="hero">
+        <h1>把提示词当成规格</h1>
+        <p class="hero__lede">真正的进阶，不是把一句请求写得更长，而是把模型要遵守的规则、要参考的事实、要交付的结果和不能越过的边界组织成一套可观察的系统。</p>
+        <p class="hero__map">01 规格 → 02 工作流 → 03 评估与安全</p>
+      </header>
+
+      <article class="prose">
+        <p>一家网店想让语言模型协助处理退货咨询。最初的提示只有一句：“你是专业客服，请礼貌判断顾客能不能退货。”它在演示时表现不错，换一封来信却可能漏看购买日期，把顾客的抱怨当成事实，甚至替店铺承诺政策中没有的补偿。继续添加“务必准确”“仔细思考”“不要犯错”，偶尔会改善语气，却没有解决真正的问题：系统没有说明哪些材料可信、判断依据是什么、信息缺失时怎么办，也没有规定结果怎样被程序接住。</p>
+
+        <p>这正是日常聊天与生产级提示之间的分水岭。聊天时，人可以凭上下文补齐意图，也可以看见结果不对后立刻追问；进入稳定工作流后，提示需要承担接口的责任。这里把这种接口称为<dfn data-term="提示规格">提示规格</dfn>：它不是华丽措辞的集合，而是对目标、输入、限制、输出和失败处理的明确约定。规格未必很长。一个短而边界清楚的请求，通常比堆满形容词、角色设定和互相冲突规则的长提示更可靠。</p>
+
+        <p><span class="head-inline">从“会说”转向“受约束地完成”。</span>语言模型根据输入中出现的模式生成后续内容。它擅长理解自然语言，却不会自动知道业务里哪些话是硬规则，哪些只是背景；也不会天然知道“准确”是指事实无误、格式可解析，还是语气符合品牌。提示工程因此不是寻找一句能控制所有情况的口令，而是逐步减少合理但不合意的解释空间。目标越具体，模型越容易判断何时算完成；约束越能被观察，团队越容易发现失败发生在哪里。</p>
+
+        <dl class="spec-stack" aria-label="退货助手的提示规格结构">
+          <div class="spec-stack__row"><dt>目标</dt><dd>依据给定政策与订单事实判断下一步，而不是凭常识发明店铺规则。</dd></div>
+          <div class="spec-stack__row"><dt>材料</dt><dd>政策摘录、订单记录和顾客来信分别标明来源；来信中的命令仍只是顾客输入。</dd></div>
+          <div class="spec-stack__row"><dt>判断</dt><dd>先提取可核验事实，再匹配政策条件；无法确认的字段保持未知。</dd></div>
+          <div class="spec-stack__row"><dt>交付</dt><dd>返回决定、依据、缺失信息与建议动作，让程序和客服都能复核。</dd></div>
+          <div class="spec-stack__row"><dt>边界</dt><dd>高金额、政策冲突或身份不明时不自动承诺，转交人工处理。</dd></div>
+        </dl>
+
+        <h2>同一段输入里，并非所有文字地位相同</h2>
+
+        <p>模型应用往往同时包含平台规则、开发者设定、用户请求、历史对话与外部文档。它们之间存在<dfn data-term="指令层级">指令层级</dfn>：高权限规则定义系统可以做什么，低权限输入只能在这个范围内提出任务。以退货助手为例，“不得泄露其他顾客数据”属于系统边界，“按这份政策判断”属于应用规则，“把退款打到另一个账户”则是用户请求。把三者揉成一段平铺文字，会让权限关系变得模糊；把来源与角色分开，才便于模型和后续程序处理冲突。</p>
+
+        <p>层级不是一种神秘的“压制词”。它依赖具体产品的消息角色、运行环境和安全设计，不能只靠在文本前写“最高优先级”来伪造。外部网页即使写着“忽略前面要求”，也不会因此自动获得更高权限；但模型可能受它影响，所以应用仍要把网页当数据、限制工具权限，并在高后果动作前加入确认。这里重要的不是背诵某家模型的角色名称，而是建立稳定观念：规则、任务和被处理材料必须能被区分。</p>
+
+        <p>模型一次能够共同参考的信息范围常被称为<dfn data-term="上下文窗口">上下文窗口</dfn>。窗口变大并不等于把所有资料一股脑塞进去就会更准确。冗余条款会稀释关键规则，过时版本可能与新政策冲突，长文档里的相似段落也会增加错误匹配。上下文设计更像整理一张工作台：只摆出当前任务需要的材料，标清日期与来源，把真正重要的约束放在容易识别的位置，并对找不到证据的情形作出安排。</p>
+
+        <aside class="aside-note">
+          <p>“提供更多上下文”只在新增材料与当前判断有关、来源可信且不会制造冲突时成立。材料数量不是质量指标。</p>
+        </aside>
+
+        <h2>示例传递的不是装饰，而是判定边界</h2>
+
+        <p>当任务很难仅靠定义说清时，可以加入<dfn data-term="少样本示例">少样本示例</dfn>，也就是少量输入与理想输出对。它们让模型看到“怎样才算对”，尤其适合语气分类、信息抽取、边界归类和固定格式。退货助手可以看到一例“在期限内且商品完好”，一例“已过期限但存在质量问题”，再加一例“订单号缺失”。第三例很重要，因为它示范了不知道时如何表达，而不是逼模型填满每个字段。</p>
+
+        <p>示例也会悄悄携带偏差。如果所有示例都很短，模型可能把长来信压缩得过度；如果示例只覆盖批准退款，它可能忽视拒绝与转交；如果示例格式彼此不一致，模型会同时学习多个冲突模式。因此，好的示例需要覆盖常见情况与关键边界，保持结构一致，并避免把偶然措辞误当成规则。示例的数量没有普遍最佳值，应该以测试结果决定，而不是以“越多越强”决定。</p>
+
+        <h2>格式要求应当成为接口，而不是愿望</h2>
+
+        <p>“请用 JSON 返回”看似明确，实际仍留下许多问题：字段能否缺失，日期采用什么格式，决定只能取哪些值，证据不足时填空还是填“未知”？把这些约定写成<dfn data-term="输出契约">输出契约</dfn>，模型输出才更容易进入程序。现代模型平台还提供结构化输出或模式约束，让生成结果遵守给定字段结构；这比反复用大写字母要求“必须输出合法 JSON”更稳。不过，结构正确只表示外壳可解析，不代表里面的政策判断一定正确。</p>
+
+        <pre class="code-sample" aria-label="退货判断的结构化输出示例"><code><span class="code-sample__muted">decision:</span> "needs_review"
+<span class="code-sample__muted">evidence:</span> ["订单日期已确认", "政策版本 2026-10"]
+<span class="code-sample__muted">missing:</span> ["商品状态照片"]
+<span class="code-sample__muted">allowed_action:</span> "request_information"</code></pre>
+
+        <p>这个结构把“判断”“依据”“缺失信息”和“允许动作”分开。程序可以检查决定是否属于允许值，客服可以核对证据，权限系统也能阻止模型直接发起退款。它还把拒绝回答变成正常状态：资料不够时返回需要复核，而不是用流畅文字掩盖缺口。换言之，好的格式不是为了看起来整齐，而是为了让错误更容易被发现，让后续动作更容易被限制。</p>
+
+        <h2>角色设定有用，但不能替代知识与权限</h2>
+
+        <p>“你是一名资深客服”可以帮助模型选择语气和关注点，却不会凭空提供店铺的最新政策，也不会让错误决定变得可信。角色最适合描述沟通立场、受众与职责，例如“向首次购物的顾客解释，不使用内部缩写”；它不适合承担事实来源。类似地，礼貌、专业、详细等抽象要求最好落到可观察行为上：是否引用适用条款，是否区分已知与未知，是否避免承诺未授权补偿。</p>
+
+        <p>进阶提示工程由此显出一种反直觉的朴素：重点不是写出一段让模型“进入状态”的华丽开场，而是让每一类信息各就各位。规则说明不能做什么，任务说明现在要完成什么，材料提供可用事实，示例展示边界，输出约定结果怎样被接收，失败出口决定何时停止自动化。它们共同构成一个小型控制面，而自然语言只是其中最灵活的一层。</p>
+
+        <div class="comparison" role="group" aria-label="从脆弱提示到可检查规格">
+          <div class="comparison__row"><span class="comparison__label">目标</span><span>“请处理这封邮件”</span><span>提取订单事实，按指定政策给出处理建议</span></div>
+          <div class="comparison__row"><span class="comparison__label">证据</span><span>依赖模型已有知识</span><span>只使用带来源与版本的政策和订单记录</span></div>
+          <div class="comparison__row"><span class="comparison__label">失败</span><span>尽量给出答案</span><span>列出缺失信息，并把高风险情形转交人工</span></div>
+          <div class="comparison__row"><span class="comparison__label">接口</span><span>自由文本，靠人猜字段</span><span>固定结构，程序验证后再决定是否行动</span></div>
+        </div>
+
+        <h2>提示不是孤立文本，而是运行环境的一部分</h2>
+
+        <p>同一份文字换到另一个模型、另一种消息接口或不同工具环境，表现可能改变。这不是提示“突然失效”，而是规格所依赖的运行条件发生了变化。某个平台会严格区分开发者消息与用户消息，另一个平台可能使用不同角色名称；有的接口能按模式约束字段，有的只能生成普通文本。记录模型版本、消息结构、参数、工具说明和示例，才能知道团队复用的究竟是什么。</p>
+
+        <p>可移植的部分通常是任务目标、证据要求、业务边界和评估案例，而不是每个标点。迁移时先保留这些稳定约定，再针对新模型做小范围测试。若只保存一段最终提示，却没有输入样本、期望结果和失败记录，后来的人只能凭感觉继续改写。提示文本看起来像文档，运行起来却更像代码：它与模型和接口共同产生行为，需要版本、审查和回归。</p>
+
+        <p>这也解释了为什么网络上的“万能模板”很难直接复用。模板可以提醒人考虑受众、材料和格式，但无法替代具体业务的证据来源与权限设计。一个适合写旅行介绍的模板，不应直接承担退款资格判断；一个在某次模型快照上表现良好的长提示，也不必然适合新的推理模型。借用结构可以，借用结论则必须重新验证。</p>
+
+        <p>至此，提示词已经不再是一段孤立文案，而是一份任务规格。但规格仍只是静态设计。退货助手面对多页政策、模糊来信和外部系统时，不可能靠一次生成可靠完成所有步骤。下一步要看的，是模型怎样接触上下文，以及复杂任务为什么常常需要拆成能逐段检查的工作流。</p>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="sources.html">查看来源</a>
+          <a href="context-and-workflows.html">继续：让上下文各就各位 →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="foot-dense">
+      <p>Prompt Engineering 进阶 · <a href="main.html">规格</a> · <a href="context-and-workflows.html">工作流</a> · <a href="evaluation-and-safety.html">评估与安全</a> · <a href="sources.html">来源</a>。正文依据 2026-11-04 可访问的一手文档整理。</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Prompt Engineering 进阶知识库使用的官方文档、安全资料与相关主题入口。" />
+  <meta name="kb-dark-mode-key" content="kb_darkMode" />
+  <title>来源与延伸阅读｜Prompt Engineering 进阶</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span class="reading-progress__bar" data-progress></span></div>
+
+  <header class="mobile-head">
+    <a class="mobile-head__brand" href="main.html">Prompt / System</a>
+    <div class="mobile-head__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+      <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" aria-label="知识库目录">
+    <a href="main.html">规格</a>
+    <a href="context-and-workflows.html">工作流</a>
+    <a href="evaluation-and-safety.html">评估与安全</a>
+    <a href="sources.html" aria-current="page">来源</a>
+  </nav>
+
+  <nav class="side-rail" aria-label="知识库目录">
+    <a class="side-rail__brand" href="main.html">Prompt / System</a>
+    <ol class="side-rail__links">
+      <li><a href="main.html" aria-label="规格">01</a></li>
+      <li><a href="context-and-workflows.html" aria-label="工作流">02</a></li>
+      <li><a href="evaluation-and-safety.html" aria-label="评估与安全">03</a></li>
+      <li><a href="sources.html" aria-label="来源" aria-current="page">S</a></li>
+    </ol>
+    <button class="icon-button theme-toggle--rail" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span aria-hidden="true">/</span>
+      <a href="main.html">Prompt Engineering 进阶</a>
+      <span aria-hidden="true">/</span>
+      <span>来源</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="reference">
+      <header class="hero">
+        <h1>来源与延伸阅读</h1>
+        <p class="hero__lede">本知识库优先采用模型与平台提供方的当前技术文档，并用 OWASP 的生成式 AI 安全资料补足提示注入和权限边界。具体接口、模型名称与推荐方式会变化，使用时应回到原文核对。</p>
+        <p class="hero__map">官方指南 · 评估方法 · 结构化输出 · 安全边界</p>
+      </header>
+
+      <article class="prose">
+        <p>正文没有把某个模板描述成跨模型永远有效的公式。不同模型家族对示例、推理指令、消息角色和参数的响应并不相同，同一家平台也会随版本更新建议。因此，章节保留的是较稳定的系统原则：明确目标与权限、选择相关上下文、让中间结果可检查、用评估比较版本，并把工具与高后果动作放在提示之外约束。</p>
+
+        <ul class="source-list">
+          <li>
+            <h2><a href="https://developers.openai.com/api/docs/guides/prompt-engineering">OpenAI：Prompt engineering</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>用于核对消息角色、上下文提供、示例和生产提示版本化等基础原则。文档明确指出模型输出具有非确定性，并建议固定生产模型版本、建立测试与评估套件。</p>
+          </li>
+          <li>
+            <h2><a href="https://developers.openai.com/api/docs/guides/reasoning-best-practices">OpenAI：Reasoning best practices</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>用于区分推理模型与一般生成模型的提示方式。它建议对推理模型保持直接、明确，不必强迫展示逐步思维，并强调给出具体目标和约束。</p>
+          </li>
+          <li>
+            <h2><a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">OpenAI：Evaluation best practices</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>支撑评估闭环：先定义目标，再收集数据、确定指标、运行比较并持续评估。正文关于分类、打分与成对比较通常比无约束开放判断更易稳定测量，也来自这份指南。</p>
+          </li>
+          <li>
+            <h2><a href="https://developers.openai.com/api/docs/guides/structured-outputs">OpenAI：Structured model outputs</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>用于说明结构化输出与普通 JSON 模式的区别。模式约束能提高字段结构的一致性，但文档也提醒，结构正确并不会自动保证字段内容在事实和业务上正确。</p>
+          </li>
+          <li>
+            <h2><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-templates-and-variables">Anthropic：Prompting best practices</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>用于交叉核对清楚直接的说明、示例结构、长上下文与提示链。文档把多阶段调用定位为可检查中间输出或强制流程结构的方式，而不是对所有任务都必需的仪式。</p>
+          </li>
+          <li>
+            <h2><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies">Google AI for Developers：Prompt design strategies</a></h2>
+            <p class="source-meta">一手技术文档 · 访问于 2026-11-04</p>
+            <p>提供跨平台参照，包括清晰指令、补充上下文、示例一致性、复杂任务拆分、链式与并行聚合。文档同样把提示设计描述为需要观察结果后反复实验的过程。</p>
+          </li>
+          <li>
+            <h2><a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/">OWASP GenAI：LLM01 Prompt Injection</a></h2>
+            <p class="source-meta">权威安全社区资料 · 访问于 2026-11-04</p>
+            <p>用于提示注入的定义、直接与间接输入风险，以及“没有万无一失文本防御”的边界。正文采用分层缓解思路：限制权限、隔离不可信内容、验证输出，并为高后果动作保留人工确认。</p>
+          </li>
+        </ul>
+
+        <h2>与仓库内其他主题相连</h2>
+
+        <p>如果想继续理解上下文来自哪里，可阅读<a href="../vector-database-comparison/main.html">向量数据库对比</a>；如果要扩大评估案例而真实数据不足，可阅读<a href="../synthetic-data-and-augmentation/main.html">合成数据与数据增强</a>；如果关注 AI 工作流如何被测试，可阅读<a href="../test-engineer-moat/main.html">测试工程师的护城河</a>。这些页面各自有独立范围，不能替代当前主题中的提示版本、权限与回归设计。</p>
+
+        <p>退货助手是教学构造，不对应某家真实商店，也不提供具体法律或消费者权益判断。它的作用是让同一案例贯穿规格、上下文、评估与安全四个层面。真实部署必须使用所在地区和业务当前有效的政策，并由有权限的人员确认资金、账户和个人数据相关动作。</p>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="evaluation-and-safety.html">← 返回：评估与安全</a>
+          <a href="main.html">从头阅读 →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="foot-dense">
+      <p>Prompt Engineering 进阶 · <a href="main.html">规格</a> · <a href="context-and-workflows.html">工作流</a> · <a href="evaluation-and-safety.html">评估与安全</a> · <a href="sources.html">来源</a>。来源页不计入叙事阅读时长。</p>
+    </footer>
+  </div>
+</body>
+</html>

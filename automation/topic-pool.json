@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "source": {
     "name": "Google 话题记录",
     "captureMethod": "manual-copy",
@@ -4201,6 +4201,13 @@
       "generatedAt": "2026-11-04",
       "slug": "silk-road-civilizational-exchange",
       "entry": "knowledge-bases/silk-road-civilizational-exchange/main.html"
+    },
+    {
+      "name": "Prompt Engineering进阶",
+      "domain": "科技/AI",
+      "generatedAt": "2026-11-05",
+      "slug": "advanced-prompt-engineering",
+      "entry": "knowledge-bases/advanced-prompt-engineering/main.html"
     }
   ],
   "skipped": []

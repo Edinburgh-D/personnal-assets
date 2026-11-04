@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "Prompt Engineering 进阶：从提示词到可验证系统",
+  "entry": "main.html",
+  "type": "multi-branch",
+  "depthLevel": "L2",
+  "createdAt": "2026-11-04",
+  "showCreatedAt": true,
+  "audience": "general",
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "title": "把提示词当成规格",
+      "role": "overview",
+      "stage": "orientation",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": [],
+      "readerQuestion": "提示词从一句灵感变成可复用系统时，真正需要设计的是什么？",
+      "readerStateBefore": "读者把进阶提示工程理解为寻找更长、更有气势或更神秘的固定句式，并期待一次输入就得到稳定答案。",
+      "readerStateAfter": "读者能够把提示词看成任务规格与信息接口，能区分规则、材料、示例和输出约束，并知道稳定性来自整套交互设计而不是一句咒语。",
+      "priorConclusion": "",
+      "coreExample": "为一家网店设计退货咨询助手：它要读取店铺政策和顾客来信，区分事实与请求，给出可核验的处理建议，并在证据不足时转交人工。",
+      "conclusion": "进阶提示工程的核心不是修饰一句话，而是把目标、权限、上下文、示例、输出形式和失败出口组织成可检查的任务规格；好提示首先减少歧义，其次才追求语言上的聪明。",
+      "nextQuestion": "既然提示词是一份任务规格，模型如何使用这些不同来源的信息，我们又该怎样把复杂任务拆成可靠的工作流？",
+      "nextPage": "context-and-workflows.html",
+      "newTerms": [
+        { "term": "提示规格", "definition": "把目标、输入、限制、输出与失败处理写成可检查约定的提示结构。" },
+        { "term": "指令层级", "definition": "不同来源的指令按权限高低排序，低层请求不能随意覆盖高层规则。" },
+        { "term": "上下文窗口", "definition": "模型在一次生成中能够共同参考的输入与历史信息范围。" },
+        { "term": "少样本示例", "definition": "在提示中提供少量输入与理想输出对，让模型从实例中学习任务模式。" },
+        { "term": "输出契约", "definition": "预先约定输出字段、格式、允许值和缺失信息处理方式的接口规则。" }
+      ]
+    },
+    {
+      "file": "context-and-workflows.html",
+      "title": "让上下文各就各位",
+      "role": "chapter",
+      "stage": "mechanism",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["main.html"],
+      "readerQuestion": "既然提示词是一份任务规格，模型如何使用这些不同来源的信息，我们又该怎样把复杂任务拆成可靠的工作流？",
+      "readerStateBefore": "读者能够把提示词看成任务规格与信息接口，能区分规则、材料、示例和输出约束，并知道稳定性来自整套交互设计而不是一句咒语。",
+      "readerStateAfter": "读者能够按信息权限、相关性与处理阶段组织上下文，判断何时加入示例、检索或工具，并把复杂任务拆成能逐步检查的工作流。",
+      "priorConclusion": "进阶提示工程的核心不是修饰一句话，而是把目标、权限、上下文、示例、输出形式和失败出口组织成可检查的任务规格；好提示首先减少歧义，其次才追求语言上的聪明。",
+      "coreExample": "继续改造退货咨询助手：先提取订单事实，再检索适用政策，随后判断是否满足条件，最后生成面向顾客的答复；每一步都保留可核验的输入与输出。",
+      "conclusion": "可靠工作流把规则、事实和行动分开管理，并让每个阶段只承担一种可验证职责；上下文越多不一定越好，真正重要的是来源清楚、位置合理、结果可检查。",
+      "nextQuestion": "当同一套提示在不同措辞、模型版本和边界案例上仍会波动时，我们如何用评估、回归与安全边界决定它是否足够可靠？",
+      "nextPage": "evaluation-and-safety.html",
+      "newTerms": [
+        { "term": "任务分解", "definition": "把一个复杂目标拆成若干职责单一、前后相接且可以单独检查的步骤。" },
+        { "term": "提示链", "definition": "让前一步输出成为后一步输入的多阶段调用流程。" },
+        { "term": "检索增强", "definition": "在生成前查找与当前问题相关的外部资料，并把选中的资料交给模型参考。" },
+        { "term": "工具调用", "definition": "让模型按受控参数请求搜索、计算、数据库或业务系统执行具体操作。" },
+        { "term": "可验证中间产物", "definition": "在最终回答前产生的结构化结果，可由规则、程序或人工独立检查。" }
+      ]
+    },
+    {
+      "file": "evaluation-and-safety.html",
+      "title": "把好不好变成可比较",
+      "role": "chapter",
+      "stage": "judgment",
+      "minContentChars": 3000,
+      "minProseRatio": 0.58,
+      "dependsOn": ["context-and-workflows.html"],
+      "readerQuestion": "当同一套提示在不同措辞、模型版本和边界案例上仍会波动时，我们如何用评估、回归与安全边界决定它是否足够可靠？",
+      "readerStateBefore": "读者能够按信息权限、相关性与处理阶段组织上下文，判断何时加入示例、检索或工具，并把复杂任务拆成能逐步检查的工作流。",
+      "readerStateAfter": "读者能够建立覆盖常见、边界与对抗情形的评估方法，比较提示版本，识别注入与越权风险，并为失败设计转交、拒绝或降级路径。",
+      "priorConclusion": "可靠工作流把规则、事实和行动分开管理，并让每个阶段只承担一种可验证职责；上下文越多不一定越好，真正重要的是来源清楚、位置合理、结果可检查。",
+      "coreExample": "用正常退货、缺少订单号、政策冲突、恶意网页指令和高价值退款五类案例测试助手；只有证据、格式、决定与行动权限都达标时才允许自动回复。",
+      "conclusion": "成熟的提示工程以评估闭环和权限边界结束：先用代表性案例定义成功，再用回归比较变化，并把不确定、冲突和高后果动作导向受限工具或人工复核。",
+      "nextQuestion": "面对一个新的生成式 AI 场景，我们能否先定义可观察的成功与失败，再决定应该改提示、补上下文、换工作流，还是限制自动化范围？",
+      "nextPage": null,
+      "newTerms": [
+        { "term": "评估集", "definition": "用于反复比较提示或模型表现的一组代表性输入及其成功标准。" },
+        { "term": "回归测试", "definition": "每次改动后重跑既有案例，检查新版本是否修好问题却破坏了原有能力。" },
+        { "term": "提示注入", "definition": "攻击者把恶意指令混入用户输入或外部资料，诱使模型偏离原定规则。" },
+        { "term": "最小权限", "definition": "只授予完成当前任务所需的最低数据访问与操作能力。" },
+        { "term": "失败降级", "definition": "当证据不足、风险过高或系统异常时，切换到更保守的回答、拒绝或人工处理。" }
+      ]
+    },
+    {
+      "file": "sources.html",
+      "title": "来源与延伸阅读",
+      "role": "reference",
+      "stage": "reference",
+      "minContentChars": 800,
+      "minProseRatio": 0.45,
+      "dependsOn": [],
+      "readerQuestion": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "priorConclusion": "",
+      "coreExample": "",
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "newTerms": []
+    }
+  ]
+}

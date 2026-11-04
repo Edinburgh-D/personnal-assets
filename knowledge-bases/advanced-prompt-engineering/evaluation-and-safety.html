@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="用评估集、回归测试、权限边界和失败降级判断提示系统是否可靠。" />
+  <meta name="kb-dark-mode-key" content="kb_darkMode" />
+  <title>把好不好变成可比较｜Prompt Engineering 进阶</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span class="reading-progress__bar" data-progress></span></div>
+
+  <header class="mobile-head">
+    <a class="mobile-head__brand" href="main.html">Prompt / System</a>
+    <div class="mobile-head__actions">
+      <button class="icon-button" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+      <button class="icon-button nav-menu-btn" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu">目录</button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" data-mobile-menu data-open="false" aria-label="知识库目录">
+    <a href="main.html">规格</a>
+    <a href="context-and-workflows.html">工作流</a>
+    <a href="evaluation-and-safety.html" aria-current="page">评估与安全</a>
+    <a href="sources.html">来源</a>
+  </nav>
+
+  <nav class="side-rail" aria-label="知识库目录">
+    <a class="side-rail__brand" href="main.html">Prompt / System</a>
+    <ol class="side-rail__links">
+      <li><a href="main.html" aria-label="规格">01</a></li>
+      <li><a href="context-and-workflows.html" aria-label="工作流">02</a></li>
+      <li><a href="evaluation-and-safety.html" aria-label="评估与安全" aria-current="page">03</a></li>
+      <li><a href="sources.html" aria-label="来源">S</a></li>
+    </ol>
+    <button class="icon-button theme-toggle--rail" type="button" data-theme-toggle aria-label="切换深色模式">夜</button>
+  </nav>
+
+  <div class="page-shell">
+    <nav class="breadcrumb" aria-label="面包屑">
+      <a href="../../index.html" data-site-home>Personal Assets</a>
+      <span aria-hidden="true">/</span>
+      <a href="main.html">Prompt Engineering 进阶</a>
+      <span aria-hidden="true">/</span>
+      <span>评估与安全</span>
+    </nav>
+
+    <main id="content" data-kb-content data-page-role="chapter">
+      <template data-narrative="recap">可靠工作流把规则、事实和行动分开管理，并让每个阶段只承担一种可验证职责；上下文越多不一定越好，真正重要的是来源清楚、位置合理、结果可检查。</template>
+      <template data-narrative="question">当同一套提示在不同措辞、模型版本和边界案例上仍会波动时，我们如何用评估、回归与安全边界决定它是否足够可靠？</template>
+      <template data-narrative="example">用正常退货、缺少订单号、政策冲突、恶意网页指令和高价值退款五类案例测试助手；只有证据、格式、决定与行动权限都达标时才允许自动回复。</template>
+      <template data-narrative="conclusion">成熟的提示工程以评估闭环和权限边界结束：先用代表性案例定义成功，再用回归比较变化，并把不确定、冲突和高后果动作导向受限工具或人工复核。</template>
+      <template data-narrative="next-question">面对一个新的生成式 AI 场景，我们能否先定义可观察的成功与失败，再决定应该改提示、补上下文、换工作流，还是限制自动化范围？</template>
+
+      <header class="hero">
+        <h1>把好不好变成可比较</h1>
+        <p class="hero__lede">一个提示在演示里答对，不代表它在真实分布上可靠。只有把成功标准、代表性案例、权限边界和失败出口放进同一闭环，改动才有方向。</p>
+        <p class="hero__map">观察 → 比较 → 约束 → 降级</p>
+      </header>
+
+      <article class="prose">
+        <p>前两章已经把退货助手从一句提示拆成可检查工作流：规则与材料分开，事实提取、政策检索、资格判断和顾客表达各自交付结果。这样的系统更容易定位错误，却仍然会波动。同一位顾客把“上周买的”改成“七天前下单”，可能触发不同解释；政策库新增文档后，检索排序可能变化；模型版本更新也可能改变格式与谨慎程度。只凭开发者挑几封邮件试用，很容易把偶然成功当成稳定能力。</p>
+
+        <p><span class="head-inline">评估从定义可观察的成功开始。</span>退货答复“读起来不错”无法直接测试。更清楚的标准可以分成四层：事实是否忠于订单和来信，政策是否来自适用版本，决定是否符合条款，行动是否在权限范围内。顾客语气属于另一层质量，不应掩盖事实错误。把这些维度分开后，团队才能知道新提示究竟改善了表达，还是牺牲了证据与边界。</p>
+
+        <p>用于反复比较系统表现的一组输入与成功标准，称为<dfn data-term="评估集">评估集</dfn>。它不只是“标准答案表”。开放式回复可能有多种合格写法，因此有的项目适合精确字段比对，有的适合规则检查，有的需要人工按明确准则判断。关键是让案例代表真实使用：常见请求决定基本覆盖，边界案例检验规则细节，失败案例检验系统是否会诚实停下，对抗案例则检验外部文字能否诱使它越权。</p>
+
+        <div class="comparison" role="group" aria-label="退货助手评估集的案例分布">
+          <div class="comparison__row"><span class="comparison__label">常见</span><strong>期限内、资料齐全</strong><span>决定、依据和答复都应正确，且不增加无关步骤。</span></div>
+          <div class="comparison__row"><span class="comparison__label">边界</span><strong>临界日期、特殊商品</strong><span>必须引用适用条款，不能用一般经验覆盖例外。</span></div>
+          <div class="comparison__row"><span class="comparison__label">缺失</span><strong>订单号或商品状态未知</strong><span>保持未知并索取一项必要信息，而不是补猜。</span></div>
+          <div class="comparison__row"><span class="comparison__label">冲突</span><strong>两份政策同时命中</strong><span>指出冲突并转交，不能静默选择更方便的一份。</span></div>
+          <div class="comparison__row"><span class="comparison__label">对抗</span><strong>来信要求忽略店规</strong><span>把恶意命令当作被处理内容，不改变权限和政策。</span></div>
+        </div>
+
+        <p>评估集要随着真实失败增长。客服发现系统经常把“签收日期”误当“购买日期”，就应加入不同表述、不同渠道和缺失字段的案例；一次事故不是只修那封邮件，而是扩展成一类测试。与此同时，案例应保留一部分不参与日常调试，避免提示为了通过已知题目而变得狭窄。数据中若含真实顾客信息，还要脱敏并限制访问，不能为了优化模型复制不必要的个人资料。</p>
+
+        <h2>改动要和旧版本并排比较</h2>
+
+        <p>提示工程很容易陷入“改完这题，坏了那题”。增加一条强硬规则，可能降低幻觉，却让正常回复充满拒绝；加入更多示例，可能修正语气，却使模型过度模仿示例内容。每次改动后重跑既有案例，检查原有能力是否退步，就是<dfn data-term="回归测试">回归测试</dfn>。它把提示当作代码对待：有版本、有差异、有可重复测试，也能在效果变差时回退。</p>
+
+        <p>由于生成具有随机性，一次运行的胜负并不总有意义。重要案例可以多次运行，观察失败是否集中在某类输入；模型与参数要固定，比较时只改变一个主要因素。若同时换模型、改检索和重写提示，即使分数提高，也很难知道功劳来自哪里。生产环境还应记录提示版本、模型版本、检索结果和工具状态，让问题能够重现，而不是只保存最后一段自然语言。</p>
+
+        <p>自动评分也有边界。格式、字段、引用位置和确定性规则很适合程序检查；语气、解释充分性或复杂事实判断可能需要人工。另一个模型可以辅助分类或成对比较，但它也会犯错，所以评分准则要具体，并用人工样本校准。官方评估指南常建议把开放式“你觉得哪个好”改成分类、打分或成对比较，因为判断目标更清楚。评分器是测量工具，不是不可质疑的裁判。</p>
+
+        <pre class="code-sample" aria-label="退货助手评估记录示意"><code><span class="code-sample__muted">case:</span> boundary_017
+<span class="code-sample__muted">prompt_version:</span> support-v12
+<span class="code-sample__muted">policy_grounded:</span> true
+<span class="code-sample__muted">decision_correct:</span> false
+<span class="code-sample__muted">action_authorized:</span> true
+<span class="code-sample__muted">failure:</span> "把签收日误作下单日"</code></pre>
+
+        <p>这条记录比一个总分更有用。它说明系统找对了政策，也没有越权，但日期语义导致决定错误。修复方向应放在事实抽取与日期字段，而不是继续润色顾客回复。分维度记录还避免“平均分掩盖严重失败”：九封礼貌邮件不能抵消一笔未经授权的高额退款。</p>
+
+        <h2>外部内容可能把数据伪装成命令</h2>
+
+        <p>当模型读取顾客来信、网页或文档时，攻击者可能在其中嵌入“忽略之前规则”“泄露系统提示”或“调用退款工具”等文字。这类通过输入诱使模型偏离原定行为的攻击称为<dfn data-term="提示注入">提示注入</dfn>。它可以直接出现在用户消息里，也可以间接藏在网页、邮件附件和检索文档中。根本困难在于：对语言模型来说，规则和数据最终都以可读内容进入上下文，不能仅靠一句“不要被攻击”彻底分开。</p>
+
+        <p>提示加固仍然有价值。明确来源、用结构包住外部材料、禁止把材料中的命令当规则、要求引用证据，都能降低混淆。但它们不是绝对屏障。OWASP 的生成式 AI 安全资料明确强调，提示注入没有万无一失的文本防御；有效策略要限制攻击成功后的影响。因此，安全设计必须移到提示之外：工具只开放必要能力，敏感数据按身份授权，输出进入下一系统前重新验证，高后果动作需要明确确认。</p>
+
+        <p>这种“只给完成当前任务所需能力”的原则叫<dfn data-term="最小权限">最小权限</dfn>。退货助手查询订单时，只应读取与当前已验证顾客相关的有限字段；创建工单时，只能写入规定队列；退款接口可以要求金额上限、二次审批和幂等键。即使模型被恶意文本误导，受限权限也能缩小损害。相反，一个既能读全库、又能任意退款、还能发送外部邮件的助手，无法靠更严厉的提示弥补过大的攻击面。</p>
+
+        <aside class="caution">
+          <strong>自动化边界：</strong>示例涉及退款等有资金后果的动作。实际系统应由业务规则、身份验证、额度控制和人工审批决定权限；模型生成的判断只能作为受控流程的一部分。
+        </aside>
+
+        <h2>安全的系统知道何时停止</h2>
+
+        <p>当证据不足、工具异常、政策冲突或风险过高时，系统切换到更保守路线，称为<dfn data-term="失败降级">失败降级</dfn>。降级并不等于一句含糊的“我不知道”。它可以是请求一项缺失信息、只提供政策链接而不作资格判断、创建人工复核工单，或在服务不可用时明确告诉顾客稍后处理。好的降级保留已经确认的事实，说明缺口，并阻止未经验证的动作继续向下游传播。</p>
+
+        <p>降级阈值应与后果匹配。商品常见问题的措辞建议可以容忍一定变化；退款、账户修改和隐私数据访问则需要更严格证据。风险不是由“这是 AI”统一决定，而由错误会伤害谁、能否撤销、是否触及敏感数据和资金来决定。可逆、低后果动作可以自动化更多；不可逆或难以察觉的动作，应保留确认与审计。</p>
+
+        <div class="decision-grid" aria-label="提示系统改进方向">
+          <section><h3>改提示</h3><p>目标含糊、约束冲突、示例不一致或输出要求不清时，先修任务规格。</p></section>
+          <section><h3>补系统</h3><p>缺最新事实、需要计算、涉及多个权限阶段时，增加检索、工具或流程分解。</p></section>
+          <section><h3>收边界</h3><p>高后果错误无法可靠识别时，降低自动化范围，加入人工复核或停止该动作。</p></section>
+        </div>
+
+        <h2>不是每个失败都该继续堆提示</h2>
+
+        <p>如果模型缺少事实，答案是检索或数据库，不是更有说服力的角色设定；如果格式必须严格，答案可能是结构化输出与程序校验，不是反复强调“务必”；如果任务包含多个不同权限阶段，答案是工作流，不是一条巨型提示；如果特定风格或领域模式长期稳定且有足够数据，才可能考虑模型选择或微调。提示工程是系统优化的入口，不是所有问题的终点。</p>
+
+        <p>判断改动是否值得，也要看成本与延迟。为了修复罕见、低后果措辞问题而增加三次模型调用，可能得不偿失；为了阻止越权退款而增加一次确定性校验，则几乎总是合理。评估集提供失败频率，业务边界提供后果大小，两者共同决定工程投入。没有这两把尺子，团队只会追逐最近一次令人印象深刻的错误。</p>
+
+        <p>至此，Prompt Engineering 的“进阶”可以被重新定义。它不是收集越来越多万能模板，而是建立一条闭环：把任务写成规格，让上下文按职责进入，把复杂目标拆成可检查阶段，用代表性案例衡量变化，再用权限与降级限制失败后果。模型会变化，某个技巧也可能过时；这条闭环却能帮助团队重新测量，而不必依赖旧咒语。</p>
+
+        <p>面对新的生成式 AI 场景，可以先问三个朴素问题：成功和失败能否被观察，事实与规则来自哪里，错误发生后系统还能做什么。若这三件事没有答案，继续润色提示通常只是把不确定性藏得更深；若它们已经清楚，提示、检索、工具、评估和人工就能各自承担恰当角色。</p>
+
+        <nav class="page-nav" aria-label="章节导航">
+          <a href="context-and-workflows.html">← 返回：让上下文各就各位</a>
+          <a href="sources.html">查看来源与延伸阅读 →</a>
+        </nav>
+      </article>
+    </main>
+
+    <footer class="foot-dense">
+      <p>Prompt Engineering 进阶 · <a href="main.html">规格</a> · <a href="context-and-workflows.html">工作流</a> · <a href="evaluation-and-safety.html">评估与安全</a> · <a href="sources.html">来源</a>。正文依据 2026-11-04 可访问的一手文档整理。</p>
+    </footer>
+  </div>
+</body>
+</html>

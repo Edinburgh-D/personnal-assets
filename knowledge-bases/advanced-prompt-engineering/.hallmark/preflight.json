@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "framework": "vanilla-html",
+  "fontSignals": "repository root uses tokenized serif/sans/mono stacks",
+  "paletteSignals": "repository root uses OKLCH design tokens",
+  "motionStance": "motion-cut",
+  "spacing": "4pt-derived semantic scale",
+  "preserved": ["OKLCH tokens", "static HTML", "low motion", "responsive reading"]
+}
