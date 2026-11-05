@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "topic": "外汇市场与汇率博弈：价格、权力与边界",
+  "audience": "general",
+  "type": "single-subject",
+  "depthLevel": "L2",
+  "entry": "main.html",
+  "createdAt": "2026-11-05",
+  "showCreatedAt": true,
+  "targetReadingMinutes": { "min": 20, "max": 30 },
+  "assumedCharsPerMinute": 400,
+  "qualitySummary": {
+    "totalPages": 4,
+    "narrativePages": 3,
+    "referencePages": 1
+  },
+  "pages": [
+    {
+      "file": "main.html",
+      "role": "overview",
+      "stage": "orientation",
+      "readerStateBefore": "读者会把汇率涨跌归因于一条新闻、一个强势机构或笼统的国家强弱，却看不见不同主体的真实支付与资产负债表选择。",
+      "readerStateAfter": "读者能够把汇率理解为两种货币的相对价格，并用真实支付、资产配置和融资需求识别价格背后的多方力量。",
+      "readerQuestion": "汇率看似只是一串报价，为什么它其实是一场围绕支付、资产与承诺展开的多方博弈？",
+      "dependsOn": [],
+      "priorConclusion": "",
+      "coreExample": "一家中国设备进口商九十天后需要支付一百万美元，预算汇率为一美元兑七点一元人民币。",
+      "newTerms": [
+        { "term": "双边汇率", "definition": "两种特定货币之间的兑换价格，必须同时说明哪种货币是计价基准。" },
+        { "term": "汇率敞口", "definition": "未来外币收支或外币资产负债会因汇率变化而改变本币价值的风险位置。" },
+        { "term": "经常账户", "definition": "记录货物、服务、初次收入和二次收入等跨境往来的国际收支部分。" },
+        { "term": "金融账户", "definition": "记录直接投资、证券投资、贷款和储备资产等跨境金融交易的国际收支部分。" },
+        { "term": "资产负债表", "definition": "在某一时点列出一个主体拥有什么资产、欠有什么负债以及使用何种货币计价的表。" }
+      ],
+      "conclusion": "汇率不是某个主体宣布的国家身价，而是贸易支付、资产配置、融资安排与政策承诺在两种货币之间不断重新配平的相对价格。",
+      "nextQuestion": "这些力量如何从一条消息变成真实订单，并通过银行资产负债表、流动性与预期反馈推动汇率？",
+      "nextPage": "feedback-mechanism.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "feedback-mechanism.html",
+      "role": "chapter",
+      "stage": "mechanism",
+      "readerStateBefore": "读者能够把汇率理解为两种货币的相对价格，并用真实支付、资产配置和融资需求识别价格背后的多方力量。",
+      "readerStateAfter": "读者能够沿着预期、订单流、银行库存、融资条件和强制平仓重建一次汇率波动的反馈链，并区分消息与持续力量。",
+      "readerQuestion": "这些力量如何从一条消息变成真实订单，并通过银行资产负债表、流动性与预期反馈推动汇率？",
+      "dependsOn": ["main.html"],
+      "priorConclusion": "汇率不是某个主体宣布的国家身价，而是贸易支付、资产配置、融资安排与政策承诺在两种货币之间不断重新配平的相对价格。",
+      "coreExample": "同一家进口商向银行询价锁定九十天美元成本，银行再把客户订单、远期头寸与自身美元融资约束传导到市场。",
+      "newTerms": [
+        { "term": "订单流", "definition": "一段时间内真实买卖指令的方向、规模和到达顺序，它反映谁正在用资产负债表表达需求。" },
+        { "term": "做市商", "definition": "持续给出买价和卖价、承接客户交易并管理库存风险的金融机构或交易主体。" },
+        { "term": "远期点", "definition": "远期汇率相对即期汇率的加减差额，主要受两种货币利率与期限等因素影响。" },
+        { "term": "流动性", "definition": "在不显著推高交易成本或冲击价格的情况下完成买卖的能力。" },
+        { "term": "风险溢价", "definition": "投资者因承担不确定性、融资压力或难以平仓的风险而要求的额外补偿。" }
+      ],
+      "conclusion": "预期只有转化为订单并占用资产负债表才会推动价格；当流动性收缩、融资变贵或止损集中时，反馈会放大波动，但也会在仓位、资金和相反交易面前失速。",
+      "nextQuestion": "既然反馈会放大波动，央行、政府、投机者与企业分别能改变哪一环，又受到哪些制度和资源约束？",
+      "nextPage": "policy-and-risk.html",
+      "minContentChars": 3000
+    },
+    {
+      "file": "policy-and-risk.html",
+      "role": "chapter",
+      "stage": "judgment",
+      "readerStateBefore": "读者能够沿着预期、订单流、银行库存、融资条件和强制平仓重建一次汇率波动的反馈链，并区分消息与持续力量。",
+      "readerStateAfter": "读者能够比较汇率制度、利率、干预、资本流动管理与企业套保的目标和代价，并用约束优先的顺序审慎解读汇率新闻。",
+      "readerQuestion": "既然反馈会放大波动，央行、政府、投机者与企业分别能改变哪一环，又受到哪些制度和资源约束？",
+      "dependsOn": ["feedback-mechanism.html"],
+      "priorConclusion": "预期只有转化为订单并占用资产负债表才会推动价格；当流动性收缩、融资变贵或止损集中时，反馈会放大波动，但也会在仓位、资金和相反交易面前失速。",
+      "coreExample": "进口商面对一次加息、一次外汇干预传闻和快速贬值，比较立即锁汇、分批套保与保留敞口的经营结果。",
+      "newTerms": [
+        { "term": "汇率制度", "definition": "一国对本币允许浮动、管理波动或承诺固定目标的制度安排。" },
+        { "term": "外汇干预", "definition": "货币当局通过买卖外汇或相关工具影响市场条件、流动性或汇率表现的操作。" },
+        { "term": "不可能三角", "definition": "固定汇率、资本自由流动与独立货币政策三项目标无法长期同时完全实现的约束。" },
+        { "term": "冲销操作", "definition": "货币当局在外汇操作后用本币市场工具抵消其对国内流动性的影响。" },
+        { "term": "套期保值", "definition": "用方向相反、币种和期限匹配的安排降低已有业务风险，而不是额外押注价格方向。" }
+      ],
+      "conclusion": "汇率博弈的关键不是寻找永远更强的一方，而是识别每个参与者的目标、工具、资产负债表和退出条件；政策追求宏观稳定，企业应管理可承受结果，投资者必须为错误判断预留生存空间。",
+      "nextQuestion": "面对下一次汇率急变，哪些可观察证据说明约束真的改变了，哪些只是事后给价格补写的故事？",
+      "nextPage": null,
+      "minContentChars": 3000
+    },
+    {
+      "file": "sources.html",
+      "role": "reference",
+      "stage": "",
+      "readerStateBefore": "",
+      "readerStateAfter": "",
+      "readerQuestion": "",
+      "dependsOn": ["main.html", "feedback-mechanism.html", "policy-and-risk.html"],
+      "priorConclusion": "",
+      "coreExample": "",
+      "newTerms": [],
+      "conclusion": "",
+      "nextQuestion": "",
+      "nextPage": null,
+      "minContentChars": 800
+    }
+  ]
+}

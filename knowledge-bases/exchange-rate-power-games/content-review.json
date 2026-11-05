@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "reviewer": "fresh-context-reader-pass",
+  "reviewedAt": "2026-11-05T22:14:09+08:00",
+  "pages": [
+    {
+      "file": "main.html",
+      "centralQuestion": "汇率看似只是一串报价，为什么它其实是一场围绕支付、资产与承诺展开的多方博弈？",
+      "readerStateChange": "读前容易把汇率涨跌当成国家强弱或单一机构意志；读后能从相对报价、真实敞口、跨境支付和资产负债表承接能力解释多方力量。",
+      "twoSentenceSummary": "本章用九十天后的一百万美元付款说明汇率方向、预算成本与真实敞口。随后把贸易支付、资产配置、融资偿债和预期避险放入同一价格形成图，并说明每类参与者的力量都受资金和目标约束。",
+      "continuityEvidence": "结尾把相对价格落实到谁必须交易、谁能承接和谁会被迫退出，直接推出下一章对订单、银行库存与反馈链的追踪。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "feedback-mechanism.html",
+      "centralQuestion": "这些力量如何从一条消息变成真实订单，并通过银行资产负债表、流动性与预期反馈推动汇率？",
+      "readerStateChange": "读前能识别多类交易动机；读后能按预期差、订单顺序、银行库存、期限价格和融资约束重建一次波动，并指出反馈何时减弱。",
+      "twoSentenceSummary": "本章说明新闻只有相对既有预期产生意外并转化为订单，才会穿过交易商库存进入价格。它进一步解释远期点、市场承接能力与风险补偿如何形成放大链，以及相反交易、资金耗尽和可信政策如何刹车。",
+      "continuityEvidence": "开头承接前页的多方需求，结尾把反馈的持续条件压缩为可观察证据，并自然提出政策当局、大型资金与企业分别能改变哪一环。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "policy-and-risk.html",
+      "centralQuestion": "既然反馈会放大波动，央行、政府、投机者与企业分别能改变哪一环，又受到哪些制度和资源约束？",
+      "readerStateChange": "读前知道反馈会放大波动；读后能比较制度、利率、市场操作、资本流动规则与企业套保的目标和代价，并以约束证据审查结论。",
+      "twoSentenceSummary": "本章从不可能三角出发，比较浮动、管理与稳定锚的调整方式，并解释利率、市场操作和流动性冲销为什么都不是免费工具。它把进口商的方向猜测改写为真实敞口管理，再给出制度、市场、资金、约束和反例五类证据。",
+      "continuityEvidence": "开篇直接沿用上一章的流动性、融资与预期反馈，末尾把三章内容合并为可迁移到下一次汇率急变的判断顺序。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    },
+    {
+      "file": "sources.html",
+      "centralQuestion": "",
+      "readerStateChange": "读前只能看到正文中的机构与数字；读后能定位原始发布页，区分成交额、资金流与储备变化，并知道哪些结论需要随时间复核。",
+      "twoSentenceSummary": "来源页列出 BIS、IMF 与国家外汇管理局的一手调查、政策框架、市场数据和企业风险指引，并说明每项资料在正文中的用途。它另行解释统计口径、研究推论和政策文件的边界，并连接四个相关站内知识库。",
+      "continuityEvidence": "该页由三章导航和翻页链接均可进入，为市场规模、交易结构、政策边界与企业风险管理提供可追溯出口。",
+      "termIssues": [],
+      "continuityIssues": [],
+      "result": "pass"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-05",
+  "target": "vanilla HTML/CSS/JavaScript knowledge base",
+  "styling": "self-contained semantic tokens in tokens.css",
+  "motion": "no ornamental motion; native menu and theme state changes only",
+  "contentStructure": "four-page continuous narrative with a three-stage reading path",
+  "repositoryConstraint": "all Hallmark records remain inside the new knowledge-base directory",
+  "responsiveQA": "20 page/viewport combinations at 320, 375, 414, 768 and 1280 CSS pixels; zero overflow failures",
+  "contrastQA": "key light and dark text pairs measure 6.91:1 to 16.12:1",
+  "interactionQA": "mobile menu and theme toggle state/ARIA verified",
+  "slopTest": "58/58 gates passed"
+}
