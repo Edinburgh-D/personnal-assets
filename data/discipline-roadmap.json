@@ -1,0 +1,23 @@
+{
+  "current_id": "semiconductor",
+  "completion_policy": {
+    "minimum_verified_nodes": {
+      "trunk": 6,
+      "theory_method": 4,
+      "tools_standards": 4,
+      "process_product": 4,
+      "boundary_open": 4
+    },
+    "max_check_age_days": 180,
+    "require_review_approval": true
+  },
+  "disciplines": [
+    {
+      "id": "semiconductor",
+      "name": "半导体",
+      "state": "active",
+      "review_status": "pending"
+    }
+  ],
+  "queue": []
+}

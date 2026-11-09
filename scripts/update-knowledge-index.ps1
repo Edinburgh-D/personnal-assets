@@ -144,6 +144,12 @@ function Get-KnowledgeBaseRecord {
     }
 
     $createdAt = [string](Get-ManifestValue -Manifest $manifest -PropertyName 'createdAt')
+    $showCreatedAtValue = Get-ManifestValue -Manifest $manifest -PropertyName 'showCreatedAt'
+    $showCreatedAt = $showCreatedAtValue -is [bool] -and $showCreatedAtValue
+
+    if ($showCreatedAt -and [string]::IsNullOrWhiteSpace($createdAt)) {
+        throw "Knowledge base '$($Directory.Name)' enables showCreatedAt but does not provide createdAt in content-manifest.json."
+    }
 
     return [pscustomobject]@{
         Slug = $Directory.Name
@@ -152,6 +158,7 @@ function Get-KnowledgeBaseRecord {
         Description = $description
         Tags = @($tags)
         CreatedAt = $createdAt
+        ShowCreatedAt = $showCreatedAt
     }
 }
 
@@ -169,13 +176,24 @@ function ConvertTo-CardMarkup {
     $tagMarkup = ($Record.Tags | ForEach-Object {
         '<span class="tag">' + [System.Net.WebUtility]::HtmlEncode($_) + '</span>'
     }) -join ''
+    $createdAtMarkup = ''
+    if ($Record.ShowCreatedAt) {
+        $createdAtValue = $Record.CreatedAt.Trim()
+        $createdAtLabel = $createdAtValue
+        if ($createdAtValue -match '^\d{4}-\d{2}-\d{2}') {
+            $createdAtLabel = $Matches[0]
+        }
+        $createdAtAttribute = [System.Net.WebUtility]::HtmlEncode($createdAtValue)
+        $createdAtText = [System.Net.WebUtility]::HtmlEncode($createdAtLabel)
+        $createdAtMarkup = "`n            <p class=`"kb-created-at`">生成于 <time datetime=`"$createdAtAttribute`">$createdAtText</time></p>"
+    }
 
     return @"
         <a class="kb-item" href="$href">
           <div class="kb-copy">
             <h3>$title</h3>
             <p>$description</p>
-            <div class="tags">$tagMarkup</div>
+            <div class="tags">$tagMarkup</div>$createdAtMarkup
           </div>
           <span class="availability ready">可读</span>
         </a>

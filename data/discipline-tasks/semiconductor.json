@@ -1,0 +1,544 @@
+{
+    "discipline_id":  "semiconductor",
+    "generated_at":  "2026-11-09T16:19:32.7602240+08:00",
+    "policy_source":  "data/discipline-roadmap.json",
+    "tasks":  [
+                  {
+                      "id":  "validate-structure",
+                      "title":  "Pass the discipline schema and link validator",
+                      "kind":  "validation",
+                      "role":  "gatekeeper",
+                      "priority":  10,
+                      "max_nodes":  3,
+                      "target":  {
+                                     "discipline":  "semiconductor"
+                                 },
+                      "depends_on":  [
+
+                                     ],
+                      "acceptance":  "Validator exits zero.",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-boundary-open-01",
+                      "title":  "Reach verified boundary_open coverage slot 1 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  31,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "boundary_open",
+                                     "ordinal":  1
+                                 },
+                      "depends_on":  [
+                                         "validate-structure"
+                                     ],
+                      "acceptance":  "The dimension contains at least 1 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-process-product-01",
+                      "title":  "Reach verified process_product coverage slot 1 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  31,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "process_product",
+                                     "ordinal":  1
+                                 },
+                      "depends_on":  [
+                                         "validate-structure"
+                                     ],
+                      "acceptance":  "The dimension contains at least 1 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-theory-method-01",
+                      "title":  "Reach verified theory_method coverage slot 1 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  31,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "theory_method",
+                                     "ordinal":  1
+                                 },
+                      "depends_on":  [
+                                         "validate-structure"
+                                     ],
+                      "acceptance":  "The dimension contains at least 1 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-tools-standards-01",
+                      "title":  "Reach verified tools_standards coverage slot 1 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  31,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "tools_standards",
+                                     "ordinal":  1
+                                 },
+                      "depends_on":  [
+                                         "validate-structure"
+                                     ],
+                      "acceptance":  "The dimension contains at least 1 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-01",
+                      "title":  "Reach verified trunk coverage slot 1 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  31,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  1
+                                 },
+                      "depends_on":  [
+                                         "validate-structure"
+                                     ],
+                      "acceptance":  "The dimension contains at least 1 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-boundary-open-02",
+                      "title":  "Reach verified boundary_open coverage slot 2 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  32,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "boundary_open",
+                                     "ordinal":  2
+                                 },
+                      "depends_on":  [
+                                         "coverage-boundary-open-01"
+                                     ],
+                      "acceptance":  "The dimension contains at least 2 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-process-product-02",
+                      "title":  "Reach verified process_product coverage slot 2 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  32,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "process_product",
+                                     "ordinal":  2
+                                 },
+                      "depends_on":  [
+                                         "coverage-process-product-01"
+                                     ],
+                      "acceptance":  "The dimension contains at least 2 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-theory-method-02",
+                      "title":  "Reach verified theory_method coverage slot 2 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  32,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "theory_method",
+                                     "ordinal":  2
+                                 },
+                      "depends_on":  [
+                                         "coverage-theory-method-01"
+                                     ],
+                      "acceptance":  "The dimension contains at least 2 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-tools-standards-02",
+                      "title":  "Reach verified tools_standards coverage slot 2 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  32,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "tools_standards",
+                                     "ordinal":  2
+                                 },
+                      "depends_on":  [
+                                         "coverage-tools-standards-01"
+                                     ],
+                      "acceptance":  "The dimension contains at least 2 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-02",
+                      "title":  "Reach verified trunk coverage slot 2 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  32,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  2
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-01"
+                                     ],
+                      "acceptance":  "The dimension contains at least 2 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-boundary-open-03",
+                      "title":  "Reach verified boundary_open coverage slot 3 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  33,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "boundary_open",
+                                     "ordinal":  3
+                                 },
+                      "depends_on":  [
+                                         "coverage-boundary-open-02"
+                                     ],
+                      "acceptance":  "The dimension contains at least 3 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-process-product-03",
+                      "title":  "Reach verified process_product coverage slot 3 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  33,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "process_product",
+                                     "ordinal":  3
+                                 },
+                      "depends_on":  [
+                                         "coverage-process-product-02"
+                                     ],
+                      "acceptance":  "The dimension contains at least 3 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-theory-method-03",
+                      "title":  "Reach verified theory_method coverage slot 3 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  33,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "theory_method",
+                                     "ordinal":  3
+                                 },
+                      "depends_on":  [
+                                         "coverage-theory-method-02"
+                                     ],
+                      "acceptance":  "The dimension contains at least 3 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-tools-standards-03",
+                      "title":  "Reach verified tools_standards coverage slot 3 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  33,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "tools_standards",
+                                     "ordinal":  3
+                                 },
+                      "depends_on":  [
+                                         "coverage-tools-standards-02"
+                                     ],
+                      "acceptance":  "The dimension contains at least 3 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-03",
+                      "title":  "Reach verified trunk coverage slot 3 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  33,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  3
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-02"
+                                     ],
+                      "acceptance":  "The dimension contains at least 3 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-boundary-open-04",
+                      "title":  "Reach verified boundary_open coverage slot 4 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  34,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "boundary_open",
+                                     "ordinal":  4
+                                 },
+                      "depends_on":  [
+                                         "coverage-boundary-open-03"
+                                     ],
+                      "acceptance":  "The dimension contains at least 4 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-process-product-04",
+                      "title":  "Reach verified process_product coverage slot 4 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  34,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "process_product",
+                                     "ordinal":  4
+                                 },
+                      "depends_on":  [
+                                         "coverage-process-product-03"
+                                     ],
+                      "acceptance":  "The dimension contains at least 4 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-theory-method-04",
+                      "title":  "Reach verified theory_method coverage slot 4 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  34,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "theory_method",
+                                     "ordinal":  4
+                                 },
+                      "depends_on":  [
+                                         "coverage-theory-method-03"
+                                     ],
+                      "acceptance":  "The dimension contains at least 4 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-tools-standards-04",
+                      "title":  "Reach verified tools_standards coverage slot 4 of 4",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  34,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "tools_standards",
+                                     "ordinal":  4
+                                 },
+                      "depends_on":  [
+                                         "coverage-tools-standards-03"
+                                     ],
+                      "acceptance":  "The dimension contains at least 4 verified node(s).",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-04",
+                      "title":  "Reach verified trunk coverage slot 4 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  34,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  4
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-03"
+                                     ],
+                      "acceptance":  "The dimension contains at least 4 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-05",
+                      "title":  "Reach verified trunk coverage slot 5 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  35,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  5
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-04"
+                                     ],
+                      "acceptance":  "The dimension contains at least 5 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "coverage-trunk-06",
+                      "title":  "Reach verified trunk coverage slot 6 of 6",
+                      "kind":  "coverage",
+                      "role":  "architect",
+                      "priority":  36,
+                      "max_nodes":  1,
+                      "target":  {
+                                     "dimension":  "trunk",
+                                     "ordinal":  6
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-05"
+                                     ],
+                      "acceptance":  "The dimension contains at least 6 verified node(s).",
+                      "status":  "done",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "approve-source-sample",
+                      "title":  "Human approval of the random source sample",
+                      "kind":  "manual-review",
+                      "role":  "human",
+                      "priority":  80,
+                      "max_nodes":  0,
+                      "target":  {
+                                     "sample":  "docs/review/semiconductor-sample.md"
+                                 },
+                      "depends_on":  [
+                                         "coverage-trunk-01",
+                                         "coverage-trunk-02",
+                                         "coverage-trunk-03",
+                                         "coverage-trunk-04",
+                                         "coverage-trunk-05",
+                                         "coverage-trunk-06",
+                                         "coverage-theory-method-01",
+                                         "coverage-theory-method-02",
+                                         "coverage-theory-method-03",
+                                         "coverage-theory-method-04",
+                                         "coverage-tools-standards-01",
+                                         "coverage-tools-standards-02",
+                                         "coverage-tools-standards-03",
+                                         "coverage-tools-standards-04",
+                                         "coverage-process-product-01",
+                                         "coverage-process-product-02",
+                                         "coverage-process-product-03",
+                                         "coverage-process-product-04",
+                                         "coverage-boundary-open-01",
+                                         "coverage-boundary-open-02",
+                                         "coverage-boundary-open-03",
+                                         "coverage-boundary-open-04"
+                                     ],
+                      "acceptance":  "The owner records approval after checking that sampled sources support their claims.",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "final-completion-audit",
+                      "title":  "Run the final completion audit",
+                      "kind":  "completion-audit",
+                      "role":  "auditor",
+                      "priority":  90,
+                      "max_nodes":  0,
+                      "target":  {
+                                     "discipline":  "semiconductor"
+                                 },
+                      "depends_on":  [
+                                         "approve-source-sample"
+                                     ],
+                      "acceptance":  "Validator, generated-page check, coverage policy, freshness, and review approval all pass.",
+                      "status":  "todo",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  null
+                  },
+                  {
+                      "id":  "transition-next-discipline",
+                      "title":  "Bootstrap the next user-approved discipline",
+                      "kind":  "transition",
+                      "role":  "transition",
+                      "priority":  100,
+                      "max_nodes":  3,
+                      "target":  {
+                                     "next_id":  null
+                                 },
+                      "depends_on":  [
+                                         "final-completion-audit"
+                                     ],
+                      "acceptance":  "At most three sourced trunk nodes are added to the approved next-discipline draft.",
+                      "status":  "blocked",
+                      "completed_at":  null,
+                      "evidence":  null,
+                      "blocked_reason":  "No user-approved next discipline is queued."
+                  }
+              ]
+}

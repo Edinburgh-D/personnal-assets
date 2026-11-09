@@ -1,0 +1,462 @@
+{
+  "id": "semiconductor",
+  "name": "半导体",
+  "core_problem": "如何可靠控制电荷，并把海量器件制造成可用系统",
+  "blank_dimensions": [],
+  "neighbors": [
+    {
+      "name": "量子计算",
+      "link": "knowledge-bases/quantum-computing-primer/main.html"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "solid-state-switch",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": null,
+      "title": "从真空管到晶体管",
+      "summary": "用固态器件完成电信号的开关与放大",
+      "old_approach": "真空管依靠加热阴极和真空中的电子流控制信号。",
+      "bottleneck": "体积、发热、能耗与寿命限制了设备的小型化和可靠性。",
+      "new_concept": "晶体管以固态材料中的载流子控制电流。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "The Next Generation: Semiconductors",
+          "url": "https://www.computerhistory.org/revolution/story/272",
+          "grade": "other",
+          "supports": "支持晶体管作为真空管放大与开关功能的固态替代，并带来更小、更快、更低功耗的器件。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "controllable-conductivity",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "solid-state-switch",
+      "title": "让导电性变得可设计",
+      "summary": "用能带、结与掺杂把材料变成可控器件",
+      "old_approach": "早期点接触器件依赖锗晶体与极其敏感的接触位置。",
+      "bottleneck": "器件一致性、温度特性和批量制造能力不足。",
+      "new_concept": "利用硅、p-n结与可控掺杂定义载流子分布。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "The Silicon Engine Timeline",
+          "url": "https://www.computerhistory.org/siliconengine/timeline/",
+          "grade": "other",
+          "supports": "支持早期锗点接触晶体管、p-n结、超纯材料与硅晶体管依次解决器件控制和工作特性问题的演进。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "integrated-circuit",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "controllable-conductivity",
+      "title": "把器件做进同一块材料",
+      "summary": "从分立互连转向单片集成电路",
+      "old_approach": "晶体管、电阻与电容分别制造，再用导线逐一连接。",
+      "bottleneck": "手工互连随器件数量增长而变得庞大、昂贵且不可靠。",
+      "new_concept": "在同一衬底上制造并互连多个元件，形成集成电路。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Silicon Chips Take Man to the Moon",
+          "url": "https://computerhistory.org/blog/silicon-chips-take-man-to-the-moon/",
+          "grade": "other",
+          "supports": "支持平面工艺上的金属图形取代手工导线，把多个晶体管互连为完整电路。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "planar-mass-manufacturing",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "integrated-circuit",
+      "title": "把芯片稳定地批量制造",
+      "summary": "平面工艺与光刻建立可重复制造流程",
+      "old_approach": "台面型器件暴露敏感结区，制造步骤难以稳定复现。",
+      "bottleneck": "表面污染、漏电与良率阻碍大批量生产。",
+      "new_concept": "用二氧化硅保护表面，并从晶圆一侧完成光刻和加工。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Invention of the Planar Manufacturing Process",
+          "url": "https://www.computerhistory.org/siliconengine/invention-of-the-planar-manufacturing-process/",
+          "grade": "other",
+          "supports": "支持平面工艺以氧化层保护p-n结、降低漏电，并允许从晶圆一侧制造集成元件。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "cmos-low-power-integration",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "planar-mass-manufacturing",
+      "title": "用CMOS降低静态功耗",
+      "summary": "互补MOS让大规模数字集成更省电",
+      "old_approach": "早期逻辑族在待机和开关过程中持续消耗较多功率。",
+      "bottleneck": "器件数量增长使总功耗和散热快速上升。",
+      "new_concept": "互补连接p沟道与n沟道MOS，压低待机功耗。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Complementary MOS Circuit Configuration is Invented",
+          "url": "https://www.computerhistory.org/siliconengine/complementary-mos-circuit-configuration-is-invented/",
+          "grade": "other",
+          "supports": "支持互补p沟道与n沟道MOS电路在待机时接近零功耗，并成为低功耗集成技术。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "scaling-beyond-power-wall",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "cmos-low-power-integration",
+      "title": "微缩与功耗墙",
+      "summary": "从等比例缩放转向材料和三维器件创新",
+      "old_approach": "缩小尺寸并同步降低电压，兼得密度、速度和功耗。",
+      "bottleneck": "电压难以继续同比下降，漏电和功率密度成为约束。",
+      "new_concept": "用应变硅、高k金属栅与FinFET延续性能功耗改进。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "A 30 Year Retrospective on Dennard's MOSFET Scaling Paper",
+          "url": "https://ieeexplore.ieee.org/document/4785534",
+          "grade": "review",
+          "supports": "支持Dennard缩放同时改善密度、速度与功耗，并指出继续缩放面临新的器件挑战。"
+        },
+        {
+          "title": "How Intel Makes Chips: Transistors to Transformations",
+          "url": "https://www.intel.com/content/www/us/en/history/museum-transistors-to-transformations-brochure.html",
+          "grade": "primary",
+          "supports": "支持应变硅、高k金属栅和三维Tri-Gate依次成为延续缩放的关键器件创新。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "duv-to-euv-lithography",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "scaling-beyond-power-wall",
+      "title": "从浸没式DUV到EUV",
+      "summary": "突破曝光波长和数值孔径的分辨率限制",
+      "old_approach": "193纳米ArF深紫外光配合透镜投影晶圆图形。",
+      "bottleneck": "继续缩小图形需要更高数值孔径和复杂多重曝光。",
+      "new_concept": "浸没式光刻提高数值孔径，EUV以13.5纳米光缩短波长。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Light and lasers — Lithography principles",
+          "url": "https://www.asml.com/en/technology/lithography-principles/light-and-lasers",
+          "grade": "primary",
+          "supports": "支持ArF DUV使用193纳米光，而EUV使用13.5纳米光以推进更小图形。"
+        },
+        {
+          "title": "Lenses and mirrors — Lithography principles",
+          "url": "https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors",
+          "grade": "primary",
+          "supports": "支持浸没式DUV以水层把数值孔径提高到1以上，并说明EUV改用反射镜。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "eda-fabless-foundry",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "duv-to-euv-lithography",
+      "title": "设计自动化与产业分工",
+      "summary": "EDA与代工模式拆解复杂设计和重资产制造",
+      "old_approach": "芯片企业内部同时承担设计、验证、工艺开发和建厂制造。",
+      "bottleneck": "设计规模与晶圆厂投资同步激增，单一组织难以覆盖全链条。",
+      "new_concept": "EDA自动化设计验证，Fabless与专用代工厂分工协作。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "What is Electronic Design Automation?",
+          "url": "https://www.synopsys.com/glossary/what-is-electronic-design-automation.html",
+          "grade": "other",
+          "supports": "支持EDA自动化规划、仿真、验证和制造准备，以应对芯片设计复杂度。"
+        },
+        {
+          "title": "Everything to Know about Dedicated Foundries",
+          "url": "https://www.tsmc.com/english/aboutTSMC/dc_infographics_foundry",
+          "grade": "primary",
+          "supports": "支持专用晶圆代工降低无厂设计公司的进入门槛，并推动设计与制造分工。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "domain-specific-accelerators",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "eda-fabless-foundry",
+      "title": "从通用计算到专用加速",
+      "summary": "GPU、TPU与NPU用专用数据通路换取能效",
+      "old_approach": "通用CPU以复杂控制和高速单线程覆盖多类工作负载。",
+      "bottleneck": "并行计算和神经网络受吞吐量、数据搬运与能效限制。",
+      "new_concept": "为并行或特定领域配置专用运算阵列、存储层次与软件栈。",
+      "detail_page": "knowledge-bases/ai-chip-architecture-guide/main.html",
+      "sources": [
+        {
+          "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+          "url": "https://research.google/pubs/in-datacenter-performance-analysis-of-a-tensor-processing-unit/",
+          "grade": "primary",
+          "supports": "支持TPU以定制矩阵乘单元和片上存储加速神经网络推理，体现领域专用硬件的能效路径。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "chiplets-and-gaa",
+      "dimension": "trunk",
+      "type": "问题",
+      "parent": "domain-specific-accelerators",
+      "title": "Chiplet与GAA并行推进",
+      "summary": "用系统级封装和环栅结构应对微缩成本",
+      "old_approach": "把全部功能放进单一大芯片，并依靠FinFET继续缩小。",
+      "bottleneck": "掩模尺寸、良率、互连和短沟道控制共同推高成本。",
+      "new_concept": "Chiplet拆分系统，先进封装重组；GAA继续改善栅控。",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "UCIe Specifications",
+          "url": "https://www.uciexpress.org/specifications",
+          "grade": "standard",
+          "supports": "支持UCIe以标准化封装内互连实现多供应商Chiplet组合并突破单一掩模尺寸。"
+        },
+        {
+          "title": "Intel 18A RibbonFET",
+          "url": "https://www.intel.com/content/www/us/en/foundry/process/18a.html",
+          "grade": "primary",
+          "supports": "支持GAA以栅极完全包围沟道，改善短沟道静电控制并延续FinFET之后的缩放。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "band-theory-and-doping",
+      "dimension": "theory_method",
+      "type": "理论",
+      "parent": "controllable-conductivity",
+      "title": "能带、载流子与掺杂",
+      "summary": "用杂质浓度塑造p型、n型区域与结",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Stage 3: Front-end Manufacturing",
+          "url": "https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/stage-3-front-end-manufacturing/",
+          "grade": "other",
+          "supports": "支持以离子注入杂质改变晶圆局部导电性，并形成晶体管的开关区域。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "constant-field-scaling",
+      "dimension": "theory_method",
+      "type": "方法",
+      "parent": "scaling-beyond-power-wall",
+      "title": "恒定电场缩放",
+      "summary": "同步缩小尺寸与电压以控制功率密度",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "A 30 Year Retrospective on Dennard's MOSFET Scaling Paper",
+          "url": "https://ieeexplore.ieee.org/document/4785534",
+          "grade": "review",
+          "supports": "支持恒定电场缩放通过协同调整器件尺寸和电压，追求密度、速度及功耗的同步改进。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "eda-design-flow",
+      "dimension": "tools_standards",
+      "type": "工具",
+      "parent": "eda-fabless-foundry",
+      "title": "EDA设计与验证流程",
+      "summary": "把规划、仿真、验证和版图准备自动化",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "What is Electronic Design Automation?",
+          "url": "https://www.synopsys.com/glossary/what-is-electronic-design-automation.html",
+          "grade": "other",
+          "supports": "支持EDA覆盖芯片规划、仿真、测试、验证和制造准备等结构化设计流程。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "semi-standards-and-metrology",
+      "dimension": "tools_standards",
+      "type": "标准",
+      "parent": "planar-mass-manufacturing",
+      "title": "SEMI标准与制程量测",
+      "summary": "用接口、材料和量测规范维持产线互操作",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "SEMI Standards",
+          "url": "https://www.semi.org/en/products-services/standards",
+          "grade": "standard",
+          "supports": "支持SEMI标准覆盖设备自动化、微光刻、封装、材料与制程控制，以实现供应链和产线互操作。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "dedicated-foundry-model",
+      "dimension": "process_product",
+      "type": "组织制度",
+      "parent": "eda-fabless-foundry",
+      "title": "Fabless与专用代工",
+      "summary": "设计公司与晶圆厂按能力和资本强度分工",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Everything to Know about Dedicated Foundries",
+          "url": "https://www.tsmc.com/english/aboutTSMC/dc_infographics_foundry",
+          "grade": "primary",
+          "supports": "支持专用代工模式承担复杂工艺和建厂投入，从而降低Fabless公司的创立门槛。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "advanced-packaging-and-ucie",
+      "dimension": "process_product",
+      "type": "工艺",
+      "parent": "chiplets-and-gaa",
+      "title": "先进封装与UCIe",
+      "summary": "以2.5D、3D和标准互连重组异构芯粒",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "TSMC 3DFabric for HPC",
+          "url": "https://www.tsmc.com/chinese/dedicatedFoundry/technology/platform_HPC_tech_WLSI",
+          "grade": "primary",
+          "supports": "支持CoWoS和SoIC通过2.5D及3D集成组合逻辑、存储和异构芯粒。"
+        },
+        {
+          "title": "UCIe Specifications",
+          "url": "https://www.uciexpress.org/specifications",
+          "grade": "standard",
+          "supports": "支持UCIe定义封装内die-to-die物理层、协议和合规测试。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "memory-data-movement-wall",
+      "dimension": "boundary_open",
+      "type": "边界",
+      "parent": "domain-specific-accelerators",
+      "title": "存储墙与数据搬运",
+      "summary": "算力提升后，带宽、层次与搬运能耗成为瓶颈",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "GPU Performance Background User's Guide",
+          "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+          "grade": "primary",
+          "supports": "支持GPU性能受处理单元、缓存、HBM带宽和算术强度共同约束，而非只由运算单元数量决定。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "subnanometer-interconnect-control",
+      "dimension": "boundary_open",
+      "type": "未解问题",
+      "parent": "chiplets-and-gaa",
+      "title": "亚纳米器件与互连控制",
+      "summary": "沟道、接触、布线和供电必须协同缩放",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "CMOS scaling beyond FinFET towards sub-1nm",
+          "url": "https://www.imec-int.com/en/expertise/cmos-advanced/compute/cmos-scaling",
+          "grade": "review",
+          "supports": "支持FinFET之后需要GAA纳米片、forksheet、CFET及新材料协同推进标准单元和互连缩放。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    },
+    {
+      "id": "silicon-quantum-devices",
+      "dimension": "boundary_open",
+      "type": "边界",
+      "parent": "controllable-conductivity",
+      "title": "硅量子器件",
+      "summary": "把MOS、掺杂与同位素工程延伸到量子比特",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": "knowledge-bases/quantum-computing-primer/main.html",
+      "sources": [
+        {
+          "title": "Enriched Silicon and Devices for Quantum Information",
+          "url": "https://www.nist.gov/programs-projects/enriched-silicon-and-devices-quantum-information",
+          "grade": "primary",
+          "supports": "支持硅MOS器件、单原子掺杂和SiGe异质结构可承载量子比特，并可借助同位素纯化改善相干性质。"
+        }
+      ],
+      "last_checked": "2026-11-05",
+      "status": "verified"
+    }
+  ]
+}

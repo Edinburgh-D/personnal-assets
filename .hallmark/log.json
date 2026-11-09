@@ -1,0 +1,17 @@
+{
+  "project": "discipline-map",
+  "decisions": [
+    {
+      "decision": "Use a 5x2 trunk matrix on wide screens and a linear stack on phones",
+      "reason": "Ten verified trunk nodes remain visible without horizontal scrolling."
+    },
+    {
+      "decision": "Use shared generated HTML and one CSS system",
+      "reason": "New disciplines inherit the same visual contract without duplicated templates."
+    },
+    {
+      "decision": "Exclude unverified and draft nodes from publication",
+      "reason": "Source confidence is a publishing gate, not a visual badge."
+    }
+  ]
+}

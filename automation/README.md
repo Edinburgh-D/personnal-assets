@@ -1,15 +1,27 @@
-# Automated knowledge-base publishing
+# Automated discipline-map maintenance
 
-`run-knowledge-task.ps1` selects one unused topic, creates an isolated Git worktree, runs a Codex author pass (including the skill-mandated reader review), enforces deterministic publication gates, commits to `main`, pushes to GitHub, and verifies the Cloudflare Pages URL. If Codex reaches a usage limit only after producing the files, the result is recoverable solely when every hard gate still passes.
+`run-knowledge-task.ps1` no longer generates standalone topic knowledge bases. A planner first materializes an auditable task ledger in `data/discipline-tasks/<id>.json`. Five role-specific scheduled workers claim only ready tasks assigned to their role, execute the task, pass the publication gates, and mark it `done` with evidence. A local daily claim file ensures that at most one task can publish on a given day, so the combined total remains at most three changed nodes.
 
-Cloudflare verification uses the extensionless canonical page URL because Pages redirects explicit `.html` requests with HTTP 308, which Windows PowerShell 5 does not consistently follow.
+The runner follows this order: repair validator failures; verify the oldest unverified nodes; fill an explicitly blank dimension; extend the smallest dimension; otherwise recheck the oldest verified node. It then regenerates the discipline pages, reruns both validation and the generated-file check, appends `docs/daily-log.md`, makes one `daily(<id>): ...` commit, pushes `main`, and verifies the Cloudflare Pages URL.
 
-The Windows task is installed by `install-knowledge-task.ps1` and runs daily at 02:00, 07:00, 11:00, 16:00, and 22:00. It uses `Interactive` logon so the current user's Codex and Git credentials are available. `StartWhenAvailable` and `WakeToRun` are enabled; overlapping runs are ignored.
+Any failed gate discards the isolated worktree, so the day's repository changes are rolled back. The reason and transcript remain under `test-results/knowledge-automation/<timestamp>/`. The runner's allowlist prevents any scheduled edit under `knowledge-bases/`.
 
-Run a non-mutating preflight:
+The Windows tasks are installed by `install-knowledge-task.ps1`:
+
+| Time | Task | Mode |
+|---|---|---|
+| 07:00 | `Codex Discipline 01 Gatekeeper` | Validation and repair tasks |
+| 07:15 | `Codex Discipline 02 Researcher` | Source-verification tasks |
+| 07:30 | `Codex Discipline 03 Architect` | Coverage and knowledge-tree tasks |
+| 07:45 | `Codex Discipline 04 Auditor` | Freshness checks and completion audits |
+| 08:00 | `Codex Discipline 05 Transition` | Approved next-discipline bootstrap tasks |
+
+Each worker checks task dependencies before claiming anything. The live claim is recorded under `test-results/knowledge-automation/daily-state/`; after one task pushes successfully, the remaining workers skip. The committed ledger records the checkmark, completion date, and evidence. `StartWhenAvailable` and `WakeToRun` are enabled; overlapping runs are ignored by a shared mutex.
+
+Non-mutating preflight:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\automation\run-knowledge-task.ps1 -Preflight
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\automation\run-knowledge-task.ps1 -Preflight -DisciplineId semiconductor
 ```
 
 Install or refresh the task:
@@ -18,12 +30,10 @@ Install or refresh the task:
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\automation\install-knowledge-task.ps1
 ```
 
-Run once immediately:
+Run one stage immediately (this may commit and push if that stage is eligible and every gate passes):
 
 ```powershell
-Start-ScheduledTask -TaskName 'Codex Knowledge Base Publisher'
+Start-ScheduledTask -TaskName 'Codex Discipline 01 Gatekeeper'
 ```
 
-For a manually requested second Codex context, invoke the runner directly with `-IndependentReview`. Scheduled runs leave this off so one publication does not consume two full model sessions; the generated `content-review.json` and the outer validator remain mandatory.
-
-Run artifacts and transcripts are written under `test-results/knowledge-automation/` and are ignored by Git. A failed isolated worktree is retained under the sibling `kb-automation-worktrees` directory for diagnosis; successful worktrees are removed.
+To maintain a future discipline manually, pass its user-approved ID to the runner. The daily task must not invent a new discipline.

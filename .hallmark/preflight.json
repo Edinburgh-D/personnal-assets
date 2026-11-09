@@ -1,0 +1,16 @@
+{
+  "project": "discipline-map",
+  "genre": "modern-minimal",
+  "macrostructure": "Map / Diagram",
+  "theme": "Personal Archive inherited",
+  "navigation": "N9 edge-aligned minimal",
+  "footer": "Ft2 inline-rule single-line",
+  "enrichment": "none",
+  "visual_thesis": "The problem-evolution chain is the primary visual; branch dimensions remain compact reference lists.",
+  "constraints": [
+    "Static HTML and CSS only",
+    "Overview remains legible in one desktop viewport",
+    "Every detail page starts with positional context",
+    "No decorative media or motion"
+  ]
+}

@@ -10,3 +10,7 @@ test-results/
 .agents/
 .codex/
 
+# Local-only Windows task dashboard; never publish through Cloudflare Pages.
+automation/dashboard/
+automation/start-dashboard.ps1
+
