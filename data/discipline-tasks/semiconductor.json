@@ -1,6 +1,6 @@
 {
     "discipline_id":  "semiconductor",
-    "generated_at":  "2026-11-09T16:19:32.7602240+08:00",
+    "generated_at":  "2026-11-09T16:23:50.9136030+08:00",
     "policy_source":  "data/discipline-roadmap.json",
     "tasks":  [
                   {
@@ -257,9 +257,9 @@
                                          "coverage-process-product-02"
                                      ],
                       "acceptance":  "The dimension contains at least 3 verified node(s).",
-                      "status":  "todo",
-                      "completed_at":  null,
-                      "evidence":  null,
+                      "status":  "done",
+                      "completed_at":  "2026-11-09",
+                      "evidence":  "Validator and generated-page gates passed; changed nodes: front-end-wafer-fabrication-cycle",
                       "blocked_reason":  null
                   },
                   {

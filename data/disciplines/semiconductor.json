@@ -393,6 +393,34 @@
       "status": "verified"
     },
     {
+      "id": "front-end-wafer-fabrication-cycle",
+      "dimension": "process_product",
+      "type": "工艺",
+      "parent": "planar-mass-manufacturing",
+      "title": "前道晶圆制造循环",
+      "summary": "用沉积、光刻、刻蚀和掺杂逐层构造器件",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Stage 3: Front-end Manufacturing",
+          "url": "https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/stage-3-front-end-manufacturing/",
+          "grade": "other",
+          "supports": "支持前道制造把芯片设计加工到原始晶圆，并反复执行氧化、光刻、掺杂、薄膜沉积、刻蚀、平坦化与量测等步骤。"
+        },
+        {
+          "title": "How are microchips made?",
+          "url": "https://www.imec-int.com/en/what-we-offer/semiconductor-education-and-workforce-development/microchips/how-are-microchips-made",
+          "grade": "other",
+          "supports": "支持晶圆通过反复沉积、光刻、刻蚀和掺杂构造晶体管与金属互连；这些步骤会重复数百次。"
+        }
+      ],
+      "last_checked": "2026-11-09",
+      "status": "verified"
+    },
+    {
       "id": "memory-data-movement-wall",
       "dimension": "boundary_open",
       "type": "边界",
