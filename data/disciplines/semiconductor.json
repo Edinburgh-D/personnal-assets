@@ -299,6 +299,28 @@
       "status": "verified"
     },
     {
+      "id": "drift-diffusion-device-model",
+      "dimension": "theory_method",
+      "type": "方法",
+      "parent": "controllable-conductivity",
+      "title": "漂移—扩散器件模型",
+      "summary": "联立电势与载流子方程预测器件电流",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "2.1 Classical Semiconductor Device Equations",
+          "url": "https://www.iue.tuwien.ac.at/phd/entner/node9.html",
+          "grade": "primary",
+          "supports": "支持泊松方程、电子和空穴连续性方程及漂移—扩散电流关系共同构成半导体器件模拟的基础方程组，并用于数值器件模拟。"
+        }
+      ],
+      "last_checked": "2026-11-10",
+      "status": "verified"
+    },
+    {
       "id": "eda-design-flow",
       "dimension": "tools_standards",
       "type": "工具",

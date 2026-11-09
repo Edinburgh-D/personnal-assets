@@ -16,3 +16,11 @@
 - Nodes: front-end-wafer-fabrication-cycle
 - Verification: validator and generated-page check passed
 - Remaining: 0 unverified node(s)
+
+## 2026-11-10 路 semiconductor
+
+- Task: coverage-theory-method-03
+- Mode: expand-smallest
+- Nodes: drift-diffusion-device-model
+- Verification: validator and generated-page check passed
+- Remaining: 0 unverified node(s)
