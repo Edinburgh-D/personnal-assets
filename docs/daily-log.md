@@ -24,3 +24,11 @@
 - Nodes: drift-diffusion-device-model
 - Verification: validator and generated-page check passed
 - Remaining: 0 unverified node(s)
+
+## 2026-11-11 路 semiconductor
+
+- Task: coverage-tools-standards-03
+- Mode: expand-smallest
+- Nodes: ieee-1149-1-boundary-scan
+- Verification: validator and generated-page check passed
+- Remaining: 0 unverified node(s)

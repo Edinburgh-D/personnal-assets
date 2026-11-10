@@ -365,6 +365,28 @@
       "status": "verified"
     },
     {
+      "id": "ieee-1149-1-boundary-scan",
+      "dimension": "tools_standards",
+      "type": "标准",
+      "parent": "integrated-circuit",
+      "title": "IEEE 1149.1测试端口与边界扫描",
+      "summary": "用标准测试接口检查芯片内部与板级互连",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "P1149.1 - Standard for Test Access Port and Boundary-Scan Architecture",
+          "url": "https://standards.ieee.org/ieee/1149.1/10977/",
+          "grade": "standard",
+          "supports": "支持IEEE 1149.1在集成电路中定义测试逻辑、标准接口与边界扫描寄存器，用于测试组装后的板级互连和内部电路。"
+        }
+      ],
+      "last_checked": "2026-11-11",
+      "status": "verified"
+    },
+    {
       "id": "dedicated-foundry-model",
       "dimension": "process_product",
       "type": "组织制度",

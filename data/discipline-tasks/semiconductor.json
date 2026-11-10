@@ -1,6 +1,6 @@
 {
     "discipline_id":  "semiconductor",
-    "generated_at":  "2026-11-10T07:30:06.6802763+08:00",
+    "generated_at":  "2026-11-11T07:30:04.7841581+08:00",
     "policy_source":  "data/discipline-roadmap.json",
     "tasks":  [
                   {
@@ -297,9 +297,9 @@
                                          "coverage-tools-standards-02"
                                      ],
                       "acceptance":  "The dimension contains at least 3 verified node(s).",
-                      "status":  "todo",
-                      "completed_at":  null,
-                      "evidence":  null,
+                      "status":  "done",
+                      "completed_at":  "2026-11-11",
+                      "evidence":  "Validator and generated-page gates passed; changed nodes: ieee-1149-1-boundary-scan",
                       "blocked_reason":  null
                   },
                   {
