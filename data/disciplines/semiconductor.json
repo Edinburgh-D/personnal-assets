@@ -465,6 +465,28 @@
       "status": "verified"
     },
     {
+      "id": "three-dimensional-integration-thermal-limit",
+      "dimension": "boundary_open",
+      "type": "未解问题",
+      "parent": "advanced-packaging-and-ucie",
+      "title": "3D异构集成的热管理",
+      "summary": "垂直堆叠增密，也收窄散热路径并催生热点",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Thermal management of 3-D heterogeneously integrated microelectronics: challenges and future research directions",
+          "url": "https://www.nature.com/articles/s44172-026-00590-y",
+          "grade": "review",
+          "supports": "支持3D异构集成提升功能与集成密度，但紧凑垂直堆叠会造成非均匀功率密度、热点及收窄的散热路径，进而损害可靠性、寿命与性能。"
+        }
+      ],
+      "last_checked": "2026-11-12",
+      "status": "verified"
+    },
+    {
       "id": "memory-data-movement-wall",
       "dimension": "boundary_open",
       "type": "边界",

@@ -1,6 +1,6 @@
 {
     "discipline_id":  "semiconductor",
-    "generated_at":  "2026-11-11T07:30:04.7841581+08:00",
+    "generated_at":  "2026-11-12T07:30:04.9334734+08:00",
     "policy_source":  "data/discipline-roadmap.json",
     "tasks":  [
                   {
@@ -337,9 +337,9 @@
                                          "coverage-boundary-open-03"
                                      ],
                       "acceptance":  "The dimension contains at least 4 verified node(s).",
-                      "status":  "todo",
-                      "completed_at":  null,
-                      "evidence":  null,
+                      "status":  "done",
+                      "completed_at":  "2026-11-12",
+                      "evidence":  "Validator and generated-page gates passed; changed nodes: three-dimensional-integration-thermal-limit",
                       "blocked_reason":  null
                   },
                   {

@@ -32,3 +32,11 @@
 - Nodes: ieee-1149-1-boundary-scan
 - Verification: validator and generated-page check passed
 - Remaining: 0 unverified node(s)
+
+## 2026-11-12 路 semiconductor
+
+- Task: coverage-boundary-open-04
+- Mode: expand-smallest
+- Nodes: three-dimensional-integration-thermal-limit
+- Verification: validator and generated-page check passed
+- Remaining: 0 unverified node(s)
