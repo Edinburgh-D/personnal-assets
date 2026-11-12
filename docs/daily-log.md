@@ -40,3 +40,11 @@
 - Nodes: three-dimensional-integration-thermal-limit
 - Verification: validator and generated-page check passed
 - Remaining: 0 unverified node(s)
+
+## 2026-11-13 路 semiconductor
+
+- Task: coverage-process-product-04
+- Mode: expand-smallest
+- Nodes: back-end-assembly-test-packaging
+- Verification: validator and generated-page check passed
+- Remaining: 0 unverified node(s)

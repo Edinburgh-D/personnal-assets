@@ -465,6 +465,28 @@
       "status": "verified"
     },
     {
+      "id": "back-end-assembly-test-packaging",
+      "dimension": "process_product",
+      "type": "工艺",
+      "parent": "front-end-wafer-fabrication-cycle",
+      "title": "后道组装、测试与封装",
+      "summary": "把晶圆切成芯粒，完成连接、保护与成品测试",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "Stage 4: Back-end Manufacturing",
+          "url": "https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/stage-4-back-end-manufacturing/",
+          "grade": "other",
+          "supports": "支持后道制造依次进行晶圆切割、芯粒贴装、电连接、封装保护和成品测试，把已制造晶圆转成可集成进电路的已测试芯片。"
+        }
+      ],
+      "last_checked": "2026-11-13",
+      "status": "verified"
+    },
+    {
       "id": "three-dimensional-integration-thermal-limit",
       "dimension": "boundary_open",
       "type": "未解问题",
