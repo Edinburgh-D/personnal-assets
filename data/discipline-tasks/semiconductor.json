@@ -1,6 +1,6 @@
 {
     "discipline_id":  "semiconductor",
-    "generated_at":  "2026-11-13T07:30:04.8884949+08:00",
+    "generated_at":  "2026-11-14T07:30:06.2903233+08:00",
     "policy_source":  "data/discipline-roadmap.json",
     "tasks":  [
                   {
@@ -377,9 +377,9 @@
                                          "coverage-theory-method-03"
                                      ],
                       "acceptance":  "The dimension contains at least 4 verified node(s).",
-                      "status":  "todo",
-                      "completed_at":  null,
-                      "evidence":  null,
+                      "status":  "done",
+                      "completed_at":  "2026-11-14",
+                      "evidence":  "Validator and generated-page gates passed; changed nodes: boltzmann-monte-carlo-transport",
                       "blocked_reason":  null
                   },
                   {

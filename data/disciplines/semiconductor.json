@@ -321,6 +321,34 @@
       "status": "verified"
     },
     {
+      "id": "boltzmann-monte-carlo-transport",
+      "dimension": "theory_method",
+      "type": "方法",
+      "parent": "drift-diffusion-device-model",
+      "title": "玻尔兹曼输运与蒙特卡洛",
+      "summary": "以随机载流子轨迹和散射求解非平衡输运",
+      "old_approach": "",
+      "bottleneck": "",
+      "new_concept": "",
+      "detail_page": null,
+      "sources": [
+        {
+          "title": "The Monte Carlo Method for Semiconductor Device Simulation",
+          "url": "https://link.springer.com/book/10.1007/978-3-7091-6963-6",
+          "grade": "textbook",
+          "supports": "支持把蒙特卡洛方法用于半导体器件模拟，并系统讨论载流子输运物理、蒙特卡洛算法及器件建模应用。"
+        },
+        {
+          "title": "Particle Models for Device Simulation",
+          "url": "https://www.iue.tuwien.ac.at/pdf/ib_2004/JB2003_Kosina_6.pdf",
+          "grade": "primary",
+          "supports": "支持以位置—动量相空间中的载流子轨迹和随机散射事件建立蒙特卡洛粒子模型，并将其作为半经典玻尔兹曼输运方程的数值解法。"
+        }
+      ],
+      "last_checked": "2026-11-14",
+      "status": "verified"
+    },
+    {
       "id": "eda-design-flow",
       "dimension": "tools_standards",
       "type": "工具",

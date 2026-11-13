@@ -48,3 +48,11 @@
 - Nodes: back-end-assembly-test-packaging
 - Verification: validator and generated-page check passed
 - Remaining: 0 unverified node(s)
+
+## 2026-11-14 路 semiconductor
+
+- Task: coverage-theory-method-04
+- Mode: expand-smallest
+- Nodes: boltzmann-monte-carlo-transport
+- Verification: validator and generated-page check passed
+- Remaining: 0 unverified node(s)
